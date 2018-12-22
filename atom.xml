@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>M-x Chris-An-Emacser</title>
+  
+  <subtitle>一个Emacs爱好者的闲言碎语</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://chriszheng.science/"/>
+  <updated>2018-12-22T08:53:04.275Z</updated>
+  <id>https://chriszheng.science/</id>
+  
+  <author>
+    <name>Chris</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近思录 2018-12-02</title>
+    <link href="https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/"/>
+    <id>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</id>
+    <published>2018-12-02T15:07:32.000Z</published>
+    <updated>2018-12-22T08:53:04.275Z</updated>
+    
+    <content type="html"><![CDATA[<p style="font-size: larger">💸</p><a id="more"></a><h2 id="国内的动画水平">国内的动画水平</h2><p>偶然看了一眼国产动画<a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9%E5%B0%91%E5%B9%B4/20156819" target="_blank" rel="noopener">飞天少年</a>，我感觉现在的动画画的还不如50年前的<a href="https://baike.baidu.com/item/%E9%93%81%E8%87%82%E9%98%BF%E7%AB%A5%E6%9C%A8/69154" target="_blank" rel="noopener">铁臂阿童木</a>。</p><h2 id="几本书的封面">几本书的封面</h2><p><img src="/img/The-audacious-rebuilding-of-a-political-machine.jpg" alt="希拉里：为总统而生"></p><p><img src="/img/The-man-who-changed-china.jpg" alt="他改变了中国"></p><h2 id="debian的bug导致sshd启动慢">Debian的bug导致SSHD启动慢</h2><p><a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912087" target="_blank" rel="noopener">https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912087</a></p><h2 id="如何在xp上安装基于ghostscript的虚拟打印机">如何在XP上安装基于GhostScript的虚拟打印机</h2><p><a href="https://www.ghostscript.com/doc/current/VectorDevices.htm#PPD" target="_blank" rel="noopener">https://www.ghostscript.com/doc/current/VectorDevices.htm#PPD</a></p><p>要点是打印到文件。</p><h2 id="咬文嚼字的冷知识">咬文嚼字的冷知识</h2><p><a href="/2017/04/14/One-sentence-cold-knowledge/">冷知识</a>里更新了一个attached的区别enclosed。这种知识不点破就算是每天用也不会知道。类似的例子是中文里的语言现象，比如北方话或北京话里儿化音的规律，其实大有门道咧。我不是北京人也没认真研究过，就不班门弄斧了，读者朋友可以自己试着总结一下。</p><h2 id="有相关关系不一定有相关性">有相关关系不一定有相关性</h2><p>比如之前有研究说，牙齿健康的人不容易得高血压。这个结果可能是对的，但不能说牙齿健康能预防高血压，我觉得，可能是注意牙齿健康的人生活也健康，自然不容易「三高」，如果用这种相关关系推广到「保护牙齿能预防高血压」，谬矣。</p><h2 id="原来-黑客帝国-等电影都有基础">原来《黑客帝国》等电影都有基础</h2><p>比如《世界旦夕之间》。</p><h2 id="orca-4-1要发布了">ORCA 4.1要发布了</h2><p><a href="https://orcaforum.kofo.mpg.de/app.php/portal" target="_blank" rel="noopener">https://orcaforum.kofo.mpg.de/app.php/portal</a></p><h2 id="老的linux内核上编译的可执行文件不能用于较新的内核">老的Linux内核上编译的可执行文件不能用于较新的内核</h2><p>因为新内核不支持<code>vsyscall</code>，详细的解释见下面。</p><p><a href="https://orcaforum.kofo.mpg.de/viewtopic.php?f=9&amp;t=3870" target="_blank" rel="noopener">https://orcaforum.kofo.mpg.de/viewtopic.php?f=9&amp;t=3870</a></p><p>ORCA 4.1的版本有这个问题，我反馈后修复了。</p><h2 id="折腾octave的颜色">折腾Octave的颜色</h2><p><a href="https://gitee.com/chriszheng/configs/tree/master/.octave" target="_blank" rel="noopener">https://gitee.com/chriszheng/configs/tree/master/.octave</a></p><p>具体的代码上传了，一些折腾的结果写下来。</p><ol><li><p>怎么改默认的颜色顺序呢？ <br><code>set(gca, 'ColorOrder', ggplot2(64));</code></p></li><li><p>怎么画函数图像呢？ \</p></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">clf;</span><br><span class="line">fh = @(x) sin (pi*x) ./ (pi*x);</span><br><span class="line">fplot (fh, [-5, 5]);</span><br><span class="line">title (&quot;fplot() sinc function (possible division by 0, near 0)&quot;);</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f = @(x) sin (pi*x) ./ (pi*x);</span><br><span class="line">ezplot (f);</span><br></pre></td></tr></table></figure><ol start="3"><li>怎么画彩色的柱状图呢？ \</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">citations = [1 8 12 15 37 59 47 69];</span><br><span class="line"></span><br><span class="line">start = 2011;</span><br><span class="line">years = [start:start+numel(citations)-1];</span><br><span class="line">[xb, yb] = bar(years, citations);</span><br><span class="line">patch(xb, yb, [1:numel(citations)], &quot;edgecolor&quot;, &quot;none&quot;);</span><br><span class="line">xlabel(&quot;years&quot;);</span><br><span class="line">ylabel(&quot;citations&quot;);</span><br><span class="line">xlim([2010 2019]);</span><br></pre></td></tr></table></figure><p>配色风格可以用<code>colormap()</code>改。一种风格是<code>colormap(ggplot2(64));</code>，配色模仿R的ggplot的效果</p><p><img src="/img/Octave-colorful-bar-ggplot-style.png" alt="ggplot配色的Octave彩色柱状图"></p><p>默认的风格<code>colormap((64));</code>，效果如下</p><p><img src="/img/Octave-colorful-bar-default-style.png" alt="默认配色的Octave彩色柱状图"></p><p>上面用到的<code>ggplot2()</code>来自<a href="https://gitee.com/chriszheng/configs/blob/master/.octave/ggplot2.m" target="_blank" rel="noopener">ggplot2.m</a>是我从网上抄来后魔改的。</p><ol start="4"><li>怎么画彩色的函数图像呢？ \</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">colormap(ggplot2(512));</span><br><span class="line">x = -pi:0.02:pi;</span><br><span class="line">scatter(x, sin(x), 10, [1:numel(x)], &quot;filled&quot;);</span><br><span class="line">set(findall(gcf(), &quot;-property&quot;, &quot;interpreter&quot;), &quot;interpreter&quot;, &quot;TeX&quot;);</span><br><span class="line">xlabel(&apos;\it&#123;x&#125;&apos;);</span><br><span class="line">ylabel(&apos;\it&#123;y&#125;&apos;);</span><br></pre></td></tr></table></figure><p><img src="/img/Octave-colorful-line.png" alt="Octave彩色线"></p><h2 id="韭菜">韭菜</h2><blockquote><p>《正论》曰：小民发如韭，剪复生；头如鸡，割复鸣。吏不必可畏，后来不必可轻。奈何欲望致刑厝乎？</p><footer><strong>《太平御览·菜茹部一·韭》</strong></footer></blockquote><h2 id="悲惨生活">悲惨生活</h2><blockquote><p>寄身锋刃，腷臆谁诉？</p><footer><strong>唐·李华</strong><cite>《吊古战场文》</cite></footer></blockquote><p>搜索中发现这句是化用了<a href="https://baike.baidu.com/item/%E7%99%BD%E9%A9%AC%E7%AF%87/22087" target="_blank" rel="noopener">曹植的《白马篇》</a>。</p><blockquote><p>弃身锋刃端，性命安可怀？</p><footer><strong>曹植</strong><cite>《白马篇》</cite></footer></blockquote><p>搜索中邂逅一位高产的前辈，具体请自行搜索，拜读了不少文章。</p><p><a href="http://xiexuanjun.blogspot.com/2013/09/blog-post_7832.html" target="_blank" rel="noopener">http://xiexuanjun.blogspot.com/2013/09/blog-post_7832.html</a></p><h2 id="octave输出postscript时字体设置的缺陷">Octave输出PostScript时字体设置的缺陷</h2><p><a href="http://lists.gnu.org/archive/html/help-octave/2016-02/msg00032.html" target="_blank" rel="noopener">http://lists.gnu.org/archive/html/help-octave/2016-02/msg00032.html</a></p><p>不能想设成什么就设成什么。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p style=&quot;font-size: larger&quot;&gt;💸&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分析网站内容的流行程度——写在博客的第4年</title>
+    <link href="https://chriszheng.science/2018/11/30/Popularity-of-my-content/"/>
+    <id>https://chriszheng.science/2018/11/30/Popularity-of-my-content/</id>
+    <published>2018-11-30T08:56:29.000Z</published>
+    <updated>2018-11-30T12:44:49.840Z</updated>
+    
+    <content type="html"><![CDATA[<p>本博客是<a href="/2014/12/26/hello-world/">2014年年底上线的</a>。我已经记不得这是我的第几个博客了，但肯定是最好的一个，我在上面花了不少💸，经常写点东西也带给我很多快乐。</p><a id="more"></a><h2 id="热门主题统计">热门主题统计</h2><p>统计的时间是2018-11-30，目前网站的UV/PV是43728/85008。</p><table><thead><tr><th style="text-align:center">访问数</th><th style="text-align:center">链接</th><th style="text-align:center">每年访问数</th></tr></thead><tbody><tr><td style="text-align:center">2885</td><td style="text-align:center"><a href="/2016/11/06/Grammarly-review/">Grammarly高级版(premium)试用体验</a></td><td style="text-align:center">1300</td></tr><tr><td style="text-align:center">2411</td><td style="text-align:center"><a href="/2016/02/07/Four-kings-in-Chinese-programming-world/">华人编程界的四大天王</a></td><td style="text-align:center">870</td></tr><tr><td style="text-align:center">2359</td><td style="text-align:center"><a href="/2016/02/04/Play-with-ShadowSocks-on-PandoraBox-OpenWrt/">在PandoraBox(OpenWrt)上玩Shadowsocks的一点经验</a></td><td style="text-align:center">860</td></tr><tr><td style="text-align:center">1914</td><td style="text-align:center"><a href="/2015/11/08/Checkbox-for-markdown-mode/">Markdown-mode里的复选框(Checkbox)以及如何在Hexo中使用</a></td><td style="text-align:center">620</td></tr><tr><td style="text-align:center">1551</td><td style="text-align:center"><a href="/pua/">200多本把妹学电子书的读书笔记</a></td><td style="text-align:center">290</td></tr><tr><td style="text-align:center">1508</td><td style="text-align:center"><a href="/2015/01/21/Bandwagon-VPS-Nginx-setup/">搬瓦工(Bandwagon)上搭建Nginx用来放Hexo做的Blog站</a></td><td style="text-align:center">390</td></tr><tr><td style="text-align:center">1309</td><td style="text-align:center"><a href="/2017/01/13/Use-Yaaw-in-HTTPS-environment/">在HTTPS环境中使用YAAW</a></td><td style="text-align:center">690</td></tr><tr><td style="text-align:center">1104</td><td style="text-align:center"><a href="/2017/07/16/Best-practice-of-Emacs-on-MS-Windows/">Windows下使用Emacs的最佳实践</a></td><td style="text-align:center">3312</td></tr><tr><td style="text-align:center">787</td><td style="text-align:center"><a href="/2017/03/07/Remove-highlight-in-SumatraPDF/">在Sumatra PDF里添加/删除高亮</a></td><td style="text-align:center">470</td></tr></tbody></table><h2 id="感想">感想</h2><p>总的来说，访客不多。我写过接近400篇帖子，真正有一定影响力的只有10篇左右，很多还是靠时间积累上来的。</p><p>热门主题为什么热门，我也说不清楚。比如上面的四天王的帖子就是我一时兴起整理的，没想到因为这个词被人多次提起，这个帖子也多次被访问。再比如排第一的Grammarly的使用感受也是我随手写的一个东东，没想到也火了。</p><p>就这样罢。感想各位的关注。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本博客是&lt;a href=&quot;/2014/12/26/hello-world/&quot;&gt;2014年年底上线的&lt;/a&gt;。我已经记不得这是我的第几个博客了，但肯定是最好的一个，我在上面花了不少💸，经常写点东西也带给我很多快乐。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="网站信息" scheme="https://chriszheng.science/categories/%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF/"/>
+    
+    
+      <category term="网站信息" scheme="https://chriszheng.science/tags/%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用frp实战内网穿透</title>
+    <link href="https://chriszheng.science/2018/11/30/Practical-frp/"/>
+    <id>https://chriszheng.science/2018/11/30/Practical-frp/</id>
+    <published>2018-11-29T16:28:08.000Z</published>
+    <updated>2018-11-30T12:49:20.994Z</updated>
+    
+    <content type="html"><![CDATA[<p>大神的<a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">frp</a>工具可以高效简便的进行内网穿透，我实践了一下用<a href="/2018/08/01/Get-on-board-quickly/">家里的斐讯K2P路由</a>作为服务器进行内网穿透，把遇到的坑写出来。</p><p>解释一下，之所以用家里的路由作为服务器是因为家里是拨号，有公网IP，不用就浪费了。</p><a id="more"></a><h2 id="路由器默认不接受传入数据">路由器默认不接受传入数据</h2><p>我遇到最大的坑是，路由开了端口，从外面还是连不上。想了一下，觉得是端口没有正常开放，用<code>nc -z -vv</code>一试果然如此。新建一个防火墙规则开放相应的端口就好了，代码是这样的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">config rule</span><br><span class="line">        option name &apos;Allow-6000-8000&apos;</span><br><span class="line">        option src &apos;wan&apos;</span><br><span class="line">        option dest_port 6000:8000</span><br><span class="line">        option target ACCEPT</span><br></pre></td></tr></table></figure><p>上面的代码放在<code>/etc/config/firewall</code>然后<code>etc/init.d/firewall reload</code>，就好了。如果想安全可以限定连接的IP，就是加一条<code>option src_ip '111.111.111.111</code>，限定来源IP，这样彻底安全了。</p><p>一些写firewall规则的参考送给感兴趣的读者</p><p><a href="https://oldwiki.archive.openwrt.org/doc/uci/firewall" target="_blank" rel="noopener">https://oldwiki.archive.openwrt.org/doc/uci/firewall</a></p><h2 id="k2p上安装配置frps">K2P上安装配置frps</h2><p>K2P内存太小了，根本安不上<code>frps</code>，我只能把它放在<code>/tmp</code>里。具体的下载安装方法不赘述，聪明的读者应该会。</p><p>配置按照最简单的来，也容易。难的是要写一个启动脚本，下面的是我写的，我觉得还比较优雅。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/sh /etc/rc.common</span></span><br><span class="line"></span><br><span class="line">START=90</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">start</span></span>() &#123;</span><br><span class="line">        <span class="comment"># icount=`ps -w|grep frps|grep -v grep|wc -l`</span></span><br><span class="line">        <span class="comment"># [ $icount -gt 0 ] &amp;&amp; stop</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># sleep 2</span></span><br><span class="line"></span><br><span class="line">        /tmp/frps -c /etc/frps.ini &amp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">stop</span></span>() &#123;</span><br><span class="line">        /tmp/frps stop -c /etc/frps.ini</span><br><span class="line">        killall -9 frps</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">restart</span></span>() &#123;</span><br><span class="line">        /tmp/frps restart -c /etc/frps.ini &amp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>上面的代码存为<code>/etc/init.d/frps</code>，然后<code>/etc/init.d/frps start</code>等等就可以了。</p><h2 id="自动更新ip">自动更新IP</h2><p>用的是<a href="http://www.duckdns.org/" target="_blank" rel="noopener">Duck DNS</a>，就叫它鸭鸭DNS吧。</p><p>配置方法看官方的文档就好。</p><p><a href="http://www.duckdns.org/install.jsp" target="_blank" rel="noopener">http://www.duckdns.org/install.jsp</a></p><h2 id="配置内网的服务器">配置内网的服务器</h2><p>内网的服务器当然是Arch Linux啦，<a href="https://aur.archlinux.org/packages/frp/" target="_blank" rel="noopener">frp在AUR上有</a>，安装就好了，不多说了。需要注意的是配置文件里每一项的含义，我解释一下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr = yaya.duckdns.org # 这个域名动态解析成路由的IP。</span><br><span class="line">server_port = 7000 # 路由开放的端口。</span><br><span class="line"></span><br><span class="line">[ssh]</span><br><span class="line">type = tcp # 走TCP。</span><br><span class="line">local_ip = 127.0.0.1 # 转发到本地。</span><br><span class="line">local_port = 39999 # 对应SSH的端口，如果改过SSH端口(改端口是好习惯)，要体现。</span><br><span class="line">remote_port = 6000 # 现在连这个端口就相当于连SSH端口了。</span><br></pre></td></tr></table></figure><p>试着解释一下原理：</p><ol><li>有公网IP的路由开放7000端口。</li><li>服务器在内网，主动连路由的7000端口。</li><li>建立连接后，路由开6000端口，把收到的包转给在内网的服务器。</li><li>我在其他地方连路由的6000端口，相当于连到内网服务器上，实现了穿透。</li></ol><h2 id="实际效果">实际效果</h2><p>如果用VPN，延迟要50 ms，实际使用的延迟更高。用frp后延迟可以忍受，因为我的服务器和家里的路由直线距离才2 km，ping的延迟5 ms，可如果走糟糕的VPN，慢太多了。</p><p>心得是，纸上得来终觉浅，绝知此事要躬行。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大神的&lt;a href=&quot;https://github.com/fatedier/frp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;frp&lt;/a&gt;工具可以高效简便的进行内网穿透，我实践了一下用&lt;a href=&quot;/2018/08/01/Get-on-board-quickly/&quot;&gt;家里的斐讯K2P路由&lt;/a&gt;作为服务器进行内网穿透，把遇到的坑写出来。&lt;/p&gt;
+&lt;p&gt;解释一下，之所以用家里的路由作为服务器是因为家里是拨号，有公网IP，不用就浪费了。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="经验分享" scheme="https://chriszheng.science/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="frp" scheme="https://chriszheng.science/tags/frp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搬瓦工传家宝没了</title>
+    <link href="https://chriszheng.science/2018/11/29/Heirloom-Bandwagon-gone/"/>
+    <id>https://chriszheng.science/2018/11/29/Heirloom-Bandwagon-gone/</id>
+    <published>2018-11-28T18:18:03.000Z</published>
+    <updated>2018-12-02T19:01:18.219Z</updated>
+    
+    <content type="html"><![CDATA[<p>想用就老老实实花钱吧。</p><a id="more"></a><p>购买。装最新Debian系统，我不喜欢别的。</p><h2 id="玩玩bbr">玩玩BBR</h2><p>装BBR。</p><p><a href="https://teddysun.com/489.html" target="_blank" rel="noopener">https://teddysun.com/489.html</a></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh</span><br></pre></td></tr></table></figure><h2 id="复制公钥">复制公钥</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id -i .ssh/id_rsa.pub root@11.111.111.111 -p 11111</span><br></pre></td></tr></table></figure><h2 id="ss">SS</h2><p><a href="/2017/07/22/Upgrading-to-Shadowsocks-libev-3-0-x/">装最新的Shadowsocks-libev</a>。</p><h2 id="nginx">Nginx</h2><p><a href="/2016/06/11/Bandwagon-Nginx-meanline-and-HTTPS/">装主线版本</a>。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(cat &lt;&lt;-SRC</span><br><span class="line"><span class="comment"># nginx mainline repository</span></span><br><span class="line">deb http://nginx.org/packages/mainline/debian/ stretch nginx</span><br><span class="line">deb-src http://nginx.org/packages/mainline/debian/ stretch nginx</span><br><span class="line">SRC</span><br><span class="line">) &gt; /etc/apt/sources.list.d/nginx-mainline.list</span><br></pre></td></tr></table></figure><p><a href="/2016/06/11/Bandwagon-Nginx-meanline-and-HTTPS/">启用HTTPS支持</a>。</p><h2 id="dnspod逼我必须实名认证">DnsPod逼我必须实名认证</h2><p>只能不用了。换Cloudflare了，还能免费上HTTPS。</p><h2 id="fail2ban">Fail2Ban</h2><p><a href="https://www.fail2ban.org/wiki/index.php/MANUAL_0_8" target="_blank" rel="noopener">https://www.fail2ban.org/wiki/index.php/MANUAL_0_8</a></p><h2 id="装go以及go编写的软件">装Go以及Go编写的软件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(cat &lt;&lt;-SRC</span><br><span class="line"># nginx mainline repository</span><br><span class="line">deb http://deb.debian.org/debian/ unstable main contrib non-free</span><br><span class="line">deb-src http://deb.debian.org/debian/ unstable main contrib non-free</span><br><span class="line">SRC</span><br><span class="line">) &gt; /etc/apt/sources.list.d/unstable.list</span><br><span class="line">apt-get update</span><br><span class="line">apt-get install golang-1.11-go</span><br><span class="line">export PATH=$&#123;PATH&#125;:/usr/lib/go-1.11/bin</span><br><span class="line">go get github.com/iawia002/annie</span><br></pre></td></tr></table></figure><h2 id="效果">效果</h2><p><img src="/img/Ping-chriszheng-science.png" alt="国内Ping"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;想用就老老实实花钱吧。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="VPS" scheme="https://chriszheng.science/categories/VPS/"/>
+    
+    
+      <category term="Bandwagon" scheme="https://chriszheng.science/tags/Bandwagon/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>近思录 2018-11-22</title>
+    <link href="https://chriszheng.science/2018/11/22/Recent-thoughts-2018-11-22/"/>
+    <id>https://chriszheng.science/2018/11/22/Recent-thoughts-2018-11-22/</id>
+    <published>2018-11-22T14:07:32.000Z</published>
+    <updated>2018-12-02T15:08:56.048Z</updated>
+    
+    <content type="html"><![CDATA[<p style="font-size: larger">😍</p><a id="more"></a><h2 id="思源黑体2-0">思源黑体2.0</h2><p>下载地址：</p><p><a href="https://github.com/adobe-fonts/source-han-sans/tree/2.000R" target="_blank" rel="noopener">https://github.com/adobe-fonts/source-han-sans/tree/2.000R</a></p><h2 id="unix-50周年纪念">Unix 50周年纪念</h2><p><a href="https://sdf-cn.org/2018/11/unix-50th-and-sdf-32nd/" target="_blank" rel="noopener">https://sdf-cn.org/2018/11/unix-50th-and-sdf-32nd/</a></p><h2 id="alpharacks好像很垃圾">AlphaRacks好像很垃圾</h2><p><a href="https://www.v2ex.com/t/355909" target="_blank" rel="noopener">https://www.v2ex.com/t/355909</a></p><p><sub>还不如搬瓦工，有祖传VPS真好。</sub></p><p><img src="/img/Luo-smack-face.gif" alt="打脸"></p><p>刚说了传家宝，马上没有了。</p><blockquote><p>OpenVZ VPS Phase Out<br>Dear Bandwagon Host Customer,</p><p>It is time for us to gradually phase out OpenVZ technology from our platform.</p><p>As you may know, OpenVZ v6 is going to reach EOL in November 2019. This means there will be no more security updates and no support provided by the developers, and we will not be able to continue operating this technology after this happens.</p><p>We want you to have the best experience possible, and we have carefully looked into our options. The only two viable options were: Option 1: Introduce OpenVZ 7; Option 2: Ask customers to migrate to KVM.</p><p>We did take a good look at OpenVZ 7. Unfortunately, we found that it will require a significant development effort in order to migrate all clients, and yet it offers no major advantages over OpenVZ 6 <em>or</em> KVM. At the same time, since introduction of our KVM plans back in June 2017 the vast majority of our customers naturally migrated from OpenVZ to KVM which only reinforces the strength of KVM platform compared to OpenVZ.</p><p>Therefore we are going to discontinue OpenVZ support on our platform and we ask that all remaining OpenVZ customers migrate to KVM. We are disabling all OpenVZ renewals on our platform.</p><p>To make this transition smoother for you, we have extended the paid period for all OpenVZ VPS for two weeks, free of charge, for all customers. This will give you two extra weeks of time to make this transition to KVM.</p><p>Moving forward, we will be sending out e-mail reminders to all OpenVZ customers.</p><p>We thank you for choosing Bandwagon Host and we are continuing to work on bringing the best virtualization technologies to our customers.</p><p>Daniel C<br>Bandwagon Host</p><pre><code></code></pre><footer><strong>https://www.bandwagonhost.net/3042.html</strong></footer></blockquote><h2 id="农行活动">农行活动</h2><p>农行银联借记卡、电子账户客户在华莱士全国指定活动门店使用银联二维码(限云闪付APP、农行掌上银行APP)进行支付，消费满20元及以上立减10元（最高优惠10元），每个活动日单用户限享1次优惠。有效期: 2018.11.16–2019.04.21。</p><p><a href="/img/ABC-CNHLS.jpg">活动宣传页</a></p><p>银联的支付体验很差，但省10块钱，不要白不要。</p><p><span style="background-color: #444 !important">华莱士搞活动啦。超值优惠，重磅来袭。一个好吃的鸡腿堡加一个中可只要14元，只要14元啦。华莱士餐厅欢迎您的光临。</span></p><h2 id="闪迪酷悠优盘测速">闪迪酷悠优盘测速</h2><p><img src="/img/SanDisk-Cruzer-Glide-3.png" alt="闪迪酷悠优盘测速"></p><p>连续读取大约110 MB/s，写入不到40 MB/s。而小文件的读写只有几个MB/s，少的可怜。</p><h2 id="一本有点搞笑的书">一本有点搞笑的书</h2><p><img src="/img/Bi-Fujian.jpg" alt="《毕福剑的说话之道》"></p><p>跟他学说话就搞笑了罢。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p style=&quot;font-size: larger&quot;&gt;😍&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Initiative Q</title>
+    <link href="https://chriszheng.science/2018/11/05/Initiative-Q/"/>
+    <id>https://chriszheng.science/2018/11/05/Initiative-Q/</id>
+    <published>2018-11-05T13:48:59.000Z</published>
+    <updated>2018-11-06T01:27:48.782Z</updated>
+    
+    <content type="html"><![CDATA[<p>玩玩而已，以下内容都是转载来的，我不负任何责任。</p><a id="more"></a><p>这是由前PayPal的伙计们创建的一个全新货币和支付网络，称为Initiative Q。目前，如果您受现有会员邀请，Q币则会免费分发。 其想法是，如果数百万人加入，Q可能会成为一个领先的支付网络；根据一些著名的经济模型，这意味着奖励的价值将为$30,000左右。 您可储备的金额每天都会减少，每个会员都有数量有限的邀请。您可在此使用我的邀请链接：</p><p><a href="https://initiativeq.com/invite/HBDDd6anm" target="_blank" rel="noopener">https://initiativeq.com/invite/HBDDd6anm</a></p><p>(不要担心。没有什么花样。您只需要提供您的姓名和电子邮件，您的位置即会保留。)</p><hr><p>2010年之前我就知道比特币了，当时还有人推荐我也玩玩。那个时候1个比特币不过0.1美金<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。我当时想，这东西能值钱么，能涨到1美元1个么？</p><p><img src="/img/Luo-smack-face.gif" alt="打脸"></p><p>如果当时我花5美金，也就不到40块钱人民币购买比特币，按照今天的价格，我可以获利200万人民币。</p><p>谁也不知道上面说的未来货币的潜力如何。哪怕给自己留一点做梦的空间，也比未来打脸要好。</p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p><a href="https://www.coindesk.com/price/" target="_blank" rel="noopener">比特币价格变化</a> <a href="#fnref1" class="footnote-backref">↩</a></p></li></ol></section>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;玩玩而已，以下内容都是转载来的，我不负任何责任。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="分享" scheme="https://chriszheng.science/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="分享" scheme="https://chriszheng.science/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>近思录 2018-10-24</title>
+    <link href="https://chriszheng.science/2018/10/24/Recent-thoughts-2018-10-24/"/>
+    <id>https://chriszheng.science/2018/10/24/Recent-thoughts-2018-10-24/</id>
+    <published>2018-10-24T02:27:32.000Z</published>
+    <updated>2018-11-24T09:35:03.740Z</updated>
+    
+    <content type="html"><![CDATA[<p style="font-size: larger">🤔</p><a id="more"></a><h2 id="如何在windows-xp上安装qq">如何在Windows XP上安装QQ</h2><p>QQ这东西，不用会带来麻烦，我又不愿意在自己的电脑上安装QQ，正好有一个虚拟机安装了遗留软件(XP + 专利申请的CPC客户端 + Office 2003 + IE6)，索性在那上面安装。</p><p>首先下载一个第三方QQ：</p><p><a href="https://www.laomoit.com/qq9lvsetup.html" target="_blank" rel="noopener">https://www.laomoit.com/qq9lvsetup.html</a></p><p>这个版本的作者应该是Dreamcast，但我找不到这位朋友的网站。感谢这位朋友，也感谢分发此类软件的站长。</p><p>对于XP来说还需要两个东东才能正常使用：</p><p><a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads" target="_blank" rel="noopener">https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads</a></p><p>对于XP，需要下载Visual Studio 2017里的x86版。</p><p><a href="https://www.microsoft.com/en-us/download/confirmation.aspx?id=5555" target="_blank" rel="noopener">https://www.microsoft.com/en-us/download/confirmation.aspx?id=5555</a></p><p>老系统真麻烦。天灭萎软。</p><p style="font-size: larger">话说，在虚拟机里跑XP和Office 2003像飞一样。</p><h2 id="firefox-63-0">Firefox 63.0</h2><p>似乎有Bug，导致网络速度变慢。</p><h2 id="kcptun调参避免断流">Kcptun调参避免断流</h2><p><a href="https://github.com/xtaci/kcptun/issues/137" target="_blank" rel="noopener">https://github.com/xtaci/kcptun/issues/137</a></p><h2 id="rootopen">ROOTOPEN</h2><p>一个交流命令行使用的国内网站</p><p><a href="https://www.rootopen.com/" target="_blank" rel="noopener">https://www.rootopen.com/</a></p><p>大部分内容是采集来的？目前还很简陋，但关于里面说：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ROOTOPEN定位为IT技术学习网站</span><br><span class="line">ROOTOPEN是完全免费的</span><br><span class="line">ROOTOPEN是非盈利性的</span><br><span class="line">ROOTOPEN一直在升级和更新</span><br></pre></td></tr></table></figure><p>期待他们做好。</p><h2 id="emacs开发者正在讨论解决打开含有长行文件性能低的问题">Emacs开发者正在讨论解决打开含有长行文件性能低的问题</h2><p><a href="https://lists.gnu.org/archive/html/emacs-devel/2018-10/msg00470.html" target="_blank" rel="noopener">https://lists.gnu.org/archive/html/emacs-devel/2018-10/msg00470.html</a></p><h2 id="每日一文">每日一文</h2><p><a href="https://meiriyiwen.com/" target="_blank" rel="noopener">https://meiriyiwen.com/</a></p><h2 id="安全的云平台">安全的云平台</h2><p><a href="https://pad.sdf.org/" target="_blank" rel="noopener">https://pad.sdf.org/</a></p><h2 id="信用卡">信用卡</h2><p>我发现Stripe不支持国内银行发的Visa Signature卡。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p style=&quot;font-size: larger&quot;&gt;🤔&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>近思录 2018-10-01</title>
+    <link href="https://chriszheng.science/2018/10/01/Recent-thoughts-2018-10-01/"/>
+    <id>https://chriszheng.science/2018/10/01/Recent-thoughts-2018-10-01/</id>
+    <published>2018-10-01T02:27:32.000Z</published>
+    <updated>2018-11-24T09:34:59.836Z</updated>
+    
+    <content type="html"><![CDATA[<p style="font-size: 4em">😢</p><a id="more"></a><h2 id="用了5年的笔记本主板供电烧了">用了5年的笔记本主板供电烧了</h2><p>我的电脑是这个</p><p><a href="http://detail.zol.com.cn/series/16/14465_1.html" target="_blank" rel="noopener">http://detail.zol.com.cn/series/16/14465_1.html</a></p><p>配置是很好的，似乎设计有问题，刚用一天就烧了主板，当时直接换新。5年后，又烧了。这种小众的产品，出问题挺让人头疼。最终花了几百块钱找人把笔记本修好了。以防万一，我又买了一个垃圾台式电脑，备着。</p><h2 id="不蒜子计数器换地址了">不蒜子计数器换地址了</h2><p>原来是<code>//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js</code>，现在是<code>//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js</code>。</p><h2 id="如何增加intel核心显卡的最大分辨率">如何增加Intel核心显卡的最大分辨率</h2><p>如果您使用的是Intel核心显卡，如Intel HD Graphics 4000，通过HDMI输出最大的分辨率才1200×1920。如果想利用高分辨率的显示器，比如分辨率为2560×1440，就只能用通过奇技淫巧了。具体的方法来自下面的网站：</p><p><a href="https://www.notebookcheck.net/2560x1440-or-2560x1600-via-HDMI.92840.0.html" target="_blank" rel="noopener">https://www.notebookcheck.net/2560x1440-or-2560x1600-via-HDMI.92840.0.html</a></p><p><img src="/img/Resolution-1440P-1.png" alt="设置Intel核心显卡分辨率为2560×1440第一步"></p><p><img src="/img/Resolution-1440P-2.png" alt="设置Intel核心显卡分辨率为2560×1440第二步"></p><h2 id="闪迪cz80换头">闪迪CZ80换头</h2><p><img src="/img/SanDisk-CZ80-before.jpg" alt="闪迪CZ80换头前"></p><p>USB头里的金手指的时间太长了，氧化了，插在别的电脑上总是实效，有一次差点耽误上课。在某宝花4.7元买了10个USB 3.0的公头，换。</p><p><img src="/img/SanDisk-CZ80-after.jpg" alt="闪迪CZ80换头后"></p><p>手艺还是不太好，换完插了几次就不行了。</p><p><img src="/img/SanDisk-CZ80-benchmark.png" alt="闪迪CZ80测速"></p><h2 id="有机化合物的热力学参数">有机化合物的热力学参数</h2><p><a href="http://www2.ucdsb.on.ca/tiss/stretton/database/organic_thermo.htm" target="_blank" rel="noopener">Organic Compounds: Physical and Thermochemical Data</a></p><h2 id="油管崩溃">油管崩溃</h2><p>As of 2018-10-17 01:50:00 UTC,</p><p><img src="/img/YouTube-down.png" alt="YouTube崩溃了"></p><p><a href="https://www.thesun.co.uk/tech/7512392/youtube-down-video-streaming-site-not-working-worldwide/" target="_blank" rel="noopener">新闻一则</a>。</p><p>看来是网站就会崩，我还以为是我自己的问题。</p><h2 id="成语">成语</h2><p>积毁销骨、众口铄金、析骸以爨。</p><h2 id="魔法禁书目录第三季">魔法禁书目录第三季</h2><p>开播了。距离上一季已经8年了，又是一个有生之年系列。上一次我遇到这种情况是空之境界的未来福音，时间跨度是2009–2013，当时就有很多人刷「有生之年」了，这次相隔八年，真是</p><p>恍如隔世。</p><p><a href="https://github.com/iawia002/annie/" target="_blank" rel="noopener">https://github.com/iawia002/annie/</a></p><p>这个软件可以下载bilibili上的正版视频。</p><p><img src="/img/Toaru-Majutsu-no-Index-III-01.png" alt="魔法禁书目录第三季01"></p><h2 id="学习linux的范式">学习Linux的范式</h2><p>看到有人争论这个问题，写写我的观点。</p><ol><li>学日常使用，包括安装配置，目的是使用。</li><li>研究原理，看源码，目的可能是实现某种功能。</li><li>折腾，目的是娱乐，做的事包括上面两条。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p style=&quot;font-size: 4em&quot;&gt;😢&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>溶剂</title>
+    <link href="https://chriszheng.science/2018/09/23/Solvents/"/>
+    <id>https://chriszheng.science/2018/09/23/Solvents/</id>
+    <published>2018-09-23T15:18:24.000Z</published>
+    <updated>2018-11-30T12:52:02.674Z</updated>
+    
+    <content type="html"><![CDATA[<p>一直在用溶剂，一直没有把常用溶剂总结出来。下面的内容是<a href="https://en.wikipedia.org/wiki/Protic_solvent" target="_blank" rel="noopener">从维基百科抄来的</a>，总结了常用溶剂的性质。我把溶剂名字谷歌翻译成中文了。</p><a id="more"></a><table style="text-align:center;"><tbody><tr><th>溶剂</th><th><a href="//en.wikipedia.org/wiki/Chemical_formula" title="Chemical formula">化学式</a></th><th><a href="//en.wikipedia.org/wiki/Boiling_point" title="Boiling point">沸点</a></th><th><a href="//en.wikipedia.org/wiki/Dielectric_constant" class="mw-redirect" title="Dielectric constant">介电常数</a></th><th><a href="//en.wikipedia.org/wiki/Density" title="Density">密度</a></th><th><a href="//en.wikipedia.org/wiki/Bond_dipole_moment" title="Bond dipole moment">偶极矩</a> (<a href="//en.wikipedia.org/wiki/Debye" title="Debye">D</a>)</th></tr><tr style="background-color: #DDDDDD;"><td colspan="6"><b>非极性溶剂</b></td></tr><tr style="background-color: #DDDDDD;"><td><a href="//en.wikipedia.org/wiki/Hexane" title="Hexane">己烷</a></td><td>CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>3</sub></td><td>69&nbsp;°C</td><td>2.0</td><td>0.655 g/mL</td><td>0.00 D</td></tr><tr style="background-color: #DDDDDD;"><td><a href="//en.wikipedia.org/wiki/Benzene" title="Benzene">苯</a></td><td>C<sub>6</sub>H<sub>6</sub></td><td>80&nbsp;°C</td><td>2.3</td><td>0.879 g/ml</td><td>0.00 D</td></tr><tr style="background-color: #DDDDDD;"><td><a href="//en.wikipedia.org/wiki/Toluene" title="Toluene">甲苯</a></td><td>C<sub>6</sub>H<sub>5</sub>CH<sub>3</sub></td><td>111&nbsp;°C</td><td>2.4</td><td>0.867 g/mL</td><td>0.36 D</td></tr><tr style="background-color: #DDDDDD;"><td><a href="//en.wikipedia.org/wiki/1,4-dioxane" class="mw-redirect" title="1,4-dioxane">1,4-二恶烷</a></td><td>(CH<sub>2</sub>CH<sub>2</sub>O)<sub>2</sub></td><td>101&nbsp;°C</td><td>2.3</td><td>1.033 g/mL</td><td>0.45 D</td></tr><tr style="background-color: #DDDDDD;"><td><a href="//en.wikipedia.org/wiki/Chloroform" title="Chloroform">氯仿</a></td><td>CHCl<sub>3</sub></td><td>61&nbsp;°C</td><td>4.8</td><td>1.498 g/mL</td><td>1.04 D</td></tr><tr style="background-color: #DDDDDD;"><td><a href="//en.wikipedia.org/wiki/Diethyl_ether" title="Diethyl ether">乙醚</a></td><td>(CH<sub>3</sub>CH<sub>2</sub>)<sub>2</sub>O</td><td>35&nbsp;°C</td><td>4.3</td><td>0.713 g/mL</td><td>1.15 D</td></tr><tr style="background-color: #DDDDDD;"><td><a href="//en.wikipedia.org/wiki/Dichloromethane" title="Dichloromethane">二氯甲烷(DCM)</a></td><td>CH<sub>2</sub>Cl<sub>2</sub></td><td>40&nbsp;°C</td><td>9.1</td><td>1.3266 g/mL</td><td>1.60 D</td></tr><tr style="background-color: #FFCCFF;"><td colspan="6"><b>极性非质子溶剂</b></td></tr><tr style="background-color: #FFCCFF;"><td><a href="//en.wikipedia.org/wiki/N-methylpyrrolidone" class="mw-redirect" title="N-methylpyrrolidone">N-甲基吡咯烷酮</a></td><td>CH<sub>3</sub>NC(O)C<sub>3</sub>H<sub>6</sub></td><td>202&nbsp;°C</td><td>32.2</td><td>1.028 g/mL</td><td>4.1 D</td></tr><tr style="background-color: #FFCCFF;"><td><a href="//en.wikipedia.org/wiki/Tetrahydrofuran" title="Tetrahydrofuran">四氢呋喃(THF)</a></td><td>C<sub>4</sub>H<sub>8</sub>O</td><td>66&nbsp;°C</td><td>7.5</td><td>0.886 g/mL</td><td>1.75 D</td></tr><tr style="background-color: #FFCCFF;"><td><a href="//en.wikipedia.org/wiki/Ethyl_acetate" title="Ethyl acetate">乙酸乙酯 (EtOAc)</a></td><td>CH<sub>3</sub>CO<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub></td><td>77&nbsp;°C</td><td>6.0</td><td>0.894 g/mL</td><td>1.78 D</td></tr><tr style="background-color: #FFCCFF;"><td><a href="//en.wikipedia.org/wiki/Acetone" title="Acetone">丙酮</a></td><td>CH<sub>3</sub>C(O)CH<sub>3</sub></td><td>56&nbsp;°C</td><td>21</td><td>0.786 g/mL</td><td>2.88 D</td></tr><tr style="background-color: #FFCCFF;"><td><a href="//en.wikipedia.org/wiki/Dimethylformamide" title="Dimethylformamide">二甲基甲酰胺(DMF)</a></td><td>HC(O)N(CH<sub>3</sub>)<sub>2</sub></td><td>153&nbsp;°C</td><td>38</td><td>0.944 g/mL</td><td>3.82 D</td></tr><tr style="background-color: #FFCCFF;"><td><a href="//en.wikipedia.org/wiki/Acetonitrile" title="Acetonitrile">乙腈(MeCN)</a></td><td>CH<sub>3</sub>CN</td><td>82&nbsp;°C</td><td>37</td><td>0.786 g/mL</td><td>3.92 D</td></tr><tr style="background-color: #FFCCFF;"><td><a href="//en.wikipedia.org/wiki/Dimethyl_sulfoxide" title="Dimethyl sulfoxide">二甲基亚砜(DMSO)</a> </td><td>CH<sub>3</sub>S(O)CH<sub>3</sub></td><td>189&nbsp;°C</td><td>47</td><td>1.092 g/mL</td><td>3.96 D</td></tr><tr style="background-color: #FFCCFF;"><td><a href="//en.wikipedia.org/wiki/Propylene_carbonate" title="Propylene carbonate">碳酸亚丙酯(PC)</a></td><td>C<sub>4</sub>H<sub>6</sub>O<sub>3</sub></td><td>242&nbsp;°C</td><td>64</td><td>1.205 g/mL</td><td>4.90 D</td></tr><tr style="background-color: #FFCCCC;"><td colspan="6"><b>极性质子溶剂</b></td></tr><tr style="background-color: #FFCCCC;"><td><a href="//en.wikipedia.org/wiki/Formic_acid" title="Formic acid">甲酸</a></td><td>HCO<sub>2</sub>H</td><td>101&nbsp;°C</td><td>58</td><td>1.21 g/mL</td><td>1.41 D</td></tr><tr style="background-color: #FFCCCC;"><td><a href="//en.wikipedia.org/wiki/N-Butanol" title="N-Butanol">正丁醇</a></td><td>CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>OH</td><td>118&nbsp;°C</td><td>18</td><td>0.810 g/mL</td><td>1.63 D</td></tr><tr style="background-color: #FFCCCC;"><td><a href="//en.wikipedia.org/wiki/Isopropanol" class="mw-redirect" title="Isopropanol">异丙醇(IPA)</a></td><td>(CH<sub>3</sub>)<sub>2</sub>CH(OH)</td><td>82&nbsp;°C</td><td>18</td><td>0.785 g/mL</td><td>1.66 D</td></tr><tr style="background-color: #FFCCCC;"><td><a href="//en.wikipedia.org/wiki/Nitromethane" title="Nitromethane">硝基甲烷</a></td><td>CH<sub>3</sub>NO<sub>2</sub></td><td>100–103&nbsp;°C</td><td>35.87</td><td>1.1371 g/mL</td><td>3.56 D</td></tr><tr style="background-color: #FFCCCC;"><td><a href="//en.wikipedia.org/wiki/Ethanol" title="Ethanol">乙醇(EtOH)</a></td><td>CH<sub>3</sub>CH<sub>2</sub>OH</td><td>79&nbsp;°C</td><td>24.55</td><td>0.789 g/mL</td><td>1.69 D</td></tr><tr style="background-color: #FFCCCC;"><td><a href="//en.wikipedia.org/wiki/Methanol" title="Methanol">甲醇(MeOH)</a></td><td>CH<sub>3</sub>OH</td><td>65&nbsp;°C</td><td>33</td><td>0.791 g/mL</td><td>1.70 D</td></tr><tr style="background-color: #FFCCCC;"><td><a href="//en.wikipedia.org/wiki/Acetic_acid" title="Acetic acid">乙酸(AcOH)</a></td><td>CH<sub>3</sub>-CO<sub>2</sub>H</td><td>118&nbsp;°C</td><td>6.2</td><td>1.049 g/mL</td><td>1.74 D</td></tr><tr style="background-color: #FFCCCC;"><td><a href="//en.wikipedia.org/wiki/Water_(molecule)" class="mw-redirect" title="Water (molecule)">水</a></td><td>H<sub>2</sub>O</td><td>100&nbsp;°C</td><td>80</td><td>1.000 g/mL</td><td>1.85 D</td></tr></tbody></table><h2 id="感慨">感慨</h2><p>下面是闲聊时间了。我做了很多年科研，可什么是科研呢？我到参加过岗前培训才知道，科研活动具体分四种类型：</p><ol><li>探索未知。</li><li>应用，或者叫「成果转化」。</li><li>传授。</li><li>总结。</li></ol><p>把溶剂的知识总结出来，告诉其他人，看似普通，因为并没有给人类的知识体系增加新内容，实则是科研活动的组成部分。所以要多总结，哪怕是习以为常的东西，总结下来也会对自己和别人有帮助。</p><p>这方面我还是欠缺啊。比方写专利，我虽然<a href="/2018/07/01/Patent-application-experience/">开了一个坑</a>，实际没写啥内容，惭愧。</p><p>其实没什么难的，只要做起来就好了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一直在用溶剂，一直没有把常用溶剂总结出来。下面的内容是&lt;a href=&quot;https://en.wikipedia.org/wiki/Protic_solvent&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;从维基百科抄来的&lt;/a&gt;，总结了常用溶剂的性质。我把溶剂名字谷歌翻译成中文了。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="科学研究" scheme="https://chriszheng.science/categories/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6/"/>
+    
+    
+      <category term="科学研究" scheme="https://chriszheng.science/tags/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大学生掏粪工</title>
+    <link href="https://chriszheng.science/2018/09/16/University-graduates-as-cleaners/"/>
+    <id>https://chriszheng.science/2018/09/16/University-graduates-as-cleaners/</id>
+    <published>2018-09-16T11:04:29.000Z</published>
+    <updated>2018-09-20T18:47:08.771Z</updated>
+    
+    <content type="html"><![CDATA[<p>大学生争当掏粪工，是时代的悲剧，是畸形社会和观念的必然产物，但又是一种合乎逻辑的选择。作为一个个体，没办法抗争，做出对自己有利的选择，不好么？</p><p>其实我们很多人不也是在做掏粪工的工作么？</p><p><a href="/2017/07/10/Your-role-in-capital-economy/">以前的相关文章</a>解释了不掏粪你能干啥。</p><a id="more"></a><p style="font-size: larger">我声明，我没有任何歧视掏粪工的意思。</p><p>以下是我2010年看到的新闻的全文，全文转过来，因为我发现这个新闻在一些地方(比如新华网)已经被删了。<span style="color: #FF0000;">重点内容我加了颜色，各位自己琢磨</span>。</p><blockquote><p>中国日报网消息：据《生活日报》消息，2日上午，在济南市城肥二处一间会议室，5名大学生淘粪工和城肥二处的负责人签订了聘用合同，期限5年，但这<span style="color: #FF0000;">并不意味着</span>这5年他们必须从事这一工种，如果<span style="color: #FF0000;">表现得好</span>，他们完全<span style="color: #FF0000;">可以进管理层</span>。</p><p></p><h3>2日还举行了简短的拜师仪式　老淘粪工手把手教他们淘粪</h3><p></p><p>2日上午还举行了一个简短的拜师仪式，济南市城肥二处为这些大学生选定了老的淘粪工作为指导老师，这些大学生向他们的指导老师献上鲜花，并且深深鞠躬。</p><p>这些老师都是工作多年的老淘粪工。张婷的指导老师卢爱章是城肥二处清洁四队四班老班长，济南市五一劳动奖章获得者。邢鸿雁的指导老师张兆斌曾获得先进工作者的称号，宿昊的指导老师付树华还是省劳动模范。</p><p>“现在这5个大学生中，有3个男生已经‘顶’起来了。”济南市城肥二处一名负责人介绍，2个女大学生上手相对慢一些。</p><p>“你看，淘粪时勺子要贴着旱厕的壁，这样淘得满，而且也不容易洒漏。”2日，在甸柳小区一处旱厕内，老淘粪工卢爱章正在教张婷如何淘粪。</p><p>对于这些大学生来说，从去年9月份开始上岗，经过这几个月的淘粪工作，加上老淘粪工的言传身教，他们已经初步摸到了一些门道。</p><p>身高1米74的大学生淘粪工孟佳介绍，她的个子较高，老淘粪工专门给她扁担上的链子加长了一块。链子长了，扁担上下有适度的颤悠，挑起来感觉轻一些。反之，如果扁担两端的链子很短，没有颤悠看起来好像很稳定，但是那样肩膀会感觉很沉。</p><p></p><h3>现在只想眼前的活儿　大学生称以后咋发展“还没琢磨”</h3><p></p><p>这5名大学生都在23——26岁之间，4名是本科学历。在淘粪工岗位上要干多少年？未来的道路有没有规划？</p><p>对此，5名大学生都表示，现在只想干好眼前的活儿，至于以后怎么发展还真没有考虑过。</p><p>“现在还没有琢磨这件事情。”宿昊介绍。</p><p>而孟佳也说，“我们已经<span style="color: #FF0000;">做好了长期做淘粪工的准备，而且也已经适应</span>。”至于以后的发展，“领导们肯定会看我们的表现。”</p><p></p><h3>他们签的合同期限是5年　但这不意味着5年内必须做淘粪工</h3><p></p><p>5名大学生签订的《山东省事业单位聘用合同》规定，城肥二处聘请5名大学生从事“<span style="color: #FF0000;">粪便净化处理工作</span>”，期限为5年。</p><p>济南市城肥二处有关负责人表示，签订合同，意味着这5名大学生已经成为城肥二处的正式职工，按照合同5年之内不准变动工作，但是这并不意味着这5名大学生5年之内必须要做淘粪工。</p><p>“应该说我们单位还是缺少人才，特别是高学历的人才。”这位负责人说，<span style="color: #FF0000;">国家培养一名大学生不容易</span>，这些大学生刚刚踏入社会，无论从事什么工种，都是一种锻炼。将来，不排除根据这些大学生的表现来对他们的工作岗位进行调整。如果大学生表现得好，<span style="color: #FF0000;">管理层的大门也向他们敞开</span>。</p><footer><strong>http://www.chinadaily.com.cn/m/shandong/c/2010-03/03/content_9531470.htm</strong></footer></blockquote><p>又看了一遍，加上自己的思考，杂七杂八的写在下面：</p><ol><li>大学生掏粪工们的回答很官方，不知是否是真实意愿。</li><li>如果评价机制是公平的，选拔真正好的人进入管理层，是好事；如果有暗箱操作，是糟糕的。</li><li>当时编制的诱惑还是很大的。从字缝里看，上升空间也是诱惑。</li><li>这些人现在应该比同龄人混得好吧。肯定比我好！</li><li>路都是自己选的，走自己选的路，「求仁得仁」，是好事。</li><li>这些人这么选恐怕有高人指点。</li><li>原来这个事就发生在济南，在我身边。</li><li>后续这种事好像少了，也可能是不稀罕了所以不报道了。</li><li>现在可能都要求研究生学历了罢。</li><li>10年间工资提升不大，房价倒是涨了大约2到5倍。这个他们应该没考虑到。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大学生争当掏粪工，是时代的悲剧，是畸形社会和观念的必然产物，但又是一种合乎逻辑的选择。作为一个个体，没办法抗争，做出对自己有利的选择，不好么？&lt;/p&gt;
+&lt;p&gt;其实我们很多人不也是在做掏粪工的工作么？&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/2017/07/10/Your-role-in-capital-economy/&quot;&gt;以前的相关文章&lt;/a&gt;解释了不掏粪你能干啥。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="分享" scheme="https://chriszheng.science/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>近思录 2018-09-07</title>
+    <link href="https://chriszheng.science/2018/09/07/Recent-thoughts-2018-09-07/"/>
+    <id>https://chriszheng.science/2018/09/07/Recent-thoughts-2018-09-07/</id>
+    <published>2018-09-07T08:04:29.000Z</published>
+    <updated>2018-11-24T09:34:56.227Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="no-further">No further</h2><blockquote><p>Hitherto shalt thou come, but no further.</p><footer><strong>Job 38:11,</strong><cite><a href="https://biblehub.com/job/38-11.htm" target="_blank" rel="noopener">biblehub.com/job/38-11.htm</a></cite></footer></blockquote><a id="more"></a><h2 id="cpu相关">CPU相关</h2><p><a href="https://lemire.me/blog/2018/09/07/avx-512-when-and-how-to-use-these-new-instructions/" target="_blank" rel="noopener">https://lemire.me/blog/2018/09/07/avx-512-when-and-how-to-use-these-new-instructions/</a></p><p>用特定指令集会让CPU降频，最终的结果是效率降低。一些CPU比如我用的E5可以刷微码取消这类限制，相当于打鸡血。Linux做这种操作相对容易。</p><p>当时还查了不少资料，一直没搞。上面的文章记录下来留给大家参考。</p><h2 id="中产阶级陷阱">「中产阶级陷阱」</h2><p>我说的中产阶级陷阱是，认为自己已经是中产阶级了，凡事站在富裕阶级想问题，而自己实际上只是贫困线上下的人。套用鲁迅先生的话就是「你也配姓赵。」</p><p>如何形象的描述这种陷阱呢，可以用数学描述。</p><p>大老板一月赚100万，我赚1000块，你月收入10万。我问你，你的钱数更接近谁呢？一般人会认为更接近大老板，因为大老板只是你钱数的10倍而你是我的100倍，可你不要忘了，我们一般说接近都是做差的，也就是说，你和老板的距离是100万 − 10万 = 90万，而你和我的距离是10万 − 0.1万 = 9.9万，90万 &gt; 9.9万。你说，你和谁更接近呢？</p><p>关于这个陷阱<a href="/2017/07/15/Recent-thoughts-2017-07-15/">我一年前写过一次</a>。上面做差和求比例是李永乐老师的视频看来的：</p><div class="video-container"><iframe src="//www.youtube.com/embed/EidjMIlQ3x4" frameborder="0" allowfullscreen></iframe></div><h2 id="大学生掏粪工"><a href="/2018/09/16/University-graduates-as-cleaners/">大学生掏粪工</a></h2><h2 id="近闻">近闻</h2><p>某985/211毕业的博士，去山东科技大学当辅导员了。这位博士科研做的还可以。</p><h2 id="下去">下去</h2><p><img src="/img/Down.png" alt="下去"></p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="320" height="86" src="//music.163.com/outchain/player?type=2&id=26323020&auto=0&height=66"></iframe><h2 id="胺">胺</h2><p>腐胺: 1,4-丁二胺</p><p>尸胺: 1,5-戊二胺</p><h2 id="用了5年的cz80优盘坏了">用了5年的CZ80优盘坏了</h2><p style="font-size: 4em">😢</p><h2 id="more-octave-color">More Octave color</h2><p><a href="http://shirt-ediss.me/matlab-octave-more-colours/" target="_blank" rel="noopener">http://shirt-ediss.me/matlab-octave-more-colours/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;no-further&quot;&gt;No further&lt;/h2&gt;
+&lt;blockquote&gt;&lt;p&gt;Hitherto shalt thou come, but no further.&lt;/p&gt;
+&lt;footer&gt;&lt;strong&gt;Job 38:11,&lt;/strong&gt;&lt;cite&gt;&lt;a href=&quot;https://biblehub.com/job/38-11.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;biblehub.com/job/38-11.htm&lt;/a&gt;&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快上车——玩路由(MTK板、洋垃圾网件、斐讯)的闲言碎语</title>
+    <link href="https://chriszheng.science/2018/08/01/Get-on-board-quickly/"/>
+    <id>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</id>
+    <published>2018-08-01T15:43:19.000Z</published>
+    <updated>2018-08-20T07:34:48.154Z</updated>
+    
+    <content type="html"><![CDATA[<p>玩路由有几年了，只是小打小闹，现在在自己的新家搞网，随手记录一些杂七杂八的想法。</p><a id="more"></a><p><img src="/img/Phicomm-get-on-board.jpg" alt="斐讯翻车？没时间解释了！快。上。车。"></p><p>其实我折腾过好几个路由了，很多心得和过程都没记录，可惜。</p><h2 id="5g信号的穿墙能力比2-4g弱">5G信号的穿墙能力比2.4G弱</h2><p>原理是<a href="https://zh.wikipedia.org/wiki/%E5%BC%97%E9%87%8C%E6%96%AF%E4%BC%A0%E8%BE%93%E6%96%B9%E7%A8%8B" target="_blank" rel="noopener">弗里斯传输方程</a>，接收功率<em>P</em><sub>r</sub>  ~ 波长<em>λ</em><sup>2</sup>，2.4G波长长，接收的功率大，信号好。</p><h2 id="网件r7500v2刷lede用着挺好">网件R7500v2刷LEDE用着挺好</h2><p>之前实验室用的是所谓的企业级路由TL-WVR308，人一多，就不行啦。换网件能好一些。</p><h2 id="之前买的二手mt7620a路由老遇到问题">之前买的二手MT7620A路由老遇到问题</h2><p>这个路由好像WAN和LAN总是隔离的，就算是WAN口连上网，有线还是不能上网。之前好像<a href="/2016/01/13/PandoraBox-switch-config/">改路由设置可以修复</a>，又好像重刷固件可以修复。算了，不折腾了，买新的多好。</p><p>早买早享受。</p><h2 id="斐讯k2p-a2折腾记录">斐讯K2P A2折腾记录</h2><p>我一直用下载QQ软件的方法测速，这样测出来的速度我感觉更接近实际情况。</p><img src="/img/Phicomm-speed.png" width="636" height="150" title="下载速度"><p>之前的速度最快只有4M/s。</p><p><img src="/img/Phicomm-great.jpg" alt="斐讯K2P真好"></p><p><a href="http://www.right.com.cn/forum/thread-221578-1-1.html" target="_blank" rel="noopener">斐讯K2P官改固件</a></p><p><a href="http://www.right.com.cn/forum/thread-261028-1-3.html" target="_blank" rel="noopener">新版的官方固件需要开启telnet后才能安装</a></p><p>前辈已经帮我们搞好了，不用费心了。</p><h3 id="禁用ssh密码登录">禁用ssh密码登录</h3><p><a href="https://openwrt.org/docs/guide-user/base-system/dropbear" target="_blank" rel="noopener">Dropbear Configuration</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">uci <span class="built_in">set</span> dropbear.@dropbear[0].PasswordAuth=off</span><br><span class="line">uci commit dropbear</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;玩路由有几年了，只是小打小闹，现在在自己的新家搞网，随手记录一些杂七杂八的想法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="经验分享" scheme="https://chriszheng.science/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="MT7620A" scheme="https://chriszheng.science/tags/MT7620A/"/>
+    
+      <category term="R7500v2" scheme="https://chriszheng.science/tags/R7500v2/"/>
+    
+      <category term="K2P" scheme="https://chriszheng.science/tags/K2P/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>近思录 2018-07-15</title>
+    <link href="https://chriszheng.science/2018/07/15/Recent-thoughts-2018-07-15/"/>
+    <id>https://chriszheng.science/2018/07/15/Recent-thoughts-2018-07-15/</id>
+    <published>2018-07-15T08:04:29.000Z</published>
+    <updated>2018-11-24T09:34:52.487Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近写的少，有一些坑也没有填。写的少主要是觉得有价值的东西太少了。好比诗歌，虽然传诵千年，仍旧能带给人共鸣。</p><a id="more"></a><h2 id="最近想到和看到的诗词">最近想到和看到的诗词</h2><blockquote><p>漠漠轻寒上小楼，晓阴无赖似穷秋。淡烟流水画屏幽。 <br><u>自在飞花轻似梦</u>，无边丝雨细如愁。宝帘闲挂小银钩。</p><footer><strong>秦观</strong><cite>《浣溪沙·漠漠轻寒上小楼》</cite></footer></blockquote><blockquote><p>帘外雨潺潺，春意阑珊。罗衾不耐五更寒。<u>梦里不知身是客，一晌贪欢。</u> <br>独自莫凭栏，无限江山，别时容易见时难。流水落花春去也，天上人间。</p><footer><strong>李煜</strong><cite>《浪淘沙令》</cite></footer></blockquote><h2 id="arch-linux-7月的bug">Arch Linux 7月的Bug</h2><p>lvm2导致的。</p><p><a href="https://bbs.archlinux.org/viewtopic.php?id=238554" target="_blank" rel="noopener">https://bbs.archlinux.org/viewtopic.php?id=238554</a></p><p><a href="https://bugs.archlinux.org/task/59266" target="_blank" rel="noopener">https://bugs.archlinux.org/task/59266</a></p><h2 id="自由软件-自由社会">自由软件，自由社会</h2><p><a href="https://fsfs-zh.readthedocs.io/zh/latest/" target="_blank" rel="noopener">自由软件，自由社会（第三版）</a>。</p><h2 id="code-org"><a href="https://code.org/" target="_blank" rel="noopener">Code.org</a></h2><p><a href="https://studio.code.org/c/623037897" target="_blank" rel="noopener">https://studio.code.org/c/623037897</a></p><h2 id="崇祯的性格弱点">崇祯的性格弱点</h2><div class="video-container"><iframe src="//www.youtube.com/embed/dmHAIlV13OA" frameborder="0" allowfullscreen></iframe></div><ol><li><p>刻薄寡恩</p></li><li><p>不担责任</p></li><li><p>不理性</p></li></ol><p>如果是和平时期，有这些问题还不至于灭亡，在乱世可就不免亡国了。</p><p>也得承认，历史上「乔布斯」式的人物太少了，既便崇祯皇帝没有这些缺点，也不见得好到哪里去。历史不容假设。</p><p>以史为鉴。</p><h2 id="看了-前任3：再见前任">看了《前任3：再见前任》</h2><p>心得是，如果什么都不做，肯定会走向失败，千万别报幻想。</p><h2 id="准备上车k2p了">准备上车K2P了</h2><p>之前买了洋垃圾的网件，但买不到了，而且家里用对带机量要求不是很高，于是琢磨上车。我上车肯定不会原价，而是买那种人家已经下车的二手货，这年头这种也不好买了，从微店上买了，不知道怎么样。</p><p><a href="http://www.right.com.cn/forum/thread-221578-1-1.html" target="_blank" rel="noopener">http://www.right.com.cn/forum/thread-221578-1-1.html</a></p><h2 id="be-a-reviewer">Be a Reviewer</h2><p><a href="https://editorresources.taylorandfrancisgroup.com/reviewers-guidelines-and-best-practice/" target="_blank" rel="noopener">https://editorresources.taylorandfrancisgroup.com/reviewers-guidelines-and-best-practice/</a></p><h2 id="octave-online">Octave Online</h2><p><a href="https://octave-online.net/" target="_blank" rel="noopener">https://octave-online.net/</a></p><h2 id="it-s-foss">It’s FOSS</h2><p><a href="https://itsfoss.com/protonmail/" target="_blank" rel="noopener">https://itsfoss.com/protonmail/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近写的少，有一些坑也没有填。写的少主要是觉得有价值的东西太少了。好比诗歌，虽然传诵千年，仍旧能带给人共鸣。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为什么Windows下的Emacs这么慢？</title>
+    <link href="https://chriszheng.science/2018/07/12/Why-is-Emacs-so-slow-on-Windows/"/>
+    <id>https://chriszheng.science/2018/07/12/Why-is-Emacs-so-slow-on-Windows/</id>
+    <published>2018-07-12T13:56:09.000Z</published>
+    <updated>2018-07-15T08:03:23.813Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个问题经常见，总结一下我知道的原因。写这个总结主要是方便今后<a href="https://emacs-china.org/t/topic/3276/31" target="_blank" rel="noopener">回答Emacs社区里的提问</a>。</p><a id="more"></a><h2 id="字体bug">字体Bug</h2><p>对于中文用户来说，<a href="/2016/08/24/Why-Emacs-lags-when-display-Chinese-under-MS-Windows/">字体Bug会导致Emacs变慢</a>。这种情况常见于刚开始使用Emacs的新手，也给很多人造成了Emacs很慢的印象。如果您的Emacs在Windows下很卡50%的可能是这个Bug导致的，如果您是新手，可能性上升到80%。</p><p>解决方法：<a href="/2015/04/26/Emacs-font-settings/">合理设置字体</a>。</p><h2 id="进程模式和io策略">进程模式和IO策略</h2><p>Windows和GNU/Linux毕竟是两种不同的操作系统。GNU/Linux以及其他的*nix系统里，进程的启动非常快，处理大量的IO很快；而Windows正好相反，进程启动慢，对于大量数据量少的IO也慢。这个原因导致Emacs在Windows下操作文件和运行外部程序的时候慢。一个典型的例子是Magit，因为需要频繁启动Git，每个操作都要等好几秒。还有Tramp，我感觉也是频繁启动外部程序拖慢的。</p><p>另外，不论是Cygwin环境的Emacs还是用MinGW编译出来的Emacs，依赖的都不是微软的运行时，和系统自带的已经预先加载的DLL不同，也会导致Emacs以及其他程序变慢，这种慢主要体现在启动的时候。</p><p>总得来说，这个原因占30%的情况。</p><p>解决方法：貌似没有什么好的解决方案，只能对于具体的包和操作进行一些优化，可专注于优化Emacs在Windows下的体验的开发者太少了，而且根据Emacs的开发目标也确实不应该为Emacs做这种优化。</p><p>关于这个问题<a href="https://www.reddit.com/r/emacs/comments/8v4v7o/why_is_emacs_so_slow_on_windows/" target="_blank" rel="noopener">Reddit上有相关讨论</a>。</p><h2 id="缺少功能">缺少功能</h2><p>上面的两个问题是慢的主要原因，下面的都是些小问题，也不同程度拖慢Emacs。首先Windows系统缺少一些Emacs需要的功能，比如运行shell的时候只能用管道，因为没有PTY，也是慢的原因。</p><p>解决方法：这个问题很多时候是无解的。</p><h2 id="键盘重复率">键盘重复率</h2><p>Windows的键盘重复率不能设的非常快，有个上限，也给人很慢的感觉，比如你用<code>C-f</code>光标向前，如果重复率慢，光标走的就慢了，而在Linux下虽然图形界面的效率可能低一点，但键盘快，你也就觉得快。这个问题我感觉无解，不知道萎软怎么想的。</p><h2 id="图形界面">图形界面</h2><p>因为Emacs是移植到Windows上的，开发者关注少，等等原因，图形界面方面也慢一点。这种慢我感觉是比较次要的，毕竟现在的电脑速度都很快了。</p><h2 id="编译">编译</h2><p>以前的Emacs版本特别是官方的，用的是开发不活跃的MinGW环境编译的，GCC版本和编译参数都跟不上，也导致慢。现在的版本基于MSYS2/MinGW-w64，编译参数也好了，这个问题基本解决了。</p><h2 id="病毒-杀毒软件等">病毒、杀毒软件等</h2><p>Windows系统偶尔会遇到这类问题。</p><p>总得来说，慢是可以预期的，是可以解释的，也可以部分解决。要想用的爽，早日拥抱自由的系统是正道。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个问题经常见，总结一下我知道的原因。写这个总结主要是方便今后&lt;a href=&quot;https://emacs-china.org/t/topic/3276/31&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;回答Emacs社区里的提问&lt;/a&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Emacs小技巧" scheme="https://chriszheng.science/categories/Emacs%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="Emacs" scheme="https://chriszheng.science/tags/Emacs/"/>
+    
+      <category term="MS-Windows" scheme="https://chriszheng.science/tags/MS-Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>专利申请经验</title>
+    <link href="https://chriszheng.science/2018/07/01/Patent-application-experience/"/>
+    <id>https://chriszheng.science/2018/07/01/Patent-application-experience/</id>
+    <published>2018-07-01T08:38:12.000Z</published>
+    <updated>2018-12-01T08:41:58.424Z</updated>
+    
+    <content type="html"><![CDATA[<p>先上图。</p><a id="more"></a><p><img src="/img/Patent-application-1.png" alt="山东某高校专利申请情况统计"></p><p><img src="/img/Patent-application-2.png" alt="山东某高校专利申请情况统计 放大"></p><p>也就是说，非常少的人申请了大量的专利。这种现象怎么解释呢？</p><ol><li>忽视和轻视专利的重要性。</li><li>怕麻烦、懒、不掌握技术、怕花钱。</li></ol><p>这和<a href="/2016/06/11/Bandwagon-Nginx-meanline-and-HTTPS/">换HTTPS</a>是那么相似。</p><p>我写这个帖子不可能把专利申请的全部技巧都介绍一遍，这个帖子更像我本人的记事本，流水账写一些稀奇古怪的经验。需要注意的是我的需求和您不一样，我的解决方法和对应的工具链也偏门，是不是真能帮到您，难说。</p><p>还是用<a href="/2017/01/02/One-sentence-tips-on-software/">软件小技巧</a>的套路，一条一条的写。</p><ol><li><p>CPC要求图像尺寸应该在165 mm × 245 mm以下，图片最大清晰度是300 DPI，则理论上图片分辨率不能高于1947 × 2891。 <br>为什么是300 DPI呢，因为CPC系统严重以来Windows XP + Word 2003的技术，Word 2003里有能输出TIF图片的打印机，这个打印机的最大分辨率就是300 DPI。所以你的图片分辨率就别再高了，高了也打不出来。</p></li><li><p>接上条。如何做到呢？首先生成尽量大的图，有白边切掉(PhotoShop和XnView可以，我常用后者)，然后缩小成期望的分辨率并调DPI为300(XnView可以做到)。许可的情况下，DPI越大越好，因为DPI越大图的细节约丰富，或者说更“细腻”。附上<a href="/2015/08/13/DPI-and-page-scale/">我解释DPI概念的帖子</a>。</p></li><li><p>切白边和调DPI可以用ImageMagic一步做到，方法<a href="/2017/01/02/One-sentence-tips-on-software/">软件小技巧</a>里有。</p></li><li><p>据说可以导入PDF，我没成功过。</p></li><li><p>导入Word文档也会出错，只能用基于XML的系统往里面复制粘贴。CPC系统，我之前的牢骚说的就是你。</p></li></ol><h2 id="一种可能导致专利上传失败的原因和解决方法">一种可能导致专利上传失败的原因和解决方法</h2><p>专利上传失败的一种原因是附图的页数和实际不符。可能导致这个错误的原因是附图采用批量导入功能插入，导入图片后相应的文件仍为未编辑状态。</p><p>解决方法是，在附图页面随便插入文字，然后删除，再点击全部保存。修改并保存后，相应的文件状态应为已编辑状态，如果不是，可重复该操作。之后在请求书中导入文件清单，导出案卷，即可成功上传。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先上图。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="经验分享" scheme="https://chriszheng.science/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="科学研究" scheme="https://chriszheng.science/tags/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>多语言(C++, NodeJS)实现统计输入某数的次数</title>
+    <link href="https://chriszheng.science/2018/06/25/Multi-languages-count-occurrences/"/>
+    <id>https://chriszheng.science/2018/06/25/Multi-languages-count-occurrences/</id>
+    <published>2018-06-24T16:23:24.000Z</published>
+    <updated>2018-06-24T17:39:56.927Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述：从一系列输入的数中找某数出现的次数，输入是一系列数和要查找的数，输出是次数。</p><a id="more"></a><p>这个问题是坐火车的时候群里一位朋友的问的，还要求用C++实现，结果他们学的是C式的C++，于是想用纯的C++解决一下这个问题。因为在火车上，只能用手机编程，高铁跑出100公里我还没敲完，下车了。回来又继续写，发现之前写的还是错的，折腾了一个对的版本。</p><h2 id="c-c-11">C++ (C++11)</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// g++ a.cpp -o a.out</span></span><br><span class="line"><span class="comment">// ./a.out</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; v;</span><br><span class="line">  <span class="keyword">int</span> find = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">int</span> input = <span class="number">0</span>;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Input numbers, enter -1 to end:"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">  <span class="keyword">while</span> (<span class="built_in">std</span>::<span class="built_in">cin</span> &gt;&gt; input &amp;&amp; input != <span class="number">-1</span>) &#123;</span><br><span class="line">    v.push_back(input);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Find: "</span>;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cin</span> &gt;&gt; find;</span><br><span class="line">  <span class="keyword">auto</span> found = <span class="built_in">std</span>::count(v.begin(), v.end(), find);</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Found "</span> &lt;&lt; found &lt;&lt; <span class="string">" times."</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">  <span class="keyword">return</span> found;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>或者还有一种简单的实现方法，不用<code>-1</code>结束输入，而是用<code>EOF</code> (*nix世界用<code>Ctrl+D</code>，Windows用<code>Ctrl+Z</code>后回车)结束输入，然后<code>cin.clear()</code>，继续写后面的就行。但这种写法在手机上和Windows的MSYS2环境里都出错。</p><p>上面的代码可以在手机上编译运行，安卓手机装Termux后再装Clang就好。话说Clang不是效率高么，这么个破代码编译要好几秒，Termux里压根没GCC，唉。</p><p>这个代码用了自动类型(其实就一个<code>int</code>)，所以必须C++11以上才行。</p><h2 id="node-js">Node.js</h2><p>现在(Node.js 10.5.0)已经支持原生大数(BigInt)了，我觉得Node.js有可能变成一种可以用于ACM的语言，而且Node.js不用编译，跨平台还高效。这个题其实也是ACM题，只不过是最容易的那种。</p><p>花了一点时间边查边写，写出来了，这个输入输出真别扭啊。这个代码和上面的代码一样，用了比较新的技术，必须比较高的版本才能运行，对于自娱自乐来说很合适。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// node a.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> readline = <span class="built_in">require</span>(<span class="string">'readline'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rl = readline.createInterface(&#123;</span><br><span class="line">  input: process.stdin,</span><br><span class="line">  output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> v = [];</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Input numbers, -1 to end:'</span>);</span><br><span class="line"></span><br><span class="line">rl.on(<span class="string">'line'</span>, (line) =&gt; &#123;</span><br><span class="line">  <span class="comment">// console.log(`Received: $&#123;line&#125;`);</span></span><br><span class="line">  <span class="keyword">if</span> (line === <span class="string">'-1'</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Done.'</span>);</span><br><span class="line">    rl.question(<span class="string">'Find? '</span>, (find) =&gt; &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Found '</span> + v.filter(<span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> e === <span class="built_in">parseInt</span>(find, <span class="number">10</span>);</span><br><span class="line">      &#125;).length + <span class="string">' times.'</span>);</span><br><span class="line">      rl.close();</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> num = <span class="built_in">parseInt</span>(line, <span class="number">10</span>);</span><br><span class="line">  <span class="keyword">if</span> (num.isNaN)</span><br><span class="line">    rl.close();</span><br><span class="line">  v.push(num);</span><br><span class="line">&#125;).on(<span class="string">'close'</span>, () =&gt; &#123;</span><br><span class="line">  process.exit(<span class="number">0</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>应该很容易改成支持大数的版本。</p><p>试了一下，随便输入一个很大的数，上面的代码是可以正常工作的，但好像并不是因为用了大数而是转成了浮点数？我也不知道。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// node a.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> readline = <span class="built_in">require</span>(<span class="string">'readline'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rl = readline.createInterface(&#123;</span><br><span class="line">  input: process.stdin,</span><br><span class="line">  output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> v = [];</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Input numbers, -1 to end:'</span>);</span><br><span class="line"></span><br><span class="line">rl.on(<span class="string">'line'</span>, (line) =&gt; &#123;</span><br><span class="line">  <span class="comment">// console.log(`Received: $&#123;line&#125;`);</span></span><br><span class="line">  <span class="keyword">if</span> (line === <span class="string">'-1'</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Done.'</span>);</span><br><span class="line">    rl.question(<span class="string">'Find? '</span>, (find) =&gt; &#123;</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">const</span> t = BigInt(find);</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'Found '</span> + v.filter(<span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">return</span> e === t;</span><br><span class="line">        &#125;).length + <span class="string">' times.'</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">        <span class="built_in">console</span>.error(err);</span><br><span class="line">        process.exit(<span class="number">-1</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      rl.close();</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> num = BigInt(line);</span><br><span class="line">    <span class="keyword">if</span> (num != line)</span><br><span class="line">      rl.close();</span><br><span class="line">    v.push(num);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">    <span class="built_in">console</span>.error(err);</span><br><span class="line">    process.exit(<span class="number">-1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;).on(<span class="string">'close'</span>, () =&gt; &#123;</span><br><span class="line">  process.exit(<span class="number">0</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>WDYT?</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;问题描述：从一系列输入的数中找某数出现的次数，输入是一系列数和要查找的数，输出是次数。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="编程技术" scheme="https://chriszheng.science/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="C++" scheme="https://chriszheng.science/tags/C/"/>
+    
+      <category term="NodeJS" scheme="https://chriszheng.science/tags/NodeJS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>近思录 2018-06-23</title>
+    <link href="https://chriszheng.science/2018/06/23/Recent-thoughts-2018-06-23/"/>
+    <id>https://chriszheng.science/2018/06/23/Recent-thoughts-2018-06-23/</id>
+    <published>2018-06-22T16:27:59.000Z</published>
+    <updated>2018-11-24T09:34:46.687Z</updated>
+    
+    <content type="html"><![CDATA[<p>「日知其所亡，月无忘其所能。」</p><a id="more"></a><h2 id="测蒸馏水的ph值">测蒸馏水的pH值</h2><p>是愚蠢的。理论上也是一般人认为的，蒸馏水的pH值应该是7，但实际情况是温度(温度越高中性对应的pH值越小，原理是平衡移动，不代表水变酸了)和溶解的二氧化碳(相当于加入碳酸)会使蒸馏水的pH值小于7。更糟糕的是，蒸馏水里的离子浓度非常低，测它的pH值会比测一般溶液的困难。广义上蒸馏水也包括很纯的电导水，电导水就是非常纯的水，因为实在太纯了，所以只能用电导率来表示它的纯度，电导率越低，说明里面的离子越少，也即纯度越高。选择电导率而非pH值来表征水的纯度也侧面论证了pH值不是表示蒸馏水纯度的理想参数。总结一下就是：</p><ol><li>蒸馏水溶解二氧化碳所以pH值一般小于7。</li><li>温度升高也会使pH值略微降低，但这一点不表示水变酸了。</li><li>一般说的蒸馏水里离子浓度都很低，所以不太容易测定它的pH值。</li><li>pH值也不是表示蒸馏水纯度的参数，一般用电导率表示水的纯度，电导率越低纯度越高。</li><li>综上，测蒸馏水的pH值是笨笨的行为。</li></ol><h2 id="当代的-何不食肉糜？-还少么">当代的「何不食肉糜？」还少么</h2><p>历史课本里有一位晋惠帝，著名的事件是饥荒之年百姓饿死，他反问百姓「何不食肉糜」。普遍的评论是晋惠帝弱智低能。到底他是否弱智我不知道，而且我也不是研究历史的，对于这位皇帝是否弱智也不感兴趣，可有一点，当时的皇帝是「生于深宫之中，长于妇人之手」，民间疾苦自然是无从接触的，如果单从他的这些言行评论他的智商，有点过分了，也不科学。</p><p>关于「何不食肉糜？」稍微延伸一点，不论是一千年前还是今天，信息的不对称都是非常严重的，事实上，今天的信息不对称相比过去是有过之而无不及，千万不要以为自己看了几篇朋友圈文，在百度上搜索了一下，就「知道」(这里指知道道理)了。</p><p>附两个链接供大家阅读：</p><ul><li><p><a href="https://baike.baidu.com/item/%E5%8F%B8%E9%A9%AC%E8%A1%B7" target="_blank" rel="noopener">百科百科司马衷词条</a></p></li><li><p><a href="https://zh.wikipedia.org/zh-hans/%E6%99%89%E6%83%A0%E5%B8%9D" target="_blank" rel="noopener">维基百科晋惠帝词条</a></p></li></ul><p>这个「何不食肉糜？」出自《太平御览》，原文也说了「蒙蔽」。</p><blockquote><p>及天下荒乱，百姓馁甚，帝曰：“何不食肉糜？”其蒙蔽皆此类也。</p><footer><strong>《太平御览·皇王部二十二·西晋惠皇帝》</strong></footer></blockquote><h2 id="自我淘汰-和-延迟淘汰">「自我淘汰」和「延迟淘汰」</h2><p>自我淘汰：穷人的孩子不上学，即自我淘汰，因为上学也没有好出路。</p><p>延迟淘汰：穷人的孩子上了不好的学，花了学费，反而没有学到本领，就业时找不到理想工作，被淘汰。这种淘汰比直接淘汰，比如没考上大学，要温柔，但也更残酷，因为学生花了4年时间和大量金钱，最终还是没有免于被淘汰的厄运。</p><p>这种延迟淘汰就是放逐。</p><p><img src="/img/Examination-and-elimination.png" alt="高考和淘汰"></p><p>这些理论来自于如下的视频，我不知道您能不能正常观看：</p><div class="video-container"><iframe src="//www.youtube.com/embed/_uyYo5WFsjU" frameborder="0" allowfullscreen></iframe></div><p>话说，上面的延迟淘汰我没搜到原文，好像有中文的学位论文提到这个概念。</p><p>这些观点吧，我还是要反驳一句：个人努力还是重要的。千万别放弃努力，努力之余也别忘了「考虑历史进程」。</p><h2 id="沉默成本">沉默成本</h2><p>已经花出去的无法收回的成本，叫沉默成本。决策的时候不要考虑沉默成本。</p><p>这个观点来自李永乐老师的视频：</p><div class="video-container"><iframe src="//www.youtube.com/embed/IUDIz1WwBXg" frameborder="0" allowfullscreen></iframe></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;「日知其所亡，月无忘其所能。」&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>放逐Excel：将Emacs、Coreutils和Octave用于学生的作业成绩管理</title>
+    <link href="https://chriszheng.science/2018/06/12/Banishing-Excel-using-Emacs-Coreutils-and-Octave-for-assignment-management/"/>
+    <id>https://chriszheng.science/2018/06/12/Banishing-Excel-using-Emacs-Coreutils-and-Octave-for-assignment-management/</id>
+    <published>2018-06-11T16:19:44.000Z</published>
+    <updated>2018-07-01T07:20:18.166Z</updated>
+    
+    <content type="html"><![CDATA[<p>我一直不大喜欢Excel，所以一直尝试用其他软件代替Excel。</p><a id="more"></a><h2 id="excel的优缺点及替代思路">Excel的优缺点及替代思路</h2><p>既然要替代Excel，首先得明确Excel的优缺点。</p><p>Excel的优点有：</p><ul><li>易用。</li><li>功能全面，也可以数据处理，也可以画图。</li><li>和Word等办公软件紧密结合。</li></ul><p>Excel的缺点：</p><ul><li>批量处理文件不方便。当然可以用宏，可我没用过，也没见人用过。</li><li>画的图不好看。</li><li>使用私有格式，不开放，不利于迁移和数据交流。</li></ul><p>而用Emacs+Coreutils+Octave的组合，易用性差了很多，批量处理的能力提高了，而且可以借助Octave自由的画出想要的图。</p><p>需要说明的是，基于Emacs的org-mode可以实现本文的功能，但我觉得“over-engineering”了，不喜欢。Excel也不是一点都不用，如果是轻度使用，比如用于输入数据，在保证保存文件格式是通用的情况下，也可以。</p><h2 id="用emacs-coreutils-octave实现excel的功能">用Emacs+Coreutils+Octave实现Excel的功能</h2><h3 id="基本编辑">基本编辑</h3><p>就像上面说的，用Excel进行编辑也很好，如果用Emacs的话，如不借助专门的包(包也不好用)，编辑电子表格的数据不简单。如果只是对数据进行简单的编辑，借助Emacs方便的宏功能可以相对容易的批量处理。而且，现在Emacs在区域编辑(rectangle)方面功能也还好。</p><p>这里用Emacs不是必须的，可能更多的是出于习惯，谈不上替代Excel。希望我的叙述不至于让Emacs粉丝失望。</p><h3 id="合并数据">合并数据</h3><p>实例：从某作业系统可以导出学生的作业成绩，但排序是乱的，而且同一次作业有些同学没交，需要特别处理。我想把多次作业的成绩汇总到一块。</p><p>分析：用Excel借助排序、筛选似乎也可以实现目的。</p><p>这里我用Coreutils里的join程序(<a href="https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html" target="_blank" rel="noopener">join的手册</a>)结合awk、sort和Emacs来实现数据合并。</p><p>首先准备数据。可以导出，可以复制，获得数据用Tab分隔，形式类似：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1711005047  袁小飞  2018年5月7日 21:47:26  3.0  李洁  教学班    查看    </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1711005050  吕小清  2018年5月7日 21:34:12  3.0  李洁  教学班    查看    </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1711005058  刘小鹏  2018年5月6日 22:30:51  3.0  李洁  教学班    查看</span><br></pre></td></tr></table></figure><p>这里是复制的，格式不好，首先删空行，操作是<code>M-x flush-lines RET ^\s-*$ RET</code>，<a href="/2016/09/04/Emacs-remove-empty-lines/">原理写过不再赘述</a>。</p><p>删空行后，还需要提取出我们需要的数据。第五列成绩肯定是需要的。除此之外，可以保留第一列的学号。我用awk把需要的提取出来，在Emacs里的操作是：首先选中文字，然后<code>C-u M-| awk '{print $1 &quot;\t&quot; $5}' RET</code>。这里把选中的文字用awk处理，结果再插入，相当于替换了原有的文字，结果如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">17110050473.0</span><br><span class="line">17110050503.0</span><br><span class="line">17110050583.0</span><br></pre></td></tr></table></figure><p>因为join需要数据是排序好的，我们再排序一下，方法是选中文字后<code>C-u M-| sort RET</code>。其实这一步和上面一步可以合并。最后得到的结果保存成文件就可以，比如<code>1.txt</code>。这样的作业有很多，依次操作，可以得到很多的文件。你们可能觉得操作太繁琐了，可因为这些操作全部是用键盘进行的，很容易进行批处理。</p><p>最后是合并。为了便于管理，我合并的时候都合并到一个「人名列表」，这个列表类似下面的样子：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">131711005017徐小制药1701</span><br><span class="line">141711005018姜小制药1701</span><br></pre></td></tr></table></figure><p>假设人名列表是<code>name.txt</code>，作业是<code>1.txt</code>、<code>2.txt</code>和<code>3.txt</code>，那么命令是</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">join 1.txt 2.txt | join - 3.txt &gt; 3homework.txt</span><br><span class="line">join name.txt 3homework.txt -1 2 -t $<span class="string">'\t'</span> &gt; res.txt</span><br></pre></td></tr></table></figure><p>第一句那么写是因为join一次只能合并俩文件。我解决不了的问题是出来的文件把学号放最前面的，这个还得再研究。</p><p>Todo: 写个bash脚本让合并能自动进行。</p><h3 id="筛选数据">筛选数据</h3><p>如果我想知道分数在70到80分之间的同学的人数，应该怎么做呢？可以用Octave做，代码是</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">score = [60 70 85 70 78];</span><br><span class="line">numel(score(score &gt;=70 &amp; score &lt; 80))</span><br></pre></td></tr></table></figure><h3 id="画图">画图</h3><p>这里画图是为了分析学生的成绩，所谓的「成绩分析」是也。我个人不喜欢R，所以总想用Octave实现R里的那些功能。虽然Octave的统计分析功能比Matlab弱，比R更是弱的多，可对于画个直方图再拟合一个正态分布的需求还是可以满足的，效果如下图所示。</p><p><img src="/img/histfit.png" alt="histfit"></p><p>Octave的statistics包里有个函数<code>histfit</code>专门做这种图的，用起来也简单，比如对一系列成绩，画上面的图的代码是</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pkg load statistics</span><br><span class="line">close all; histfit(yao1, [55 65 75 85]); set(gca(), &quot;xdir&quot;, &quot;reverse&quot;); axis(&quot;tight&quot;); xlabel(&quot;Score&quot;); ylabel(&quot;Student&quot;); print(&quot;histfit.ps&quot;, &quot;-color&quot;);</span><br></pre></td></tr></table></figure><p>上面的代码需要对<code>histfit</code>函数做一些修改，我已经改了，但没写文档，如果有可能的话可以贡献给社区。</p><p>上面的代码还演示了如何改<em>x</em>轴的方向。</p><h3 id="统计">统计</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我一直不大喜欢Excel，所以一直尝试用其他软件代替Excel。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="经验分享" scheme="https://chriszheng.science/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="Octave" scheme="https://chriszheng.science/tags/Octave/"/>
+    
+      <category term="Coreutils" scheme="https://chriszheng.science/tags/Coreutils/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>转发新闻：「小狼毫」輸入法更新，發佈0.11版</title>
+    <link href="https://chriszheng.science/2018/04/10/Rime-Weasel-0-11-released/"/>
+    <id>https://chriszheng.science/2018/04/10/Rime-Weasel-0-11-released/</id>
+    <published>2018-04-10T01:31:41.000Z</published>
+    <updated>2018-04-11T12:59:38.899Z</updated>
+    
+    <content type="html"><![CDATA[<p>新闻</p><p><a href="https://www.v2ex.com/t/445523" target="_blank" rel="noopener">https://www.v2ex.com/t/445523</a></p><a id="more"></a><p>下载</p><p><a href="http://rime.im/download/#windows" target="_blank" rel="noopener">http://rime.im/download/#windows</a></p><p>用了几天，似乎修复了在Word中重复输入的Bug。但感觉有点卡，可能是我的幻觉。</p><p>总体上，升级很平滑，直接使用之前的配置，比Firefox让人省心多了。</p><p>感谢作者们。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;新闻&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.v2ex.com/t/445523&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.v2ex.com/t/445523&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="分享" scheme="https://chriszheng.science/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="Rime" scheme="https://chriszheng.science/tags/Rime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>拥抱量子火狐(Firefox Quantum)</title>
+    <link href="https://chriszheng.science/2018/04/08/Firefox-Quantum/"/>
+    <id>https://chriszheng.science/2018/04/08/Firefox-Quantum/</id>
+    <published>2018-04-08T06:10:54.000Z</published>
+    <updated>2018-07-23T06:37:48.760Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天用Firefox怎么也打不开一个网站，可能和我的配置有关，越发感觉停留在53版本的<a href="https://sourceforge.net/projects/pcxfirefox/" target="_blank" rel="noopener">pcxFirefox</a>跟不上时代了，索性换成<a href="https://sourceforge.net/projects/lawlietfox/" target="_blank" rel="noopener">lawlietfox</a>，这一换也宣告了我正式切换到了新的量子(Quantum)内核的火狐。</p><p>2018-07-23 <strong>Update</strong>: 弃用lawlietfox了，经常占用非常多内存然后崩溃。</p><a id="more"></a><p><img src="/img/Quantum-Firefox-nightly.png" alt="量子火狐Nightly版图标"></p><p style="font-size: larger">遗留的扩展全部阵亡。火狐的扩展生态从零开始。</p><h2 id="优势pros">优势Pros</h2><ul><li>快。</li><li>好看。</li><li>自带了一些方便的功能，比如截图。</li></ul><h2 id="缺点cons">缺点Cons</h2><ul><li>就像上面说的，扩展全部阵亡，无法平滑迁移。</li></ul><h2 id="重新配置firefox">重新配置Firefox</h2><p>思路：总体的思路就是尽量少用自己配置，用现成方案。</p><h3 id="配置中文界面">配置中文界面</h3><p>首先下载<a href="https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/?src=api" target="_blank" rel="noopener">中文语言包</a>，安装后，设置<code>intl.locale.requested</code>为<code>zh-CN</code>，之前的配置方法似乎失效了。<a href="https://support.mozilla.org/en-US/kb/use-firefox-interface-other-languages-language-pack" target="_blank" rel="noopener">出处</a>。</p><h3 id="代理">代理</h3><p><a href="https://addons.mozilla.org/en-US/firefox/addon/switchyomega/" target="_blank" rel="noopener">Proxy SwitchyOmega</a>。</p><h3 id="广告过滤">广告过滤</h3><p><a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" target="_blank" rel="noopener">uBlock Origin</a>。</p><h3 id="网页字体">网页字体</h3><p><a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/" target="_blank" rel="noopener">Stylish</a>，安装<a href="https://userstyles.org/styles/100473/004-forcemyfonts-chinese-firefoxchromeie-catcat520" target="_blank" rel="noopener">现成的样式</a>。</p><h3 id="增加-常用网站-的数量">增加「常用网站」的数量</h3><p>以往用Firefox总会使用一些扩展来增强起始页的功能，到了量子火狐这些扩展都失效了，只能无奈的使用自带的功能。相比以前的扩展，自带的功能的可定制性非常差，比如新标签页的「常用网站」功能，如果用自带的，只能从两列12个格子和一列6个格子两种模式中选择。让人不爽。</p><p><img src="/img/Quantum-Firefox-default-startup-page.png" alt="常用网站默认最多12个格子"></p><p>稍微搜索一下，找到了灵感，这个数量有可能是可以配置的，于是打开<code>about:config</code>，进入<code>browser.newtabpage</code>，看到了<code>browser.newtabpage.activity-stream.topSitesCount</code>，随便设成更大的数，格子确实变多了。</p><p><img src="/img/Quantum-Firefox-more-topsites.png" alt="常用网站可以显示更多的格子"></p><h3 id="如何在任意页面截图">如何在任意页面截图</h3><p>虽然自带了截图功能，但并非所有页面都可以显示截图的按钮的，而且，<a href="https://github.com/mozilla-services/screenshots/issues/2491" target="_blank" rel="noopener">目前截图功能还没有快捷键</a>，所以只能依靠调试工具里的截图功能。</p><p>要注意，调试工具里的截图功能默认不开启，需要在右上角的<code>工具箱选项</code>里<code>可用的工具箱</code>。</p><p><img src="/img/Firefox-howto-enable-screenshot.png" alt="如何开启调试工具里的截图功能"></p><h3 id="禁用-不安全密码-提示">禁用「不安全密码」提示</h3><p><code>insecure_field_warning.contextual.enabled</code>设为<code>false</code>。</p><p>提示是好的，但太碍眼了，很多网站没有HTTP，这不是用户能决定的，用户同样不能决定是否要使用那些系统。所以这个提示是善意的，也是无用的。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天用Firefox怎么也打不开一个网站，可能和我的配置有关，越发感觉停留在53版本的&lt;a href=&quot;https://sourceforge.net/projects/pcxfirefox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pcxFirefox&lt;/a&gt;跟不上时代了，索性换成&lt;a href=&quot;https://sourceforge.net/projects/lawlietfox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;lawlietfox&lt;/a&gt;，这一换也宣告了我正式切换到了新的量子(Quantum)内核的火狐。&lt;/p&gt;
+&lt;p&gt;2018-07-23 &lt;strong&gt;Update&lt;/strong&gt;: 弃用lawlietfox了，经常占用非常多内存然后崩溃。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Firefox" scheme="https://chriszheng.science/categories/Firefox/"/>
+    
+    
+      <category term="Firefox" scheme="https://chriszheng.science/tags/Firefox/"/>
+    
+  </entry>
+  
+</feed>

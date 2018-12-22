@@ -1,0 +1,15 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /emacs-beginner-guide/
+Allow: /emacs-w64/
+Allow: /pua/
+Allow: /planet-emacs-cn/
+Allow: /essentials-of-academic-writing/
+
+# Disallow: /js/
+# Disallow: /css/
+# Disallow: /fancybox/
+
+Sitemap: https://chriszheng.science/sitemap.xml
