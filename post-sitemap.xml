@@ -8,7 +8,15 @@
 
     <url>
         <loc>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</loc>
-        <lastmod>2018-12-22T08:53:04.275Z</lastmod>
+        <lastmod>2018-12-29T07:19:00.160Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/08/24/How-many-Emacs-users-in-China/</loc>
+        <lastmod>2018-12-24T12:34:22.061Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -599,14 +607,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/08/24/How-many-Emacs-users-in-China/</loc>
-        <lastmod>2018-02-27T16:29:57.182Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2016/02/09/Transfer-domain-to-Uniregistry/</loc>
         <lastmod>2018-02-22T16:44:40.166Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1135,7 +1135,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1143,7 +1143,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1191,7 +1191,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
+        <loc>https://chriszheng.science/2015/07/24/Git-rules/</loc>
         <lastmod>2017-08-02T03:36:45.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1199,7 +1199,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/24/Git-rules/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
         <lastmod>2017-08-02T03:36:45.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1231,7 +1231,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1239,7 +1239,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

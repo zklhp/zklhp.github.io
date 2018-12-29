@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search> 
   
+  
     
     <entry>
       <title>近思录 2018-12-02</title>
       <link href="/2018/12/02/Recent-thoughts-2018-12-2/"/>
       <url>/2018/12/02/Recent-thoughts-2018-12-2/</url>
       
-        <content type="html"><![CDATA[<p style="font-size: larger">💸</p><a id="more"></a><h2 id="国内的动画水平">国内的动画水平</h2><p>偶然看了一眼国产动画<a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9%E5%B0%91%E5%B9%B4/20156819" target="_blank" rel="noopener">飞天少年</a>，我感觉现在的动画画的还不如50年前的<a href="https://baike.baidu.com/item/%E9%93%81%E8%87%82%E9%98%BF%E7%AB%A5%E6%9C%A8/69154" target="_blank" rel="noopener">铁臂阿童木</a>。</p><h2 id="几本书的封面">几本书的封面</h2><p><img src="/img/The-audacious-rebuilding-of-a-political-machine.jpg" alt="希拉里：为总统而生"></p><p><img src="/img/The-man-who-changed-china.jpg" alt="他改变了中国"></p><h2 id="debian的bug导致sshd启动慢">Debian的bug导致SSHD启动慢</h2><p><a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912087" target="_blank" rel="noopener">https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912087</a></p><h2 id="如何在xp上安装基于ghostscript的虚拟打印机">如何在XP上安装基于GhostScript的虚拟打印机</h2><p><a href="https://www.ghostscript.com/doc/current/VectorDevices.htm#PPD" target="_blank" rel="noopener">https://www.ghostscript.com/doc/current/VectorDevices.htm#PPD</a></p><p>要点是打印到文件。</p><h2 id="咬文嚼字的冷知识">咬文嚼字的冷知识</h2><p><a href="/2017/04/14/One-sentence-cold-knowledge/">冷知识</a>里更新了一个attached的区别enclosed。这种知识不点破就算是每天用也不会知道。类似的例子是中文里的语言现象，比如北方话或北京话里儿化音的规律，其实大有门道咧。我不是北京人也没认真研究过，就不班门弄斧了，读者朋友可以自己试着总结一下。</p><h2 id="有相关关系不一定有相关性">有相关关系不一定有相关性</h2><p>比如之前有研究说，牙齿健康的人不容易得高血压。这个结果可能是对的，但不能说牙齿健康能预防高血压，我觉得，可能是注意牙齿健康的人生活也健康，自然不容易「三高」，如果用这种相关关系推广到「保护牙齿能预防高血压」，谬矣。</p><h2 id="原来-黑客帝国-等电影都有基础">原来《黑客帝国》等电影都有基础</h2><p>比如《世界旦夕之间》。</p><h2 id="orca-4-1要发布了">ORCA 4.1要发布了</h2><p><a href="https://orcaforum.kofo.mpg.de/app.php/portal" target="_blank" rel="noopener">https://orcaforum.kofo.mpg.de/app.php/portal</a></p><h2 id="老的linux内核上编译的可执行文件不能用于较新的内核">老的Linux内核上编译的可执行文件不能用于较新的内核</h2><p>因为新内核不支持<code>vsyscall</code>，详细的解释见下面。</p><p><a href="https://orcaforum.kofo.mpg.de/viewtopic.php?f=9&amp;t=3870" target="_blank" rel="noopener">https://orcaforum.kofo.mpg.de/viewtopic.php?f=9&amp;t=3870</a></p><p>ORCA 4.1的版本有这个问题，我反馈后修复了。</p><h2 id="折腾octave的颜色">折腾Octave的颜色</h2><p><a href="https://gitee.com/chriszheng/configs/tree/master/.octave" target="_blank" rel="noopener">https://gitee.com/chriszheng/configs/tree/master/.octave</a></p><p>具体的代码上传了，一些折腾的结果写下来。</p><ol><li><p>怎么改默认的颜色顺序呢？ <br><code>set(gca, 'ColorOrder', ggplot2(64));</code></p></li><li><p>怎么画函数图像呢？ \</p></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">clf;</span><br><span class="line">fh = @(x) sin (pi*x) ./ (pi*x);</span><br><span class="line">fplot (fh, [-5, 5]);</span><br><span class="line">title (&quot;fplot() sinc function (possible division by 0, near 0)&quot;);</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f = @(x) sin (pi*x) ./ (pi*x);</span><br><span class="line">ezplot (f);</span><br></pre></td></tr></table></figure><ol start="3"><li>怎么画彩色的柱状图呢？ \</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">citations = [1 8 12 15 37 59 47 69];</span><br><span class="line"></span><br><span class="line">start = 2011;</span><br><span class="line">years = [start:start+numel(citations)-1];</span><br><span class="line">[xb, yb] = bar(years, citations);</span><br><span class="line">patch(xb, yb, [1:numel(citations)], &quot;edgecolor&quot;, &quot;none&quot;);</span><br><span class="line">xlabel(&quot;years&quot;);</span><br><span class="line">ylabel(&quot;citations&quot;);</span><br><span class="line">xlim([2010 2019]);</span><br></pre></td></tr></table></figure><p>配色风格可以用<code>colormap()</code>改。一种风格是<code>colormap(ggplot2(64));</code>，配色模仿R的ggplot的效果</p><p><img src="/img/Octave-colorful-bar-ggplot-style.png" alt="ggplot配色的Octave彩色柱状图"></p><p>默认的风格<code>colormap((64));</code>，效果如下</p><p><img src="/img/Octave-colorful-bar-default-style.png" alt="默认配色的Octave彩色柱状图"></p><p>上面用到的<code>ggplot2()</code>来自<a href="https://gitee.com/chriszheng/configs/blob/master/.octave/ggplot2.m" target="_blank" rel="noopener">ggplot2.m</a>是我从网上抄来后魔改的。</p><ol start="4"><li>怎么画彩色的函数图像呢？ \</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">colormap(ggplot2(512));</span><br><span class="line">x = -pi:0.02:pi;</span><br><span class="line">scatter(x, sin(x), 10, [1:numel(x)], &quot;filled&quot;);</span><br><span class="line">set(findall(gcf(), &quot;-property&quot;, &quot;interpreter&quot;), &quot;interpreter&quot;, &quot;TeX&quot;);</span><br><span class="line">xlabel(&apos;\it&#123;x&#125;&apos;);</span><br><span class="line">ylabel(&apos;\it&#123;y&#125;&apos;);</span><br></pre></td></tr></table></figure><p><img src="/img/Octave-colorful-line.png" alt="Octave彩色线"></p><h2 id="韭菜">韭菜</h2><blockquote><p>《正论》曰：小民发如韭，剪复生；头如鸡，割复鸣。吏不必可畏，后来不必可轻。奈何欲望致刑厝乎？</p><footer><strong>《太平御览·菜茹部一·韭》</strong></footer></blockquote><h2 id="悲惨生活">悲惨生活</h2><blockquote><p>寄身锋刃，腷臆谁诉？</p><footer><strong>唐·李华</strong><cite>《吊古战场文》</cite></footer></blockquote><p>搜索中发现这句是化用了<a href="https://baike.baidu.com/item/%E7%99%BD%E9%A9%AC%E7%AF%87/22087" target="_blank" rel="noopener">曹植的《白马篇》</a>。</p><blockquote><p>弃身锋刃端，性命安可怀？</p><footer><strong>曹植</strong><cite>《白马篇》</cite></footer></blockquote><p>搜索中邂逅一位高产的前辈，具体请自行搜索，拜读了不少文章。</p><p><a href="http://xiexuanjun.blogspot.com/2013/09/blog-post_7832.html" target="_blank" rel="noopener">http://xiexuanjun.blogspot.com/2013/09/blog-post_7832.html</a></p><h2 id="octave输出postscript时字体设置的缺陷">Octave输出PostScript时字体设置的缺陷</h2><p><a href="http://lists.gnu.org/archive/html/help-octave/2016-02/msg00032.html" target="_blank" rel="noopener">http://lists.gnu.org/archive/html/help-octave/2016-02/msg00032.html</a></p><p>不能想设成什么就设成什么。</p>]]></content>
+        <content type="html"><![CDATA[<p style="font-size: larger">💸</p><a id="more"></a><h2 id="国内的动画水平">国内的动画水平</h2><p>偶然看了一眼国产动画<a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9%E5%B0%91%E5%B9%B4/20156819" target="_blank" rel="noopener">飞天少年</a>，我感觉现在的动画画的还不如50年前的<a href="https://baike.baidu.com/item/%E9%93%81%E8%87%82%E9%98%BF%E7%AB%A5%E6%9C%A8/69154" target="_blank" rel="noopener">铁臂阿童木</a>。</p><h2 id="几本书的封面">几本书的封面</h2><p><img src="/img/The-audacious-rebuilding-of-a-political-machine.jpg" alt="希拉里：为总统而生"></p><p><img src="/img/The-man-who-changed-china.jpg" alt="他改变了中国"></p><h2 id="debian的bug导致sshd启动慢">Debian的bug导致SSHD启动慢</h2><p><a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912087" target="_blank" rel="noopener">https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=912087</a></p><h2 id="如何在xp上安装基于ghostscript的虚拟打印机">如何在XP上安装基于GhostScript的虚拟打印机</h2><p><a href="https://www.ghostscript.com/doc/current/VectorDevices.htm#PPD" target="_blank" rel="noopener">https://www.ghostscript.com/doc/current/VectorDevices.htm#PPD</a></p><p>要点是打印到文件。</p><h2 id="咬文嚼字的冷知识">咬文嚼字的冷知识</h2><p><a href="/2017/04/14/One-sentence-cold-knowledge/">冷知识</a>里更新了一个attached的区别enclosed。这种知识不点破就算是每天用也不会知道。类似的例子是中文里的语言现象，比如北方话或北京话里儿化音的规律，其实大有门道咧。我不是北京人也没认真研究过，就不班门弄斧了，读者朋友可以自己试着总结一下。</p><h2 id="有相关关系不一定有相关性">有相关关系不一定有相关性</h2><p>比如之前有研究说，牙齿健康的人不容易得高血压。这个结果可能是对的，但不能说牙齿健康能预防高血压，我觉得，可能是注意牙齿健康的人生活也健康，自然不容易「三高」，如果用这种相关关系推广到「保护牙齿能预防高血压」，谬矣。</p><h2 id="原来-黑客帝国-等电影都有基础">原来《黑客帝国》等电影都有基础</h2><p>比如《世界旦夕之间》。</p><h2 id="orca-4-1要发布了">ORCA 4.1要发布了</h2><p><a href="https://orcaforum.kofo.mpg.de/app.php/portal" target="_blank" rel="noopener">https://orcaforum.kofo.mpg.de/app.php/portal</a></p><h2 id="老的linux内核上编译的可执行文件不能用于较新的内核">老的Linux内核上编译的可执行文件不能用于较新的内核</h2><p>因为新内核不支持<code>vsyscall</code>，详细的解释见下面。</p><p><a href="https://orcaforum.kofo.mpg.de/viewtopic.php?f=9&amp;t=3870" target="_blank" rel="noopener">https://orcaforum.kofo.mpg.de/viewtopic.php?f=9&amp;t=3870</a></p><p>ORCA 4.1的版本有这个问题，我反馈后修复了。</p><h2 id="折腾octave的颜色">折腾Octave的颜色</h2><p><a href="https://gitee.com/chriszheng/configs/tree/master/.octave" target="_blank" rel="noopener">https://gitee.com/chriszheng/configs/tree/master/.octave</a></p><p>具体的代码上传了，一些折腾的结果写下来。</p><ol><li><p>怎么改默认的颜色顺序呢？ <br><code>set(gca, 'ColorOrder', ggplot2(64));</code></p></li><li><p>怎么画函数图像呢？ \</p></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">clf;</span><br><span class="line">fh = @(x) sin (pi*x) ./ (pi*x);</span><br><span class="line">fplot (fh, [-5, 5]);</span><br><span class="line">title (&quot;fplot() sinc function (possible division by 0, near 0)&quot;);</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f = @(x) sin (pi*x) ./ (pi*x);</span><br><span class="line">ezplot (f);</span><br></pre></td></tr></table></figure><ol start="3"><li>怎么画彩色的柱状图呢？ \</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">citations = [1 8 12 15 37 59 47 69];</span><br><span class="line"></span><br><span class="line">start = 2011;</span><br><span class="line">years = [start:start+numel(citations)-1];</span><br><span class="line">[xb, yb] = bar(years, citations);</span><br><span class="line">patch(xb, yb, [1:numel(citations)], &quot;edgecolor&quot;, &quot;none&quot;);</span><br><span class="line">xlabel(&quot;years&quot;);</span><br><span class="line">ylabel(&quot;citations&quot;);</span><br><span class="line">xlim([2010 2019]);</span><br></pre></td></tr></table></figure><p>配色风格可以用<code>colormap()</code>改。一种风格是<code>colormap(ggplot2(64));</code>，配色模仿R的ggplot的效果</p><p><img src="/img/Octave-colorful-bar-ggplot-style.png" alt="ggplot配色的Octave彩色柱状图"></p><p>默认的风格<code>colormap((64));</code>，效果如下</p><p><img src="/img/Octave-colorful-bar-default-style.png" alt="默认配色的Octave彩色柱状图"></p><p>上面用到的<code>ggplot2()</code>来自<a href="https://gitee.com/chriszheng/configs/blob/master/.octave/ggplot2.m" target="_blank" rel="noopener">ggplot2.m</a>是我从网上抄来后魔改的。</p><ol start="4"><li>怎么画彩色的函数图像呢？ \</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">colormap(ggplot2(512));</span><br><span class="line">x = -pi:0.02:pi;</span><br><span class="line">scatter(x, sin(x), 10, [1:numel(x)], &quot;filled&quot;);</span><br><span class="line">set(findall(gcf(), &quot;-property&quot;, &quot;interpreter&quot;), &quot;interpreter&quot;, &quot;TeX&quot;);</span><br><span class="line">xlabel(&apos;\it&#123;x&#125;&apos;);</span><br><span class="line">ylabel(&apos;\it&#123;y&#125;&apos;);</span><br></pre></td></tr></table></figure><p><img src="/img/Octave-colorful-line.png" alt="Octave彩色线"></p><ol start="5"><li>小提琴图： \</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pkg load statistics;</span><br><span class="line">data = exprnd(0.1, 500,4);</span><br><span class="line">violin(data, &quot;color&quot;, ggplot2(4));</span><br><span class="line">set(findall(gca(), &quot;type&quot;, &quot;patch&quot;), &quot;edgecolor&quot;, &quot;none&quot;, &quot;facealpha&quot;, 0.95);</span><br><span class="line">print(&quot;a.svg&quot;);</span><br></pre></td></tr></table></figure><p><img src="/img/Octave-violin.png" alt="小提琴图"></p><h2 id="韭菜">韭菜</h2><blockquote><p>《正论》曰：小民发如韭，剪复生；头如鸡，割复鸣。吏不必可畏，后来不必可轻。奈何欲望致刑厝乎？</p><footer><strong>《太平御览·菜茹部一·韭》</strong></footer></blockquote><h2 id="悲惨生活">悲惨生活</h2><blockquote><p>寄身锋刃，腷臆谁诉？</p><footer><strong>唐·李华</strong><cite>《吊古战场文》</cite></footer></blockquote><p>搜索中发现这句是化用了<a href="https://baike.baidu.com/item/%E7%99%BD%E9%A9%AC%E7%AF%87/22087" target="_blank" rel="noopener">曹植的《白马篇》</a>。</p><blockquote><p>弃身锋刃端，性命安可怀？</p><footer><strong>曹植</strong><cite>《白马篇》</cite></footer></blockquote><p>搜索中邂逅一位高产的前辈，具体请自行搜索，拜读了不少文章。</p><p><a href="http://xiexuanjun.blogspot.com/2013/09/blog-post_7832.html" target="_blank" rel="noopener">http://xiexuanjun.blogspot.com/2013/09/blog-post_7832.html</a></p><h2 id="octave输出postscript时字体设置的缺陷">Octave输出PostScript时字体设置的缺陷</h2><p><a href="http://lists.gnu.org/archive/html/help-octave/2016-02/msg00032.html" target="_blank" rel="noopener">http://lists.gnu.org/archive/html/help-octave/2016-02/msg00032.html</a></p><p>不能想设成什么就设成什么。</p><h2 id="在windows平台上安装octave包">在Windows平台上安装Octave包</h2><p>需要开发版或者打补丁。</p><h3 id="tisean">tisean</h3><p><a href="http://savannah.gnu.org/bugs/?45815" target="_blank" rel="noopener">http://savannah.gnu.org/bugs/?45815</a></p><h3 id="signal">signal</h3><p><a href="https://savannah.gnu.org/bugs/index.php?53849" target="_blank" rel="noopener">https://savannah.gnu.org/bugs/index.php?53849</a></p>]]></content>
       
       
       <categories>
@@ -24,6 +25,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>分析网站内容的流行程度——写在博客的第4年</title>
@@ -48,6 +51,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用frp实战内网穿透</title>
       <link href="/2018/11/30/Practical-frp/"/>
@@ -70,6 +75,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>搬瓦工传家宝没了</title>
@@ -94,6 +101,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>近思录 2018-11-22</title>
       <link href="/2018/11/22/Recent-thoughts-2018-11-22/"/>
@@ -116,6 +125,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Initiative Q</title>
@@ -140,6 +151,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>近思录 2018-10-24</title>
       <link href="/2018/10/24/Recent-thoughts-2018-10-24/"/>
@@ -162,6 +175,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>近思录 2018-10-01</title>
@@ -186,6 +201,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>溶剂</title>
       <link href="/2018/09/23/Solvents/"/>
@@ -208,6 +225,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>大学生掏粪工</title>
@@ -232,6 +251,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>近思录 2018-09-07</title>
       <link href="/2018/09/07/Recent-thoughts-2018-09-07/"/>
@@ -254,6 +275,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>快上车——玩路由(MTK板、洋垃圾网件、斐讯)的闲言碎语</title>
@@ -282,6 +305,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>近思录 2018-07-15</title>
       <link href="/2018/07/15/Recent-thoughts-2018-07-15/"/>
@@ -304,6 +329,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>为什么Windows下的Emacs这么慢？</title>
@@ -330,6 +357,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>专利申请经验</title>
       <link href="/2018/07/01/Patent-application-experience/"/>
@@ -352,6 +381,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>多语言(C++, NodeJS)实现统计输入某数的次数</title>
@@ -378,6 +409,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>近思录 2018-06-23</title>
       <link href="/2018/06/23/Recent-thoughts-2018-06-23/"/>
@@ -400,6 +433,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>放逐Excel：将Emacs、Coreutils和Octave用于学生的作业成绩管理</title>
@@ -426,6 +461,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>转发新闻：「小狼毫」輸入法更新，發佈0.11版</title>
       <link href="/2018/04/10/Rime-Weasel-0-11-released/"/>
@@ -448,6 +485,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>拥抱量子火狐(Firefox Quantum)</title>
@@ -472,6 +511,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>近思录 2018-04-06</title>
       <link href="/2018/04/06/Recent-thoughts-2018-04-06/"/>
@@ -494,6 +535,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>1.1.1.1 新的DNS服务</title>
@@ -518,6 +561,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Melpa和EmacsWiki—谈Emacs阵营的分裂</title>
       <link href="/2018/03/08/Melpa-EmacsWiki-division-of-Emacs/"/>
@@ -540,6 +585,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>SDF和老系统</title>
@@ -564,6 +611,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>What’s new in Emacs 26</title>
       <link href="/2018/02/08/Whats-new-in-Emacs-26/"/>
@@ -586,6 +635,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>优雅的用Tramp从MS-Windows连接到类UNIX系统</title>
@@ -612,6 +663,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>朋友圈文vs学术论文</title>
       <link href="/2018/01/28/Moments-articles-vs-scientific-papers/"/>
@@ -634,6 +687,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>ES8大法好——JavaScript里用上真正的延时函数sleep()</title>
@@ -660,6 +715,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>近思录 2018-01-18</title>
       <link href="/2018/01/18/Recent-thoughts-2018-01-18/"/>
@@ -683,6 +740,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>At the end of 2017</title>
       <link href="/2017/12/23/At-the-end-of-2017/"/>
@@ -705,6 +764,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>双路E5-2696v3装配实录</title>
@@ -731,6 +792,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我没有说话</title>
       <link href="/2017/11/29/I-didnt-speak-up/"/>
@@ -753,6 +816,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>我已经拯救了我的灵魂</title>
@@ -777,6 +842,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我是一个穷屄，我不用虾米音乐</title>
       <link href="/2017/11/20/I-am-a-beggar/"/>
@@ -799,6 +866,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Android版的Firefox 57.x</title>
@@ -823,6 +892,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Pandoc 2 and my workflow</title>
       <link href="/2017/11/09/Pandoc-2-and-my-workflow/"/>
@@ -845,6 +916,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>动物摄影</title>
@@ -869,6 +942,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>是否存在一个拐点，高于这点的税后收入比低于此点的税后收入还低？</title>
       <link href="/2017/10/25/Personal-income-tax/"/>
@@ -891,6 +966,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>近思录 2017-10-07</title>
@@ -915,6 +992,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我的业余爱好</title>
       <link href="/2017/10/07/My-hobbies/"/>
@@ -937,6 +1016,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Happy hacking</title>
@@ -961,6 +1042,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Google scholar的新形象和新内涵</title>
       <link href="/2017/09/24/Google-scholar-new-look/"/>
@@ -983,6 +1066,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs 25.3和Enriched mode——杂谈所见即所得和标记语言</title>
@@ -1007,6 +1092,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>如何用字</title>
       <link href="/2017/09/10/How-to-use-character/"/>
@@ -1029,6 +1116,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>用二维码作头像以及如何用NodeJS生成二维码</title>
@@ -1055,6 +1144,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>自动播放下一视频的脚本</title>
       <link href="/2017/08/13/A-script-that-plays-next-video/"/>
@@ -1078,6 +1169,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>王警官系列笑话</title>
       <link href="/2017/08/06/Wang-Sir-jokes/"/>
@@ -1100,6 +1193,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>针对POP协议和Gmail用户的Wanderlust教程</title>
@@ -1126,6 +1221,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我为什么讨厌心灵鸡汤</title>
       <link href="/2017/07/31/Disadvantage-of-chicken-soup/"/>
@@ -1148,6 +1245,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>啊，彩虹</title>
@@ -1172,6 +1271,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>七月份的尾巴，访客破万</title>
       <link href="/2017/07/31/Celebrate-10k-visits/"/>
@@ -1194,6 +1295,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs现在支持原生的行号显示</title>
@@ -1218,6 +1321,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Upgrading to Shadowsocks-libev 3.0.x</title>
       <link href="/2017/07/22/Upgrading-to-Shadowsocks-libev-3-0-x/"/>
@@ -1240,6 +1345,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>用Emacs实践番茄工作法</title>
@@ -1264,6 +1371,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>你能活500年吗？</title>
       <link href="/2017/07/19/Can-you-live-for-500-years/"/>
@@ -1286,6 +1395,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>我，一名高校教师——一名年轻教师的入职感言</title>
@@ -1310,6 +1421,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Windows下使用Emacs的最佳实践</title>
       <link href="/2017/07/16/Best-practice-of-Emacs-on-MS-Windows/"/>
@@ -1332,6 +1445,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>近思录 2017-07-15</title>
@@ -1356,6 +1471,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Vultr as backup VPS</title>
       <link href="/2017/07/11/Vultr-as-backup-VPS/"/>
@@ -1378,6 +1495,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>资本经济时代你的角色</title>
@@ -1402,6 +1521,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>天灭UTF-16！天灭GBK！</title>
       <link href="/2017/07/07/Banishing-UTF-16-and-GBK/"/>
@@ -1424,6 +1545,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>一个面瘫患者的Blog</title>
@@ -1450,6 +1573,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>钻石价格和克拉的关系</title>
       <link href="/2017/06/25/Diamond-price-vs-ct/"/>
@@ -1472,6 +1597,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>《水浒传》里的王伦</title>
@@ -1496,6 +1623,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>绍介博客，遇见有趣的灵魂</title>
       <link href="/2017/06/03/Meet-interesting-people/"/>
@@ -1518,6 +1647,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>由「学术富士康」(scientific foxconn)想到的</title>
@@ -1542,6 +1673,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>商业化和艺术/技术/运动的关系</title>
       <link href="/2017/05/10/Commercialization/"/>
@@ -1564,6 +1697,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>再谈「唯女子与小人为难养也」——基于古籍统计的训诂研究</title>
@@ -1588,6 +1723,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>多读点鲁迅</title>
       <link href="/2017/04/28/Read-more-Lu-Xun/"/>
@@ -1610,6 +1747,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>一句话系列——冷知识篇</title>
@@ -1634,6 +1773,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>游戏里的芜湖站</title>
       <link href="/2017/04/05/Wuhu-station-in-a-game/"/>
@@ -1656,6 +1797,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>思源宋体</title>
@@ -1680,6 +1823,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>本站启用AMP</title>
       <link href="/2017/04/03/This-site-uses-AMP/"/>
@@ -1702,6 +1847,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>我的一句话经验——Emacs Lisp篇</title>
@@ -1728,6 +1875,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>GNU/kWindows</title>
       <link href="/2017/04/02/GNU-kWindows/"/>
@@ -1750,6 +1899,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Firefox马上要有新主题了</title>
@@ -1774,6 +1925,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用PostScript显示中文</title>
       <link href="/2017/03/30/Show-Chinese-using-PostScript/"/>
@@ -1796,6 +1949,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>用GNU Octave做优化</title>
@@ -1820,6 +1975,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>聊聊Emacs和DDE</title>
       <link href="/2017/03/18/Talk-about-Emacs-and-DDE/"/>
@@ -1843,6 +2000,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>ORCA 4.0.0发布啦</title>
       <link href="/2017/03/14/ORCA-4-0-0-release/"/>
@@ -1860,13 +2019,15 @@
       
         <tags>
             
-            <tag> ORCA </tag>
-            
             <tag> 新闻 </tag>
+            
+            <tag> ORCA </tag>
             
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>一张壁纸</title>
@@ -1891,6 +2052,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我的常用软件</title>
       <link href="/2017/03/08/My-most-used-software/"/>
@@ -1913,6 +2076,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>聊聊学位论文</title>
@@ -1937,6 +2102,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>在Sumatra PDF里添加/删除高亮</title>
       <link href="/2017/03/07/Remove-highlight-in-SumatraPDF/"/>
@@ -1960,6 +2127,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>天赋、环境、机遇</title>
       <link href="/2017/03/05/Talent-environment-opportunity/"/>
@@ -1982,6 +2151,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>解决了一个奇怪的找不到EVP_aes_128_ctr的错误</title>
@@ -2010,6 +2181,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>电影《云图》里的OBE</title>
       <link href="/2017/02/23/Meaning-of-OBE-in-Cloud-Atlas/"/>
@@ -2032,6 +2205,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>新穷人</title>
@@ -2056,6 +2231,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>曾经有一个QQ群</title>
       <link href="/2017/02/21/In-the-past-there-is-a-QQ-qun/"/>
@@ -2078,6 +2255,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>武大郎哪天死的？</title>
@@ -2102,6 +2281,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>笔记本太热应该怎么办？</title>
       <link href="/2017/02/14/Howto-Laptop-is-hot/"/>
@@ -2124,6 +2305,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>先不要升级到Shadowsocks-libev 3.0.x</title>
@@ -2148,6 +2331,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>〔转载〕我实在想不明白，毕业家里拿不出200万的，还在北京混个啥劲？？</title>
       <link href="/2017/02/06/Having-200-wan-living-in-Beijing/"/>
@@ -2170,6 +2355,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>如何优雅的使用Gmail？巧用iptables的端口转发对抗封锁</title>
@@ -2194,6 +2381,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>最近看电视和视频的一点收获和想法</title>
       <link href="/2017/01/28/Recent-thoughts/"/>
@@ -2216,6 +2405,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>主席诗词</title>
@@ -2240,6 +2431,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>从穷人的消费观念说到狗咬吕洞宾</title>
       <link href="/2017/01/18/Consumer-attitudes/"/>
@@ -2263,6 +2456,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>走开，凤姐！走开，手机QQ！</title>
       <link href="/2017/01/14/Go-away-Feng-Jie/"/>
@@ -2285,6 +2480,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>一个Emacs里使用Markdown的视频</title>
@@ -2310,6 +2507,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>在HTTPS环境中使用YAAW</title>
@@ -2338,6 +2537,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>几个科研工作者的必备网站</title>
       <link href="/2017/01/06/Some-useful-websites/"/>
@@ -2360,6 +2561,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>我成了习总书记最牵挂的人</title>
@@ -2384,6 +2587,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>一个人，花九万买了一辆车之后……</title>
       <link href="/2017/01/02/A-joke-about-a-stingy-person/"/>
@@ -2406,6 +2611,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>我的一句话经验——软件篇</title>
@@ -2430,6 +2637,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>新年新气象</title>
       <link href="/2016/12/31/Happy-New-Year/"/>
@@ -2453,6 +2662,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>斫轮老手</title>
       <link href="/2016/12/30/True-guru/"/>
@@ -2475,6 +2686,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>金属配合物SCF震荡、盐酸依托必利的疗效、提取计算时间</title>
@@ -2501,6 +2714,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>如何快速疏通下水道</title>
       <link href="/2016/12/14/How-to-clear-the-sewer/"/>
@@ -2524,6 +2739,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>别乱取名——「以党治国」和「一夫」</title>
       <link href="/2016/12/04/No-more-arbitrary-names/"/>
@@ -2546,6 +2763,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>红米Note 4使用感受和一些经验</title>
@@ -2574,6 +2793,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Node.js的anywhere包很厉害</title>
       <link href="/2016/12/01/nodejs-anywhere/"/>
@@ -2601,6 +2822,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>去除百度网盘的下载限制</title>
       <link href="/2016/11/21/Remove-download-restrict-in-Baidu-Pan/"/>
@@ -2624,6 +2847,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>美国大选段子</title>
       <link href="/2016/11/09/Story-on-US-election/"/>
@@ -2646,6 +2871,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Grammarly高级版(premium)试用体验</title>
@@ -2671,6 +2898,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Arch Linux用户：大胆使用--force升级ttf-dejavu到2.37版本</title>
@@ -2699,6 +2928,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs的refcard</title>
       <link href="/2016/11/03/Emacs-refcard/"/>
@@ -2721,6 +2952,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Apple终结了Emacs和Vi(m)的圣战</title>
@@ -2745,6 +2978,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>今天必应(Bing)的壁纸</title>
       <link href="/2016/10/29/A-background-image-from-Bing/"/>
@@ -2767,6 +3002,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Octave和shell-mode的几个小技巧</title>
@@ -2793,6 +3030,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>调侃知乎的段子</title>
       <link href="/2016/10/06/Story-about-zhihu/"/>
@@ -2816,6 +3055,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>调侃手机品牌的段子</title>
       <link href="/2016/10/02/Story-about-mobile-phone-brands/"/>
@@ -2838,6 +3079,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Fix a not enough memory error in ORCA under Windows</title>
@@ -2864,6 +3107,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用kill-this-buffer简化代码</title>
       <link href="/2016/09/28/Use-kill-this-buffer/"/>
@@ -2888,6 +3133,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Workaround a bug for octave-mode of Emacs 25.2.50 under MS-Windows</title>
@@ -2914,6 +3161,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Firefox 49.x有很大的提升</title>
       <link href="/2016/09/22/Firefox-v49-improved-a-lot/"/>
@@ -2937,6 +3186,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs 25.1发布了</title>
       <link href="/2016/09/18/Emacs-25-1-released/"/>
@@ -2959,6 +3210,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>有关孔子的几则「口述历史」</title>
@@ -2984,6 +3237,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>为了移动端友好没有必要在robots.txt中禁止抓取CSS等文件</title>
@@ -3012,6 +3267,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs 25.1.5的Tramp在MS-Windows下有个bug</title>
       <link href="/2016/09/10/Tramp-in-Emacs-25-1-5-under-MS-Windows-has-a-bug/"/>
@@ -3039,6 +3296,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>如果在使用apt-get时遇到KEYEXPIRED 1471427554的错误</title>
       <link href="/2016/09/06/KEYEXPIRED-1471427554-when-using-apt-get/"/>
@@ -3064,6 +3323,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>中英文简历撰写排版指南</title>
       <link href="/2016/09/05/Chinese-English-r%C3%A9sum%C3%A9-guide/"/>
@@ -3088,6 +3349,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs里如何删除空行</title>
@@ -3118,6 +3381,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Firefox 48.x的开发者工具也变样了</title>
       <link href="/2016/09/03/Firefox-v48-new-developer-tools/"/>
@@ -3140,6 +3405,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>M-x lgrep和M-x rgrep太厉害了</title>
@@ -3166,6 +3433,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>中文词汇量测试和相关知识</title>
       <link href="/2016/08/29/Chinese-vocabulary-size-test/"/>
@@ -3190,6 +3459,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>纪晓岚的《四库全书恭进表》</title>
@@ -3218,6 +3489,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>庾信的《哀江南赋》</title>
       <link href="/2016/08/28/Yu-Xin-ode-2/"/>
@@ -3242,6 +3515,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>庾信的《哀江南赋序》</title>
@@ -3268,6 +3543,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>量子化学单位</title>
       <link href="/2016/08/26/Quantum-chemistry-units/"/>
@@ -3290,6 +3567,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>《道德经》里的「四是」</title>
@@ -3314,12 +3593,14 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>中国有多少Emacs用户？找Emacs用户比找外星人难？</title>
       <link href="/2016/08/24/How-many-Emacs-users-in-China/"/>
       <url>/2016/08/24/How-many-Emacs-users-in-China/</url>
       
-        <content type="html"><![CDATA[<h2 id="中国有多少emacs用户？全世界呢？">中国有多少Emacs用户？全世界呢？</h2><p>要估算这个数量只要知道两个数据就可以：</p><ul><li>可能使用Emacs的总人数</li><li>这些人中Emacs用户的比例</li></ul><a id="more"></a><p>根据统计，全世界大约2000万程序员，中国大约200万<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。而Emacs在全世界的使用率按照2.5%计算(可以参考的是stackoverflow的用户中Emacs用户大约3%，我忘了出处了。)，在中国就按照0.5%计算。于是全世界也就不到50万的Emacs用户，中国大约不到1万。</p><p>我能认识Emacs用户真是幸运呀，十三亿中找1万人，好比从13万人找一个人。要珍惜你认识的每一个Emacs用户哦。</p><h2 id="估计的有没有问题？">估计的有没有问题？</h2><p>当然，这里的估算方法非常粗略，最大的问题是只考虑了程序员，如果把接近程序员的人群，主要是一些极客算在内，估计的数量会多一些。但是，人群中极客的数量是难以估计的，而且他们中Emacs的使用率也不高。如果非要估计一下，可能全国有50万极客？使用率0.05%？得，250人，果然是极少的。</p><p>还有一个值得考虑的是普通人，虽然Emacs使用率比程序员甚至是极客都要低的多，大概10万人里面也不一定有一位，可中国人基数大啊，如果就按照10万人里有一个计算，全国还有1300位非程序员出身的Emacs用户，和1万比，还是个零头。所以我大胆的估计：全中国就1万Emacs用户。</p><h2 id="从认识emacs用户到寻找外星人">从认识Emacs用户到寻找外星人</h2><p>再稍微延伸一点，Emacs用户虽然少，但我们Emacs用户都认识很多Emacs用户啊，如果真的按照概率，13万人里找一个，好比3、4所大学里面找一个人啊，能是容易的么？和Emacs用户社交类似的是找到女朋友的概率。根据Peter Backus的研究论文《我为什么没有女朋友》(<a href="https://sdoownek.files.wordpress.com/2010/01/why_i_dont_have_a_girlfriend.pdf" target="_blank" rel="noopener">PDF版原文</a>)，能找到合适的女朋友的概率和找到外星人差不多，都低的可怜。可现实中很多人都找到了女朋友了啊。这里，概率并没有起作用，我觉得原因有以下几点：</p><ol><li><p>社交活动是「反概率」，或者说和我们一般认为经典的概率模型不一样。譬如我们一般假设随机事件都是正态分布的，而社交事件里，某些活跃的人认识很多人，而一般人的社交圈很局限，这种矛盾就使得事实和我们的观念冲突。</p></li><li><p>最根本原因是人是会动的，这和理论里面的那些小球、硬币不一样。把妹学里面就有「社交动力学」的说法，我觉得比较贴切。<a href="/pua/" style="color: #444; background-color: #444 !important">想学把妹学看这里。</a></p></li><li><p>再换个化学的角度讲(各位读者看到这里一定想骂我……)，热力学可行不一定能发生，因为如果反应速率特别慢，你也观察不到。虽然是小概率，可发生的条件如果正好符合，也会发生，或者说现实情况根本就不是那个概率能描述的。</p></li><li><p>当然也要感谢网络这种新的传播媒介。网络打破了物理上的隔离，使人真正的互联和聚集，让有趣的人互相认识变得容易了。垂直社交的平台，譬如中国的贴吧、世界的reddit还有一些专门网站，让有共同爱好的人走到一起。我的这个Blog不也让你们认识我了么(笑)。</p></li></ol><h2 id="写在最后">写在最后</h2><p>因为<a href="https://emacs-china.org/t/topic/4914/" target="_blank" rel="noopener">有人在Emacs China上问Emacs用户有多少</a>，我回复了这篇文章，然后又读了读，觉得还有很多没写出来的东西，于是又增添了一些，搞了个标题党的题目。通过修改这个文章，我关于这个问题的认识也深刻了一点。</p><p>估算是一种非常重要的技能，在科研和生活中都有很多应用。我以前一直喜欢「精确」，后来发现，自己的「精确」并没有什么用，就好比圆周率我能背100位，用不上的。且不说是浮点数精度问题，就算真能用上，算出来的比原子核还小，有啥用？反而是快速的计算出结果，并且知道自己计算的误差有多少，更有用。</p><p>一点认识，与各位共享。</p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>数据可以参考<a href="https://www.zhihu.com/question/20308781" target="_blank" rel="noopener">这个知乎上的问答</a>。注意这个数字包括了业余爱好者。 <a href="#fnref1" class="footnote-backref">↩</a></p></li></ol></section>]]></content>
+        <content type="html"><![CDATA[<h2 id="中国有多少emacs用户？全世界呢？">中国有多少Emacs用户？全世界呢？</h2><p>回答这个问题只要知道两个数据就可以：</p><ul><li>可能使用Emacs的总人数(即潜在用户群)</li><li>这些人中Emacs用户的比例</li></ul><a id="more"></a><p>根据统计，全世界大约2000万程序员，中国大约200万<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>。而Emacs在全世界的使用率按照2.5%计算(可以参考的是stackoverflow的用户中Emacs用户大约3%，我忘了出处了。)，在中国就按照0.5%计算。于是全世界也就不到50万的Emacs用户，中国大约不到1万。</p><p>我能认识Emacs用户真是幸运呀，十三亿中找1万人，好比从13万人找一个人。要珍惜你认识的每一个Emacs用户哦。</p><h2 id="估计的有没有问题？">估计的有没有问题？</h2><p>当然，这里的估算方法非常粗略，最大的问题是只考虑了程序员，如果把接近程序员的人群，主要是一些极客算在内，估计的数量会多一些。但是，人群中极客的数量是难以估计的，而且他们中Emacs的使用率也不高。如果非要估计一下，可能全国有50万极客？使用率0.05%？得，250人，果然是极少的。</p><p>还有一个值得考虑的是普通人，虽然Emacs使用率比程序员甚至是极客都要低的多，大概10万人里面也不一定有一位，可中国人基数大啊，如果就按照10万人里有一个计算，全国还有1300位非程序员出身的Emacs用户，和1万比，还是个零头。所以我大胆的估计：全中国就1万Emacs用户。</p><h2 id="从认识emacs用户到寻找外星人">从认识Emacs用户到寻找外星人</h2><p>再稍微延伸一点，Emacs用户虽然少，但我们Emacs用户都认识很多Emacs用户啊，如果真的按照概率，13万人里找一个，好比3、4所大学里面找一个人啊，能是容易的么？和Emacs用户社交类似的是找到女朋友的概率。根据Peter Backus的研究论文《我为什么没有女朋友》(<a href="https://sdoownek.files.wordpress.com/2010/01/why_i_dont_have_a_girlfriend.pdf" target="_blank" rel="noopener">PDF版原文</a>)，能找到合适的女朋友的概率和找到外星人差不多，都低的可怜。可现实中很多人都找到了女朋友了啊。这里，概率并没有起作用，我觉得原因有以下几点：</p><ol><li><p>社交活动是「反概率」，或者说和我们一般认为经典的概率模型不一样。譬如我们一般假设随机事件都是正态分布的，而社交事件里，某些活跃的人认识很多人，而一般人的社交圈很局限，这种矛盾就使得事实和我们的观念冲突。</p></li><li><p>最根本原因是人是会动的，这和理论里面的那些小球、硬币不一样。把妹学里面就有「社交动力学」的说法，我觉得比较贴切。<a href="/pua/" style="color: #444; background-color: #444 !important">想学把妹学看这里。</a></p></li><li><p>再换个化学的角度讲(各位读者看到这里一定想骂我……)，热力学可行不一定能发生，因为如果反应速率特别慢，你也观察不到。虽然是小概率，可发生的条件如果正好符合，也会发生，或者说现实情况根本就不是那个概率能描述的。</p></li><li><p>当然也要感谢网络这种新的传播媒介。网络打破了物理上的隔离，使人真正的互联和聚集，让有趣的人互相认识变得容易了。垂直社交的平台，譬如中国的贴吧、世界的reddit还有一些专门网站，让有共同爱好的人走到一起。我的这个Blog不也让你们认识我了么(笑)。</p></li></ol><h2 id="写在最后">写在最后</h2><p>因为<a href="https://emacs-china.org/t/topic/4914/" target="_blank" rel="noopener">有人在Emacs China上问Emacs用户有多少</a>，我回复了这篇文章，然后又读了读，觉得还有很多没写出来的东西，于是又增添了一些，搞了个标题党的题目。通过修改这个文章，我的认识也深刻了一点。</p><p>估算是一种非常重要的技能，在科研和生活中都有很多应用。我以前一直喜欢「精确」，后来发现，自己的「精确」并没有什么用，就好比圆周率我能背100位，用不上的。且不说是浮点数精度问题，就算真能用上，算出来的比原子核还小，有啥用？反而是快速的计算出结果，并且知道自己计算的误差有多少，更有用。</p><p>一点认识，与各位共享。</p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>数据可以参考<a href="https://www.zhihu.com/question/20308781" target="_blank" rel="noopener">这个知乎上的问答</a>。注意这个数字包括了业余爱好者。 <a href="#fnref1" class="footnote-backref">↩</a></p></li></ol></section>]]></content>
       
       
       <categories>
@@ -3336,6 +3617,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>为什么MS-Windows下的Emacs显示中文这么卡？</title>
@@ -3366,6 +3649,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Firefox 48.x似乎使用了新的地址栏</title>
       <link href="/2016/08/21/Firefox-v48-with-new-URL-toolbar/"/>
@@ -3389,6 +3674,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用Octave计算两点的欧氏距离</title>
       <link href="/2016/08/16/Using-Octave-to-calculate-Euclidean-distance/"/>
@@ -3406,13 +3693,15 @@
       
         <tags>
             
-            <tag> 计算 </tag>
-            
             <tag> Octave </tag>
+            
+            <tag> 计算 </tag>
             
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>如何在Firefox的附加组件Pan中添加过滤规则</title>
@@ -3436,6 +3725,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>几个Hexo最近的bug和修复</title>
@@ -3464,6 +3755,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>让163邮箱简洁以及高效邮件管理</title>
       <link href="/2016/07/11/Clean-look-for-163-mail-and-GTD/"/>
@@ -3487,6 +3780,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Pokémon GO试玩</title>
       <link href="/2016/07/06/Pok%C3%A9mon-GO/"/>
@@ -3509,6 +3804,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>不用微博、QQ空间、微信朋友圈是一种怎样的体验？</title>
@@ -3536,6 +3833,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>如何查文献——科研老司机的一点人生经验</title>
@@ -3566,6 +3865,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>理解Emacs Lisp里的quote (&#39;)</title>
       <link href="/2016/06/26/Understand-quote-in-Emacs-Lisp/"/>
@@ -3588,6 +3889,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>论文引用数：预知未来</title>
@@ -3616,6 +3919,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我用Emacs干什么？为什么用Emacs？</title>
       <link href="/2016/06/18/What-I-do-with-Emacs/"/>
@@ -3638,6 +3943,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>倒闭永远只有18个月</title>
@@ -3662,6 +3969,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Bandwagon似乎遇到麻烦了</title>
       <link href="/2016/06/18/Bandwagon-is-in-trouble/"/>
@@ -3684,6 +3993,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>EmojiOne Color——一个支持全彩Emoji的字体</title>
@@ -3712,6 +4023,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Bandwagon上的Nginx升级到主线版本并添加HTTPS支持</title>
       <link href="/2016/06/11/Bandwagon-Nginx-meanline-and-HTTPS/"/>
@@ -3736,6 +4049,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>在Word中生成随机的文字</title>
@@ -3762,6 +4077,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>不义之富贵</title>
       <link href="/2016/06/06/Riches-and-honors-acquired-by-unrighteousness/"/>
@@ -3785,6 +4102,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用Octave里的匿名函数计算溶液的量</title>
       <link href="/2016/06/02/Using-anonymous-function-in-Octave-to-calculate-amount-of-solution/"/>
@@ -3802,15 +4121,17 @@
       
         <tags>
             
-            <tag> 计算 </tag>
-            
             <tag> Octave </tag>
+            
+            <tag> 计算 </tag>
             
             <tag> 匿名函数 </tag>
             
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Richard Stallman吹长笛视频</title>
@@ -3835,6 +4156,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>一句误传为歌德的名言</title>
       <link href="/2016/05/20/A-quote-misattributed-to-Goethe/"/>
@@ -3857,6 +4180,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>在Windows下让Mew 6.7兼容stunnel 5.x</title>
@@ -3882,6 +4207,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>MS Word中的断字(Hyphenation)</title>
@@ -3912,6 +4239,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>为中国用户准备的Elpa镜像</title>
       <link href="/2016/05/06/Elpa-mirrors-for-Chinese-users/"/>
@@ -3938,6 +4267,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>一个Mew的技巧</title>
@@ -3968,6 +4299,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>开启Xfce的显示合成</title>
       <link href="/2016/04/29/Xfce-composition/"/>
@@ -3995,6 +4328,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>小学时学过的鲁迅先生的一封信</title>
       <link href="/2016/04/17/One-letter-of-Lu-Xun/"/>
@@ -4018,6 +4353,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Linus的名言</title>
       <link href="/2016/04/17/Linus-quote/"/>
@@ -4040,6 +4377,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>乙己先生集</title>
@@ -4066,6 +4405,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>使用DuckDuckGo作为Hexo博客的站内搜索</title>
       <link href="/2016/04/15/Use-DuckDuckGo-as-site-search-for-Hexo/"/>
@@ -4091,6 +4432,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Optipng</title>
       <link href="/2016/04/14/Optipng/"/>
@@ -4115,6 +4458,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>元首和神秘人</title>
@@ -4145,6 +4490,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs China</title>
       <link href="/2016/04/12/Emacs-China/"/>
@@ -4170,6 +4517,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>某QQ群的日常</title>
       <link href="/2016/04/06/QQ-qun-story/"/>
@@ -4192,6 +4541,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>将Markdown转换为格式并复制到剪贴板</title>
@@ -4220,6 +4571,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>eval-and-compile</title>
       <link href="/2016/04/03/eval-and-compile/"/>
@@ -4242,6 +4595,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>国务院送500 MB流量</title>
@@ -4266,6 +4621,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs主页的新形象</title>
       <link href="/2016/03/30/New-look-of-Emacs-homepage/"/>
@@ -4288,6 +4645,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>使用中文成语学习平假名</title>
@@ -4316,6 +4675,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>一篇介绍Markdown的论文</title>
       <link href="/2016/03/24/A-paper-about-Markdown/"/>
@@ -4338,6 +4699,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs里异步执行shell命令的正确方法</title>
@@ -4364,6 +4727,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Shadowsocks-libev的一次性认证</title>
       <link href="/2016/03/11/Shadowsocks-libev-one-time-auth/"/>
@@ -4388,6 +4753,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>GitCafe要迁移到Coding.net</title>
@@ -4414,6 +4781,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Ha</title>
       <link href="/2016/03/02/Ha/"/>
@@ -4436,6 +4805,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>喜欢就要做</title>
@@ -4460,6 +4831,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>hexo.el</title>
       <link href="/2016/02/21/Hexo-el/"/>
@@ -4482,6 +4855,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Arch Linux里鬼一样的宋体</title>
@@ -4512,6 +4887,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>博客的第二年</title>
       <link href="/2016/02/10/My-blog-year-two/"/>
@@ -4535,6 +4912,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>把域名转到Uniregistry的一点纪录及后续</title>
       <link href="/2016/02/09/Transfer-domain-to-Uniregistry/"/>
@@ -4557,6 +4936,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>华人编程界的四大天王</title>
@@ -4583,6 +4964,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>判断网络情况的脚本</title>
       <link href="/2016/02/07/A-script-to-log-the-network-off/"/>
@@ -4606,6 +4989,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>索引式学习法</title>
       <link href="/2016/02/05/Index-learning-method/"/>
@@ -4628,6 +5013,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>在PandoraBox(OpenWrt)上玩Shadowsocks的一点经验</title>
@@ -4656,6 +5043,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>为运行PandoraBox(OpenWrt)的路由写脚本——一个例子</title>
       <link href="/2016/01/31/Writing-script-for-PandoraBox-OpenWrt/"/>
@@ -4680,6 +5069,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>如何在PandoraBox(OpenWrt)里关闭网络连接</title>
@@ -4706,6 +5097,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>GitHub暂时无法访问</title>
       <link href="/2016/01/28/GitHub-is-down/"/>
@@ -4728,6 +5121,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>《甘十九妹》的一点随想</title>
@@ -4754,6 +5149,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>《最强大脑》随想</title>
       <link href="/2016/01/24/Thoughts-on-TV-show-Super-Brain/"/>
@@ -4777,6 +5174,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用shell-file-name设置shell</title>
       <link href="/2016/01/14/Use-shell-file-name-change-shell/"/>
@@ -4799,6 +5198,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>潘多拉(PandoraBox)系统的路由设置</title>
@@ -4825,6 +5226,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>周鸿祎和李彦宏的段子</title>
       <link href="/2016/01/08/Zhou-Hongyi-and-Li-Yanhong/"/>
@@ -4848,6 +5251,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>–</title>
       <link href="/2016/01/07/%E2%80%93/"/>
@@ -4870,6 +5275,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>一个Word公式编辑器的毛病和修复——Cambria Math字体神秘丢失</title>
@@ -4898,6 +5305,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>为什么不用知乎——一位专栏作家的一家之言</title>
       <link href="/2016/01/07/Why-doesnt-use-zhihu/"/>
@@ -4922,6 +5331,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>一行代码让Emacs的搜索变的真正方便</title>
@@ -4948,6 +5359,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>电影《寻龙诀》印象——精彩但不是《鬼吹灯》</title>
       <link href="/2016/01/03/Mojin-The-Lost-Legend/"/>
@@ -4973,6 +5386,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacsclient的--alternate-editor (-a)参数可以启动daemon模式</title>
       <link href="/2015/12/31/Emacsclient-options-for-daemon-mode/"/>
@@ -4995,6 +5410,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Debian和Ian Murdock</title>
@@ -5019,6 +5436,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>scratch缓冲区里的文字变了</title>
       <link href="/2015/12/28/User-visible-change-in-scratch/"/>
@@ -5041,6 +5460,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs的中文化指南</title>
@@ -5067,6 +5488,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>李杀的愤怒</title>
       <link href="/2015/12/28/Xah-is-angry/"/>
@@ -5091,6 +5514,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>博客一周年纪念</title>
@@ -5117,6 +5542,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>MS-Windows下可以用runemacs --daemon后台启动Emacs</title>
       <link href="/2015/12/24/Runemacs-daemon/"/>
@@ -5134,13 +5561,15 @@
       
         <tags>
             
-            <tag> MS-Windows </tag>
-            
             <tag> daemon </tag>
+            
+            <tag> MS-Windows </tag>
             
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>中文版Word 2013的连字(ligature)的bug及一个解决方案</title>
@@ -5169,6 +5598,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>μ? µ?</title>
       <link href="/2015/12/16/Greek-letter-Mu/"/>
@@ -5194,6 +5625,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>孔子的有教无类和烂泥不上墙</title>
       <link href="/2015/12/12/Confucius-educational-philosophy/"/>
@@ -5216,6 +5649,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>setq不能只用一个参数</title>
@@ -5241,6 +5676,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Acrobat XI仿宋字体Bug</title>
@@ -5271,6 +5708,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>让页面可编辑的js片段</title>
       <link href="/2015/12/08/Make-the-web-page-editable/"/>
@@ -5294,6 +5733,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Magit的近期更新</title>
       <link href="/2015/12/08/Magit-recent-update/"/>
@@ -5316,6 +5757,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs后退字体(fallback)</title>
@@ -5342,6 +5785,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>理解Emacs的键盘宏</title>
       <link href="/2015/12/06/Understand-the-keyboard-macro/"/>
@@ -5367,6 +5812,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>HTML元素</title>
       <link href="/2015/12/06/HTML-elements/"/>
@@ -5389,6 +5836,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>注意啦！Arch Linux和罗技G600的用户</title>
@@ -5415,6 +5864,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>原宪甘贫</title>
       <link href="/2015/12/04/Yuan-Xian/"/>
@@ -5437,6 +5888,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs的字符类(Character Classes)</title>
@@ -5462,6 +5915,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs的setf真厉害</title>
@@ -5490,6 +5945,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>在mpv里使用迷你控制器(OSC)</title>
       <link href="/2015/11/24/Use-mini-OSC-in-mpv/"/>
@@ -5517,6 +5974,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>如果一个网站是这样的 你应该举报</title>
       <link href="/2015/11/23/For-a-site-like-this-what-will-you-do/"/>
@@ -5539,6 +5998,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Firefox里默认不支持unicode-range</title>
@@ -5567,6 +6028,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs里如何找到配置文件</title>
       <link href="/2015/11/16/How-to-find-the-dotEmacs-or-init-file/"/>
@@ -5594,6 +6057,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>为什么写博客</title>
       <link href="/2015/11/13/Why-write-a-blog/"/>
@@ -5617,6 +6082,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>别了，百度</title>
       <link href="/2015/11/13/Bye-bye-Baidu/"/>
@@ -5639,6 +6106,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>减少垃圾回收加快Emacs的运行</title>
@@ -5667,6 +6136,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs的calc</title>
       <link href="/2015/11/08/Emacs-calc/"/>
@@ -5694,6 +6165,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Markdown-mode里的复选框(Checkbox)以及如何在Hexo中使用</title>
       <link href="/2015/11/08/Checkbox-for-markdown-mode/"/>
@@ -5719,6 +6192,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我写的bc-mode</title>
       <link href="/2015/11/06/Emacs-bc-mode/"/>
@@ -5742,6 +6217,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>再见了，百度的产品</title>
       <link href="/2015/11/03/Goodbye-Baidu-products/"/>
@@ -5764,6 +6241,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs和Vim的新比喻</title>
@@ -5790,6 +6269,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>天猫双11脚本</title>
       <link href="/2015/10/29/Tmall-11-11-JavaScript/"/>
@@ -5814,6 +6295,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>巧用Emacs和bc进行大数计算——一个技巧</title>
@@ -5844,6 +6327,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs的新形象</title>
       <link href="/2015/10/24/New-look-of-Emacs-25/"/>
@@ -5869,6 +6354,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Lora字体——我眼中最好看的开源西文衬线字体</title>
       <link href="/2015/10/18/Lora-font/"/>
@@ -5892,6 +6379,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>LaTeX里的行间公式和行内公式的括号</title>
       <link href="/2015/10/12/LaTeX-practices/"/>
@@ -5914,6 +6403,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>盘古之白</title>
@@ -5941,6 +6432,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>在Pandoc中对docx文件使用模板的技巧</title>
@@ -5971,6 +6464,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>某东、某宝、某度——网络黑话与古今一体</title>
       <link href="/2015/09/30/X-Bao-X-Dong/"/>
@@ -5995,6 +6490,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>在Emacs里用M-n预测未来</title>
@@ -6023,6 +6520,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>电影《九层妖塔》影评</title>
       <link href="/2015/09/27/Chronicles-of-the-ghostly-tribe/"/>
@@ -6048,6 +6547,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>移除163邮箱发送邮件的广告</title>
       <link href="/2015/09/27/Remove-AD-in-163/"/>
@@ -6071,6 +6572,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>分享一个Hexo博客以及Hexo的文章目录</title>
       <link href="/2015/09/26/A-hexo-blog-and-table-of-contents/"/>
@@ -6093,6 +6596,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>在MS-Windows平台下使用UTF-8编码</title>
@@ -6119,6 +6624,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>保护鼠标滚轮——在Firefox设置滚动加速</title>
       <link href="/2015/09/22/Mouse-wheel-acceleration-in-Firefox/"/>
@@ -6144,6 +6651,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用Org-mode写作和生成的书</title>
       <link href="/2015/09/21/A-book-written-and-produced-in-Org/"/>
@@ -6166,6 +6675,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Variation selector</title>
@@ -6190,6 +6701,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>在Word里制作一个复选框(Checkbox)</title>
       <link href="/2015/09/19/Checkbox-in-MS-Word/"/>
@@ -6207,13 +6720,15 @@
       
         <tags>
             
-            <tag> Word </tag>
-            
             <tag> 复选框 </tag>
+            
+            <tag> Word </tag>
             
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Win8.1自动更新卡住的原因</title>
@@ -6240,6 +6755,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>迁移邮箱——我的一点经验</title>
       <link href="/2015/09/18/Migrate-mailboxes/"/>
@@ -6262,6 +6779,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>为Hexo添加最近评论支持——以Landscape类主题为例</title>
@@ -6288,6 +6807,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>一个PM的个人网站</title>
       <link href="/2015/09/11/Recommend-a-PM-s-website/"/>
@@ -6313,6 +6834,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>一个学习Git的网站</title>
       <link href="/2015/09/09/Learn-Git/"/>
@@ -6335,6 +6858,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>为什么用版本控制系统管理Emacs的配置文件</title>
@@ -6363,6 +6888,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Hexo速度测试</title>
       <link href="/2015/09/02/Hexo-speed-test/"/>
@@ -6386,6 +6913,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Lorem ipsum</title>
       <link href="/2015/09/02/Lorem-ipsum/"/>
@@ -6408,6 +6937,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs包加载机制</title>
@@ -6436,6 +6967,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>《宰相刘罗锅》里来自《警世通言》的故事</title>
       <link href="/2015/08/31/Liu-Luoguo-and-Ordinary-Words-to-Warn-the-World/"/>
@@ -6460,6 +6993,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Magit里显示详细信息</title>
@@ -6486,6 +7021,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>在R中绘制概率分布</title>
       <link href="/2015/08/26/Probability-distribution-in-R/"/>
@@ -6508,6 +7045,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs的win32剪贴簿API</title>
@@ -6536,6 +7075,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>本站近况</title>
       <link href="/2015/08/26/Progress-of-this-site/"/>
@@ -6559,6 +7100,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>某喜闻乐见的软件死了</title>
       <link href="/2015/08/22/Shadowsocks-R-I-P/"/>
@@ -6581,6 +7124,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>方正新书宋和英文字体的搭配</title>
@@ -6607,6 +7152,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>C语言的函数指针</title>
       <link href="/2015/08/14/C-function-pointer/"/>
@@ -6631,6 +7178,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>DPI和页面缩放的关系</title>
@@ -6659,6 +7208,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>「我认Sóng」 这个Sóng字应该怎么打</title>
       <link href="/2015/08/13/S%C3%B3ng/"/>
@@ -6681,6 +7232,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>王子猷的故事</title>
@@ -6705,6 +7258,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>大于等于号和小于等于号的字型</title>
       <link href="/2015/08/10/Glyph-of-GREATER-THAN-OR-EQUAL-TO-and-LESS-THAN-OR-EQUAL-TO/"/>
@@ -6727,6 +7282,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs里用正则表达式匹配中文</title>
@@ -6753,6 +7310,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs实现按一下按两下功能不同的写法</title>
       <link href="/2015/08/08/Repeat-key-binding-demo-for-Emacs/"/>
@@ -6777,6 +7336,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs在保存文件时进行diff</title>
@@ -6805,6 +7366,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>实用排版技术</title>
       <link href="/2015/08/01/Practical-typography/"/>
@@ -6827,6 +7390,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>软换行</title>
@@ -6851,6 +7416,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>升级到了GCC的5.x版</title>
       <link href="/2015/07/25/Use-GCC-5-x/"/>
@@ -6873,6 +7440,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Git真厉害！重构了一下Emacs的配置更好的跨平台</title>
@@ -6897,6 +7466,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用grep从一亿个QQ号里提取6位QQ号</title>
       <link href="/2015/07/24/Grep-100-million-QQ-numbers/"/>
@@ -6919,6 +7490,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>把浏览器变成一个编辑器和中文的首行缩进</title>
@@ -6947,6 +7520,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>金刚经的偈语</title>
       <link href="/2015/07/20/The-diamond-sutra/"/>
@@ -6970,6 +7545,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>有关Emacs的名人名言</title>
       <link href="/2015/07/19/Quotes-of-Emacs/"/>
@@ -6992,6 +7569,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>次要技能vs.主要技能</title>
@@ -7018,6 +7597,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用C-M-f和C-M-b在minibuffer里快速编辑地址</title>
       <link href="/2015/07/17/Use-C-M-f-and-C-M-b-to-navigate-path/"/>
@@ -7040,6 +7621,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Word新版公式编辑器的毛病——不能嵌入字体</title>
@@ -7068,6 +7651,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>SourceForge又上不去了</title>
       <link href="/2015/07/17/SourceForge-is-down-one-more-time/"/>
@@ -7090,6 +7675,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Markdown-mode现在支持Pandoc的fancy_lists了</title>
@@ -7115,6 +7702,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs：觉醒</title>
@@ -7143,6 +7732,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs的科幻小说</title>
       <link href="/2015/07/12/Emacs-Sci-Fi/"/>
@@ -7168,6 +7759,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Emacs的shell-mode可以补全上一条命令</title>
       <link href="/2015/07/10/Shell-mode-can-complete-the-previous-command-on-exclamation-mark/"/>
@@ -7190,6 +7783,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>GNU Octave现在用Qt框架的绘制系统</title>
@@ -7214,6 +7809,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>文森特喜欢的比喻</title>
       <link href="/2015/07/09/Metaphor-of-Vincent-Eades/"/>
@@ -7236,6 +7833,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs-w64是spacemacs推荐的Windows平台编译版</title>
@@ -7262,6 +7861,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>一个学车的笑话</title>
       <link href="/2015/07/05/A-joke/"/>
@@ -7284,6 +7885,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>我的写作风格手册</title>
@@ -7310,6 +7913,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Vi的笑话</title>
       <link href="/2015/06/30/A-vi-joke/"/>
@@ -7332,6 +7937,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Bandwagon的便宜产品卖完了</title>
@@ -7356,6 +7963,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>320 Kbps的音质已经很不错了</title>
       <link href="/2015/06/27/320-Kbps-is-good-enough/"/>
@@ -7378,6 +7987,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>用Emacs Lisp动态生成abbrev</title>
@@ -7402,6 +8013,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>没有任何一种觉醒是不带着痛苦的</title>
       <link href="/2015/06/23/No-coming-to-consciousness-without-pain/"/>
@@ -7424,6 +8037,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>百度对小众域名的收录糟透了</title>
@@ -7450,6 +8065,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>时势造英雄</title>
       <link href="/2015/06/20/Times-produce-their-heroes/"/>
@@ -7472,6 +8089,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs Lisp的cl-loop应用实例</title>
@@ -7498,6 +8117,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>用GDB调试Emacs的经验</title>
       <link href="/2015/06/10/Using-GDB-debug-Emacs/"/>
@@ -7520,6 +8141,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>关于罗永浩的段子</title>
@@ -7544,6 +8167,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>SourceForge目前404了</title>
       <link href="/2015/06/08/SourceForge-is-now-404/"/>
@@ -7567,6 +8192,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Make hexo-generator-category-feed work with Hexo 3.x</title>
       <link href="/2015/06/04/Make-hexo-generator-category-feed-work-with-Hexo-3-x/"/>
@@ -7589,6 +8216,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>为什么你添加了SSH key后GitHub还是要你输入密码？</title>
@@ -7615,6 +8244,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>中文没有真正的双引号</title>
       <link href="/2015/06/03/Chinese-dose-not-have-true-quotation-mark/"/>
@@ -7637,6 +8268,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>三个Word 2013的高级设置</title>
@@ -7661,6 +8294,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Hexo主题Landscape-plus的字体配置</title>
       <link href="/2015/06/01/Font-settings-for-Landscape-plus/"/>
@@ -7684,6 +8319,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>余华小说《第七天》中的冷读(cold reading)</title>
       <link href="/2015/05/30/Cold-reading-in-Yu-Hua-s-The-Seventh-Day/"/>
@@ -7706,6 +8343,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>三个数相加等于30问题的编程实现</title>
@@ -7732,6 +8371,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>百度比谷歌好的一方面</title>
       <link href="/2015/05/27/One-aspect-that-Baidu-is-better-than-Google/"/>
@@ -7756,6 +8397,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>升级MSYS2里MinGW-w64版的NPM</title>
@@ -7782,6 +8425,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>自动提交Hexo博客的地址到百度</title>
       <link href="/2015/05/23/Submit-Hexo-URL-to-Baidu/"/>
@@ -7804,6 +8449,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs Lisp精简Sumatra PDF的配置文件</title>
@@ -7830,6 +8477,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>过滤百度的推广类广告</title>
       <link href="/2015/05/18/Filter-Baidu-promotion/"/>
@@ -7854,6 +8503,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>在ARChon环境下运行网易云音乐</title>
@@ -7882,6 +8533,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>How to make ADB work with APP running on ARChon</title>
       <link href="/2015/05/03/How-to-make-ADB-work-with-APP-running-on-ARChon/"/>
@@ -7904,6 +8557,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>折腾我的台电A11平板</title>
@@ -7928,6 +8583,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>emacs-w64</title>
       <link href="/2015/04/28/emacs-w64/"/>
@@ -7950,6 +8607,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs的字体设置</title>
@@ -7975,6 +8634,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>上划线(Overline)</title>
@@ -8005,6 +8666,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我的Vim体验</title>
       <link href="/2015/04/24/My-Vim-experience/"/>
@@ -8030,6 +8693,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>一个新的Emacs中文资讯站</title>
       <link href="/2015/04/22/New-Chinese-Emacs-site/"/>
@@ -8052,6 +8717,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>百度云是流氓</title>
@@ -8080,6 +8747,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>在Chromium上使用Android的APP——对抗国产逗逼软件的新方法</title>
       <link href="/2015/04/21/Run-Android-app-on-Chromium/"/>
@@ -8099,13 +8768,15 @@
             
             <tag> Android </tag>
             
-            <tag> ARChon </tag>
-            
             <tag> Chromium </tag>
+            
+            <tag> ARChon </tag>
             
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>master分支上的Emacs支持在Windows上使用GnuTLS 3.4.0辣</title>
@@ -8132,6 +8803,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Firefox有了Emacs的键绑定</title>
       <link href="/2015/04/11/Firefox-has-Emacs-keybinding/"/>
@@ -8157,6 +8830,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>STIX字体太好辣</title>
       <link href="/2015/04/07/STIX-is-awesome/"/>
@@ -8179,6 +8854,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>为Emacs添加Astyle支持</title>
@@ -8203,6 +8880,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>发布我的dotEmacs文件</title>
       <link href="/2015/04/01/Git-my-dotEmacs-files/"/>
@@ -8220,13 +8899,15 @@
       
         <tags>
             
-            <tag> dotEmacs </tag>
-            
             <tag> Git </tag>
+            
+            <tag> dotEmacs </tag>
             
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Ubuntu 14.04的壁纸分享</title>
@@ -8253,6 +8934,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>输出逐行递增的星号</title>
       <link href="/2015/03/27/Display-asterisk-simultaneously-by-row/"/>
@@ -8276,6 +8959,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Python做概率论题目</title>
       <link href="/2015/03/24/Python-does-probability-and-statistics-exercises/"/>
@@ -8298,6 +8983,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Word 2013插入公式的技巧</title>
@@ -8323,6 +9010,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>使用MSYS2/MinGW-w64环境编译GNU Emacs</title>
@@ -8351,6 +9040,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>升级到Win8.1</title>
       <link href="/2015/03/16/Upgrade-to-Win-8-1/"/>
@@ -8373,6 +9064,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Win8下释放输入法切换的快捷键Ctrl+Space</title>
@@ -8397,6 +9090,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>说说Shadowsocks</title>
       <link href="/2015/03/15/Talk-about-Shadowsocks/"/>
@@ -8419,6 +9114,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>更快的登录我的搬瓦工服务器</title>
@@ -8443,6 +9140,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>我的名字出现在Emacs的作者文件里辣</title>
       <link href="/2015/03/11/My-name-in-Emacs-authors/"/>
@@ -8465,6 +9164,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>GnuPG可以导致Emacs崩溃</title>
@@ -8491,6 +9192,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Hexo升级到了3.0版</title>
       <link href="/2015/03/05/Hexo-update-to-v3-0/"/>
@@ -8513,6 +9216,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Emacs包管理器的升级版——Paradox</title>
@@ -8541,6 +9246,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>在Windows上Emacs支持Daemon模式了</title>
       <link href="/2015/03/03/Emacs-supports-daemon-on-MS-Windows/"/>
@@ -8568,6 +9275,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>自然基金申报网站疑似崩溃</title>
       <link href="/2015/03/02/NSFC-web-is-down/"/>
@@ -8591,6 +9300,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>为了科学！</title>
       <link href="/2015/03/02/For-sicence/"/>
@@ -8613,6 +9324,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>7zip压缩目录的正确用法</title>
@@ -8639,6 +9352,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>自作「现代宫体诗」几首</title>
       <link href="/2015/02/19/My-poems/"/>
@@ -8663,6 +9378,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>为八戒鸣不平——西行路上行李是谁挑的？</title>
@@ -8689,6 +9406,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>关于《西游记》里沙僧的新看法</title>
       <link href="/2015/02/19/New-view-on-Sha-Wujing/"/>
@@ -8713,6 +9432,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Markdown和Org-mode的比较</title>
@@ -8741,6 +9462,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Windows下使用Hexo的一个坑</title>
       <link href="/2015/02/14/Pitfall-of-using-Hexo-in-Windows/"/>
@@ -8767,6 +9490,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>不同编码(GB2312, UTF-8, UTF-16)下中文内容的占用大小的区别</title>
@@ -8801,6 +9526,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>生成指定格式的数字序列</title>
       <link href="/2015/02/11/Generate-sequence-of-numbers/"/>
@@ -8826,6 +9553,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>谁还是火狐(Firefox)用户 一个知乎用户的搞笑回答</title>
       <link href="/2015/02/04/Who-are-Firefox-Users/"/>
@@ -8850,6 +9579,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>多语言(Batch, BASH, Octave, Emacs Lisp, ..)批量处理文件</title>
@@ -8878,6 +9609,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>两个Emacs函数用于新建和发布Hexo网站</title>
       <link href="/2015/01/26/Two-Emacs-functions-benefit-Hexo-experience/"/>
@@ -8900,6 +9633,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>理解Emacs lisp里的(interactive)</title>
@@ -8926,6 +9661,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Firefox 35.0中使用新的直角主题</title>
       <link href="/2015/01/25/Firefox-v35-new-theme/"/>
@@ -8948,6 +9685,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>批量激活的Windows 8无法免费升级到Windows 10</title>
@@ -8974,6 +9713,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>Firefox中用Base64编码分享小秘密</title>
       <link href="/2015/01/24/Firefox-base64-encode-decode/"/>
@@ -8997,6 +9738,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>搬瓦工(Bandwagon)VPS介绍</title>
       <link href="/2015/01/23/Bandwagon-VPS-introduction/"/>
@@ -9014,15 +9757,17 @@
       
         <tags>
             
-            <tag> Bandwagon </tag>
-            
             <tag> 搬瓦工 </tag>
+            
+            <tag> Bandwagon </tag>
             
             <tag> VPS </tag>
             
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Guideline for building GNU Emacs with MSYS2/MinGW-w64</title>
@@ -9051,6 +9796,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>乔布斯的卖糖水与改变世界</title>
       <link href="/2015/01/23/Selling-sugared-water-or-changing-the-world/"/>
@@ -9074,6 +9821,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>搬瓦工(Bandwagon)上搭建Nginx用来放Hexo做的Blog站</title>
       <link href="/2015/01/21/Bandwagon-VPS-Nginx-setup/"/>
@@ -9091,9 +9840,9 @@
       
         <tags>
             
-            <tag> Bandwagon </tag>
-            
             <tag> 搬瓦工 </tag>
+            
+            <tag> Bandwagon </tag>
             
             <tag> Nginx </tag>
             
@@ -9102,6 +9851,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>Hello World</title>
@@ -9119,6 +9870,8 @@
       
       
     </entry>
+    
+    
     
     <entry>
       <title>QQ群遇奇葩记</title>
@@ -9142,6 +9895,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>电视剧《宰相刘罗锅》汪仲直大人的奏章和无名老者的马屁</title>
@@ -9170,6 +9925,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>黑小米丧心病狂</title>
       <link href="/2013/10/28/Anti-Mi-fan/"/>
@@ -9194,6 +9951,8 @@
         </tags>
       
     </entry>
+    
+    
     
     <entry>
       <title>单纯的指针妹子和她的狐朋狗友</title>
@@ -9220,6 +9979,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>两位数乘三位数等于四位数并且这九个数都不重复</title>
       <link href="/2013/07/30/Nine-different-digits/"/>
@@ -9245,6 +10006,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>给新人的几句话</title>
       <link href="/2013/07/29/Few-words-for-newbies/"/>
@@ -9268,8 +10031,10 @@
       
     </entry>
     
+    
   
   
+    
     
     <entry>
       <title>categories</title>
@@ -9280,14 +10045,7 @@
       
     </entry>
     
-    <entry>
-      <title>Windows下的64位GNU Emacs编译版emacs-w64</title>
-      <link href="/emacs-w64/index.html"/>
-      <url>/emacs-w64/index.html</url>
-      
-        <content type="html"><![CDATA[<p><a href="http://chriszheng.science/2015/04/28/emacs-w64/">English version</a>.</p><h1>目的</h1><p>GNU Emacs的官方的MS-Windows版本是32位的，互联网上只有少数几个64位的Emacs版本，而且已有的64位版对源码进行了修改，更新也不及时。本项目的目的是提供面向64位Windows的，基于官方源码的，更新及时的GNU Emacs编译版。</p><h1>特性</h1><ul><li>源自官方源码，根据开发分支及发行分支构建。</li><li>原生64位的MS-Windows支持。</li><li>编译优化。</li><li>附带JPEG、GIF、PNG、TIFF、SVG、XML2和GnuTLS的支持库。</li></ul><h1>系统要求</h1><p>只支持64位的Windows。测试环境为Windows 8.1。</p><h1>下载</h1><p><strong>百度网盘</strong><a href="http://pan.baidu.com/s/1i33oWtR" target="_blank" rel="noopener">镜像</a>。</p><p>访问SourceForge上的<a href="https://sourceforge.net/projects/emacsbinw64/" target="_blank" rel="noopener">项目主页</a>下载：</p><ul><li><a href="https://sourceforge.net/projects/emacsbinw64/files/snapshot/" target="_blank" rel="noopener">开发分支</a></li><li><a href="https://sourceforge.net/projects/emacsbinw64/files/release/" target="_blank" rel="noopener">发行版</a></li></ul><p>访问GitHub上的<a href="https://github.com/zklhp/emacs-w64" target="_blank" rel="noopener">项目主页</a>，<a href="https://github.com/zklhp/emacs-w64/releases" target="_blank" rel="noopener">下载</a>。</p><h1>用法</h1><ol><li>下载需要的二进制包(比如emacs-bin-w64-20140402.7z)。</li><li>用<a href="http://www.7-zip.org/" target="_blank" rel="noopener">7-Zip</a>等软件解压。</li><li>双击<code>emacs/bin</code>里的<code>runemacs.exe</code>运行。</li></ol><h1>截图</h1><p><img src="./about.png" alt="About"></p><p><img src="./eww.png" alt="EWW"></p><h1>已知问题</h1><p>本程序属于<strong>自用</strong>性质，只在我的电脑上测试过。</p><h1>技术细节</h1><p>如果你对自己编译感兴趣可以参考本站的<a href="http://chriszheng.science/2015/03/19/Chinese-version-of-Emacs-building-guideline/">编译方法</a>。</p>]]></content>
-      
-    </entry>
+    
     
     <entry>
       <title>Emacs新手入门专题</title>
@@ -9298,6 +10056,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>About Me</title>
       <link href="/about-me/index.html"/>
@@ -9306,6 +10066,19 @@
         <content type="html"><![CDATA[<p>我是一个普通的Emacs用户，也是一个用了20年电脑的人。</p><p>我的Blog：<a href="https://chriszheng.science">https://chriszheng.science</a></p><a id="more"></a><h2 id="我是怎么学习emacs的？">我是怎么学习Emacs的？</h2><p>我从2012年开始使用Emacs。我想学Emacs的原因一是想掌握神的编辑器，一是不大习惯用Vi(m)，记不住怎么退出而Emacs是快捷键控制的，还可以用鼠标，上手容易些。那时候国内学习和使用Emacs的环境比今天更差，我同时试用了GNU Emacs和XEmacs，当时GNU Emacs已经是23.x时代了，中文支持已经不错了，而XEmacs已经不更新了，所以我选择了GNU Emacs。</p><p>我学习Emacs是从看自带教程(<code>C-h t</code>)开始的。学习了自带教程后，<a href="http://ergoemacs.org/emacs/emacs.html" target="_blank" rel="noopener">李杀的教程</a>给了我很大的帮助，我如饥似渴的阅读和学习，顺带还提高了我的英语水平。当时我还没有耐心认真学手册(<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html" target="_blank" rel="noopener">Emacs manual</a>、<a href="https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html" target="_blank" rel="noopener">Emacs Lisp Introduction </a>和<a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html" target="_blank" rel="noopener">Emacs Lisp Reference Manual</a>)，现在想想，如果能认真看手册可能会少走一些弯路，但学习速度可能会慢。我每天强迫自己用Emacs，大概用了半年的时间能比较熟练的使用Emacs了。每天用Emacs，生活在Emacs里不仅是一种习惯，也是学习Emacs最好的方法。</p><p>关于Emacs的入门我自己也总结了一个<a href="/emacs-beginner-guide/">教程</a>，只是列出了一些需要记忆的东西，对于连自带教程都懒得看的朋友可能有用。<a href="/2016/11/03/Emacs-refcard/">这种快捷键列表官方也有</a>，分别是<a href="https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf" target="_blank" rel="noopener">GNU Emacs Reference Card</a>和<a href="https://www.gnu.org/software/emacs/refcards/pdf/survival.pdf" target="_blank" rel="noopener">GNU Emacs Survival Card</a>。</p><h2 id="emacs带给我什么？">Emacs带给我什么？</h2><p>我觉得Emacs对于提高效率的功能被夸大了，因为需要额外的学习成本，长期来看学习Emacs似乎是有用的，但还是比不上专门的工具，比如集成开发环境。Emacs带给我更多的是精神上的，一种乐趣，一种爱好。</p><p>忘了说了，我不是程序员，我是个科研工作者。炫酷的开发工具对我没什么用，Emacs提供给我的编辑环境和多工具集成更有用。关于<a href="/2016/06/18/What-I-do-with-Emacs/">我用Emacs干什么？为什么用Emacs？</a>的问题我已经总结了。</p><h2 id="我的贡献-emacs-w64">我的贡献——Emacs-w64</h2><p>我主要用MS-Windows操作系统，在2012年的时候64位的操作系统已经流行了，但是，Windows下使用Emacs的人不多(今天也不多)，而且，其实64位的程序和32位的程序相比并没有什么明显提升，只是可用内存变大了，所以那个时候几乎没有Windows下的64位编译版。当时唯一的一个是Fabrice Popineau的，做了修改，而且更新不及时。一个契机是带有64位编译环境<a href="https://github.com/Alexpux/MINGW-packages" target="_blank" rel="noopener">MinGW-w64</a>的<a href="http://www.msys2.org/" target="_blank" rel="noopener">MSYS2</a>已经有了，加上Eli Zaretskii等的修补，我可以用MSYS2/MinGW-w64的组合编译Emacs，这个项目就命名为Emacs-w64 (<a href="https://sourceforge.net/projects/emacsbinw64/" target="_blank" rel="noopener">SourceForge上的主页</a>和<a href="https://github.com/zklhp/emacs-w64" target="_blank" rel="noopener">GitHub上的主页</a>)。现在我不大愿意更新Emacs-w64了，因为官方也有64位的Windows版，而且比我的更好。但Emacs-w64也是有存在价值的，它推动了64位版的发展，而且，我最初的<a href="https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/" target="_blank" rel="noopener">编译指南</a>被Brian Burns整理成了<a href="http://git.savannah.gnu.org/cgit/emacs.git/tree/nt/INSTALL.W64" target="_blank" rel="noopener">官方的指南</a>。</p><p>因为我一直关注Emacs在Windows下的开发，所以做过一些修修补补的工作，包括一些我用的包。就像上面说的，我用Emacs的习惯不是很好，配置是东抄西抄的，比现在流行的开箱即用的Spacemacs差远了，如果您感兴趣，可以在</p><p><a href="https://coding.net/u/Chris_Zheng/p/dotEmacs/git" target="_blank" rel="noopener">https://coding.net/u/Chris_Zheng/p/dotEmacs/git</a></p><p>看我的配置。我还原创过一些包，都是自己用，也托管了</p><p><a href="https://github.com/zklhp/some-utils" target="_blank" rel="noopener">https://github.com/zklhp/some-utils</a></p><p>比较重要的是<a href="https://github.com/zklhp/some-utils/blob/master/SHELX-mode.el" target="_blank" rel="noopener">SHELX-mode</a>，这是用于编辑单晶解析软件<a href="http://shelx.uni-goettingen.de/" target="_blank" rel="noopener">SHELX</a>的输入输出文件的，但写的不行，凑合能用。</p><h2 id="除了emacs之外">除了Emacs之外</h2><p><a href="/2017/10/07/My-hobbies/">我还有一些业余爱好</a>，基本上已经被Blog记录了。再剩下工作上的我就不讲了。</p><h2 id="后记">后记</h2><p>这个个人简介是为了写英语版而写的，也在Blog，但没链接，不知道有没有人能看到。</p><hr><p>I am an Emacs user from China. I used the name Chris Zheng when I contributed to the software community.</p><p>My blog (in Chinese): <a href="https://chriszheng.science">https://chriszheng.science</a></p><h2 id="how-do-i-learn-emacs">How do I learn Emacs?</h2><p>I use Emacs since 2012. One reason I want to learn Emacs is to follow the saint (<a href="https://en.wikipedia.org/wiki/Editor_war#Humor" target="_blank" rel="noopener">Church of Emacs</a>). The other reason is that I can’t remember how to quit Vi(m), while Emacs has no editing modes plus I can use the mouse in Emacs. In 2012, the environment for learning and using Emacs in China was worse than today. I tried GNU Emacs and XEmacs at the same time. At that time, GNU Emacs was already in the era of 23.x, so that the Unicode support was already good, and XEmacs was not updated for years. I chose GNU Emacs admittedly.</p><p>My learning starts with the tutorial (<code>C-h t</code>). After learning the tutorial, <a href="http://ergoemacs.org/emacs/emacs.html" target="_blank" rel="noopener">Xah Lee’s tutorial</a> helps me a lot. I absorb every knowledge about Emacs. This even improves my English. I’m not patient enough to read the manuals (<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html" target="_blank" rel="noopener">Emacs manual</a>, <a href="https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html" target="_blank" rel="noopener">Emacs Lisp Introduction </a>, and <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html" target="_blank" rel="noopener">Emacs Lisp Reference Manual</a>). I think the manual may help me, but also slow my learning. I forced myself to use Emacs day to night and got to be skilled in about half a year. Living in Emacs is not only a habit but the best method for learning Emacs.</p><h2 id="what-do-emacs-bring-to-me">What do Emacs bring to me?</h2><p>I think the productivity of Emacs is exaggerated because it requires extra learning costs. It is still useful in the long term but is less useful than the specialized tools such as integrated development environment. What Emacs brings to me is the mental pleasure, the hobby.</p><p>Forgot to say, I am not a programmer, I am a researcher. Fancy development tools are not useful to me, Emacs provides the editing environment and integrated interfaces for many command-line tools. I think it is useful for me.</p><p>Especially, I found the following packages useful:</p><ul><li>Use <a href="http://jblevins.org/projects/markdown-mode/" target="_blank" rel="noopener">markdown-mode</a> and <a href="https://github.com/kuanyui/hexo.el" target="_blank" rel="noopener">hexo.el</a> in combination with <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> to build my blog. Tramp was also used for administration.</li></ul><ul><li><p>Use build-in modes to write codes.</p></li><li><p>Use <a href="http://ess.r-project.org/" target="_blank" rel="noopener">ESS</a> and octave-mode as interfaces to GNU R and GNU Octave.</p></li><li><p>Use shell-mode and dired for many tasks.</p></li><li><p>Use calculator or octave-mode for calculation.</p></li><li><p>Use <a href="http://www.mew.org/en/" target="_blank" rel="noopener">Mew</a> (past) and <a href="https://github.com/wanderlust/wanderlust" target="_blank" rel="noopener">Wanderlust</a> for Email.</p></li><li><p>Use <a href="https://magit.vc/" target="_blank" rel="noopener">Magit</a> to Git.</p></li></ul><p>Thank you for bring them to me.</p><h2 id="my-project-emacs-w64-and-more">My project — Emacs-w64 and more</h2><p>I mainly use MS-Windows. In 2012 the 64-bit Windows is becoming popular. Because very few people use Emacs under MS-Windows, plus the fact that 64-bit program isn’t better than 32-bit one, you can hardly find a 64-bit Emacs for Windows at that time. The only one I know is Fabrice Popineau’s, which is patched and outdated. One opportunity is that <a href="http://www.msys2.org/" target="_blank" rel="noopener">MSYS2</a> which includes a 64-bit compiling environment <a href="https://github.com/Alexpux/MINGW-packages" target="_blank" rel="noopener">MinGW-w64</a> appears. Based on Eli Zaretskii’s irreplaceable job, I managed to build 64-bit Emacs for Windows using the combination MSYS2/MinGW-w64. The project than named Emacs-w64 (<a href="https://sourceforge.net/projects/emacsbinw64/" target="_blank" rel="noopener">On SourceForge</a> and <a href="https://github.com/zklhp/emacs-w64" target="_blank" rel="noopener">On GitHub</a>). Today I feels unmotivated to update Emacs-w64 since the official version is better than mine. However, Emacs-w64 did have its place. It promoted the development of 64-bit version. Moreover, <a href="https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/" target="_blank" rel="noopener">my guideline</a> was organized into the <a href="http://git.savannah.gnu.org/cgit/emacs.git/tree/nt/INSTALL.W64" target="_blank" rel="noopener">official guide</a> by Brian Burns.</p><p>Since I am interested in building Emacs under Windows, I have fixed some bugs in Emacs and some packages. As I said, I learned Emacs in a not-good way. My personal dotEmacs is copied from everywhere on the Internet and is not well-organized. Reading configurations of famous kits such as Spacemacs is definitely better. But if you will, please see</p><p><a href="https://coding.net/u/Chris_Zheng/p/dotEmacs/git" target="_blank" rel="noopener">https://coding.net/u/Chris_Zheng/p/dotEmacs/git</a></p><p>I wrote some packages for my own use. You can find them at</p><p><a href="https://github.com/zklhp/some-utils" target="_blank" rel="noopener">https://github.com/zklhp/some-utils</a></p><p>What deserves to mention is <a href="https://github.com/zklhp/some-utils/blob/master/SHELX-mode.el" target="_blank" rel="noopener">SHELX-mode</a>. It’s for the crystal structure program <a href="http://shelx.uni-goettingen.de/" target="_blank" rel="noopener">SHELX</a>. But it has bugs.</p><p>This is my story. Thank you for your reading.</p>]]></content>
       
     </entry>
+    
+    
+    
+    <entry>
+      <title>Windows下的64位GNU Emacs编译版emacs-w64</title>
+      <link href="/emacs-w64/index.html"/>
+      <url>/emacs-w64/index.html</url>
+      
+        <content type="html"><![CDATA[<p><a href="http://chriszheng.science/2015/04/28/emacs-w64/">English version</a>.</p><h1>目的</h1><p>GNU Emacs的官方的MS-Windows版本是32位的，互联网上只有少数几个64位的Emacs版本，而且已有的64位版对源码进行了修改，更新也不及时。本项目的目的是提供面向64位Windows的，基于官方源码的，更新及时的GNU Emacs编译版。</p><h1>特性</h1><ul><li>源自官方源码，根据开发分支及发行分支构建。</li><li>原生64位的MS-Windows支持。</li><li>编译优化。</li><li>附带JPEG、GIF、PNG、TIFF、SVG、XML2和GnuTLS的支持库。</li></ul><h1>系统要求</h1><p>只支持64位的Windows。测试环境为Windows 8.1。</p><h1>下载</h1><p><strong>百度网盘</strong><a href="http://pan.baidu.com/s/1i33oWtR" target="_blank" rel="noopener">镜像</a>。</p><p>访问SourceForge上的<a href="https://sourceforge.net/projects/emacsbinw64/" target="_blank" rel="noopener">项目主页</a>下载：</p><ul><li><a href="https://sourceforge.net/projects/emacsbinw64/files/snapshot/" target="_blank" rel="noopener">开发分支</a></li><li><a href="https://sourceforge.net/projects/emacsbinw64/files/release/" target="_blank" rel="noopener">发行版</a></li></ul><p>访问GitHub上的<a href="https://github.com/zklhp/emacs-w64" target="_blank" rel="noopener">项目主页</a>，<a href="https://github.com/zklhp/emacs-w64/releases" target="_blank" rel="noopener">下载</a>。</p><h1>用法</h1><ol><li>下载需要的二进制包(比如emacs-bin-w64-20140402.7z)。</li><li>用<a href="http://www.7-zip.org/" target="_blank" rel="noopener">7-Zip</a>等软件解压。</li><li>双击<code>emacs/bin</code>里的<code>runemacs.exe</code>运行。</li></ol><h1>截图</h1><p><img src="./about.png" alt="About"></p><p><img src="./eww.png" alt="EWW"></p><h1>已知问题</h1><p>本程序属于<strong>自用</strong>性质，只在我的电脑上测试过。</p><h1>技术细节</h1><p>如果你对自己编译感兴趣可以参考本站的<a href="http://chriszheng.science/2015/03/19/Chinese-version-of-Emacs-building-guideline/">编译方法</a>。</p>]]></content>
+      
+    </entry>
+    
+    
     
     <entry>
       <title>200多本把妹学电子书的读书笔记</title>
@@ -9316,6 +10089,8 @@
       
     </entry>
     
+    
+    
     <entry>
       <title>学术写作指要——一个技术指导(Essentials of academic writing—A technical approach)</title>
       <link href="/essentials-of-academic-writing/index.html"/>
@@ -9324,6 +10099,7 @@
         <content type="html"><![CDATA[<p>本文随时更新，请记住本文的永久地址：</p><p style="font-size: 18px"><a href="https://chriszheng.science/essentials-of-academic-writing/">https://chriszheng.science/essentials-of-academic-writing/</a></p><p>或者把二维码分享给你的小伙伴们：</p><p><img src="/img/Essentials-of-academic-writing-QR.png" alt="本页的二维码"></p><p>如果您觉得该文有帮助欢迎打赏(<a href="https://icehe.me/web/donate/" target="_blank" rel="noopener">打赏代码从这抄的</a>)。</p><style>#rewardButton {  cursor: pointer;  border: 0;  outline: 0;  border-radius: 100%;  padding: 0;  margin: 0;  letter-spacing: normal;  text-transform: none;  text-indent: 0px;  text-shadow: none;}#rewardButton span {  display: inline-block;  width: 80px;  height: 35px;  border-radius: 5px;  color: #fff;  font-weight: 400;  font-style: normal;  font-variant: normal;  font-stretch: normal;  font-size: 18px;  font-family: "Microsoft Yahei";  background: #f44336;}#rewardButton span:hover {  background: #f7877f;}#QR {  padding-top: 20px;}#QR a {  border: 0;}#QR img {  width: 180px;  max-width: 100%;  display: inline-block;  margin: 0.8em 2em 0 2em;}#wechat:hover p {  animation: roll 0.1s infinite linear;  -webkit-animation: roll 0.1s infinite linear;  -moz-animation: roll 0.1s infinite linear;}#alipay:hover p {  animation: roll 0.1s infinite linear;  -webkit-animation: roll 0.1s infinite linear;  -moz-animation: roll 0.1s infinite linear;}@-moz-keyframes roll {  from {    -webkit-transform: rotateZ(30deg);    -moz-transform: rotateZ(30deg);    -ms-transform: rotateZ(30deg);    -o-transform: rotateZ(30deg);    transform: rotateZ(30deg);  }  to {    -webkit-transform: rotateZ(-30deg);    -moz-transform: rotateZ(-30deg);    -ms-transform: rotateZ(-30deg);    -o-transform: rotateZ(-30deg);    transform: rotateZ(-30deg);  }}@-webkit-keyframes roll {  from {    -webkit-transform: rotateZ(30deg);    -moz-transform: rotateZ(30deg);    -ms-transform: rotateZ(30deg);    -o-transform: rotateZ(30deg);    transform: rotateZ(30deg);  }  to {    -webkit-transform: rotateZ(-30deg);    -moz-transform: rotateZ(-30deg);    -ms-transform: rotateZ(-30deg);    -o-transform: rotateZ(-30deg);    transform: rotateZ(-30deg);  }}@-o-keyframes roll {  from {    -webkit-transform: rotateZ(30deg);    -moz-transform: rotateZ(30deg);    -ms-transform: rotateZ(30deg);    -o-transform: rotateZ(30deg);    transform: rotateZ(30deg);  }  to {    -webkit-transform: rotateZ(-30deg);    -moz-transform: rotateZ(-30deg);    -ms-transform: rotateZ(-30deg);    -o-transform: rotateZ(-30deg);    transform: rotateZ(-30deg);  }}@keyframes roll {  from {    -webkit-transform: rotateZ(30deg);    -moz-transform: rotateZ(30deg);    -ms-transform: rotateZ(30deg);    -o-transform: rotateZ(30deg);    transform: rotateZ(30deg);  }  to {    -webkit-transform: rotateZ(-30deg);    -moz-transform: rotateZ(-30deg);    -ms-transform: rotateZ(-30deg);    -o-transform: rotateZ(-30deg);    transform: rotateZ(-30deg);  }}</style><div>  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">    <div><i class="fa fa-fw fa-coffee"></i> Donate</div>    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">      <span>赏</span>    </button>    <div id="QR" style="display: block;">              <div id="wechat" style="display: inline-block">          <a href="/img/My-WeChatQR.png" class="fancybox" rel="group"><img id="wechat_qr" src="/img/My-WeChatQR.png" alt="WeChat Pay"></a>          <p>WeChat 微信</p>          <!--<p>微信打赏</p>-->        </div>                    <div id="alipay" style="display: inline-block">          <a href="/img/My-AliPayQR.png" class="fancybox" rel="group"><img id="alipay_qr" src="/img/My-AliPayQR.png" alt="Alipay"></a>          <p>Alipay 支付宝</p>          <!--<p>支付宝打赏</p>-->        </div>          </div>  </div><h2 id="前言">前言</h2><p>学术写作是学术活动一个重要环节。与发达国家相比，国内的学术写作教育落后，而中文的学术写作又具有特殊性，再加上国内规范制订滞后的现状，让很多刚进入科研领域的研究生困惑。本文试图以自己的经验整理学术写作的要点。所谓「指要」，就是只列举要点而不多加解释，点到为止；所谓「技术指导」，就是不仅告诉读者应该什么样，而且告诉他们应该如何做。希望本手册能给年轻研究者带来一些帮助。</p><p>需要指出的是，本文的部分内容，如排版规则，不是非黑即白的教条，它们更多的是一种约定俗成的习惯，具体的取舍有待作者决定，而且要遵从相关组织的规范和要求。文中的很多内容参考了美国化学会的<em>The ACS Style Guide</em>、中文问答社区知乎(<a href="http://www.zhihu.com/" target="_blank" rel="noopener">http://www.zhihu.com/</a>)的网友问答以及互联网上的其他资料。限于本人水平，如有纰漏欢迎指正。</p><h2 id="学术写作的基本要求">学术写作的基本要求</h2><p>学术写作的基本要求可归纳为以下三点：</p><ul><li><strong>正确</strong>——作者应力保写作内容的正确性。</li><li><strong>清晰</strong>——学术写作属于说明文体，应传递清楚的信息。</li><li><strong>简洁</strong>——保证正确和清晰的前提下尽量简洁。</li></ul><h2 id="学术论文的组成及要点">学术论文的组成及要点</h2><p>一篇学术论文的主要组成部分及要点如下。<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p><h3 id="题目-title">题目(Title)</h3><ol><li>最好在论文写作完成后再拟定题目。</li><li>题目应简明准确的反映论文的内容。</li><li>题目应包括最多的信息，足够吸引读者的兴趣。</li><li>题目是相对独立的。</li><li>避免使用术语、符号、公式和缩写。</li><li>过长或过短的题目都不好，过长的题目可以拆分成题目和副标题。</li></ol><h3 id="署名和所属机构-byline-and-affiliation">署名和所属机构(Byline and Affiliation)</h3><ol><li>署名只能包括对论文有重大贡献的人。</li><li>作者名字应写全名并且保证统一。<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li><li>不要在署名中包括官衔学位等头衔。</li><li>如果有多于一个的作者，使用上标的或星号标出通讯作者。</li></ol><h3 id="摘要-abstract">摘要(Abstract)</h3><ol><li>对于研究型论文，应简单介绍论文研究的问题或研究目的、理论或实验设计、总结主要发现和指出主要结论。</li><li>对于综述，摘要应包括摘要的主题、目的、综述范围以及结论。</li><li>摘要应简洁和完整，达到可以独立成文的程度。</li><li>不要在摘要中补充或评论论文中的成果。</li><li>摘要中不要有参考文献、图、表、公式、流程图等。</li><li>为避免重复和消除歧义，可以使用缩写词和缩略词。首次使用缩略形式应定义。</li><li>由于摘要的独立性，摘要中出现的缩略形式在正文中首次出现时要重新定义。</li></ol><h3 id="前言-introduction">前言(Introduction)</h3><ol><li>开头的几句话要清楚的陈述拟解决的问题及研究的必要性。</li><li>简洁和适当地讨论问题的重要性和现有工作缺陷。</li><li>引用相关文献说明前人工作，避免使用「二次文献」。</li><li>前言部分要展示现有工作和前人工作的不同或现有工作对前人工作的继承。</li><li>前言部分有时候不加标题，因为正文的第一段一般是介绍性的。</li></ol><h3 id="试验细节和理论基础-experimental-details-or-theoretical-basis">试验细节和理论基础(Experimental Details or Theoretical Basis)</h3><ol><li>实验性论文中，这部分可能被命名为「实验方法」(Experimental Methods)、「实验部分」(Experimental Section)或「材料方法」(Materials and Methods)。理论研究的工作，这部分可能叫「理论基础」(Theoretical Basis)或「理论计算」(Theoretical Calculations)。具体的命名要参考具体杂志的要求。</li><li>实验工作要给出实验材料和方法的细节以便其他研究者能重复该工作。如果所用方法是标准方法，要引用适当的文献并给出需要的细节。理论研究同样要给出足够的细节并且包括背景信息和公式。占篇幅的内容可以放在支撑材料(supporting information)中。</li><li>要给出所用材料的纯度。</li><li>新的和不常见的化合物要给出化学名。应使用标准的命名法。</li><li>避免使用仪器和试剂的商标和品牌名称。</li><li>使用单独的段落提示可能出现的危险，比如容易自燃和爆炸或有毒的物质。</li></ol><h3 id="结果-results">结果(Results)</h3><ol><li>总结收集的数据及统计处理，不要讨论。</li><li>不要为了使用图表而使用图表，使用图表的目的是清楚的展示所得结果。</li></ol><h3 id="讨论-discussion">讨论(Discussion)</h3><ol><li>该部分需要对实验结果进行解释和比较。</li><li>客观指出工作的成果和不足。</li><li>应简单陈述成果的影响，指出是否有进一步研究或应用的必要。</li></ol><h3 id="结论-conclusions">结论(Conclusions)</h3><ol><li>结论应建立在已有结果的基础上。</li><li>不要重复或增加不必要的内容。</li></ol><h3 id="致谢-acknowledgments">致谢(Acknowledgments)</h3><ol><li>感谢除作者之外对论文有贡献的人。</li><li>可以在这部分列出基金名称和基金号。</li><li>致谢的具体格式要遵循杂志要求。</li></ol><h3 id="参考-references">参考(References)</h3><p>参考文献是论文中最容易出现错误的地方。这部分的要点单列一章进行介绍。</p><p>要注意的是，这些论文的组成要素不一定在一篇论文中全部出现，作者可以根据文章需要和杂志的要求对各部分进行适当的调整，比如结果讨论在试验方法之前，或者将结果和讨论合并为一个部分。</p><h2 id="学术语言">学术语言</h2><p>使用学术语言是学术写作和文学写作的主要区别，给出学术语言的确切定义是困难的，学术语言的掌握也非一朝一夕。下面是学术论文写作中要注意的问题：</p><ul><li>确保不使用错误的字词句。</li><li>学术语言为陈述句，少用疑问句。<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></li><li><strong>不能</strong>使用缩略形式， 比如“It’s”等不应使用。</li><li>陈述事实时避免使用第一人称。<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup></li><li>英文时态应尽量简单，如用过去时描述试验，现在时陈述结果。</li><li>少写长句和难句。</li><li>注重逻辑性，比如采用主题句约束各段内容，注重一些在逻辑上讲不通的写法(“The compound was synthesized in this paper”—化合物应该在实验室里合成而非在论文中合成)。<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup></li><li>合理使用专业术语，不过分堆砌术语，<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>也不要使用非学术语言。</li><li>使用缩写是为了行文方便，不要因为使用了缩写而降低了可读性。</li></ul><p>其中，缩写是相对容易被忽视的要素，缩写容易犯的错误有：</p><ul><li><p>摘要中出现的缩写正文没有再次解释。<br>前一部分已经解释过，正文和摘要是相互独立的两部分，缩写必须解释两次。</p></li><li><p>多次解释缩写的含义。<br>如果使用缩写较多，使用缩略语表是一种比较好的解决方案。</p></li><li><p>解释公认的缩写。<br>一个例子是DNA，没必要解释。判断的标准是目标读者，如相关领域的研究者或者本科生，如果他们能理解，不必要解释。</p></li><li><p>使用奇怪的缩写。</p></li></ul><h2 id="中文学术写作">中文学术写作</h2><p>中文为主的学术写作不可避免的要使用数学符号和单位等西文字符，这使得一篇中文论文实质上包含两种「环境」——「中文环境」和「西文环境」。理解中文环境和西文环境的界限和各自的要点对于掌握中文学术写作非常必要。简言之，一篇中文论文的主要内容是使用中文写作的，属于中文环境，论文中数值和单位等包含西文字符和符号的属于西文环境。目前，有关中英文混排的格式规范尚有很多争论，但「尊重中文，区别对待」是可以普遍接受的。所谓尊重中文，即对西文环境中与中文写作冲突的规则进行修改；区别对待，即对西文环境应用其特定的规范。</p><p>举例来说，「尊重中文」的一个例子是标点的使用。中文的标点是「全角」的，占一个汉字的宽度，所以也就没有必要再在标点符号左右加空格，这与英语环境逗号后面普遍需要加空格的情况不同。而在论文中的英文环境，比如大段的内容是以英文或数学符号呈现的时候，这中间的符号就可以用英文的逗号，自然也需要在逗号后面加空格。关于标点符号的时候下文还有进一步的介绍。<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup></p><h2 id="标点符号和数学环境">标点符号和数学环境</h2><p>标点符号是论文中不起眼的组成部分，却是容易「露怯」的地方。同理，论文中数字和公式的使用一般也不多，可也有讲究。写论文未必要精通各种符号的使用规范，不逾规矩就好。</p><h3 id="标点符号">标点符号</h3><p>在中文和英语里，标点符号都有固定规范的用法，而中文写作的特殊性又使得一篇文档同时存在中文环境和西文环境。特别强调的一点是，中西文标点符号不太一样，中文的标点符号大都是「全角」的，占一个汉字的宽度，相对而言，西文标点大都是「半角」的，占半个汉字的宽度。这个特点导致了西文符号系统的一个基本要求：标点符号后要加空格。<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>这是中文和西文写作最大的不同，因为中文写作中，只有段落开头需要空出两个汉字的宽度，其他地方都不需要额外的空格，而英语符号并不像中文那样「自带空白」，所以需要手动添加空格。以下几条基本规则可以帮你快速掌握英文环境中空格的用法。</p><p>除下列特例外，单词、数字、标点符号之间<strong>需要添加空格</strong>：</p><ul><li>两个标点符号之间一般不加空格，如表示缩写的“.”与英文“,”之间不加空格。</li><li>四个特殊的单位，“%” (百分号)、“°” (度)、“′” (分)、“″” (秒)和数字在一起使用时<strong>不加空格</strong>。</li><li>连接性的符号，如“-” (连字符，hyphen，组成合成词)和“–” (EN Dash，表示范围)，<strong>前后不加空格</strong>。<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup></li><li>上标下标的符号不加空格。</li></ul><p>此外，如果写作中需要连续写两个相同的标点符号，比如一个是表示缩写的“.”，一个是表示句号的“.”，一般只写一个，这也是一条一般性的原则。</p><h3 id="数学环境">数学环境</h3><p>本文对于数学环境的介绍局限于化学等使用「一般数学」的学科，不涉及数学物理等需要使用复杂数学符号系统的学科。「一般数学」的数学环境可以分为数量和公式两部分。</p><p>咬文嚼字的说，所谓数量就是“数”和“量”，即“数值”和“单位”。对于数值应注意的要点有：</p><ul><li>数值可表示为常规数字(如3.14)和科学记数法(如1 × 10<sup>5</sup>)，一般都是正常写出，<strong>不用</strong>斜体和加粗。</li><li>精确位数的规则适用于测定值，对于一些常量，比如重复次数，不要写成“3.0”。</li><li>常规数字中不要加空格和逗号。<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup></li></ul><p>在单位使用方面，一般性的原则有：</p><ul><li>尽量使用标准单位，如SI单位，少用非标准单位。</li><li>单位不用斜体表示。</li></ul><p>除了数量外剩下的都可以看作是公式，或者说是数学符号系统。论文中一个常见的形式是用字母表示一些物理量，比如用<em>l</em>表示长度(即length的首字母)。习惯上，标量用斜体表示，向量用粗体表示<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup>，这条规则的目的是为了让变量与单位等符号有所区别，而且我们接触的大量的变量都是标量，需要用斜体表示。变量用斜体和向量加粗的规则也适用于公式环境，比如“S<sub>n</sub>”，“n”表示重复次数，则“n”不是一个物理量，不像<em>l</em>那样有数值和单位，不用斜体，而在“S<sub><em>l</em></sub>”中<em>l</em>表示长度，是一个物理量，用斜体。从这两个例子也可以看出，这条规则在变量上标和下标时同样适用。</p><p>除了简单的物理量外，公式也会出现在论文中，但受篇幅所限，除了数学等专门的领域外，论文中不会出现大段的公式推导。一般来说，公式可以选择嵌入到正文中，比如S<sub>n</sub> = n(n + 2)/2，或者单独占一行，如</p><p>$S_{n} = \frac{n(n + 1)}{2}$</p><p>对于嵌入到正文中的公式，为求简单可以选择用“/”表示除号，而独占一行的公式应尽量规范。为了保证美观和规范可以用如下的规则书写公式：<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup></p><ul><li>不用“*”(星号)或“X”(大写字母)表示乘法，应使用规范的乘号“×”。</li><li>尽量用专门的减法符号“−”。</li><li>常见的二元符号，即连接左右部分的符号，如“=”、“+”、“−”和“×”，一般左右都空格。特例是“/”、“:”等表示相除运算的时候左右不加空格。</li><li>只在一个方向上起效果的符号，即一元符号，如负号“−”，和数字之间不加空格，直接写“−5”。</li><li>括号也可以认为是只在一个方向上起效果的符号，和括号内的数值与符号间不加空格，写成“(<em>l</em> + <em>h</em>)”。</li><li>函数名一般斜体，函数名和括号间不空格，写成“<em>f</em>(<em>x</em>)”。<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup></li></ul><h2 id="图表要点">图表要点</h2><p>图表规范比较难解释，虽说好图胜千言，什么是“好图”倒不容易讲明白。</p><p>对于图表，共性的地方是组成要素和大小。要素有：</p><ul><li><p>图和表的引用方式。<br>比如中文的“图1”和“表1”，英语的“Figure 1”和“Table 1”，等等。不同杂志的要求是不同的。<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup>需要注意数字后是否有点。</p></li><li><p>图和表的题目。<br>图的题目在图下面，表的题目(表头)在表上面。</p></li><li><p>解释图表中的元素。<br>比如在表头写上单位，在图的题目里面标注不同的符号代表的含义。对于图也可以用图例指示元素的含义。</p></li><li><p>图和表的主体。<br>图的座标轴是容易错的地方，遗漏了文字或单位都是不应该的。</p></li><li><p>附加的解释。<br>比如表下面可能会对表的内容做进一步的解释。</p></li></ul><p>图表的大小一般是左右「撑满」，对于论文，杂志可能会规定宽度大小。一般来说图表不能超出页面大小，而且还要考虑页边距，如果表实在太大，可以考虑改变把页面改成横的。</p><p>一个需要说明的是，对于学术刊物，图表的数量需要控制，可能会有一个最大的上限。多出来的图表可以放在支撑材料(“Supplementary Material”或“Supplementary Information”，后者也简称SI)里。支撑材料一般可以供读者下载，一些不那么重要的信息，比如一些原始数据、占篇幅的内容，都可以放在支撑材料里。有些杂志还支持功能更多的支撑材料展示方式，可以在网页版的文献里交互的呈现数据。</p><p>对于图来说，还需要注意：</p><ul><li><p>保证清晰。<br>在制作时要有清晰度的概念，字不要太小，一定要预先知道这个图大概会有多大。</p></li><li><p>保留好原始的图片文件，选择导出的方式生成指定要求的图片。<br>比如用PhotoShop制作插图，要求的格式一般是TIFF、PNG或JPG格式，但PSD格式的源文件要留好。</p></li><li><p>要有区分度。<br>颜色和形状等不要相近。对于彩色图片，要考虑图是否会以黑白的形式呈现，比如需要打印而且只有黑白打印，就需要在图中以形状区分不同的内容，比如虚线和实线、方块和三角等等。</p></li></ul><h2 id="论文排版">论文排版</h2><p>一种观点认为，作者只需要对论文的内容负责，排版不是作者应该关心的，这是不正确的。不论是投寄给杂志社的手稿还是学位论文，它们以何种形式呈现给读者是作者应该负责的。好的排版能突出文字，让论文的内容更好地被读者理解和接受。<sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup></p><p>在排版方面首先要强调的是论文的呈现形式。虽然MS Word是最常用的论文写作工具，<sup class="footnote-ref"><a href="#fn16" id="fnref16">[16]</a></sup>但Word的文档格式(doc和docx)并不适宜保存文档的排版细节，还存在兼容性和安全性的问题。如果需要保持排版细节，PDF (Portable Document Format)是最好的选择，Word 2007之后的版本都提供了保存为PDF的功能。<sup class="footnote-ref"><a href="#fn17" id="fnref17">[17]</a></sup>将手稿转换为PDF不仅可以增强文章的可移植性，还有助于发现论文的错误，因为人们在自己熟悉的环境中会不自觉的放松警惕，而把文章换一种形式呈现出来，消除了主观因素的影响。</p><h2 id="参考文献">参考文献</h2><h3 id="参考文献风格">参考文献风格</h3><p>不同杂志中参考文献的格式有很大差异，即使是在同一领域也很难找到两个杂志使用相同的参考文献格式。虽然参考文献的格式千变万化，但根据编排和引用方式可大致可分为两种类型：</p><ul><li><p>根据作者姓名、页码或年份编排和引用。<br>这种形式的代表是MLA (Modern Language Association)和APA (American Psychological Association)。这类格式一般在社会科学和综述类论文中用的多。</p></li><li><p>顺序编排，通过编号引用。<br>代表是Chicago风格。化学等注重实验的论文大都采用这种形式引用参考文献。</p></li></ul><p>通常一个编号对应一篇引用文献，但编号编排的参考文献风格还有一个衍生类型，可以称为「紧缩」类型，就是编排时一个编号后跟多篇文献，代表是ACS风格。同样的文献采用三种风格编排后的效果如下：</p><ul><li>APA风格</li></ul><blockquote><p>这里是第一处引用(Santini et al., 2014;Tisato el al., 2010)。这是第二处(Santini et al., 2014)。</p><p>Santini, C., Pellei, M., Gandin, V., Porchia, M., Tisato, F., &amp; Marzano, C. (2014). Advances in copper complexes as anticancer agents. Chemical Reviews, 114(1), 815–862. doi:10.1021/cr400135x</p><p>Tisato, F., Marzano, C., Porchia, M., Pellei, M., &amp; Santini, C. (2010). Copper in diseases and treatments, and copper-based anticancer strategies. Medicinal Research Reviews, 30(4), 708–749. doi:10.1002/med.20174</p></blockquote><ul><li>Chicago风格</li></ul><blockquote><p>这里是第一处引用。<sup>1,2</sup>这是第二处。<sup>1</sup></p><ol><li><p>Santini, Carlo, Maura Pellei, Valentina Gandin, Marina Porchia, Francesco Tisato, and Cristina Marzano. 2014. “Advances in copper complexes as anticancer agents.”  Chemical Reviews 114 (1):815–862. doi: 10.1021/cr400135x.</p></li><li><p>Tisato, Francesco, Cristina Marzano, Marina Porchia, Maura Pellei, and Carlo Santini. 2010. “Copper in diseases and treatments, and copper-based anticancer strategies.”  Medicinal Research Reviews 30 (4):708–749. doi: 10.1002/med.20174.</p></li></ol></blockquote><ul><li>ACS风格</li></ul><blockquote><p>这里是第一处引用<sup>1</sup>。这是第二处<sup>1a</sup>。</p><ol><li>(a) Santini, C.; Pellei, M.; Gandin, V.; Porchia, M.; Tisato, F.; Marzano, C., Advances in copper complexes as anticancer agents. Chem. Rev. 2014, 114 (1), 815–862; (b) Tisato, F.; Marzano, C.; Porchia, M.; Pellei, M.; Santini, C., Copper in diseases and treatments, and copper-based anticancer strategies. Med. Res. Rev. 2010, 30 (4), 708–749.</li></ol></blockquote><h3 id="参考文献要素">参考文献要素</h3><p>以上面三种代表风格为例，一个参考文献可以分为两个部分——引用部分(citation)和书目(bibliography)。</p><p>引用部分的格式主要有以下两种变化。</p><ol><li><p>引用形式是“(Santini et al., 2014)”、“[1]”、“<sup>1</sup>”或“<sup>[1]</sup>”。</p></li><li><p>引用位置是在句子中间引用或在句末引用；在标点符号之前引用或在标点之后引用。</p></li></ol><p>书目部分的变化有以下几种。</p><ol><li><p>排序方式，是否编号，编号方式是“[1]”、“1.”或“1 ”。</p></li><li><p>作者姓名写法，比如</p><p>姓在前名在后并加逗号：Zheng, Cheng-Gong <br>名在前姓在后：Cheng-Gong Zheng <br>加点缩写形式：C.-G. Zheng <br>最后一种写法中的点“.”表示省略了部分内容。需要注意如果后面还有一个点“.”，只写一个。</p></li><li><p>列出全部作者或列出部分，是否使用<em>et al</em>.。</p></li><li><p>作者姓名如何分隔，与后一个项目如何分隔。</p></li><li><p>最后一个作者是否使用“and”或“&amp;”。</p></li><li><p>是否列出题目，题目是否用斜体，题目的形式是全部大写、首字母大写还是句子大写。</p></li><li><p>题目中冒号后面的单词是否大写。</p></li><li><p>杂志名用全称、带点缩写或不带点缩写，是全部大写、单词首字母大写还是句子大写，比如</p><p>全称单词首字母大写：Journal of the American Chemical Society <br>全称全部大写：JOURNAL of the AMERICAN CHEMICAL SOCIETY <br>带点缩写：J. Am. Chem. Soc. <br>不带点缩写：J Am Chem Soc <br>对于带点缩写的形式，需要注意如果后面还有一个点“.”，只写一个。如果后面有逗号“,”，写成“.,”，中间不空格。</p></li><li><p>杂志名是否斜体。</p></li><li><p>杂志名与后一个项目如何分隔。</p></li><li><p>年、卷、期的顺序及取舍，比如</p><p>年份在题目之前：(2014). Advances in copper complexes as anticancer agents <br>年，卷(期)<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup>，页码：2014, 114(1), 815–862 <br>年，卷，页码：2014, 114, 815–862</p></li><li><p>年、卷、期的分隔，比如</p><p>逗号分隔：2014, 114(1), 815–862 <br>空格分隔：2014 114(1) 815–862</p></li><li><p>页码形式是起止页码、紧缩起止页码、只列起始页码，比如</p><p>起止页码：12–17 <br>紧缩起止页码：12–7，即12页到17页 <br>只列起始页码：12</p></li></ol><h2 id="check-list">Check List</h2><p>在写作结束后，可以用这部分提供的项目对论文进行检查。建议在论文尚未写完之前就参考这些要点进行自查，及时改正存在的错误。</p><ol><li><p><input type="checkbox" id="checkbox0"><label for="checkbox0">把论文手稿转换为PDF文件或打印出来。</label></p></li><li><p><input type="checkbox" id="checkbox1"><label for="checkbox1">手稿是否包含了论文中应该有的要素：题目、署名和所属机构、摘要、前言、试验细节和理论基础、结果、讨论、结论、致谢、参考，各要素的顺序是否合理。</label></p></li><li><p><input type="checkbox" id="checkbox2"><label for="checkbox2">手稿是否完整，有没有遗漏的段落、字词、公式和图表。</label></p></li><li><p><input type="checkbox" id="checkbox3"><label for="checkbox3">论文手稿的字体、字号、页边距、行距是否合适，是否与杂志投稿要求冲突。</label></p></li><li><p><input type="checkbox" id="checkbox4"><label for="checkbox4">发现文中可能存在的所有语法错误。</label></p></li><li><p><input type="checkbox" id="checkbox5"><label for="checkbox5">英文论文中有没有使用中文符号。</label></p></li><li><p><input type="checkbox" id="checkbox6"><label for="checkbox6">英文和数学部分有没有正确的加空格。</label></p></li><li><p><input type="checkbox" id="checkbox7"><label for="checkbox7">认真检查参考文献看有无错误。</label></p></li></ol><h2 id="杂篇">杂篇</h2><p>以下的内容不成系统，可以作为上面各部分的补充，写作风格更为随意。</p><h3 id="英文里的几种-杠">英文里的几种「杠」<sup class="footnote-ref"><a href="#fn19" id="fnref19">[19]</a></sup></h3><p>用轻松的语言解释三种杠：只使用“-” (hyphen，即连字符)的是普通青年；使用“–” (EN DASH)的是文艺青年；使用“−” (减法符号)的是2B青年。</p><p>直接在键盘上能打出的符号是连字符，这也导致了绝大多数人只使用连字符，这不能算错误，但不美观。DASH，具体是EN DASH，形象上类似半个中文的破折号，功能是连接、表示范围等，是一种高级的用法，而且在Word里有比较方便的输入方式(Ctrl+小键盘区的-)。而减法符号输入特别麻烦，没有快捷键，几乎没人使用，而且也没有美观上的提示，推荐完美主义者和强迫症日常使用。</p><h3 id="手动断字">手动断字<sup class="footnote-ref"><a href="#fn20" id="fnref20">[20]</a></sup></h3><p>断字(Hyphenation)的需求主要存在于英文环境中，因为英文单词以空格分隔并且长短各异，为了让一行或一段的内容良好呈现经常要进行一定的调整，比如在长单词的合适位置插入连字符“-”。学术写作不可避免的要大部分时候Word的断字是够用的，但有两种情况必须手动断字：①各种原因必须使用老版Word，比如2003版；②软件的断字不正确，比如专业术语的断字。</p><p>手动控制断字的「武器」有以下几个：</p><ul><li><p>可选连字符，快捷键是<code>Ctrl + -</code>，就是<code>Ctrl</code>和主键盘区的“减号”一块按；<br>可选连字符是Word在处理断字时使用的，在非行尾处显示成数学里逻辑「非」的样子但不会出现在打印的版本中<sup class="footnote-ref"><a href="#fn21" id="fnref21">[21]</a></sup>，在行尾时行为就像一个普通的连字符<code>-</code>，出现在打印版中。对于Word不能正确处理的长词，如专业术语，可以使用插入这个符号的方式手动断字。</p></li><li><p>不间断空格，快捷键是<code>Ctrl + Shift + Space</code>；<br>不间断空格比较容易理解，和空格一样但是不会间断，插入后可以让两个本来被分到两行的元素重新回到同一行，多用于两个相关关系比较强的元素，比如单位和数字之间。不间断空格可以理解为断字的「逆操作」，因为它可以抵消自动断字的效果。</p></li><li><p>零宽度空格，没有快捷键。<br>这个和上面的不间断空格类似，行为和空格一样但不占宽度，可以用于告诉Word此处可以断字。</p></li><li><p>零宽度非断开空格，没有快捷键。<br>零宽度非断开空格可以理解为断字的「逆操作」，因为它可以抵消断字的效果。当然我从来没用过它，用的机会实在太少。</p></li></ul><h3 id="特殊符号的输入方法">特殊符号的输入方法</h3><p>一些特殊符号可以用Windows的Alt+小键盘数字的方式输入方法，输入方法是按住Alt键后再按小键盘区的数字，最后松开Alt键，在表里就写成“Alt+0150”的形式。还有一种方式是Word里输入特殊符号的方法，先键入数字，再按Alt+X，在表里写成“2212 Alt+X”。</p><table><thead><tr><th style="text-align:center">符号</th><th style="text-align:center">名称或含义</th><th style="text-align:center">快捷键</th></tr></thead><tbody><tr><td style="text-align:center">–</td><td style="text-align:center">EN DASH，或叫“短划线”</td><td style="text-align:center">Ctrl+小键盘区的“-” 或 Alt+0150</td></tr><tr><td style="text-align:center">−</td><td style="text-align:center">负号和减号</td><td style="text-align:center">Alt+8722 或 2212 Alt+X</td></tr><tr><td style="text-align:center">×</td><td style="text-align:center">乘法符号</td><td style="text-align:center">Alt+0215</td></tr><tr><td style="text-align:center">µ</td><td style="text-align:center">表示千分之一，如µm</td><td style="text-align:center">Alt+0181</td></tr></tbody></table><h3 id="字体及相关知识">字体及相关知识</h3><p>下面表格里列了一些字体，字体名称使用相应的字体显示。其实里面真正常用的字体只有Times New Roman、(中易)宋体和(中易)黑体等几种，其他的虽然在学术刊物的排版中会使用，但作为作者在写论文时无须关心和使用它们。如果在Word中使用了别人的电脑上没装的字体，甚至一种极端的情况是，文档在移动端等兼容性不好的环境中阅读，会造成严重的问题，所以在需要和别人进行交流的文档里，比如Word文档中，只使用系统自带的字体。将这些字体列出来是为了让读者了解字体的分类，知道「哇，原来有这么多字体」。<sup class="footnote-ref"><a href="#fn22" id="fnref22">[22]</a></sup></p><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">分类</th><th style="text-align:center">简介</th></tr></thead><tbody><tr><td style="text-align:center">Times New Roman (Mac系统中是Times)</td><td style="text-align:center">衬线体</td><td style="text-align:center">虽然广受批评但仍是学术写作最常用的字体。</td></tr><tr><td style="text-align:center">Arial (Mac系统中是Helvetica)</td><td style="text-align:center">无衬线体</td><td style="text-align:center">主要用在标题里。</td></tr><tr><td style="text-align:center">Acrobat Calson Pro</td><td style="text-align:center">衬线体</td><td style="text-align:center">我喜欢的字体。<br>Calson是一款古老的字体，这是其中一个版本。</td></tr><tr><td style="text-align:center">Adobe Garamond Pro</td><td style="text-align:center">衬线体</td><td style="text-align:center">Garamond的一个版本，一些学术刊物会使用。</td></tr><tr><td style="text-align:center">Palatino Linotype</td><td style="text-align:center">衬线体</td><td style="text-align:center">也是Palatino的一个版本，据说写简历比较好。</td></tr><tr><td style="text-align:center">Lora</td><td style="text-align:center">衬线体</td><td style="text-align:center">我喜欢的字体。开源字体。<br><em>The Journal of Chemical Physics</em>用了这个字体</td></tr><tr><td style="text-align:center">Symbola</td><td style="text-align:center">衬线体</td><td style="text-align:center">符号字体。开源字体。</td></tr><tr><td style="text-align:center">方正新书宋</td><td style="text-align:center">衬线体</td><td style="text-align:center">我喜欢的字体。宋体的一种，比中易宋体「黑」。<br> 可以淘宝购买，价格便宜。</td></tr><tr><td style="text-align:center">微软雅黑</td><td style="text-align:center">非衬线体</td><td style="text-align:center">Windows系统的黑体，也是Windows系统里质量较高的一款字体。</td></tr><tr><td style="text-align:center">冬青黑体(Hiragino Sans)</td><td style="text-align:center">非衬线体</td><td style="text-align:center">Mac系统的字体。可能是最好的中文字体。</td></tr><tr><td style="text-align:center">思源黑体(Noto Sans/Source Han)</td><td style="text-align:center">非衬线体</td><td style="text-align:center">两个名字分别对应谷歌公司和Adobe公司发布的版本。<br> 突出的优点是有多种字重，而且开源免费。</td></tr><tr><td style="text-align:center">中易宋体(Win系统里叫「宋体」)</td><td style="text-align:center">衬线体</td><td style="text-align:center">最为经典的中文字体。<br> Win系统使用「宋体」而非字体本名受到一些批评。</td></tr><tr><td style="text-align:center">中易黑体(Win里叫「黑体」)</td><td style="text-align:center">无衬线</td><td style="text-align:center">特点是比较黑。</td></tr><tr><td style="text-align:center">中易楷体(Win里叫「楷体」或「楷体_GB2312」)</td><td style="text-align:center">衬线体或书法体</td><td style="text-align:center">有很多Bug的字体，建议使用「华文楷体」。</td></tr><tr><td style="text-align:center">华文楷体</td><td style="text-align:center">衬线体或书法体</td><td style="text-align:center">Windows安装Office软件后的字体，字体质量较高，在文档中使用较为安全。</td></tr><tr><td style="text-align:center">中易仿宋(Win里叫「仿宋」或「仿宋_GB2312」)</td><td style="text-align:center">衬线体</td><td style="text-align:center">也有Bug，建议使用「华文仿宋」。</td></tr><tr><td style="text-align:center">华文仿宋</td><td style="text-align:center">衬线体</td><td style="text-align:center">和「华文楷体」情况类似。</td></tr></tbody></table><p>以上的字体除了系统自带的和开源的外，大都需要购买。如果要合法使用是需要支付一笔不小的费用的。方正新书宋等一些国产字体采用了比较亲民的价格和销售方式，推荐有需求且「讲究」的人购买。</p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>Coghill, A., <em>et al</em>., The ACS Style Guide, 2nd, 19–24. <a href="#fnref1" class="footnote-backref">↩</a></p></li><li id="fn2" class="footnote-item"><p>英文杂志上的中文人名的写法主要有两种：1. Chenggong Zheng；2. Cheng-Gong Zheng。我个人推荐第二种，因为更有利于检索。不论用何种写法都应经过讨论并且保证在同一篇论文中一致。 <a href="#fnref2" class="footnote-backref">↩</a></p></li><li id="fn3" class="footnote-item"><p>这条规则比较传统，很多时候对于疑问句的限制已经放开了，但也难保所有的评审人和读者都能接受新潮的写法，所以传统一点是好的。 <a href="#fnref3" class="footnote-backref">↩</a></p></li><li id="fn4" class="footnote-item"><p>此处有争议，比较传统的人喜欢用第三人称和过去时等比较客观的句式，但现在的学术论文中也接受可以使用第一人称的写法。不管学术界的争论如何，尽量让叙述显得客观是好事。 <a href="#fnref4" class="footnote-backref">↩</a></p></li><li id="fn5" class="footnote-item"><p>Xah Lee认为提高学术写作能力的良方是学习逻辑学。来源：<a href="http://wordyenglish.com/musing/elements_of_style.html" target="_blank" rel="noopener">http://wordyenglish.com/musing/elements_of_style.html</a> <a href="#fnref5" class="footnote-backref">↩</a></p></li><li id="fn6" class="footnote-item"><p>一个通常的误解是学术论文应深奥难懂，这是不正确的印象。除非读者不具备阅读论文必须的专业知识或有语言障碍，阅读一篇写作良好的论文通常是简单的。 <a href="#fnref6" class="footnote-backref">↩</a></p></li><li id="fn7" class="footnote-item"><p>不知读者是否注意，本文所有的括号都用英文括号，这是作者的习惯，虽然可能违背规范。正如前言说的那样，规范不过是指导性的原则，如果个人习惯和规范不冲突，比如个人写作，再加上某些习惯有其道理，就可以按照个人习惯来，做到统一就好。我使用英文括号的原因有：①降低了复杂性；②我认为中文括号不好看，而且不同中文字体下括号样子不同；③很多时候括号起到分隔中英文环境的功能，这时候它到底用中文还是用英语是难以确定的，如果强加区分又造成了复杂性。 <a href="#fnref7" class="footnote-backref">↩</a></p></li><li id="fn8" class="footnote-item"><p>从小学到大学的十多年时间里，没有一位老师教我打空格。如果你不知道这个规矩，会显得非常的外行——英语白学了。 <a href="#fnref8" class="footnote-backref">↩</a></p></li><li id="fn9" class="footnote-item"><p>EN Dash可以用Word的快捷键Ctrl+小键盘区的“-”，或者用附录提供的输入方法。 <a href="#fnref9" class="footnote-backref">↩</a></p></li><li id="fn10" class="footnote-item"><p>特例是在金额的写法会使用“,”作为千分位分隔符，比如$500,000。 <a href="#fnref10" class="footnote-backref">↩</a></p></li><li id="fn11" class="footnote-item"><p>也可在变量上加箭头，用的较少。 <a href="#fnref11" class="footnote-backref">↩</a></p></li><li id="fn12" class="footnote-item"><p>使用规范的符号有些不方便，这样做的好处是：①规范；②美观；③方便今后的批量操作，比如不用“-”表示减法后就不会影响查找替换。 <a href="#fnref12" class="footnote-backref">↩</a></p></li><li id="fn13" class="footnote-item"><p>一个脑洞大开的牢骚：数学符号系统其实非常不严谨，比如一般的规范是，两个变量直接如果是乘法可以不写乘法符号，就是说<em>ab</em>表示<em>a</em> × <em>b</em>，可如果你把这条规则延伸一下就造成很大的混乱，因为这样的话<em>f</em>(<em>x</em>)岂不是变量<em>f</em>和<em>x</em>相乘了，这就又需要一条规则即习惯上以<em>f</em>表示函数。类似的例子非常多。虽然含有非常多约定俗成的规范，数学还是发展的很好，可见习惯的力量，也可见懂规矩是重要的。本书想教给你的就是一些规矩。 <a href="#fnref13" class="footnote-backref">↩</a></p></li><li id="fn14" class="footnote-item"><p>比如可以写“Fig. 1”，这里的“Fig.”是“Figure”的缩写，如果是复数形式，写成“Figs. 1 and 2”。 <a href="#fnref14" class="footnote-backref">↩</a></p></li><li id="fn15" class="footnote-item"><p>我同行评议过近百篇论文，手稿的排版差确实会影响评议结果。 <a href="#fnref15" class="footnote-backref">↩</a></p></li><li id="fn16" class="footnote-item"><p>对于数学、物理和计算机等专业主要的工具是LaTeX。 <a href="#fnref16" class="footnote-backref">↩</a></p></li><li id="fn17" class="footnote-item"><p>对于Word自带另存为会出错或者Word版本低的情况，商业软件Adobe Acrobat是最佳选择。 <a href="#fnref17" class="footnote-backref">↩</a></p></li><li id="fn18" class="footnote-item"><p><strong>注意</strong>：卷几乎都在括号外面，而期是在括号里面，大部分杂志卷期都有或者有<strong>卷</strong>无期，少部分杂志有期无卷。有期无卷的杂志有时会造成一些麻烦，因为没有卷所以写出来类似“2014, (2): 1–10”。 <a href="#fnref18" class="footnote-backref">↩</a></p></li><li id="fn19" class="footnote-item"><p>更详尽的解释：<a href="https://chriszheng.science/2016/01/07/%E2%80%93/">https://chriszheng.science/2016/01/07/–/</a>。 <a href="#fnref19" class="footnote-backref">↩</a></p></li><li id="fn20" class="footnote-item"><p>更详尽的解释：<a href="https://chriszheng.science/2016/05/07/Hyphenation-in-MS-Word/">https://chriszheng.science/2016/05/07/Hyphenation-in-MS-Word/</a>。 <a href="#fnref20" class="footnote-backref">↩</a></p></li><li id="fn21" class="footnote-item"><p>这个东西在Word里显示成逻辑「非」，只是一种显示方式，和逻辑「非」操作没有什么关系。 <a href="#fnref21" class="footnote-backref">↩</a></p></li><li id="fn22" class="footnote-item"><p>更详尽的字体和排版知识可以阅读专门的书籍，或者可以看质量较高的指南，比如《中英文简历撰写排版指南》(<a href="http://ppresume.com/notes/guide-zh.html" target="_blank" rel="noopener">http://ppresume.com/notes/guide-zh.html</a>)，虽然是指导简历写作的但知识点适用于其他的写作。我把这个文档发布出来很大程度上也是受了那些乐于分享的前辈的鼓励，当然我也希望能像那些前辈一样赚点小钱，可惜到目前为止收入是0。 <a href="#fnref22" class="footnote-backref">↩</a></p></li></ol></section></div>]]></content>
       
     </entry>
+    
     
   
 </search>
