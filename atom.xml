@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2018-12-29T07:19:00.160Z</updated>
+  <updated>2018-12-31T13:41:47.966Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近思录 2019-01-01</title>
+    <link href="https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/"/>
+    <id>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</id>
+    <published>2018-12-31T16:00:01.000Z</published>
+    <updated>2018-12-31T13:41:47.966Z</updated>
+    
+    <content type="html"><![CDATA[<p style="font-size: larger">😟</p><a id="more"></a><h2 id="换了emacs的主题">换了Emacs的主题</h2><p>换了<a href="https://github.com/hlissner/emacs-doom-themes" target="_blank" rel="noopener">doom-tomorrow-night</a>，以前的主题用了快5年了吧。</p><p><img src="/img/Using-doom-tomorrow-night.png" alt="使用doom-tomorrow-night主题"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p style=&quot;font-size: larger&quot;&gt;😟&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>近思录 2018-12-02</title>
@@ -447,29 +469,6 @@
     
     
       <category term="Rime" scheme="https://chriszheng.science/tags/Rime/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>拥抱量子火狐(Firefox Quantum)</title>
-    <link href="https://chriszheng.science/2018/04/08/Firefox-Quantum/"/>
-    <id>https://chriszheng.science/2018/04/08/Firefox-Quantum/</id>
-    <published>2018-04-08T06:10:54.000Z</published>
-    <updated>2018-07-23T06:37:48.760Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天用Firefox怎么也打不开一个网站，可能和我的配置有关，越发感觉停留在53版本的<a href="https://sourceforge.net/projects/pcxfirefox/" target="_blank" rel="noopener">pcxFirefox</a>跟不上时代了，索性换成<a href="https://sourceforge.net/projects/lawlietfox/" target="_blank" rel="noopener">lawlietfox</a>，这一换也宣告了我正式切换到了新的量子(Quantum)内核的火狐。</p><p>2018-07-23 <strong>Update</strong>: 弃用lawlietfox了，经常占用非常多内存然后崩溃。</p><a id="more"></a><p><img src="/img/Quantum-Firefox-nightly.png" alt="量子火狐Nightly版图标"></p><p style="font-size: larger">遗留的扩展全部阵亡。火狐的扩展生态从零开始。</p><h2 id="优势pros">优势Pros</h2><ul><li>快。</li><li>好看。</li><li>自带了一些方便的功能，比如截图。</li></ul><h2 id="缺点cons">缺点Cons</h2><ul><li>就像上面说的，扩展全部阵亡，无法平滑迁移。</li></ul><h2 id="重新配置firefox">重新配置Firefox</h2><p>思路：总体的思路就是尽量少用自己配置，用现成方案。</p><h3 id="配置中文界面">配置中文界面</h3><p>首先下载<a href="https://addons.mozilla.org/en-US/firefox/addon/chinese-simplified-zh-cn-la/?src=api" target="_blank" rel="noopener">中文语言包</a>，安装后，设置<code>intl.locale.requested</code>为<code>zh-CN</code>，之前的配置方法似乎失效了。<a href="https://support.mozilla.org/en-US/kb/use-firefox-interface-other-languages-language-pack" target="_blank" rel="noopener">出处</a>。</p><h3 id="代理">代理</h3><p><a href="https://addons.mozilla.org/en-US/firefox/addon/switchyomega/" target="_blank" rel="noopener">Proxy SwitchyOmega</a>。</p><h3 id="广告过滤">广告过滤</h3><p><a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" target="_blank" rel="noopener">uBlock Origin</a>。</p><h3 id="网页字体">网页字体</h3><p><a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/" target="_blank" rel="noopener">Stylish</a>，安装<a href="https://userstyles.org/styles/100473/004-forcemyfonts-chinese-firefoxchromeie-catcat520" target="_blank" rel="noopener">现成的样式</a>。</p><h3 id="增加-常用网站-的数量">增加「常用网站」的数量</h3><p>以往用Firefox总会使用一些扩展来增强起始页的功能，到了量子火狐这些扩展都失效了，只能无奈的使用自带的功能。相比以前的扩展，自带的功能的可定制性非常差，比如新标签页的「常用网站」功能，如果用自带的，只能从两列12个格子和一列6个格子两种模式中选择。让人不爽。</p><p><img src="/img/Quantum-Firefox-default-startup-page.png" alt="常用网站默认最多12个格子"></p><p>稍微搜索一下，找到了灵感，这个数量有可能是可以配置的，于是打开<code>about:config</code>，进入<code>browser.newtabpage</code>，看到了<code>browser.newtabpage.activity-stream.topSitesCount</code>，随便设成更大的数，格子确实变多了。</p><p><img src="/img/Quantum-Firefox-more-topsites.png" alt="常用网站可以显示更多的格子"></p><h3 id="如何在任意页面截图">如何在任意页面截图</h3><p>虽然自带了截图功能，但并非所有页面都可以显示截图的按钮的，而且，<a href="https://github.com/mozilla-services/screenshots/issues/2491" target="_blank" rel="noopener">目前截图功能还没有快捷键</a>，所以只能依靠调试工具里的截图功能。</p><p>要注意，调试工具里的截图功能默认不开启，需要在右上角的<code>工具箱选项</code>里<code>可用的工具箱</code>。</p><p><img src="/img/Firefox-howto-enable-screenshot.png" alt="如何开启调试工具里的截图功能"></p><h3 id="禁用-不安全密码-提示">禁用「不安全密码」提示</h3><p><code>insecure_field_warning.contextual.enabled</code>设为<code>false</code>。</p><p>提示是好的，但太碍眼了，很多网站没有HTTP，这不是用户能决定的，用户同样不能决定是否要使用那些系统。所以这个提示是善意的，也是无用的。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天用Firefox怎么也打不开一个网站，可能和我的配置有关，越发感觉停留在53版本的&lt;a href=&quot;https://sourceforge.net/projects/pcxfirefox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pcxFirefox&lt;/a&gt;跟不上时代了，索性换成&lt;a href=&quot;https://sourceforge.net/projects/lawlietfox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;lawlietfox&lt;/a&gt;，这一换也宣告了我正式切换到了新的量子(Quantum)内核的火狐。&lt;/p&gt;
-&lt;p&gt;2018-07-23 &lt;strong&gt;Update&lt;/strong&gt;: 弃用lawlietfox了，经常占用非常多内存然后崩溃。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Firefox" scheme="https://chriszheng.science/categories/Firefox/"/>
-    
-    
-      <category term="Firefox" scheme="https://chriszheng.science/tags/Firefox/"/>
     
   </entry>
   
