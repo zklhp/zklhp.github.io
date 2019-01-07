@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2019/01/07/Struggle-with-UEFI-GPT/</loc>
+        <lastmod>2019-01-07T16:31:51.231Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
-        <lastmod>2019-01-02T16:36:10.671Z</lastmod>
+        <lastmod>2019-01-07T15:31:33.353Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +24,7 @@
 
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2018-12-31T15:53:35.341Z</lastmod>
+        <lastmod>2019-01-04T18:45:15.279Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1159,7 +1167,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/21/Like-it-do-it/</loc>
+        <loc>https://chriszheng.science/2015/03/14/Log-in-my-bandwagon-faster/</loc>
         <lastmod>2017-08-02T03:36:45.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1167,7 +1175,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/03/14/Log-in-my-bandwagon-faster/</loc>
+        <loc>https://chriszheng.science/2016/02/21/Like-it-do-it/</loc>
         <lastmod>2017-08-02T03:36:45.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1495,7 +1503,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/05/04/Run-NetEase-Music-using-ARChon/</loc>
+        <loc>https://chriszheng.science/2015/08/01/Soft-hyphen/</loc>
         <lastmod>2017-07-26T11:02:34.080Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1503,7 +1511,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/01/Soft-hyphen/</loc>
+        <loc>https://chriszheng.science/2015/05/04/Run-NetEase-Music-using-ARChon/</loc>
         <lastmod>2017-07-26T11:02:34.080Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

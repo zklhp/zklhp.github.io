@@ -1122,13 +1122,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%E6%8A%98%E8%85%BE/</loc>
-        <lastmod>2017-07-26T11:02:34.081Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/SourceForge/</loc>
         <lastmod>2017-07-26T11:02:34.081Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1619,14 +1612,14 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/ORCA/</loc>
+        <loc>https://chriszheng.science/tags/%E6%96%B0%E9%97%BB/</loc>
         <lastmod>2017-12-31T15:08:51.053Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%E6%96%B0%E9%97%BB/</loc>
+        <loc>https://chriszheng.science/tags/ORCA/</loc>
         <lastmod>2017-12-31T15:08:51.053Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -2180,14 +2173,21 @@
 
     <url>
         <loc>https://chriszheng.science/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/</loc>
-        <lastmod>2018-12-31T15:53:35.341Z</lastmod>
+        <lastmod>2019-01-04T18:45:15.279Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/</loc>
-        <lastmod>2019-01-02T16:36:10.671Z</lastmod>
+        <lastmod>2019-01-07T15:31:33.353Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%E6%8A%98%E8%85%BE/</loc>
+        <lastmod>2019-01-07T16:31:51.231Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
