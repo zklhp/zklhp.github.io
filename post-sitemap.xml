@@ -8,7 +8,7 @@
 
     <url>
         <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
-        <lastmod>2019-01-08T17:15:11.843Z</lastmod>
+        <lastmod>2019-01-10T03:16:56.577Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1143,14 +1143,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/10/18/Lora-font/</loc>
-        <lastmod>2017-08-02T03:36:45.887Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1167,8 +1159,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/21/Like-it-do-it/</loc>
-        <lastmod>2017-08-02T03:36:45.886Z</lastmod>
+        <loc>https://chriszheng.science/2015/10/18/Lora-font/</loc>
+        <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1183,8 +1175,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/03/10/GnuPG-can-makes-Emacs-crash/</loc>
-        <lastmod>2017-08-02T03:36:45.885Z</lastmod>
+        <loc>https://chriszheng.science/2016/02/21/Like-it-do-it/</loc>
+        <lastmod>2017-08-02T03:36:45.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1192,6 +1184,14 @@
 
     <url>
         <loc>https://chriszheng.science/2015/01/23/Guideline-for-building-GNU-Emacs-with-MSYS2-MinGW-w64/</loc>
+        <lastmod>2017-08-02T03:36:45.885Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/03/10/GnuPG-can-makes-Emacs-crash/</loc>
         <lastmod>2017-08-02T03:36:45.885Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1247,7 +1247,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1255,7 +1255,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
