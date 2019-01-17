@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2017/03/26/Optimization-using-GNU-Octave/</loc>
+        <lastmod>2019-01-17T16:22:33.864Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/12/04/I-am-a-Mi-fan/</loc>
+        <lastmod>2019-01-10T11:15:30.745Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
         <lastmod>2019-01-10T03:19:21.461Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -327,14 +343,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/12/04/I-am-a-Mi-fan/</loc>
-        <lastmod>2018-10-30T02:01:39.181Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/01/06/Some-useful-websites/</loc>
         <lastmod>2018-10-15T01:23:15.586Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -521,14 +529,6 @@
     <url>
         <loc>https://chriszheng.science/2016/10/07/Random-tips-of-Octave-and-shell-mode/</loc>
         <lastmod>2018-06-27T07:01:36.916Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/03/26/Optimization-using-GNU-Octave/</loc>
-        <lastmod>2018-06-27T07:01:24.567Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1151,7 +1151,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1159,7 +1159,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1479,7 +1479,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/17/SourceForge-is-down-one-more-time/</loc>
+        <loc>https://chriszheng.science/2016/10/02/Story-about-mobile-phone-brands/</loc>
         <lastmod>2017-07-26T11:02:34.081Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1487,7 +1487,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/10/02/Story-about-mobile-phone-brands/</loc>
+        <loc>https://chriszheng.science/2015/07/17/SourceForge-is-down-one-more-time/</loc>
         <lastmod>2017-07-26T11:02:34.081Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
