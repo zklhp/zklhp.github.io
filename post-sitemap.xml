@@ -7,8 +7,24 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2019-01-21T17:48:47.396Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/11/30/Popularity-of-my-content/</loc>
+        <lastmod>2019-01-21T14:23:39.562Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
-        <lastmod>2019-01-21T10:56:16.374Z</lastmod>
+        <lastmod>2019-01-21T11:02:36.105Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,14 +57,6 @@
     <url>
         <loc>https://chriszheng.science/2018/06/12/Banishing-Excel-using-Emacs-Coreutils-and-Octave-for-assignment-management/</loc>
         <lastmod>2019-01-08T08:47:08.563Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2019-01-04T18:45:15.279Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -153,14 +161,6 @@
     <url>
         <loc>https://chriszheng.science/2018/11/30/Practical-frp/</loc>
         <lastmod>2018-11-30T12:49:20.994Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/11/30/Popularity-of-my-content/</loc>
-        <lastmod>2018-11-30T12:44:49.840Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1151,7 +1151,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1159,7 +1159,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1247,7 +1247,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1255,7 +1255,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
