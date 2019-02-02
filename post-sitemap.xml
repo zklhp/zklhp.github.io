@@ -8,7 +8,71 @@
 
     <url>
         <loc>https://chriszheng.science/2019/02/02/Xuexi-cn-study-automatically/</loc>
-        <lastmod>2019-02-02T14:00:42.045Z</lastmod>
+        <lastmod>2019-02-02T14:30:12.074Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/07/11/Vultr-as-backup-VPS/</loc>
+        <lastmod>2019-02-02T14:30:05.120Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
+        <lastmod>2019-02-02T14:28:57.809Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/01/23/Export-busuanzi-data/</loc>
+        <lastmod>2019-02-02T14:24:21.667Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/09/24/Workaround-a-bug-for-octave-mode-of-Emacs-25-2-50/</loc>
+        <lastmod>2019-02-02T14:24:01.213Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/08/16/Using-Octave-to-calculate-Euclidean-distance/</loc>
+        <lastmod>2019-02-02T14:23:47.868Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/06/02/Using-anonymous-function-in-Octave-to-calculate-amount-of-solution/</loc>
+        <lastmod>2019-02-02T14:23:42.071Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/09/24/Google-scholar-new-look/</loc>
+        <lastmod>2019-02-02T14:22:40.778Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/06/25/Diamond-price-vs-ct/</loc>
+        <lastmod>2019-02-02T14:22:11.121Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,22 +81,6 @@
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
         <lastmod>2019-02-01T14:18:53.225Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
-        <lastmod>2019-02-01T06:39:51.761Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/01/23/Export-busuanzi-data/</loc>
-        <lastmod>2019-01-23T15:08:51.828Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -519,24 +567,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/06/02/Using-anonymous-function-in-Octave-to-calculate-amount-of-solution/</loc>
-        <lastmod>2018-06-27T07:02:51.625Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2016/06/21/Citations-cast-ourselves-into-the-future/</loc>
         <lastmod>2018-06-27T07:02:20.305Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/08/16/Using-Octave-to-calculate-Euclidean-distance/</loc>
-        <lastmod>2018-06-27T07:02:07.037Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -831,14 +863,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/09/24/Google-scholar-new-look/</loc>
-        <lastmod>2017-12-31T15:09:11.838Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/03/14/ORCA-4-0-0-release/</loc>
         <lastmod>2017-12-31T15:08:51.053Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -865,14 +889,6 @@
     <url>
         <loc>https://chriszheng.science/2017/03/05/Strange-EVP-aes-128-ctr-error/</loc>
         <lastmod>2017-12-31T05:03:22.777Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/06/25/Diamond-price-vs-ct/</loc>
-        <lastmod>2017-11-29T15:56:13.832Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1167,7 +1183,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1175,7 +1191,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1223,7 +1239,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/24/Git-rules/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
         <lastmod>2017-08-02T03:36:45.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1231,7 +1247,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
+        <loc>https://chriszheng.science/2015/07/24/Git-rules/</loc>
         <lastmod>2017-08-02T03:36:45.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1393,14 +1409,6 @@
     <url>
         <loc>https://chriszheng.science/2016/09/18/Emacs-25-1-released/</loc>
         <lastmod>2017-07-27T12:33:01.551Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/09/24/Workaround-a-bug-for-octave-mode-of-Emacs-25-2-50/</loc>
-        <lastmod>2017-07-27T12:32:48.240Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1849,14 +1857,6 @@
     <url>
         <loc>https://chriszheng.science/2017/01/18/Consumer-attitudes/</loc>
         <lastmod>2017-07-26T11:02:33.863Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/07/11/Vultr-as-backup-VPS/</loc>
-        <lastmod>2017-07-26T11:02:33.846Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
