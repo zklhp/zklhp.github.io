@@ -7,8 +7,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/01/23/Export-busuanzi-data/</loc>
-        <lastmod>2019-01-22T18:32:21.026Z</lastmod>
+        <loc>https://chriszheng.science/2019/02/02/Xuexi-cn-study-automatically/</loc>
+        <lastmod>2019-02-02T14:00:42.045Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +16,31 @@
 
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2019-01-21T17:48:47.396Z</lastmod>
+        <lastmod>2019-02-01T14:18:53.225Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
+        <lastmod>2019-02-01T06:39:51.761Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/01/23/Export-busuanzi-data/</loc>
+        <lastmod>2019-01-23T15:08:51.828Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</loc>
+        <lastmod>2019-01-22T18:48:37.180Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,14 +49,6 @@
     <url>
         <loc>https://chriszheng.science/2018/11/30/Popularity-of-my-content/</loc>
         <lastmod>2019-01-21T14:23:39.562Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
-        <lastmod>2019-01-21T11:02:36.105Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -73,14 +89,6 @@
     <url>
         <loc>https://chriszheng.science/2018/11/22/Recent-thoughts-2018-11-22/</loc>
         <lastmod>2018-12-31T14:50:39.961Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</loc>
-        <lastmod>2018-12-29T07:19:00.160Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1159,7 +1167,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1167,7 +1175,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1215,7 +1223,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
+        <loc>https://chriszheng.science/2015/07/24/Git-rules/</loc>
         <lastmod>2017-08-02T03:36:45.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1223,7 +1231,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/24/Git-rules/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
         <lastmod>2017-08-02T03:36:45.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
