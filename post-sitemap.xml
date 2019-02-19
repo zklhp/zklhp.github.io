@@ -7,6 +7,86 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2018/11/30/Practical-frp/</loc>
+        <lastmod>2019-02-18T15:22:15.076Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/03/05/Talent-environment-opportunity/</loc>
+        <lastmod>2019-02-16T13:02:11.188Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/06/25/Diamond-price-vs-ct/</loc>
+        <lastmod>2019-02-15T14:10:52.777Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/10/24/Recent-thoughts-2018-10-24/</loc>
+        <lastmod>2019-02-14T15:49:29.440Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/02/02/Recent-thoughts-2019-02-02/</loc>
+        <lastmod>2019-02-14T15:48:02.298Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2019-02-12T02:48:32.595Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
+        <lastmod>2019-02-10T07:00:13.657Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
+        <lastmod>2019-02-07T14:52:28.027Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/01/24/Great-ES8-the-true-sleep-function-in-JavaScript/</loc>
+        <lastmod>2019-02-07T05:08:52.147Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
+        <lastmod>2019-02-02T15:18:34.820Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2019/02/02/Xuexi-cn-study-automatically/</loc>
         <lastmod>2019-02-02T14:30:12.074Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,14 +97,6 @@
     <url>
         <loc>https://chriszheng.science/2017/07/11/Vultr-as-backup-VPS/</loc>
         <lastmod>2019-02-02T14:30:05.120Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
-        <lastmod>2019-02-02T14:28:57.809Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -65,22 +137,6 @@
     <url>
         <loc>https://chriszheng.science/2017/09/24/Google-scholar-new-look/</loc>
         <lastmod>2019-02-02T14:22:40.778Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/06/25/Diamond-price-vs-ct/</loc>
-        <lastmod>2019-02-02T14:22:11.121Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2019-02-01T14:18:53.225Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -167,14 +223,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
-        <lastmod>2018-12-12T16:39:00.599Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2018/11/29/Heirloom-Bandwagon-gone/</loc>
         <lastmod>2018-12-02T19:01:18.219Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -217,14 +265,6 @@
     <url>
         <loc>https://chriszheng.science/2018/09/23/Solvents/</loc>
         <lastmod>2018-11-30T12:52:02.674Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/11/30/Practical-frp/</loc>
-        <lastmod>2018-11-30T12:49:20.994Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -289,14 +329,6 @@
     <url>
         <loc>https://chriszheng.science/2016/11/06/Grammarly-review/</loc>
         <lastmod>2018-11-25T12:43:46.700Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/10/24/Recent-thoughts-2018-10-24/</loc>
-        <lastmod>2018-11-24T09:35:03.740Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -409,14 +441,6 @@
     <url>
         <loc>https://chriszheng.science/2017/01/06/Some-useful-websites/</loc>
         <lastmod>2018-10-15T01:23:15.586Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
-        <lastmod>2018-10-11T08:40:03.860Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -737,14 +761,6 @@
     <url>
         <loc>https://chriszheng.science/2016/06/30/No-Weibo-Qzone-Moments/</loc>
         <lastmod>2018-01-28T10:27:42.974Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/01/24/Great-ES8-the-true-sleep-function-in-JavaScript/</loc>
-        <lastmod>2018-01-26T05:53:08.201Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1159,7 +1175,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/05/27/One-aspect-that-Baidu-is-better-than-Google/</loc>
+        <loc>https://chriszheng.science/2015/04/26/Overline/</loc>
         <lastmod>2017-08-02T03:36:45.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1167,7 +1183,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/26/Overline/</loc>
+        <loc>https://chriszheng.science/2015/05/27/One-aspect-that-Baidu-is-better-than-Google/</loc>
         <lastmod>2017-08-02T03:36:45.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1279,7 +1295,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1287,7 +1303,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1441,14 +1457,6 @@
     <url>
         <loc>https://chriszheng.science/2016/11/03/Emacs-refcard/</loc>
         <lastmod>2017-07-27T12:32:03.407Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/03/05/Talent-environment-opportunity/</loc>
-        <lastmod>2017-07-27T12:30:23.772Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
