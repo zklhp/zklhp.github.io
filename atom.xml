@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2019-02-14T15:48:02.298Z</updated>
+  <updated>2019-02-20T14:57:09.194Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chriszheng.science/2019/02/02/Recent-thoughts-2019-02-02/"/>
     <id>https://chriszheng.science/2019/02/02/Recent-thoughts-2019-02-02/</id>
     <published>2019-02-02T15:19:01.000Z</published>
-    <updated>2019-02-14T15:48:02.298Z</updated>
+    <updated>2019-02-20T14:57:09.194Z</updated>
     
-    <content type="html"><![CDATA[<p style="font-size: larger">🧧</p><a id="more"></a><h2 id="wordnet">WordNet</h2><p><a href="https://www.onwebsecurity.com/configuration/compiling-wordnet-on-windows-to-use-with-emacs.html" target="_blank" rel="noopener">https://www.onwebsecurity.com/configuration/compiling-wordnet-on-windows-to-use-with-emacs.html</a></p><h2 id="gnu-octave-5-rc2-5-0-91">GNU Octave 5 RC2 / 5.0.91</h2><p><a href="ftp://alpha.gnu.org/gnu/octave/" target="_blank" rel="noopener">ftp://alpha.gnu.org/gnu/octave/</a></p><h2 id="水库论坛">水库论坛</h2><p><a href="http://www.shuikult.net" target="_blank" rel="noopener">http://www.shuikult.net</a></p><p>感觉很高大上。</p><h2 id="高举马克思的旗帜-彻底批判数学中的唯心主义">高举马克思的旗帜，彻底批判数学中的唯心主义</h2><p>没看完，但好像挺厉害。</p><p><a href="https://zhuanlan.zhihu.com/p/36543483" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/36543483</a></p>]]></content>
+    <content type="html"><![CDATA[<p style="font-size: larger">🧧</p><a id="more"></a><h2 id="wordnet">WordNet</h2><p><a href="https://www.onwebsecurity.com/configuration/compiling-wordnet-on-windows-to-use-with-emacs.html" target="_blank" rel="noopener">https://www.onwebsecurity.com/configuration/compiling-wordnet-on-windows-to-use-with-emacs.html</a></p><h2 id="gnu-octave-5-rc2-5-0-91">GNU Octave 5 RC2 / 5.0.91</h2><p><a href="ftp://alpha.gnu.org/gnu/octave/" target="_blank" rel="noopener">ftp://alpha.gnu.org/gnu/octave/</a></p><h2 id="水库论坛">水库论坛</h2><p><a href="http://www.shuikult.net" target="_blank" rel="noopener">http://www.shuikult.net</a></p><p>感觉很高大上。</p><h2 id="高举马克思的旗帜-彻底批判数学中的唯心主义">高举马克思的旗帜，彻底批判数学中的唯心主义</h2><p>没看完，但好像挺厉害。</p><p><a href="https://zhuanlan.zhihu.com/p/36543483" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/36543483</a></p><h2 id="gcc的bug">GCC的bug</h2><p><a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=86762" target="_blank" rel="noopener">https://gcc.gnu.org/bugzilla/show_bug.cgi?id=86762</a></p><p><code>-fstack-protector</code>生成了<code>mov rax,QWORD PTR fs:0x0</code>。</p>]]></content>
     
     <summary type="html">
     
@@ -43,9 +43,9 @@
     <link href="https://chriszheng.science/2019/02/02/Xuexi-cn-study-automatically/"/>
     <id>https://chriszheng.science/2019/02/02/Xuexi-cn-study-automatically/</id>
     <published>2019-02-02T13:46:53.000Z</published>
-    <updated>2019-02-02T14:30:12.074Z</updated>
+    <updated>2019-02-21T05:06:26.669Z</updated>
     
-    <content type="html"><![CDATA[<p>📖</p><a id="more"></a><p>下面是一个放在github的gist：</p><script src="//gist.github.com/feddc94e4cf53d01091203413ec4e893.js?file=xuexicn-study-automatically.user.js"></script>]]></content>
+    <content type="html"><![CDATA[<p>📖</p><a id="more"></a><h1>乔治·奥威尔的《一九八四》</h1><p><a href="https://www.marxists.org/chinese/reference-books/orwell-1984/index.htm" target="_blank" rel="noopener">https://www.marxists.org/chinese/reference-books/orwell-1984/index.htm</a></p><p><a href="http://www.george-orwell.org/1984/index.html" target="_blank" rel="noopener">http://www.george-orwell.org/1984/index.html</a></p><p>下面是一个放在github的gist：</p><script src="//gist.github.com/feddc94e4cf53d01091203413ec4e893.js?file=xuexicn-study-automatically.user.js"></script><p><a href="https://gist.github.com/zklhp/feddc94e4cf53d01091203413ec4e893/raw/xuexicn-study-automatically.user.js" target="_blank" rel="noopener">https://gist.github.com/zklhp/feddc94e4cf53d01091203413ec4e893/raw/xuexicn-study-automatically.user.js</a></p><p>I use it with Firefox + Greasemonkey.</p>]]></content>
     
     <summary type="html">
     

@@ -7,6 +7,30 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2019/02/02/Xuexi-cn-study-automatically/</loc>
+        <lastmod>2019-02-21T05:06:26.669Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/02/14/Wu-Dalang-death-date/</loc>
+        <lastmod>2019-02-21T02:24:49.285Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/02/02/Recent-thoughts-2019-02-02/</loc>
+        <lastmod>2019-02-20T14:57:09.194Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2018/11/30/Practical-frp/</loc>
         <lastmod>2019-02-18T15:22:15.076Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,14 +57,6 @@
     <url>
         <loc>https://chriszheng.science/2018/10/24/Recent-thoughts-2018-10-24/</loc>
         <lastmod>2019-02-14T15:49:29.440Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/02/02/Recent-thoughts-2019-02-02/</loc>
-        <lastmod>2019-02-14T15:48:02.298Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -81,14 +97,6 @@
     <url>
         <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
         <lastmod>2019-02-02T15:18:34.820Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/02/02/Xuexi-cn-study-automatically/</loc>
-        <lastmod>2019-02-02T14:30:12.074Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -529,14 +537,6 @@
     <url>
         <loc>https://chriszheng.science/2016/12/30/True-guru/</loc>
         <lastmod>2018-07-15T08:14:34.692Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/02/14/Wu-Dalang-death-date/</loc>
-        <lastmod>2018-07-15T08:11:52.105Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1175,7 +1175,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/26/Overline/</loc>
+        <loc>https://chriszheng.science/2015/05/27/One-aspect-that-Baidu-is-better-than-Google/</loc>
         <lastmod>2017-08-02T03:36:45.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1183,7 +1183,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/05/27/One-aspect-that-Baidu-is-better-than-Google/</loc>
+        <loc>https://chriszheng.science/2015/04/26/Overline/</loc>
         <lastmod>2017-08-02T03:36:45.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
