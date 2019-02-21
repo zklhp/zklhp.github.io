@@ -1466,7 +1466,7 @@
       
       <categories>
           
-          <category> VPS </category>
+          <category> Shadowsocks </category>
           
       </categories>
       
@@ -2152,9 +2152,9 @@
       
         <tags>
             
-            <tag> 新闻 </tag>
-            
             <tag> ORCA </tag>
+            
+            <tag> 新闻 </tag>
             
         </tags>
       
@@ -2451,7 +2451,7 @@
       
       <categories>
           
-          <category> VPS </category>
+          <category> Shadowsocks </category>
           
       </categories>
       
@@ -4866,16 +4866,16 @@
       
       <categories>
           
-          <category> 经验分享 </category>
+          <category> Shadowsocks </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 分享 </tag>
-            
             <tag> Shadowsocks </tag>
+            
+            <tag> 一次性认证 </tag>
             
         </tags>
       
@@ -5153,7 +5153,7 @@
       
       <categories>
           
-          <category> 经验分享 </category>
+          <category> Shadowsocks </category>
           
       </categories>
       
@@ -5688,9 +5688,9 @@
       
         <tags>
             
-            <tag> daemon </tag>
-            
             <tag> MS-Windows </tag>
+            
+            <tag> daemon </tag>
             
         </tags>
       
@@ -7239,7 +7239,7 @@
       
       <categories>
           
-          <category> 闲言碎语 </category>
+          <category> Shadowsocks </category>
           
       </categories>
       
@@ -9229,7 +9229,7 @@
       
       <categories>
           
-          <category> 经验分享 </category>
+          <category> Shadowsocks </category>
           
       </categories>
       
@@ -9884,9 +9884,9 @@
       
         <tags>
             
-            <tag> Bandwagon </tag>
-            
             <tag> 搬瓦工 </tag>
+            
+            <tag> Bandwagon </tag>
             
             <tag> VPS </tag>
             
@@ -9967,9 +9967,9 @@
       
         <tags>
             
-            <tag> Bandwagon </tag>
-            
             <tag> 搬瓦工 </tag>
+            
+            <tag> Bandwagon </tag>
             
             <tag> Nginx </tag>
             
@@ -10164,11 +10164,11 @@
     
     
     <entry>
-      <title>Windows下的64位GNU Emacs编译版emacs-w64</title>
-      <link href="/emacs-w64/index.html"/>
-      <url>/emacs-w64/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<p><a href="http://chriszheng.science/2015/04/28/emacs-w64/">English version</a>.</p><h1>目的</h1><p>GNU Emacs的官方的MS-Windows版本是32位的，互联网上只有少数几个64位的Emacs版本，而且已有的64位版对源码进行了修改，更新也不及时。本项目的目的是提供面向64位Windows的，基于官方源码的，更新及时的GNU Emacs编译版。</p><h1>特性</h1><ul><li>源自官方源码，根据开发分支及发行分支构建。</li><li>原生64位的MS-Windows支持。</li><li>编译优化。</li><li>附带JPEG、GIF、PNG、TIFF、SVG、XML2和GnuTLS的支持库。</li></ul><h1>系统要求</h1><p>只支持64位的Windows。测试环境为Windows 8.1。</p><h1>下载</h1><p><strong>百度网盘</strong><a href="http://pan.baidu.com/s/1i33oWtR" target="_blank" rel="noopener">镜像</a>。</p><p>访问SourceForge上的<a href="https://sourceforge.net/projects/emacsbinw64/" target="_blank" rel="noopener">项目主页</a>下载：</p><ul><li><a href="https://sourceforge.net/projects/emacsbinw64/files/snapshot/" target="_blank" rel="noopener">开发分支</a></li><li><a href="https://sourceforge.net/projects/emacsbinw64/files/release/" target="_blank" rel="noopener">发行版</a></li></ul><p>访问GitHub上的<a href="https://github.com/zklhp/emacs-w64" target="_blank" rel="noopener">项目主页</a>，<a href="https://github.com/zklhp/emacs-w64/releases" target="_blank" rel="noopener">下载</a>。</p><h1>用法</h1><ol><li>下载需要的二进制包(比如emacs-bin-w64-20140402.7z)。</li><li>用<a href="http://www.7-zip.org/" target="_blank" rel="noopener">7-Zip</a>等软件解压。</li><li>双击<code>emacs/bin</code>里的<code>runemacs.exe</code>运行。</li></ol><h1>截图</h1><p><img src="./about.png" alt="About"></p><p><img src="./eww.png" alt="EWW"></p><h1>已知问题</h1><p>本程序属于<strong>自用</strong>性质，只在我的电脑上测试过。</p><h1>技术细节</h1><p>如果你对自己编译感兴趣可以参考本站的<a href="http://chriszheng.science/2015/03/19/Chinese-version-of-Emacs-building-guideline/">编译方法</a>。</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -10186,11 +10186,11 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>Windows下的64位GNU Emacs编译版emacs-w64</title>
+      <link href="/emacs-w64/index.html"/>
+      <url>/emacs-w64/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><a href="http://chriszheng.science/2015/04/28/emacs-w64/">English version</a>.</p><h1>目的</h1><p>GNU Emacs的官方的MS-Windows版本是32位的，互联网上只有少数几个64位的Emacs版本，而且已有的64位版对源码进行了修改，更新也不及时。本项目的目的是提供面向64位Windows的，基于官方源码的，更新及时的GNU Emacs编译版。</p><h1>特性</h1><ul><li>源自官方源码，根据开发分支及发行分支构建。</li><li>原生64位的MS-Windows支持。</li><li>编译优化。</li><li>附带JPEG、GIF、PNG、TIFF、SVG、XML2和GnuTLS的支持库。</li></ul><h1>系统要求</h1><p>只支持64位的Windows。测试环境为Windows 8.1。</p><h1>下载</h1><p><strong>百度网盘</strong><a href="http://pan.baidu.com/s/1i33oWtR" target="_blank" rel="noopener">镜像</a>。</p><p>访问SourceForge上的<a href="https://sourceforge.net/projects/emacsbinw64/" target="_blank" rel="noopener">项目主页</a>下载：</p><ul><li><a href="https://sourceforge.net/projects/emacsbinw64/files/snapshot/" target="_blank" rel="noopener">开发分支</a></li><li><a href="https://sourceforge.net/projects/emacsbinw64/files/release/" target="_blank" rel="noopener">发行版</a></li></ul><p>访问GitHub上的<a href="https://github.com/zklhp/emacs-w64" target="_blank" rel="noopener">项目主页</a>，<a href="https://github.com/zklhp/emacs-w64/releases" target="_blank" rel="noopener">下载</a>。</p><h1>用法</h1><ol><li>下载需要的二进制包(比如emacs-bin-w64-20140402.7z)。</li><li>用<a href="http://www.7-zip.org/" target="_blank" rel="noopener">7-Zip</a>等软件解压。</li><li>双击<code>emacs/bin</code>里的<code>runemacs.exe</code>运行。</li></ol><h1>截图</h1><p><img src="./about.png" alt="About"></p><p><img src="./eww.png" alt="EWW"></p><h1>已知问题</h1><p>本程序属于<strong>自用</strong>性质，只在我的电脑上测试过。</p><h1>技术细节</h1><p>如果你对自己编译感兴趣可以参考本站的<a href="http://chriszheng.science/2015/03/19/Chinese-version-of-Emacs-building-guideline/">编译方法</a>。</p>]]></content>
       
     </entry>
     
