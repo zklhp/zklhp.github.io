@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>在平原上最远能看多远？简单的计算论证地球不是平的</title>
+      <link href="/2019/02/23/How-far-can-you-see-on-flat-ground/"/>
+      <url>/2019/02/23/How-far-can-you-see-on-flat-ground/</url>
+      
+        <content type="html"><![CDATA[<p>🌏</p><p>要证明地球是球其实挺难的，得把人送太空才能无可辩驳的证明，坐飞机都不行。</p><a id="more"></a><p>一个不严谨但容易观察的方法是看地平线。在海边能很明显的看到这种景象，远处的船从上到下一点点的出现在地平线。在平原上不是特别明显，因为总有障碍物。若干年前外出旅行的时候，好奇的我想了，在开阔的平原上我能看多远呢？或者说，海上的地平线有多远呢？稍微一想发现计算其实非常容易。</p><p>如果你想象不出示意图可以看<a href="https://pic2.zhimg.com/80/v2-6d8b3c8a5d5dcbc67000090e5768e859_hd.jpg" target="_blank" rel="noopener">知乎上的图</a>，人的视线和地球上的一点相切，组成了一个直角三角形。用$x$表示人的高度，$d$表示球的半径。则直角三角形的两个边的长度分别是$d$ (直角边，切线到地心)和$x + d$ (斜边，人的高度加地球半径)。那么，剩下的一个直角边的长度是$\sqrt{2xd + x^2}$，这是人视线的长度。这里因为$d = 6.378 \times 10^6 \textrm{m}$，远大于人的高度$x = 1.8 \textrm{m}$，视线的长度是非常小的，近似认为这个距离就是人能看的最远的距离，计算得知结果是$4791.7 \textrm{m}$，就是说在平原上最远能看不到5公里，不管你视力多好，就这么远。</p><p>严谨的计算需要用三角函数算人到切点的弧长，公式和结果是$\arccos(\frac{d}{d + x} \times d = 4791.7 \textrm{m}$，结果确实和上面的一样。</p><p>这个计算也间接论证了地球至少不是平的或方的，如果地球是平的或方的，不会只能看5公里。</p><p>如果是在10层楼(30米)的家里，能看多远呢？用两个公式算的结果分别是$19562.23147 \textrm{m}$和$19562.17013 \textrm{m}$，近似计算的方法误差只有不到1米，精度足够了。</p><p>写的时候顺手一搜，发现知乎有不少讨论<a href="https://www.zhihu.com/question/24539532" target="_blank" rel="noopener">如何向常人证明地球是球形的？</a>。</p><p>我还有好些有意思的计算，都很简单，没有示意图不愿意写出来。简单的模型加上中学数学的计算就足以说明很多问题了。</p><p>算这种东西还是Octave顺手：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d = 6.378E6; x = 1.8; sqrt(2 * d * x + x^2)</span><br><span class="line">acos(d/(d+x)) * d</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科学研究 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Octave </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>近思录 2019-02-02</title>
       <link href="/2019/02/02/Recent-thoughts-2019-02-02/"/>
       <url>/2019/02/02/Recent-thoughts-2019-02-02/</url>
       
-        <content type="html"><![CDATA[<p style="font-size: larger">🧧</p><a id="more"></a><h2 id="wordnet">WordNet</h2><p><a href="https://www.onwebsecurity.com/configuration/compiling-wordnet-on-windows-to-use-with-emacs.html" target="_blank" rel="noopener">https://www.onwebsecurity.com/configuration/compiling-wordnet-on-windows-to-use-with-emacs.html</a></p><h2 id="gnu-octave-5-rc2-5-0-91">GNU Octave 5 RC2 / 5.0.91</h2><p><a href="ftp://alpha.gnu.org/gnu/octave/" target="_blank" rel="noopener">ftp://alpha.gnu.org/gnu/octave/</a></p><h2 id="水库论坛">水库论坛</h2><p><a href="http://www.shuikult.net" target="_blank" rel="noopener">http://www.shuikult.net</a></p><p>感觉很高大上。</p><h2 id="高举马克思的旗帜-彻底批判数学中的唯心主义">高举马克思的旗帜，彻底批判数学中的唯心主义</h2><p>没看完，但好像挺厉害。</p><p><a href="https://zhuanlan.zhihu.com/p/36543483" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/36543483</a></p><h2 id="gcc的bug">GCC的bug</h2><p><a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=86762" target="_blank" rel="noopener">https://gcc.gnu.org/bugzilla/show_bug.cgi?id=86762</a></p><p><code>-fstack-protector</code>生成了<code>mov rax,QWORD PTR fs:0x0</code>。</p>]]></content>
+        <content type="html"><![CDATA[<p style="font-size: larger">🧧</p><a id="more"></a><h2 id="wordnet">WordNet</h2><p><a href="https://www.onwebsecurity.com/configuration/compiling-wordnet-on-windows-to-use-with-emacs.html" target="_blank" rel="noopener">https://www.onwebsecurity.com/configuration/compiling-wordnet-on-windows-to-use-with-emacs.html</a></p><h2 id="gnu-octave-5-rc2-5-0-91">GNU Octave 5 RC2 / 5.0.91</h2><p><a href="ftp://alpha.gnu.org/gnu/octave/" target="_blank" rel="noopener">ftp://alpha.gnu.org/gnu/octave/</a></p><h2 id="水库论坛">水库论坛</h2><p><a href="http://www.shuikult.net" target="_blank" rel="noopener">http://www.shuikult.net</a></p><p>感觉很高大上。</p><h2 id="高举马克思的旗帜-彻底批判数学中的唯心主义">高举马克思的旗帜，彻底批判数学中的唯心主义</h2><p>没看完，但好像挺厉害。</p><p><a href="https://zhuanlan.zhihu.com/p/36543483" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/36543483</a></p><h2 id="gcc的bug">GCC的bug</h2><p><a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=86762" target="_blank" rel="noopener">https://gcc.gnu.org/bugzilla/show_bug.cgi?id=86762</a></p><p><code>-fstack-protector</code>生成了<code>mov rax,QWORD PTR fs:0x0</code>。</p><h2 id="aur">AUR</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">p=mingw-w64-pdcurses-win32a;</span><br><span class="line">cd /data/backup/pkgs/;</span><br><span class="line">env ALL_PROXY=socks5h://localhost:65500 curl https://aur.archlinux.org/cgit/aur.git/snapshot/$&#123;p&#125;.tar.gz -O;</span><br><span class="line">tar -zxvf $&#123;p&#125;.tar.gz -C /data/aur;</span><br><span class="line">cd /data/aur/$&#123;p&#125; &amp;&amp; env ALL_PROXY=socks5h://localhost:65500 makepkg;</span><br><span class="line">sudo pacman -U ./$&#123;p&#125;*.pkg.tar.xz;</span><br></pre></td></tr></table></figure><h2 id="ssh-through-shadowsocks-for-github">SSH through Shadowsocks for Github</h2><p>Add following line in <code>~/.ssh/config</code>:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host *.github.com</span><br><span class="line">     User git</span><br><span class="line">     ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p</span><br></pre></td></tr></table></figure><p><strong>Note</strong>: Use OpenBSD natcat.</p>]]></content>
       
       
       <categories>
@@ -3502,11 +3527,11 @@
       
         <tags>
             
+            <tag> 分享 </tag>
+            
             <tag> Emacs </tag>
             
             <tag> 技巧 </tag>
-            
-            <tag> 分享 </tag>
             
             <tag> flush-lines </tag>
             
@@ -3558,9 +3583,9 @@
       
         <tags>
             
-            <tag> Emacs </tag>
-            
             <tag> 分享 </tag>
+            
+            <tag> Emacs </tag>
             
         </tags>
       
@@ -4636,9 +4661,9 @@
       
         <tags>
             
-            <tag> Emacs </tag>
-            
             <tag> 分享 </tag>
+            
+            <tag> Emacs </tag>
             
         </tags>
       
@@ -5004,9 +5029,9 @@
             
             <tag> Emacs </tag>
             
-            <tag> 字体 </tag>
-            
             <tag> Arch Linux </tag>
+            
+            <tag> 字体 </tag>
             
             <tag> 方正新书宋 </tag>
             
@@ -6145,9 +6170,9 @@
       
         <tags>
             
-            <tag> 字体 </tag>
-            
             <tag> Firefox </tag>
+            
+            <tag> 字体 </tag>
             
             <tag> unicode-range </tag>
             
@@ -6847,9 +6872,9 @@
       
         <tags>
             
-            <tag> 复选框 </tag>
-            
             <tag> Word </tag>
+            
+            <tag> 复选框 </tag>
             
         </tags>
       
@@ -8895,9 +8920,9 @@
             
             <tag> Android </tag>
             
-            <tag> Chromium </tag>
-            
             <tag> ARChon </tag>
+            
+            <tag> Chromium </tag>
             
         </tags>
       
@@ -9884,9 +9909,9 @@
       
         <tags>
             
-            <tag> 搬瓦工 </tag>
-            
             <tag> Bandwagon </tag>
+            
+            <tag> 搬瓦工 </tag>
             
             <tag> VPS </tag>
             
@@ -9967,9 +9992,9 @@
       
         <tags>
             
-            <tag> 搬瓦工 </tag>
-            
             <tag> Bandwagon </tag>
+            
+            <tag> 搬瓦工 </tag>
             
             <tag> Nginx </tag>
             
@@ -10175,22 +10200,22 @@
     
     
     <entry>
-      <title>Emacs新手入门专题</title>
-      <link href="/emacs-beginner-guide/index.html"/>
-      <url>/emacs-beginner-guide/index.html</url>
+      <title>Windows下的64位GNU Emacs编译版emacs-w64</title>
+      <link href="/emacs-w64/index.html"/>
+      <url>/emacs-w64/index.html</url>
       
-        <content type="html"><![CDATA[<h2 id="楔子">楔子</h2><p>Emacs入门的资料很多了，我也写过一些，自己总结一下，算是自己学习经历的总结，也希望能帮到其他同学。</p><h2 id="emacs学习方法">Emacs学习方法</h2><ol><li><p>有一台计算机，安装合适的Emacs版本。<br>GNU/Linux系统请安装发行版提供的；Mac OS安装Homebrew版比较好；MS Windows安装<a href="http://ftp.gnu.org/pub/gnu/emacs/windows/" target="_blank" rel="noopener">官方版</a>或<a href="http://chriszheng.science/emacs-w64/">我的64-bit编译版</a>。</p></li><li><p>启动Emacs，点击首页的<strong>Emacs Tutorial</strong>学习自带的教程。</p></li><li><p>坚持天天用，几个月就可以熟练掌握Emacs的日常使用了。</p></li></ol><p>如果你觉得自带的教程还不够简洁，可以继续阅读下面的内容。</p><h2 id="按键基础">按键基础</h2><p>关于Emacs入门的教程其实很多了 所以我这里不长篇大论的讲 我只讲入门需要按键 或者说是键绑定(key binding)</p><table><thead><tr><th style="text-align:center">按键序列</th><th style="text-align:left">含义</th></tr></thead><tbody><tr><td style="text-align:center">C-x</td><td style="text-align:left">就是Ctrl+x 按住Ctrl再按x 注意这里是区分大小写的 所以C-X其实是Ctrl+Shift+x</td></tr><tr><td style="text-align:center">C-x u</td><td style="text-align:left">这个是先按过C-x 再按一个u 注意和C-x C-u的区别</td></tr><tr><td style="text-align:center">M-x</td><td style="text-align:left">M可以认为就是键盘上的Alt 或者可以摁一下ESC</td></tr><tr><td style="text-align:center">C-M-x</td><td style="text-align:left">这个是三个键同时按</td></tr></tbody></table><p>Emacs的1000多个默认按键都是按照上面的几种方式定义和描述的</p><h2 id="必学快捷键">必学快捷键</h2><p>下面是正题 说正题前先解释一下 所谓的【必学】就是对新手非常重要的</p><p>所以高级的应用不说 每个键的含义也只说最重要的</p><p>排序是根据我对按键重要程度的理解 越靠前越重要</p><p>以下说的都是GNU Emacs默认的东西 不牵扯自定义的</p><table><thead><tr><th style="text-align:center">按键序列</th><th style="text-align:left">含义及用法</th></tr></thead><tbody><tr><td style="text-align:center">C-x C-c</td><td style="text-align:left">退出 如果有什么搞不定的 最好退出重来 这是最重要的按键了</td></tr><tr><td style="text-align:center">C-x 1</td><td style="text-align:left">最大化当前的window</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">如果你被出现的很多窗口搞糊涂了 暂时最小化它们是最好的选择</td></tr><tr><td style="text-align:center">C-v</td><td style="text-align:left">向下一屏 适应普通复制粘贴快捷键的人很容易摁错(Emacs里的<strong>粘贴</strong>是C-y)</td></tr><tr><td style="text-align:center">M-v</td><td style="text-align:left">向上一屏</td></tr><tr><td style="text-align:center">C-f</td><td style="text-align:left">forward 向前</td></tr><tr><td style="text-align:center">C-b</td><td style="text-align:left">backward 后退</td></tr><tr><td style="text-align:center">C-n</td><td style="text-align:left">next 向下</td></tr><tr><td style="text-align:center">C-p</td><td style="text-align:left">previous 向上</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">以上的四个实现了Emacs里的基本的移动 如果看懂英语应该很容易记</td></tr><tr><td style="text-align:center">C-d</td><td style="text-align:left">向后删除 相当于Delete键 向前删除默认只能用退格键罢</td></tr><tr><td style="text-align:center">C-@</td><td style="text-align:left">按这个键的时候其实是Ctrl+Shift+2 一般2上面有@ 用于标记</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">有比这个方便的按键 但和切换输入法的冲突</td></tr><tr><td style="text-align:center">C-w</td><td style="text-align:left">对一个选中的区域执行【剪切】</td></tr><tr><td style="text-align:center">M-w</td><td style="text-align:left">和上面一样但执行的是【复制】</td></tr><tr><td style="text-align:center">C-y</td><td style="text-align:left">当前位置【粘贴】</td></tr><tr><td style="text-align:center">C-k</td><td style="text-align:left">行为比较奇怪 从当前位置到行尾执行【剪切】</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">上面的几个就是Emacs里面的复制-粘贴操作 为了更容易理解我套用了windows下的描述习惯</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">C-k可能开始用不习惯 选择如果不用鼠标也感觉比较麻烦 不要刻意的排斥鼠标</td></tr><tr><td style="text-align:center">C-g</td><td style="text-align:left">停止正在处理的东西 也就是取消 如果Emacs卡死了可以试试 非常有用</td></tr><tr><td style="text-align:center">C-s</td><td style="text-align:left">向后搜索</td></tr><tr><td style="text-align:center">C-r</td><td style="text-align:left">向前搜索</td></tr><tr><td style="text-align:center">C-a</td><td style="text-align:left">ahead 到行首</td></tr><tr><td style="text-align:center">C-e</td><td style="text-align:left">end 到行尾</td></tr><tr><td style="text-align:center">M-&lt;</td><td style="text-align:left">到全文的开头看起来很好看但按起来麻烦 其实是Alt+Shift+,</td></tr><tr><td style="text-align:center">M-&gt;</td><td style="text-align:left">到全文的结尾</td></tr></tbody></table><p>以上就是我认为对初学者比较重要的快捷键 学会了这些</p><p>Emacs在你手里也就成了一个简单的编辑器了</p><p>这可能是你学会用【神的编辑器】的第一步哦</p>]]></content>
+        <content type="html"><![CDATA[<p><a href="http://chriszheng.science/2015/04/28/emacs-w64/">English version</a>.</p><h1>目的</h1><p>GNU Emacs的官方的MS-Windows版本是32位的，互联网上只有少数几个64位的Emacs版本，而且已有的64位版对源码进行了修改，更新也不及时。本项目的目的是提供面向64位Windows的，基于官方源码的，更新及时的GNU Emacs编译版。</p><h1>特性</h1><ul><li>源自官方源码，根据开发分支及发行分支构建。</li><li>原生64位的MS-Windows支持。</li><li>编译优化。</li><li>附带JPEG、GIF、PNG、TIFF、SVG、XML2和GnuTLS的支持库。</li></ul><h1>系统要求</h1><p>只支持64位的Windows。测试环境为Windows 8.1。</p><h1>下载</h1><p><strong>百度网盘</strong><a href="http://pan.baidu.com/s/1i33oWtR" target="_blank" rel="noopener">镜像</a>。</p><p>访问SourceForge上的<a href="https://sourceforge.net/projects/emacsbinw64/" target="_blank" rel="noopener">项目主页</a>下载：</p><ul><li><a href="https://sourceforge.net/projects/emacsbinw64/files/snapshot/" target="_blank" rel="noopener">开发分支</a></li><li><a href="https://sourceforge.net/projects/emacsbinw64/files/release/" target="_blank" rel="noopener">发行版</a></li></ul><p>访问GitHub上的<a href="https://github.com/zklhp/emacs-w64" target="_blank" rel="noopener">项目主页</a>，<a href="https://github.com/zklhp/emacs-w64/releases" target="_blank" rel="noopener">下载</a>。</p><h1>用法</h1><ol><li>下载需要的二进制包(比如emacs-bin-w64-20140402.7z)。</li><li>用<a href="http://www.7-zip.org/" target="_blank" rel="noopener">7-Zip</a>等软件解压。</li><li>双击<code>emacs/bin</code>里的<code>runemacs.exe</code>运行。</li></ol><h1>截图</h1><p><img src="./about.png" alt="About"></p><p><img src="./eww.png" alt="EWW"></p><h1>已知问题</h1><p>本程序属于<strong>自用</strong>性质，只在我的电脑上测试过。</p><h1>技术细节</h1><p>如果你对自己编译感兴趣可以参考本站的<a href="http://chriszheng.science/2015/03/19/Chinese-version-of-Emacs-building-guideline/">编译方法</a>。</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>Windows下的64位GNU Emacs编译版emacs-w64</title>
-      <link href="/emacs-w64/index.html"/>
-      <url>/emacs-w64/index.html</url>
+      <title>Emacs新手入门专题</title>
+      <link href="/emacs-beginner-guide/index.html"/>
+      <url>/emacs-beginner-guide/index.html</url>
       
-        <content type="html"><![CDATA[<p><a href="http://chriszheng.science/2015/04/28/emacs-w64/">English version</a>.</p><h1>目的</h1><p>GNU Emacs的官方的MS-Windows版本是32位的，互联网上只有少数几个64位的Emacs版本，而且已有的64位版对源码进行了修改，更新也不及时。本项目的目的是提供面向64位Windows的，基于官方源码的，更新及时的GNU Emacs编译版。</p><h1>特性</h1><ul><li>源自官方源码，根据开发分支及发行分支构建。</li><li>原生64位的MS-Windows支持。</li><li>编译优化。</li><li>附带JPEG、GIF、PNG、TIFF、SVG、XML2和GnuTLS的支持库。</li></ul><h1>系统要求</h1><p>只支持64位的Windows。测试环境为Windows 8.1。</p><h1>下载</h1><p><strong>百度网盘</strong><a href="http://pan.baidu.com/s/1i33oWtR" target="_blank" rel="noopener">镜像</a>。</p><p>访问SourceForge上的<a href="https://sourceforge.net/projects/emacsbinw64/" target="_blank" rel="noopener">项目主页</a>下载：</p><ul><li><a href="https://sourceforge.net/projects/emacsbinw64/files/snapshot/" target="_blank" rel="noopener">开发分支</a></li><li><a href="https://sourceforge.net/projects/emacsbinw64/files/release/" target="_blank" rel="noopener">发行版</a></li></ul><p>访问GitHub上的<a href="https://github.com/zklhp/emacs-w64" target="_blank" rel="noopener">项目主页</a>，<a href="https://github.com/zklhp/emacs-w64/releases" target="_blank" rel="noopener">下载</a>。</p><h1>用法</h1><ol><li>下载需要的二进制包(比如emacs-bin-w64-20140402.7z)。</li><li>用<a href="http://www.7-zip.org/" target="_blank" rel="noopener">7-Zip</a>等软件解压。</li><li>双击<code>emacs/bin</code>里的<code>runemacs.exe</code>运行。</li></ol><h1>截图</h1><p><img src="./about.png" alt="About"></p><p><img src="./eww.png" alt="EWW"></p><h1>已知问题</h1><p>本程序属于<strong>自用</strong>性质，只在我的电脑上测试过。</p><h1>技术细节</h1><p>如果你对自己编译感兴趣可以参考本站的<a href="http://chriszheng.science/2015/03/19/Chinese-version-of-Emacs-building-guideline/">编译方法</a>。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="楔子">楔子</h2><p>Emacs入门的资料很多了，我也写过一些，自己总结一下，算是自己学习经历的总结，也希望能帮到其他同学。</p><h2 id="emacs学习方法">Emacs学习方法</h2><ol><li><p>有一台计算机，安装合适的Emacs版本。<br>GNU/Linux系统请安装发行版提供的；Mac OS安装Homebrew版比较好；MS Windows安装<a href="http://ftp.gnu.org/pub/gnu/emacs/windows/" target="_blank" rel="noopener">官方版</a>或<a href="http://chriszheng.science/emacs-w64/">我的64-bit编译版</a>。</p></li><li><p>启动Emacs，点击首页的<strong>Emacs Tutorial</strong>学习自带的教程。</p></li><li><p>坚持天天用，几个月就可以熟练掌握Emacs的日常使用了。</p></li></ol><p>如果你觉得自带的教程还不够简洁，可以继续阅读下面的内容。</p><h2 id="按键基础">按键基础</h2><p>关于Emacs入门的教程其实很多了 所以我这里不长篇大论的讲 我只讲入门需要按键 或者说是键绑定(key binding)</p><table><thead><tr><th style="text-align:center">按键序列</th><th style="text-align:left">含义</th></tr></thead><tbody><tr><td style="text-align:center">C-x</td><td style="text-align:left">就是Ctrl+x 按住Ctrl再按x 注意这里是区分大小写的 所以C-X其实是Ctrl+Shift+x</td></tr><tr><td style="text-align:center">C-x u</td><td style="text-align:left">这个是先按过C-x 再按一个u 注意和C-x C-u的区别</td></tr><tr><td style="text-align:center">M-x</td><td style="text-align:left">M可以认为就是键盘上的Alt 或者可以摁一下ESC</td></tr><tr><td style="text-align:center">C-M-x</td><td style="text-align:left">这个是三个键同时按</td></tr></tbody></table><p>Emacs的1000多个默认按键都是按照上面的几种方式定义和描述的</p><h2 id="必学快捷键">必学快捷键</h2><p>下面是正题 说正题前先解释一下 所谓的【必学】就是对新手非常重要的</p><p>所以高级的应用不说 每个键的含义也只说最重要的</p><p>排序是根据我对按键重要程度的理解 越靠前越重要</p><p>以下说的都是GNU Emacs默认的东西 不牵扯自定义的</p><table><thead><tr><th style="text-align:center">按键序列</th><th style="text-align:left">含义及用法</th></tr></thead><tbody><tr><td style="text-align:center">C-x C-c</td><td style="text-align:left">退出 如果有什么搞不定的 最好退出重来 这是最重要的按键了</td></tr><tr><td style="text-align:center">C-x 1</td><td style="text-align:left">最大化当前的window</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">如果你被出现的很多窗口搞糊涂了 暂时最小化它们是最好的选择</td></tr><tr><td style="text-align:center">C-v</td><td style="text-align:left">向下一屏 适应普通复制粘贴快捷键的人很容易摁错(Emacs里的<strong>粘贴</strong>是C-y)</td></tr><tr><td style="text-align:center">M-v</td><td style="text-align:left">向上一屏</td></tr><tr><td style="text-align:center">C-f</td><td style="text-align:left">forward 向前</td></tr><tr><td style="text-align:center">C-b</td><td style="text-align:left">backward 后退</td></tr><tr><td style="text-align:center">C-n</td><td style="text-align:left">next 向下</td></tr><tr><td style="text-align:center">C-p</td><td style="text-align:left">previous 向上</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">以上的四个实现了Emacs里的基本的移动 如果看懂英语应该很容易记</td></tr><tr><td style="text-align:center">C-d</td><td style="text-align:left">向后删除 相当于Delete键 向前删除默认只能用退格键罢</td></tr><tr><td style="text-align:center">C-@</td><td style="text-align:left">按这个键的时候其实是Ctrl+Shift+2 一般2上面有@ 用于标记</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">有比这个方便的按键 但和切换输入法的冲突</td></tr><tr><td style="text-align:center">C-w</td><td style="text-align:left">对一个选中的区域执行【剪切】</td></tr><tr><td style="text-align:center">M-w</td><td style="text-align:left">和上面一样但执行的是【复制】</td></tr><tr><td style="text-align:center">C-y</td><td style="text-align:left">当前位置【粘贴】</td></tr><tr><td style="text-align:center">C-k</td><td style="text-align:left">行为比较奇怪 从当前位置到行尾执行【剪切】</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">上面的几个就是Emacs里面的复制-粘贴操作 为了更容易理解我套用了windows下的描述习惯</td></tr><tr><td style="text-align:center"></td><td style="text-align:left">C-k可能开始用不习惯 选择如果不用鼠标也感觉比较麻烦 不要刻意的排斥鼠标</td></tr><tr><td style="text-align:center">C-g</td><td style="text-align:left">停止正在处理的东西 也就是取消 如果Emacs卡死了可以试试 非常有用</td></tr><tr><td style="text-align:center">C-s</td><td style="text-align:left">向后搜索</td></tr><tr><td style="text-align:center">C-r</td><td style="text-align:left">向前搜索</td></tr><tr><td style="text-align:center">C-a</td><td style="text-align:left">ahead 到行首</td></tr><tr><td style="text-align:center">C-e</td><td style="text-align:left">end 到行尾</td></tr><tr><td style="text-align:center">M-&lt;</td><td style="text-align:left">到全文的开头看起来很好看但按起来麻烦 其实是Alt+Shift+,</td></tr><tr><td style="text-align:center">M-&gt;</td><td style="text-align:left">到全文的结尾</td></tr></tbody></table><p>以上就是我认为对初学者比较重要的快捷键 学会了这些</p><p>Emacs在你手里也就成了一个简单的编辑器了</p><p>这可能是你学会用【神的编辑器】的第一步哦</p>]]></content>
       
     </entry>
     
