@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <url>
         <loc>https://chriszheng.science</loc>
         <changefreq>daily</changefreq>
@@ -127,7 +128,7 @@
 
     <url>
         <loc>https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/</loc>
-        <lastmod>2019-02-23T05:23:37.233Z</lastmod>
+        <lastmod>2019-03-02T15:57:25.072Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
