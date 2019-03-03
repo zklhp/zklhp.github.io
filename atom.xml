@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2019-03-02T15:57:25.072Z</updated>
+  <updated>2019-03-03T02:56:09.868Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/"/>
     <id>https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/</id>
     <published>2019-03-01T13:11:01.000Z</published>
-    <updated>2019-03-02T15:57:25.072Z</updated>
+    <updated>2019-03-03T02:56:09.868Z</updated>
     
-    <content type="html"><![CDATA[<p style="font-size: larger">😟</p><a id="more"></a><h2 id="bash-and-unix-resource">Bash and Unix resource</h2><p><a href="https://ss64.com/bash/" target="_blank" rel="noopener">https://ss64.com/bash/</a></p><p><a href="https://ss64.com/bash/syntax-pronounce.html" target="_blank" rel="noopener">https://ss64.com/bash/syntax-pronounce.html</a></p><h2 id="电影-阿凡达-里移液器的错误使用">电影<a href="https://zh.wikipedia.org/wiki/%E9%98%BF%E5%87%A1%E8%BE%BE" target="_blank" rel="noopener">《阿凡达》</a>里<a href="https://zh.wikipedia.org/wiki/%E7%A7%BB%E6%B6%B2%E5%99%A8" target="_blank" rel="noopener">移液器</a>的错误使用</h2><p><img src="/img/Avatar-pipette-wrong-usage-1.png" alt="电影《阿凡达》里移液器的错误使用1"></p><p><img src="/img/Avatar-pipette-wrong-usage-2.png" alt="电影《阿凡达》里移液器的错误使用2"></p><p><img src="/img/Avatar-pipette-wrong-usage-3.png" alt="电影《阿凡达》里移液器的错误使用3"></p><p><img src="/img/Avatar-pipette-wrong-usage-4.png" alt="电影《阿凡达》里移液器的错误使用4"></p><p><img src="/img/Avatar-pipette-wrong-usage-5.png" alt="电影《阿凡达》里移液器的错误使用5"></p>]]></content>
+    <content type="html"><![CDATA[<p style="font-size: larger">😟</p><a id="more"></a><h2 id="bash-and-unix-resource">Bash and Unix resource</h2><p><a href="https://ss64.com/bash/" target="_blank" rel="noopener">https://ss64.com/bash/</a></p><p><a href="https://ss64.com/bash/syntax-pronounce.html" target="_blank" rel="noopener">https://ss64.com/bash/syntax-pronounce.html</a></p><h2 id="电影-阿凡达-里移液器的错误使用">电影<a href="https://zh.wikipedia.org/wiki/%E9%98%BF%E5%87%A1%E8%BE%BE" target="_blank" rel="noopener">《阿凡达》</a>里<a href="https://zh.wikipedia.org/wiki/%E7%A7%BB%E6%B6%B2%E5%99%A8" target="_blank" rel="noopener">移液器</a>的错误使用</h2><p><video src="/files/Avatar-pipette-wrong-usage.mp4" controls="controls" width="960" height="540"></video></p><p>移液器不能倒过来。</p>]]></content>
     
     <summary type="html">
     
