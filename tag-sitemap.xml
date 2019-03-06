@@ -1305,13 +1305,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/dotEmacs/</loc>
-        <lastmod>2017-08-02T03:36:45.884Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/MSYS2/</loc>
         <lastmod>2017-08-02T03:36:45.885Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1767,13 +1760,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Git/</loc>
-        <lastmod>2018-04-20T15:37:10.625Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%E8%99%BE%E7%B1%B3%E9%9F%B3%E4%B9%90/</loc>
         <lastmod>2018-04-25T11:11:43.575Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2012,22 +1998,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Bandwagon/</loc>
-        <lastmod>2018-12-02T19:01:18.219Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%E5%AD%97%E4%BD%93/</loc>
         <lastmod>2018-12-15T17:03:19.461Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Emacs/</loc>
-        <lastmod>2018-12-15T17:11:18.831Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -2117,13 +2089,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Emacs-Lisp/</loc>
-        <lastmod>2019-02-07T14:52:28.027Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/</loc>
         <lastmod>2019-02-16T13:02:11.188Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2187,15 +2152,50 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/</loc>
-        <lastmod>2019-03-03T02:48:31.467Z</lastmod>
+        <loc>https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/</loc>
+        <lastmod>2019-03-03T03:58:08.297Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/</loc>
-        <lastmod>2019-03-03T03:58:08.297Z</lastmod>
+        <loc>https://chriszheng.science/tags/Emacs-Lisp/</loc>
+        <lastmod>2019-03-03T15:44:07.547Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/</loc>
+        <lastmod>2019-03-03T15:44:07.547Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/dotEmacs/</loc>
+        <lastmod>2019-03-06T05:29:17.647Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Git/</loc>
+        <lastmod>2019-03-06T05:29:17.647Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Emacs/</loc>
+        <lastmod>2019-03-06T05:34:02.374Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Bandwagon/</loc>
+        <lastmod>2019-03-06T05:37:42.498Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

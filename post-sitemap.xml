@@ -8,6 +8,38 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2015/06/27/Bandwagon-out-of-stock/</loc>
+        <lastmod>2019-03-06T05:37:42.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/03/11/My-name-in-Emacs-authors/</loc>
+        <lastmod>2019-03-06T05:34:02.374Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
+        <lastmod>2019-03-06T05:29:17.647Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
+        <lastmod>2019-03-03T15:44:07.547Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/</loc>
         <lastmod>2019-03-03T03:58:08.297Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -138,14 +170,6 @@
     <url>
         <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
         <lastmod>2019-02-10T07:00:13.657Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
-        <lastmod>2019-02-07T14:52:28.027Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -362,14 +386,6 @@
     <url>
         <loc>https://chriszheng.science/2015/01/21/Bandwagon-VPS-Nginx-setup/</loc>
         <lastmod>2018-11-28T18:21:28.141Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2015/06/27/Bandwagon-out-of-stock/</loc>
-        <lastmod>2018-11-28T18:20:28.098Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1240,14 +1256,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
-        <lastmod>2017-08-02T03:36:45.887Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1256,8 +1264,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/03/14/Log-in-my-bandwagon-faster/</loc>
-        <lastmod>2017-08-02T03:36:45.886Z</lastmod>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1265,6 +1273,14 @@
 
     <url>
         <loc>https://chriszheng.science/2016/02/21/Like-it-do-it/</loc>
+        <lastmod>2017-08-02T03:36:45.886Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/03/14/Log-in-my-bandwagon-faster/</loc>
         <lastmod>2017-08-02T03:36:45.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1289,14 +1305,6 @@
 
     <url>
         <loc>https://chriszheng.science/2015/05/18/Filter-Baidu-promotion/</loc>
-        <lastmod>2017-08-02T03:36:45.884Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
         <lastmod>2017-08-02T03:36:45.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2570,14 +2578,6 @@
     <url>
         <loc>https://chriszheng.science/2016/01/03/One-line-makes-isearch-flexible/</loc>
         <lastmod>2016-02-18T15:05:49.518Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2015/03/11/My-name-in-Emacs-authors/</loc>
-        <lastmod>2016-02-18T15:05:22.378Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
