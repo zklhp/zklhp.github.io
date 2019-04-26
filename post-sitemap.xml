@@ -8,16 +8,24 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2019-04-14T16:25:32.441Z</lastmod>
+        <loc>https://chriszheng.science/2019/04/01/Recent-thoughts-2019-04-01/</loc>
+        <lastmod>2019-04-26T16:55:14.286Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/04/01/Recent-thoughts-2019-04-01/</loc>
-        <lastmod>2019-04-14T15:27:25.511Z</lastmod>
+        <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
+        <lastmod>2019-04-26T16:41:15.816Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2019-04-14T16:25:32.441Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +42,6 @@
     <url>
         <loc>https://chriszheng.science/2017/03/05/Strange-EVP-aes-128-ctr-error/</loc>
         <lastmod>2019-04-10T05:10:02.024Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
-        <lastmod>2019-04-08T15:19:26.976Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1384,7 +1384,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1392,7 +1392,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
