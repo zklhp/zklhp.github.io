@@ -9,7 +9,23 @@
 
     <url>
         <loc>https://chriszheng.science/2019/04/01/Recent-thoughts-2019-04-01/</loc>
-        <lastmod>2019-04-26T16:55:14.286Z</lastmod>
+        <lastmod>2019-04-30T05:40:54.475Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/11/29/Heirloom-Bandwagon-gone/</loc>
+        <lastmod>2019-04-27T05:22:19.196Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2019-04-27T05:17:13.435Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +34,6 @@
     <url>
         <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
         <lastmod>2019-04-26T16:41:15.816Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2019-04-14T16:25:32.441Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -386,14 +394,6 @@
     <url>
         <loc>https://chriszheng.science/2017/04/04/Source-Han-Serif/</loc>
         <lastmod>2018-12-15T17:03:19.461Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/11/29/Heirloom-Bandwagon-gone/</loc>
-        <lastmod>2018-12-02T19:01:18.219Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1384,7 +1384,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1392,7 +1392,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1608,7 +1608,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/10/02/Story-about-mobile-phone-brands/</loc>
+        <loc>https://chriszheng.science/2015/05/02/Struggle-with-an-Android-tablet/</loc>
         <lastmod>2017-07-26T11:02:34.081Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1616,7 +1616,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/05/02/Struggle-with-an-Android-tablet/</loc>
+        <loc>https://chriszheng.science/2016/10/02/Story-about-mobile-phone-brands/</loc>
         <lastmod>2017-07-26T11:02:34.081Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
