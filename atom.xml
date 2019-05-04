@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2019-04-30T05:40:54.475Z</updated>
+  <updated>2019-05-04T08:23:40.234Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近思录 2019-05-04</title>
+    <link href="https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/"/>
+    <id>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</id>
+    <published>2019-05-04T08:19:01.000Z</published>
+    <updated>2019-05-04T08:23:40.234Z</updated>
+    
+    <content type="html"><![CDATA[<p style="font-size: larger">😟</p><a id="more"></a><h2 id="清华大学王观堂先生纪念碑铭">《清华大学王观堂先生纪念碑铭》</h2><blockquote><p>士之读书治学，盖将以脱心志于俗谛之桎梏，真理因得以发扬。思想不自由，毋宁死耳。斯古今仁圣所同殉之精义，夫岂庸鄙之敢望。先生以一死见其独立自由之意志，非所论于一人之恩怨、一姓之兴亡。呜呼！树兹石于讲舍，系哀思而不忘。表哲人之奇节，诉真宰之茫茫。来世不可知者也，先生之著述，或有时而不章。先生之学说，或有时而可商。惟此独立之精神，自由之思想，历千万祀，与天壤而同久，共三光而永光。</p><footer><strong>陈寅恪</strong><cite>《清华大学王观堂先生纪念碑铭》</cite></footer></blockquote><h2 id="隋炀帝丝绸缠树">隋炀帝丝绸缠树</h2><blockquote><p>帝以诸蕃酋长毕集洛阳，丁丑，于端门街盛陈百戏，戏场周围五千步，执丝竹者万八千人，声闻数十里，自昏达旦，灯火光烛天地；终月而罢，所费巨万。自是岁以为常。诸蕃请入丰都市交易，帝许之。先命整饰店肆，檐宇如一，盛设帷帐，珍货充积，人物华盛，卖菜者亦藉以龙须席。胡客或过酒食店，悉令邀廷就坐，醉饱而散，不取其直，绐之曰： “中国丰饶，酒食例不取直。”胡客皆惊叹。其黠者颇觉之，见以缯帛缠树，曰：“中国亦有贫者，衣不盖形，何如以此物与之，缠树何为？”市人惭不能答。</p><footer><strong>《资治通鉴·卷第一百八十一·隋纪·炀皇帝》</strong></footer></blockquote><h2 id="证书原因导致firefox所有扩展失效">证书原因导致Firefox所有扩展失效</h2><p><a href="https://tieba.baidu.com/p/6120727978" target="_blank" rel="noopener">https://tieba.baidu.com/p/6120727978</a></p><p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1548973" target="_blank" rel="noopener">https://bugzilla.mozilla.org/show_bug.cgi?id=1548973</a></p><p><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1549017" target="_blank" rel="noopener">https://bugzilla.mozilla.org/show_bug.cgi?id=1549017</a></p><blockquote><ol><li>地址栏输入<code>about:support</code>，回车，点击<code>打开文件夹</code>打开配置文件夹。</li><li>在配置文件夹里找到<code>containers.json</code>。</li><li>用Emacs或其他编辑器替换所有的<code>&quot;appDisabled&quot;:true</code>为<code>&quot;appDisabled&quot;:false</code>，替换所有的<code>&quot;signedState&quot;:-1</code>为<code>&quot;signedState&quot;:2</code>。</li><li>保存修改，重启Firefox。</li><li>地址栏输入<code>about:addons</code>，回车，进入扩展界面，这时候<strong>先禁用所有扩展，再重启启用</strong>。</li><li>上述操作暂时让浏览器可以正常使用。</li></ol><footer><strong>https://bugzilla.mozilla.org/show_bug.cgi?id=1549017</strong></footer></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p style=&quot;font-size: larger&quot;&gt;😟&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>近思录 2019-04-01</title>
@@ -446,32 +468,6 @@
     
     
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>快上车——玩路由(MTK板、洋垃圾网件、斐讯)的闲言碎语</title>
-    <link href="https://chriszheng.science/2018/08/01/Get-on-board-quickly/"/>
-    <id>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</id>
-    <published>2018-08-01T15:43:19.000Z</published>
-    <updated>2019-04-26T16:41:15.816Z</updated>
-    
-    <content type="html"><![CDATA[<p>玩路由有几年了，只是小打小闹，现在在自己的新家搞网，随手记录一些杂七杂八的想法。</p><a id="more"></a><p><img src="/img/Phicomm-get-on-board.jpg" alt="斐讯翻车？没时间解释了！快。上。车。"></p><p>其实我折腾过好几个路由了，很多心得和过程都没记录，可惜。</p><h2 id="5g信号的穿墙能力比2-4g弱">5G信号的穿墙能力比2.4G弱</h2><p>原理是<a href="https://zh.wikipedia.org/wiki/%E5%BC%97%E9%87%8C%E6%96%AF%E4%BC%A0%E8%BE%93%E6%96%B9%E7%A8%8B" target="_blank" rel="noopener">弗里斯传输方程</a>，接收功率<em>P</em><sub>r</sub>  ~ 波长<em>λ</em><sup>2</sup>，2.4G波长长，接收的功率大，信号好。</p><h2 id="网件r7500v2刷lede用着挺好">网件R7500v2刷LEDE用着挺好</h2><p>之前实验室用的是所谓的企业级路由TL-WVR308，人一多，就不行啦。换网件能好一些。</p><h2 id="之前买的二手mt7620a路由老遇到问题">之前买的二手MT7620A路由老遇到问题</h2><p>这个路由好像WAN和LAN总是隔离的，就算是WAN口连上网，有线还是不能上网。之前好像<a href="/2016/01/13/PandoraBox-switch-config/">改路由设置可以修复</a>，又好像重刷固件可以修复。算了，不折腾了，买新的多好。</p><p>早买早享受。</p><h2 id="斐讯k2p-a2折腾记录">斐讯K2P A2折腾记录</h2><p>我一直用下载QQ软件的方法测速，这样测出来的速度我感觉更接近实际情况。</p><img src="/img/Phicomm-speed.png" width="636" height="150" title="下载速度"><p>之前的速度最快只有4M/s。</p><p><img src="/img/Phicomm-great.jpg" alt="斐讯K2P真好"></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@K2P:~<span class="comment"># uptime</span></span><br><span class="line"> 23:17:45 up 172 days, 22:10,  load average: 0.48, 0.39, 0.40</span><br></pre></td></tr></table></figure><p>最终接近200天的时候停电重启了。</p><p><a href="http://www.right.com.cn/forum/thread-221578-1-1.html" target="_blank" rel="noopener">斐讯K2P官改固件</a></p><p><a href="http://www.right.com.cn/forum/thread-261028-1-3.html" target="_blank" rel="noopener">新版的官方固件需要开启telnet后才能安装</a></p><p>前辈已经帮我们搞好了，不用费心了。</p><h3 id="禁用ssh密码登录">禁用ssh密码登录</h3><p><a href="https://openwrt.org/docs/guide-user/base-system/dropbear" target="_blank" rel="noopener">Dropbear Configuration</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">uci <span class="built_in">set</span> dropbear.@dropbear[0].PasswordAuth=off</span><br><span class="line">uci commit dropbear</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;玩路由有几年了，只是小打小闹，现在在自己的新家搞网，随手记录一些杂七杂八的想法。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="经验分享" scheme="https://chriszheng.science/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="MT7620A" scheme="https://chriszheng.science/tags/MT7620A/"/>
-    
-      <category term="R7500v2" scheme="https://chriszheng.science/tags/R7500v2/"/>
-    
-      <category term="K2P" scheme="https://chriszheng.science/tags/K2P/"/>
     
   </entry>
   
