@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
+        <lastmod>2019-05-05T05:48:07.082Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</loc>
-        <lastmod>2019-05-04T09:35:15.420Z</lastmod>
+        <lastmod>2019-05-05T02:58:52.371Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -82,14 +90,6 @@
     <url>
         <loc>https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/</loc>
         <lastmod>2019-03-27T06:33:08.073Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
-        <lastmod>2019-03-22T15:16:10.080Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1392,7 +1392,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1400,7 +1400,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2015/12/11/Acrobat-XI-Fangsong-bug/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
