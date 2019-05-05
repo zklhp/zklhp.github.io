@@ -1235,13 +1235,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Astyle/</loc>
-        <lastmod>2017-08-02T03:36:45.882Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Acrobat/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1250,6 +1243,13 @@
 
     <url>
         <loc>https://chriszheng.science/tags/%E4%BB%BF%E5%AE%8B/</loc>
+        <lastmod>2017-08-02T03:36:45.882Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Astyle/</loc>
         <lastmod>2017-08-02T03:36:45.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -2033,14 +2033,14 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Git/</loc>
+        <loc>https://chriszheng.science/tags/dotEmacs/</loc>
         <lastmod>2019-03-06T05:29:17.647Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/dotEmacs/</loc>
+        <loc>https://chriszheng.science/tags/Git/</loc>
         <lastmod>2019-03-06T05:29:17.647Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
