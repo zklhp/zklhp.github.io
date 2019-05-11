@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2017/01/06/Some-useful-websites/</loc>
+        <lastmod>2019-05-11T17:02:37.440Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
         <lastmod>2019-05-11T15:45:12.379Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +26,6 @@
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
         <lastmod>2019-05-11T09:35:29.397Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/01/06/Some-useful-websites/</loc>
-        <lastmod>2019-05-10T16:48:32.327Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1312,7 +1312,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1320,7 +1320,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1632,7 +1632,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/01/Soft-hyphen/</loc>
+        <loc>https://chriszheng.science/2015/05/04/Run-NetEase-Music-using-ARChon/</loc>
         <lastmod>2017-07-26T11:02:34.080Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1640,7 +1640,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/05/04/Run-NetEase-Music-using-ARChon/</loc>
+        <loc>https://chriszheng.science/2015/08/01/Soft-hyphen/</loc>
         <lastmod>2017-07-26T11:02:34.080Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
