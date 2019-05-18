@@ -8,16 +8,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/01/06/Some-useful-websites/</loc>
-        <lastmod>2019-05-11T17:02:37.440Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
-        <lastmod>2019-05-11T15:45:12.379Z</lastmod>
+        <loc>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</loc>
+        <lastmod>2019-05-18T15:08:18.283Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,15 +17,23 @@
 
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2019-05-11T09:35:29.397Z</lastmod>
+        <lastmod>2019-05-14T02:52:46.618Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</loc>
-        <lastmod>2019-05-06T16:53:49.930Z</lastmod>
+        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
+        <lastmod>2019-05-12T11:57:17.725Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/06/Some-useful-websites/</loc>
+        <lastmod>2019-05-11T17:02:37.440Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1312,7 +1312,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1320,7 +1320,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1848,7 +1848,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/26/Progress-of-this-site/</loc>
+        <loc>https://chriszheng.science/2016/08/26/Quantum-chemistry-units/</loc>
         <lastmod>2017-07-26T11:02:33.920Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1856,7 +1856,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/08/26/Quantum-chemistry-units/</loc>
+        <loc>https://chriszheng.science/2015/08/26/Progress-of-this-site/</loc>
         <lastmod>2017-07-26T11:02:33.920Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
