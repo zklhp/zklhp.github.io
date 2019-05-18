@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</loc>
-        <lastmod>2019-05-18T15:08:18.283Z</lastmod>
+        <lastmod>2019-05-18T16:16:54.286Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/03/14/ORCA-4-0-0-release/</loc>
+        <lastmod>2019-05-18T16:02:05.085Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1000,14 +1008,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/03/14/ORCA-4-0-0-release/</loc>
-        <lastmod>2017-12-31T15:08:51.053Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/12/17/Dual-E5-2696v3/</loc>
         <lastmod>2017-12-31T15:08:28.887Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1312,7 +1312,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1320,7 +1320,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2014/02/21/Meet-a-troll/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2017-08-02T03:36:45.887Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1848,7 +1848,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/08/26/Quantum-chemistry-units/</loc>
+        <loc>https://chriszheng.science/2015/08/26/Progress-of-this-site/</loc>
         <lastmod>2017-07-26T11:02:33.920Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1856,7 +1856,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/26/Progress-of-this-site/</loc>
+        <loc>https://chriszheng.science/2016/08/26/Quantum-chemistry-units/</loc>
         <lastmod>2017-07-26T11:02:33.920Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
