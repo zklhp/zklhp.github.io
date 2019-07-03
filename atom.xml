@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2019-06-15T12:40:08.219Z</updated>
+  <updated>2019-07-03T11:33:35.713Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -17,13 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>怎么超速不受罚？</title>
+    <link href="https://chriszheng.science/2019/07/03/Overspeed-makes-easy/"/>
+    <id>https://chriszheng.science/2019/07/03/Overspeed-makes-easy/</id>
+    <published>2019-07-03T03:11:32.000Z</published>
+    <updated>2019-07-03T11:33:35.713Z</updated>
+    
+    <content type="html"><![CDATA[<p>🚗🚘🚓🚨🚔🚥🚦</p><a id="more"></a><p>根据交规，对于个人的车辆，超速不超过10%受<strong>警告</strong>，<strong>不扣分不罚款</strong>。还有一个特例，“在限速低于60公里/小时的公路上超过规定车速50%以下的”而且“未造成后果的”，也受警告。所以，超速的「安全区间」是这个样子。</p><p><img src="/img/Overspeed.png" alt="不受罚的速度区间"></p><hr><p>代码如下。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">x = 0:120;</span><br><span class="line">y = 0:120;</span><br><span class="line">hi = y * 1.1;# 超速10%以内不罚款不扣分。</span><br><span class="line">hi(1:60) += y(1:60) * 0.4;# 限速低于60 km/h的公路，超过规定车速50%以下，不罚款不扣分。</span><br><span class="line"></span><br><span class="line">plot(x, y, &apos;linewidth&apos;, 4);</span><br><span class="line">hold on;</span><br><span class="line">fi = fill([x fliplr(x)], [y fliplr(hi)], &apos;r&apos;);</span><br><span class="line">set(fi, &apos;facecolor&apos;, [1 0.8 0.8], &apos;edgecolor&apos;, &apos;none&apos;);</span><br><span class="line">grid on;</span><br><span class="line">xlabel(&apos;限速(km/h)&apos;, &apos;FontName&apos;, &apos;Source Han Sans CN Light&apos;);</span><br><span class="line">ylabel(&apos;超速不受罚的速度(km/h)&apos;, &apos;FontName&apos;, &apos;Source Han Sans CN Light&apos;);</span><br><span class="line">print(&apos;Overspeed.svg&apos;);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;🚗🚘🚓🚨🚔🚥🚦&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="科学研究" scheme="https://chriszheng.science/categories/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6/"/>
+    
+    
+      <category term="Octave" scheme="https://chriszheng.science/tags/Octave/"/>
+    
+  </entry>
+  
+  <entry>
     <title>近思录 2019-06-04</title>
     <link href="https://chriszheng.science/2019/06/04/Recent-thoughts-2019-06-04/"/>
     <id>https://chriszheng.science/2019/06/04/Recent-thoughts-2019-06-04/</id>
     <published>2019-06-04T00:09:00.000Z</published>
-    <updated>2019-06-15T12:40:08.219Z</updated>
+    <updated>2019-07-03T11:49:51.147Z</updated>
     
-    <content type="html"><![CDATA[<p style="font-size: larger">🌝</p><a id="more"></a><h2 id="戒酒">戒酒</h2><blockquote><p>昔者帝女令仪狄作酒而美，进之禹，禹饮而甘之，遂疏仪狄，绝旨酒，曰：“后世必有以酒亡其国者。”</p><footer><strong>《战国策·魏策·魏二·梁王魏婴觞诸侯于范台》</strong></footer></blockquote><p>这个标题戒酒是顺手写上去的。我认真学习八项规定，怎么会喝酒呢(手动滑稽)。</p><p>有人分享了朋友圈，说酒如何如何好，还引经据典。有人学给我听，我马上反驳：古代反对喝酒的典籍不少咯，然后背出这段。</p><h2 id="鲁酒">鲁酒</h2><p>说到酒，自然想到鲁酒。这其实是个典故，可是，现在又有多少人能知道这种吊书袋的东西。</p><p>补充了一些关于鲁酒的段子，写到<a href="/2016/09/16/Confucius-stories/#%E9%B2%81%E9%85%92">有关孔子的几则「口述历史」</a>里了。</p><p>我写过不少东东，可惜没人看啊。做好内链，也可能提高浏览量罢。</p><h2 id="孙悟空嫌弼马温官小是不识抬举">孙悟空嫌弼马温官小是不识抬举</h2><p>电视上又有频道重播86版西游记，看了开头几集。现在的我认为，孙猴其实很幸运，作为下界的体制外人员，一跃进入中央政府当个看马的小官，已经很不错了。他自己嫌官小，有点不识抬举。转过来一想，西游记也只能这么写这么演，孙悟空毕竟是个猴。如果他懂得「历史的行程」，就不是猴了。</p><h2 id="帮帮esr">帮帮ESR</h2><p><a href="http://esr.ibiblio.org/?p=8349" target="_blank" rel="noopener">http://esr.ibiblio.org/?p=8349</a></p><h2 id="池中鼠">池中鼠</h2><p><a href="https://www.zhihu.com/question/50077611" target="_blank" rel="noopener">https://www.zhihu.com/question/50077611</a></p><p>有人翻译解释了那个著名的实验。</p><h2 id="行过死荫的幽谷">行过死荫的幽谷</h2><blockquote><p>{A Psalm of David.} The LORD is my shepherd; I shall not want.</p><p>He maketh me to lie down in green pastures: he leadeth me beside the still waters.</p><p>He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake.</p><p>Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.</p><p>Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.</p><p>Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.</p><footer><strong>Psalm 23,</strong><cite><a href="https://biblehub.com/kjv/psalms/23.htm" target="_blank" rel="noopener">biblehub.com/kjv/psalms/23.htm</a></cite></footer></blockquote><blockquote><p>（大卫的诗。）耶和华是我的牧者，我必不致缺乏。</p><p>他使我躺卧在青草地上，领我在可安歇的水边。</p><p>他使我的灵魂苏醒，为自己的名引导我走义路。</p><p>我虽然行过死荫的幽谷，也不怕遭害，因为你与我同在；你的杖，你的竿，都安慰我。</p><p>在我敌人面前，你为我摆设筵席；你用油膏了我的头，使我的福杯满溢。</p><p>我一生一世必有恩惠慈爱随着我；我且要住在耶和华的殿中，直到永远。</p><footer><strong>诗篇 23,</strong><cite><a href="https://cnbible.com/cus/psalms/23.htm" target="_blank" rel="noopener">cnbible.com/cus/psalms/23.htm</a></cite></footer></blockquote>]]></content>
+    <content type="html"><![CDATA[<p style="font-size: larger">🌝</p><a id="more"></a><h2 id="戒酒">戒酒</h2><blockquote><p>昔者帝女令仪狄作酒而美，进之禹，禹饮而甘之，遂疏仪狄，绝旨酒，曰：“后世必有以酒亡其国者。”</p><footer><strong>《战国策·魏策·魏二·梁王魏婴觞诸侯于范台》</strong></footer></blockquote><p>这个标题戒酒是顺手写上去的。我认真学习八项规定，怎么会喝酒呢(手动滑稽)。</p><p>有人分享了朋友圈，说酒如何如何好，还引经据典。有人学给我听，我马上反驳：古代反对喝酒的典籍不少咯，然后背出这段。</p><h2 id="鲁酒">鲁酒</h2><p>说到酒，自然想到鲁酒。这其实是个典故，可是，现在又有多少人能知道这种吊书袋的东西。</p><p>补充了一些关于鲁酒的段子，写到<a href="/2016/09/16/Confucius-stories/#%E9%B2%81%E9%85%92">有关孔子的几则「口述历史」</a>里了。</p><p>我写过不少东东，可惜没人看啊。做好内链，也可能提高浏览量罢。</p><h2 id="孙悟空嫌弼马温官小是不识抬举">孙悟空嫌弼马温官小是不识抬举</h2><p>电视上又有频道重播86版西游记，看了开头几集。现在的我认为，孙猴其实很幸运，作为下界的体制外人员，一跃进入中央政府当个看马的小官，已经很不错了。他自己嫌官小，有点不识抬举。转过来一想，西游记也只能这么写这么演，孙悟空毕竟是个猴。如果他懂得「历史的行程」，就不是猴了。</p><h2 id="帮帮esr">帮帮ESR</h2><p><a href="http://esr.ibiblio.org/?p=8349" target="_blank" rel="noopener">http://esr.ibiblio.org/?p=8349</a></p><h2 id="池中鼠">池中鼠</h2><p><a href="https://www.zhihu.com/question/50077611" target="_blank" rel="noopener">https://www.zhihu.com/question/50077611</a></p><p>有人翻译解释了那个著名的实验。</p><h2 id="行过死荫的幽谷">行过死荫的幽谷</h2><blockquote><p>{A Psalm of David.} The LORD is my shepherd; I shall not want.</p><p>He maketh me to lie down in green pastures: he leadeth me beside the still waters.</p><p>He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake.</p><p>Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.</p><p>Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.</p><p>Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.</p><footer><strong>Psalm 23,</strong><cite><a href="https://biblehub.com/kjv/psalms/23.htm" target="_blank" rel="noopener">biblehub.com/kjv/psalms/23.htm</a></cite></footer></blockquote><blockquote><p>（大卫的诗。）耶和华是我的牧者，我必不致缺乏。</p><p>他使我躺卧在青草地上，领我在可安歇的水边。</p><p>他使我的灵魂苏醒，为自己的名引导我走义路。</p><p>我虽然行过死荫的幽谷，也不怕遭害，因为你与我同在；你的杖，你的竿，都安慰我。</p><p>在我敌人面前，你为我摆设筵席；你用油膏了我的头，使我的福杯满溢。</p><p>我一生一世必有恩惠慈爱随着我；我且要住在耶和华的殿中，直到永远。</p><footer><strong>诗篇 23,</strong><cite><a href="https://cnbible.com/cus/psalms/23.htm" target="_blank" rel="noopener">cnbible.com/cus/psalms/23.htm</a></cite></footer></blockquote><h2 id="买了一个笔记本支架">买了一个笔记本支架</h2><p>品牌是赛鲸。看了下面的测评买的，感觉还不错。</p><p><a href="https://post.smzdm.com/p/656699/" target="_blank" rel="noopener">https://post.smzdm.com/p/656699/</a></p><h2 id="在线音乐解决方案">在线音乐解决方案</h2><blockquote><p>过去连接了互联网什么都可以做；现在连接互联网什么都做不了，能做一件事——下载APP。</p><footer><strong>网络段子</strong></footer></blockquote><p><a href="http://yuanmu.mzzhost.com/musicbox.html" target="_blank" rel="noopener">http://yuanmu.mzzhost.com/musicbox.html</a></p>]]></content>
     
     <summary type="html">
     
@@ -35,6 +57,8 @@
     
     
       <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
+    
+      <category term="西游记" scheme="https://chriszheng.science/tags/%E8%A5%BF%E6%B8%B8%E8%AE%B0/"/>
     
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     
@@ -448,30 +472,6 @@
     
     
       <category term="科学研究" scheme="https://chriszheng.science/tags/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大学生掏粪工</title>
-    <link href="https://chriszheng.science/2018/09/16/University-graduates-as-cleaners/"/>
-    <id>https://chriszheng.science/2018/09/16/University-graduates-as-cleaners/</id>
-    <published>2018-09-16T11:04:29.000Z</published>
-    <updated>2019-05-28T18:56:25.309Z</updated>
-    
-    <content type="html"><![CDATA[<p>大学生争当掏粪工，是时代的悲剧，是畸形社会和观念的必然产物，但又是一种合乎逻辑的选择。作为一个个体，没办法抗争，做出对自己有利的选择，不好么？</p><p>其实我们很多人不也是在做掏粪工的工作么？</p><p><a href="/2017/07/10/Your-role-in-capital-economy/">以前的相关文章</a>解释了不掏粪你能干啥。</p><a id="more"></a><p style="font-size: larger">我声明，我没有任何歧视掏粪工的意思。</p><p>以下是我2010年看到的新闻的全文，全文转过来，因为我发现这个新闻在一些地方(比如新华网)已经被删了。<span style="color: #FF0000;">重点内容我加了颜色，各位自己琢磨</span>。</p><blockquote><p>中国日报网消息：据《生活日报》消息，2日上午，在济南市城肥二处一间会议室，5名大学生淘粪工和城肥二处的负责人签订了聘用合同，期限5年，但这<span style="color: #FF0000;">并不意味着</span>这5年他们必须从事这一工种，如果<span style="color: #FF0000;">表现得好</span>，他们完全<span style="color: #FF0000;">可以进管理层</span>。</p><p></p><h3>2日还举行了简短的拜师仪式　老淘粪工手把手教他们淘粪</h3><p></p><p>2日上午还举行了一个简短的拜师仪式，济南市城肥二处为这些大学生选定了老的淘粪工作为指导老师，这些大学生向他们的指导老师献上鲜花，并且深深鞠躬。</p><p>这些老师都是工作多年的老淘粪工。张婷的指导老师卢爱章是城肥二处清洁四队四班老班长，济南市五一劳动奖章获得者。邢鸿雁的指导老师张兆斌曾获得先进工作者的称号，宿昊的指导老师付树华还是省劳动模范。</p><p>“现在这5个大学生中，有3个男生已经‘顶’起来了。”济南市城肥二处一名负责人介绍，2个女大学生上手相对慢一些。</p><p>“你看，淘粪时勺子要贴着旱厕的壁，这样淘得满，而且也不容易洒漏。”2日，在甸柳小区一处旱厕内，老淘粪工卢爱章正在教张婷如何淘粪。</p><p>对于这些大学生来说，从去年9月份开始上岗，经过这几个月的淘粪工作，加上老淘粪工的言传身教，他们已经初步摸到了一些门道。</p><p>身高1米74的大学生淘粪工孟佳介绍，她的个子较高，老淘粪工专门给她扁担上的链子加长了一块。链子长了，扁担上下有适度的颤悠，挑起来感觉轻一些。反之，如果扁担两端的链子很短，没有颤悠看起来好像很稳定，但是那样肩膀会感觉很沉。</p><p></p><h3>现在只想眼前的活儿　大学生称以后咋发展“还没琢磨”</h3><p></p><p>这5名大学生都在23——26岁之间，4名是本科学历。在淘粪工岗位上要干多少年？未来的道路有没有规划？</p><p>对此，5名大学生都表示，现在只想干好眼前的活儿，至于以后怎么发展还真没有考虑过。</p><p>“现在还没有琢磨这件事情。”宿昊介绍。</p><p>而孟佳也说，“我们已经<span style="color: #FF0000;">做好了长期做淘粪工的准备，而且也已经适应</span>。”至于以后的发展，“领导们肯定会看我们的表现。”</p><p></p><h3>他们签的合同期限是5年　但这不意味着5年内必须做淘粪工</h3><p></p><p>5名大学生签订的《山东省事业单位聘用合同》规定，城肥二处聘请5名大学生从事“<span style="color: #FF0000;">粪便净化处理工作</span>”，期限为5年。</p><p>济南市城肥二处有关负责人表示，签订合同，意味着这5名大学生已经成为城肥二处的正式职工，按照合同5年之内不准变动工作，但是这并不意味着这5名大学生5年之内必须要做淘粪工。</p><p>“应该说我们单位还是缺少人才，特别是高学历的人才。”这位负责人说，<span style="color: #FF0000;">国家培养一名大学生不容易</span>，这些大学生刚刚踏入社会，无论从事什么工种，都是一种锻炼。将来，不排除根据这些大学生的表现来对他们的工作岗位进行调整。如果大学生表现得好，<span style="color: #FF0000;">管理层的大门也向他们敞开</span>。</p><footer><strong>http://www.chinadaily.com.cn/m/shandong/c/2010-03/03/content_9531470.htm</strong></footer></blockquote><p>又看了一遍，加上自己的思考，杂七杂八的写在下面：</p><ol><li>大学生掏粪工们的回答很官方，不知是否是真实意愿。</li><li>如果评价机制是公平的，选拔真正好的人进入管理层，是好事；如果有暗箱操作，是糟糕的。</li><li>当时编制的诱惑还是很大的。从字缝里看，上升空间也是诱惑。</li><li>这些人现在应该比同龄人混得好吧。肯定比我好！</li><li>路都是自己选的，走自己选的路，「求仁得仁」，是好事。</li><li>这些人这么选恐怕有高人指点。</li><li>原来这个事就发生在济南，在我身边。</li><li>后续这种事好像少了，也可能是不稀罕了所以不报道了。</li><li>现在可能都要求研究生学历了罢。</li><li>10年间工资提升不大，房价倒是涨了大约2到5倍。这个他们应该没考虑到。</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;大学生争当掏粪工，是时代的悲剧，是畸形社会和观念的必然产物，但又是一种合乎逻辑的选择。作为一个个体，没办法抗争，做出对自己有利的选择，不好么？&lt;/p&gt;
-&lt;p&gt;其实我们很多人不也是在做掏粪工的工作么？&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;/2017/07/10/Your-role-in-capital-economy/&quot;&gt;以前的相关文章&lt;/a&gt;解释了不掏粪你能干啥。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="闲言碎语" scheme="https://chriszheng.science/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/"/>
-    
-    
-      <category term="分享" scheme="https://chriszheng.science/tags/%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
