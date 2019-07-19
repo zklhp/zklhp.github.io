@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2019-07-08T01:32:47.560Z</updated>
+  <updated>2019-07-18T08:03:10.395Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chriszheng.science/2019/07/04/Recent-thoughts-2019-07-04/"/>
     <id>https://chriszheng.science/2019/07/04/Recent-thoughts-2019-07-04/</id>
     <published>2019-07-03T16:00:00.000Z</published>
-    <updated>2019-07-08T01:32:47.560Z</updated>
+    <updated>2019-07-18T08:03:10.395Z</updated>
     
-    <content type="html"><![CDATA[<p style="font-size: larger">🇺🇸</p><a id="more"></a><h2 id="美国国会要求facebook立即停止libra项目">美国国会要求Facebook立即停止Libra项目</h2><p>跟我没什么关系。国会公布了信的原文，可以借机看看美国国会的公文是什么样的。为了防止失效，我存了一份，扫描版点<a href="/files/07.02.2019_-_fb_ltr.pdf">这里</a>。我们来分析一下它。</p><ol><li><p>有些人的签名是蓝色的，好奇怪。难道是用的<a href="https://detail.youzan.com/show/goods?alias=2fmt4q86n12sm" target="_blank" rel="noopener">这个</a>？</p></li><li><p>字体用的是新罗马(Times New Roman)。</p></li></ol><p><img src="/img/Congress-uses-Times-font.png" alt="国会用的是不是新罗马字体？"></p><ol start="3"><li>如果是用Word编辑的，是单倍行距不打沟，就是取消了段落里的「自动调整右缩进」和「对齐到网格」。</li></ol><h2 id="为了修复acrobat-xi的毛病安装了word-2016">为了修复Acrobat XI的毛病安装了Word 2016</h2><ol><li><p>安装Word 2016并不能解决我遇到的问题。</p></li><li><p>Word 2016需要用最新的KMS才能激活。我从<a href="https://github.com/charygao/KMSpico_v10.2.0" target="_blank" rel="noopener">这里</a>下载的KMS。</p></li><li><p>Word 2016比2013更流畅。可能是优化的结果，也可能只是把动画调快了。</p></li><li><p>我遇到的问题的解决方案看<a href="/2017/01/02/One-sentence-tips-on-software/index.html#%E5%95%86%E4%B8%9A%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7">这里</a>。</p></li></ol>]]></content>
+    <content type="html"><![CDATA[<p style="font-size: larger">🇺🇸</p><a id="more"></a><h2 id="美国国会要求facebook立即停止libra项目">美国国会要求Facebook立即停止Libra项目</h2><p>跟我没什么关系。国会公布了信的原文，可以借机看看美国国会的公文是什么样的。为了防止失效，我存了一份，扫描版点<a href="/files/07.02.2019_-_fb_ltr.pdf">这里</a>。我们来分析一下它。</p><ol><li><p>有些人的签名是蓝色的，好奇怪。难道是用的<a href="https://detail.youzan.com/show/goods?alias=2fmt4q86n12sm" target="_blank" rel="noopener">这个</a>？</p></li><li><p>字体用的是新罗马(Times New Roman)。</p></li></ol><p><img src="/img/Congress-uses-Times-font.png" alt="国会用的是不是新罗马字体？"></p><ol start="3"><li><p>如果是用Word编辑的，是单倍行距不打沟，就是取消了段落里的「自动调整右缩进」和「对齐到网格」。</p></li><li><p>这里面的格式非常规范，抬头写了收信人，再写称谓。可以打印出来用于教学用途。</p></li></ol><h2 id="为了修复acrobat-xi的毛病安装了word-2016">为了修复Acrobat XI的毛病安装了Word 2016</h2><ol><li><p>安装Word 2016并不能解决我遇到的问题。</p></li><li><p>Word 2016需要用最新的KMS才能激活。我从<a href="https://github.com/charygao/KMSpico_v10.2.0" target="_blank" rel="noopener">这里</a>下载的KMS。</p></li><li><p>Word 2016比2013更流畅。可能是优化的结果，也可能只是把动画调快了。</p></li><li><p>我遇到的问题的解决方案看<a href="/2017/01/02/One-sentence-tips-on-software/index.html#%E5%95%86%E4%B8%9A%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7">这里</a>。</p></li></ol><h2 id="另一个搜索引擎">另一个搜索引擎</h2><p><a href="https://dogedoge.com/" target="_blank" rel="noopener">https://dogedoge.com/</a></p><h2 id="萤火之光-皓月之明">萤火之光，皓月之明</h2><p><a href="http://sobereva.com/495" target="_blank" rel="noopener">http://sobereva.com/495</a></p><h2 id="quickjs">QuickJS</h2><p><a href="https://bellard.org/quickjs/" target="_blank" rel="noopener">https://bellard.org/quickjs/</a></p>]]></content>
     
     <summary type="html">
     
