@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2019-07-29T07:06:09.387Z</updated>
+  <updated>2019-08-10T10:06:54.590Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近思录 2019-08-01</title>
+    <link href="https://chriszheng.science/2019/08/01/Recent-thoughts-2019-08-01/"/>
+    <id>https://chriszheng.science/2019/08/01/Recent-thoughts-2019-08-01/</id>
+    <published>2019-07-31T16:00:00.000Z</published>
+    <updated>2019-08-10T10:06:54.590Z</updated>
+    
+    <content type="html"><![CDATA[<p style="font-size: larger">👮</p><a id="more"></a><h2 id="use-plain-text-email">Use plain text email</h2><p><a href="https://useplaintext.email/" target="_blank" rel="noopener">https://useplaintext.email/</a></p><h2 id="压缩算法小测评">压缩算法小测评</h2><p>我现在用的压缩软件是增强版的7zip (<a href="https://github.com/mcmilk/7-Zip-zstd" target="_blank" rel="noopener">7-Zip-zstd</a>)，支持很多算法。可用算法多了反而有选择困难，而且，我后来发现我有一两年的时间用的压缩算法不合理，慢而且压缩率不高。为了让自己不再犯错误，也给大家一个参考，把我测试的结果写出来。我测试用的是一个736 Mb的文件夹，里面是一些PhotoShop的<code>.psd</code>文件，直接放着占地方，所以需要压缩保存。下面的测试不严谨，只是个大概，思路是，尽量使用默认压缩率看各个算法的表现，比较的标准就是压缩用的时间和压缩率。</p><table><thead><tr><th style="text-align:center">编码</th><th style="text-align:center">用时(s)</th><th style="text-align:center">压缩率(%)</th></tr></thead><tbody><tr><td style="text-align:center">Brotli</td><td style="text-align:center">6</td><td style="text-align:center">12.6</td></tr><tr><td style="text-align:center">Zstandard (level 6)</td><td style="text-align:center">5</td><td style="text-align:center">13.0</td></tr><tr><td style="text-align:center">Lizard, fastLZ4 + Huffman</td><td style="text-align:center">6</td><td style="text-align:center">14.9</td></tr><tr><td style="text-align:center">Lz4</td><td style="text-align:center">3</td><td style="text-align:center">15.3</td></tr><tr><td style="text-align:center">Lz5</td><td style="text-align:center">5</td><td style="text-align:center">15.6</td></tr><tr><td style="text-align:center">LZMA, Fast</td><td style="text-align:center">20</td><td style="text-align:center">11.5</td></tr><tr><td style="text-align:center">Deflate</td><td style="text-align:center">43</td><td style="text-align:center">14.3</td></tr><tr><td style="text-align:center">Deflate64</td><td style="text-align:center">45</td><td style="text-align:center">14.1</td></tr></tbody></table><p>那些排后面慢的算法就不要用了。我分析前面那些算法快主要还是靠了并行化，因为后面几种压缩都是单线程的，当然慢。</p><p>后来发现<a href="https://github.com/mcmilk/7-Zip-zstd#benchmarks" target="_blank" rel="noopener">7-Zip-zstd的主页有测评</a>，比我的测试要可靠的多。我的结论很明确，不要用排在后面的那几种压缩算法。</p><h2 id="12万pv达成">12万PV达成</h2><p>As of 2019-08-04.</p><h2 id="孤独的搜索结果">孤独的搜索结果</h2><p><a href="https://en.wikipedia.org/wiki/Googlewhack" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Googlewhack</a></p><h2 id="小米你真不要脸">小米你真不要脸</h2><p><a href="https://steamcn.com/t512333-3-1" target="_blank" rel="noopener">https://steamcn.com/t512333-3-1</a></p><p>把自己的广告伪装成APP的广告，不要脸。</p><p>小米我肏你妈！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p style=&quot;font-size: larger&quot;&gt;👮&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>近思录 2019-07-04</title>
@@ -443,28 +465,6 @@
     <summary type="html">
     
       &lt;p style=&quot;font-size: larger&quot;&gt;🤔&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-    
-      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近思录 2018-10-01</title>
-    <link href="https://chriszheng.science/2018/10/01/Recent-thoughts-2018-10-01/"/>
-    <id>https://chriszheng.science/2018/10/01/Recent-thoughts-2018-10-01/</id>
-    <published>2018-10-01T02:27:32.000Z</published>
-    <updated>2019-06-07T14:14:10.411Z</updated>
-    
-    <content type="html"><![CDATA[<p style="font-size: 4em">😢</p><a id="more"></a><h2 id="用了5年的笔记本主板供电烧了">用了5年的笔记本主板供电烧了</h2><p>我的电脑是这个</p><p><a href="http://detail.zol.com.cn/series/16/14465_1.html" target="_blank" rel="noopener">http://detail.zol.com.cn/series/16/14465_1.html</a></p><p>配置是很好的，似乎设计有问题，刚用一天就烧了主板，当时直接换新。5年后，又烧了。这种小众的产品，出问题挺让人头疼。最终花了几百块钱找人把笔记本修好了。以防万一，我又买了一个垃圾台式电脑，备着。</p><h2 id="不蒜子计数器换地址了">不蒜子计数器换地址了</h2><p>原来是<code>//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js</code>，现在是<code>//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js</code>。</p><h2 id="如何增加intel核心显卡的最大分辨率">如何增加Intel核心显卡的最大分辨率</h2><p>如果您使用的是Intel核心显卡，如Intel HD Graphics 4000，通过HDMI输出最大的分辨率才1200×1920。如果想利用高分辨率的显示器，比如分辨率为2560×1440，就只能用通过奇技淫巧了。具体的方法来自下面的网站：</p><p><a href="https://www.notebookcheck.net/2560x1440-or-2560x1600-via-HDMI.92840.0.html" target="_blank" rel="noopener">https://www.notebookcheck.net/2560x1440-or-2560x1600-via-HDMI.92840.0.html</a></p><p><img src="/img/Resolution-1440P-1.png" alt="设置Intel核心显卡分辨率为2560×1440第一步"></p><p><img src="/img/Resolution-1440P-2.png" alt="设置Intel核心显卡分辨率为2560×1440第二步"></p><h2 id="闪迪cz80换头">闪迪CZ80换头</h2><p><img src="/img/SanDisk-CZ80-before.jpg" alt="闪迪CZ80换头前"></p><p>USB头里的金手指的时间太长了，氧化了，插在别的电脑上总是实效，有一次差点耽误上课。在某宝花4.7元买了10个USB 3.0的公头，换。</p><p><img src="/img/SanDisk-CZ80-after.jpg" alt="闪迪CZ80换头后"></p><p>手艺还是不太好，换完插了几次就不行了。</p><p><img src="/img/SanDisk-CZ80-benchmark.png" alt="闪迪CZ80测速"></p><h2 id="有机化合物的热力学参数">有机化合物的热力学参数</h2><p><a href="http://www2.ucdsb.on.ca/tiss/stretton/database/organic_thermo.htm" target="_blank" rel="noopener">Organic Compounds: Physical and Thermochemical Data</a></p><h2 id="油管崩溃">油管崩溃</h2><p>As of 2018-10-17 01:50:00 UTC,</p><p><img src="/img/YouTube-down.png" alt="YouTube崩溃了"></p><p><a href="https://www.thesun.co.uk/tech/7512392/youtube-down-video-streaming-site-not-working-worldwide/" target="_blank" rel="noopener">新闻一则</a>。</p><p>看来是网站就会崩，我还以为是我自己的问题。</p><h2 id="成语">成语</h2><p>积毁销骨、众口铄金、析骸以爨。</p><h2 id="魔法禁书目录第三季">魔法禁书目录第三季</h2><p>开播了。距离上一季已经8年了，又是一个有生之年系列。上一次我遇到这种情况是空之境界的未来福音，时间跨度是2009–2013，当时就有很多人刷「有生之年」了，这次相隔八年，真是</p><p>恍如隔世。</p><p><a href="https://github.com/iawia002/annie/" target="_blank" rel="noopener">https://github.com/iawia002/annie/</a></p><p>这个软件可以下载bilibili上的正版视频。</p><p><img src="/img/Toaru-Majutsu-no-Index-III-01.png" alt="魔法禁书目录第三季01"></p><h2 id="学习linux的范式">学习Linux的范式</h2><p>看到有人争论这个问题，写写我的观点。</p><ol><li>学日常使用，包括安装配置，目的是使用。</li><li>研究原理，看源码，目的可能是实现某种功能。</li><li>折腾，目的是娱乐，做的事包括上面两条。</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p style=&quot;font-size: 4em&quot;&gt;😢&lt;/p&gt;
     
     </summary>
     
