@@ -78,13 +78,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/categories/%E7%AC%91%E8%AF%9D%E6%AE%B5%E5%AD%90/</loc>
-        <lastmod>2019-09-01T05:37:50.676Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/categories/%E6%91%84%E5%BD%B1%E4%BD%9C%E5%93%81/</loc>
         <lastmod>2019-09-01T18:19:36.177Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -134,8 +127,15 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/categories/%E7%AC%91%E8%AF%9D%E6%AE%B5%E5%AD%90/</loc>
+        <lastmod>2019-11-04T10:37:09.086Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/</loc>
-        <lastmod>2019-10-27T15:20:54.724Z</lastmod>
+        <lastmod>2019-11-04T15:27:19.732Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
