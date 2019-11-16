@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chriszheng.science/2019/11/11/Recent-thoughts-2019-11-11/</loc>
-        <lastmod>2019-11-04T15:27:19.732Z</lastmod>
+        <lastmod>2019-11-16T14:44:56.190Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
+        <lastmod>2019-11-07T13:43:56.383Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -338,14 +346,6 @@
     <url>
         <loc>https://chriszheng.science/2019/02/02/Recent-thoughts-2019-02-02/</loc>
         <lastmod>2019-06-07T14:14:11.817Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
-        <lastmod>2019-06-07T14:14:11.536Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1560,7 +1560,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2013/07/30/Nine-different-digits/</loc>
+        <loc>https://chriszheng.science/2015/02/19/New-view-on-Sha-Wujing/</loc>
         <lastmod>2019-05-28T18:56:23.753Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1568,7 +1568,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/02/19/New-view-on-Sha-Wujing/</loc>
+        <loc>https://chriszheng.science/2013/07/30/Nine-different-digits/</loc>
         <lastmod>2019-05-28T18:56:23.753Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1776,7 +1776,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/16/Markdown-mode-now-supports-fancy-lists-of-Pandoc/</loc>
+        <loc>https://chriszheng.science/2016/04/03/Markdown-to-clipboard/</loc>
         <lastmod>2019-05-28T18:56:23.394Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1784,7 +1784,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/04/03/Markdown-to-clipboard/</loc>
+        <loc>https://chriszheng.science/2015/07/16/Markdown-mode-now-supports-fancy-lists-of-Pandoc/</loc>
         <lastmod>2019-05-28T18:56:23.394Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2352,7 +2352,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/11/15/Firefox-v57-for-Android/</loc>
+        <loc>https://chriszheng.science/2016/10/01/Fix-a-not-enough-memory-error-in-ORCA-under-Windows/</loc>
         <lastmod>2019-05-28T18:56:22.400Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2360,7 +2360,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/10/01/Fix-a-not-enough-memory-error-in-ORCA-under-Windows/</loc>
+        <loc>https://chriszheng.science/2017/11/15/Firefox-v57-for-Android/</loc>
         <lastmod>2019-05-28T18:56:22.400Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2464,7 +2464,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/31/Emacsclient-options-for-daemon-mode/</loc>
+        <loc>https://chriszheng.science/2015/08/26/Emacs-win32-clipboard-API/</loc>
         <lastmod>2019-05-28T18:56:22.212Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2472,7 +2472,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/26/Emacs-win32-clipboard-API/</loc>
+        <loc>https://chriszheng.science/2015/12/31/Emacsclient-options-for-daemon-mode/</loc>
         <lastmod>2019-05-28T18:56:22.212Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2544,7 +2544,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/07/27/Emacs-now-supports-native-line-number/</loc>
+        <loc>https://chriszheng.science/2015/09/01/Emacs-packages-loading-mechanism/</loc>
         <lastmod>2019-05-28T18:56:22.087Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2552,7 +2552,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/09/01/Emacs-packages-loading-mechanism/</loc>
+        <loc>https://chriszheng.science/2017/07/27/Emacs-now-supports-native-line-number/</loc>
         <lastmod>2019-05-28T18:56:22.087Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2880,7 +2880,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/14/C-function-pointer/</loc>
+        <loc>https://chriszheng.science/2015/11/13/Bye-bye-Baidu/</loc>
         <lastmod>2019-05-28T18:56:21.525Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2888,7 +2888,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/11/13/Bye-bye-Baidu/</loc>
+        <loc>https://chriszheng.science/2015/08/14/C-function-pointer/</loc>
         <lastmod>2019-05-28T18:56:21.525Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2952,7 +2952,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/06/Attention-ArchLinux-and-Logitech-G600-users/</loc>
+        <loc>https://chriszheng.science/2015/06/21/Baidu-indexed-minority-domain/</loc>
         <lastmod>2019-05-28T18:56:21.384Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2960,7 +2960,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/06/21/Baidu-indexed-minority-domain/</loc>
+        <loc>https://chriszheng.science/2015/12/06/Attention-ArchLinux-and-Logitech-G600-users/</loc>
         <lastmod>2019-05-28T18:56:21.384Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3016,7 +3016,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/07/29/Add-proxy-in-Pan-Addons-of-Firefox/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
         <lastmod>2019-05-28T18:56:21.259Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3024,7 +3024,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2016/07/29/Add-proxy-in-Pan-Addons-of-Firefox/</loc>
         <lastmod>2019-05-28T18:56:21.259Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3056,7 +3056,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/07/A-script-to-log-the-network-off/</loc>
+        <loc>https://chriszheng.science/2015/10/27/A-tip-for-big-integer-calculation-using-bc/</loc>
         <lastmod>2019-05-28T18:56:21.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3064,7 +3064,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/10/27/A-tip-for-big-integer-calculation-using-bc/</loc>
+        <loc>https://chriszheng.science/2016/02/07/A-script-to-log-the-network-off/</loc>
         <lastmod>2019-05-28T18:56:21.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3144,7 +3144,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/10/29/A-background-image-from-Bing/</loc>
+        <loc>https://chriszheng.science/2015/03/01/7zip-compresses-folder/</loc>
         <lastmod>2019-05-28T18:56:21.056Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3152,7 +3152,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/03/01/7zip-compresses-folder/</loc>
+        <loc>https://chriszheng.science/2016/10/29/A-background-image-from-Bing/</loc>
         <lastmod>2019-05-28T18:56:21.056Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

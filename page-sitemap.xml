@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://chriszheng.science/about/</loc>
+        <lastmod>2019-11-05T08:33:41.505Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://chriszheng.science/essentials-of-academic-writing/</loc>
         <lastmod>2019-08-21T11:13:35.393Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,13 +24,6 @@
     <url>
         <loc>https://chriszheng.science/pua/</loc>
         <lastmod>2019-05-11T16:48:45.148Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://chriszheng.science/about-me/</loc>
-        <lastmod>2019-04-02T03:06:08.631Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
