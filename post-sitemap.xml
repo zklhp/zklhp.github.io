@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2019/12/14/Recent-thoughts-2019-12-14/</loc>
+        <lastmod>2019-12-10T01:21:39.949Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/08/01/Practical-typography/</loc>
+        <lastmod>2019-12-04T01:37:32.155Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2019/11/11/Recent-thoughts-2019-11-11/</loc>
-        <lastmod>2019-11-24T15:34:23.429Z</lastmod>
+        <lastmod>2019-11-30T14:38:45.246Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -544,7 +560,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/09/19/Win8-1-update-problem/</loc>
+        <loc>https://chriszheng.science/2015/11/13/Why-write-a-blog/</loc>
         <lastmod>2019-05-28T18:56:25.747Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -552,7 +568,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/11/13/Why-write-a-blog/</loc>
+        <loc>https://chriszheng.science/2015/09/19/Win8-1-update-problem/</loc>
         <lastmod>2019-05-28T18:56:25.747Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -624,7 +640,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/10/Wang-Lun-in-novel-Water-Margin/</loc>
+        <loc>https://chriszheng.science/2017/08/06/Wang-Sir-jokes/</loc>
         <lastmod>2019-05-28T18:56:25.591Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -632,7 +648,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/08/06/Wang-Sir-jokes/</loc>
+        <loc>https://chriszheng.science/2017/06/10/Wang-Lun-in-novel-Water-Margin/</loc>
         <lastmod>2019-05-28T18:56:25.591Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -712,7 +728,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/11/24/Use-mini-OSC-in-mpv/</loc>
+        <loc>https://chriszheng.science/2016/01/14/Use-shell-file-name-change-shell/</loc>
         <lastmod>2019-05-28T18:56:25.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -720,7 +736,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/01/14/Use-shell-file-name-change-shell/</loc>
+        <loc>https://chriszheng.science/2015/11/24/Use-mini-OSC-in-mpv/</loc>
         <lastmod>2019-05-28T18:56:25.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -920,7 +936,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/06/01/Three-advanced-settings-of-MS-Word/</loc>
+        <loc>https://chriszheng.science/2016/01/24/Thoughts-on-TV-show-Super-Brain/</loc>
         <lastmod>2019-05-28T18:56:25.106Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -928,7 +944,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/01/24/Thoughts-on-TV-show-Super-Brain/</loc>
+        <loc>https://chriszheng.science/2015/06/01/Three-advanced-settings-of-MS-Word/</loc>
         <lastmod>2019-05-28T18:56:25.106Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1000,7 +1016,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/01/07/Struggle-with-UEFI-GPT/</loc>
+        <loc>https://chriszheng.science/2015/05/23/Submit-Hexo-URL-to-Baidu/</loc>
         <lastmod>2019-05-28T18:56:24.956Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1008,7 +1024,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/05/23/Submit-Hexo-URL-to-Baidu/</loc>
+        <loc>https://chriszheng.science/2019/01/07/Struggle-with-UEFI-GPT/</loc>
         <lastmod>2019-05-28T18:56:24.956Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1296,7 +1312,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/19/Quotes-of-Emacs/</loc>
+        <loc>https://chriszheng.science/2016/08/26/Quantum-chemistry-units/</loc>
         <lastmod>2019-05-28T18:56:24.222Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1304,7 +1320,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/08/26/Quantum-chemistry-units/</loc>
+        <loc>https://chriszheng.science/2015/07/19/Quotes-of-Emacs/</loc>
         <lastmod>2019-05-28T18:56:24.222Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1352,14 +1368,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/01/Practical-typography/</loc>
-        <lastmod>2019-05-28T18:56:24.144Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2018/11/30/Practical-frp/</loc>
         <lastmod>2019-05-28T18:56:24.128Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1376,7 +1384,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/07/20/Pomodoro-technique-using-Emacs/</loc>
+        <loc>https://chriszheng.science/2016/07/06/Pok%C3%A9mon-GO/</loc>
         <lastmod>2019-05-28T18:56:24.097Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1384,7 +1392,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/07/06/Pok%C3%A9mon-GO/</loc>
+        <loc>https://chriszheng.science/2017/07/20/Pomodoro-technique-using-Emacs/</loc>
         <lastmod>2019-05-28T18:56:24.097Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1424,7 +1432,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
+        <loc>https://chriszheng.science/2015/10/08/Pangu-spacing/</loc>
         <lastmod>2019-05-28T18:56:24.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1432,7 +1440,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/10/08/Pangu-spacing/</loc>
+        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
         <lastmod>2019-05-28T18:56:24.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1816,7 +1824,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/31/Magit-mode-toggle-visibility-of-section/</loc>
+        <loc>https://chriszheng.science/2015/12/08/Magit-recent-update/</loc>
         <lastmod>2019-05-28T18:56:23.331Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1824,7 +1832,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/08/Magit-recent-update/</loc>
+        <loc>https://chriszheng.science/2015/08/31/Magit-mode-toggle-visibility-of-section/</loc>
         <lastmod>2019-05-28T18:56:23.331Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2056,7 +2064,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/12/14/How-to-clear-the-sewer/</loc>
+        <loc>https://chriszheng.science/2016/06/28/How-to-find-scientific-papers/</loc>
         <lastmod>2019-05-28T18:56:22.909Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2064,7 +2072,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/06/28/How-to-find-scientific-papers/</loc>
+        <loc>https://chriszheng.science/2016/12/14/How-to-clear-the-sewer/</loc>
         <lastmod>2019-05-28T18:56:22.909Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2216,7 +2224,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/03/10/GnuPG-can-makes-Emacs-crash/</loc>
+        <loc>https://chriszheng.science/2017/01/14/Go-away-Feng-Jie/</loc>
         <lastmod>2019-05-28T18:56:22.644Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2224,7 +2232,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/01/14/Go-away-Feng-Jie/</loc>
+        <loc>https://chriszheng.science/2015/03/10/GnuPG-can-makes-Emacs-crash/</loc>
         <lastmod>2019-05-28T18:56:22.644Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2272,7 +2280,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
+        <loc>https://chriszheng.science/2016/02/13/Ghost-Song-in-Arch-Linux/</loc>
         <lastmod>2019-05-28T18:56:22.540Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2280,7 +2288,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/13/Ghost-Song-in-Arch-Linux/</loc>
+        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
         <lastmod>2019-05-28T18:56:22.540Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2392,7 +2400,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/01/25/Firefox-v35-new-theme/</loc>
+        <loc>https://chriszheng.science/2018/04/08/Firefox-Quantum/</loc>
         <lastmod>2019-05-28T18:56:22.337Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2400,7 +2408,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/04/08/Firefox-Quantum/</loc>
+        <loc>https://chriszheng.science/2015/01/25/Firefox-v35-new-theme/</loc>
         <lastmod>2019-05-28T18:56:22.337Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3056,7 +3064,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/10/27/A-tip-for-big-integer-calculation-using-bc/</loc>
+        <loc>https://chriszheng.science/2016/02/07/A-script-to-log-the-network-off/</loc>
         <lastmod>2019-05-28T18:56:21.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3064,7 +3072,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/07/A-script-to-log-the-network-off/</loc>
+        <loc>https://chriszheng.science/2015/10/27/A-tip-for-big-integer-calculation-using-bc/</loc>
         <lastmod>2019-05-28T18:56:21.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
