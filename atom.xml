@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2020-01-03T16:34:45.667Z</updated>
+  <updated>2020-01-05T14:16:56.384Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chriszheng.science/2020/01/01/Recent-thoughts-2020-01-01/"/>
     <id>https://chriszheng.science/2020/01/01/Recent-thoughts-2020-01-01/</id>
     <published>2019-12-31T16:00:00.000Z</published>
-    <updated>2020-01-03T16:34:45.667Z</updated>
+    <updated>2020-01-05T14:16:56.384Z</updated>
     
-    <content type="html"><![CDATA[<p style="font-size: larger">🥳</p><a id="more"></a><h2 id="elsevier">Elsevier</h2><p><a href="https://en.wikipedia.org/wiki/File:Elsevier.svg" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/File:Elsevier.svg</a></p><p><img src="/img/Elsevier-logo.png" alt="Elsevier logo"></p>]]></content>
+    <content type="html"><![CDATA[<p style="font-size: larger">🥳</p><a id="more"></a><h2 id="2019">2019</h2><p>截至2020-01-05，主站的UV/PV: 83888/144575，扣除去年的46542/89826，2019年主站的UV/PV: 37346/54749。几个镜像站的访问量(<a href="https://chriszheng.gitee.io/" target="_blank" rel="noopener">https://chriszheng.gitee.io/</a>, <a href="https://chriszheng.oschina.io/" target="_blank" rel="noopener">https://chriszheng.oschina.io/</a>, <a href="https://zklhp.github.io/" target="_blank" rel="noopener">https://zklhp.github.io/</a> UV/PV: 7310/13400, 8078/8986, 7779/8255)，扣除去年的(UV/PV: 1297/3600, 2869/3393, 183/210)，结果UV/PV: 6013/9800, 5209/5593, 7596/8045。2019年镜像站的UV/PV: 18818/23438。2019全年的UV/PV: 56164/78187。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p = [18700 40200; 32191 56829; 56164 78187];</span><br><span class="line">bar(p);</span><br><span class="line">colormap([ggplot2(8)(4,:); ggplot2(8)(6, :)]);</span><br><span class="line">set(findall(gca(), &quot;type&quot;, &quot;patch&quot;), &apos;EdgeColor&apos;, &apos;none&apos;, &apos;FaceAlpha&apos;, 0.8);</span><br><span class="line">set(gca, &apos;xticklabel&apos;, &#123;&apos;2017 UV/PV&apos;; &apos;2018 UV/PV&apos;; &apos;2019 UV/PV&apos;&#125;);</span><br><span class="line">xlabel(&apos;Year&apos;);</span><br><span class="line">ylabel(&apos;Count&apos;);</span><br></pre></td></tr></table></figure><p><img src="/img/2017-2018-2019-UV-PV.png" alt="2017、2018和2019的UV/PV"></p><h2 id="elsevier">Elsevier</h2><p><a href="https://en.wikipedia.org/wiki/File:Elsevier.svg" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/File:Elsevier.svg</a></p><p><img src="/img/Elsevier-logo.png" alt="Elsevier logo"></p>]]></content>
     
     <summary type="html">
     
