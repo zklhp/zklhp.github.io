@@ -8,8 +8,16 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/08/01/Recent-thoughts-2019-08-01/</loc>
-        <lastmod>2020-01-28T14:17:42.952Z</lastmod>
+        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
+        <lastmod>2020-02-09T06:34:56.127Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/02/14/Recent-thoughts-2020-02-14/</loc>
+        <lastmod>2020-02-08T15:20:10.375Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,31 @@
 
     <url>
         <loc>https://chriszheng.science/2020/01/01/Recent-thoughts-2020-01-01/</loc>
-        <lastmod>2020-01-28T12:15:10.162Z</lastmod>
+        <lastmod>2020-02-06T14:17:05.052Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/11/11/Recent-thoughts-2019-11-11/</loc>
+        <lastmod>2020-02-06T14:04:48.200Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
+        <lastmod>2020-01-28T14:36:48.547Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/08/01/Recent-thoughts-2019-08-01/</loc>
+        <lastmod>2020-01-28T14:17:42.952Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +66,6 @@
     <url>
         <loc>https://chriszheng.science/2015/08/01/Practical-typography/</loc>
         <lastmod>2019-12-04T01:37:32.155Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/11/11/Recent-thoughts-2019-11-11/</loc>
-        <lastmod>2019-11-30T14:38:45.246Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,14 +98,6 @@
     <url>
         <loc>https://chriszheng.science/2019/10/07/Recent-thoughts-2019-10-07/</loc>
         <lastmod>2019-10-30T08:30:45.849Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
-        <lastmod>2019-10-19T15:08:49.082Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -688,7 +704,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/08/16/Using-Octave-to-calculate-Euclidean-distance/</loc>
+        <loc>https://chriszheng.science/2017/08/13/Using-QR-code-of-my-blog-as-avatar/</loc>
         <lastmod>2019-05-28T18:56:25.528Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -696,7 +712,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/08/13/Using-QR-code-of-my-blog-as-avatar/</loc>
+        <loc>https://chriszheng.science/2016/08/16/Using-Octave-to-calculate-Euclidean-distance/</loc>
         <lastmod>2019-05-28T18:56:25.528Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -856,7 +872,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/01/26/Two-Emacs-functions-benefit-Hexo-experience/</loc>
+        <loc>https://chriszheng.science/2015/03/30/Ubuntu-14-04-wallpaper/</loc>
         <lastmod>2019-05-28T18:56:25.247Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -864,7 +880,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/03/30/Ubuntu-14-04-wallpaper/</loc>
+        <loc>https://chriszheng.science/2015/01/26/Two-Emacs-functions-benefit-Hexo-experience/</loc>
         <lastmod>2019-05-28T18:56:25.247Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1256,7 +1272,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/08/Repeat-key-binding-demo-for-Emacs/</loc>
+        <loc>https://chriszheng.science/2017/03/07/Remove-highlight-in-SumatraPDF/</loc>
         <lastmod>2019-05-28T18:56:24.550Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1264,7 +1280,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/03/07/Remove-highlight-in-SumatraPDF/</loc>
+        <loc>https://chriszheng.science/2015/08/08/Repeat-key-binding-demo-for-Emacs/</loc>
         <lastmod>2019-05-28T18:56:24.550Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1616,7 +1632,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/22/New-Chinese-Emacs-site/</loc>
+        <loc>https://chriszheng.science/2015/10/29/New-Emacs-and-Vim-quotation/</loc>
         <lastmod>2019-05-28T18:56:23.690Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1624,7 +1640,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/10/29/New-Emacs-and-Vim-quotation/</loc>
+        <loc>https://chriszheng.science/2015/04/22/New-Chinese-Emacs-site/</loc>
         <lastmod>2019-05-28T18:56:23.690Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1656,7 +1672,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/04/My-manual-of-style/</loc>
+        <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
         <lastmod>2019-05-28T18:56:23.612Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1664,7 +1680,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
+        <loc>https://chriszheng.science/2015/07/04/My-manual-of-style/</loc>
         <lastmod>2019-05-28T18:56:23.612Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1752,7 +1768,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/03/08/Melpa-EmacsWiki-division-of-Emacs/</loc>
+        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
         <lastmod>2019-05-28T18:56:23.456Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1760,7 +1776,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/06/03/Meet-interesting-people/</loc>
+        <loc>https://chriszheng.science/2018/03/08/Melpa-EmacsWiki-division-of-Emacs/</loc>
         <lastmod>2019-05-28T18:56:23.456Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2112,7 +2128,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/09/02/Hexo-speed-test/</loc>
+        <loc>https://chriszheng.science/2016/02/21/Hexo-el/</loc>
         <lastmod>2019-05-28T18:56:22.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2120,7 +2136,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/21/Hexo-el/</loc>
+        <loc>https://chriszheng.science/2015/09/02/Hexo-speed-test/</loc>
         <lastmod>2019-05-28T18:56:22.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2200,7 +2216,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/01/24/Great-ES8-the-true-sleep-function-in-JavaScript/</loc>
+        <loc>https://chriszheng.science/2015/12/16/Greek-letter-Mu/</loc>
         <lastmod>2019-05-28T18:56:22.706Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2208,7 +2224,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/16/Greek-letter-Mu/</loc>
+        <loc>https://chriszheng.science/2018/01/24/Great-ES8-the-true-sleep-function-in-JavaScript/</loc>
         <lastmod>2019-05-28T18:56:22.706Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2296,14 +2312,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
-        <lastmod>2019-05-28T18:56:22.540Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
         <lastmod>2019-05-28T18:56:22.525Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2328,7 +2336,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/17/FZNewShuSong-with-English-font/</loc>
+        <loc>https://chriszheng.science/2016/04/12/F%C3%BChrer-and-You-Know-Who/</loc>
         <lastmod>2019-05-28T18:56:22.478Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2336,7 +2344,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/04/12/F%C3%BChrer-and-You-Know-Who/</loc>
+        <loc>https://chriszheng.science/2015/08/17/FZNewShuSong-with-English-font/</loc>
         <lastmod>2019-05-28T18:56:22.478Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2608,7 +2616,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/12/08/Emacs-fallback-font/</loc>
+        <loc>https://chriszheng.science/2015/04/26/Emacs-font-settings/</loc>
         <lastmod>2019-05-28T18:56:22.009Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2616,7 +2624,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/26/Emacs-font-settings/</loc>
+        <loc>https://chriszheng.science/2015/12/08/Emacs-fallback-font/</loc>
         <lastmod>2019-05-28T18:56:22.009Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2808,7 +2816,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/09/27/Chronicles-of-the-ghostly-tribe/</loc>
+        <loc>https://chriszheng.science/2016/06/21/Citations-cast-ourselves-into-the-future/</loc>
         <lastmod>2019-05-28T18:56:21.665Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2816,7 +2824,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/06/21/Citations-cast-ourselves-into-the-future/</loc>
+        <loc>https://chriszheng.science/2015/09/27/Chronicles-of-the-ghostly-tribe/</loc>
         <lastmod>2019-05-28T18:56:21.665Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3120,7 +3128,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/01/02/A-joke-about-a-stingy-person/</loc>
+        <loc>https://chriszheng.science/2015/07/05/A-joke/</loc>
         <lastmod>2019-05-28T18:56:21.118Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3128,7 +3136,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/05/A-joke/</loc>
+        <loc>https://chriszheng.science/2017/01/02/A-joke-about-a-stingy-person/</loc>
         <lastmod>2019-05-28T18:56:21.118Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
