@@ -8,16 +8,24 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
-        <lastmod>2020-02-09T07:11:07.899Z</lastmod>
+        <loc>https://chriszheng.science/2020/02/14/Recent-thoughts-2020-02-14/</loc>
+        <lastmod>2020-02-19T14:28:24.753Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2020/02/14/Recent-thoughts-2020-02-14/</loc>
-        <lastmod>2020-02-08T15:20:10.375Z</lastmod>
+        <loc>https://chriszheng.science/2017/12/17/Dual-E5-2696v3/</loc>
+        <lastmod>2020-02-13T10:42:25.032Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2020-02-12T09:30:41.187Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,7 +33,23 @@
 
     <url>
         <loc>https://chriszheng.science/2020/01/01/Recent-thoughts-2020-01-01/</loc>
-        <lastmod>2020-02-06T14:17:05.052Z</lastmod>
+        <lastmod>2020-02-09T16:43:44.847Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
+        <lastmod>2020-02-09T07:42:50.829Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
+        <lastmod>2020-02-09T07:11:07.899Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -106,14 +130,6 @@
     <url>
         <loc>https://chriszheng.science/2016/08/28/Ji-Xiaolan-ode/</loc>
         <lastmod>2019-10-19T14:46:32.782Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2019-10-19T14:02:03.117Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -210,14 +226,6 @@
     <url>
         <loc>https://chriszheng.science/2017/02/21/The-new-poor/</loc>
         <lastmod>2019-09-01T02:32:21.361Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/12/17/Dual-E5-2696v3/</loc>
-        <lastmod>2019-08-25T16:36:25.938Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -512,7 +520,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/04/29/Xfce-composition/</loc>
+        <loc>https://chriszheng.science/2017/01/03/Xi-Jinping-concerned-about/</loc>
         <lastmod>2019-05-28T18:56:25.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -520,7 +528,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/01/03/Xi-Jinping-concerned-about/</loc>
+        <loc>https://chriszheng.science/2016/04/29/Xfce-composition/</loc>
         <lastmod>2019-05-28T18:56:25.888Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -752,7 +760,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/11/24/Use-mini-OSC-in-mpv/</loc>
+        <loc>https://chriszheng.science/2016/01/14/Use-shell-file-name-change-shell/</loc>
         <lastmod>2019-05-28T18:56:25.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -760,7 +768,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/01/14/Use-shell-file-name-change-shell/</loc>
+        <loc>https://chriszheng.science/2015/11/24/Use-mini-OSC-in-mpv/</loc>
         <lastmod>2019-05-28T18:56:25.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -792,7 +800,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/17/Use-C-M-f-and-C-M-b-to-navigate-path/</loc>
+        <loc>https://chriszheng.science/2016/04/15/Use-DuckDuckGo-as-site-search-for-Hexo/</loc>
         <lastmod>2019-05-28T18:56:25.388Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -800,7 +808,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/04/15/Use-DuckDuckGo-as-site-search-for-Hexo/</loc>
+        <loc>https://chriszheng.science/2015/07/17/Use-C-M-f-and-C-M-b-to-navigate-path/</loc>
         <lastmod>2019-05-28T18:56:25.388Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -872,7 +880,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/01/26/Two-Emacs-functions-benefit-Hexo-experience/</loc>
+        <loc>https://chriszheng.science/2015/03/30/Ubuntu-14-04-wallpaper/</loc>
         <lastmod>2019-05-28T18:56:25.247Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -880,7 +888,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/03/30/Ubuntu-14-04-wallpaper/</loc>
+        <loc>https://chriszheng.science/2015/01/26/Two-Emacs-functions-benefit-Hexo-experience/</loc>
         <lastmod>2019-05-28T18:56:25.247Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1160,7 +1168,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/22/Shadowsocks-R-I-P/</loc>
+        <loc>https://chriszheng.science/2015/07/10/Shell-mode-can-complete-the-previous-command-on-exclamation-mark/</loc>
         <lastmod>2019-05-28T18:56:24.753Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1168,7 +1176,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/10/Shell-mode-can-complete-the-previous-command-on-exclamation-mark/</loc>
+        <loc>https://chriszheng.science/2015/08/22/Shadowsocks-R-I-P/</loc>
         <lastmod>2019-05-28T18:56:24.753Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1232,7 +1240,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/04/21/Run-Android-app-on-Chromium/</loc>
+        <loc>https://chriszheng.science/2015/05/04/Run-NetEase-Music-using-ARChon/</loc>
         <lastmod>2019-05-28T18:56:24.612Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1240,7 +1248,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/05/04/Run-NetEase-Music-using-ARChon/</loc>
+        <loc>https://chriszheng.science/2015/04/21/Run-Android-app-on-Chromium/</loc>
         <lastmod>2019-05-28T18:56:24.612Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1376,7 +1384,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/09/24/Prefer-UTF-8-in-MS-Windows/</loc>
+        <loc>https://chriszheng.science/2015/08/26/Probability-distribution-in-R/</loc>
         <lastmod>2019-05-28T18:56:24.159Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1384,7 +1392,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/08/26/Probability-distribution-in-R/</loc>
+        <loc>https://chriszheng.science/2015/09/24/Prefer-UTF-8-in-MS-Windows/</loc>
         <lastmod>2019-05-28T18:56:24.159Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1456,7 +1464,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/10/08/Pangu-spacing/</loc>
+        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
         <lastmod>2019-05-28T18:56:24.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1464,7 +1472,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
+        <loc>https://chriszheng.science/2015/10/08/Pangu-spacing/</loc>
         <lastmod>2019-05-28T18:56:24.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1666,14 +1674,6 @@
     <url>
         <loc>https://chriszheng.science/2015/03/11/My-name-in-Emacs-authors/</loc>
         <lastmod>2019-05-28T18:56:23.644Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
-        <lastmod>2019-05-28T18:56:23.612Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2088,7 +2088,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/12/14/How-to-clear-the-sewer/</loc>
+        <loc>https://chriszheng.science/2016/06/28/How-to-find-scientific-papers/</loc>
         <lastmod>2019-05-28T18:56:22.909Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2096,7 +2096,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/06/28/How-to-find-scientific-papers/</loc>
+        <loc>https://chriszheng.science/2016/12/14/How-to-clear-the-sewer/</loc>
         <lastmod>2019-05-28T18:56:22.909Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2128,7 +2128,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/21/Hexo-el/</loc>
+        <loc>https://chriszheng.science/2015/09/02/Hexo-speed-test/</loc>
         <lastmod>2019-05-28T18:56:22.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2136,7 +2136,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/09/02/Hexo-speed-test/</loc>
+        <loc>https://chriszheng.science/2016/02/21/Hexo-el/</loc>
         <lastmod>2019-05-28T18:56:22.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2168,7 +2168,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/12/31/Happy-New-Year/</loc>
+        <loc>https://chriszheng.science/2017/02/06/Having-200-wan-living-in-Beijing/</loc>
         <lastmod>2019-05-28T18:56:22.784Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2176,7 +2176,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/02/06/Having-200-wan-living-in-Beijing/</loc>
+        <loc>https://chriszheng.science/2016/12/31/Happy-New-Year/</loc>
         <lastmod>2019-05-28T18:56:22.784Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2376,7 +2376,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/10/01/Fix-a-not-enough-memory-error-in-ORCA-under-Windows/</loc>
+        <loc>https://chriszheng.science/2017/11/15/Firefox-v57-for-Android/</loc>
         <lastmod>2019-05-28T18:56:22.400Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -2384,7 +2384,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/11/15/Firefox-v57-for-Android/</loc>
+        <loc>https://chriszheng.science/2016/10/01/Fix-a-not-enough-memory-error-in-ORCA-under-Windows/</loc>
         <lastmod>2019-05-28T18:56:22.400Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3080,7 +3080,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/07/A-script-to-log-the-network-off/</loc>
+        <loc>https://chriszheng.science/2015/10/27/A-tip-for-big-integer-calculation-using-bc/</loc>
         <lastmod>2019-05-28T18:56:21.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -3088,7 +3088,7 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/10/27/A-tip-for-big-integer-calculation-using-bc/</loc>
+        <loc>https://chriszheng.science/2016/02/07/A-script-to-log-the-network-off/</loc>
         <lastmod>2019-05-28T18:56:21.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

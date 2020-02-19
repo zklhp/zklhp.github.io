@@ -8,8 +8,15 @@
     </url>
     
     <url>
+        <loc>https://chriszheng.science/essentials-of-academic-writing/</loc>
+        <lastmod>2020-02-12T13:46:04.675Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://chriszheng.science/about/</loc>
-        <lastmod>2020-02-09T05:27:16.086Z</lastmod>
+        <lastmod>2020-02-09T07:39:30.149Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -17,13 +24,6 @@
     <url>
         <loc>https://chriszheng.science/pua/</loc>
         <lastmod>2019-12-27T17:25:31.567Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://chriszheng.science/essentials-of-academic-writing/</loc>
-        <lastmod>2019-08-21T11:13:35.393Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
