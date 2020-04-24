@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2020-03-26T05:47:58.072Z</updated>
+  <updated>2020-04-24T12:18:13.502Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -17,17 +17,82 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>近思录 2020-04-01</title>
+    <link href="https://chriszheng.science/2020/04/01/Recent-thoughts-2020-04-01/"/>
+    <id>https://chriszheng.science/2020/04/01/Recent-thoughts-2020-04-01/</id>
+    <published>2020-03-31T16:00:00.000Z</published>
+    <updated>2020-04-24T12:18:13.502Z</updated>
+    
+    <content type="html"><![CDATA[<p style="font-size: larger">🙋</p><h2 id="一位教授和杂志编辑的主页"><a href="http://www.qui.uc.pt/~rfausto/homepage/" target="_blank" rel="noopener">一位教授和杂志编辑的主页</a></h2><p>别有韵味。</p><p>这位教授处理稿件非常及时，从主页的信息看，他的学术水平很高，也参与了很多的学术活动。</p><h2 id="捡了一个某数字公司的摄像头">捡了一个某数字公司的摄像头</h2><p>研究了一下，发现是个坑，只能在它的APP里用，几年前还造成一个公众事件，和我想的插上就能如何如何差距非常大。这个公司的水平还是可以的，但公司都是这样，封闭，可玩性和可扩展性太差了。</p><p>关于ffmpeg推流：</p><p><a href="https://www.jianshu.com/p/c141fc7881e7" target="_blank" rel="noopener">https://www.jianshu.com/p/c141fc7881e7</a></p><p><a href="https://www.jianshu.com/p/d541b317f71c" target="_blank" rel="noopener">https://www.jianshu.com/p/d541b317f71c</a></p><p>我竟然还愚蠢的想用自己的服务器推，我估计流量和配置都遭不住。</p><h2 id="有机化合物的数量">有机化合物的数量</h2><p><a href="https://www.zhihu.com/question/27058620/answer/35087854" target="_blank" rel="noopener">https://www.zhihu.com/question/27058620/answer/35087854</a></p><h2 id="til-掉以轻心-的里-掉-的正字">[TIL] 「掉以轻心」的里「掉」的正字</h2><p><a href="http://epaper.gmw.cn/gmrb/html/2017-12/03/nw.D110000gmrb_20171203_3-12.htm" target="_blank" rel="noopener">http://epaper.gmw.cn/gmrb/html/2017-12/03/nw.D110000gmrb_20171203_3-12.htm</a></p><p>正字是「誂」，对应的简化字似乎是「𫍥」。𫚥，你看不到这个字，换字体罢。</p><p>一个字一个词的解释，虽属「小学」，深究起来也不得了。</p><p>另，文章作者<a href="https://baike.baidu.com/item/%E7%8E%8B%E7%BB%A7%E5%A6%82" target="_blank" rel="noopener">王继如教授</a>是搞学术研究，用自己的专业知识做科普，值得肯定，思路也对头。</p><h2 id="一位有互联网精神的朋友出事了">一位有互联网精神的朋友出事了</h2><blockquote><p>沉默呵，沉默呵！不在沉默中爆发，就在沉默中灭亡。</p><footer><strong>《记念刘和珍君》</strong></footer></blockquote><h2 id="是后面可以跟冒号">是后面可以跟冒号</h2><p><a href="https://www.pinshiwen.com/yuexie/biaodian/2019050518656.html" target="_blank" rel="noopener">https://www.pinshiwen.com/yuexie/biaodian/2019050518656.html</a></p><p>不知原始出处。</p><blockquote><p>结束的教训是：所以倘有陌生的声音叫你的名字，你万不可答应他。</p><footer><strong>《从百草园到三味书屋》</strong></footer></blockquote><blockquote><p>我最急于告诉你们的，是我思想感情的一段重要经历，这就是：我越来越深刻的感觉到谁是我们最可爱的人。</p><footer><strong>魏巍</strong><cite>《谁是最可爱的人》</cite></footer></blockquote><blockquote><p>所以，我的工作方法是尽量少做工作。它的好处就是：第一，可以多活几岁。第二，让年轻一些的同志多做工作，他们精力充沛，比我做得更好。</p><footer><strong>《邓小平选集》</strong></footer></blockquote><h2 id="五道杠事件"><a href="https://zh.wikipedia.org/zh-hans/%E4%BA%94%E9%81%93%E6%9D%A0%E4%BA%8B%E4%BB%B6" target="_blank" rel="noopener">五道杠事件</a></h2><h2 id="15万pv达成">15万PV达成</h2><p>As of 2020-04-18.</p><h2 id="很多免费资料">很多免费资料</h2><p><a href="http://about.muse.jhu.edu/resources/freeresourcescovid19/" target="_blank" rel="noopener">http://about.muse.jhu.edu/resources/freeresourcescovid19/</a></p><p>可是看不过来啊</p><h2 id="김정은">김정은</h2><div class="video-container"><iframe src="//www.youtube.com/embed/xvC1e4STgAo" frameborder="0" allowfullscreen></iframe></div><iframe src="//player.bilibili.com/player.html?aid=9795355&cid=16194345&page=1" width="100%" height="480px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p style=&quot;font-size: larger&quot;&gt;🙋&lt;/p&gt;
+&lt;h2 id=&quot;一位教授和杂志编辑的主页&quot;&gt;&lt;a href=&quot;http://www.qui.uc.pt/~rfausto/homepage/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;一
+      
+    
+    </summary>
+    
+      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+    
+      <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>近思录 2020-03-05</title>
     <link href="https://chriszheng.science/2020/03/05/Recent-thoughts-2020-03-05/"/>
     <id>https://chriszheng.science/2020/03/05/Recent-thoughts-2020-03-05/</id>
     <published>2020-03-04T16:00:00.000Z</published>
-    <updated>2020-03-26T05:47:58.072Z</updated>
+    <updated>2020-04-13T11:13:47.255Z</updated>
     
-    <content type="html"><![CDATA[<p style="font-size: larger">🦊</p><a id="more"></a><h2 id="乐输">乐输</h2><blockquote><p>异史氏曰：“沿途祟人而往，以求不作邪祟之用，此与策马应‘不求闻达之科’者何殊哉！天下事大率类此。犹忆甲戌、乙亥之间，当事者使民捐谷，具疏谓民乐输。于是各州县如数取盈，甚费敲扑。时郡北七邑被水，岁祲，催办尤难。唐太史偶至利津，见系逮者十余人。因问：‘为何事？’答曰：‘官捉吾等赴城，比追乐输耳。’农民不知‘乐输’二字作何解，遂以为徭役敲比之名，岂不可叹而可笑哉！”</p><footer><strong>蒲松龄, 《聊斋志异·韩方》,</strong><cite><a href="https://baike.baidu.com/item/%E9%9F%A9%E6%96%B9/498788" target="_blank" rel="noopener">baike.baidu.com/item/%E9%9F%A9%E6%96%B9/498788</a></cite></footer></blockquote><p>聊斋先生说的没错，「天下事大率类此」，所谓「古今一体」，「日光之下并无新事」，就是这个道理。最后的可叹可笑，真是意味深长。</p><p>古人已经写出来的东西，我们现在的人都不知，可悲。说是尊重传统文化云云，各方面做的都不够，可惜。百度有《聊斋志异》各个篇目的词条，不错，但有错别字，质量参差。搜索引擎对古文非常不友好。网络这么发达了，真正有价值的东西却不多。</p><p>另外补几个和蒲松龄有关的知识：</p><ul><li>蒲松龄是淄川人。</li><li>说淄川是今天的淄博，也对也不对，因为淄博是淄川和博山合并各取一个字产生的，历史只有几十年。</li><li>淄川历史悠久，博山也历史悠久，但「博山」俩字得名很晚。具体参考百度百科的词条罢。</li><li>现在淄博的政府所在地距离淄川和博山都挺远。淄博是组群式城市。</li><li>中国的历史悠久从地名上可见一斑。比如紧邻淄博的青州就是「九州」之一。「九州」出自《尚书·禹贡》。</li><li>不过稍微一想，《禹贡》这篇到底是怎么个来历，不好说，稍微一搜索就发现争论非常厉害。但「九州」这个认识是周朝就有的，不为过。不知清华简里有没有这篇。</li></ul><h2 id="til-不要买大于1-t的奇数容量的硬盘">[TIL] 不要买大于1 T的奇数容量的硬盘</h2><p>因为可能是偶数容量盘的残次品改的。<a href="https://www.chiphell.com/forum.php?mod=viewthread&amp;tid=1863666&amp;page=1#pid39284523" target="_blank" rel="noopener">出处</a></p><h2 id="代理">代理</h2><p><a href="https://i.nebula.moe/s/proxy-in-ten-minutes/" target="_blank" rel="noopener">https://i.nebula.moe/s/proxy-in-ten-minutes/</a></p><p>可惜，我想用这个代理<a href="http://anonradio.net:8000/anonradio" target="_blank" rel="noopener">aNONradio</a>，不行。</p><h2 id="til-内存的速度高于100-g-s-内存盘不能发挥内存的速度">[TIL] 内存的速度高于100 G/s，内存盘不能发挥内存的速度</h2><p><a href="https://www.chiphell.com/thread-2194868-1-1.html" target="_blank" rel="noopener">https://www.chiphell.com/thread-2194868-1-1.html</a></p><h2 id="我又换回了第三方编译的firefox">我又换回了第三方编译的Firefox</h2><p>用的是<a href="http://www1.plala.or.jp/tete009/en-US/software.html" target="_blank" rel="noopener">tete009的</a>。真好。</p><h2 id="今日热榜"><a href="https://tophub.today/" target="_blank" rel="noopener">今日热榜</a></h2><p>我最近才知道这个网站，孤陋寡闻。我是在追踪网站外链的时候偶然发现它的，而且，它还<a href="https://tophub.today/n/Ywv4AqRdPa" target="_blank" rel="noopener">索引我的网站</a>，甚至还有十几个人订阅我的网站，与有荣焉。<a href="/2018/01/18/Recent-thoughts-2018-01-18#%E6%9C%89%E6%95%88%E7%9A%84%E9%98%85%E8%AF%BB">以前有个一览阅读也收录了我的Blog</a>，但那个网站好像已经死了。</p><p>不过，我这种个人博客要不停的更新，如果是全文抓取了内容就不全了，以前的一览阅读好像是抓取，而今日热榜只链接，我觉得这样好。不过话说回来，我写的闲言碎语真有人看么 😂</p><p>看到这里的朋友有没有从今日热榜来的么？</p><p>哟，看回复还真有读者。虽然不多，这个博客也给世界增加了很多新的知识，还是有价值的。</p><h2 id="写作就是不断完善的过程">写作就是不断完善的过程</h2><p>接上一条，博客就要不断更新，反映最新的情况，这是网络媒介的优势。现在互联网上很多的内容，比如短视频、朋友圈等等，继承了传统媒体「发出来就不管了」的问题，不能及时更新，一次性的，这对于读者和作者都不好。</p><p>我也忘了是为啥了，最近更新了<a href="/2013/12/28/Wang-Zhongzhi/">电视剧《宰相刘罗锅》汪仲直大人的奏章和无名老者的马屁</a>和<a href="/2016/09/16/Confucius-stories/">有关孔子的几则「口述历史」</a>，补充丰富了内容，还知道有人看了我写的东西，有一点点成就感。</p><h2 id="换了emacs主题">换了Emacs主题</h2><p><a href="/2019/01/01/Recent-thoughts-2019-01-01#%E6%8D%A2%E4%BA%86emacs%E7%9A%84%E4%B8%BB%E9%A2%98">2019年初换了doom-tomorrow-night主题</a>，不知是最近更新还是怎地，颜色变的很昏暗，我不喜欢，换成<a href="https://github.com/hlissner/emacs-doom-themes/tree/screenshots#doom-outrun-electric" target="_blank" rel="noopener">doom-outrun-electric</a>了。</p>]]></content>
+    <content type="html"><![CDATA[<p style="font-size: larger">🦊</p>    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>    <style>      .icon {  width:1em;  height:1em;  fill:currentColor;  display:inline-block      }      .footer-icon {  margin:0 0.25em 0.3em      }      .footer-icon {  fill:#f06292      }      @keyframes heartbeat {  0%,  100% {      transform:scale(1)  }  10%,  30% {      transform:scale(0.9)  }  20%,  40%,  50%,  60%,  70%,  80% {      transform:scale(1.1)  }      }      .footer-icon {  animation:heartbeat 1.33s ease-in-out infinite      }    </style><a id="more"></a><h2 id="乐输">乐输</h2><blockquote><p>异史氏曰：“沿途祟人而往，以求不作邪祟之用，此与策马应‘不求闻达之科’者何殊哉！天下事大率类此。犹忆甲戌、乙亥之间，当事者使民捐谷，具疏谓民乐输。于是各州县如数取盈，甚费敲扑。时郡北七邑被水，岁祲，催办尤难。唐太史偶至利津，见系逮者十余人。因问：‘为何事？’答曰：‘官捉吾等赴城，比追乐输耳。’农民不知‘乐输’二字作何解，遂以为徭役敲比之名，岂不可叹而可笑哉！”</p><footer><strong>蒲松龄, 《聊斋志异·韩方》,</strong><cite><a href="https://baike.baidu.com/item/%E9%9F%A9%E6%96%B9/498788" target="_blank" rel="noopener">baike.baidu.com/item/%E9%9F%A9%E6%96%B9/498788</a></cite></footer></blockquote><p>聊斋先生说的没错，「天下事大率类此」，所谓「古今一体」，「日光之下并无新事」，就是这个道理。最后的可叹可笑，真是意味深长。</p><p>古人已经写出来的东西，我们现在的人都不知，可悲。说是尊重传统文化云云，各方面做的都不够，可惜。百度有《聊斋志异》各个篇目的词条，不错，但有错别字，质量参差。搜索引擎对古文非常不友好。网络这么发达了，真正有价值的东西却不多。</p><p>另外补几个和蒲松龄有关的知识：</p><ul><li>蒲松龄是淄川人。</li><li>说淄川是今天的淄博，也对也不对，因为淄博是淄川和博山合并各取一个字产生的，历史只有几十年。</li><li>淄川历史悠久，博山也历史悠久，但「博山」俩字得名很晚。具体参考百度百科的词条罢。</li><li>现在淄博的政府所在地距离淄川和博山都挺远。淄博是组群式城市。</li><li>中国的历史悠久从地名上可见一斑。比如紧邻淄博的青州就是「九州」之一。「九州」出自《尚书·禹贡》。</li><li>不过稍微一想，《禹贡》这篇到底是怎么个来历，不好说，稍微一搜索就发现争论非常厉害。但「九州」这个认识是周朝就有的，不为过。不知清华简里有没有这篇。</li></ul><h2 id="til-不要买大于1-t的奇数容量的硬盘">[TIL] 不要买大于1 T的奇数容量的硬盘</h2><p>因为可能是偶数容量盘的残次品改的。<a href="https://www.chiphell.com/forum.php?mod=viewthread&amp;tid=1863666&amp;page=1#pid39284523" target="_blank" rel="noopener">出处</a></p><h2 id="代理">代理</h2><p><a href="https://i.nebula.moe/s/proxy-in-ten-minutes/" target="_blank" rel="noopener">https://i.nebula.moe/s/proxy-in-ten-minutes/</a></p><p>可惜，我想用这个代理<a href="http://anonradio.net:8000/anonradio" target="_blank" rel="noopener">aNONradio</a>，不行。</p><h2 id="til-内存的速度高于100-g-s-内存盘不能发挥内存的速度">[TIL] 内存的速度高于100 G/s，内存盘不能发挥内存的速度</h2><p><a href="https://www.chiphell.com/thread-2194868-1-1.html" target="_blank" rel="noopener">https://www.chiphell.com/thread-2194868-1-1.html</a></p><h2 id="我又换回了第三方编译的firefox">我又换回了第三方编译的Firefox</h2><p>用的是<a href="http://www1.plala.or.jp/tete009/en-US/software.html" target="_blank" rel="noopener">tete009的</a>。真好。</p><h2 id="今日热榜"><a href="https://tophub.today/" target="_blank" rel="noopener">今日热榜</a></h2><p>我最近才知道这个网站，孤陋寡闻。我是在追踪网站外链的时候偶然发现它的，而且，它还<a href="https://tophub.today/n/Ywv4AqRdPa" target="_blank" rel="noopener">索引我的网站</a>，甚至还有十几个人订阅我的网站，与有荣焉。<a href="/2018/01/18/Recent-thoughts-2018-01-18#%E6%9C%89%E6%95%88%E7%9A%84%E9%98%85%E8%AF%BB">以前有个一览阅读也收录了我的Blog</a>，但那个网站好像已经死了。</p><p>不过，我这种个人博客要不停的更新，如果是全文抓取了内容就不全了，以前的一览阅读好像是抓取，而今日热榜只链接，我觉得这样好。不过话说回来，我写的闲言碎语真有人看么 😂</p><p>看到这里的朋友有没有从今日热榜来的么？</p><p>哟，看回复还真有读者。虽然不多，这个博客也给世界增加了很多新的知识，还是有价值的。</p><h2 id="写作就是不断完善的过程">写作就是不断完善的过程</h2><p>接上一条，博客就要不断更新，反映最新的情况，这是网络媒介的优势。现在互联网上很多的内容，比如短视频、朋友圈等等，继承了传统媒体「发出来就不管了」的问题，不能及时更新，一次性的，这对于读者和作者都不好。</p><p>我也忘了是为啥了，最近更新了<a href="/2013/12/28/Wang-Zhongzhi/">电视剧《宰相刘罗锅》汪仲直大人的奏章和无名老者的马屁</a>和<a href="/2016/09/16/Confucius-stories/">有关孔子的几则「口述历史」</a>，补充丰富了内容，还知道有人看了我写的东西，有一点点成就感。</p><h2 id="换了emacs主题">换了Emacs主题</h2><p><a href="/2019/01/01/Recent-thoughts-2019-01-01#%E6%8D%A2%E4%BA%86emacs%E7%9A%84%E4%B8%BB%E9%A2%98">2019年初换了doom-tomorrow-night主题</a>，不知是最近更新还是怎地，颜色变的很昏暗，我不喜欢，换成<a href="https://github.com/hlissner/emacs-doom-themes/tree/screenshots#doom-outrun-electric" target="_blank" rel="noopener">doom-outrun-electric</a>了。</p><h2 id="杜牧的诗">杜牧的诗</h2><p>年龄大了很有感悟</p><blockquote><p>青山隐隐水迢迢，秋尽江南草未凋。 <br>二十四桥明月夜，玉人何处教吹箫。</p><footer><strong>唐·杜牧</strong><cite>《寄扬州韩绰判官》</cite></footer></blockquote><blockquote><p>落魄江湖载酒行，楚腰纤细掌中轻。 <br>十年一觉扬州梦，赢得青楼薄幸名。</p><footer><strong>唐·杜牧</strong><cite>《遣怀》</cite></footer></blockquote><h2 id="neomutt">neomutt</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --gpgme --gss --gnutls --sasl --with-ui=ncurses --with-idn2=/usr --idn=0 --idn2=1 --gdbm</span><br><span class="line">make -j4 install</span><br></pre></td></tr></table></figure><h2 id="升级inconsolata-v3导致emacs显示不正常">升级Inconsolata v3导致Emacs显示不正常</h2><p><a href="https://debbugs.gnu.org/cgi/bugreport.cgi?bug=39082" target="_blank" rel="noopener">https://debbugs.gnu.org/cgi/bugreport.cgi?bug=39082</a></p><p><a href="https://bugs.archlinux.org/task/65932?project=5&amp;string=ttf-inconsolata" target="_blank" rel="noopener">https://bugs.archlinux.org/task/65932?project=5&amp;string=ttf-inconsolata</a></p><p>根本原因是XFT有bug而且无人维护，换用基于Cairo的显示系统是好的解决方法，需要重新编译Emacs。</p><p>如果不想重新编译，比如我，可以选择降级Inconsolata。</p><h2 id="国际晶体学会-international-union-of-crystallography-的出版流程让人印象深刻">国际晶体学会(International Union of Crystallography)的出版流程让人印象深刻</h2><ol><li>投稿系统繁复上个世纪的产物。我印象中零几年的时候它们才改成在线投稿(？)。</li><li>校稿(Proof)很负责，会对论文的语言做修改。</li><li>他们是英国人，最终是用英式拼写。</li><li>虽然系统很简陋，总体体验是很好的。看来，人才是关键因素。</li><li><span style="background-color: #444 !important">嘿嘿嘿，我竟然能在英国人Proof的文章中再挑出毛病，厉害了</span></li></ol>]]></content>
     
     <summary type="html">
     
       &lt;p style=&quot;font-size: larger&quot;&gt;🦊&lt;/p&gt;
+
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 512 512&quot; class=&quot;icon footer-icon&quot;&gt;&lt;path d=&quot;M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+    &lt;style&gt;
+      .icon {
+	  width:1em;
+	  height:1em;
+	  fill:currentColor;
+	  display:inline-block
+      }
+      .footer-icon {
+	  margin:0 0.25em 0.3em
+      }
+      .footer-icon {
+	  fill:#f06292
+      }
+      @keyframes heartbeat {
+	  0%,
+	  100% {
+	      transform:scale(1)
+	  }
+	  10%,
+	  30% {
+	      transform:scale(0.9)
+	  }
+	  20%,
+	  40%,
+	  50%,
+	  60%,
+	  70%,
+	  80% {
+	      transform:scale(1.1)
+	  }
+      }
+      .footer-icon {
+	  animation:heartbeat 1.33s ease-in-out infinite
+      }
+    &lt;/style&gt;
     
     </summary>
     
@@ -268,7 +333,7 @@
     <link href="https://chriszheng.science/2019/06/04/Recent-thoughts-2019-06-04/"/>
     <id>https://chriszheng.science/2019/06/04/Recent-thoughts-2019-06-04/</id>
     <published>2019-06-04T00:09:00.000Z</published>
-    <updated>2019-07-29T07:45:05.279Z</updated>
+    <updated>2020-04-03T05:56:09.058Z</updated>
     
     <content type="html"><![CDATA[<p style="font-size: larger">🌝</p><a id="more"></a><h2 id="戒酒">戒酒</h2><blockquote><p>昔者帝女令仪狄作酒而美，进之禹，禹饮而甘之，遂疏仪狄，绝旨酒，曰：“后世必有以酒亡其国者。”</p><footer><strong>《战国策·魏策·魏二·梁王魏婴觞诸侯于范台》</strong></footer></blockquote><p>这个标题戒酒是顺手写上去的。我认真学习八项规定，怎么会喝酒呢(手动滑稽)。</p><p>有人分享了朋友圈，说酒如何如何好，还引经据典。有人学给我听，我马上反驳：古代反对喝酒的典籍不少咯，然后背出这段。</p><h2 id="鲁酒">鲁酒</h2><p>说到酒，自然想到鲁酒。这其实是个典故，可是，现在又有多少人能知道这种吊书袋的东西。</p><p>补充了一些关于鲁酒的段子，写到<a href="/2016/09/16/Confucius-stories/index.html#%E9%B2%81%E9%85%92">有关孔子的几则「口述历史」</a>里了。</p><p>我写过不少东东，可惜没人看啊。做好内链，也可能提高浏览量罢。</p><h2 id="孙悟空嫌弼马温官小是不识抬举">孙悟空嫌弼马温官小是不识抬举</h2><p>电视上又有频道重播86版西游记，看了开头几集。现在的我认为，孙猴其实很幸运，作为下界的体制外人员，一跃进入中央政府当个看马的小官，已经很不错了。他自己嫌官小，有点不识抬举。转过来一想，西游记也只能这么写这么演，孙悟空毕竟是个猴。如果他懂得「历史的行程」，就不是猴了。</p><h2 id="帮帮esr">帮帮ESR</h2><p><a href="http://esr.ibiblio.org/?p=8349" target="_blank" rel="noopener">http://esr.ibiblio.org/?p=8349</a></p><h2 id="池中鼠">池中鼠</h2><p><a href="https://www.zhihu.com/question/50077611" target="_blank" rel="noopener">https://www.zhihu.com/question/50077611</a></p><p>有人翻译解释了那个著名的实验。</p><h2 id="行过死荫的幽谷">行过死荫的幽谷</h2><blockquote><p>{A Psalm of David.} The LORD is my shepherd; I shall not want.</p><p>He maketh me to lie down in green pastures: he leadeth me beside the still waters.</p><p>He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake.</p><p>Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.</p><p>Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.</p><p>Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.</p><footer><strong>Psalm 23,</strong><cite><a href="https://biblehub.com/kjv/psalms/23.htm" target="_blank" rel="noopener">biblehub.com/kjv/psalms/23.htm</a></cite></footer></blockquote><blockquote><p>（大卫的诗。）耶和华是我的牧者，我必不致缺乏。</p><p>他使我躺卧在青草地上，领我在可安歇的水边。</p><p>他使我的灵魂苏醒，为自己的名引导我走义路。</p><p>我虽然行过死荫的幽谷，也不怕遭害，因为你与我同在；你的杖，你的竿，都安慰我。</p><p>在我敌人面前，你为我摆设筵席；你用油膏了我的头，使我的福杯满溢。</p><p>我一生一世必有恩惠慈爱随着我；我且要住在耶和华的殿中，直到永远。</p><footer><strong>诗篇 23,</strong><cite><a href="https://cnbible.com/cus/psalms/23.htm" target="_blank" rel="noopener">cnbible.com/cus/psalms/23.htm</a></cite></footer></blockquote><h2 id="买了一个笔记本支架">买了一个笔记本支架</h2><p>品牌是赛鲸。看了下面的测评买的，感觉还不错。</p><p><a href="https://post.smzdm.com/p/656699/" target="_blank" rel="noopener">https://post.smzdm.com/p/656699/</a></p><h2 id="在线音乐解决方案">在线音乐解决方案</h2><blockquote><p>过去连接了互联网什么都可以做；现在连接互联网什么都做不了，能做一件事——下载APP。</p><footer><strong>网络段子</strong></footer></blockquote><p><a href="http://yuanmu.mzzhost.com/musicbox.html" target="_blank" rel="noopener">http://yuanmu.mzzhost.com/musicbox.html</a></p>]]></content>
     
@@ -476,32 +541,6 @@
     
     
       <category term="折腾" scheme="https://chriszheng.science/tags/%E6%8A%98%E8%85%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近思录 2019-01-01</title>
-    <link href="https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/"/>
-    <id>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</id>
-    <published>2018-12-31T16:00:01.000Z</published>
-    <updated>2019-11-18T02:25:11.579Z</updated>
-    
-    <content type="html"><![CDATA[<p style="font-size: larger">😟</p><a id="more"></a><h2 id="换了emacs的主题">换了Emacs的主题</h2><p>换了<a href="https://github.com/hlissner/emacs-doom-themes" target="_blank" rel="noopener">doom-tomorrow-night</a>，以前的主题用了快5年了吧。</p><p><img src="/img/Using-doom-tomorrow-night.png" alt="使用doom-tomorrow-night主题"></p><h2 id="2018年总结">2018年总结</h2><p>今年写了29篇帖子。截至2018-12-31，<a href="https://chriszheng.science/">主站</a>的UV/PV: 46542/89826，扣除去年的18700/40200，再加上几个镜像站的访问量(<a href="http://gitee.io" target="_blank" rel="noopener">gitee.io</a>, <a href="http://oschina.io" target="_blank" rel="noopener">oschina.io</a>, <a href="http://github.io" target="_blank" rel="noopener">github.io</a> UV/PV: 1297/3600, 2869/3393, 183/210)访问统计信息如下。</p><p><img src="/img/2017-2018-UV-PV.png" alt="2017和2018的UV/PV"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p = [18700 40200; 32191 56829];</span><br><span class="line">bar(p);</span><br><span class="line">colormap([ggplot2(8)(4,:); ggplot2(8)(6, :)]);</span><br><span class="line">set(findall(gca(), &quot;type&quot;, &quot;patch&quot;), &apos;EdgeColor&apos;, &apos;none&apos;, &apos;FaceAlpha&apos;, 0.8);</span><br><span class="line">set(gca, &apos;xticklabel&apos;, &#123;&apos;2017 UV/PV&apos;; &apos;2018 UV/PV&apos;;&#125;);</span><br><span class="line">xlabel(&apos;Year&apos;);</span><br><span class="line">ylabel(&apos;Count&apos;);</span><br></pre></td></tr></table></figure><h2 id="习总书记惦记着我">习总书记惦记着我</h2><p><a href="/2017/01/03/Xi-Jinping-concerned-about/">2017年习总书记最牵挂困难群众</a>，今年习总书记始终惦记着困难群众。</p><p><img src="/img/I-am-always-worried-about-the-people-in-difficulty.png" alt="我始终惦记着困难群众"></p><h2 id="买了一个建兴的512g的msata接口ssd">买了一个建兴的512G的mSATA接口SSD</h2><p>mSATA还没普及就被淘汰了，可惜。买一个绝唱的SSD，性价比高，也为老笔记本续命。下面是测速结果，注意，我的笔记本的mSATA是SATA2的，所以速度可能受影响。</p><p><img src="/img/LiteOn-512G-mSATA-SSD.png" alt="建兴512G的mSATA接口SSD"></p><h2 id="贴吧有60亿贴了">贴吧有60亿贴了</h2><p><a href="https://tieba.baidu.com/p/6000000000" target="_blank" rel="noopener">贴吧60亿贴</a>。</p><p>厉害厉害。</p><h2 id="octave怎么输出中文？">Octave怎么输出中文？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">title(&apos;成绩&apos;, &apos;FontName&apos;, &apos;Source Han Serif CN&apos;);</span><br><span class="line">print title.svg</span><br></pre></td></tr></table></figure><p>显示的时候是乱码，SVG文件正常。问题是，这样生成的SVG用Adobe Illustrator打开中文字间距有问题，用IE也不正常。</p><p>字体间距有问题是因为程序指定了每个字符的位置，而程序算位置不准所以字挤到一块了，可以手动修改，方法是去掉<code>&lt;tspan&gt;</code>里的<code>x</code>，比如</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">tspan</span> <span class="attr">y</span>=<span class="string">"-7"</span> <span class="attr">fill</span>=<span class="string">"rgb(38,38,38)"</span> <span class="attr">x</span>=<span class="string">"0 20 29 36 50 50 50 72 72 "</span> &gt;</span>学生数<span class="tag">&lt;/<span class="name">tspan</span>&gt;</span>`</span><br></pre></td></tr></table></figure><p>去掉<code>x=&quot;0 20 29 36 50 50 50 72 72 &quot;</code>。</p><p>还有一个思路是用<a href="https://en.wikipedia.org/wiki/Librsvg" target="_blank" rel="noopener">librsvg库</a>渲染SVG文件，比如</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsvg-convert title.svg -d 600 -p 600 -f png -o title.png</span><br></pre></td></tr></table></figure><p>也可以用<code>rsvg-convert</code>生成新的SVG文件，生成后的文件用IE打开正常：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsvg-convert.exe title.svg -f svg -o aaa.svg</span><br></pre></td></tr></table></figure><p>之所以正常是因为这样转化后文字就变成形状了。这个思路也会遇到奇奇怪怪的问题。上面说的直接改SVG文件的方法我觉得最好。</p><h2 id="滚动一时爽-bug火葬场">滚动一时爽，Bug火葬场</h2><p>连续两个Bug，必须用优盘启动才能搞好电脑：</p><p><a href="https://bugs.archlinux.org/task/61328" target="_blank" rel="noopener">FS#61328 - udev 240 not recognising keyboard</a></p><p><a href="https://bugs.archlinux.org/task/61324" target="_blank" rel="noopener">FS#61324 - [systemd] Systemd v240 may report mount units as failed which leads to boot into emergency console</a></p><p>有一个能引导系统启动的维护优盘很重要！</p><h2 id="折腾mutt">折腾mutt</h2><p><a href="http://www.vinc17.org/mutt/muttrc" target="_blank" rel="noopener">http://www.vinc17.org/mutt/muttrc</a></p><h2 id="emacs可以原生缩放图片">Emacs可以原生缩放图片</h2><p>在3大主流平台上实现的时间是2019-01-21</p><p><a href="https://lists.gnu.org/archive/html/emacs-diffs/2019-01/msg00228.html" target="_blank" rel="noopener">https://lists.gnu.org/archive/html/emacs-diffs/2019-01/msg00228.html</a></p><h2 id="搞了半天的-etc-fstab的bug是因为文件编码不对">搞了半天的<code>/etc/fstab</code>的Bug是因为文件编码不对</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ file /etc/fstab.backup</span><br><span class="line">/etc/fstab.backup: ASCII text, with CR line terminators</span><br><span class="line"></span><br><span class="line">$ file /etc/fstab</span><br><span class="line">/etc/fstab: ASCII text</span><br></pre></td></tr></table></figure><p>偶然瞥了一眼mode-line发现显示的是Mac，发现了这个bug。</p><p>延伸阅读</p><p><a href="http://ergoemacs.org/emacs/emacs_line_ending_char.html" target="_blank" rel="noopener">http://ergoemacs.org/emacs/emacs_line_ending_char.html</a></p><h2 id="如何把excel里的内容逆序排列">如何把Excel里的内容逆序排列</h2><p>其实直接做挺难的。如果手动加一列，然后排序，就好了。这不就是TRIZ方法里面的增加一个场么(手动滑稽)。</p><h2 id="百度已死">百度已死</h2><p>确切的说是<a href="https://tech.sina.com.cn/csj/2019-01-22/doc-ihrfqzka0099225.shtml" target="_blank" rel="noopener">搜索引擎百度已死：沦为替百家号导流的工具</a>。看来本站永无可能收获来自百度的流量了，因为<a href="/2015/06/21/Baidu-indexed-minority-domain/">百度对小众域名的收录糟透了</a>。</p><h2 id="time-flies">Time flies</h2><p>2012年的时候USB 3.0还没普及，时间过得好快。</p><h2 id="dell的t3600工作站有第三方的usb-3-0芯片">Dell的T3600工作站有第三方的USB 3.0芯片</h2><p>需要安装驱动，下载地址</p><p><a href="https://www.dell.com/support/home/cn/zh/cnbsd1/product-support/product/precision-t3600/drivers" target="_blank" rel="noopener">https://www.dell.com/support/home/cn/zh/cnbsd1/product-support/product/precision-t3600/drivers</a></p><h2 id="为什么越努力越失望？">为什么越努力越失望？</h2><p>观点来自<a href="https://www.youtube.com/watch?v=vzcndmhDZQ8" target="_blank" rel="noopener">老梁的视频</a>：</p><ol><li>不是真努力。</li><li>还没有达到量变引起质变的关键点。</li><li>努力错了方向。</li></ol><p>延伸阅读：<a href="/2017/03/05/Talent-environment-opportunity/">我总结的决定成功的因素</a>。</p><h2 id="firefox-60-版本移除了查看cookie的功能"><a href="https://support.mozilla.org/zh-CN/questions/1218110" target="_blank" rel="noopener">Firefox 60+版本移除了查看Cookie的功能</a></h2><p>解决方案是<a href="https://developer.mozilla.org/zh-CN/docs/Tools/%E5%AD%98%E5%82%A8%E6%9F%A5%E7%9C%8B%E5%99%A8" target="_blank" rel="noopener">用存储查看器</a>，快捷键是<code>Shift+F9</code>。</p><h2 id="pandownload"><a href="http://pandownload.com/index.html" target="_blank" rel="noopener">PanDownload</a></h2><p>是一款好软件。</p><h2 id="gnu-octave-5-rc1">GNU Octave 5 RC1</h2><p><a href="ftp://alpha.gnu.org/gnu/octave/" target="_blank" rel="noopener">ftp://alpha.gnu.org/gnu/octave/</a></p><h2 id="段子">段子</h2><blockquote><p>1，公司里很多程序员赶在春节前跳槽，导致急缺人手。HR只好饥不择食地约了一名只有初中学历，简历却写得很漂亮的应聘者来面试。</p><p>HR：你用过哪些语言？</p><p>应聘者：我青年时代就用过C、C++、Pascal、Eiffel、Java、Python、Ruby、Swift、Lua、BASIC，我还用过PHP、VB、ML、SQL、ASP、Shell…</p><p>2，HR：你用过这么多种语言，都熟练么？</p><p>应聘者：当然！因为我那时候，写两百行代码，十个模块不换行的。</p><p>HR：那你写的代码健壮性怎么样？</p><p>应聘者：哪怕动态测试，也岿(kuī)然不动。</p><p>HR：你怎么保证其健壮性？</p><p>应聘者：我写的代码之所以高效稳定，不仅在于遵守了代码规范，关键是在于遵守了代码规范…</p><p>3，HR：我们产品经理喜欢乱改需求，受得了吗？</p><p>应聘者：没有乱改需求，那就不是产品经理了。乱改需求可以掀翻小菜鸟，但不能掀翻大佬。</p><p>HR：牛！你在哪儿学的编程？</p><p>应聘者：没有可以奉为金科律玉的教科书，也没有可以对程序员颐使气指的教师爷。</p><p>HR：想要什么样的工作环境？</p><p>应聘者：轻关易道，通商宽衣</p><footer><strong>Dolltator,</strong><cite><a href="https://twitter.com/Dolltator" target="_blank" rel="noopener">twitter.com/Dolltator</a></cite></footer></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p style=&quot;font-size: larger&quot;&gt;😟&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-    
-      <category term="百度" scheme="https://chriszheng.science/tags/%E7%99%BE%E5%BA%A6/"/>
-    
-      <category term="Octave" scheme="https://chriszheng.science/tags/Octave/"/>
-    
-      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     
   </entry>
   
