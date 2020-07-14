@@ -1949,13 +1949,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%25AE%25B5%25E5%25AD%2590/</loc>
-        <lastmod>2020-03-26T06:15:27.751Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E5%25AD%2594%25E5%25AD%2590/</loc>
         <lastmod>2020-03-26T06:15:27.751Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2089,13 +2082,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
-        <lastmod>2020-05-20T11:58:39.468Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E7%2599%25BE%25E5%25BA%25A6/</loc>
         <lastmod>2020-05-30T16:31:18.793Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2138,13 +2124,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2020-06-07T14:38:36.844Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E6%258A%2598%25E8%2585%25BE/</loc>
         <lastmod>2020-06-07T14:42:28.155Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2159,36 +2138,64 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/Windows-XP/</loc>
+        <lastmod>2020-06-30T00:43:00.732Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
+        <lastmod>2020-07-03T06:15:20.609Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
-        <lastmod>2020-06-14T16:13:39.032Z</lastmod>
+        <lastmod>2020-07-10T15:02:45.848Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E7%25BD%2591%25E7%25AB%2599%25E4%25BF%25A1%25E6%2581%25AF/</loc>
-        <lastmod>2020-06-14T16:13:39.032Z</lastmod>
+        <lastmod>2020-07-10T15:02:45.848Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/Octave/</loc>
-        <lastmod>2020-06-14T16:13:39.032Z</lastmod>
+        <lastmod>2020-07-10T15:02:45.848Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E9%2597%25AA%25E8%25BF%25AA/</loc>
+        <lastmod>2020-07-14T03:33:37.098Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E6%25AE%25B5%25E5%25AD%2590/</loc>
+        <lastmod>2020-07-14T03:34:20.897Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
+        <lastmod>2020-07-14T03:34:20.897Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2020-06-15T14:54:48.437Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Windows-XP/</loc>
-        <lastmod>2020-06-15T14:54:48.437Z</lastmod>
+        <lastmod>2020-07-14T03:34:20.897Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
