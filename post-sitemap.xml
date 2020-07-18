@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chriszheng.science/2020/07/04/Recent-thoughts-2020-07-04/</loc>
-        <lastmod>2020-07-14T03:34:20.897Z</lastmod>
+        <lastmod>2020-07-18T14:13:26.494Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/11/13/Bye-bye-Baidu/</loc>
+        <lastmod>2020-07-17T16:57:43.431Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2954,14 +2962,6 @@
     <url>
         <loc>https://chriszheng.science/2013/08/03/C-pointer/</loc>
         <lastmod>2019-05-28T18:56:21.540Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2015/11/13/Bye-bye-Baidu/</loc>
-        <lastmod>2019-05-28T18:56:21.525Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

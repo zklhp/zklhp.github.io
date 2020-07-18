@@ -92,13 +92,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/categories/%25E9%2597%25B2%25E8%25A8%2580%25E7%25A2%258E%25E8%25AF%25AD/</loc>
-        <lastmod>2020-05-05T10:42:52.932Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/categories/Emacs%25E5%25B0%258F%25E6%258A%2580%25E5%25B7%25A7/</loc>
         <lastmod>2020-05-30T16:36:56.258Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -134,8 +127,15 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/categories/%25E9%2597%25B2%25E8%25A8%2580%25E7%25A2%258E%25E8%25AF%25AD/</loc>
+        <lastmod>2020-07-17T16:57:43.431Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/categories/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2020-07-14T03:34:20.897Z</lastmod>
+        <lastmod>2020-07-18T14:13:26.494Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
