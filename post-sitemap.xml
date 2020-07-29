@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2019/06/04/Recent-thoughts-2019-06-04/</loc>
+        <lastmod>2020-07-28T13:11:29.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2020/07/04/Recent-thoughts-2020-07-04/</loc>
-        <lastmod>2020-07-28T08:41:54.391Z</lastmod>
+        <lastmod>2020-07-28T08:44:15.418Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -306,14 +314,6 @@
     <url>
         <loc>https://chriszheng.science/2017/01/14/Go-away-Feng-Jie/</loc>
         <lastmod>2020-04-20T07:20:06.313Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/06/04/Recent-thoughts-2019-06-04/</loc>
-        <lastmod>2020-04-03T05:56:09.058Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
