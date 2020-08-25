@@ -8,8 +8,48 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2018/09/07/Recent-thoughts-2018-09-07/</loc>
+        <lastmod>2020-08-25T08:15:52.617Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2020/08/01/Recent-thoughts-2020-08-01/</loc>
-        <lastmod>2020-08-11T15:29:18.267Z</lastmod>
+        <lastmod>2020-08-25T07:54:22.076Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
+        <lastmod>2020-08-23T04:37:18.776Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/07/04/Recent-thoughts-2020-07-04/</loc>
+        <lastmod>2020-08-19T07:21:32.770Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2020-08-19T07:13:41.557Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/10/24/Recent-thoughts-2018-10-24/</loc>
+        <lastmod>2020-08-15T12:50:03.787Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,24 +64,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2020-08-11T06:04:50.468Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2020/02/14/Recent-thoughts-2020-02-14/</loc>
         <lastmod>2020-07-31T10:10:24.595Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2020/07/04/Recent-thoughts-2020-07-04/</loc>
-        <lastmod>2020-07-29T16:37:35.996Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,14 +98,6 @@
     <url>
         <loc>https://chriszheng.science/2016/07/11/Clean-look-for-163-mail-and-GTD/</loc>
         <lastmod>2020-07-21T15:53:09.765Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/10/24/Recent-thoughts-2018-10-24/</loc>
-        <lastmod>2020-07-19T09:21:51.477Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -218,14 +234,6 @@
     <url>
         <loc>https://chriszheng.science/2018/07/15/Recent-thoughts-2018-07-15/</loc>
         <lastmod>2020-05-30T16:32:14.946Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/09/07/Recent-thoughts-2018-09-07/</loc>
-        <lastmod>2020-05-30T16:31:49.226Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2402,14 +2410,6 @@
     <url>
         <loc>https://chriszheng.science/2016/02/13/Ghost-Song-in-Arch-Linux/</loc>
         <lastmod>2019-05-28T18:56:22.540Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
-        <lastmod>2019-05-28T18:56:22.525Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
