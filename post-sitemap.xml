@@ -8,8 +8,80 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/</loc>
+        <lastmod>2020-09-19T06:03:59.049Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
+        <lastmod>2020-09-18T05:46:07.717Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/11/22/Recent-thoughts-2018-11-22/</loc>
+        <lastmod>2020-09-17T16:10:41.756Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2020-09-17T15:47:21.625Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2020/08/01/Recent-thoughts-2020-08-01/</loc>
-        <lastmod>2020-08-31T03:10:13.578Z</lastmod>
+        <lastmod>2020-09-06T00:57:00.707Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/07/20/Make-brower-an-editor-and-the-indent-of-Chinese-in-Web/</loc>
+        <lastmod>2020-09-05T14:49:41.168Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/12/14/How-to-clear-the-sewer/</loc>
+        <lastmod>2020-09-05T12:25:35.835Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/09/23/Solvents/</loc>
+        <lastmod>2020-09-05T12:25:09.006Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
+        <lastmod>2020-09-05T12:23:58.471Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/03/19/Chinese-version-of-Emacs-building-guideline/</loc>
+        <lastmod>2020-09-02T10:42:40.497Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +106,6 @@
     <url>
         <loc>https://chriszheng.science/2020/07/04/Recent-thoughts-2020-07-04/</loc>
         <lastmod>2020-08-19T07:21:32.770Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2020-08-19T07:13:41.557Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -144,14 +208,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/11/22/Recent-thoughts-2018-11-22/</loc>
-        <lastmod>2020-07-14T03:32:57.848Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2016/09/16/Confucius-stories/</loc>
         <lastmod>2020-07-08T06:18:09.155Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -186,14 +242,6 @@
     <url>
         <loc>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</loc>
         <lastmod>2020-06-07T14:38:36.844Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
-        <lastmod>2020-06-07T14:38:14.257Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -384,14 +432,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/03/19/Chinese-version-of-Emacs-building-guideline/</loc>
-        <lastmod>2020-03-15T14:15:50.149Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/07/16/Best-practice-of-Emacs-on-MS-Windows/</loc>
         <lastmod>2020-03-15T13:52:36.240Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -434,14 +474,6 @@
     <url>
         <loc>https://chriszheng.science/2015/04/01/Git-my-dotEmacs-files/</loc>
         <lastmod>2020-02-09T07:11:07.899Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
-        <lastmod>2020-01-28T14:36:48.547Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1320,14 +1352,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/09/23/Solvents/</loc>
-        <lastmod>2019-05-28T18:56:24.800Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2015/08/01/Soft-hyphen/</loc>
         <lastmod>2019-05-28T18:56:24.784Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1976,14 +2000,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/07/20/Make-brower-an-editor-and-the-indent-of-Chinese-in-Web/</loc>
-        <lastmod>2019-05-28T18:56:23.347Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2015/12/08/Magit-recent-update/</loc>
         <lastmod>2019-05-28T18:56:23.331Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2202,14 +2218,6 @@
     <url>
         <loc>https://chriszheng.science/2015/11/16/How-to-find-the-dotEmacs-or-init-file/</loc>
         <lastmod>2019-05-28T18:56:22.925Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/12/14/How-to-clear-the-sewer/</loc>
-        <lastmod>2019-05-28T18:56:22.909Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
