@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</loc>
+        <lastmod>2020-09-29T01:37:14.374Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/</loc>
-        <lastmod>2020-09-26T15:32:25.204Z</lastmod>
+        <lastmod>2020-09-29T00:30:45.216Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -234,14 +242,6 @@
     <url>
         <loc>https://chriszheng.science/2015/05/02/Struggle-with-an-Android-tablet/</loc>
         <lastmod>2020-06-07T14:42:28.155Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</loc>
-        <lastmod>2020-06-07T14:38:36.844Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
