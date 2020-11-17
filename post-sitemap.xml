@@ -8,8 +8,16 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/</loc>
-        <lastmod>2020-10-28T15:20:23.746Z</lastmod>
+        <loc>https://chriszheng.science/2020/11/11/Recent-thoughts-2020-11-11/</loc>
+        <lastmod>2020-11-17T07:05:15.046Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/11/11/Recent-thoughts-2019-11-11/</loc>
+        <lastmod>2020-11-09T04:37:54.640Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +25,47 @@
 
     <url>
         <loc>https://chriszheng.science/2020/10/02/Recent-thoughts-2020-10-02/</loc>
-        <lastmod>2020-10-17T04:23:24.238Z</lastmod>
+        <lastmod>2020-11-09T04:35:47.934Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/07/04/Recent-thoughts-2020-07-04/</loc>
+        <lastmod>2020-11-09T04:32:55.606Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
+        <lastmod>2020-11-09T04:30:21.450Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/10/01/Recent-thoughts-2018-10-01/</loc>
+        <lastmod>2020-11-09T04:29:59.571Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/11/22/Recent-thoughts-2018-11-22/</loc>
+        <lastmod>2020-11-09T04:29:48.590Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/</loc>
+        <lastmod>2020-10-28T15:20:23.746Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -64,14 +112,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/11/11/Recent-thoughts-2019-11-11/</loc>
-        <lastmod>2020-10-02T14:45:42.648Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</loc>
         <lastmod>2020-09-29T01:37:14.374Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -82,14 +122,6 @@
     <url>
         <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
         <lastmod>2020-09-18T05:46:07.717Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/11/22/Recent-thoughts-2018-11-22/</loc>
-        <lastmod>2020-09-17T16:10:41.756Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -160,14 +192,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2020/07/04/Recent-thoughts-2020-07-04/</loc>
-        <lastmod>2020-08-19T07:21:32.770Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2018/10/24/Recent-thoughts-2018-10-24/</loc>
         <lastmod>2020-08-15T12:50:03.787Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -208,14 +232,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
-        <lastmod>2020-07-19T09:16:50.396Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2019/09/07/Recent-thoughts-2019-09-07/</loc>
         <lastmod>2020-07-19T09:10:34.942Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -234,14 +250,6 @@
     <url>
         <loc>https://chriszheng.science/2015/11/13/Bye-bye-Baidu/</loc>
         <lastmod>2020-07-17T16:57:43.431Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/10/01/Recent-thoughts-2018-10-01/</loc>
-        <lastmod>2020-07-14T03:33:37.098Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
