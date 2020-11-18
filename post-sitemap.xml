@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
+        <lastmod>2020-11-18T15:19:14.481Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
+        <lastmod>2020-11-18T15:18:03.445Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2020/11/18/Plant-photography/</loc>
-        <lastmod>2020-11-18T15:02:26.915Z</lastmod>
+        <lastmod>2020-11-18T15:09:00.589Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +34,6 @@
     <url>
         <loc>https://chriszheng.science/2017/07/31/Ah-rainbow/</loc>
         <lastmod>2020-11-18T15:00:47.782Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
-        <lastmod>2020-11-18T15:00:34.036Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -354,14 +362,6 @@
     <url>
         <loc>https://chriszheng.science/2020/04/01/Recent-thoughts-2020-04-01/</loc>
         <lastmod>2020-05-19T13:15:14.893Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
-        <lastmod>2020-05-05T10:42:52.932Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
