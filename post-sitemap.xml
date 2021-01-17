@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2021/01/01/Buy-new-not-old/</loc>
+        <lastmod>2021-01-17T13:09:57.535Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/01/01/Recent-thoughts-2020-01-01/</loc>
+        <lastmod>2021-01-04T02:27:34.902Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2020/12/04/Recent-thoughts-2020-12-04/</loc>
-        <lastmod>2020-12-25T05:20:41.875Z</lastmod>
+        <lastmod>2021-01-04T02:27:28.136Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -506,14 +522,6 @@
     <url>
         <loc>https://chriszheng.science/2017/03/07/Remove-highlight-in-SumatraPDF/</loc>
         <lastmod>2020-03-08T06:30:03.453Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2020/01/01/Recent-thoughts-2020-01-01/</loc>
-        <lastmod>2020-02-09T16:43:44.847Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
