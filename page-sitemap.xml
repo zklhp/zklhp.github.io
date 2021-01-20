@@ -8,6 +8,13 @@
     </url>
     
     <url>
+        <loc>https://chriszheng.science/emacs-beginner-guide/</loc>
+        <lastmod>2021-01-19T15:30:10.190Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://chriszheng.science/pua/</loc>
         <lastmod>2020-12-12T05:58:19.294Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -38,13 +45,6 @@
     <url>
         <loc>https://chriszheng.science/categories/</loc>
         <lastmod>2017-02-26T12:07:59.238Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://chriszheng.science/emacs-beginner-guide/</loc>
-        <lastmod>2016-11-03T10:12:45.200Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

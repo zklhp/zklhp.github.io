@@ -8,8 +8,120 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2016/02/07/A-script-to-log-the-network-off/</loc>
+        <lastmod>2021-01-20T03:35:41.543Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2021/01/01/Buy-new-not-old/</loc>
-        <lastmod>2021-01-17T13:09:57.535Z</lastmod>
+        <lastmod>2021-01-20T03:34:49.900Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/01/13/PandoraBox-switch-config/</loc>
+        <lastmod>2021-01-20T03:30:19.657Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/02/04/Play-with-ShadowSocks-on-PandoraBox-OpenWrt/</loc>
+        <lastmod>2021-01-20T03:29:20.123Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/11/30/Practical-frp/</loc>
+        <lastmod>2021-01-20T03:28:47.544Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/01/14/Use-shell-file-name-change-shell/</loc>
+        <lastmod>2021-01-20T03:28:21.969Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2021-01-20T03:24:16.030Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/12/04/I-am-a-Mi-fan/</loc>
+        <lastmod>2021-01-20T03:22:56.182Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
+        <lastmod>2021-01-20T03:22:19.687Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/01/30/How-to-turn-off-network-connection-in-PandoraBox/</loc>
+        <lastmod>2021-01-20T03:19:59.188Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/01/31/Writing-script-for-PandoraBox-OpenWrt/</loc>
+        <lastmod>2021-01-20T03:19:43.920Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/01/23/Export-busuanzi-data/</loc>
+        <lastmod>2021-01-20T03:13:37.594Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/12/04/Recent-thoughts-2020-12-04/</loc>
+        <lastmod>2021-01-20T03:07:51.724Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/11/08/Checkbox-for-markdown-mode/</loc>
+        <lastmod>2021-01-20T02:24:07.073Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/04/26/Emacs-font-settings/</loc>
+        <lastmod>2021-01-20T02:09:20.410Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,24 +136,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2020/12/04/Recent-thoughts-2020-12-04/</loc>
-        <lastmod>2021-01-04T02:27:28.136Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2018/04/08/Firefox-Quantum/</loc>
         <lastmod>2020-12-12T09:21:05.058Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2020-12-06T16:19:35.765Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -242,14 +338,6 @@
     <url>
         <loc>https://chriszheng.science/2018/09/07/Recent-thoughts-2018-09-07/</loc>
         <lastmod>2020-08-25T08:28:06.740Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
-        <lastmod>2020-08-23T04:37:18.776Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -816,14 +904,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/01/31/Writing-script-for-PandoraBox-OpenWrt/</loc>
-        <lastmod>2019-05-28T18:56:25.809Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2016/09/24/Workaround-a-bug-for-octave-mode-of-Emacs-25-2-50/</loc>
         <lastmod>2019-05-28T18:56:25.809Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1025,14 +1105,6 @@
 
     <url>
         <loc>https://chriszheng.science/2015/11/24/Use-mini-OSC-in-mpv/</loc>
-        <lastmod>2019-05-28T18:56:25.450Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/01/14/Use-shell-file-name-change-shell/</loc>
         <lastmod>2019-05-28T18:56:25.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -1632,14 +1704,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/11/30/Practical-frp/</loc>
-        <lastmod>2019-05-28T18:56:24.128Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2018/11/30/Popularity-of-my-content/</loc>
         <lastmod>2019-05-28T18:56:24.112Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1672,24 +1736,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/02/04/Play-with-ShadowSocks-on-PandoraBox-OpenWrt/</loc>
-        <lastmod>2019-05-28T18:56:24.065Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2015/02/14/Pitfall-of-using-Hexo-in-Windows/</loc>
         <lastmod>2019-05-28T18:56:24.050Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/01/13/PandoraBox-switch-config/</loc>
-        <lastmod>2019-05-28T18:56:24.003Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2208,14 +2256,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/12/04/I-am-a-Mi-fan/</loc>
-        <lastmod>2019-05-28T18:56:23.050Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/11/20/I-am-a-beggar/</loc>
         <lastmod>2019-05-28T18:56:23.034Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2242,14 +2282,6 @@
     <url>
         <loc>https://chriszheng.science/2017/09/10/How-to-use-character/</loc>
         <lastmod>2019-05-28T18:56:22.972Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/01/30/How-to-turn-off-network-connection-in-PandoraBox/</loc>
-        <lastmod>2019-05-28T18:56:22.956Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2608,14 +2640,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/01/23/Export-busuanzi-data/</loc>
-        <lastmod>2019-05-28T18:56:22.259Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2016/04/03/eval-and-compile/</loc>
         <lastmod>2019-05-28T18:56:22.243Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2754,14 +2778,6 @@
     <url>
         <loc>https://chriszheng.science/2015/06/20/Emacs-lisp-cl-loop/</loc>
         <lastmod>2019-05-28T18:56:22.025Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2015/04/26/Emacs-font-settings/</loc>
-        <lastmod>2019-05-28T18:56:22.009Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -3000,14 +3016,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2015/11/08/Checkbox-for-markdown-mode/</loc>
-        <lastmod>2019-05-28T18:56:21.587Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/07/31/Celebrate-10k-visits/</loc>
         <lastmod>2019-05-28T18:56:21.571Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -3170,14 +3178,6 @@
     <url>
         <loc>https://chriszheng.science/2015/06/30/A-vi-joke/</loc>
         <lastmod>2019-05-28T18:56:21.212Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/02/07/A-script-to-log-the-network-off/</loc>
-        <lastmod>2019-05-28T18:56:21.196Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

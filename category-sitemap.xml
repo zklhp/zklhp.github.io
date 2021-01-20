@@ -15,13 +15,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/categories/Shadowsocks/</loc>
-        <lastmod>2019-05-28T18:56:25.372Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/categories/Hexo/</loc>
         <lastmod>2019-05-28T18:56:25.388Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -71,15 +64,15 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/categories/Emacs%25E5%25B0%258F%25E6%258A%2580%25E5%25B7%25A7/</loc>
-        <lastmod>2020-05-30T16:36:56.258Z</lastmod>
+        <loc>https://chriszheng.science/categories/Emacs/</loc>
+        <lastmod>2020-09-02T10:42:40.497Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/categories/Emacs/</loc>
-        <lastmod>2020-09-02T10:42:40.497Z</lastmod>
+        <loc>https://chriszheng.science/categories/%25E7%25BB%258F%25E9%25AA%258C%25E5%2588%2586%25E4%25BA%25AB/</loc>
+        <lastmod>2020-09-05T12:23:58.471Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -92,29 +85,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/categories/%25E7%25BC%2596%25E7%25A8%258B%25E6%258A%2580%25E6%259C%25AF/</loc>
-        <lastmod>2020-09-05T14:49:41.168Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/categories/%25E6%2591%2584%25E5%25BD%25B1%25E4%25BD%259C%25E5%2593%2581/</loc>
         <lastmod>2020-11-20T00:47:26.235Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/categories/%25E9%2597%25B2%25E8%25A8%2580%25E7%25A2%258E%25E8%25AF%25AD/</loc>
-        <lastmod>2020-11-21T12:14:44.938Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/categories/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D%25E7%25BB%258F%25E9%25AA%258C/</loc>
-        <lastmod>2020-12-06T16:19:35.765Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -128,14 +100,49 @@
 
     <url>
         <loc>https://chriszheng.science/categories/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2021-01-04T02:27:34.902Z</lastmod>
+        <lastmod>2021-01-20T03:07:51.724Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/categories/%25E7%25BB%258F%25E9%25AA%258C%25E5%2588%2586%25E4%25BA%25AB/</loc>
-        <lastmod>2021-01-17T13:09:57.535Z</lastmod>
+        <loc>https://chriszheng.science/categories/%25E7%25BC%2596%25E7%25A8%258B%25E6%258A%2580%25E6%259C%25AF/</loc>
+        <lastmod>2021-01-20T03:13:37.594Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/categories/%25E9%2597%25B2%25E8%25A8%2580%25E7%25A2%258E%25E8%25AF%25AD/</loc>
+        <lastmod>2021-01-20T03:22:56.182Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/categories/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D%25E7%25BB%258F%25E9%25AA%258C/</loc>
+        <lastmod>2021-01-20T03:24:16.030Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/categories/Emacs%25E5%25B0%258F%25E6%258A%2580%25E5%25B7%25A7/</loc>
+        <lastmod>2021-01-20T03:28:21.969Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/categories/Shadowsocks/</loc>
+        <lastmod>2021-01-20T03:29:20.123Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/categories/%25E7%25BD%2591%25E7%25BB%259C%25E6%258A%2598%25E8%2585%25BE/</loc>
+        <lastmod>2021-01-20T03:35:41.543Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

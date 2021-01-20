@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2021-01-17T13:09:57.535Z</updated>
+  <updated>2021-01-20T03:34:49.900Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chriszheng.science/2021/01/01/Buy-new-not-old/"/>
     <id>https://chriszheng.science/2021/01/01/Buy-new-not-old/</id>
     <published>2020-12-31T16:00:00.000Z</published>
-    <updated>2021-01-17T13:09:57.535Z</updated>
+    <updated>2021-01-20T03:34:49.900Z</updated>
     
-    <content type="html"><![CDATA[<p style="font-size: larger">🖧</p><a id="more"></a><p>请搭配<a href="/2018/08/01/Get-on-board-quickly/">玩路由的帖子</a>阅读。用的路由是网件R7500v2。</p><h2 id="无线网卡升级换代史">无线网卡升级换代史</h2><p>我的笔记本前后用过3块无线网卡：</p><ol><li>第一块网卡是<a href="http://detail.zol.com.cn/series/16/14465_1.html">戴尔Inspiron 灵越 17R Turbo</a>带的<a href="https://ark.intel.com/content/www/cn/zh/ark/products/66889/intel-centrino-wireless-n-2230-single-band.html">Intel N 2230</a>，2013年的中端产品，性能实在是垃圾，不支持5 G频段。</li><li>2018年初受不了，在淘宝买了<a href="https://www.broadcom.com/products/wireless/wireless-lan-infrastructure/bcm43224">BCM43228HMB</a>，这款网卡似乎是2011年的产品，应该是当时的旗舰，是用在高贵的苹果笔记本上的，总算可以跑满百兆网络了。</li><li>2021年又感觉老网卡到瓶颈了，换了<a href="https://www.intel.cn/content/www/cn/zh/products/wireless/wireless-products/dual-band-wireless-ac-8265.html">Intel AC 8265</a>，这是2016年的中端产品。最新的所谓WiFi 6网卡需要用Windows 10才支持，我不愿意为了一个网卡换系统，所以不考虑。</li></ol><h2 id="测速">测速</h2><p>用<a href="https://iperf.fr/">iperf3</a>测速。简单起见，只测了TCP协议下的带宽，用的默认参数。测速服务器在路由下面，运行iperf3的服务端，服务器和路由有线连接。测速跑了好几次，取最大值，结果如下。</p><table><thead><tr><th style="text-align:center">网卡和装法</th><th style="text-align:center">带宽(Mbits/sec)</th></tr></thead><tbody><tr><td style="text-align:center">Intel N 2230装台式机里 + 垃圾天线 + 放桌子底下</td><td style="text-align:center">16.5</td></tr><tr><td style="text-align:center">Intel N 2230装台式机里 + 延长线 + 天线</td><td style="text-align:center">21.4</td></tr><tr><td style="text-align:center">Intel N 2230装台式机里 + 不接天线</td><td style="text-align:center">0.6</td></tr><tr><td style="text-align:center">Intel N 2230装台式机里 + 装垃圾天线</td><td style="text-align:center">20.0</td></tr><tr><td style="text-align:center">BCM43228HMB装笔记本里</td><td style="text-align:center">48.1</td></tr><tr><td style="text-align:center">BCM43228HMB装台式机里 + 延长线 + 天线</td><td style="text-align:center">51.2</td></tr><tr><td style="text-align:center">BCM43228HMB装台式机里 + 不接天线</td><td style="text-align:center">18.2</td></tr><tr><td style="text-align:center">Intel AC 8265装笔记本里</td><td style="text-align:center">139.0</td></tr></tbody></table><p>结果分析：</p><ol><li>把网卡接延长线放到信号好的地方，可以提高一点性能，但测了好几次，从最大带宽看，差别不大。可能结果是有显著性差异的，我没具体统计研究。</li><li>对测得带宽影响最大的是低速的结果，不接天线速度慢，是因为有几秒几乎没有数据，导致最终结果很低。所以信号强弱还是应影响的。</li><li><strong>协议很重要</strong>，2.4 G频段的网卡怎么也跑不过5 G频段。</li><li>买新不买旧。再高端的产品，放几年，也落伍了。</li></ol><p><img src="/img/Intel-AC-8265-866-Mbps.png" alt="Intel AC 8265感人至深的866 Mbps"></p><p>更严谨的测试还可以测ping值，测UDP协议的表现，甚至分析网络数据，我不想深入搞调查研究，就不玩了。</p><h2 id="心得和收获">心得和收获</h2><ol><li>无线协议对网络带宽的影响太大了。就像刚才说的，这里只关注带宽其实很片面。</li><li>注意，如果要换网卡，需要先完全删除原来网卡的驱动，再装，否则装不上。</li></ol>]]></content>
+    <content type="html"><![CDATA[<p style="font-size: larger">🖧</p><a id="more"></a><p>请搭配<a href="/2018/08/01/Get-on-board-quickly/">玩路由器的帖子</a>阅读。搭配的路由器是网件R7500v2和斐讯K2P。</p><h2 id="无线网卡升级换代史">无线网卡升级换代史</h2><p>我现在的笔记本前后用过3块无线网卡：</p><ol><li>第一块网卡是<a href="http://detail.zol.com.cn/series/16/14465_1.html">戴尔Inspiron 灵越 17R Turbo</a>带的<a href="https://ark.intel.com/content/www/cn/zh/ark/products/66889/intel-centrino-wireless-n-2230-single-band.html">Intel N 2230</a>，2013年的中端产品，性能实在是垃圾，不支持5 G频段。</li><li>2018年初受不了，在淘宝买了<a href="https://www.broadcom.com/products/wireless/wireless-lan-infrastructure/bcm43224">BCM43228HMB</a>，这款网卡似乎是2011年的产品，应该是当时的旗舰，是用在高贵的苹果笔记本上的，总算可以跑满百兆网络了。</li><li>2021年又感觉老网卡到瓶颈了，换了<a href="https://www.intel.cn/content/www/cn/zh/products/wireless/wireless-products/dual-band-wireless-ac-8265.html">Intel AC 8265</a>，这是2016年的中端产品。最新的所谓WiFi 6网卡需要用Windows 10才支持，我不愿意为了一个网卡换系统，所以不考虑。</li></ol><h2 id="测速">测速</h2><p>用<a href="https://iperf.fr/">iperf3</a>测速。简单起见，只测了TCP协议下的带宽，用的默认参数。测速服务器在路由器下面，运行iperf3的服务端，服务器和路由有线连接。测速跑了好几次，取最大值，结果如下。</p><table><thead><tr><th style="text-align:center">网卡和装法</th><th style="text-align:center">带宽(Mbits/sec)</th></tr></thead><tbody><tr><td style="text-align:center">Intel N 2230装台式机里 + 垃圾天线 + 放桌子底下</td><td style="text-align:center">16.5</td></tr><tr><td style="text-align:center">Intel N 2230装台式机里 + 延长线 + 天线</td><td style="text-align:center">21.4</td></tr><tr><td style="text-align:center">Intel N 2230装台式机里 + 不接天线</td><td style="text-align:center">0.6</td></tr><tr><td style="text-align:center">Intel N 2230装台式机里 + 垃圾天线</td><td style="text-align:center">20.0</td></tr><tr><td style="text-align:center">BCM43228HMB装笔记本里</td><td style="text-align:center">48.1</td></tr><tr><td style="text-align:center">BCM43228HMB装台式机里 + 延长线 + 天线</td><td style="text-align:center">51.2</td></tr><tr><td style="text-align:center">BCM43228HMB装台式机里 + 不接天线</td><td style="text-align:center">18.2</td></tr><tr><td style="text-align:center">Intel AC 8265装笔记本里</td><td style="text-align:center">139.0</td></tr></tbody></table><p>结果分析：</p><ol><li>把网卡接延长线放到信号好的地方，可以提高一点性能，但测了好几次，从最大带宽看，差别不大。可能结果是有显著性差异的，我没具体统计。</li><li>对测得带宽影响最大的是低速的结果，不接天线速度慢，是因为有几秒几乎没有数据，导致最终结果很低。所以信号强弱还是有影响的。</li><li><strong>协议很重要</strong>，2.4 G频段的网卡怎么也跑不过5 G频段的。</li><li>买新不买旧。再高端的产品，放几年，也落伍了。</li></ol><p><img src="/img/Intel-AC-8265-866-Mbps.png" alt="Intel AC 8265感人至深的866 Mbps"></p><p>更严谨的测试还可以测ping值，测UDP协议的表现，甚至分析网络数据，我不想深入研究，就不玩了。</p><h2 id="心得和收获">心得和收获</h2><ol><li>无线协议对无线带宽的影响太大了。</li><li>就像刚才说的，这里只关注带宽其实很片面。</li><li>注意，如果要换网卡，需要先完全删除原来网卡的驱动，再装，否则装不上。</li></ol>]]></content>
     
     <summary type="html">
     
@@ -31,8 +31,10 @@
     
     </summary>
     
-      <category term="经验分享" scheme="https://chriszheng.science/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+      <category term="网络折腾" scheme="https://chriszheng.science/categories/%E7%BD%91%E7%BB%9C%E6%8A%98%E8%85%BE/"/>
     
+    
+      <category term="测速" scheme="https://chriszheng.science/tags/%E6%B5%8B%E9%80%9F/"/>
     
       <category term="BCM43228HMB" scheme="https://chriszheng.science/tags/BCM43228HMB/"/>
     
@@ -47,7 +49,7 @@
     <link href="https://chriszheng.science/2020/12/04/Recent-thoughts-2020-12-04/"/>
     <id>https://chriszheng.science/2020/12/04/Recent-thoughts-2020-12-04/</id>
     <published>2020-12-03T16:00:00.000Z</published>
-    <updated>2021-01-04T02:27:28.136Z</updated>
+    <updated>2021-01-20T03:07:51.724Z</updated>
     
     <content type="html"><![CDATA[<p style="font-size: larger">✋</p><a id="more"></a><h2 id="international-day-against-drm">International Day Against DRM</h2><div align="center">  <a href="https://www.defectivebydesign.org/">    <img src="https://static.fsf.org/dbd/AADl.png" alt="DefectiveByDesign.org" width="300" height="300" border="0" align="middle" />  </a></div> <h2 id="国家支持的开源岗位">国家支持的开源岗位</h2><p><a href="https://isrc.iscas.ac.cn/news/opensourcejobs/">https://isrc.iscas.ac.cn/news/opensourcejobs/</a></p><h2 id="面对我们的骨灰-高尚的人们将洒下热泪">面对我们的骨灰，高尚的人们将洒下热泪</h2><blockquote><p>如果我们选择了最能为人类而工作的职业，那么，重担就不能把我们压倒，因为这是为大家作出的牺牲；那时我们所享受的就不是可怜的、有限的、自私的乐趣，我们的幸福将属于千百万人，我们的事业将悄然无声地存在下去，但是它会永远发挥作用，而面对我们的骨灰，高尚的人们将洒下热泪。</p><footer><strong>马克思</strong><cite>17岁时的高中毕业作文《青年在选择职业时的考虑》</cite></footer></blockquote><blockquote><p>If we have chosen the position in life in which we can most of all work for mankind, no burdens can bow us down, because they are sacrifices for the benefit of all; then we shall experience no petty, limited, selfish joy, but our happiness will belong to millions, our deeds will live on quietly but perpetually at work, and over our ashes will be shed the hot tears of noble people.</p><footer><strong>Marx, Reflections of a Young Man,</strong><cite><a href="https://www.marxists.org/archive/marx/works/subject/quotes/index.htm">www.marxists.org/archive/marx/works/subject/quotes</a></cite></footer></blockquote><h2 id="19万pv达成">19万PV达成</h2><p>As of 2020-12-10.</p><h2 id="2020">2020</h2><p>截至2020-12-31，主站的UV/PV: 116182/192189，扣除去年的83888/144575，2020年主站的UV/PV: 32294/47614。几个镜像站的访问量(<a href="https://chriszheng.gitee.io/">https://chriszheng.gitee.io/</a>, <a href="https://chriszheng.oschina.io/">https://chriszheng.oschina.io/</a>, <a href="https://zklhp.github.io/">https://zklhp.github.io/</a> UV/PV: 10239/19500, 9042/10055, 11151/12045)，扣除去年的(UV/PV: 7310/13400, 8078/8986, 7779/8255)，结果UV/PV: 2929/6100, 964/1069, 3372/3790。2020年镜像站的UV/PV: 9993/8231。2020全年的UV/PV: 42287/55845。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">p &#x3D; [18700 40200; 32191 56829; 56164 78187; 42287 55845];</span><br><span class="line">bar(p);</span><br><span class="line">colormap([ggplot2(8)(4, :); ggplot2(8)(6, :)]);</span><br><span class="line">set(findall(gca(), &quot;type&quot;, &quot;patch&quot;), &#39;EdgeColor&#39;, &#39;none&#39;, &#39;FaceAlpha&#39;, 0.8);</span><br><span class="line">set(gca, &#39;xticklabel&#39;, &#123;&#39;2017 UV&#x2F;PV&#39;; &#39;2018 UV&#x2F;PV&#39;; &#39;2019 UV&#x2F;PV&#39;; &#39;2020 UV&#x2F;PV&#39;&#125;);</span><br><span class="line">xlabel(&#39;Year&#39;);</span><br><span class="line">ylabel(&#39;Count&#39;);</span><br><span class="line"># print(&quot;2020.svg&quot;, &quot;-S800,600&quot;);</span><br></pre></td></tr></table></figure><p><img src="/img/2017-2018-2019-2020-UV-PV.png" alt="2017、2018、2019和2020的UV/PV"></p><p>客观的讲，这一年没写什么有价值的东西，所以数字比往年难看许多。疫情也是一个因素。</p>]]></content>
     
@@ -61,6 +63,8 @@
     
     
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+      <category term="马克思" scheme="https://chriszheng.science/tags/%E9%A9%AC%E5%85%8B%E6%80%9D/"/>
     
   </entry>
   
