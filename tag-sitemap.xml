@@ -1935,13 +1935,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Windows-XP/</loc>
-        <lastmod>2020-09-29T01:37:14.374Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
         <lastmod>2020-10-02T14:46:21.682Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1977,13 +1970,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2020-11-09T04:32:55.606Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
         <lastmod>2020-11-20T00:47:26.235Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1991,22 +1977,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E7%2588%25B1%25E5%25A5%25BD/</loc>
-        <lastmod>2020-11-21T12:14:44.938Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Firefox/</loc>
         <lastmod>2020-12-12T09:21:05.058Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Emacs/</loc>
-        <lastmod>2021-01-20T02:09:20.410Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -2028,13 +2000,6 @@
     <url>
         <loc>https://chriszheng.science/tags/markdown/</loc>
         <lastmod>2021-01-20T02:24:07.073Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/%25E9%25A9%25AC%25E5%2585%258B%25E6%2580%259D/</loc>
-        <lastmod>2021-01-20T03:07:51.724Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -2173,20 +2138,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
-        <lastmod>2021-01-25T14:19:55.815Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Shadowsocks/</loc>
-        <lastmod>2021-01-25T14:21:45.533Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/PostScript/</loc>
         <lastmod>2021-01-25T14:26:20.088Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2201,15 +2152,71 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2021-01-29T07:45:50.014Z</lastmod>
+        <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
+        <lastmod>2021-01-30T15:27:53.286Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
-        <lastmod>2021-01-30T15:27:53.286Z</lastmod>
+        <loc>https://chriszheng.science/tags/%25E9%25A9%25AC%25E5%2585%258B%25E6%2580%259D/</loc>
+        <lastmod>2021-02-06T03:32:22.670Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Windows-XP/</loc>
+        <lastmod>2021-02-07T16:08:04.648Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E7%2588%25B1%25E5%25A5%25BD/</loc>
+        <lastmod>2021-02-09T10:58:27.897Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Emacs/</loc>
+        <lastmod>2021-02-15T13:47:35.806Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
+        <lastmod>2021-02-15T13:47:35.806Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Shadowsocks/</loc>
+        <lastmod>2021-02-21T07:31:14.586Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
+        <lastmod>2021-02-21T07:31:14.586Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
+        <lastmod>2021-02-21T10:34:49.437Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%259B%259E%25E5%25BF%2586/</loc>
+        <lastmod>2021-02-21T10:34:49.437Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

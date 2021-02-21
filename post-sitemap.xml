@@ -8,8 +8,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
-        <lastmod>2021-01-30T15:27:53.286Z</lastmod>
+        <loc>https://chriszheng.science/2021/02/22/Recent-thoughts-2021-02-22/</loc>
+        <lastmod>2021-02-21T10:34:49.437Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,55 @@
 
     <url>
         <loc>https://chriszheng.science/2021/01/10/Recent-thoughts-2021-01-10/</loc>
-        <lastmod>2021-01-29T07:45:50.014Z</lastmod>
+        <lastmod>2021-02-21T07:31:14.586Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/03/05/Recent-thoughts-2020-03-05/</loc>
+        <lastmod>2021-02-15T13:47:35.806Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
+        <lastmod>2021-02-09T10:58:27.897Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
+        <lastmod>2021-02-07T16:08:04.648Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/12/04/Recent-thoughts-2020-12-04/</loc>
+        <lastmod>2021-02-06T03:32:22.670Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/11/11/Recent-thoughts-2020-11-11/</loc>
+        <lastmod>2021-02-05T07:23:45.496Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
+        <lastmod>2021-01-30T15:27:53.286Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -176,14 +224,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2020/12/04/Recent-thoughts-2020-12-04/</loc>
-        <lastmod>2021-01-20T03:07:51.724Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2015/11/08/Checkbox-for-markdown-mode/</loc>
         <lastmod>2021-01-20T02:24:07.073Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -210,22 +250,6 @@
     <url>
         <loc>https://chriszheng.science/2018/04/08/Firefox-Quantum/</loc>
         <lastmod>2020-12-12T09:21:05.058Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
-        <lastmod>2020-11-21T12:14:44.938Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2020/11/11/Recent-thoughts-2020-11-11/</loc>
-        <lastmod>2020-11-20T06:22:44.999Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -312,14 +336,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2020/03/05/Recent-thoughts-2020-03-05/</loc>
-        <lastmod>2020-10-02T14:46:33.229Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2020/02/14/Recent-thoughts-2020-02-14/</loc>
         <lastmod>2020-10-02T14:46:21.682Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -370,14 +386,6 @@
     <url>
         <loc>https://chriszheng.science/2018/09/23/Solvents/</loc>
         <lastmod>2020-09-05T12:25:09.006Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
-        <lastmod>2020-09-05T12:23:58.471Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
