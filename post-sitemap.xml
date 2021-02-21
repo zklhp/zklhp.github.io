@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2015/11/23/For-a-site-like-this-what-will-you-do/</loc>
+        <lastmod>2021-02-21T10:38:58.474Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2021/02/22/Recent-thoughts-2021-02-22/</loc>
-        <lastmod>2021-02-21T10:34:49.437Z</lastmod>
+        <lastmod>2021-02-21T10:35:16.157Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2554,14 +2562,6 @@
     <url>
         <loc>https://chriszheng.science/2016/02/07/Four-kings-in-Chinese-programming-world/</loc>
         <lastmod>2019-05-28T18:56:22.462Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2015/11/23/For-a-site-like-this-what-will-you-do/</loc>
-        <lastmod>2019-05-28T18:56:22.431Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
