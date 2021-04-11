@@ -9,7 +9,47 @@
 
     <url>
         <loc>https://chriszheng.science/2021/04/01/Recent-thoughts-2021-04-01/</loc>
-        <lastmod>2021-04-07T16:47:53.171Z</lastmod>
+        <lastmod>2021-04-11T05:33:36.480Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/11/09/Story-on-US-election/</loc>
+        <lastmod>2021-04-09T01:16:20.080Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/12/04/No-more-arbitrary-names/</loc>
+        <lastmod>2021-04-09T01:15:08.780Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/12/30/True-guru/</loc>
+        <lastmod>2021-04-09T01:14:37.290Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2015/02/19/My-poems/</loc>
+        <lastmod>2021-04-09T01:08:45.257Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/03/05/Recent-thoughts-2020-03-05/</loc>
+        <lastmod>2021-04-09T01:08:34.431Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -42,14 +82,6 @@
     <url>
         <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
         <lastmod>2021-04-07T16:02:11.904Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2020/03/05/Recent-thoughts-2020-03-05/</loc>
-        <lastmod>2021-04-04T07:38:42.113Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1296,14 +1328,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/12/30/True-guru/</loc>
-        <lastmod>2019-05-28T18:56:25.231Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2016/02/09/Transfer-domain-to-Uniregistry/</loc>
         <lastmod>2019-05-28T18:56:25.216Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1466,14 +1490,6 @@
     <url>
         <loc>https://chriszheng.science/2017/03/05/Strange-EVP-aes-128-ctr-error/</loc>
         <lastmod>2019-05-28T18:56:24.925Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/11/09/Story-on-US-election/</loc>
-        <lastmod>2019-05-28T18:56:24.909Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1896,14 +1912,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2016/12/04/No-more-arbitrary-names/</loc>
-        <lastmod>2019-05-28T18:56:23.784Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2015/06/23/No-coming-to-consciousness-without-pain/</loc>
         <lastmod>2019-05-28T18:56:23.769Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1970,14 +1978,6 @@
     <url>
         <loc>https://chriszheng.science/2015/04/24/My-Vim-experience/</loc>
         <lastmod>2019-05-28T18:56:23.675Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2015/02/19/My-poems/</loc>
-        <lastmod>2019-05-28T18:56:23.659Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
