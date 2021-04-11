@@ -9,7 +9,23 @@
 
     <url>
         <loc>https://chriszheng.science/2021/04/01/Recent-thoughts-2021-04-01/</loc>
-        <lastmod>2021-04-11T05:33:36.480Z</lastmod>
+        <lastmod>2021-04-11T17:01:19.357Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</loc>
+        <lastmod>2021-04-11T17:00:39.274Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/10/01/Recent-thoughts-2018-10-01/</loc>
+        <lastmod>2021-04-11T17:00:26.757Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -392,14 +408,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/10/01/Recent-thoughts-2018-10-01/</loc>
-        <lastmod>2020-11-09T04:29:59.571Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2019/08/01/Recent-thoughts-2019-08-01/</loc>
         <lastmod>2020-10-02T14:51:59.382Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -626,14 +634,6 @@
     <url>
         <loc>https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/</loc>
         <lastmod>2020-04-26T13:16:17.743Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</loc>
-        <lastmod>2020-04-26T13:16:02.879Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
