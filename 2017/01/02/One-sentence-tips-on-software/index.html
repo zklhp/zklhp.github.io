@@ -94,6 +94,9 @@ font-style: normal;
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">time <span class="keyword">for</span> i <span class="keyword">in</span> &#123;1..10000&#125;; <span class="keyword">do</span> <span class="built_in">echo</span> <span class="string">&quot;&quot;</span> | : ; <span class="keyword">done</span> <span class="comment"># 84s</span></span><br><span class="line">time <span class="keyword">for</span> i <span class="keyword">in</span> &#123;1..10000&#125;; <span class="keyword">do</span> : &lt;&lt;&lt; <span class="string">&quot;&quot;</span>; <span class="keyword">done</span> <span class="comment"># 5s</span></span><br></pre></td></tr></table></figure>
 <ol start="18">
 <li>
+<p><code>echo</code>不读sdtio，所以<code>echo &lt;&lt;&lt; $'Hello\nWorld'</code>没输出，这时候应该用<code>cat &lt;&lt;&lt; $'Hello\nWorld'</code>。</p>
+</li>
+<li>
 <p>除了<code>nohup</code>，<code>setsid</code>也可以在不受登出影响在后台运行程序。<a target="_blank" rel="noopener" href="http://www.ibm.com/developerworks/cn/linux/l-cn-nohup/index.html">参考</a>。</p>
 </li>
 <li>
@@ -105,26 +108,26 @@ font-style: normal;
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ cat a.txt</span><br><span class="line">张三    96</span><br><span class="line">李四    60</span><br><span class="line">王二    100</span><br><span class="line"></span><br><span class="line">$ sort -k2 -n a.txt</span><br><span class="line">李四    60</span><br><span class="line">张三    96</span><br><span class="line">王二    100</span><br></pre></td></tr></table></figure>
 <p>这里是根据第二列的值对行进行排序。我以前只知道<code>sort</code>可以行排序，现在会根据指定的列排序，用Excel的理由又少了一个。</p>
-<ol start="21">
+<ol start="22">
 <li>接上面一条，<a target="_blank" rel="noopener" href="https://www.gnu.org/software/coreutils/coreutils.html">Coreutils</a>里的join可以连接表格，比如</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">$ cat a.txt</span><br><span class="line">姓名	成绩1</span><br><span class="line">张三	90</span><br><span class="line">李四	80</span><br><span class="line">王二	100</span><br><span class="line"></span><br><span class="line">$ (head -n 1 a.txt &amp;&amp; tail -n +2 a.txt | sort) &gt; a.txt.sorted</span><br><span class="line">$ cat a.txt.sorted</span><br><span class="line">姓名	成绩1</span><br><span class="line">李四	80</span><br><span class="line">王二	100</span><br><span class="line">张三	90</span><br><span class="line"></span><br><span class="line">$ cat b.txt</span><br><span class="line">姓名	成绩2</span><br><span class="line">张三	92</span><br><span class="line">李四	90</span><br><span class="line">王二	90</span><br><span class="line"></span><br><span class="line">$ (head -n 1 b.txt &amp;&amp; tail -n +2 b.txt | sort) &gt; b.txt.sorted</span><br><span class="line">$ cat b.txt.sorted</span><br><span class="line">姓名	成绩2</span><br><span class="line">李四	90</span><br><span class="line">王二	90</span><br><span class="line">张三	92</span><br><span class="line"></span><br><span class="line">$ join a.txt.sorted b.txt.sorted &gt; c</span><br><span class="line">$ cat c</span><br><span class="line">姓名 成绩1 成绩2</span><br><span class="line">李四 80 90</span><br><span class="line">王二 100 90</span><br><span class="line">张三 90 92</span><br></pre></td></tr></table></figure>
 <p>上面的代码还演示了如何在排序的时候保留第一行。更多的解释请看<a target="_blank" rel="noopener" href="https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html">join的手册</a>。</p>
-<ol start="22">
+<ol start="23">
 <li>可以用awk进行「转置」，把列变成行，方法是设置<code>ORS</code>，控制的是输出的间隔符，设为空格就把列连接起来了。比如用上面的数据，对第一列进行转置，借助Emacs的<code>M-|</code>，代码是：</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">awk &#39;BEGIN&#123;ORS&#x3D;&quot; &quot;&#125; &#123;print $1&#125;&#39;</span><br></pre></td></tr></table></figure>
-<ol start="23">
+<ol start="24">
 <li>比如我有一列姓名，我想知道每个人出现的次数，怎么办呢？实例输入文件如下：</li>
 </ol>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">李四</span><br><span class="line">王二</span><br><span class="line">张三</span><br><span class="line">李四</span><br><span class="line">李四</span><br></pre></td></tr></table></figure>
 <p>可以借助sort和uniq再加上awk很方便的进行处理：`sort | uniq -c | sort -k1 | awk ‘{print $2 “\t” $1}’，结果如下：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">王二	1</span><br><span class="line">张三	1</span><br><span class="line">李四	3</span><br></pre></td></tr></table></figure>
-<ol start="24">
+<ol start="25">
 <li>如何只复制指定的文件并且保留文件夹结构：</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsync -rv E5internet:/tmp/screening/ /tmp/ --include=<span class="string">&quot;*/&quot;</span> --include=<span class="string">&quot;a.xyz&quot;</span> --exclude=<span class="string">&quot;*&quot;</span></span><br></pre></td></tr></table></figure>
-<ol start="25">
+<ol start="26">
 <li>
 <p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/4325216/remove-all-files-except-some-from-a-directory">保留一些文件，删除其他所有文件</a>：<code>find . -type f -not -name 'a.xyz' -delete</code>。</p>
 </li>
@@ -145,7 +148,7 @@ font-style: normal;
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo modprobe -r usb-storage</span><br><span class="line">sudo modprobe -S 5.0.5-arch1-1-ARCH -f usb-storage</span><br><span class="line">sudo sh -c <span class="string">&quot;echo 0 &gt; /sys/bus/usb/devices/2-14/authorized&quot;</span></span><br><span class="line">sudo sh -c <span class="string">&quot;echo 1 &gt; /sys/bus/usb/devices/2-14/authorized&quot;</span></span><br></pre></td></tr></table></figure>
-<ol start="31">
+<ol start="32">
 <li>
 <p>成对替换可以用Coreutils里的<code>tr</code>，比如<code>tr 'abcd' 'jkmn'</code>，缺点是不支持UTF-8，遇到中文就完蛋。这个需求可以用<code>sed</code>实现，比如<code>sed 'y/“”/「」/'</code>。<a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/392035/can-i-use-sed-to-translate-characters-like-with-tr/392036">来源</a>。</p>
 </li>
@@ -154,6 +157,9 @@ font-style: normal;
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">parallel <span class="string">&#x27;sed -n &#123;&#125;p a.txt&#x27;</span> ::: 2 3 4</span><br></pre></td></tr></table></figure>
+<ol start="34">
+<li>创建指定格式的目录：<code>echo &#123;37..38&#125;- | xargs mkdir -p</code>。</li>
+</ol>
 <h2 id="自由-开源软件使用经验">自由/开源软件使用经验</h2>
 <ol>
 <li>
@@ -272,6 +278,9 @@ font-style: normal;
 <p><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/termux/">Termux使用国内的清华源的方法</a>。</p>
 </li>
 <li>
+<p>Termux也可以用<code>termux-change-repo</code>换源。</p>
+</li>
+<li>
 <p>让Termux不震动的方法是改配置，方法见<a target="_blank" rel="noopener" href="https://termux.com/configuration.html">配置文件的手册</a>。</p>
 </li>
 <li>
@@ -279,12 +288,12 @@ font-style: normal;
 </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># ~&#x2F;.mutt&#x2F;muttrc</span><br><span class="line">auto_view text&#x2F;html</span><br><span class="line">alternative_order text&#x2F;plain text&#x2F;html</span><br><span class="line"># ~&#x2F;.mailcap</span><br><span class="line">text&#x2F;html; &quot;&#x2F;C&#x2F;Program Files&#x2F;Mozilla Firefox&#x2F;firefox&quot; &quot;$(cygpath -w %s)&quot; &amp;&amp; sleep 2; nametemplate&#x3D;%s.html; copiousoutput</span><br></pre></td></tr></table></figure>
-<ol start="37">
+<ol start="38">
 <li>ImageMagick可以重设图片的DPI，方法是</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">convert -units PixelsPerInch 输入图片.png -density 600 -trim 输出图片名.png</span><br></pre></td></tr></table></figure>
 <p>顺带演示了<code>-trim</code>去白边。</p>
-<ol start="38">
+<ol start="39">
 <li>
 <p>Git可以用<code>.git/info/exclude</code>代替<code>.gitignore</code>来忽略本地文件，这种方法不必提交到远程。<a target="_blank" rel="noopener" href="http://mbork.pl/2018-10-14_Magit_and_C-u_i">来源</a>。</p>
 </li>
@@ -298,7 +307,7 @@ font-style: normal;
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg.exe -ss 1:8:57 -i <span class="string">&quot;阿凡达 Avatar Extended Collector&#x27;s Edition 2009 BluRay 1080p DTS x264-CnSCG.mkv&quot;</span> -t 12 -c copy a.mkv</span><br></pre></td></tr></table></figure>
 <p>注意，这里必须写时间长度，用<code>-t</code>。</p>
-<ol start="41">
+<ol start="42">
 <li>
 <p>如果VirtualBox的VDI文件是动态大小，占用空间变大了，可以在虚拟机的系统里用<a target="_blank" rel="noopener" href="http://technet.microsoft.com/en-us/sysinternals/bb897443">SDelete</a>命令清理自由空间：<code>sdelete.exe c: -z</code>，然后用VBoxManage的<code>vboxmanage modifymedium --compact thedisk.vdi</code>来压缩。<a target="_blank" rel="noopener" href="https://superuser.com/questions/529149/how-to-compact-virtualboxs-vdi-file-size">来源</a>。</p>
 </li>
@@ -308,7 +317,7 @@ font-style: normal;
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i in.mp4 -i in.srt -c copy -disposition:s:0 default out.mkv</span><br></pre></td></tr></table></figure>
 <p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/26956762/ffmpeg-set-subtitles-track-as-default">来源</a>。</p>
-<ol start="43">
+<ol start="44">
 <li>
 <p>统计汉字的字数<code>wc -m *.md</code>。</p>
 </li>
@@ -318,11 +327,11 @@ font-style: normal;
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -user_agent <span class="string">&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/601.7.8 (KHTML, like Gecko) Version/9.1.3 Safari/537.86.7&quot;</span> -i http://185.38.12.60/sec/1503173737/363333397f6b65370bfc740ca4dea8c3f8dd2a93419f7748/ivs/12/b1/2ec5e15ba2a6/hls/tracks-4,5/index.m3u8 -c copy pd.mkv</span><br></pre></td></tr></table></figure>
 <p><a target="_blank" rel="noopener" href="https://apple.stackexchange.com/questions/158360/how-to-download-m3u8-stream-to-local-hd-in-os-x">来源</a>。</p>
-<ol start="45">
+<ol start="46">
 <li>把图片转成视频：</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -framerate 12 -i <span class="string">&quot;a_%03d.bmp&quot;</span> -vcodec libx264 -crf 1 -preset slow -vframes 1000 -pix_fmt yuv420p a.mp4</span><br></pre></td></tr></table></figure>
-<ol start="46">
+<ol start="47">
 <li>
 <p>用mpv播放网络音频容易断，加上<code>--stream-lavf-o=reconnect_streamed=1</code>参数可以自动重新连接。播放网络音频默认的超时值是1分钟。<a target="_blank" rel="noopener" href="https://github.com/mpv-player/mpv/issues/5793">出处</a>。</p>
 </li>
@@ -356,7 +365,7 @@ font-style: normal;
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i a.mp4 -vf <span class="string">&quot;fade=t=in:st=0:d=2, \</span></span><br><span class="line"><span class="string">fade=t=out:st=32:d=2, \</span></span><br><span class="line"><span class="string">drawtext=enable=&#x27;between(t,2,20)&#x27;:fontfile=HiraginoSansGB-W3.otf:textfile=a.txt:x=(w-text_w)/2-30:y=h-th-80:fontcolor=white:fontsize=50&quot;</span> -t <span class="string">&quot;34&quot;</span> -c:a copy -vcodec libx264 -crf 20 -preset slow output.mp4</span><br></pre></td></tr></table></figure>
 <p>把文字放在单独的文件<code>a.txt</code>里防止编码错误。另外，我发现用服务器编码并不会快多少。</p>
-<ol start="55">
+<ol start="57">
 <li><code>BUILDDIR=/tmp/makepkg makepkg</code>. <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Makepkg#Building_from_files_in_memory">来源</a>。</li>
 </ol>
 <h2 id="科学相关软件技巧">科学相关软件技巧</h2>
@@ -503,7 +512,7 @@ A: 运行安装目录下的<code>Configure EndNote.exe</code>。</p>
 <p>运行LEDE的路由器彻底禁用DHCPv6，配置LAN的<code>IPv6 分配长度</code>，设为禁用。<a target="_blank" rel="noopener" href="https://sleele.com/2020/02/03/openwrt-lede-%E5%85%B3%E9%97%ADipv6%E5%88%86%E9%85%8D/">来源</a>。</p>
 </li>
 </ol>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!"></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>我的一句话经验——软件篇</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2017-01-02</p><p><span>最后更新：</span>2021-03-20</p><p><span>原始链接：</span><a href="/2017/01/02/One-sentence-tips-on-software/">https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/" data-id="ckd7m87rn006lf8bphqwphdwz" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3dwWojMRAE0Pz/T+9eF8w4Vd1S4oU3p2A0M3oySHK1IF9f8fXnn+v1k9fPn+7dtH9teezCw8PDW3T9fSfev+CpzRMmZySD+9hDPDw8vGu8p+62bfLr/RAnQ/O+P3h4eHifw0u2ubNnJvthPDw8vP+R1/7qn3U6XyTw8PDwfos3C1s3sW/e9R/KWvDw8PAuVJE+5+8r9T08PDy8dVV9tki0U3xeQqt7i4eHh3eBNwsa8lfODl0lsUVxfAEPDw/vKO/UNJ0HFvmikrd/bIOHh4d3gbeZiNsIdRMKb+7Cw8PDO8vLp9128ZhtiJO78oUKDw8P7x5vM8W3U3mLT5DFBhoPDw/vKK8NZ5PSVx7stndFXw8eHh7eBd4sYJ1tefNnzo5bHQgm8PDw8AJevuVtOzorpOVLSBSI4OHh4V3jbSbu9pN8KC+GEXh4eHgLXh4iJAORl8H2YUTeNzw8PLyzvBaQhLBtm3wJqQMLPDw8vAu8PJLIHzdbQvIn518PHh4e3j1ePpfOimSzY17JNr2IdPHw8PCO8vIQYT+J53flA/RNqQwPDw/vKC8PRpPt8qmloi2S1VkLHh4e3nYXeuxfJeUBRxt5bOJdPDw8vHu8fNI/VfLPB6JdfupfBnh4eHiHeGeDg1mxrT2g8Ji14OHh4V3g5UX6Vdm+LIMdqOnh4eHh/Qgvh81ankpZj50pw8PDwxvx8u1vHrnmA9fGvsWFh4eHdxk2O0bQImfhRR6aFIeu8PDw8Ere2Tl2U6xqO73C4OHh4a15badnpLNLTl6ow8PDw7vHy0OHWRS7KmItjmTh4eHhfQIvWTZmYXFbbIvejoeHh/cBvM2mvI10k7fU6wYeHh7eId6sc+1CkkQMbXRbH7rCw8PDW/NmP/jbyLWNZWcHwlb1PTw8PLzveX8BaTppzm9bNisAAAAASUVORK5CYII=">分享</a><div class="tags"><a href="/tags/Octave/"><i class="fa fa-tag"></i>Octave</a><a href="/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/"><i class="fa fa-tag"></i>一句话</a></div><div class="post-nav"><a class="pre" href="/2017/01/02/A-joke-about-a-stingy-person/">一个人，花九万买了一辆车之后……</a><a class="next" href="/2016/12/31/Happy-New-Year/">新年新气象</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!"></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>我的一句话经验——软件篇</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2017-01-02</p><p><span>最后更新：</span>2021-04-20</p><p><span>原始链接：</span><a href="/2017/01/02/One-sentence-tips-on-software/">https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/" data-id="ckd7m87rn006lf8bphqwphdwz" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3dwWojMRAE0Pz/T+9eF8w4Vd1S4oU3p2A0M3oySHK1IF9f8fXnn+v1k9fPn+7dtH9teezCw8PDW3T9fSfev+CpzRMmZySD+9hDPDw8vGu8p+62bfLr/RAnQ/O+P3h4eHifw0u2ubNnJvthPDw8vP+R1/7qn3U6XyTw8PDwfos3C1s3sW/e9R/KWvDw8PAuVJE+5+8r9T08PDy8dVV9tki0U3xeQqt7i4eHh3eBNwsa8lfODl0lsUVxfAEPDw/vKO/UNJ0HFvmikrd/bIOHh4d3gbeZiNsIdRMKb+7Cw8PDO8vLp9128ZhtiJO78oUKDw8P7x5vM8W3U3mLT5DFBhoPDw/vKK8NZ5PSVx7stndFXw8eHh7eBd4sYJ1tefNnzo5bHQgm8PDw8AJevuVtOzorpOVLSBSI4OHh4V3jbSbu9pN8KC+GEXh4eHgLXh4iJAORl8H2YUTeNzw8PLyzvBaQhLBtm3wJqQMLPDw8vAu8PJLIHzdbQvIn518PHh4e3j1ePpfOimSzY17JNr2IdPHw8PCO8vIQYT+J53flA/RNqQwPDw/vKC8PRpPt8qmloi2S1VkLHh4e3nYXeuxfJeUBRxt5bOJdPDw8vHu8fNI/VfLPB6JdfupfBnh4eHiHeGeDg1mxrT2g8Ji14OHh4V3g5UX6Vdm+LIMdqOnh4eHh/Qgvh81ankpZj50pw8PDwxvx8u1vHrnmA9fGvsWFh4eHdxk2O0bQImfhRR6aFIeu8PDw8Ere2Tl2U6xqO73C4OHh4a15badnpLNLTl6ow8PDw7vHy0OHWRS7KmItjmTh4eHhfQIvWTZmYXFbbIvejoeHh/cBvM2mvI10k7fU6wYeHh7eId6sc+1CkkQMbXRbH7rCw8PDW/NmP/jbyLWNZWcHwlb1PTw8PLzveX8BaTppzm9bNisAAAAASUVORK5CYII=">分享</a><div class="tags"><a href="/tags/Octave/"><i class="fa fa-tag"></i>Octave</a><a href="/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/"><i class="fa fa-tag"></i>一句话</a></div><div class="post-nav"><a class="pre" href="/2017/01/02/A-joke-about-a-stingy-person/">一个人，花九万买了一辆车之后……</a><a class="next" href="/2016/12/31/Happy-New-Year/">新年新气象</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
   shortname: 'chris-an-emacser',
   siteName: 'M-x Chris-An-Emacser',
   identifier: '2017/01/02/One-sentence-tips-on-software/',
