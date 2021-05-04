@@ -969,13 +969,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Pokemon-GO/</loc>
-        <lastmod>2019-05-28T18:56:24.097Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/UTF-8/</loc>
         <lastmod>2019-05-28T18:56:24.159Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2187,36 +2180,50 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E8%25AF%2597%25E8%25AF%258D%25E6%25AD%258C%25E8%25B5%258B/</loc>
-        <lastmod>2021-04-28T02:41:00.438Z</lastmod>
+        <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
+        <lastmod>2021-05-01T16:04:38.392Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2021-04-28T02:41:00.438Z</lastmod>
+        <loc>https://chriszheng.science/tags/%25E8%25AF%2597%25E8%25AF%258D%25E6%25AD%258C%25E8%25B5%258B/</loc>
+        <lastmod>2021-05-04T10:07:10.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
-        <lastmod>2021-04-28T02:41:00.438Z</lastmod>
+        <lastmod>2021-05-04T10:07:10.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E6%259C%2589%25E7%2594%259F%25E4%25B9%258B%25E5%25B9%25B4/</loc>
-        <lastmod>2021-04-28T02:41:00.438Z</lastmod>
+        <lastmod>2021-05-04T10:07:10.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
-        <lastmod>2021-05-01T16:04:38.392Z</lastmod>
+        <loc>https://chriszheng.science/tags/Pokemon-GO/</loc>
+        <lastmod>2021-05-04T10:07:25.276Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
+        <lastmod>2021-05-04T10:38:12.875Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%25AE%259D%25E5%258F%25AF%25E6%25A2%25A6/</loc>
+        <lastmod>2021-05-04T10:38:12.875Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
