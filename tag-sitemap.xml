@@ -1886,20 +1886,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/R7500v2/</loc>
-        <lastmod>2021-01-20T03:22:19.687Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/K2P/</loc>
-        <lastmod>2021-01-20T03:22:19.687Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E5%25B0%258F%25E7%25B1%25B3/</loc>
         <lastmod>2021-01-20T03:22:56.182Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1930,13 +1916,6 @@
     <url>
         <loc>https://chriszheng.science/tags/OpenWrt/</loc>
         <lastmod>2021-01-20T03:29:20.123Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/MT7620A/</loc>
-        <lastmod>2021-01-20T03:30:19.657Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -2117,13 +2096,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E7%2588%25B1%25E5%25A5%25BD/</loc>
-        <lastmod>2021-04-15T11:43:25.377Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
         <lastmod>2021-04-19T13:48:36.551Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2224,6 +2196,34 @@
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
         <lastmod>2021-06-20T16:43:44.484Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/MT7620A/</loc>
+        <lastmod>2021-06-25T07:31:29.669Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/R7500v2/</loc>
+        <lastmod>2021-06-25T07:31:29.669Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/K2P/</loc>
+        <lastmod>2021-06-25T07:31:29.669Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E7%2588%25B1%25E5%25A5%25BD/</loc>
+        <lastmod>2021-06-25T17:45:50.007Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
