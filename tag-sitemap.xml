@@ -2152,13 +2152,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Windows-XP/</loc>
-        <lastmod>2021-07-09T07:53:54.679Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
         <lastmod>2021-07-16T09:08:22.902Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2238,6 +2231,13 @@
     <url>
         <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
         <lastmod>2021-07-30T13:47:58.940Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Windows-XP/</loc>
+        <lastmod>2021-07-31T05:42:01.326Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
