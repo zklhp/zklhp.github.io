@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://chriszheng.science/2021/12/25/Recent-thoughts-2021-12-25/</loc>
-        <lastmod>2021-12-29T15:17:52.625Z</lastmod>
+        <lastmod>2021-12-31T15:40:19.564Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,15 @@
 
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2021-12-24T14:57:52.403Z</lastmod>
+        <lastmod>2021-12-29T15:44:10.226Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/09/07/Recent-thoughts-2018-09-07/</loc>
+        <lastmod>2021-12-29T15:24:44.377Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -338,14 +346,6 @@
     <url>
         <loc>https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/</loc>
         <lastmod>2021-03-28T15:23:47.647Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/09/07/Recent-thoughts-2018-09-07/</loc>
-        <lastmod>2021-03-28T15:19:00.813Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
