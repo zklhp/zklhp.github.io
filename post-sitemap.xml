@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2017/02/21/The-new-poor/</loc>
+        <lastmod>2022-01-01T15:57:24.298Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2022/01/01/Recent-thoughts-2022-01-01/</loc>
+        <lastmod>2022-01-01T15:06:29.199Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2021/12/25/Recent-thoughts-2021-12-25/</loc>
         <lastmod>2021-12-31T15:40:19.564Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -874,14 +890,6 @@
     <url>
         <loc>https://chriszheng.science/2017/11/29/I-didnt-speak-up/</loc>
         <lastmod>2019-09-01T18:23:13.854Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/02/21/The-new-poor/</loc>
-        <lastmod>2019-09-01T02:32:21.361Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
