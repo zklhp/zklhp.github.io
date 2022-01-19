@@ -9,7 +9,31 @@
 
     <url>
         <loc>https://chriszheng.science/2022/01/01/Recent-thoughts-2022-01-01/</loc>
-        <lastmod>2022-01-09T16:48:36.604Z</lastmod>
+        <lastmod>2022-01-19T07:30:03.294Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
+        <lastmod>2022-01-11T16:03:35.729Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2021/10/01/Recent-thoughts-2021-10-01/</loc>
+        <lastmod>2022-01-09T17:26:11.463Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2021/09/10/Recent-thoughts-2021-09-10/</loc>
+        <lastmod>2022-01-09T17:21:22.026Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +42,6 @@
     <url>
         <loc>https://chriszheng.science/2017/03/08/My-most-used-software/</loc>
         <lastmod>2022-01-07T15:56:43.834Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2022-01-05T05:36:18.115Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -82,22 +98,6 @@
     <url>
         <loc>https://chriszheng.science/2020/08/01/Recent-thoughts-2020-08-01/</loc>
         <lastmod>2021-11-23T05:22:39.907Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2021/10/01/Recent-thoughts-2021-10-01/</loc>
-        <lastmod>2021-10-29T13:50:26.795Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2021/09/10/Recent-thoughts-2021-09-10/</loc>
-        <lastmod>2021-10-02T12:32:58.464Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
