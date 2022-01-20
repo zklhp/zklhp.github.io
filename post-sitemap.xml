@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://chriszheng.science/2022/01/01/Recent-thoughts-2022-01-01/</loc>
-        <lastmod>2022-01-19T07:30:03.294Z</lastmod>
+        <lastmod>2022-01-20T08:13:35.503Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,23 @@
 
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2022-01-11T16:03:35.729Z</lastmod>
+        <lastmod>2022-01-20T07:52:54.277Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/</loc>
+        <lastmod>2022-01-20T07:38:48.036Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/02/21/The-new-poor/</loc>
+        <lastmod>2022-01-19T13:28:37.392Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -42,14 +58,6 @@
     <url>
         <loc>https://chriszheng.science/2017/03/08/My-most-used-software/</loc>
         <lastmod>2022-01-07T15:56:43.834Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/02/21/The-new-poor/</loc>
-        <lastmod>2022-01-01T15:58:06.862Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -754,14 +762,6 @@
     <url>
         <loc>https://chriszheng.science/2016/11/06/Grammarly-review/</loc>
         <lastmod>2020-04-26T13:35:58.267Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/</loc>
-        <lastmod>2020-04-26T13:16:17.743Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

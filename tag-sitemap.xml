@@ -1613,13 +1613,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Git/</loc>
-        <lastmod>2020-02-09T07:11:07.899Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/SumatraPDF/</loc>
         <lastmod>2020-03-08T06:30:03.453Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2075,13 +2068,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E7%25BD%2591%25E7%25AB%2599%25E4%25BF%25A1%25E6%2581%25AF/</loc>
-        <lastmod>2021-07-16T09:08:22.902Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E6%25AE%25B5%25E5%25AD%2590/</loc>
         <lastmod>2021-07-26T16:41:16.515Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2201,13 +2187,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E5%2588%2586%25E4%25BA%25AB/</loc>
-        <lastmod>2022-01-01T15:58:06.862Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E8%25BD%25AF%25E4%25BB%25B6/</loc>
         <lastmod>2022-01-07T15:56:43.834Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2229,29 +2208,50 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/%25E5%2588%2586%25E4%25BA%25AB/</loc>
+        <lastmod>2022-01-19T13:28:37.392Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E7%25BD%2591%25E7%25AB%2599%25E4%25BF%25A1%25E6%2581%25AF/</loc>
+        <lastmod>2022-01-20T07:38:48.036Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/Octave/</loc>
-        <lastmod>2022-01-11T16:03:35.729Z</lastmod>
+        <lastmod>2022-01-20T07:52:54.277Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
-        <lastmod>2022-01-11T16:03:35.729Z</lastmod>
+        <lastmod>2022-01-20T07:52:54.277Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2022-01-19T07:30:03.294Z</lastmod>
+        <lastmod>2022-01-20T08:13:35.503Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Git/</loc>
+        <lastmod>2022-01-20T08:13:35.503Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2022-01-19T07:30:03.294Z</lastmod>
+        <lastmod>2022-01-20T08:13:35.503Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

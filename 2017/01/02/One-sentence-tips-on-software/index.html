@@ -197,8 +197,43 @@ font-style: normal;
 </ol>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i <span class="string">&quot;Cloud.Atlas.2012.RUS.Blu-Ray.1080p.AC3.x264.mkv&quot;</span> -i <span class="string">&quot;Cloud.Atlas.2012.English.Audio.AC3.DD5.1.448K.Angrybirdy@CHD.ac3&quot;</span> -c copy -map 0:0 -map 1:0 out.mkv</span><br></pre></td></tr></table></figure>
 <ol start="8">
+<li>ffmpeg合并字幕并且设为默认</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i in.mp4 -i in.srt -c copy -disposition:s:0 default out.mkv</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/26956762/ffmpeg-set-subtitles-track-as-default">来源</a>。</p>
+<ol start="9">
+<li>正确的用ffmpeg截取视频的方法：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg.exe -ss 1:8:57 -i <span class="string">&quot;阿凡达 Avatar Extended Collector&#x27;s Edition 2009 BluRay 1080p DTS x264-CnSCG.mkv&quot;</span> -t 12 -c copy a.mkv</span><br></pre></td></tr></table></figure>
+<p>注意，这里必须写时间长度，用<code>-t</code>。</p>
+<ol start="10">
+<li>
+<p>转换<code>MKV</code>到<code>MP4</code>有好多坑，一个是字幕需要提取后嵌入，一个是音频编码搞不好浏览器不支持，再一个是时间轴不一致，还可能有字体问题。一个成功的示例代码：<code>ffmpeg.exe -ss 1:8:57.640 -copyts -i &quot;a.mkv&quot; -t 11 -c:a libmp3lame -ss 1:8:57.640 -vf subtitles=a.srt:force_style='Fontname=微软雅黑' wrong.mp4</code>。</p>
+</li>
 <li>
 <p><code>.ts</code>视频可以直接用<code>cat</code>合并。<a target="_blank" rel="noopener" href="https://superuser.com/questions/692990/use-ffmpeg-copy-codec-to-combine-ts-files-into-a-single-mp4">更多关于合并视频的知识</a>。</p>
+</li>
+<li>
+<p>用ffmpeg给视频加简单的淡入、淡出和字幕特效：</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i a.mp4 -vf <span class="string">&quot;fade=t=in:st=0:d=2, \</span></span><br><span class="line"><span class="string">fade=t=out:st=32:d=2, \</span></span><br><span class="line"><span class="string">drawtext=enable=&#x27;between(t,2,20)&#x27;:fontfile=HiraginoSansGB-W3.otf:textfile=a.txt:x=(w-text_w)/2-30:y=h-th-80:fontcolor=white:fontsize=50&quot;</span> -t <span class="string">&quot;34&quot;</span> -c:a copy -vcodec libx264 -crf 20 -preset slow output.mp4</span><br></pre></td></tr></table></figure>
+<p>把文字放在单独的文件<code>a.txt</code>里防止编码错误。另外，我发现用服务器编码并不会快多少。</p>
+<ol start="13">
+<li>抓取<code>m3u8</code>形式的在线视频：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -allowed_extensions <span class="string">&quot;ALL&quot;</span> -protocol_whitelist file,http,https,tcp,tls,crypto -user_agent <span class="string">&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/601.7.8 (KHTML, like Gecko) Version/9.1.3 Safari/537.86.7&quot;</span> -i http://185.38.12.60/sec/1503173737/363333397f6b65370bfc740ca4dea8c3f8dd2a93419f7748/ivs/12/b1/2ec5e15ba2a6/hls/tracks-4,5/index.m3u8 -c copy pd.mkv</span><br></pre></td></tr></table></figure>
+<p>比较新的ffmpeg有奇奇怪怪的bug，需要加参数，可以用<code>wget</code>下载下来后，本地操作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -allowed_extensions &quot;ALL&quot; -protocol_whitelist file,http,https,tcp,tls,crypto -i a.m3u8 -c copy a.mkv</span><br></pre></td></tr></table></figure>
+<p>需要注意加密视频要提供key，比如<code>ts.key</code><br>
+<a target="_blank" rel="noopener" href="https://apple.stackexchange.com/questions/158360/how-to-download-m3u8-stream-to-local-hd-in-os-x">来源</a>。</p>
+<ol start="14">
+<li>把图片转成视频：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -framerate 12 -i <span class="string">&quot;a_%03d.bmp&quot;</span> -vcodec libx264 -crf 1 -preset slow -vframes 1000 -pix_fmt yuv420p a.mp4</span><br></pre></td></tr></table></figure>
+<ol start="15">
+<li>
+<p>用mpv播放网络音频容易断，加上<code>--stream-lavf-o=reconnect_streamed=1</code>参数可以自动重新连接。播放网络音频默认的超时值是1分钟。<a target="_blank" rel="noopener" href="https://github.com/mpv-player/mpv/issues/5793">出处</a>。</p>
 </li>
 <li>
 <p>Shadowsocks的“ss-stunnel”是用来进行转发的，数据走的是Shadowsocks的协议，用法类似<code>ss-tunnel.exe -u -c &quot;C:/msys64/etc/shadowsocks/config.json&quot; -L &quot;8.8.8.8:53&quot; -l 53</code>，实现在本地的53端口起一个DNS服务器，而DNS的解析被转发到谷歌的DNS。</p>
@@ -235,7 +270,7 @@ font-style: normal;
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://chriszheng.science/index.html --socks5-hostname localhost:65500 -O</span><br></pre></td></tr></table></figure>
-<ol start="20">
+<ol start="27">
 <li>
 <p>用代理<code>git clone</code>的方法：<code>ALL_PROXY=socks5://127.0.0.1:65500 git clone https://github.com/neomutt/neomutt</code>。</p>
 </li>
@@ -275,7 +310,7 @@ font-style: normal;
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set -g mouse on</span><br><span class="line">set -g status-right &#39; #&#123;?client_prefix,#[reverse]&lt;Prefix&gt;#[noreverse] ,&#125;&quot;#&#123;&#x3D;21:pane_title&#125;&quot; %H:%M %d-%b-%y&#39;</span><br></pre></td></tr></table></figure>
 <p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/11832199/tmux-set-g-mouse-mode-on-doesnt-work/42332679">来源1</a>。<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/12003726/give-a-hint-when-press-prefix-key-in-tmux">来源2</a>。</p>
-<ol start="32">
+<ol start="39">
 <li>
 <p>Windows下使用Firefox还是必须得用Flash，而第三方修改过的Flash比原始版的好。火狐吧的文科一直维护去沙箱版Flash，下载地址 <br>
 <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1boVSQXx#list/path=%2F">https://pan.baidu.com/s/1boVSQXx#list/path=%2F</a> <br>
@@ -299,12 +334,12 @@ font-style: normal;
 </li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># ~&#x2F;.mutt&#x2F;muttrc</span><br><span class="line">auto_view text&#x2F;html</span><br><span class="line">alternative_order text&#x2F;plain text&#x2F;html</span><br><span class="line"># ~&#x2F;.mailcap</span><br><span class="line">text&#x2F;html; &quot;&#x2F;C&#x2F;Program Files&#x2F;Mozilla Firefox&#x2F;firefox&quot; &quot;$(cygpath -w %s)&quot; &amp;&amp; sleep 2; nametemplate&#x3D;%s.html; copiousoutput</span><br></pre></td></tr></table></figure>
-<ol start="38">
+<ol start="45">
 <li>ImageMagick可以重设图片的DPI，方法是</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">convert -units PixelsPerInch 输入图片.png -density 600 -trim 输出图片名.png</span><br></pre></td></tr></table></figure>
 <p>顺带演示了<code>-trim</code>去白边。</p>
-<ol start="39">
+<ol start="46">
 <li>
 <p>Git可以用<code>.git/info/exclude</code>代替<code>.gitignore</code>来忽略本地文件，这种方法不必提交到远程。<a target="_blank" rel="noopener" href="http://mbork.pl/2018-10-14_Magit_and_C-u_i">来源</a>。</p>
 </li>
@@ -313,41 +348,10 @@ font-style: normal;
 <a target="_blank" rel="noopener" href="https://download.mozilla.org/?product=firefox-latest&amp;os=win64&amp;lang=zh-CN">https://download.mozilla.org/?product=firefox-latest&amp;os=win64&amp;lang=zh-CN</a></p>
 </li>
 <li>
-<p>正确的用ffmpeg截取视频的方法：</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg.exe -ss 1:8:57 -i <span class="string">&quot;阿凡达 Avatar Extended Collector&#x27;s Edition 2009 BluRay 1080p DTS x264-CnSCG.mkv&quot;</span> -t 12 -c copy a.mkv</span><br></pre></td></tr></table></figure>
-<p>注意，这里必须写时间长度，用<code>-t</code>。</p>
-<ol start="42">
-<li>
 <p>如果VirtualBox的VDI文件是动态大小，占用空间变大了，可以在虚拟机的系统里用<a target="_blank" rel="noopener" href="http://technet.microsoft.com/en-us/sysinternals/bb897443">SDelete</a>命令清理自由空间：<code>sdelete.exe c: -z</code>，然后用VBoxManage的<code>vboxmanage modifymedium --compact thedisk.vdi</code>来压缩。<a target="_blank" rel="noopener" href="https://superuser.com/questions/529149/how-to-compact-virtualboxs-vdi-file-size">来源</a>。</p>
 </li>
 <li>
-<p><code>ffmpeg</code>合并字幕并且设为默认</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i in.mp4 -i in.srt -c copy -disposition:s:0 default out.mkv</span><br></pre></td></tr></table></figure>
-<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/26956762/ffmpeg-set-subtitles-track-as-default">来源</a>。</p>
-<ol start="44">
-<li>
 <p>统计汉字的字数<code>wc -m *.md</code>。</p>
-</li>
-<li>
-<p>抓取<code>m3u8</code>形式的在线视频：</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -allowed_extensions <span class="string">&quot;ALL&quot;</span> -protocol_whitelist file,http,https,tcp,tls,crypto -user_agent <span class="string">&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/601.7.8 (KHTML, like Gecko) Version/9.1.3 Safari/537.86.7&quot;</span> -i http://185.38.12.60/sec/1503173737/363333397f6b65370bfc740ca4dea8c3f8dd2a93419f7748/ivs/12/b1/2ec5e15ba2a6/hls/tracks-4,5/index.m3u8 -c copy pd.mkv</span><br></pre></td></tr></table></figure>
-<p>比较新的<code>ffmpeg</code>有奇奇怪怪的bug，需要加参数，可以用<code>wget</code>下载下来后，本地操作：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -allowed_extensions &quot;ALL&quot; -protocol_whitelist file,http,https,tcp,tls,crypto -i a.m3u8 -c copy a.mkv</span><br></pre></td></tr></table></figure>
-<p>需要注意加密视频要提供key，比如<code>ts.key</code><br>
-<a target="_blank" rel="noopener" href="https://apple.stackexchange.com/questions/158360/how-to-download-m3u8-stream-to-local-hd-in-os-x">来源</a>。</p>
-<ol start="46">
-<li>把图片转成视频：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -framerate 12 -i <span class="string">&quot;a_%03d.bmp&quot;</span> -vcodec libx264 -crf 1 -preset slow -vframes 1000 -pix_fmt yuv420p a.mp4</span><br></pre></td></tr></table></figure>
-<ol start="47">
-<li>
-<p>用mpv播放网络音频容易断，加上<code>--stream-lavf-o=reconnect_streamed=1</code>参数可以自动重新连接。播放网络音频默认的超时值是1分钟。<a target="_blank" rel="noopener" href="https://github.com/mpv-player/mpv/issues/5793">出处</a>。</p>
 </li>
 <li>
 <p>Linux的<code>sensors</code>命令可以输出传感器探测到的温度，如何把温度信息和相应的硬件匹配呢？<code>ls -l /sys/dev/block/*</code>。<a target="_blank" rel="noopener" href="https://bbs.archlinux.org/viewtopic.php?id=252832">来源</a>。</p>
@@ -374,17 +378,10 @@ font-style: normal;
 <p><a target="_blank" rel="noopener" href="https://goproxy.cn/">Goproxy 中国</a></p>
 </li>
 <li>
-<p>用ffmpeg给视频加简单的淡入、淡出和字幕特效：</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i a.mp4 -vf <span class="string">&quot;fade=t=in:st=0:d=2, \</span></span><br><span class="line"><span class="string">fade=t=out:st=32:d=2, \</span></span><br><span class="line"><span class="string">drawtext=enable=&#x27;between(t,2,20)&#x27;:fontfile=HiraginoSansGB-W3.otf:textfile=a.txt:x=(w-text_w)/2-30:y=h-th-80:fontcolor=white:fontsize=50&quot;</span> -t <span class="string">&quot;34&quot;</span> -c:a copy -vcodec libx264 -crf 20 -preset slow output.mp4</span><br></pre></td></tr></table></figure>
-<p>把文字放在单独的文件<code>a.txt</code>里防止编码错误。另外，我发现用服务器编码并不会快多少。</p>
-<ol start="57">
-<li>
 <p><code>BUILDDIR=/tmp/makepkg makepkg</code>. <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Makepkg#Building_from_files_in_memory">来源</a>。</p>
 </li>
 <li>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/7d8003ba2324">Github超过100M的大文件上传</a>。</p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/7d8003ba2324">Github超过100M的大文件上传</a>，用到了LFS。</p>
 </li>
 </ol>
 <h2 id="科学相关软件技巧">科学相关软件技巧</h2>
@@ -545,7 +542,7 @@ A: 运行安装目录下的<code>Configure EndNote.exe</code>。</p>
 <p>运行LEDE的路由器彻底禁用DHCPv6，配置LAN的<code>IPv6 分配长度</code>，设为禁用。<a target="_blank" rel="noopener" href="https://sleele.com/2020/02/03/openwrt-lede-%E5%85%B3%E9%97%ADipv6%E5%88%86%E9%85%8D/">来源</a>。</p>
 </li>
 </ol>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!"></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>我的一句话经验——软件篇</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2017-01-02</p><p><span>最后更新：</span>2022-01-12</p><p><span>原始链接：</span><a href="/2017/01/02/One-sentence-tips-on-software/">https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/" data-id="ckxrgnspn00knakbp6w0u6c1a" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3dwWojMRAE0Pz/T+9eF8w4Vd1S4oU3p2A0M3oySHK1IF9f8fXnn+v1k9fPn+7dtH9teezCw8PDW3T9fSfev+CpzRMmZySD+9hDPDw8vGu8p+62bfLr/RAnQ/O+P3h4eHifw0u2ubNnJvthPDw8vP+R1/7qn3U6XyTw8PDwfos3C1s3sW/e9R/KWvDw8PAuVJE+5+8r9T08PDy8dVV9tki0U3xeQqt7i4eHh3eBNwsa8lfODl0lsUVxfAEPDw/vKO/UNJ0HFvmikrd/bIOHh4d3gbeZiNsIdRMKb+7Cw8PDO8vLp9128ZhtiJO78oUKDw8P7x5vM8W3U3mLT5DFBhoPDw/vKK8NZ5PSVx7stndFXw8eHh7eBd4sYJ1tefNnzo5bHQgm8PDw8AJevuVtOzorpOVLSBSI4OHh4V3jbSbu9pN8KC+GEXh4eHgLXh4iJAORl8H2YUTeNzw8PLyzvBaQhLBtm3wJqQMLPDw8vAu8PJLIHzdbQvIn518PHh4e3j1ePpfOimSzY17JNr2IdPHw8PCO8vIQYT+J53flA/RNqQwPDw/vKC8PRpPt8qmloi2S1VkLHh4e3nYXeuxfJeUBRxt5bOJdPDw8vHu8fNI/VfLPB6JdfupfBnh4eHiHeGeDg1mxrT2g8Ji14OHh4V3g5UX6Vdm+LIMdqOnh4eHh/Qgvh81ankpZj50pw8PDwxvx8u1vHrnmA9fGvsWFh4eHdxk2O0bQImfhRR6aFIeu8PDw8Ere2Tl2U6xqO73C4OHh4a15badnpLNLTl6ow8PDw7vHy0OHWRS7KmItjmTh4eHhfQIvWTZmYXFbbIvejoeHh/cBvM2mvI10k7fU6wYeHh7eId6sc+1CkkQMbXRbH7rCw8PDW/NmP/jbyLWNZWcHwlb1PTw8PLzveX8BaTppzm9bNisAAAAASUVORK5CYII=">分享</a><div class="tags"><a href="/tags/Octave/"><i class="fa fa-tag"></i>Octave</a><a href="/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/"><i class="fa fa-tag"></i>一句话</a></div><div class="post-nav"><a class="pre" href="/2017/01/02/A-joke-about-a-stingy-person/">一个人，花九万买了一辆车之后……</a><a class="next" href="/2016/12/31/Happy-New-Year/">新年新气象</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!"></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>我的一句话经验——软件篇</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2017-01-02</p><p><span>最后更新：</span>2022-01-20</p><p><span>原始链接：</span><a href="/2017/01/02/One-sentence-tips-on-software/">https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/" data-id="ckxrgnspn00knakbp6w0u6c1a" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3dwWojMRAE0Pz/T+9eF8w4Vd1S4oU3p2A0M3oySHK1IF9f8fXnn+v1k9fPn+7dtH9teezCw8PDW3T9fSfev+CpzRMmZySD+9hDPDw8vGu8p+62bfLr/RAnQ/O+P3h4eHifw0u2ubNnJvthPDw8vP+R1/7qn3U6XyTw8PDwfos3C1s3sW/e9R/KWvDw8PAuVJE+5+8r9T08PDy8dVV9tki0U3xeQqt7i4eHh3eBNwsa8lfODl0lsUVxfAEPDw/vKO/UNJ0HFvmikrd/bIOHh4d3gbeZiNsIdRMKb+7Cw8PDO8vLp9128ZhtiJO78oUKDw8P7x5vM8W3U3mLT5DFBhoPDw/vKK8NZ5PSVx7stndFXw8eHh7eBd4sYJ1tefNnzo5bHQgm8PDw8AJevuVtOzorpOVLSBSI4OHh4V3jbSbu9pN8KC+GEXh4eHgLXh4iJAORl8H2YUTeNzw8PLyzvBaQhLBtm3wJqQMLPDw8vAu8PJLIHzdbQvIn518PHh4e3j1ePpfOimSzY17JNr2IdPHw8PCO8vIQYT+J53flA/RNqQwPDw/vKC8PRpPt8qmloi2S1VkLHh4e3nYXeuxfJeUBRxt5bOJdPDw8vHu8fNI/VfLPB6JdfupfBnh4eHiHeGeDg1mxrT2g8Ji14OHh4V3g5UX6Vdm+LIMdqOnh4eHh/Qgvh81ankpZj50pw8PDwxvx8u1vHrnmA9fGvsWFh4eHdxk2O0bQImfhRR6aFIeu8PDw8Ere2Tl2U6xqO73C4OHh4a15badnpLNLTl6ow8PDw7vHy0OHWRS7KmItjmTh4eHhfQIvWTZmYXFbbIvejoeHh/cBvM2mvI10k7fU6wYeHh7eId6sc+1CkkQMbXRbH7rCw8PDW/NmP/jbyLWNZWcHwlb1PTw8PLzveX8BaTppzm9bNisAAAAASUVORK5CYII=">分享</a><div class="tags"><a href="/tags/Octave/"><i class="fa fa-tag"></i>Octave</a><a href="/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/"><i class="fa fa-tag"></i>一句话</a></div><div class="post-nav"><a class="pre" href="/2017/01/02/A-joke-about-a-stingy-person/">一个人，花九万买了一辆车之后……</a><a class="next" href="/2016/12/31/Happy-New-Year/">新年新气象</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
   shortname: 'chris-an-emacser',
   siteName: 'M-x Chris-An-Emacser',
   identifier: '2017/01/02/One-sentence-tips-on-software/',
