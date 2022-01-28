@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://chriszheng.science/2022/01/01/Recent-thoughts-2022-01-01/</loc>
-        <lastmod>2022-01-20T08:13:35.503Z</lastmod>
+        <lastmod>2022-01-27T14:44:24.204Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,55 @@
 
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
-        <lastmod>2022-01-20T07:52:54.277Z</lastmod>
+        <lastmod>2022-01-27T12:20:36.664Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
+        <lastmod>2022-01-27T11:04:24.135Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2021/12/25/Recent-thoughts-2021-12-25/</loc>
+        <lastmod>2022-01-27T10:47:25.048Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/08/01/Recent-thoughts-2019-08-01/</loc>
+        <lastmod>2022-01-27T10:12:08.475Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
+        <lastmod>2022-01-26T15:15:39.045Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2020/08/01/Recent-thoughts-2020-08-01/</loc>
+        <lastmod>2022-01-23T05:43:25.800Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/02/02/Recent-thoughts-2019-02-02/</loc>
+        <lastmod>2022-01-20T14:46:20.776Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -64,14 +112,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2021/12/25/Recent-thoughts-2021-12-25/</loc>
-        <lastmod>2021-12-31T15:40:19.564Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2018/09/07/Recent-thoughts-2018-09-07/</loc>
         <lastmod>2021-12-29T15:24:44.377Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -98,14 +138,6 @@
     <url>
         <loc>https://chriszheng.science/2021/11/11/Recent-thoughts-2021-11-11/</loc>
         <lastmod>2021-12-08T03:06:26.157Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2020/08/01/Recent-thoughts-2020-08-01/</loc>
-        <lastmod>2021-11-23T05:22:39.907Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -160,14 +192,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2018/07/01/Patent-application-experience/</loc>
-        <lastmod>2021-08-08T02:27:42.461Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/03/18/Talk-about-Emacs-and-DDE/</loc>
         <lastmod>2021-08-03T15:58:49.681Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -210,14 +234,6 @@
     <url>
         <loc>https://chriszheng.science/2018/12/02/Recent-thoughts-2018-12-2/</loc>
         <lastmod>2021-07-09T07:53:54.679Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/08/01/Get-on-board-quickly/</loc>
-        <lastmod>2021-06-25T07:31:29.669Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -432,14 +448,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/02/02/Recent-thoughts-2019-02-02/</loc>
-        <lastmod>2021-01-25T14:21:45.533Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2019/10/07/Recent-thoughts-2019-10-07/</loc>
         <lastmod>2021-01-23T07:57:29.474Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -586,14 +594,6 @@
     <url>
         <loc>https://chriszheng.science/2019/01/01/Recent-thoughts-2019-01-01/</loc>
         <lastmod>2020-11-09T04:30:21.450Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/08/01/Recent-thoughts-2019-08-01/</loc>
-        <lastmod>2020-10-02T14:51:59.382Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
