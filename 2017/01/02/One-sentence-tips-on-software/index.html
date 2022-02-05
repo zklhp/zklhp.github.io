@@ -51,11 +51,20 @@ font-style: normal;
 <p>用<code>date +%j</code>可以告诉你今天是一年中的第多少天，对于算天数非常有用。<a target="_blank" rel="noopener" href="https://linux.die.net/man/1/date">date的手册</a>。</p>
 </li>
 <li>
-<p>写Bash脚本的好参考：<br>
-<a target="_blank" rel="noopener" href="https://github.com/progrium/bashstyle">progrium/bashstyle</a> <br>
-以及一个小教程 <br>
-<a target="_blank" rel="noopener" href="https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/">Ten Things I Wish I’d Known About bash</a> <br>
-我觉得最有用也最不容易记住的是<a target="_blank" rel="noopener" href="https://www.tldp.org/LDP/abs/html/parameter-substitution.html">变量替换</a></p>
+<p>写Bash脚本的好参考：</p>
+</li>
+</ol>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/progrium/bashstyle">progrium/bashstyle</a></li>
+<li><a target="_blank" rel="noopener" href="https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/">Ten Things I Wish I’d Known About bash</a></li>
+<li><a target="_blank" rel="noopener" href="https://zwischenzugs.com/2018/01/21/ten-more-things-i-wish-id-known-about-bash/">Ten More Things I Wish I’d Known About bash</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.pcwdld.com/linux-commands-cheat-sheet/">Linux Commands Cheat Sheet</a></li>
+<li><a target="_blank" rel="noopener" href="https://ss64.com/bash/">A-Z Index of Bash and utilities</a></li>
+<li><a target="_blank" rel="noopener" href="https://ss64.com/bash/syntax-pronounce.html">Pronunciation guide for UNIX</a></li>
+</ul>
+<ol start="11">
+<li>
+<p>Bash里我觉得最有用也最不容易记住的是<a target="_blank" rel="noopener" href="https://www.tldp.org/LDP/abs/html/parameter-substitution.html">变量替换</a>。</p>
 </li>
 <li>
 <p>上面的第二个链接告诉我们单引号<code>''</code>不会做替换，而双引号<code>&quot;&quot;</code>会替换。我们一般写<code>sed</code>和<code>awk</code>命令都用单引号，就是不希望我们的代码被替换，可有时候我恰恰需要替换，这时候换用双引号就好了，请看示例代码</p>
@@ -63,7 +72,7 @@ font-style: normal;
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Etdl=$(grep <span class="string">&quot;FINAL SINGLE POINT ENERGY&quot;</span> /data/qm/B97-3c/a.out | tail -n1 | awk <span class="string">&#x27;&#123;print $(NF)&#125;&#x27;</span>)</span><br><span class="line">sed <span class="string">&quot;s/^\([^ ]*\)/\1\t<span class="variable">$&#123;Etdl&#125;</span>/&quot;</span> /tmp/a</span><br></pre></td></tr></table></figure>
 <p>演示了如何把内容附加到每行后面。</p>
-<ol start="12">
+<ol start="13">
 <li>
 <p>从第三行输出文件内容可以用awk实现：<code>awk 'NR&gt;=3' &quot;aaa.xyz&quot;</code>。</p>
 </li>
@@ -73,13 +82,13 @@ font-style: normal;
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">parallel <span class="built_in">echo</span> &#123;&#125; + 1 is &#123;= <span class="string">&#x27;$_++&#x27;</span> =&#125; ::: &#123;1..10&#125;</span><br><span class="line">time parallel -N0 -j4 sleep 1 ::: &#123;1..10&#125;</span><br><span class="line">ls | parallel <span class="string">&#x27;cd &#123;&#125;; grep Chris *.out&#x27;</span></span><br></pre></td></tr></table></figure>
 <p>注意，parallel会把你的输入放到命令行里，所以上面的命令如果不加<code>-N0</code>会睡很长时间。另外parallel在Android的termux环境中需设置环境变量<code>PARALLEL_SHELL</code>。</p>
-<ol start="14">
+<ol start="15">
 <li>Linux的字符终端(TTY)可以旋转，方法是</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> 1 | sudo tee /sys/class/graphics/fbcon/rotate_all</span><br></pre></td></tr></table></figure>
 <p>注意下面这种写法不行。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">echo</span> 1 &gt; /sys/class/graphics/fbcon/rotate_all</span><br></pre></td></tr></table></figure>
-<ol start="15">
+<ol start="16">
 <li>
 <p>Bash里<code>&lt;()</code>的含义是：括号内的代码的输出被重定向到一个文件<code>/dev/fd/63</code>。执行<code>cat &lt;(ls)</code>就得到了<code>ls</code>的输出，执行<code>echo &lt;(ls)</code>得到了文件名。这个<code>/dev/fd/63</code>是一个命名管道(named pipe)，一切皆文件嘛，就当一个文件使。<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/2443085/what-does-cmd-args-mean-in-the-shell">参考</a>。</p>
 </li>
@@ -88,11 +97,11 @@ font-style: normal;
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BC_LINE_LENGTH=0 bc -l &lt;&lt;&lt; <span class="string">&quot;scale = 100; a(1) * 4&quot;</span></span><br></pre></td></tr></table></figure>
-<ol start="17">
+<ol start="18">
 <li>上一条技巧里的<code>&lt;&lt;&lt;</code>是“Here Strings”，Bash等shell才有，sh里没有，<code>bc -l &lt;&lt;&lt; &quot;scale = 100; a(1) * 4&quot;</code>等价于<code>echo &quot;scale = 100; a(1) * 4&quot; | bc -l</code>，但前者速度快很多。<a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/76402/command-line-instead-of">参考</a>。测速代码</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">time <span class="keyword">for</span> i <span class="keyword">in</span> &#123;1..10000&#125;; <span class="keyword">do</span> <span class="built_in">echo</span> <span class="string">&quot;&quot;</span> | : ; <span class="keyword">done</span> <span class="comment"># 84s</span></span><br><span class="line">time <span class="keyword">for</span> i <span class="keyword">in</span> &#123;1..10000&#125;; <span class="keyword">do</span> : &lt;&lt;&lt; <span class="string">&quot;&quot;</span>; <span class="keyword">done</span> <span class="comment"># 5s</span></span><br></pre></td></tr></table></figure>
-<ol start="18">
+<ol start="19">
 <li>
 <p><code>echo</code>不读sdtio，所以<code>echo &lt;&lt;&lt; $'Hello\nWorld'</code>没输出，这时候应该用<code>cat &lt;&lt;&lt; $'Hello\nWorld'</code>。</p>
 </li>
@@ -111,26 +120,26 @@ font-style: normal;
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ cat a.txt</span><br><span class="line">张三    96</span><br><span class="line">李四    60</span><br><span class="line">王二    100</span><br><span class="line">$ sort -k2 -n a.txt</span><br><span class="line">李四    60</span><br><span class="line">张三    96</span><br><span class="line">王二    100</span><br></pre></td></tr></table></figure>
 <p>这里是根据第二列的值对行进行排序。我以前只知道<code>sort</code>可以行排序，现在会根据指定的列排序，用Excel的理由又少了一个。</p>
-<ol start="23">
+<ol start="24">
 <li>接上面一条，<a target="_blank" rel="noopener" href="https://www.gnu.org/software/coreutils/coreutils.html">Coreutils</a>里的join可以连接表格，比如</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">$ cat a.txt</span><br><span class="line">姓名	成绩1</span><br><span class="line">张三	90</span><br><span class="line">李四	80</span><br><span class="line">王二	100</span><br><span class="line">$ (head -n 1 a.txt &amp;&amp; tail -n +2 a.txt | sort) &gt; a.txt.sorted</span><br><span class="line">$ cat a.txt.sorted</span><br><span class="line">姓名	成绩1</span><br><span class="line">李四	80</span><br><span class="line">王二	100</span><br><span class="line">张三	90</span><br><span class="line">$ cat b.txt</span><br><span class="line">姓名	成绩2</span><br><span class="line">张三	92</span><br><span class="line">李四	90</span><br><span class="line">王二	90</span><br><span class="line">$ (head -n 1 b.txt &amp;&amp; tail -n +2 b.txt | sort) &gt; b.txt.sorted</span><br><span class="line">$ cat b.txt.sorted</span><br><span class="line">姓名	成绩2</span><br><span class="line">李四	90</span><br><span class="line">王二	90</span><br><span class="line">张三	92</span><br><span class="line">$ join a.txt.sorted b.txt.sorted &gt; c</span><br><span class="line">$ cat c</span><br><span class="line">姓名 成绩1 成绩2</span><br><span class="line">李四 80 90</span><br><span class="line">王二 100 90</span><br><span class="line">张三 90 92</span><br></pre></td></tr></table></figure>
 <p>上面的代码还演示了如何在排序的时候保留第一行。更多的解释请看<a target="_blank" rel="noopener" href="https://www.gnu.org/software/coreutils/manual/html_node/join-invocation.html">join的手册</a>。</p>
-<ol start="24">
+<ol start="25">
 <li>可以用awk进行「转置」，把列变成行，方法是设置<code>ORS</code>，控制的是输出的间隔符，设为空格就把列连接起来了。比如用上面的数据，对第一列进行转置，借助Emacs的<code>M-|</code>，代码是：</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">awk &#39;BEGIN&#123;ORS&#x3D;&quot; &quot;&#125; &#123;print $1&#125;&#39;</span><br></pre></td></tr></table></figure>
-<ol start="25">
+<ol start="26">
 <li>比如我有一列姓名，我想知道每个人出现的次数，怎么办呢？实例输入文件如下：</li>
 </ol>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">李四</span><br><span class="line">王二</span><br><span class="line">张三</span><br><span class="line">李四</span><br><span class="line">李四</span><br></pre></td></tr></table></figure>
 <p>可以借助sort和uniq再加上awk很方便的进行处理：`sort | uniq -c | sort -k1 | awk ‘{print $2 “\t” $1}’，结果如下：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">王二	1</span><br><span class="line">张三	1</span><br><span class="line">李四	3</span><br></pre></td></tr></table></figure>
-<ol start="26">
+<ol start="27">
 <li>如何只复制指定的文件并且保留文件夹结构：</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rsync -rv E5internet:/tmp/screening/ /tmp/ --include=<span class="string">&quot;*/&quot;</span> --include=<span class="string">&quot;a.xyz&quot;</span> --exclude=<span class="string">&quot;*&quot;</span></span><br></pre></td></tr></table></figure>
-<ol start="27">
+<ol start="28">
 <li>
 <p>似乎<code>rsync</code>比<code>scp</code>快。注意是<code>rsync</code>而不是<code>sync</code>。<code>rsync</code>显示速度可以加<code>--info=progress2</code>。</p>
 </li>
@@ -154,7 +163,7 @@ font-style: normal;
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo modprobe -r usb-storage</span><br><span class="line">sudo modprobe -S 5.0.5-arch1-1-ARCH -f usb-storage</span><br><span class="line">sudo sh -c <span class="string">&quot;echo 0 &gt; /sys/bus/usb/devices/2-14/authorized&quot;</span></span><br><span class="line">sudo sh -c <span class="string">&quot;echo 1 &gt; /sys/bus/usb/devices/2-14/authorized&quot;</span></span><br></pre></td></tr></table></figure>
-<ol start="34">
+<ol start="35">
 <li>
 <p>成对替换可以用Coreutils里的<code>tr</code>，比如<code>tr 'abcd' 'jkmn'</code>，缺点是不支持UTF-8，遇到中文就完蛋。这个需求可以用<code>sed</code>实现，比如<code>sed 'y/“”/「」/'</code>。<a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/392035/can-i-use-sed-to-translate-characters-like-with-tr/392036">来源</a>。</p>
 </li>
@@ -163,7 +172,7 @@ font-style: normal;
 </li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">parallel <span class="string">&#x27;sed -n &#123;&#125;p a.txt&#x27;</span> ::: 2 3 4</span><br></pre></td></tr></table></figure>
-<ol start="36">
+<ol start="37">
 <li>
 <p>创建指定格式的目录：<code>echo &#123;37..38&#125;- | xargs mkdir -p</code>。</p>
 </li>
@@ -542,7 +551,7 @@ A: 运行安装目录下的<code>Configure EndNote.exe</code>。</p>
 <p>运行LEDE的路由器彻底禁用DHCPv6，配置LAN的<code>IPv6 分配长度</code>，设为禁用。<a target="_blank" rel="noopener" href="https://sleele.com/2020/02/03/openwrt-lede-%E5%85%B3%E9%97%ADipv6%E5%88%86%E9%85%8D/">来源</a>。</p>
 </li>
 </ol>
-</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!"></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>我的一句话经验——软件篇</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2017-01-02</p><p><span>最后更新：</span>2022-01-27</p><p><span>原始链接：</span><a href="/2017/01/02/One-sentence-tips-on-software/">https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/" data-id="ckxrgnspn00knakbp6w0u6c1a" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3dwWojMRAE0Pz/T+9eF8w4Vd1S4oU3p2A0M3oySHK1IF9f8fXnn+v1k9fPn+7dtH9teezCw8PDW3T9fSfev+CpzRMmZySD+9hDPDw8vGu8p+62bfLr/RAnQ/O+P3h4eHifw0u2ubNnJvthPDw8vP+R1/7qn3U6XyTw8PDwfos3C1s3sW/e9R/KWvDw8PAuVJE+5+8r9T08PDy8dVV9tki0U3xeQqt7i4eHh3eBNwsa8lfODl0lsUVxfAEPDw/vKO/UNJ0HFvmikrd/bIOHh4d3gbeZiNsIdRMKb+7Cw8PDO8vLp9128ZhtiJO78oUKDw8P7x5vM8W3U3mLT5DFBhoPDw/vKK8NZ5PSVx7stndFXw8eHh7eBd4sYJ1tefNnzo5bHQgm8PDw8AJevuVtOzorpOVLSBSI4OHh4V3jbSbu9pN8KC+GEXh4eHgLXh4iJAORl8H2YUTeNzw8PLyzvBaQhLBtm3wJqQMLPDw8vAu8PJLIHzdbQvIn518PHh4e3j1ePpfOimSzY17JNr2IdPHw8PCO8vIQYT+J53flA/RNqQwPDw/vKC8PRpPt8qmloi2S1VkLHh4e3nYXeuxfJeUBRxt5bOJdPDw8vHu8fNI/VfLPB6JdfupfBnh4eHiHeGeDg1mxrT2g8Ji14OHh4V3g5UX6Vdm+LIMdqOnh4eHh/Qgvh81ankpZj50pw8PDwxvx8u1vHrnmA9fGvsWFh4eHdxk2O0bQImfhRR6aFIeu8PDw8Ere2Tl2U6xqO73C4OHh4a15badnpLNLTl6ow8PDw7vHy0OHWRS7KmItjmTh4eHhfQIvWTZmYXFbbIvejoeHh/cBvM2mvI10k7fU6wYeHh7eId6sc+1CkkQMbXRbH7rCw8PDW/NmP/jbyLWNZWcHwlb1PTw8PLzveX8BaTppzm9bNisAAAAASUVORK5CYII=">分享</a><div class="tags"><a href="/tags/Octave/"><i class="fa fa-tag"></i>Octave</a><a href="/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/"><i class="fa fa-tag"></i>一句话</a></div><div class="post-nav"><a class="pre" href="/2017/01/02/A-joke-about-a-stingy-person/">一个人，花九万买了一辆车之后……</a><a class="next" href="/2016/12/31/Happy-New-Year/">新年新气象</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!"></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>我的一句话经验——软件篇</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2017-01-02</p><p><span>最后更新：</span>2022-02-05</p><p><span>原始链接：</span><a href="/2017/01/02/One-sentence-tips-on-software/">https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/" data-id="ckxrgnspn00knakbp6w0u6c1a" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3dwWojMRAE0Pz/T+9eF8w4Vd1S4oU3p2A0M3oySHK1IF9f8fXnn+v1k9fPn+7dtH9teezCw8PDW3T9fSfev+CpzRMmZySD+9hDPDw8vGu8p+62bfLr/RAnQ/O+P3h4eHifw0u2ubNnJvthPDw8vP+R1/7qn3U6XyTw8PDwfos3C1s3sW/e9R/KWvDw8PAuVJE+5+8r9T08PDy8dVV9tki0U3xeQqt7i4eHh3eBNwsa8lfODl0lsUVxfAEPDw/vKO/UNJ0HFvmikrd/bIOHh4d3gbeZiNsIdRMKb+7Cw8PDO8vLp9128ZhtiJO78oUKDw8P7x5vM8W3U3mLT5DFBhoPDw/vKK8NZ5PSVx7stndFXw8eHh7eBd4sYJ1tefNnzo5bHQgm8PDw8AJevuVtOzorpOVLSBSI4OHh4V3jbSbu9pN8KC+GEXh4eHgLXh4iJAORl8H2YUTeNzw8PLyzvBaQhLBtm3wJqQMLPDw8vAu8PJLIHzdbQvIn518PHh4e3j1ePpfOimSzY17JNr2IdPHw8PCO8vIQYT+J53flA/RNqQwPDw/vKC8PRpPt8qmloi2S1VkLHh4e3nYXeuxfJeUBRxt5bOJdPDw8vHu8fNI/VfLPB6JdfupfBnh4eHiHeGeDg1mxrT2g8Ji14OHh4V3g5UX6Vdm+LIMdqOnh4eHh/Qgvh81ankpZj50pw8PDwxvx8u1vHrnmA9fGvsWFh4eHdxk2O0bQImfhRR6aFIeu8PDw8Ere2Tl2U6xqO73C4OHh4a15badnpLNLTl6ow8PDw7vHy0OHWRS7KmItjmTh4eHhfQIvWTZmYXFbbIvejoeHh/cBvM2mvI10k7fU6wYeHh7eId6sc+1CkkQMbXRbH7rCw8PDW/NmP/jbyLWNZWcHwlb1PTw8PLzveX8BaTppzm9bNisAAAAASUVORK5CYII=">分享</a><div class="tags"><a href="/tags/Octave/"><i class="fa fa-tag"></i>Octave</a><a href="/tags/%E4%B8%80%E5%8F%A5%E8%AF%9D/"><i class="fa fa-tag"></i>一句话</a></div><div class="post-nav"><a class="pre" href="/2017/01/02/A-joke-about-a-stingy-person/">一个人，花九万买了一辆车之后……</a><a class="next" href="/2016/12/31/Happy-New-Year/">新年新气象</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
   shortname: 'chris-an-emacser',
   siteName: 'M-x Chris-An-Emacser',
   identifier: '2017/01/02/One-sentence-tips-on-software/',
