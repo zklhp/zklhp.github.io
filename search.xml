@@ -8,7 +8,7 @@
       <link href="2022/02/03/Recent-thoughts-2022-02-03/"/>
       <url>2022/02/03/Recent-thoughts-2022-02-03/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><div id="aplayer" style="margin: 1em 0;"></div><script src="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script type="text/javascript">const ap = new APlayer({  container: document.getElementById('aplayer'),  audio: [{    name: 'Astronomia',    artist: 'Vicetone and Tony Igy',    url: '/files/Vicetone_Tony_Igy - Astronomia.mp3'  }]});</script><h2 id="riad-0一时爽-数据火葬场">RIAD 0一时爽，数据火葬场</h2><a id="more"></a>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><div id="aplayer" style="margin: 1em 0;"></div><script src="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script type="text/javascript">const ap = new APlayer({  container: document.getElementById('aplayer'),  audio: [{    name: 'Astronomia',    artist: 'Vicetone and Tony Igy',    url: '/files/Vicetone_Tony_Igy - Astronomia.mp3',    cover: '/img/Vicetone_Tony_Igy - Astronomia.jpg'  }]});</script><h2 id="riad-0一时爽-数据火葬场">RIAD 0一时爽，数据火葬场</h2><a id="more"></a>]]></content>
       
       
       <categories>
