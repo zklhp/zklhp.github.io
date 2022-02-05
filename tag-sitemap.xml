@@ -1634,13 +1634,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E5%2590%258D%25E4%25BA%25BA%25E5%2590%258D%25E8%25A8%2580/</loc>
-        <lastmod>2020-03-26T06:43:34.981Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E6%25B1%25AA%25E4%25BB%25B2%25E7%259B%25B4/</loc>
         <lastmod>2020-03-26T11:27:58.425Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2012,13 +2005,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
-        <lastmod>2021-07-16T09:08:22.902Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E6%25AE%25B5%25E5%25AD%2590/</loc>
         <lastmod>2021-07-26T16:41:16.515Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2194,13 +2180,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
-        <lastmod>2022-01-27T12:20:36.664Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/MT7620A/</loc>
         <lastmod>2022-01-28T13:00:00.662Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2222,43 +2201,64 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/%25E5%2590%258D%25E4%25BA%25BA%25E5%2590%258D%25E8%25A8%2580/</loc>
+        <lastmod>2022-01-30T10:47:07.800Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
+        <lastmod>2022-02-01T08:42:29.898Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/%25E7%25AC%2591%25E8%25AF%259D/</loc>
-        <lastmod>2022-01-30T09:24:09.805Z</lastmod>
+        <lastmod>2022-02-01T09:27:40.007Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E5%25B0%258F%25E7%25B1%25B3/</loc>
-        <lastmod>2022-01-30T09:24:09.805Z</lastmod>
+        <lastmod>2022-02-01T09:27:40.007Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2022-01-30T09:24:09.805Z</lastmod>
+        <lastmod>2022-02-01T09:27:40.007Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/Git/</loc>
-        <lastmod>2022-01-30T09:24:09.805Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2022-01-30T09:24:09.805Z</lastmod>
+        <lastmod>2022-02-01T09:27:40.007Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25B7%25AF%25E7%2594%25B1%25E5%2599%25A8/</loc>
-        <lastmod>2022-01-30T09:24:09.805Z</lastmod>
+        <lastmod>2022-02-01T09:27:40.007Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
+        <lastmod>2022-02-05T05:25:30.799Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
+        <lastmod>2022-02-05T05:25:30.799Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
