@@ -120,13 +120,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/categories/%25E7%25BD%2591%25E7%25BB%259C%25E6%258A%2598%25E8%2585%25BE/</loc>
-        <lastmod>2022-01-28T13:00:00.662Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/categories/%25E5%2590%258D%25E8%25A8%2580%25E5%2588%2586%25E4%25BA%25AB/</loc>
         <lastmod>2022-01-30T10:47:07.800Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -141,8 +134,15 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/categories/%25E7%25BD%2591%25E7%25BB%259C%25E6%258A%2598%25E8%2585%25BE/</loc>
+        <lastmod>2022-02-05T17:51:13.010Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/categories/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2022-02-05T16:02:56.915Z</lastmod>
+        <lastmod>2022-02-06T03:52:16.907Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
