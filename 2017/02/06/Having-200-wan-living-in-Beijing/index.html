@@ -1,61 +1,99 @@
-extends base
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="一个Emacs爱好者的个人网站."><title>〔转载〕我实在想不明白，毕业家里拿不出200万的，还在北京混个啥劲？？ | M-x Chris-An-Emacser</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script><script type="text/javascript">if (!window.jQuery) {
+  document.write(decodeURI('%3Cscript src="/js/jquery.min.js" type="text/javascript"%3E%3C/script%3E'));
+  document.write('<link rel="stylesheet" type="text/css" href="/css/normalize.min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/pure-min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/grids-responsive-min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"/>');
+}</script><link rel="stylesheet" type="text/css" href="/css/dark.css?v=1.0.0"><link rel="webmention" href="https://webmention.io/chriszheng.science/webmention"><link rel="pingback" href="https://webmention.io/chriszheng.science/xmlrpc"><link rel="stylesheet" type="text/css" href="/css/disqusjs.css"><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><link rel="amphtml" href="./amp/index.html"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><div class="darkmode-toggle">🌓</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
 
-block title
-  title= page.title + ' | ' + config.title
+html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
 
-block content
-  .post
-    h1.post-title= page.title
-    .post-meta= page.date.format('ll')
-      if page.categories.length > 0
-        span= ' | '
-        span.category
-          for category in page.categories.toArray()
-            a(href=url_for(category.path))= category.name
-      if theme.busuanzi == true
-        // script(src='//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
-        span#busuanzi_container_page_pv= ' | '
-          span#busuanzi_value_page_pv
-          span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
-    if theme.disqus
-      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if theme.gentie
-      a.ds-thread-count(class='cloud-tie-join-count', href=url_for(page.path) + '#comments')
-        span.join-count(style='font-size: 15px; color: #6E7173;') 0
-        span= ' ' + __('Discuss')
-    if theme.changyan
-      a.ds-thread-count(href=url_for(page.path) + '#SOHUCS')
-        span#changyan_count_unit(style='font-size: 15px; color: #6E7173;') 0
-        span= ' ' + __('Comment')
-      script(src='https://assets.changyan.sohu.com/upload/plugins/plugins.count.js', async)
-    if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
-          != toc(page.content, {list_number: theme.toc_number})
-    .post-content
-      != page.content
-    if theme.shareto == true
-      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
-      a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}', data-qrcode=qrcode(page.permalink))= __('shareto')
-    include _partial/tag
-    include _partial/post_nav
-    if theme.duoshuo
-      div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
-         .ds-share-inline
-            ul.ds-share-icons-16
-              li(data-toggle='ds-share-icons-more')
-                a(class='ds-more' href='javascript:void(0);') 分享到：
-              li
-                a(class='ds-weibo' href='javascript:void(0);' data-service='weibo') 微博
-              li
-                a(class='ds-qzone' href='javascript:void(0);' data-service='qzone') QQ空间
-              li
-                a(class='ds-qqt' href='javascript:void(0);' data-service='qqt') 腾讯微博
-              li
-                a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
-            .ds-share-icons-more
-    if page.comments
-      include _partial/comments
+toggle.addEventListener('click', () => {
+localStorage.dark = !(html.dataset.dark == 'true');
+html.dataset.dark = localStorage.dark;
+});</script><meta name="generator" content="Hexo 5.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">〔转载〕我实在想不明白，毕业家里拿不出200万的，还在北京混个啥劲？？</h1><a id="logo" href="/.">M-x Chris-An-Emacser</a><p class="description">一个Emacs爱好者的闲言碎语</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/categories/"><i class="fa fa-folder"> 分类</i></a><a href="/essentials-of-academic-writing/"><i class="fa fa-book"> 学术写作指要</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">〔转载〕我实在想不明白，毕业家里拿不出200万的，还在北京混个啥劲？？</h1><div class="post-meta">2017-02-06<span> | </span><span class="category"><a href="/categories/%E5%88%86%E4%BA%AB/">分享</a></span><!-- script(src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async)--><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="post-content"><p>来源是这个：<a target="_blank" rel="noopener" href="https://bbs.byr.cn/#!article/WorkLife/1065760">https://bbs.byr.cn/#!article/WorkLife/1065760</a></p>
+<p>我没有注册无法访问，二次转载：</p>
+<span id="more"></span>
+<blockquote><h2 id="我实在想不明白-毕业家里拿不出200万的-还在北京混个啥劲？？">我实在想不明白，毕业家里拿不出200万的，还在北京混个啥劲？？</h2>
+<p>没户口、毕业拿不出200万、没背景的单身狗</p>
+<p><strong>最、好、马上、离开、一线！！！</strong>(说逃离不准确，更严谨一些的说法是被淘汰才对。既然早晚被淘汰，当然是越早离开越好，即时止损。)</p>
+<p>年前和几个还在北京苦苦支撑的朋友聚了聚，给我的感觉是: 可怜。曾经意气风发的少年，此刻混迹在市井间。</p>
+<p>何必呢？住十平米的鸽子笼谈着梦想，挤人挤人的地铁说着远方，996搬着砖说自己不甘心要出人头地，吸着雾霾说北京优质的教育和医疗？？哈哈哈哈哈，还有比这个更讽刺的？？</p>
+<p>抱怨房价高，抱怨有雾霾，我想说的是，北京(社会)本身就是一个适者生存的地方。抱怨算什么？有人把你强行按在北京吗？？</p>
+<p>你觉得人家可怜，人说你玻璃心，其实少年你又何必要如此之累呢？？为了下一代？？有没有听过马拉松与百米冲刺？？？况且你确定这样能让下一代生活的更好？？？</p>
+<p>对比之下，不如退居二线，起码住稍微大一点的房子，给孩子上好一点的学校，享受生活，安度晚年，也算安稳一生了。当然去了二线不代表不努力，这个不谈。</p>
+<p>再来说说户口，家庭条件和婚姻问题。</p>
+<p>户口这个话题讨论已久，说说见多识广的我的看法:</p>
+<p>想(能)在北京发展，那么不拿户口非常愚蠢!!! <br>
+没有能力留京，死活要户口的，更加愚蠢!!!！</p>
+<p>如何定义有留京能力?</p>
+<ol>
+<li>毕业可以掏出200万首付。</li>
+<li>非常优秀(提离职会受到强烈挽留的那种，不是跳来跳去可有可无的一般码农)。</li>
+</ol>
+<p>认为户口不重要的，大概有两类人:</p>
+<ol>
+<li>少年不知精珍贵的傻甜白。</li>
+<li>想着在京捞一笔钱就回家的短视者。</li>
+</ol>
+<p>恕我直言，这两类人均不适合(没有能力)在北京发展。</p>
+<p>傻甜白基本上属于&quot;幼稚的成年人&quot;，没有在社会上生活过，认不清社会的现实。户口这个东西，就像厕纸，在北京这所政治城市中，有些事就是需要用户口，并且无可代替。傻甜白不知道户口的重要性倒还次要，更可怕的是竟然没有人指出这一点，那么人脉也存在重大问题。</p>
+<p>短视者属于&quot;打工者心态&quot;。捞一笔就走的心态，一直把自己当做外来者，工作不会努力，事业更不可能发展，反正老子早晚要走的！！租房子的人还会那么爱护房子吗？呵呵。只有有了&quot;主人翁心态&quot;，才能安下心来做事，而户口或多或少可以保证这一点。</p>
+<p>再来说说家庭背景。</p>
+<p>现在我越来越赞同出身论，通俗点说，就是你一生下来，上帝已经给你画了一个圈，你能在社会上到达怎样的层次，你能取得怎样的成就，都已经给你画好了，别想跳出这个圈，太难。</p>
+<p>听没听过电梯理论？？举个例子，A和B都考上了清华，A还是天天学习，B天天娱乐，毕业结果怎么样呢？排除其他影响，两个人差不多。</p>
+<p>清华就好像电梯，努力学习和天天娱乐就像人在电梯里活动。不论你在电梯里或跑或跳，你都逃不出这个电梯，同一电梯里的人基本上也都是同时到达高楼层。</p>
+<p>以上只是举例子，具体到中国而言，家庭比学校更像电梯，家庭背景相似的人，即使上了不同的大学，成就还是和家庭正相关。</p>
+<p>为什么两三年后的同学聚会，很多人你都觉得不认识了？成就也千差万别？！答案就是你其实从来就没有认识过他们，只是因为机缘巧合大家上了同一所学校而已。真的就是这么简单。</p>
+<p>注意，我说家庭背景，我可从来没有提过: 金钱。金钱是一方面，比之更重要的是，子女的教育，以及父母的榜样，父母的期望。简而言之，父母的素质是衡量家庭条件的核心因素。月薪三千给女儿买钢琴的父母，比月薪五千舍不得给孩子报英语学习班的父母要强太多了。</p>
+<p>再说，单身狗。</p>
+<p>这个问题我的看法是: (适婚年龄的)单身女狗，就是因为丑或者蠢。单身男狗，就是因为穷或者懒。</p>
+<p>在学校里，长得好看可能还有人谈谈，一旦走出学校，立马就明白什么叫门当户对。穷小子想娶富家女？送你两个呵呵。人家为毛不找条件更好的？</p>
+<p>说说一些女的，拿了户口，低薪，自己也不积极，没什么太吸引人的特色，整天巴巴的想要没户口的高富帅娶自己，这是不是痴心妄想？</p>
+<p>家庭条件好的婚姻的结果是两家强大的社会关系网的并集，屌丝的婚姻，恐怕是，传宗接代的使命吧。可怕。细思恐极。你说社会关系，社会阶层会不会固化？这个叫马太效应。</p>
+<p>单身的你，一边拓展&quot;事业&quot;，一边相亲？呵呵，太难。</p>
+<hr>
+<p>据我所知，人都有虚荣心，加上很多媒体错误的引导，很多人都以为： <br>
+在北京工作是&quot;有面子，有能力&quot;。并且幻想所谓的教育，医疗资源为我所用。</p>
+<p>问问你，你知道西城的学区房单价多少吗？？你知道国际学校一年的学费吗？？先衡量下自己的实力再做决定吧，社会肯定不会让所有人满意，如果要伤害，肯定要伤害没有自知之明的人。</p>
+<p>就酱。冷暖自知。</p>
+<footer><strong>北邮人论坛</strong></footer></blockquote>
+<p>我非常赞同文章的观点。但是，也绝对不是说，留在北京没有出人头地的机会。举几个反例。</p>
+<p>第一个例子是「傻根」王宝强。如果他不去北影厂当群演，绝没有出人头地的机会。但你能说，他是靠努力得来今天的成功么？去少林寺学武的少年有多少？学武后又去当群演的有多少？比宝强努力的人可不在少数，<a target="_blank" rel="noopener" href="http://xw.qq.com/news/20161213028659/NEW2016121302865900">现在仍有非常多的人想走他的路</a>。但王宝强之前没有王宝强，王宝强之后再无王宝强。王宝强是唯一的。机缘巧合下，宇宙产生了人类，又是在机缘巧合下，中国产生了王宝强。这样的成功，无法被复制。</p>
+<p>再一个例子，就是上面文章中「跳来跳去可有可无的一般码农」，他们中的一些人，如果去二线城市，可能就没有工作，因为那里没有北京的公司能提供的岗位，如果让他们去二线，他们就会失业。</p>
+<p>再说文中的「电梯理论」，虽说电梯到达的时间是一定的，但电梯里人多，挤一挤，还是会比别人出去的早。努力并非一无是处，而是在很多时候不起决定性作用，这点是读者必须知道的。</p>
+<p>有人说「知识改变命运」，这话是正确的。这句话是上个世纪七八十年代的产物，它提出的时代背景是，经历了十年浩劫，国家需要大量的人才，所以就业市场可以说是非常好的，上学还包分配；再就是，社会经过这十几年的折腾，原有的阶级格局已经被彻底打破了，社会和阶层面临重建。在那个时候，上学就有出路，就能出人头地，就可以跨出农门，去大城市也真的可以靠自己的奋斗和城市一同成长，并在今天享受大城市带给人的幸福感和归属感。今天不行了！一是就业市场饱和，没有新的增长点，二是阶级固化，导致没有什么门路，没有什么宝地，能实现当时那个年代给个人成长带来的优越条件。就比如在美国，实现美国梦已经非常困难，因为美国阶级固化早已非常严重。倒不是说在美国学习无用，而是要想跨越阶级，仅仅靠一般的努力或平庸的天赋是不行的。</p>
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!"></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>〔转载〕我实在想不明白，毕业家里拿不出200万的，还在北京混个啥劲？？</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2017-02-06</p><p><span>最后更新：</span>2019-05-29</p><p><span>原始链接：</span><a href="/2017/02/06/Having-200-wan-living-in-Beijing/">https://chriszheng.science/2017/02/06/Having-200-wan-living-in-Beijing/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2017/02/06/Having-200-wan-living-in-Beijing/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2017/02/06/Having-200-wan-living-in-Beijing/" data-id="ckxrgnsmr00cxakbp4va016xa" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrUlEQVR42u3aQW4DMQgF0Nz/0um2UjuTD5hqKr1ZRWli+7mSTYDXK37e3577968+k//153P13WMPHh4e3mDp90NfTXaPz2e834JkI36ZEQ8PD2+Nd7WIHHMPqJ7k+esPFjw8PLzH8E5tQTUexsPDw/uPvF7CIl90QsLDw8N7Am9j6DypkQfoi7kWPDw8vJi3kSDYfr1S38PDw8MbV9WTA7eX0q2O9m49eHh4eBu8eaKhF1In8/bCZTw8PLy/4eVJ2I1mgnzMPJGBh4eHt8erpj6TkLeXrp1fPIX/GB4eHt6AN1livtAkOE7mzdsO8PDw8LZ5OWxeV5o3DZQLY3h4eHgLvFNtTPdT5of75KIadZbh4eHhBWvOj/VenD4PlPNr4LKyh4eHh3eUN0+SnrpO8m2tNijg4eHhneVNLoDkdS/ZMWk4KGeU8fDw8Iq8vG20GqNWw+jqJVHYYjw8PLyjvOpA1QtgshHN5qr8VsHDw8Mb8/KAO584X1AvdP6wQXh4eHjLvHwReYK1l7qtBvqXSDw8PLw1XuGoPdo+VW01yH8G4OHh4W3zqgWw6lGeJ17zZoXofTw8PLw1Xt5ElR/91WxAdeQoQMfDw8Nb41Ux1atisvQ8tfHLO3h4eHgLvHmYO/9MryUrT4vg4eHh7fF66YZeOmNe2U8aC/Dw8PC2edWjuXrE9xq58o24HBMPDw9vmXeqaWAyQt56FX0GDw8P7yjvXXzyBqm8ZFUNmgvFNjw8PLwFXrXIlJf/q1uQb2IhDYGHh4e3xpu3DsyD9eSIr6aY8fDw8LZ5k8pR8t28MFa9zT6MhoeHh/cA3tlvzVMhHzYdDw8P75G83lWRBNDJRhwOqfHw8PBiXjXwrbZY3W9iXr5KCmB4eHh427wDP/jHxf5eSvd16sHDw8NLeV+LfyIWHzGD8AAAAABJRU5ErkJggg==">分享</a><div class="tags"><a href="/tags/%E8%A7%82%E7%82%B9/"><i class="fa fa-tag"></i>观点</a></div><div class="post-nav"><a class="pre" href="/2017/02/12/Dont-upgrade-to-shadowsocks-libev-3.0.x/">先不要升级到Shadowsocks-libev 3.0.x</a><a class="next" href="/2017/02/05/Iptables-port-forwarding-and-redirecting-rules-for-Gmail/">如何优雅的使用Gmail？巧用iptables的端口转发对抗封锁</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+  shortname: 'chris-an-emacser',
+  siteName: 'M-x Chris-An-Emacser',
+  identifier: '2017/02/06/Having-200-wan-living-in-Beijing/',
+  url: 'https://chriszheng.science/2017/02/06/Having-200-wan-living-in-Beijing/',
+  title: '〔转载〕我实在想不明白，毕业家里拿不出200万的，还在北京混个啥劲？？',
+  api: 'https://disqus.skk.moe/disqus/',
+  apikey: 'jVxAv28vcEwlLnAb7eXSz5hvxRT0o4VPX50vlpmCrxFzDZB4diszy8SS0a9yBJAT',
+  admin: 'disqus_5MXlSWVCDu',
+  adminLabel: 'Mod'
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://chris-an-emacser.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Emacs/">Emacs</a><span class="category-list-count">38</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Emacs%E5%B0%8F%E6%8A%80%E5%B7%A7/">Emacs小技巧</a><span class="category-list-count">50</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Firefox/">Firefox</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Shadowsocks/">Shadowsocks</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%BB%8F%E9%AA%8C/">一句话经验</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%86%E4%BA%AB/">分享</a><span class="category-list-count">44</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%8D%E8%A8%80%E5%88%86%E4%BA%AB/">名言分享</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%97%E4%BD%93%E6%8E%92%E5%8D%B0/">字体排印</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%91%84%E5%BD%B1%E4%BD%9C%E5%93%81/">摄影作品</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E5%AD%A6%E4%BD%9C%E5%93%81/">文学作品</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6/">科学研究</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%91%E8%AF%9D%E6%AE%B5%E5%AD%90/">笑话段子</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">经验分享</a><span class="category-list-count">35</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/">编程技术</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF/">网站信息</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%98%E8%85%BE/">网络折腾</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%91%E6%80%9D%E5%BD%95/">近思录</a><span class="category-list-count">50</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/">闲言碎语</a><span class="category-list-count">49</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/" style="font-size: 15.56px;">闲言碎语</a> <a href="/tags/%E7%A7%91%E7%A0%94/" style="font-size: 10px;">科研</a> <a href="/tags/%E8%80%81%E5%8F%B8%E6%9C%BA/" style="font-size: 10px;">老司机</a> <a href="/tags/%E7%BB%8F%E9%AA%8C/" style="font-size: 13.33px;">经验</a> <a href="/tags/DNS/" style="font-size: 10px;">DNS</a> <a href="/tags/%E5%90%8D%E4%BA%BA%E5%90%8D%E8%A8%80/" style="font-size: 17.78px;">名人名言</a> <a href="/tags/320-Kbps/" style="font-size: 10px;">320 Kbps</a> <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 10px;">流量</a> <a href="/tags/Mew/" style="font-size: 11.11px;">Mew</a> <a href="/tags/Emacs/" style="font-size: 20px;">Emacs</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 14.44px;">技巧</a> <a href="/tags/%E9%82%AE%E4%BB%B6/" style="font-size: 10px;">邮件</a> <a href="/tags/7zip/" style="font-size: 10px;">7zip</a> <a href="/tags/%E7%9B%AE%E5%BD%95/" style="font-size: 10px;">目录</a> <a href="/tags/%E5%A3%81%E7%BA%B8/" style="font-size: 12.22px;">壁纸</a> <a href="/tags/Org-mode/" style="font-size: 11.11px;">Org-mode</a> <a href="/tags/%E6%90%9E%E7%AC%91/" style="font-size: 11.11px;">搞笑</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 13.33px;">博客</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 18.89px;">分享</a> <a href="/tags/%E7%AC%91%E8%AF%9D/" style="font-size: 16.67px;">笑话</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://bandwagonhost.com/aff.php?aff=3069" title="便宜好用的搬瓦工(含推广)" target="_blank">便宜好用的搬瓦工(含推广)</a><ul></ul><a href="http://www.vultr.com/?ref=7184966" title="支持小时收费的vultr (含推广)" target="_blank">支持小时收费的vultr (含推广)</a><ul></ul><a href="https://gitee.com/chriszheng/Blog" title="帖子的md文件" target="_blank">帖子的md文件</a><ul></ul><a href="https://gitee.com/chriszheng/dotEmacs" title="我的Emacs配置" target="_blank">我的Emacs配置</a><ul></ul><a href="https://chriszheng.science/" title="M-x Chris-An-Emacser" target="_blank">M-x Chris-An-Emacser</a><ul></ul><a href="https://zklhp.github.io/" title="GitHub上的镜像" target="_blank">GitHub上的镜像</a><ul></ul><a href="https://github.com/zklhp/zklhp.github.io" rel="me" title="GitHub上的镜像文件" target="_blank">GitHub上的镜像文件</a><ul></ul><a href="https://github.com/zklhp" rel="me" title="GitHub主页" target="_blank">GitHub主页</a><ul></ul><a href="https://mastodon.sdf.org/@chriszheng" rel="me" title="@chriszheng@mastodon.sdf.org" target="_blank">@chriszheng@mastodon.sdf.org</a><ul></ul><a href="https://github.com/emacs-china/blogroll" title="emacs-china/blogroll" target="_blank">emacs-china/blogroll</a><ul></ul><a href="https://github.com/RSS-Renaissance/awesome-blogCN-feeds" title="「独立中文博客」订阅列表" target="_blank">「独立中文博客」订阅列表</a><ul></ul><a href="https://cireu.github.io/" title="NIL" target="_blank">NIL</a><ul></ul><a href="http://jerry011235.github.io/" title="璀璨星空" target="_blank">璀璨星空</a><ul></ul><a href="https://funix.cn/" title="56Kb/s" target="_blank">56Kb/s</a><ul></ul><a href="http://www.geekplux.com/" title="GeekPlux" target="_blank">GeekPlux</a><ul></ul><a href="http://www.lijigang.com/" title="lijigang" target="_blank">lijigang</a><ul></ul><a href="http://zilongshanren.com/" title="子龙山人" target="_blank">子龙山人</a><ul></ul><a href="http://blog.lujun9972.win/" title="暗无天日" target="_blank">暗无天日</a><ul></ul><a href="http://kelvinh.github.io/" title="Kelvin的胡言乱语" target="_blank">Kelvin的胡言乱语</a><ul></ul><a href="http://emacs-china.org/" title="Emacs China" target="_blank">Emacs China</a><ul></ul><a href="https://tiexo.github.io/" title="简单可依赖" target="_blank">简单可依赖</a><ul></ul><a href="http://jetyu.me/" title="Jet’s Notes" target="_blank">Jet’s Notes</a><ul></ul><a href="http://bbs.keinsci.com/?fromuid=4772" title="计算化学公社(含推广)" target="_blank">计算化学公社(含推广)</a><ul></ul><a href="https://chempeng.github.io/" title="Chem_peng" target="_blank">Chem_peng</a><ul></ul><a href="https://urzz.me/" title="瘫曲的Blog" target="_blank">瘫曲的Blog</a><ul></ul><a href="http://hongludianxue.com/" title="红炉点雪" target="_blank">红炉点雪</a><ul></ul><a href="https://macplay.github.io/" title="MacPlay" target="_blank">MacPlay</a><ul></ul><a href="https://lengyueyang.github.io/" title="深度识医" target="_blank">深度识医</a><ul></ul><a href="http://kevinjiang.info/" title="(power up)" target="_blank">(power up)</a><ul></ul><a href="https://www.jianshu.com/u/390b177189f0" title="QQ群友「七月流火」的Blog" target="_blank">QQ群友「七月流火」的Blog</a><ul></ul><a href="https://ditou.org/" title="近视眼逛博客" target="_blank">近视眼逛博客</a><ul></ul><a href="https://xiaoyan.work/" title="小焱" target="_blank">小焱</a><ul></ul><a href="https://sh.alynx.one/" title="喵's StackHarbor" target="_blank">喵's StackHarbor</a><ul></ul><a href="https://money1.us/" title="马内(信用卡优惠等资讯)" target="_blank">马内(信用卡优惠等资讯)</a><ul></ul><a href="http://sdf-cn.org/" title="SDF公众Unix服务器中文站" target="_blank">SDF公众Unix服务器中文站</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">M-x Chris-An-Emacser.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a> UV/PV: <span id="busuanzi_value_site_uv"> | </span>/<span id="busuanzi_value_site_pv"> | </span>.</div></div></div><a class="show" id="rocket" href="#top"></a><script>$(window).scroll(function(){$(window).scrollTop()>500?$("#rocket").addClass("show"):$("#rocket").removeClass("show")});$("#rocket").click(function(){$("#rocket").addClass("launch");$("html, body").animate({scrollTop:0},500,function(){$("#rocket").removeClass("show launch")});return false});</script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" async></script><script type="text/javascript">$(document).ready(function(){$("img").each(function(){if($(this).parent().hasClass("fancybox"))return;if($(this).hasClass("nofancybox"))return;var alt=this.alt;if(alt)$(this).after('<span class="caption">'+alt+"</span>");$(this).wrap('<a href="'+($(this).attr("data-src")==null?this.src:$(this).attr("data-src"))+'" title="'+alt+'" class="fancybox"></a>')});$(this).find(".fancybox").each(function(){$(this).attr("rel","article")})});$(document).ready(function(){$("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr("rel","gallery").fancybox({helpers:{title:{type:"inside"}}})});</script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><script type="text/javascript">var searchFunc=function(path,search_id,content_id){"use strict";$.ajax({url:path,dataType:"xml",success:function(xmlResponse){var datas=$("entry",xmlResponse).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get();var $input=document.getElementById(search_id);var $resultContent=document.getElementById(content_id);$input.addEventListener("input",function(){var str='<ul class="search-result-list">';var keywords=this.value.trim().toLowerCase().split(/[\s\-]+/);$resultContent.innerHTML="";if(this.value.trim().length<=0){return}datas.forEach(function(data){var isMatch=true;var content_index=[];var data_title=data.title.trim().toLowerCase();var data_content=data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();var data_url=data.url;var index_title=-1;var index_content=-1;var first_occur=-1;if(data_title!=""&&data_content!=""){keywords.forEach(function(keyword,i){index_title=data_title.indexOf(keyword);index_content=data_content.indexOf(keyword);if(index_title<0&&index_content<0){isMatch=false}else{if(index_content<0){index_content=0}if(i==0){first_occur=index_content}}})}if(isMatch){str+="<li><a href='"+data_url+"' class='search-result-title'>"+data_title+"</a>";var content=data.content.trim().replace(/<[^>]+>/g,"");if(first_occur>=0){var start=first_occur-30;var outLength=78;if(start<0){start=0}if(start+outLength>content.length){if(content.length<outLength){outLength=content.length-start}else{start=content.length-outLength}}var match_content=content.substr(start,outLength);keywords.forEach(function(keyword){var regS=new RegExp(keyword,"gi");match_content=match_content.replace(regS,'<em class="search-keyword">'+keyword+"</em>")});str+='<p class="search-result">'+match_content+"...</p>"}str+="</li>"}});str+="</ul>";$resultContent.innerHTML=str})}})};</script><style>#local-search-result{position:absolute;background-color:#fff;width:100%}#sidebar .widget .search-form{overflow:visible}#sidebar .widget .search-form input{width:auto}</style><script type="text/javascript">var search_path = 'search.xml';
+0==search_path.length&&(search_path="search.xml");
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript">+function($){"use strict";var CodeBlockResizer=function(elem){this.$codeBlocks=$(elem)};CodeBlockResizer.prototype={run:function(){var self=this;self.resize();$(window).smartresize(function(){self.resize()})},resize:function(){var self=this;self.$codeBlocks.each(function(){var $gutter=$(this).find(".gutter");var $code=$(this).find(".code");var codePaddings=$code.width()-$code.innerWidth();var width=$(this).outerWidth()-$gutter.outerWidth()+codePaddings;$code.css("width",width);$code.children("pre").css("width",width)})}};$(document).ready(function(){$.fn.hasHorizontalScrollBar=function(){return this.get(0).scrollWidth>this.innerWidth()};var resizer=new CodeBlockResizer("figure.highlight");resizer.run()})}(jQuery);</script><script type="text/javascript">+function($,sr){var debounce=function(func,threshold,execAsap){var timeout;return function debounced(){var obj=this,args=arguments;function delayed(){if(!execAsap){func.apply(obj,args)}timeout=null}if(timeout){clearTimeout(timeout)}else if(execAsap){func.apply(obj,args)}timeout=setTimeout(delayed,threshold||100)}};jQuery.fn[sr]=function(fn){return fn?this.bind("resize",debounce(fn)):this.trigger(sr)}}(jQuery,"smartresize");</script><a class="show" id="rocket" href="#top"></a><script>$(window).scroll(function(){$(window).scrollTop()>500?$("#rocket").addClass("show"):$("#rocket").removeClass("show")});$("#rocket").click(function(){$("#rocket").addClass("launch");$("html, body").animate({scrollTop:0},500,function(){$("#rocket").removeClass("show launch")});return false});</script></div></body></html>
