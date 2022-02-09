@@ -19,12 +19,6 @@
     background: #ccc;
 }
 
-#webmentions img {
-    max-height: 1.3em;
-    margin-right: -1ex;
-    border-radius: 25%;
-}
-
 #webmentions .reacts img {
     margin: 3px -1ex 1px 0;
 }
