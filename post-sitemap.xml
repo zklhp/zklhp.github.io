@@ -8,6 +8,30 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2022/02/09/Embracing-IndieWeb/</loc>
+        <lastmod>2022-02-09T17:59:54.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/04/01/Recent-thoughts-2019-04-01/</loc>
+        <lastmod>2022-02-09T17:54:05.485Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
+        <lastmod>2022-02-09T13:29:41.677Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2022/02/03/Recent-thoughts-2022-02-03/</loc>
         <lastmod>2022-02-09T11:12:02.079Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -994,22 +1018,6 @@
     <url>
         <loc>https://chriszheng.science/2017/01/28/Recent-thoughts/</loc>
         <lastmod>2019-06-23T12:38:43.979Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
-        <lastmod>2019-06-09T13:00:36.948Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/04/01/Recent-thoughts-2019-04-01/</loc>
-        <lastmod>2019-06-07T14:14:58.677Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
