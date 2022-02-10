@@ -9,7 +9,55 @@
 
     <url>
         <loc>https://chriszheng.science/2022/02/09/Embracing-IndieWeb/</loc>
-        <lastmod>2022-02-10T04:43:06.778Z</lastmod>
+        <lastmod>2022-02-10T05:31:47.707Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/</loc>
+        <lastmod>2022-02-10T05:01:44.485Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2016/06/01/Richard-Stallman-playing-flute/</loc>
+        <lastmod>2022-02-10T05:01:11.639Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2021/11/11/Recent-thoughts-2021-11-11/</loc>
+        <lastmod>2022-02-10T05:00:11.792Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2021/08/01/Recent-thoughts-2021-08-01/</loc>
+        <lastmod>2022-02-10T04:59:42.712Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2022/01/01/Recent-thoughts-2022-01-01/</loc>
+        <lastmod>2022-02-10T04:58:42.355Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
+        <lastmod>2022-02-10T04:58:21.745Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -48,24 +96,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2019/03/01/Recent-thoughts-2019-03-01/</loc>
-        <lastmod>2022-02-05T16:02:56.915Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
         <lastmod>2022-02-05T15:20:56.337Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2022/01/01/Recent-thoughts-2022-01-01/</loc>
-        <lastmod>2022-02-01T09:27:40.007Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -178,22 +210,6 @@
     <url>
         <loc>https://chriszheng.science/2017/10/07/My-hobbies/</loc>
         <lastmod>2021-12-11T13:27:00.210Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2021/11/11/Recent-thoughts-2021-11-11/</loc>
-        <lastmod>2021-12-08T03:06:26.157Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2021/08/01/Recent-thoughts-2021-08-01/</loc>
-        <lastmod>2021-09-11T05:39:35.868Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -314,14 +330,6 @@
     <url>
         <loc>https://chriszheng.science/2017/07/31/Ah-rainbow/</loc>
         <lastmod>2021-05-01T16:04:38.392Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
-        <lastmod>2021-05-01T16:03:03.415Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1754,14 +1762,6 @@
     <url>
         <loc>https://chriszheng.science/2016/06/06/Riches-and-honors-acquired-by-unrighteousness/</loc>
         <lastmod>2019-05-28T18:56:24.581Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2016/06/01/Richard-Stallman-playing-flute/</loc>
-        <lastmod>2019-05-28T18:56:24.565Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
