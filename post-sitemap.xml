@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2022/02/03/Recent-thoughts-2022-02-03/</loc>
+        <lastmod>2022-02-10T08:02:36.210Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2022/02/09/Embracing-IndieWeb/</loc>
-        <lastmod>2022-02-10T05:31:47.707Z</lastmod>
+        <lastmod>2022-02-10T07:55:04.324Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/08/13/Using-QR-code-of-my-blog-as-avatar/</loc>
+        <lastmod>2022-02-10T07:54:48.292Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -74,14 +90,6 @@
     <url>
         <loc>https://chriszheng.science/2017/04/02/One-sentence-tips-on-Emacs-Lisp/</loc>
         <lastmod>2022-02-09T13:29:41.677Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2022/02/03/Recent-thoughts-2022-02-03/</loc>
-        <lastmod>2022-02-09T11:12:02.079Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1282,14 +1290,6 @@
     <url>
         <loc>https://chriszheng.science/2015/09/20/Variation-selector/</loc>
         <lastmod>2019-05-28T18:56:25.544Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/08/13/Using-QR-code-of-my-blog-as-avatar/</loc>
-        <lastmod>2019-05-28T18:56:25.528Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
