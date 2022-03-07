@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2019/01/07/Struggle-with-UEFI-GPT/</loc>
+        <lastmod>2022-03-07T13:55:14.833Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2022/02/03/Recent-thoughts-2022-02-03/</loc>
-        <lastmod>2022-03-04T07:21:37.785Z</lastmod>
+        <lastmod>2022-03-04T07:26:20.793Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1586,14 +1594,6 @@
     <url>
         <loc>https://chriszheng.science/2015/08/13/S%C3%B3ng/</loc>
         <lastmod>2019-05-28T18:56:24.972Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/01/07/Struggle-with-UEFI-GPT/</loc>
-        <lastmod>2019-05-28T18:56:24.956Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

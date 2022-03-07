@@ -1711,13 +1711,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%258A%2598%25E8%2585%25BE/</loc>
-        <lastmod>2020-06-07T14:42:28.155Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E4%25B9%2594%25E5%25B8%2583%25E6%2596%25AF/</loc>
         <lastmod>2020-07-19T09:10:34.942Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2251,28 +2244,35 @@
 
     <url>
         <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
-        <lastmod>2022-03-04T07:21:37.785Z</lastmod>
+        <lastmod>2022-03-04T07:26:20.793Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E7%25BD%2591%25E7%25AB%2599%25E4%25BF%25A1%25E6%2581%25AF/</loc>
-        <lastmod>2022-03-04T07:21:37.785Z</lastmod>
+        <lastmod>2022-03-04T07:26:20.793Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
-        <lastmod>2022-03-04T07:21:37.785Z</lastmod>
+        <lastmod>2022-03-04T07:26:20.793Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2022-03-04T07:21:37.785Z</lastmod>
+        <lastmod>2022-03-04T07:26:20.793Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E6%258A%2598%25E8%2585%25BE/</loc>
+        <lastmod>2022-03-07T13:55:14.833Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
