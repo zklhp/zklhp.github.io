@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="一个Emacs爱好者的个人网站."><meta name="referrer" content="no-referrer-when-downgrade"><title>Emacs新手入门专题 | M-x Chris-An-Emacser</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1.5"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script><script type="text/javascript">if (!window.jQuery) {
+  document.write(decodeURI('%3Cscript src="/js/jquery.min.js" type="text/javascript"%3E%3C/script%3E'));
+  document.write('<link rel="stylesheet" type="text/css" href="/css/normalize.min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/pure-min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/grids-responsive-min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"/>');
+}</script><!-- if theme.dark == true// link(rel='stylesheet', type='text/css', href=url_for(theme.css)+'/dark.css' + '?v=' + theme.version)--><link rel="webmention" href="https://webmention.io/chriszheng.science/webmention"><link rel="pingback" href="https://webmention.io/chriszheng.science/xmlrpc"><link rel="stylesheet" type="text/css" href="/css/disqusjs.css?v=1.1.5"><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><!-- if is_post() && config.generator_amp--><!--   link(rel="amphtml", href='./amp/index.html')--><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><div class="darkmode-toggle">🌓</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
+
+html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+
+toggle.addEventListener('click', () => {
+localStorage.dark = !(html.dataset.dark == 'true');
+html.dataset.dark = localStorage.dark;
+});</script><meta name="generator" content="Hexo 5.4.2"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Emacs新手入门专题</h1><a id="logo" href="/.">M-x Chris-An-Emacser</a><p class="description">一个Emacs爱好者的闲言碎语</p></div><div id="nav-menu"><a href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/categories/"><i class="fa fa-folder"> 分类</i></a><a href="/essentials-of-academic-writing/"><i class="fa fa-book"> 学术写作指要</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1"><div class="content_container"><div class="post"><h1 class="post-title">Emacs新手入门专题</h1><div class="post-meta">2015-08-02<!-- script(src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async)--><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A5%94%E5%AD%90"><span class="toc-number">1.</span> <span class="toc-text">楔子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#emacs%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">Emacs学习方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%89%E9%94%AE%E5%9F%BA%E7%A1%80"><span class="toc-number">3.</span> <span class="toc-text">按键基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%85%E5%AD%A6%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">4.</span> <span class="toc-text">必学快捷键</span></a></li></ol></div></div><div class="post-content"><h2 id="楔子">楔子</h2>
+<p>Emacs入门的资料很多了，我也写过一些，自己总结一下，算是自己学习经历的总结，也希望能帮到其他同学。</p>
+<h2 id="emacs学习方法">Emacs学习方法</h2>
+<ol>
+<li>
+<p>有一台计算机，安装合适的Emacs版本。<br>
+GNU/Linux系统请安装发行版提供的；Mac OS安装Homebrew版比较好；MS Windows安装<a target="_blank" rel="noopener" href="http://ftp.gnu.org/pub/gnu/emacs/windows/">官方版</a>或<a href="http://chriszheng.science/emacs-w64/">我的64-bit编译版</a>。</p>
+</li>
+<li>
+<p>启动Emacs，点击首页的<strong>Emacs Tutorial</strong>学习自带的教程。</p>
+</li>
+<li>
+<p>坚持天天用，几个月就可以熟练掌握Emacs的日常使用了。</p>
+</li>
+</ol>
+<p>如果你觉得自带的教程还不够简洁，可以继续阅读下面的内容。</p>
+<h2 id="按键基础">按键基础</h2>
+<p>关于Emacs入门的教程其实很多了 所以我这里不长篇大论的讲 我只讲入门需要按键 或者说是键绑定(key binding)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">按键序列</th>
+<th style="text-align:left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">C-x</td>
+<td style="text-align:left">就是Ctrl+x 按住Ctrl再按x 注意这里是区分大小写的 所以C-X其实是Ctrl+Shift+x</td>
+</tr>
+<tr>
+<td style="text-align:center">C-x u</td>
+<td style="text-align:left">这个是先按过C-x 再按一个u 注意和C-x C-u的区别</td>
+</tr>
+<tr>
+<td style="text-align:center">M-x</td>
+<td style="text-align:left">M可以认为就是键盘上的Alt 或者可以摁一下ESC</td>
+</tr>
+<tr>
+<td style="text-align:center">C-M-x</td>
+<td style="text-align:left">这个是三个键同时按</td>
+</tr>
+</tbody>
+</table>
+<p>Emacs的1000多个默认按键都是按照上面的几种方式定义和描述的</p>
+<h2 id="必学快捷键">必学快捷键</h2>
+<p>下面是正题 说正题前先解释一下 所谓的【必学】就是对新手非常重要的</p>
+<p>所以高级的应用不说 每个键的含义也只说最重要的</p>
+<p>排序是根据我对按键重要程度的理解 越靠前越重要</p>
+<p>以下说的都是GNU Emacs默认的东西 不牵扯自定义的</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">按键序列</th>
+<th style="text-align:left">含义及用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">C-x C-c</td>
+<td style="text-align:left">退出 如果有什么搞不定的 最好退出重来 这是最重要的按键了</td>
+</tr>
+<tr>
+<td style="text-align:center">C-x 1</td>
+<td style="text-align:left">最大化当前的window</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left">如果你被出现的很多窗口搞糊涂了 暂时最小化它们是最好的选择</td>
+</tr>
+<tr>
+<td style="text-align:center">C-v</td>
+<td style="text-align:left">向下一屏 适应普通复制粘贴快捷键的人很容易摁错(Emacs里的<strong>粘贴</strong>是C-y)</td>
+</tr>
+<tr>
+<td style="text-align:center">M-v</td>
+<td style="text-align:left">向上一屏</td>
+</tr>
+<tr>
+<td style="text-align:center">C-f</td>
+<td style="text-align:left">forward 向前</td>
+</tr>
+<tr>
+<td style="text-align:center">C-b</td>
+<td style="text-align:left">backward 后退</td>
+</tr>
+<tr>
+<td style="text-align:center">C-n</td>
+<td style="text-align:left">next 向下</td>
+</tr>
+<tr>
+<td style="text-align:center">C-p</td>
+<td style="text-align:left">previous 向上</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left">以上的四个实现了Emacs里的基本的移动 如果看懂英语应该很容易记</td>
+</tr>
+<tr>
+<td style="text-align:center">C-d</td>
+<td style="text-align:left">向后删除 相当于Delete键 向前删除默认只能用退格键罢</td>
+</tr>
+<tr>
+<td style="text-align:center">C-@</td>
+<td style="text-align:left">按这个键的时候其实是Ctrl+Shift+2 一般2上面有@ 用于标记</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left">有比这个方便的按键 但和切换输入法的冲突</td>
+</tr>
+<tr>
+<td style="text-align:center">C-w</td>
+<td style="text-align:left">对一个选中的区域执行【剪切】</td>
+</tr>
+<tr>
+<td style="text-align:center">M-w</td>
+<td style="text-align:left">和上面一样但执行的是【复制】</td>
+</tr>
+<tr>
+<td style="text-align:center">C-y</td>
+<td style="text-align:left">当前位置【粘贴】</td>
+</tr>
+<tr>
+<td style="text-align:center">C-k</td>
+<td style="text-align:left">行为比较奇怪 从当前位置到行尾执行【剪切】</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left">上面的几个就是Emacs里面的复制-粘贴操作 为了更容易理解我套用了windows下的描述习惯</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:left">C-k可能开始用不习惯 选择如果不用鼠标也感觉比较麻烦 不要刻意的排斥鼠标</td>
+</tr>
+<tr>
+<td style="text-align:center">C-g</td>
+<td style="text-align:left">停止正在处理的东西 也就是取消 如果Emacs卡死了可以试试 非常有用</td>
+</tr>
+<tr>
+<td style="text-align:center">C-s</td>
+<td style="text-align:left">向后搜索</td>
+</tr>
+<tr>
+<td style="text-align:center">C-r</td>
+<td style="text-align:left">向前搜索</td>
+</tr>
+<tr>
+<td style="text-align:center">C-a</td>
+<td style="text-align:left">ahead 到行首</td>
+</tr>
+<tr>
+<td style="text-align:center">C-e</td>
+<td style="text-align:left">end 到行尾</td>
+</tr>
+<tr>
+<td style="text-align:center">M-&lt;</td>
+<td style="text-align:left">到全文的开头看起来很好看但按起来麻烦 其实是Alt+Shift+,</td>
+</tr>
+<tr>
+<td style="text-align:center">M-&gt;</td>
+<td style="text-align:left">到全文的结尾</td>
+</tr>
+</tbody>
+</table>
+<p>以上就是我认为对初学者比较重要的快捷键 学会了这些</p>
+<p>Emacs在你手里也就成了一个简单的编辑器了</p>
+<p>这可能是你学会用【神的编辑器】的第一步哦</p>
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.1.5"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!" async></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><link rel="stylesheet" type="text/css" href="/css/webmention.css?v=1.1.5"><script type="text/javascript" src="/js/webmention.min.js" data-id="webmentions"></script><div id="webmentions"></div><form style="margin-left: 70%" method="get" action="https://quill.p3k.io/" target="_blank"><input type="hidden" name="dontask" value="1"><input type="hidden" name="me" value="https://commentpara.de/"><input class="my-url" type="hidden" name="reply" value=""><input style="min-width: 50%; font-size: 1.2em" type="submit" value="写个评论吧"></form><p>或者您可以把评论发在别处，添加指向本页的连接，然后把网址告诉我：</p><form action="https://webmention.io/chriszheng.science/webmention" method="post"><input style="min-width: 68.5%; font-size: 1.2em" name="source" placeholder="" type="url"><input class="my-url" type="hidden" name="target" value=""><input style="min-width: 20%; font-size: 1.2em" type="submit" value="发送Webmention"></form><script type="text/javascript">for (const u of document.querySelectorAll("input.my-url"))
+  u.value = window.location.href;</script><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>Emacs新手入门专题</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2015-08-02</p><p><span>最后更新：</span>2022-03-23</p><p><span>原始链接：</span><a href="/emacs-beginner-guide/index.html">https://chriszheng.science/emacs-beginner-guide/index.html</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/emacs-beginner-guide/index.html"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/emacs-beginner-guide/index.html" data-id="clcqzccf900009iv0eq728etq" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJklEQVR42u3ay27DIBAF0Pz/T6fbLmpyZ8apZDisohRjTioh5vF6xeP9a9w7s/dsc2BgYDyW8V6O9Quq211vff3eqzkYGBjnMOavX8/M8evVLr/HwMDAKG6uumbyGQMDA2Ny4K6/ycPdfAUMDIwzGUkwmQS0+UFcDZ5vi8UxMDAeyMiz7v//+Sv1DQwMjEcx3sVRLVsm67zHAwMDY29GtQxZPRaTS966zFD44TAwMDZlrB/Lj91JkNlr6fjj/4CBgbE1o9oAMadWL5cfMBgYGMcwqmXFvNkr2Vwv9YaBgXEmI2mtyA/NPIjNAc1uEQwMjMcy7i1SVl9cPdyjwBgDA2M7Rn4tq17m8tLjpFB6WRjAwMDYjpF3W03ayEYJtaSEiYGBcQxjEqz2vskBhYYwDAyM7Rh3jSSg/XrPCAYGxqaMXjDZ20Rzo+t1MDAwjmHcW0rMGyaqjWiFqRgYGFszktRb9YI4abz4EMpiYGBszagm7nvp+8mcAhIDA+NgRjKzGr4mSf+8RIGBgXEOI399tQkjn9MrJ2BgYJzGyNss5q0VvVazy2cxMDA2ZUzaKSYXu95fL9kYGBhbM3qH3eTZSQIuT/NhYGDsx+gdsnmq7uabbK/KioGBsQVjUlzMV5hf+z6EshgYGBjFlNzksP76gYuBgbE1I3+q99M0mzYwMDAOYCRXt6QwmQfJvaLC5XGMgYGxNaN37+o1ZOStGF8pamJgYDyP8QNSLeTzAKVcigAAAABJRU5ErkJggg==">分享</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+  shortname: 'chris-an-emacser',
+  siteName: 'M-x Chris-An-Emacser',
+  identifier: 'emacs-beginner-guide/index.html',
+  url: 'https://chriszheng.science/emacs-beginner-guide/index.html',
+  title: 'Emacs新手入门专题',
+  api: 'https://disqus.skk.moe/disqus/',
+  apikey: 'jVxAv28vcEwlLnAb7eXSz5hvxRT0o4VPX50vlpmCrxFzDZB4diszy8SS0a9yBJAT',
+  admin: 'disqus_5MXlSWVCDu',
+  adminLabel: 'Mod'
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://chris-an-emacser.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">Copyright © 2023 <a href="/." rel="nofollow">M-x Chris-An-Emacser.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a> UV/PV: <span id="busuanzi_value_site_uv"> | </span>/<span id="busuanzi_value_site_pv"> | </span>.</div></div></div><a class="show" id="rocket" href="#top"></a><script>$(window).scroll(function(){$(window).scrollTop()>500?$("#rocket").addClass("show"):$("#rocket").removeClass("show")});$("#rocket").click(function(){$("#rocket").addClass("launch");$("html, body").animate({scrollTop:0},500,function(){$("#rocket").removeClass("show launch")});return false});</script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" async></script><script type="text/javascript">$(document).ready(function(){$("img").each(function(){if($(this).parent().hasClass("fancybox"))return;if($(this).hasClass("nofancybox"))return;var alt=this.alt;if(alt)$(this).after('<span class="caption">'+alt+"</span>");$(this).wrap('<a href="'+($(this).attr("data-src")==null?this.src:$(this).attr("data-src"))+'" title="'+alt+'" class="fancybox"></a>')});$(this).find(".fancybox").each(function(){$(this).attr("rel","article")})});$(document).ready(function(){$("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr("rel","gallery").fancybox({helpers:{title:{type:"inside"}}})});</script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><script type="text/javascript">var searchFunc=function(path,search_id,content_id){"use strict";$.ajax({url:path,dataType:"xml",success:function(xmlResponse){var datas=$("entry",xmlResponse).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get();var $input=document.getElementById(search_id);var $resultContent=document.getElementById(content_id);$input.addEventListener("input",function(){var str='<ul class="search-result-list">';var keywords=this.value.trim().toLowerCase().split(/[\s\-]+/);$resultContent.innerHTML="";if(this.value.trim().length<=0){return}datas.forEach(function(data){var isMatch=true;var content_index=[];var data_title=data.title.trim().toLowerCase();var data_content=data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();var data_url=data.url;var index_title=-1;var index_content=-1;var first_occur=-1;if(data_title!=""&&data_content!=""){keywords.forEach(function(keyword,i){index_title=data_title.indexOf(keyword);index_content=data_content.indexOf(keyword);if(index_title<0&&index_content<0){isMatch=false}else{if(index_content<0){index_content=0}if(i==0){first_occur=index_content}}})}if(isMatch){str+="<li><a href='"+data_url+"' class='search-result-title'>"+data_title+"</a>";var content=data.content.trim().replace(/<[^>]+>/g,"");if(first_occur>=0){var start=first_occur-30;var outLength=78;if(start<0){start=0}if(start+outLength>content.length){if(content.length<outLength){outLength=content.length-start}else{start=content.length-outLength}}var match_content=content.substr(start,outLength);keywords.forEach(function(keyword){var regS=new RegExp(keyword,"gi");match_content=match_content.replace(regS,'<em class="search-keyword">'+keyword+"</em>")});str+='<p class="search-result">'+match_content+"...</p>"}str+="</li>"}});str+="</ul>";$resultContent.innerHTML=str})}})};</script><style>#local-search-result{position:absolute;background-color:#fff;width:100%}#sidebar .widget .search-form{overflow:visible}#sidebar .widget .search-form input{width:auto}</style><script type="text/javascript">var search_path = 'search.xml';
+0==search_path.length&&(search_path="search.xml");
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript">+function($){"use strict";var CodeBlockResizer=function(elem){this.$codeBlocks=$(elem)};CodeBlockResizer.prototype={run:function(){var self=this;self.resize();$(window).smartresize(function(){self.resize()})},resize:function(){var self=this;self.$codeBlocks.each(function(){var $gutter=$(this).find(".gutter");var $code=$(this).find(".code");var codePaddings=$code.width()-$code.innerWidth();var width=$(this).outerWidth()-$gutter.outerWidth()+codePaddings;$code.css("width",width);$code.children("pre").css("width",width)})}};$(document).ready(function(){$.fn.hasHorizontalScrollBar=function(){return this.get(0).scrollWidth>this.innerWidth()};var resizer=new CodeBlockResizer("figure.highlight");resizer.run()})}(jQuery);</script><script type="text/javascript">+function($,sr){var debounce=function(func,threshold,execAsap){var timeout;return function debounced(){var obj=this,args=arguments;function delayed(){if(!execAsap){func.apply(obj,args)}timeout=null}if(timeout){clearTimeout(timeout)}else if(execAsap){func.apply(obj,args)}timeout=setTimeout(delayed,threshold||100)}};jQuery.fn[sr]=function(fn){return fn?this.bind("resize",debounce(fn)):this.trigger(sr)}}(jQuery,"smartresize");</script></div></body></html>

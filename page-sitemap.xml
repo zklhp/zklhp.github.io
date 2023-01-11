@@ -8,43 +8,43 @@
     </url>
     
     <url>
-        <loc>https://chriszheng.science/pua/</loc>
-        <lastmod>2022-02-10T07:47:12.126Z</lastmod>
+        <loc>https://chriszheng.science/essentials-of-academic-writing/</loc>
+        <lastmod>2022-03-28T13:27:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://chriszheng.science/essentials-of-academic-writing/</loc>
-        <lastmod>2021-06-05T04:16:01.662Z</lastmod>
+        <loc>https://chriszheng.science/pua/</loc>
+        <lastmod>2022-03-23T00:32:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://chriszheng.science/emacs-beginner-guide/</loc>
-        <lastmod>2021-01-19T15:30:10.190Z</lastmod>
+        <lastmod>2022-03-23T00:32:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://chriszheng.science/about/</loc>
-        <lastmod>2020-05-30T17:06:54.097Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://chriszheng.science/emacs-w64/</loc>
-        <lastmod>2018-06-24T17:46:46.839Z</lastmod>
+        <lastmod>2022-03-23T00:32:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://chriszheng.science/categories/</loc>
-        <lastmod>2017-02-26T12:07:59.238Z</lastmod>
+        <lastmod>2022-03-23T00:32:13.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chriszheng.science/emacs-w64/</loc>
+        <lastmod>2022-03-23T00:32:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

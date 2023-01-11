@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="一个Emacs爱好者的个人网站."><meta name="referrer" content="no-referrer-when-downgrade"><title>近思录 2020-09-10 | M-x Chris-An-Emacser</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1.5"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss@1.0.0/build/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script><script type="text/javascript">if (!window.jQuery) {
+  document.write(decodeURI('%3Cscript src="/js/jquery.min.js" type="text/javascript"%3E%3C/script%3E'));
+  document.write('<link rel="stylesheet" type="text/css" href="/css/normalize.min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/pure-min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/grids-responsive-min.css"/>');
+  document.write('<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"/>');
+}</script><!-- if theme.dark == true// link(rel='stylesheet', type='text/css', href=url_for(theme.css)+'/dark.css' + '?v=' + theme.version)--><link rel="webmention" href="https://webmention.io/chriszheng.science/webmention"><link rel="pingback" href="https://webmention.io/chriszheng.science/xmlrpc"><link rel="stylesheet" type="text/css" href="/css/disqusjs.css?v=1.1.5"><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><!-- if is_post() && config.generator_amp--><!--   link(rel="amphtml", href='./amp/index.html')--><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><div class="darkmode-toggle">🌓</div><script>var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+var toggle = document.querySelector('.darkmode-toggle');
+var html = document.querySelector('html');
+
+html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+
+toggle.addEventListener('click', () => {
+localStorage.dark = !(html.dataset.dark == 'true');
+html.dataset.dark = localStorage.dark;
+});</script><meta name="generator" content="Hexo 5.4.2"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">近思录 2020-09-10</h1><a id="logo" href="/.">M-x Chris-An-Emacser</a><p class="description">一个Emacs爱好者的闲言碎语</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/categories/"><i class="fa fa-folder"> 分类</i></a><a href="/essentials-of-academic-writing/"><i class="fa fa-book"> 学术写作指要</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">近思录 2020-09-10</h1><div class="post-meta">2020-09-10<span> | </span><span class="category"><a href="/categories/%E8%BF%91%E6%80%9D%E5%BD%95/">近思录</a></span><!-- script(src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async)--><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="post-content"><p style="font-size: larger">🧑‍🏫</p>
+<span id="more"></span>
+
+<div id="svg_clock_68390"></div>
+<script>
+{
+  // 2015-04-04 
+  // copyright 2015, 2019 Xah Lee
+  // keep this section
+  // http://xahlee.info/js/svg_clock.html
+  // version 2019-04-26
+
+  const hour_hand_length = 0.45; // ratio to radius of clock
+  const minute_hand_length = 0.7; // ratio to radius of clock
+  const sec_hand_length = 0.9; // ratio to radius of clock
+
+  // create a svg tag
+  const svg_container = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg_container.setAttribute("viewBox", "-1 -1 2 2");
+
+  const clock_frame = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  clock_frame.setAttribute("cx", "0");
+  clock_frame.setAttribute("cy", "0");
+  clock_frame.setAttribute("r", ".97");
+  clock_frame.setAttribute("style", "fill:none;stroke:black; stroke-width:2%");
+  svg_container.appendChild(clock_frame);
+
+  // draw second marks
+  for (let ii = 0;ii < 60; ii++) {
+    const jj = 2 * Math.PI / 60 *ii;
+    const sec_pos = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    sec_pos.setAttribute("cx", (Math.cos(jj)*.9) .toString ());
+    sec_pos.setAttribute("cy", (Math.sin(jj)*.9) .toString ());
+    sec_pos.setAttribute("r", "0.8%");
+    sec_pos.setAttribute("style", "fill:grey;stroke:none;");
+    svg_container.appendChild(sec_pos);
+  };
+
+  // draw hour marks
+  for (let ii = 0;ii < 12; ii++) {
+    const jj = 2 * Math.PI / 12 *ii;
+    const hour_pos = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    hour_pos.setAttribute("cx", (Math.cos(jj)*.9) .toString ());
+    hour_pos.setAttribute("cy", (Math.sin(jj)*.9) .toString ());
+    hour_pos.setAttribute("r", "3%");
+    hour_pos.setAttribute("style", "fill:black;stroke:none;");
+    svg_container.appendChild(hour_pos);
+  };
+
+  // hour hand
+  const hour_hand = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  hour_hand.setAttribute("x1", "0");
+  hour_hand.setAttribute("y1", "0");
+  hour_hand.setAttribute("x2", "0");
+  hour_hand.setAttribute("y2", (-1 * hour_hand_length) .toString ());
+  hour_hand.setAttribute("style", "stroke:blue; stroke-width:5%;stroke-linecap:round");
+  hour_hand.setAttribute("transform", "rotate(" + (((new Date()).getHours() % 12) * 30 + (new Date()).getMinutes() /2) +  ")");
+  svg_container.appendChild(hour_hand);
+
+  // minute hand
+  const minute_hand = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  minute_hand.setAttribute("x1", "0");
+  minute_hand.setAttribute("y1", "0");
+  minute_hand.setAttribute("x2", "0");
+  minute_hand.setAttribute("y2", (-1 * minute_hand_length) .toString ());
+  minute_hand.setAttribute("style", "stroke:red; stroke-width:3%;stroke-linecap:round");
+  minute_hand.setAttribute("transform", "rotate(" + ((new Date()).getMinutes()*6) +  ")");
+  svg_container.appendChild(minute_hand);
+
+  const sec_hand = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  sec_hand.setAttribute("x1", "0");
+  sec_hand.setAttribute("y1", "0");
+  sec_hand.setAttribute("x2", "0");
+  sec_hand.setAttribute("y2", (-1 * sec_hand_length) .toString ());
+  sec_hand.setAttribute("style", "stroke:black; stroke-width:1%;stroke-linecap:round");
+  sec_hand.setAttribute("transform", "rotate(" + ((new Date()).getSeconds()*6) +  ")");
+  svg_container.appendChild(sec_hand);
+
+  const f_update_clock = (() => {
+
+const dd = new Date();
+    sec_hand.setAttribute("transform", "rotate(" + (dd.getSeconds()*6) +  ")");
+    minute_hand.setAttribute("transform", "rotate(" + (dd.getMinutes()*6) +  ")");
+    hour_hand.setAttribute("transform", "rotate(" + ((dd.getHours() % 12) * 30 + dd.getMinutes() /2) +  ")");
+  });
+
+  const newNode = document.createElement("div");
+  newNode.style.maxWidth= "300px";
+  newNode.appendChild(svg_container);
+  document.currentScript. insertAdjacentElement("afterend", newNode);
+
+  setInterval( f_update_clock , 1000);
+
+}
+</script>
+
+<h2 id="测几个搜索引擎">测几个搜索引擎</h2>
+<p>测试的起因是因为在手机浏览器上站内搜索不能用，所以只能靠外部搜索引擎。但我越来越发现，我常用的必应搜索引擎问题越来越多。</p>
+<p>我的测试当然只是个个例，我测的是<code>测速 site:chriszheng.gitee.io</code>，正常用站内搜索可以找到5个结果。测的结果是这样的</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">搜索引擎</th>
+<th style="text-align:center">结果数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.dogedoge.com/">多吉</a></td>
+<td style="text-align:center">6</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://mijisou.com/">秘迹</a></td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://cn.bing.com/">必应</a></td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://cn.bing.com/">必应国际版</a></td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<p>秘迹搜索底层用的是必应的结果，强调的是隐私保护。反而是特别小众的<a target="_blank" rel="noopener" href="https://www.dogedoge.com/">多吉</a>效果最好。我考虑换默认搜索引擎咯。</p>
+<p>2021-03-26 <strong>Update</strong>:</p>
+<p>最近<a target="_blank" rel="noopener" href="https://www.dogedoge.com/">多吉</a>502了。</p>
+<h2 id="健康知识">健康知识</h2>
+<ol>
+<li>吃补铁药最好不吃液体的，容易牙齿染色。</li>
+<li>孕期不要带首饰。</li>
+</ol>
+<h2 id="联想为政府采购定制了些什么破烂电脑">联想为政府采购定制了些什么破烂电脑</h2>
+<p><span style="background-color: #444 !important">天灭联想，退想保平安。</span></p>
+<p>用了Intel 540s固态，但可能是固件Bug，写入放大非常厉害，固态直接坏了，数据全部丢失。</p>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<div id="aplayer" style="margin: 1em 0;"></div>
+<script src="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+
+<script type="text/javascript">
+const ap = new APlayer({
+  container: document.getElementById('aplayer'),
+  audio: [{
+    name: '凉凉',
+    artist: '杨宗纬',
+    url: '/files/杨宗纬 - 凉凉.mp3',
+    cover: '/img/杨宗纬 - 凉凉.jpg',
+    lrc: '/files/杨宗纬 - 凉凉.lrc'
+  }]
+});
+</script>
+
+<h2 id="redmi-k30-5g-with-lineage-os">Redmi K30 5G with Lineage OS</h2>
+<ol>
+<li>
+<p>Follow <a target="_blank" rel="noopener" href="https://www.getdroidtips.com/unlock-bootloader-any-xiaomi-devices/">https://www.getdroidtips.com/unlock-bootloader-any-xiaomi-devices/</a>. Note that you have to bind your phone number.</p>
+</li>
+<li>
+<p>Reboot to bootloader (press the volume down and the power button).</p>
+</li>
+<li>
+<p>Place the needed files.</p>
+</li>
+<li>
+<p><code>fastboot flash vbmeta vbmeta.img</code></p>
+</li>
+<li>
+<p><code>fastboot flash recovery recovery.img</code></p>
+</li>
+<li>
+<p>Reboot to recovery (press the volume up and the power button). Install package from ADB. <span style="font-size: larger; color: rgb(255, 0, 0);">Do not Mount /system</span></p>
+</li>
+<li>
+<p><code>adb sideload lineage-17.1-20200419-UNOFFICIAL-picasso.zip</code>.</p>
+</li>
+<li>
+<p>Reboot to recovery and <code>adb sideload Magisk-v20.4.zip</code>.</p>
+</li>
+<li>
+<p>You got a working Lineage OS system. Maybe the system will prompt you to wipe data.</p>
+</li>
+</ol>
+<h3 id="references">References</h3>
+<ol>
+<li>
+<p><a target="_blank" rel="noopener" href="https://forum.xda-developers.com/redmi-k30-5g/development/recovery-lineageos-recovery-17-1-redmi-t4059879">https://forum.xda-developers.com/redmi-k30-5g/development/recovery-lineageos-recovery-17-1-redmi-t4059879</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://forum.xda-developers.com/redmi-k30-5g/development/rom-lineageos-17-1-redmi-k30-5g-picasso-t4063507">https://forum.xda-developers.com/redmi-k30-5g/development/rom-lineageos-17-1-redmi-k30-5g-picasso-t4063507</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://www.getdroidtips.com/lineage-os-17-1-redmi-k30-5g/">https://www.getdroidtips.com/lineage-os-17-1-redmi-k30-5g/</a></p>
+</li>
+</ol>
+<h3 id="download">Download</h3>
+<ol>
+<li>recovery: <a target="_blank" rel="noopener" href="https://mega.nz/#!PZRCBaiA!L-c3Tn6E295xcAIZCSt9ribpGsutX3QJRt04uyQGg_k">https://mega.nz/#!PZRCBaiA!L-c3Tn6E295xcAIZCSt9ribpGsutX3QJRt04uyQGg_k</a>.</li>
+<li>vbmeta.img: <a target="_blank" rel="noopener" href="https://mega.nz/#!vQohmJgJ!IWAjbxGIxxxQ4OScQH8YT8oKJMx8Q-2pV83zqxbItD4">https://mega.nz/#!vQohmJgJ!IWAjbxGIxxxQ4OScQH8YT8oKJMx8Q-2pV83zqxbItD4</a>.</li>
+<li>Lineage OS system: <a target="_blank" rel="noopener" href="https://mega.nz/file/LAJjCYDT#L1Rd-WFJQ7SaU3vfAxU2y7AJsfH9qZ3fSAKMTQhgPWM">https://mega.nz/file/LAJjCYDT#L1Rd-WFJQ7SaU3vfAxU2y7AJsfH9qZ3fSAKMTQhgPWM</a>.</li>
+<li>国人搞的TWRP，不好使，不要刷。天翼云盘 <a target="_blank" rel="noopener" href="https://cloud.189.cn/t/uuIzymZZFbey">https://cloud.189.cn/t/uuIzymZZFbey</a> （访问码：yzy9） 恒创互联云盘 <a target="_blank" rel="noopener" href="https://pan.hchl.top/#/s/pVWt9">https://pan.hchl.top/#/s/pVWt9</a>  (密码：wzsx150).</li>
+<li>EU版MIUI: <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv11/">https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv11/</a> and <a target="_blank" rel="noopener" href="https://www.androidfilehost.com/?w=files&amp;flid=300229">https://www.androidfilehost.com/?w=files&amp;flid=300229</a>.</li>
+</ol>
+<p>原来这个ROM的作者<a target="_blank" rel="noopener" href="https://sn.angry.im/@PeterCxy">我以前关注过</a>，感谢大佬的工作。</p>
+<h2 id="对adui的彻底批判">对ADUI的彻底批判</h2>
+<p>已经有大佬写好了。</p>
+<p><a target="_blank" rel="noopener" href="https://pockies.github.io/2020/03/27/redmi-k30-5g/">https://pockies.github.io/2020/03/27/redmi-k30-5g/</a></p>
+<h2 id="adui战个痛">ADUI战个痛</h2>
+<p><a target="_blank" rel="noopener" href="https://52huameng.com/zixun/1557">https://52huameng.com/zixun/1557</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/Szaki/XiaomiADBFastbootTools">https://github.com/Szaki/XiaomiADBFastbootTools</a></p>
+</div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.1.5"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!" async></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><link rel="stylesheet" type="text/css" href="/css/webmention.css?v=1.1.5"><script type="text/javascript" src="/js/webmention.min.js" data-id="webmentions"></script><div id="webmentions"></div><form style="margin-left: 70%" method="get" action="https://quill.p3k.io/" target="_blank"><input type="hidden" name="dontask" value="1"><input type="hidden" name="me" value="https://commentpara.de/"><input class="my-url" type="hidden" name="reply" value=""><input style="min-width: 50%; font-size: 1.2em" type="submit" value="写个评论吧"></form><p>或者您可以把评论发在别处，添加指向本页的连接，然后把网址告诉我：</p><form action="https://webmention.io/chriszheng.science/webmention" method="post"><input style="min-width: 68.5%; font-size: 1.2em" name="source" placeholder="" type="url"><input class="my-url" type="hidden" name="target" value=""><input style="min-width: 20%; font-size: 1.2em" type="submit" value="发送Webmention"></form><script type="text/javascript">for (const u of document.querySelectorAll("input.my-url"))
+  u.value = window.location.href;</script><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>近思录 2020-09-10</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2020-09-10</p><p><span>最后更新：</span>2022-03-23</p><p><span>原始链接：</span><a href="/2020/09/10/Recent-thoughts-2020-09-10/">https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/" data-id="clcqzccjl00q99iv0c8xb7zko" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtUlEQVR42u3aQU4DMQwF0N7/0mULgs5823FVpDerCoYkL0hOavvxiJ/nr+f7z6/f+T3O9c+fl89j48HDw8MbL/0Vo7qIV8t6Bs+r98tbgIeHh7fGS4L1PBpfv/9qrusD6caCh4eH92G8fNGT7cPDw8P777zkc/VKfZ2SGG03Hh4e3hovSSvkQT9P0U6u1IdzLXh4eHgLVaTP+bxS38PDw8MbV9UnF988iJ8qmP0xJh4eHt4CLw+41Yaq/Go+T93epD/w8PDwjvKS5VYDej5a8rfVY+nHO3h4eHgLvEnJf8LopUKSa3o5s4KHh4c35lXL/9XwPTmKcioeHh7eHi85AHrtBb1NqW76jQIPDw9vgZenA5JNycfpHSHN1is8PDy8BV41AZFfu/OreX7k9FIkeHh4eNu8eRNVNWk7GS2aEQ8PD+8oL08i9AL3JG1xTSo3CuDh4eEd4iUHQBWfw3rHUjIvHh4e3gavV9CaFL2qG5d/J7j5j+Hh4eEd4k2aqyabMkn15v8ePDw8vHfy8lBefedUoE9GxsPDw9vg5YF+nmatXr57iY8oGYGHh4c34OXFpF6YriY1ksOpvAY8PDy8NV6vblZN2k7SGdXx8fDw8DZ4k7Rpr4UrSeYmGxdtOh4eHt4Cr9oylQf6XoNCPkueSsbDw8N7J68auE81ck3aGspNA3h4eHgDXjVxkF+dq8Ww3rx4eHh47+f1kqfVcN87GPLnj3Hw8PDwjvLmx8DZMv9kO24KYHh4eHiHeNWA27scT9qtqp9H5wkeHh5ezKuWmpIQnPw2bz6oXtbx8PDw3sPLp6m+2UvFzktxeHh4eJ/Jqx4AyaLzxq9onXh4eHgfwOsF8V6Sonr1P3Aw4OHh4cW8SVtVktjNj5bDs+Dh4eEt8CZf+CfX7nxZ+ZV6VN/Dw8PDu5/3CxSH2k/+Ma4CAAAAAElFTkSuQmCC">分享</a><div class="tags"><a href="/tags/%E7%BA%A2%E7%B1%B3/"><i class="fa fa-tag"></i>红米</a><a href="/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"><i class="fa fa-tag"></i>近思录</a></div><div class="post-nav"><a class="pre" href="/2020/10/02/Recent-thoughts-2020-10-02/">近思录 2020-10-02</a><a class="next" href="/2020/08/01/Recent-thoughts-2020-08-01/">近思录 2020-08-01</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+  shortname: 'chris-an-emacser',
+  siteName: 'M-x Chris-An-Emacser',
+  identifier: '2020/09/10/Recent-thoughts-2020-09-10/',
+  url: 'https://chriszheng.science/2020/09/10/Recent-thoughts-2020-09-10/',
+  title: '近思录 2020-09-10',
+  api: 'https://disqus.skk.moe/disqus/',
+  apikey: 'jVxAv28vcEwlLnAb7eXSz5hvxRT0o4VPX50vlpmCrxFzDZB4diszy8SS0a9yBJAT',
+  admin: 'disqus_5MXlSWVCDu',
+  adminLabel: 'Mod'
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://chris-an-emacser.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Emacs/">Emacs</a><span class="category-list-count">38</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Emacs%E5%B0%8F%E6%8A%80%E5%B7%A7/">Emacs小技巧</a><span class="category-list-count">50</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Firefox/">Firefox</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Shadowsocks/">Shadowsocks</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%BB%8F%E9%AA%8C/">一句话经验</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%86%E4%BA%AB/">分享</a><span class="category-list-count">44</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%90%8D%E8%A8%80%E5%88%86%E4%BA%AB/">名言分享</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%97%E4%BD%93%E6%8E%92%E5%8D%B0/">字体排印</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%91%84%E5%BD%B1%E4%BD%9C%E5%93%81/">摄影作品</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E5%AD%A6%E4%BD%9C%E5%93%81/">文学作品</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6/">科学研究</a><span class="category-list-count">22</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%91%E8%AF%9D%E6%AE%B5%E5%AD%90/">笑话段子</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">经验分享</a><span class="category-list-count">35</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/">编程技术</a><span class="category-list-count">17</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF/">网站信息</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%98%E8%85%BE/">网络折腾</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%91%E6%80%9D%E5%BD%95/">近思录</a><span class="category-list-count">61</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/">闲言碎语</a><span class="category-list-count">49</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/" style="font-size: 15.56px;">闲言碎语</a> <a href="/tags/%E7%A7%91%E7%A0%94/" style="font-size: 10px;">科研</a> <a href="/tags/%E8%80%81%E5%8F%B8%E6%9C%BA/" style="font-size: 10px;">老司机</a> <a href="/tags/%E7%BB%8F%E9%AA%8C/" style="font-size: 13.33px;">经验</a> <a href="/tags/DNS/" style="font-size: 10px;">DNS</a> <a href="/tags/%E5%90%8D%E4%BA%BA%E5%90%8D%E8%A8%80/" style="font-size: 16.67px;">名人名言</a> <a href="/tags/320-Kbps/" style="font-size: 10px;">320 Kbps</a> <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 10px;">流量</a> <a href="/tags/7zip/" style="font-size: 10px;">7zip</a> <a href="/tags/%E7%9B%AE%E5%BD%95/" style="font-size: 10px;">目录</a> <a href="/tags/Mew/" style="font-size: 11.11px;">Mew</a> <a href="/tags/Emacs/" style="font-size: 20px;">Emacs</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 14.44px;">技巧</a> <a href="/tags/%E9%82%AE%E4%BB%B6/" style="font-size: 10px;">邮件</a> <a href="/tags/%E5%A3%81%E7%BA%B8/" style="font-size: 12.22px;">壁纸</a> <a href="/tags/Org-mode/" style="font-size: 11.11px;">Org-mode</a> <a href="/tags/%E6%90%9E%E7%AC%91/" style="font-size: 11.11px;">搞笑</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 13.33px;">博客</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 18.89px;">分享</a> <a href="/tags/%E6%AE%B5%E5%AD%90/" style="font-size: 17.78px;">段子</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://bandwagonhost.com/aff.php?aff=3069" title="便宜好用的搬瓦工(含推广)" target="_blank">便宜好用的搬瓦工(含推广)</a><ul></ul><a href="http://www.vultr.com/?ref=7184966" title="支持小时收费的vultr (含推广)" target="_blank">支持小时收费的vultr (含推广)</a><ul></ul><a href="https://gitee.com/chriszheng/Blog" title="帖子的md文件" target="_blank">帖子的md文件</a><ul></ul><a href="https://gitee.com/chriszheng/dotEmacs" title="我的Emacs配置" target="_blank">我的Emacs配置</a><ul></ul><a href="https://chriszheng.science/" title="M-x Chris-An-Emacser" target="_blank">M-x Chris-An-Emacser</a><ul></ul><a href="https://zklhp.github.io/" title="GitHub上的镜像" target="_blank">GitHub上的镜像</a><ul></ul><a href="https://github.com/zklhp/zklhp.github.io" rel="me" title="GitHub上的镜像文件" target="_blank">GitHub上的镜像文件</a><ul></ul><a href="https://github.com/zklhp" rel="me" title="GitHub主页" target="_blank">GitHub主页</a><ul></ul><a href="https://mastodon.sdf.org/@chriszheng" rel="me" title="@chriszheng@mastodon.sdf.org" target="_blank">@chriszheng@mastodon.sdf.org</a><ul></ul><a href="https://github.com/emacs-china/blogroll" title="emacs-china/blogroll" target="_blank">emacs-china/blogroll</a><ul></ul><a href="https://github.com/RSS-Renaissance/awesome-blogCN-feeds" title="「独立中文博客」订阅列表" target="_blank">「独立中文博客」订阅列表</a><ul></ul><a href="https://zhblogs.ohyee.cc/?from=chriszheng.science" title="中文博客列表导航项目" target="_blank">中文博客列表导航项目</a><ul></ul><a href="https://cireu.github.io/" title="NIL" target="_blank">NIL</a><ul></ul><a href="http://jerry011235.github.io/" title="璀璨星空" target="_blank">璀璨星空</a><ul></ul><a href="https://funix.cn/" title="56Kb/s" target="_blank">56Kb/s</a><ul></ul><a href="http://www.geekplux.com/" title="GeekPlux" target="_blank">GeekPlux</a><ul></ul><a href="http://www.lijigang.com/" title="lijigang" target="_blank">lijigang</a><ul></ul><a href="http://zilongshanren.com/" title="子龙山人" target="_blank">子龙山人</a><ul></ul><a href="http://blog.lujun9972.win/" title="暗无天日" target="_blank">暗无天日</a><ul></ul><a href="http://kelvinh.github.io/" title="Kelvin的胡言乱语" target="_blank">Kelvin的胡言乱语</a><ul></ul><a href="http://emacs-china.org/" title="Emacs China" target="_blank">Emacs China</a><ul></ul><a href="https://tiexo.github.io/" title="简单可依赖" target="_blank">简单可依赖</a><ul></ul><a href="http://jetyu.me/" title="Jet’s Notes" target="_blank">Jet’s Notes</a><ul></ul><a href="http://bbs.keinsci.com/?fromuid=4772" title="计算化学公社(含推广)" target="_blank">计算化学公社(含推广)</a><ul></ul><a href="https://chempeng.github.io/" title="Chem_peng" target="_blank">Chem_peng</a><ul></ul><a href="https://urzz.me/" title="瘫曲的Blog" target="_blank">瘫曲的Blog</a><ul></ul><a href="http://hongludianxue.com/" title="红炉点雪" target="_blank">红炉点雪</a><ul></ul><a href="https://macplay.github.io/" title="MacPlay" target="_blank">MacPlay</a><ul></ul><a href="https://lengyueyang.github.io/" title="深度识医" target="_blank">深度识医</a><ul></ul><a href="http://kevinjiang.info/" title="(power up)" target="_blank">(power up)</a><ul></ul><a href="https://www.jianshu.com/u/390b177189f0" title="QQ群友「七月流火」的Blog" target="_blank">QQ群友「七月流火」的Blog</a><ul></ul><a href="https://ditou.org/" title="近视眼逛博客" target="_blank">近视眼逛博客</a><ul></ul><a href="https://xiaoyan.work/" title="小焱" target="_blank">小焱</a><ul></ul><a href="https://sh.alynx.one/" title="喵's StackHarbor" target="_blank">喵's StackHarbor</a><ul></ul><a href="https://money1.us/" title="马内(信用卡优惠等资讯)" target="_blank">马内(信用卡优惠等资讯)</a><ul></ul><a href="http://sdf-cn.org/" title="SDF公众Unix服务器中文站" target="_blank">SDF公众Unix服务器中文站</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2023 <a href="/." rel="nofollow">M-x Chris-An-Emacser.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a> UV/PV: <span id="busuanzi_value_site_uv"> | </span>/<span id="busuanzi_value_site_pv"> | </span>.</div></div></div><a class="show" id="rocket" href="#top"></a><script>$(window).scroll(function(){$(window).scrollTop()>500?$("#rocket").addClass("show"):$("#rocket").removeClass("show")});$("#rocket").click(function(){$("#rocket").addClass("launch");$("html, body").animate({scrollTop:0},500,function(){$("#rocket").removeClass("show launch")});return false});</script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" async></script><script type="text/javascript">$(document).ready(function(){$("img").each(function(){if($(this).parent().hasClass("fancybox"))return;if($(this).hasClass("nofancybox"))return;var alt=this.alt;if(alt)$(this).after('<span class="caption">'+alt+"</span>");$(this).wrap('<a href="'+($(this).attr("data-src")==null?this.src:$(this).attr("data-src"))+'" title="'+alt+'" class="fancybox"></a>')});$(this).find(".fancybox").each(function(){$(this).attr("rel","article")})});$(document).ready(function(){$("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']").attr("rel","gallery").fancybox({helpers:{title:{type:"inside"}}})});</script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><script type="text/javascript">var searchFunc=function(path,search_id,content_id){"use strict";$.ajax({url:path,dataType:"xml",success:function(xmlResponse){var datas=$("entry",xmlResponse).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get();var $input=document.getElementById(search_id);var $resultContent=document.getElementById(content_id);$input.addEventListener("input",function(){var str='<ul class="search-result-list">';var keywords=this.value.trim().toLowerCase().split(/[\s\-]+/);$resultContent.innerHTML="";if(this.value.trim().length<=0){return}datas.forEach(function(data){var isMatch=true;var content_index=[];var data_title=data.title.trim().toLowerCase();var data_content=data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();var data_url=data.url;var index_title=-1;var index_content=-1;var first_occur=-1;if(data_title!=""&&data_content!=""){keywords.forEach(function(keyword,i){index_title=data_title.indexOf(keyword);index_content=data_content.indexOf(keyword);if(index_title<0&&index_content<0){isMatch=false}else{if(index_content<0){index_content=0}if(i==0){first_occur=index_content}}})}if(isMatch){str+="<li><a href='"+data_url+"' class='search-result-title'>"+data_title+"</a>";var content=data.content.trim().replace(/<[^>]+>/g,"");if(first_occur>=0){var start=first_occur-30;var outLength=78;if(start<0){start=0}if(start+outLength>content.length){if(content.length<outLength){outLength=content.length-start}else{start=content.length-outLength}}var match_content=content.substr(start,outLength);keywords.forEach(function(keyword){var regS=new RegExp(keyword,"gi");match_content=match_content.replace(regS,'<em class="search-keyword">'+keyword+"</em>")});str+='<p class="search-result">'+match_content+"...</p>"}str+="</li>"}});str+="</ul>";$resultContent.innerHTML=str})}})};</script><style>#local-search-result{position:absolute;background-color:#fff;width:100%}#sidebar .widget .search-form{overflow:visible}#sidebar .widget .search-form input{width:auto}</style><script type="text/javascript">var search_path = 'search.xml';
+0==search_path.length&&(search_path="search.xml");
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript">+function($){"use strict";var CodeBlockResizer=function(elem){this.$codeBlocks=$(elem)};CodeBlockResizer.prototype={run:function(){var self=this;self.resize();$(window).smartresize(function(){self.resize()})},resize:function(){var self=this;self.$codeBlocks.each(function(){var $gutter=$(this).find(".gutter");var $code=$(this).find(".code");var codePaddings=$code.width()-$code.innerWidth();var width=$(this).outerWidth()-$gutter.outerWidth()+codePaddings;$code.css("width",width);$code.children("pre").css("width",width)})}};$(document).ready(function(){$.fn.hasHorizontalScrollBar=function(){return this.get(0).scrollWidth>this.innerWidth()};var resizer=new CodeBlockResizer("figure.highlight");resizer.run()})}(jQuery);</script><script type="text/javascript">+function($,sr){var debounce=function(func,threshold,execAsap){var timeout;return function debounced(){var obj=this,args=arguments;function delayed(){if(!execAsap){func.apply(obj,args)}timeout=null}if(timeout){clearTimeout(timeout)}else if(execAsap){func.apply(obj,args)}timeout=setTimeout(delayed,threshold||100)}};jQuery.fn[sr]=function(fn){return fn?this.bind("resize",debounce(fn)):this.trigger(sr)}}(jQuery,"smartresize");</script><a class="show" id="rocket" href="#top"></a><script>$(window).scroll(function(){$(window).scrollTop()>500?$("#rocket").addClass("show"):$("#rocket").removeClass("show")});$("#rocket").click(function(){$("#rocket").addClass("launch");$("html, body").animate({scrollTop:0},500,function(){$("#rocket").removeClass("show launch")});return false});</script></div></body></html>
