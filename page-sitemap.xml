@@ -22,7 +22,7 @@
     </url>
     
     <url>
-        <loc>https://chriszheng.science/emacs-beginner-guide/</loc>
+        <loc>https://chriszheng.science/categories/</loc>
         <lastmod>2022-03-23T00:32:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -36,7 +36,7 @@
     </url>
     
     <url>
-        <loc>https://chriszheng.science/categories/</loc>
+        <loc>https://chriszheng.science/emacs-beginner-guide/</loc>
         <lastmod>2022-03-23T00:32:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
