@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2023-03-11T10:53:47.644Z</updated>
+  <updated>2023-03-19T02:27:25.472Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chriszheng.science/2023/03/01/Recent-thoughts-2023-03-01/"/>
     <id>https://chriszheng.science/2023/03/01/Recent-thoughts-2023-03-01/</id>
     <published>2023-02-28T16:00:00.000Z</published>
-    <updated>2023-03-11T10:53:47.644Z</updated>
+    <updated>2023-03-19T02:27:25.472Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="ventoy"><a href="https://www.ventoy.net/cn/">Ventoy</a></h2><span id="more"></span><h2 id="毛主席批判党八股提过的两个异体字">毛主席批判党八股提过的两个异体字</h2><p><a href="https://www.zhihu.com/question/524482065">https://www.zhihu.com/question/524482065</a></p><h2 id="2952">2952</h2><p>👏👏👏👏👏</p><blockquote><p>Now let me make this quite plain. You have been told that a certain Dark Wizard is at large once again. This… is… a… lie!</p><footer><strong>Dolores Umbridge,</strong><cite><a href="https://www.quotes.net/mquote/115640">www.quotes.net/mquote/115640</a></cite></footer></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="ventoy"><a href="https://www.ventoy.net/cn/">Ventoy</a></h2><span id="more"></span><h2 id="毛主席批判党八股提过的两个异体字">毛主席批判党八股提过的两个异体字</h2><p><a href="https://www.zhihu.com/question/524482065">https://www.zhihu.com/question/524482065</a></p><h2 id="2952">2952</h2><p>👏👏👏👏👏</p><blockquote><p>Now let me make this quite plain. You have been told that a certain Dark Wizard is at large once again. This… is… a… lie!</p><footer><strong>Dolores Umbridge,</strong><cite><a href="https://www.quotes.net/mquote/115640">www.quotes.net/mquote/115640</a></cite></footer></blockquote><div class="video-container"><iframe src="https://www.youtube.com/embed/m3jVi82adQw" frameborder="0" loading="lazy" allowfullscreen></iframe></div><script type="text/javascript">var i = window.$("iframe");for (var v of i) {  if (v.src.includes("youtube"))  {    v.width = '100%';    v.height = '480 px';  }}</script><h2 id="20万uv达成">20万UV达成</h2><p>As of 2023-03-12.</p><h2 id="octave导出的图片文字过大">Octave导出的图片文字过大</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">get (0, &quot;screenpixelsperinch&quot;) / 72</span><br><span class="line">print(&quot;myfigure.svg&quot;, &quot;-dsvg&quot;, &quot;-FLatin Modern Roman:12&quot;)</span><br></pre></td></tr></table></figure><p><a href="https://octave.discourse.group/t/size-and-color-of-export-graph-figure/4139">https://octave.discourse.group/t/size-and-color-of-export-graph-figure/4139</a></p><h2 id="硬件总体上还是便宜了">硬件总体上还是便宜了</h2><p>几块钱就买能运行Linux的随身电脑。</p><iframe src="//player.bilibili.com/player.html?aid=908563834&bvid=BV1uM4y1k7aL&cid=1055975108&page=1" width="100%" height="480px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
     
     <summary type="html">
     
