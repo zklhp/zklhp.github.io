@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>近思录 2023-03-01</title>
-      <link href="/2023/03/01/Recent-thoughts-2023-03-01/"/>
-      <url>/2023/03/01/Recent-thoughts-2023-03-01/</url>
+      <title>近思录 2023-04-01</title>
+      <link href="/2023/04/01/Recent-thoughts-2023-04-01/"/>
+      <url>/2023/04/01/Recent-thoughts-2023-04-01/</url>
       
-        <content type="html"><![CDATA[<h2 id="ventoy"><a href="https://www.ventoy.net/cn/">Ventoy</a></h2><span id="more"></span><h2 id="毛主席批判党八股提过的两个异体字">毛主席批判党八股提过的两个异体字</h2><p><a href="https://www.zhihu.com/question/524482065">https://www.zhihu.com/question/524482065</a></p><h2 id="2952">2952</h2><p>👏👏👏👏👏</p><blockquote><p>Now let me make this quite plain. You have been told that a certain Dark Wizard is at large once again. This… is… a… lie!</p><footer><strong>Dolores Umbridge,</strong><cite><a href="https://www.quotes.net/mquote/115640">www.quotes.net/mquote/115640</a></cite></footer></blockquote><div class="video-container"><iframe src="https://www.youtube.com/embed/m3jVi82adQw" frameborder="0" loading="lazy" allowfullscreen></iframe></div><script type="text/javascript">var i = window.$("iframe");for (var v of i) {  if (v.src.includes("youtube"))  {    v.width = '100%';    v.height = '480 px';  }}</script><h2 id="20万uv达成">20万UV达成</h2><p>As of 2023-03-12.</p><h2 id="octave导出的图片文字过大">Octave导出的图片文字过大</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">get (0, &quot;screenpixelsperinch&quot;) / 72</span><br><span class="line">print(&quot;myfigure.svg&quot;, &quot;-dsvg&quot;, &quot;-FLatin Modern Roman:12&quot;)</span><br></pre></td></tr></table></figure><p><a href="https://octave.discourse.group/t/size-and-color-of-export-graph-figure/4139">https://octave.discourse.group/t/size-and-color-of-export-graph-figure/4139</a></p><h2 id="硬件总体上还是便宜了">硬件总体上还是便宜了</h2><p>几块钱就买能运行Linux的随身电脑。</p><iframe src="//player.bilibili.com/player.html?aid=908563834&bvid=BV1uM4y1k7aL&cid=1055975108&page=1" width="100%" height="480px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+        <content type="html"><![CDATA[<h2 id="chat-with-open-large-language-models"><a href="https://chat.lmsys.org/">Chat with Open Large Language Models</a></h2><span id="more"></span><h2 id="rwkv模型"><a href="https://huggingface.co/spaces/BlinkDL/Raven-RWKV-7B">RWKV模型</a></h2><h2 id="gpt4all"><a href="https://github.com/nomic-ai/gpt4all">GPT4ALL</a></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/nomic-ai/nomic</span><br><span class="line"><span class="built_in">cd</span> nomic/</span><br><span class="line">pip install .[GPT4All]</span><br><span class="line">pip install nomic</span><br><span class="line">pip install --force-reinstall <span class="string">&quot;bin/peft-0.3.0.dev0-py3-none-any.whl&quot;</span></span><br><span class="line">pip install --force-reinstall <span class="string">&quot;bin/transformers-4.28.0.dev0-py3-none-any.whl&quot;</span></span><br></pre></td></tr></table></figure><p>Change the file <code>nomic/gpt4all/gpt4all.py</code>.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> nomic.gpt4all.gpt4all <span class="keyword">import</span> GPT4AllGPU</span><br><span class="line">m = GPT4AllGPU(<span class="string">&#x27;llama-7b-hf&#x27;</span>)</span><br><span class="line">config = &#123;<span class="string">&#x27;num_beams&#x27;</span>: <span class="number">2</span>,</span><br><span class="line">          <span class="string">&#x27;min_new_tokens&#x27;</span>: <span class="number">10</span>,</span><br><span class="line">          <span class="string">&#x27;max_length&#x27;</span>: <span class="number">100</span>,</span><br><span class="line">          <span class="string">&#x27;repetition_penalty&#x27;</span>: <span class="number">2.0</span>&#125;</span><br><span class="line">out = m.generate(<span class="string">&#x27;write me a story about a lonely computer&#x27;</span>, config)</span><br><span class="line"><span class="built_in">print</span>(out)</span><br></pre></td></tr></table></figure><p>However, I have inadequate GPU.</p><h2 id="🦙🌲-alpaca-lora-at-huggingface"><a href="https://huggingface.co/spaces/tloen/alpaca-lora">🦙🌲 Alpaca-LoRA at huggingface</a></h2><h2 id="til-武大郎卖的是馒头">[TIL]武大郎卖的是馒头</h2><p><a href="https://zhuanlan.zhihu.com/p/157303153">https://zhuanlan.zhihu.com/p/157303153</a></p><p>作者考据功力深厚。</p>]]></content>
       
       
       <categories>
@@ -19,6 +19,35 @@
       
       
         <tags>
+            
+            <tag> 近思录 </tag>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>近思录 2023-03-01</title>
+      <link href="/2023/03/01/Recent-thoughts-2023-03-01/"/>
+      <url>/2023/03/01/Recent-thoughts-2023-03-01/</url>
+      
+        <content type="html"><![CDATA[<h2 id="ventoy"><a href="https://www.ventoy.net/cn/">Ventoy</a></h2><span id="more"></span><h2 id="毛主席批判党八股提过的两个异体字">毛主席批判党八股提过的两个异体字</h2><p><a href="https://www.zhihu.com/question/524482065">https://www.zhihu.com/question/524482065</a></p><h2 id="2952">2952</h2><p>👏👏👏👏👏</p><blockquote><p>Now let me make this quite plain. You have been told that a certain Dark Wizard is at large once again. This… is… a… lie!</p><footer><strong>Dolores Umbridge,</strong><cite><a href="https://www.quotes.net/mquote/115640">www.quotes.net/mquote/115640</a></cite></footer></blockquote><div class="video-container"><iframe src="https://www.youtube.com/embed/m3jVi82adQw" frameborder="0" loading="lazy" allowfullscreen></iframe></div><script type="text/javascript">var i = window.$("iframe");for (var v of i) {  if (v.src.includes("youtube"))  {    v.width = '100%';    v.height = '480 px';  }}</script><h2 id="20万uv达成">20万UV达成</h2><p>As of 2023-03-12.</p><h2 id="octave导出的图片文字过大">Octave导出的图片文字过大</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">get (0, &quot;screenpixelsperinch&quot;) / 72</span><br><span class="line">print(&quot;myfigure.svg&quot;, &quot;-dsvg&quot;, &quot;-FLatin Modern Roman:12&quot;)</span><br></pre></td></tr></table></figure><p><a href="https://octave.discourse.group/t/size-and-color-of-export-graph-figure/4139">https://octave.discourse.group/t/size-and-color-of-export-graph-figure/4139</a></p><h2 id="硬件总体上还是便宜了">硬件总体上还是便宜了</h2><p>几块钱就买到能运行Linux的随身电脑。</p><iframe src="//player.bilibili.com/player.html?aid=908563834&bvid=BV1uM4y1k7aL&cid=1055975108&page=1" width="100%" height="480px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><h2 id="大写十三年">「大写十三年」</h2><p><a href="https://www.azcolabs.com/bd_13&amp;108.html">https://www.azcolabs.com/bd_13&amp;108.html</a></p><blockquote><p>我还记得还有一位主张“写十三年”的“长官”，有人请他看话剧，他问，“是不是写十三年的？写十三年的，我就去看。”不幸那出戏偏偏比十三年多两三个月。他一本正经地说：“不是写十三年的，我不看。”</p><footer><strong>巴金</strong><cite>《“长官意志”》</cite></footer></blockquote><h2 id="阳光开朗孔乙己"><a href="https://cn.bing.com/search?q=%E9%98%B3%E5%85%89%E5%BC%80%E6%9C%97%E5%AD%94%E4%B9%99%E5%B7%B1">阳光开朗孔乙己</a></h2><h2 id="literate-calc-mode"><a href="https://github.com/sulami/literate-calc-mode.el">literate-calc-mode</a></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 近思录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 典故 </tag>
             
             <tag> 近思录 </tag>
             
