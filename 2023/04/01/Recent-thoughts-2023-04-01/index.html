@@ -63,8 +63,174 @@ Response: The evolution of the eye is a fascinating topic in biology. The earlie
 </ul>
 <h2 id="til-根据-台灣雀巢股份有限公司-一杯-1-8-g-醇品風味咖啡里面含有55-6-mg咖啡因">[TIL]根据 台灣雀巢股份有限公司，一杯(1.8 g)醇品風味咖啡里面含有55.6 mg咖啡因</h2>
 <p><a target="_blank" rel="noopener" href="http://www.chiafeng.com.tw/upload/doc/doc_20171021022119_0.pdf">http://www.chiafeng.com.tw/upload/doc/doc_20171021022119_0.pdf</a></p>
+
+<script async src="//cdn.jsdelivr.net/npm/3dmol@1.7.1/build/3Dmol-min.min.js" onload="backend_loaded()"></script>
+
+<div id="container" class="mol-container" style="width:100%; height:0; position: relative"></div>
+<textarea id="coordinates" title="attributes" rows="10" style="width: 100%; max-width: 100%;">
+Loading... Please refresh if this message persists.
+</textarea>
+<br>
+<input type="button" id="toggle_label" value="Turn Label Off">
+
+<script>
+    const input_textarea = $("#coordinates");
+    let viewer;
+    let label_on = true;
+    let atoms = [];
+    const bond_length_database = {};
+    const bond_length_data_url = "https://liwt31.github.io/vendor/bond_length.json";
+
+    $.getJSON(bond_length_data_url, function(data) {
+        // load bond length data
+        for (const record of data){
+            if (record.bond_order != 1){
+                // Only deal with single bond for now
+                continue;
+            }
+            bond_length_database[record.elements] = record.length;
+            bond_length_database[[record.elements[1], record.elements[0]]] = record.length;
+        }
+        if (!(viewer === undefined)){
+            // backend already loaded. Rerender
+            form_bonds(atoms);
+            input_textarea.trigger("change");
+        }
+    });
+
+    input_textarea.on('input change',function(e){
+        // main logic
+        const coordinates = e.target.value;
+        let success;
+        try{
+            atoms = parse_input(coordinates);
+            success = true;
+        }
+        catch (err) {
+            console.log("Error parsing coordinates: ", err);
+            atoms = [];
+            success = false;
+        }
+        form_bonds(atoms);
+        // rerender
+        viewer.removeAllLabels();
+        viewer.removeAllModels();
+        if (success){
+            const m = viewer.addModel();
+            m.addAtoms(atoms);
+            m.setStyle({},{sphere:{scale:0.3}, stick:{}});
+            if (label_on){
+                draw_label();
+            }
+        } else{
+            viewer.addLabel("Invalid input",{position: {x:0, y:0, z:0}, backgroundColor:"red"});
+        }
+        viewer.zoomTo();
+        viewer.render();
+    });
+
+    function parse_float_throw(s){
+        // parse float number but throws exception at NaN
+        let res = parseFloat(s);
+        if (isNaN(res)){
+            throw "invalid float number: " + s
+        }
+        return res
+    }
+
+    function parse_input(coord_str){
+        // get xyz coordinates for the atoms
+        let atoms = [];
+        const lines = coord_str.split("\n");
+        for (let line of lines){
+            line = line.trim();
+            if (line.length == 0){
+                continue;
+            }
+            const elems = line.split(/\s+/);
+            if (elems.length < 4){
+                throw "invalid line: " + line
+            }
+            atoms.push({elem: elems[0], x: parse_float_throw(elems[1]), y: parse_float_throw(elems[2]), z: parse_float_throw(elems[3])});
+        }
+        return atoms;
+    }
+
+    function is_bonding(atom_coordinate1, atom_coordinate2){
+        const x1 = atom_coordinate1.x;
+        const y1 = atom_coordinate1.y;
+        const z1 = atom_coordinate1.z;
+        const x2 = atom_coordinate2.x;
+        const y2 = atom_coordinate2.y;
+        const z2 = atom_coordinate2.z;
+        const length = Math.sqrt((x1 - x2)**2 + (y1 - y2)**2 + (z1 - z2) ** 2);
+        const key = [atom_coordinate1.elem, atom_coordinate2.elem];
+        if (!(key in bond_length_database)){
+            return false
+        }
+        // add some tolerance
+        return length < 1.3 * bond_length_database[key];
+    }
+
+    function form_bonds(atom_coordinates){
+        // add bond information in place
+        // stick to simple logic and avoid (premature) optimization
+        for (const atom_coordinate1 of atom_coordinates){
+            const bonds = [];
+            for (let i= 0; i < atom_coordinates.length; i++){
+                const atom_coordinate2 = atom_coordinates[i];
+                if (is_bonding(atom_coordinate1, atom_coordinate2)){
+                    bonds.push(i)
+                }
+            }
+            atom_coordinate1.bonds = bonds;
+            atom_coordinate1.bondOrder = new Array(bonds.length).fill(1);
+        }
+    }
+
+    function draw_label(){
+        for (let i=0; i<atoms.length; i++){
+            let atom = atoms[i];
+            viewer.addLabel(`${atom["elem"]}${i+1}`, {position: {x: atom["x"], y: atom["y"], z: atom["z"]}, fontSize:12});
+        }
+    }
+
+    function backend_loaded(){
+        const container = $("#container");
+        const config = { backgroundColor: "white" };
+        container.height(container.width());
+        viewer = $3Dmol.createViewer( container, config );
+        // initial values for the textarea
+        // in angstrom
+        input_textarea.val(`C      23.446690   14.573665    1.460751\nN      22.208322   14.368746    0.873759\nN      24.678860   16.524916    2.097598\nC      25.697877   15.739293    2.572590\nC      23.572908   15.930500    1.546726\nN      22.492110   16.575694    1.046121\nN      25.562436   14.365581    2.433601\nC      24.443973   13.672774    1.896463\nO      24.427749   12.454259    1.841459\nO      26.687222   16.236975    3.090774\nC      26.683814   13.540933    2.892798\nC      24.788862   17.984362    2.193530\nC      21.569248   13.094782    0.548331\nC      21.698747   15.585151    0.654289\nH      20.803550   15.735224    0.234303\nH      26.471831   12.575402    2.742548\nH      27.508322   13.784124    2.381549\nH      26.837891   13.700046    3.868052\nH      25.659672   18.226197    2.620727\nH      24.745018   18.383201    1.277539\nH      24.036296   18.339957    2.747698\nH      20.676584   13.265799    0.131366\nH      22.144598   12.587004   -0.093185\nH      21.449418   12.558527    1.383841\n`);
+        input_textarea.trigger("change");
+    }
+
+    $("#toggle_label").on("click", function(e){
+        if (label_on){
+            viewer.removeAllLabels();
+            viewer.render();
+            label_on = false;
+            e.target.value = "Turn Label On";
+        } else{
+            draw_label();
+            viewer.render();
+            label_on = true;
+            e.target.value = "Turn Label Off";
+        }
+    })
+</script>
+
+<p>The unit is in Angstrom.</p>
+<a id="more"></a>
+<p>Quite simple tool powered by <a href="https://github.com/3dmol/3Dmol.js" target="_blank" rel="noopener">3Dmol.js</a>. Auto-detects bond formation using bond length database from <a href="https://github.com/materialsproject/pymatgen" target="_blank" rel="noopener">pymatgen</a>.</p>
+<p>Feature requests are welcome by submitting an issue at <a href="https://github.com/liwt31/liwt31.github.io" target="_blank" rel="noopener">https://github.com/liwt31/liwt31.github.io</a>.</p>
+
+<h2 id="til-如何改endnote插入文献的字体？">[TIL]如何改EndNote插入文献的字体？</h2>
+<p><img src="/img/EndNote-Bibliography-font-setting.png" alt="EndNote如何设置插入文献的字体"></p>
+<p>过去10年浪费了我多少时间啊！</p>
 </div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.1.5"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!" async></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><link rel="stylesheet" type="text/css" href="/css/webmention.css?v=1.1.5"><script type="text/javascript" src="/js/webmention.min.js" data-id="webmentions"></script><div id="webmentions"></div><form style="margin-left: 70%" method="get" action="https://quill.p3k.io/" target="_blank"><input type="hidden" name="dontask" value="1"><input type="hidden" name="me" value="https://commentpara.de/"><input class="my-url" type="hidden" name="reply" value=""><input style="min-width: 50%; font-size: 1.2em" type="submit" value="写个评论吧"></form><p>或者您可以把评论发在别处，添加指向本页的连接，然后把网址告诉我：</p><form action="https://webmention.io/chriszheng.science/webmention" method="post"><input style="min-width: 68.5%; font-size: 1.2em" name="source" placeholder="" type="url"><input class="my-url" type="hidden" name="target" value=""><input style="min-width: 20%; font-size: 1.2em" type="submit" value="发送Webmention"></form><script type="text/javascript">for (const u of document.querySelectorAll("input.my-url"))
-  u.value = window.location.href;</script><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>近思录 2023-04-01</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2023-04-01</p><p><span>最后更新：</span>2023-04-21</p><p><span>原始链接：</span><a href="/2023/04/01/Recent-thoughts-2023-04-01/">https://chriszheng.science/2023/04/01/Recent-thoughts-2023-04-01/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2023/04/01/Recent-thoughts-2023-04-01/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2023/04/01/Recent-thoughts-2023-04-01/" data-id="clg4icd2j0001amv057o709v1" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACs0lEQVR42u3aS27DMAwFwN7/0u22QGrnkRQDFxivgnwsjxYS86ivr/j6frl+v3/1+v77r/e/+u3rfQ5feHh4eONHv3qs6jeTd3JGcwrw8PDw1njJ7e5f3w+crN5nNxg8PDy85/OS4ZP731fFeHh4eP+Rd79kTz5NCnE8PDy85/CSiCGPEiYl8v10LGYteHh4eAtdpOe8Xunv4eHh4Y276r0WV++6uvPk/nh4eHgbvGrkejVw0uCvLu693+Lh4eF9nlddrJMpSGKIZEtInvaPZ8PDw8Nb4E0OS+WTMolZ8yK+HEzg4eHhjXn5Il6NX5NHORWF4OHh4X2Sl7Twq4VyHlUkq3qzMYaHh4d3iFcl5aHA/D7zxhseHh7eBi9Z4pOFeN5CS2C9++Ph4eHt8XrlbB5k5A9XWO4HI+Lh4eFNePlCnwxQzQTyQwPNrAUPDw/vKK9azlYPTk0aZtWp+eM7eHh4eMu8anmdF77Joj//T/AmusXDw8M7xMtj1l6YO4kkJhEwHh4e3jbv1AKdN67mC30hFsHDw8Nb4OXRbd7azw9LVRf6PDTBw8PD2+ZVi+BJhNE7cNDbKvDw8PDO8vLBeg2qZGPofRptJ3h4eHgLvF7RXD2kVTj/FR8FKzwPHh4e3hqvtw1U21qTqLe3CeHh4eHt8fL/773/+9XCfXKsYZSF4OHh4RV5eZu/WkYn0UOyJVTDXzw8PLw9XlIuT1r7vaZX9bpsg+Hh4eEd4n0Xr2oJXj12MJmOy/4eHh4e3lHeJIqtMuYHBXpTiYeHh7fB620Gk4CgOinVYh0PDw/vM7zJMJMIo7fl5JOFh4eH9zRe/qv8oedHFvDw8PCexkuOC8wnKwlqo9AWDw8Pb41XPRpVZVcPaSXIaBQ8PDy8Bd7kD381jOg1+/OSetTfw8PDw3vP+wE8YLtgrorbNQAAAABJRU5ErkJggg==">分享</a><div class="tags"><a href="/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"><i class="fa fa-tag"></i>近思录</a><a href="/tags/AI/"><i class="fa fa-tag"></i>AI</a></div><div class="post-nav"><a class="next" href="/2023/03/01/Recent-thoughts-2023-03-01/">近思录 2023-03-01</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+  u.value = window.location.href;</script><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>近思录 2023-04-01</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2023-04-01</p><p><span>最后更新：</span>2023-04-24</p><p><span>原始链接：</span><a href="/2023/04/01/Recent-thoughts-2023-04-01/">https://chriszheng.science/2023/04/01/Recent-thoughts-2023-04-01/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2023/04/01/Recent-thoughts-2023-04-01/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2023/04/01/Recent-thoughts-2023-04-01/" data-id="clg4icd2j0001amv057o709v1" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACs0lEQVR42u3aS27DMAwFwN7/0u22QGrnkRQDFxivgnwsjxYS86ivr/j6frl+v3/1+v77r/e/+u3rfQ5feHh4eONHv3qs6jeTd3JGcwrw8PDw1njJ7e5f3w+crN5nNxg8PDy85/OS4ZP731fFeHh4eP+Rd79kTz5NCnE8PDy85/CSiCGPEiYl8v10LGYteHh4eAtdpOe8Xunv4eHh4Y276r0WV++6uvPk/nh4eHgbvGrkejVw0uCvLu693+Lh4eF9nlddrJMpSGKIZEtInvaPZ8PDw8Nb4E0OS+WTMolZ8yK+HEzg4eHhjXn5Il6NX5NHORWF4OHh4X2Sl7Twq4VyHlUkq3qzMYaHh4d3iFcl5aHA/D7zxhseHh7eBi9Z4pOFeN5CS2C9++Ph4eHt8XrlbB5k5A9XWO4HI+Lh4eFNePlCnwxQzQTyQwPNrAUPDw/vKK9azlYPTk0aZtWp+eM7eHh4eMu8anmdF77Joj//T/AmusXDw8M7xMtj1l6YO4kkJhEwHh4e3jbv1AKdN67mC30hFsHDw8Nb4OXRbd7azw9LVRf6PDTBw8PD2+ZVi+BJhNE7cNDbKvDw8PDO8vLBeg2qZGPofRptJ3h4eHgLvF7RXD2kVTj/FR8FKzwPHh4e3hqvtw1U21qTqLe3CeHh4eHt8fL/773/+9XCfXKsYZSF4OHh4RV5eZu/WkYn0UOyJVTDXzw8PLw9XlIuT1r7vaZX9bpsg+Hh4eEd4n0Xr2oJXj12MJmOy/4eHh4e3lHeJIqtMuYHBXpTiYeHh7fB620Gk4CgOinVYh0PDw/vM7zJMJMIo7fl5JOFh4eH9zRe/qv8oedHFvDw8PCexkuOC8wnKwlqo9AWDw8Pb41XPRpVZVcPaSXIaBQ8PDy8Bd7kD381jOg1+/OSetTfw8PDw3vP+wE8YLtgrorbNQAAAABJRU5ErkJggg==">分享</a><div class="tags"><a href="/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"><i class="fa fa-tag"></i>近思录</a><a href="/tags/AI/"><i class="fa fa-tag"></i>AI</a></div><div class="post-nav"><a class="next" href="/2023/03/01/Recent-thoughts-2023-03-01/">近思录 2023-03-01</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
   shortname: 'chris-an-emacser',
   siteName: 'M-x Chris-An-Emacser',
   identifier: '2023/04/01/Recent-thoughts-2023-04-01/',
