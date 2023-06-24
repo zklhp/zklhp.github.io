@@ -73,8 +73,172 @@ html.dataset.dark = localStorage.dark;
 <h2 id="♨">♨</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo ipmitool -I open sensor thresh <span class="string">&#x27;CPU1 Temp&#x27;</span> upper 75 90 100</span><br><span class="line">sudo ipmitool -I open sensor thresh <span class="string">&#x27;CPU2 Temp&#x27;</span> upper 75 90 100</span><br><span class="line">sudo ipmitool -I open sensor thresh <span class="string">&#x27;Vcpu1VRM Temp&#x27;</span> upper 85 95 105</span><br><span class="line">sudo ipmitool -I open sensor thresh <span class="string">&#x27;Vcpu2VRM Temp&#x27;</span> upper 85 95 105</span><br></pre></td></tr></table></figure>
 <p>然而该报警还是报警。</p>
+<h2 id="🚒">🚒</h2>
+
+<script async src="//cdn.jsdelivr.net/npm/3dmol@1.7.1/build/3Dmol-min.min.js" onload="backend_loaded()"></script>
+
+<div id="container" class="mol-container" style="width:100%; height:0; position: relative"></div>
+<textarea id="coordinates" title="attributes" rows="10" style="width: 100%; max-width: 100%;">
+Loading... Please refresh if this message persists.
+</textarea>
+<br>
+<input type="button" id="toggle_label" value="Turn Label Off">
+
+<script>
+    const input_textarea = $("#coordinates");
+    let viewer;
+    let label_on = true;
+    let atoms = [];
+    const bond_length_database = {};
+    const bond_length_data_url = "https://liwt31.github.io/vendor/bond_length.json";
+
+    $.getJSON(bond_length_data_url, function(data) {
+        // load bond length data
+        for (const record of data){
+            if (record.bond_order != 1){
+                // Only deal with single bond for now
+                continue;
+            }
+            bond_length_database[record.elements] = record.length;
+            bond_length_database[[record.elements[1], record.elements[0]]] = record.length;
+        }
+        if (!(viewer === undefined)){
+            // backend already loaded. Rerender
+            form_bonds(atoms);
+            input_textarea.trigger("change");
+        }
+    });
+
+    input_textarea.on('input change',function(e){
+        // main logic
+        const coordinates = e.target.value;
+        let success;
+        try{
+            atoms = parse_input(coordinates);
+            success = true;
+        }
+        catch (err) {
+            console.log("Error parsing coordinates: ", err);
+            atoms = [];
+            success = false;
+        }
+        form_bonds(atoms);
+        // rerender
+        viewer.removeAllLabels();
+        viewer.removeAllModels();
+        if (success){
+            const m = viewer.addModel();
+            m.addAtoms(atoms);
+            m.setStyle({},{sphere:{scale:0.3}, stick:{}});
+            if (label_on){
+                draw_label();
+            }
+        } else{
+            viewer.addLabel("Invalid input",{position: {x:0, y:0, z:0}, backgroundColor:"red"});
+        }
+        viewer.zoomTo();
+        viewer.render();
+    });
+
+    function parse_float_throw(s){
+        // parse float number but throws exception at NaN
+        let res = parseFloat(s);
+        if (isNaN(res)){
+            throw "invalid float number: " + s
+        }
+        return res
+    }
+
+    function parse_input(coord_str){
+        // get xyz coordinates for the atoms
+        let atoms = [];
+        const lines = coord_str.split("\n");
+        for (let line of lines){
+            line = line.trim();
+            if (line.length == 0){
+                continue;
+            }
+            const elems = line.split(/\s+/);
+            if (elems.length < 4){
+                throw "invalid line: " + line
+            }
+            atoms.push({elem: elems[0], x: parse_float_throw(elems[1]), y: parse_float_throw(elems[2]), z: parse_float_throw(elems[3])});
+        }
+        return atoms;
+    }
+
+    function is_bonding(atom_coordinate1, atom_coordinate2){
+        const x1 = atom_coordinate1.x;
+        const y1 = atom_coordinate1.y;
+        const z1 = atom_coordinate1.z;
+        const x2 = atom_coordinate2.x;
+        const y2 = atom_coordinate2.y;
+        const z2 = atom_coordinate2.z;
+        const length = Math.sqrt((x1 - x2)**2 + (y1 - y2)**2 + (z1 - z2) ** 2);
+        const key = [atom_coordinate1.elem, atom_coordinate2.elem];
+        if (!(key in bond_length_database)){
+            return false
+        }
+        // add some tolerance
+        return length < 1.3 * bond_length_database[key];
+    }
+
+    function form_bonds(atom_coordinates){
+        // add bond information in place
+        // stick to simple logic and avoid (premature) optimization
+        for (const atom_coordinate1 of atom_coordinates){
+            const bonds = [];
+            for (let i= 0; i < atom_coordinates.length; i++){
+                const atom_coordinate2 = atom_coordinates[i];
+                if (is_bonding(atom_coordinate1, atom_coordinate2)){
+                    bonds.push(i)
+                }
+            }
+            atom_coordinate1.bonds = bonds;
+            atom_coordinate1.bondOrder = new Array(bonds.length).fill(1);
+        }
+    }
+
+    function draw_label(){
+        for (let i=0; i<atoms.length; i++){
+            let atom = atoms[i];
+            viewer.addLabel(`${atom["elem"]}${i+1}`, {position: {x: atom["x"], y: atom["y"], z: atom["z"]}, fontSize:12});
+        }
+    }
+
+    function backend_loaded(){
+        const container = $("#container");
+        const config = { backgroundColor: "white" };
+        container.height(container.width());
+        viewer = $3Dmol.createViewer( container, config );
+        // initial values for the textarea
+        // in angstrom
+        input_textarea.val(`O        0.000000      0.000000     -0.539875\nC        0.000000     -1.168833      0.246742\nH       -0.892801     -1.227885      0.891741\nH        0.000000     -2.021733     -0.437289\nH        0.892801     -1.227885      0.891741\nC        0.000000      1.168833      0.246742\nH       -0.892801      1.227885      0.891741\nH        0.892801      1.227885      0.891741\nH        0.000000      2.021733     -0.437289\n`);
+        input_textarea.trigger("change");
+    }
+
+    $("#toggle_label").on("click", function(e){
+        if (label_on){
+            viewer.removeAllLabels();
+            viewer.render();
+            label_on = false;
+            e.target.value = "Turn Label On";
+        } else{
+            draw_label();
+            viewer.render();
+            label_on = true;
+            e.target.value = "Turn Label Off";
+        }
+    })
+</script>
+
+<p>The unit is in Angstrom.</p>
+<a id="more"></a>
+<p>Quite simple tool powered by <a href="https://github.com/3dmol/3Dmol.js" target="_blank" rel="noopener">3Dmol.js</a>. Auto-detects bond formation using bond length database from <a href="https://github.com/materialsproject/pymatgen" target="_blank" rel="noopener">pymatgen</a>.</p>
+<p>Feature requests are welcome by submitting an issue at <a href="https://github.com/liwt31/liwt31.github.io" target="_blank" rel="noopener">https://github.com/liwt31/liwt31.github.io</a>.</p>
+
 </div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.1.5"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!" async></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><link rel="stylesheet" type="text/css" href="/css/webmention.css?v=1.1.5"><script type="text/javascript" src="/js/webmention.min.js" data-id="webmentions"></script><div id="webmentions"></div><form style="margin-left: 70%" method="get" action="https://quill.p3k.io/" target="_blank"><input type="hidden" name="dontask" value="1"><input type="hidden" name="me" value="https://commentpara.de/"><input class="my-url" type="hidden" name="reply" value=""><input style="min-width: 50%; font-size: 1.2em" type="submit" value="写个评论吧"></form><p>或者您可以把评论发在别处，添加指向本页的连接，然后把网址告诉我：</p><form action="https://webmention.io/chriszheng.science/webmention" method="post"><input style="min-width: 68.5%; font-size: 1.2em" name="source" placeholder="" type="url"><input class="my-url" type="hidden" name="target" value=""><input style="min-width: 20%; font-size: 1.2em" type="submit" value="发送Webmention"></form><script type="text/javascript">for (const u of document.querySelectorAll("input.my-url"))
-  u.value = window.location.href;</script><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>近思录 2023-06-06</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2023-06-06</p><p><span>最后更新：</span>2023-06-11</p><p><span>原始链接：</span><a href="/2023/06/06/Recent-thoughts-2023-06-06/">https://chriszheng.science/2023/06/06/Recent-thoughts-2023-06-06/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2023/06/06/Recent-thoughts-2023-06-06/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2023/06/06/Recent-thoughts-2023-06-06/" data-id="clij4ele40001puv090079gtc" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3aQW7DMAwEwPz/0+25CCwvSckwivEpaFNb44PILvX5xNfP17X++ffffn9ef+fq+py48PDw8MZLXzOuFprcIXni5leAh4eHd4yXb+jzFzF5Vr5mPDw8vPfwkmZ6Qlp3xXh4eHj/g1fdxKttdy/UwMPDwzvNy6OEyWadw6qvckPWgoeHh3dgivSez0fme3h4eHjjqXq+4a7DiPzO62ijvFo8PDy8A7xq5Jq3rdXB1SS6Xf8VHh4e3l5e3sjmW3YPnNw/iXr/fAcPDw/vGC8/OFUdUCVLmRSJcj6Nh4eHN+blBwh6vOpSeoFFhMTDw8M7xuvlGdVAtvfE/EAYHh4e3mle3hxXR1m9wweTknCZUuPh4eFt4uUHBfLFVQtP72UVJnt4eHh4B3h5GJF8sxfaVgtPNITDw8PDO8CbDKvm4UVeMJJXOcpO8PDw8GLeunXuDeknQ7LeHS6/g4eHh/cIL6fmTW1yn1HTfFUe8PDw8I7xJgHursMBvfa6MNnDw8PD28TLm9RqgJtHw4WNPl7JTVaNh4eHt5UX/ZM/DmonG32yNjw8PLzTvLwk9A5I9eLaXaUCDw8Pby+vepSqOtRPCkPvt1E5wcPDwzvAmwy65kcHkki3F3ng4eHhPcOrNr67xlR51FstEnh4eHinefloqnpMKm+se0cKbkoOHh4e3oO86nGBXlybxBB5bIGHh4f3JC+JCXa13dXCkF83hwbw8PDwxryf4tXbvvNDAJPXcTnfw8PDw9vKq264+YA/X1we1OYDsGY9wcPDw4t51VFTdXyVF4ZdzToeHh7eM7zeY/LlVqPYvJpFhQEPDw/vNby8hOSLXr/KcqHCw8PDewEv2fonZWb9aqqRMR4eHt45Xt74Jo+vsqulpfAUPDw8vAO86j/81eh2PuzPW+rRfA8PDw/vfj2/jhlK3ww9CkoAAAAASUVORK5CYII=">分享</a><div class="tags"><a href="/tags/%E5%85%B8%E6%95%85/"><i class="fa fa-tag"></i>典故</a><a href="/tags/Emacs-Lisp/"><i class="fa fa-tag"></i>Emacs Lisp</a><a href="/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"><i class="fa fa-tag"></i>近思录</a></div><div class="post-nav"><a class="next" href="/2023/05/02/Recent-thoughts-2023-05-01/">近思录 2023-05-02</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+  u.value = window.location.href;</script><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>近思录 2023-06-06</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2023-06-06</p><p><span>最后更新：</span>2023-06-24</p><p><span>原始链接：</span><a href="/2023/06/06/Recent-thoughts-2023-06-06/">https://chriszheng.science/2023/06/06/Recent-thoughts-2023-06-06/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2023/06/06/Recent-thoughts-2023-06-06/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2023/06/06/Recent-thoughts-2023-06-06/" data-id="clij4ele40001puv090079gtc" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3aQW7DMAwEwPz/0+25CCwvSckwivEpaFNb44PILvX5xNfP17X++ffffn9ef+fq+py48PDw8MZLXzOuFprcIXni5leAh4eHd4yXb+jzFzF5Vr5mPDw8vPfwkmZ6Qlp3xXh4eHj/g1fdxKttdy/UwMPDwzvNy6OEyWadw6qvckPWgoeHh3dgivSez0fme3h4eHjjqXq+4a7DiPzO62ijvFo8PDy8A7xq5Jq3rdXB1SS6Xf8VHh4e3l5e3sjmW3YPnNw/iXr/fAcPDw/vGC8/OFUdUCVLmRSJcj6Nh4eHN+blBwh6vOpSeoFFhMTDw8M7xuvlGdVAtvfE/EAYHh4e3mle3hxXR1m9wweTknCZUuPh4eFt4uUHBfLFVQtP72UVJnt4eHh4B3h5GJF8sxfaVgtPNITDw8PDO8CbDKvm4UVeMJJXOcpO8PDw8GLeunXuDeknQ7LeHS6/g4eHh/cIL6fmTW1yn1HTfFUe8PDw8I7xJgHursMBvfa6MNnDw8PD28TLm9RqgJtHw4WNPl7JTVaNh4eHt5UX/ZM/DmonG32yNjw8PLzTvLwk9A5I9eLaXaUCDw8Pby+vepSqOtRPCkPvt1E5wcPDwzvAmwy65kcHkki3F3ng4eHhPcOrNr67xlR51FstEnh4eHinefloqnpMKm+se0cKbkoOHh4e3oO86nGBXlybxBB5bIGHh4f3JC+JCXa13dXCkF83hwbw8PDwxryf4tXbvvNDAJPXcTnfw8PDw9vKq264+YA/X1we1OYDsGY9wcPDw4t51VFTdXyVF4ZdzToeHh7eM7zeY/LlVqPYvJpFhQEPDw/vNby8hOSLXr/KcqHCw8PDewEv2fonZWb9aqqRMR4eHt45Xt74Jo+vsqulpfAUPDw8vAO86j/81eh2PuzPW+rRfA8PDw/vfj2/jhlK3ww9CkoAAAAASUVORK5CYII=">分享</a><div class="tags"><a href="/tags/%E5%85%B8%E6%95%85/"><i class="fa fa-tag"></i>典故</a><a href="/tags/Emacs-Lisp/"><i class="fa fa-tag"></i>Emacs Lisp</a><a href="/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"><i class="fa fa-tag"></i>近思录</a></div><div class="post-nav"><a class="next" href="/2023/05/02/Recent-thoughts-2023-05-01/">近思录 2023-05-02</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
   shortname: 'chris-an-emacser',
   siteName: 'M-x Chris-An-Emacser',
   identifier: '2023/06/06/Recent-thoughts-2023-06-06/',
