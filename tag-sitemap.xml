@@ -2131,13 +2131,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Emacs/</loc>
-        <lastmod>2023-02-09T05:15:06.042Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E6%25B0%25B4%25E6%25B5%2592%25E4%25BC%25A0/</loc>
         <lastmod>2023-02-15T12:32:16.739Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2250,13 +2243,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2023-05-23T09:04:34.701Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Octave/</loc>
         <lastmod>2023-05-23T17:16:43.724Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2285,22 +2271,36 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2023-06-24T09:03:34.480Z</lastmod>
+        <loc>https://chriszheng.science/tags/Emacs-Lisp/</loc>
+        <lastmod>2023-07-01T12:47:03.434Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Emacs-Lisp/</loc>
-        <lastmod>2023-06-24T09:03:34.480Z</lastmod>
+        <loc>https://chriszheng.science/tags/Emacs/</loc>
+        <lastmod>2023-07-03T12:33:06.691Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/AI/</loc>
+        <lastmod>2023-07-03T12:33:06.691Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
+        <lastmod>2023-07-14T16:34:32.620Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2023-06-24T09:03:34.480Z</lastmod>
+        <lastmod>2023-07-14T16:34:32.620Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
