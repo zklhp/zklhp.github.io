@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2023-07-22T09:24:12.640Z</updated>
+  <updated>2023-08-08T17:41:43.172Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近思录 2023-08-06</title>
+    <link href="https://chriszheng.science/2023/08/06/Recent-thoughts-2023-08-06/"/>
+    <id>https://chriszheng.science/2023/08/06/Recent-thoughts-2023-08-06/</id>
+    <published>2023-08-05T16:00:00.000Z</published>
+    <updated>2023-08-08T17:41:43.172Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="🌏">🌏</h2><p>2023-08-06凌晨地震了，我一点没感觉到。</p><p>🫨</p><a id="more"></a><blockquote><p>地转实为新地兆，天旋永立新天朝。</p><footer><strong>洪秀全《地震诏》</strong></footer></blockquote><h2 id="bram-moolenaar-1961-3-august-2023"><a href="https://en.wikipedia.org/wiki/Bram_Moolenaar">Bram Moolenaar (1961 – 3 August 2023)</a></h2><p>Vim之父去世了。</p><p>R.I.P.</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;🌏&quot;&gt;🌏&lt;/h2&gt;
+&lt;p&gt;2023-08-06凌晨地震了，我一点没感觉到。&lt;/p&gt;
+&lt;p&gt;🫨&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+    
+      <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
+    
+      <category term="Vim" scheme="https://chriszheng.science/tags/Vim/"/>
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>近思录 2023-07-15</title>
@@ -576,28 +604,6 @@ And all the devils are here.”&lt;/p&gt;
     
     
       <category term="汇编语言" scheme="https://chriszheng.science/tags/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>拥抱独立网站运动</title>
-    <link href="https://chriszheng.science/2022/02/09/Embracing-IndieWeb/"/>
-    <id>https://chriszheng.science/2022/02/09/Embracing-IndieWeb/</id>
-    <published>2022-02-09T13:31:04.000Z</published>
-    <updated>2022-03-23T00:32:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(•_•)</span><br><span class="line">&lt;)    )╯Always</span><br><span class="line">/    \</span><br><span class="line"></span><br><span class="line">\(•_•)</span><br><span class="line">(    (&gt;  Own</span><br><span class="line">/    \</span><br><span class="line"></span><br><span class="line">(•_•)</span><br><span class="line">&lt;)    )&gt;  Your Platform</span><br><span class="line">/    \</span><br></pre></td></tr></table></figure><span id="more"></span><h2 id="why">Why?</h2><p>我们现在用的互联网，Web，是以网页和超链接为基础的。最早的互联网用户依靠<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA">网址导航</a>实现互联，譬如Yahoo! <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，后来有了搜索引擎，再后来有了社交媒体，现在最流行的是短视频。Web 3.0和元宇宙等概念，呼之欲出。</p><p>新技术层出不穷，那些老的互联互通技术逐渐被边缘化，譬如<a href="https://zh.wikipedia.org/wiki/RSS">RSS</a>，老早就被谷歌公司抛弃，现在只有少量的极客拥趸。早期的技术本质上就是一种内容分发，而社交媒体，包括我刚才没提到的聊天室、论坛、实时通讯软件，本质是人的社交媒介，活力自然比内容分发大的多。应该说，现在的网民绝大多数是实时通讯软件、社交媒体和短视频的用户。这种状况道理上没有问题，可是，现如今，这些互联网服务，从搜索引擎到短视频推送，已经完全被大公司掌控，在各种大数据和人工智能的加持下，我们每天看的，都是袁克定给袁世凯定制的《顺天时报》！我们被监控，活像生活在《楚门的世界》。</p><p><video src="/files/HaHaHa.mp4" controls="controls" width="100%"></video></p><p>如果Web 3.0和元宇宙真的来了，情况只能更糟！<a href="https://www.bilibili.com/video/BV1ix411K7eU">是时候换个活法啦：</a></p><p><a href="https://indieweb.org/"><p style="font-size: larger">IndieWeb</p></a></p><p><img src="//indieweb.org/images/6/67/indiewebcamp-logo-lockup-color%403x.png"></img></p><h2 id="what-is-the-indieweb">What is the IndieWeb?</h2><p>The IndieWeb is a people-focused alternative to the “corporate web”.—From <a href="https://indieweb.org/">https://indieweb.org/</a></p><p>IndieWeb就是现如今依赖寡头互联网公司提供服务的对立面，是以人为本的社区。它的组织方式，就是用一些简单的协议将各个独立的网站连接起来，实现的目标是：</p><ul><li>我的内容属于我自己</li><li>真正的互联互通</li><li>用户控制一切</li></ul><p>更详细的介绍可以见<a href="https://indieweb.org/Main_Page-zh">IndieWeb中文首页</a>。</p><p>这些愿景，我之前也想过，以前也写过，国内外的朋友也为此付出很多努力：爱写博客的人整理了<a href="/2020/02/14/Recent-thoughts-2020-02-14/#%E4%B8%AD%E6%96%87%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2%E5%88%97%E8%A1%A8">中文独立博客列表</a>，<a href="http://alwaysownyourplatform.com/">外国朋友倡导把内容发布在自己的网站上</a>，我早好多年遇到过很多次<a href="/2015/11/23/For-a-site-like-this-what-will-you-do/">和论坛站长争吵后被屏蔽被迫出走</a>，<a href="/2022/01/01/Recent-thoughts-2022-01-01/#%E4%BA%92%E8%81%94%E7%BD%91%E8%AE%B0%E5%BF%86">我自己努力保存互联网记忆</a>。看一眼现如今国内外愈演愈烈的社会撕裂、内容审核和信息管控，简单的手段和词汇，像「去中心化」等等，已经不足以概况这些努力。IndieWeb是我觉得恰当的词汇和愿景。</p><p>IndieWeb的核心是不被大公司控制，我认为，这不意味着对抗大公司。我们还是可以享受这些公司产品带给我们的服务，比如社交媒介，比如各种平台。有意思的是，<a href="https://indieweb.org/">https://indieweb.org/</a>页面下面挂了一堆赞助公司，除了<a href="https://www.mozilla.org/">moz://a</a>这种一直坚持走尊重用户路线的公司，<a href="https://www.google.com/">Google</a>也赫然在列。内容发布在大公司的平台而不被大公司所控制，是理想的状态。</p><h2 id="i-❤-webmentions">I ❤️ Webmentions</h2><p><a href="https://indieweb.org/Webmention">Webmention</a>就是我一直在思考的网站互联的实现方式，是IndieWeb基础之一，<a href="https://www.w3.org/TR/webmention/">也是一种W3C的标准</a>。很惭愧，我现在才发现她 ❤️</p><p>作为独立博客站长，我始终纠结和读者互动，目前用的是<a href="https://disqus.com/">Disqus</a>实现留言功能，但距离好用，差太多了，有朋友的留言就是「特意注册帐号留言」，换言之，有大量的朋友因为不愿意特意注册帐号，索性就不留言了，对彼此都是伤害 😿</p><p>Webmention可以把网站连接起来，实现了网页间通信的协议，某种程度上是拓展了超链接功能，我链接到别的网站，点踩或喜欢，写的评论等等，都可以通知对方，反之亦然。我拥抱IndieWeb的第一步，就是用Webmention实现留言功能：</p><ol><li>借助<a href="https://webmention.io/">Webmention.io</a>作为「端点」(endpoint)，这个服务帮我收集评论和反馈。</li><li>借助<a href="https://github.com/PlaidWeb/webmention.js">webmention.js</a>显示各种反馈。</li><li>借助<a href="https://commentpara.de/">https://commentpara.de/</a>实现匿名评论。</li></ol><form style="margin-left: 70%" method="get" action="https://quill.p3k.io/" target="_blank">  <input type="hidden" name="dontask" value="1">  <input type="hidden" name="me" value="https://commentpara.de/">  <input type="hidden" class="my-url" name="reply" value="">  <input style="min-width: 50%; font-size: 1.2em" type="submit" value="写个评论吧"></form><p>或者您可以把评论发在别处，添加指向本页的连接，然后把网址告诉我：</p><form action="https://webmention.io/chriszheng.science/webmention" method="post">  <input style="min-width: 68.5%; font-size: 1.2em" name="source" placeholder="https://mastodon.sdf.org/@chriszheng/107769486824585571" type="url">  <input type="hidden" class="my-url" name="target" value="">  <input style="min-width: 20%; font-size: 1.2em" type="submit" value="发送Webmention"></form><script type="text/javascript">  for (const u of document.querySelectorAll("input.my-url"))    u.value = window.location.href;</script><p>匿名评论借助的是<a href="https://quill.p3k.io/">Quill</a>，用这个平台还可以在线编辑。如果不喜欢借助这些平台，也可以在社交媒体上评论，这就是<a href="https://brid.gy/">Bridgy</a>的功能。可惜的是，我的Mastodon暂时无法登录。</p><hr class="footnotes-sep"><section class="footnotes"><ol class="footnotes-list"><li id="fn1"  class="footnote-item"><p>我印象中当时国内的门户网站大都有网址导航性质，后来才出现了类似Hao123的专门的网站导航。 <a href="#fnref1" class="footnote-backref">↩</a></p></li></ol></section>]]></content>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight text&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(•_•)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;)    )╯Always&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/    \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\(•_•)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(    (&amp;gt;  Own&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/    \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(•_•)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;)    )&amp;gt;  Your Platform&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/    \&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="网站信息" scheme="https://chriszheng.science/categories/%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF/"/>
-    
-    
-      <category term="网站" scheme="https://chriszheng.science/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
