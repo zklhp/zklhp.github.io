@@ -32,8 +32,178 @@ html.dataset.dark = localStorage.dark;
 寐游浮沐，若雉飞舞。</p>
 <footer><strong>谐音骂人</strong></footer></blockquote>
 <p>类似<a href="/2023/08/06/Recent-thoughts-2023-08-06/#%E4%BA%BA%E6%9C%89%E6%89%80%E6%93%8D">「人有所操」</a>。</p>
+<h2 id="德国小蠊-versus-美洲大蠊">德国小蠊 <em>versus</em> 美洲大蠊</h2>
+<p>我发现，德国小蠊用75%酒精会死，而美洲大蠊(存疑，可能是)把酒精倒上也不死。但是，如果往点燃的打火机上喷酒精，用「火攻」，一下就可以让大蟑螂翻身濒死。</p>
+
+<script async src="//cdn.jsdelivr.net/npm/3dmol@1.7.1/build/3Dmol-min.min.js" onload="backend_loaded()"></script>
+
+<div id="container" class="mol-container" style="width:100%; height:0; position: relative"></div>
+<textarea id="coordinates" title="attributes" rows="10" style="width: 100%; max-width: 100%;">
+Loading... Please refresh if this message persists.
+</textarea>
+<br>
+<input type="button" id="toggle_label" value="Turn Label Off">
+
+<script>
+    const input_textarea = $("#coordinates");
+    let viewer;
+    let label_on = true;
+    let atoms = [];
+    const bond_length_database = {};
+    const bond_length_data_url = "https://liwt31.github.io/vendor/bond_length.json";
+
+    $.getJSON(bond_length_data_url, function(data) {
+        // load bond length data
+        for (const record of data){
+            if (record.bond_order != 1){
+                // Only deal with single bond for now
+                continue;
+            }
+            bond_length_database[record.elements] = record.length;
+            bond_length_database[[record.elements[1], record.elements[0]]] = record.length;
+        }
+        if (!(viewer === undefined)){
+            // backend already loaded. Rerender
+            form_bonds(atoms);
+            input_textarea.trigger("change");
+        }
+    });
+
+    input_textarea.on('input change',function(e){
+        // main logic
+        const coordinates = e.target.value;
+        let success;
+        try{
+            atoms = parse_input(coordinates);
+            success = true;
+        }
+        catch (err) {
+            console.log("Error parsing coordinates: ", err);
+            atoms = [];
+            success = false;
+        }
+        form_bonds(atoms);
+        // rerender
+        viewer.removeAllLabels();
+        viewer.removeAllModels();
+        if (success){
+            const m = viewer.addModel();
+            m.addAtoms(atoms);
+            m.setStyle({},{sphere:{scale:0.3}, stick:{}});
+            if (label_on){
+                draw_label();
+            }
+        } else{
+            viewer.addLabel("Invalid input",{position: {x:0, y:0, z:0}, backgroundColor:"red"});
+        }
+        viewer.zoomTo();
+        viewer.render();
+    });
+
+    function parse_float_throw(s){
+        // parse float number but throws exception at NaN
+        let res = parseFloat(s);
+        if (isNaN(res)){
+            throw "invalid float number: " + s
+        }
+        return res
+    }
+
+    function parse_input(coord_str){
+        // get xyz coordinates for the atoms
+        let atoms = [];
+        const lines = coord_str.split("\n");
+        for (let line of lines){
+            line = line.trim();
+            if (line.length == 0){
+                continue;
+            }
+            const elems = line.split(/\s+/);
+            if (elems.length < 4){
+                throw "invalid line: " + line
+            }
+            atoms.push({elem: elems[0], x: parse_float_throw(elems[1]), y: parse_float_throw(elems[2]), z: parse_float_throw(elems[3])});
+        }
+        return atoms;
+    }
+
+    function is_bonding(atom_coordinate1, atom_coordinate2){
+        const x1 = atom_coordinate1.x;
+        const y1 = atom_coordinate1.y;
+        const z1 = atom_coordinate1.z;
+        const x2 = atom_coordinate2.x;
+        const y2 = atom_coordinate2.y;
+        const z2 = atom_coordinate2.z;
+        const length = Math.sqrt((x1 - x2)**2 + (y1 - y2)**2 + (z1 - z2) ** 2);
+        const key = [atom_coordinate1.elem, atom_coordinate2.elem];
+        if (!(key in bond_length_database)){
+            return false
+        }
+        // add some tolerance
+        return length < 1.3 * bond_length_database[key];
+    }
+
+    function form_bonds(atom_coordinates){
+        // add bond information in place
+        // stick to simple logic and avoid (premature) optimization
+        for (const atom_coordinate1 of atom_coordinates){
+            const bonds = [];
+            for (let i= 0; i < atom_coordinates.length; i++){
+                const atom_coordinate2 = atom_coordinates[i];
+                if (is_bonding(atom_coordinate1, atom_coordinate2)){
+                    bonds.push(i)
+                }
+            }
+            atom_coordinate1.bonds = bonds;
+            atom_coordinate1.bondOrder = new Array(bonds.length).fill(1);
+        }
+    }
+
+    function draw_label(){
+        for (let i=0; i<atoms.length; i++){
+            let atom = atoms[i];
+            viewer.addLabel(`${atom["elem"]}${i+1}`, {position: {x: atom["x"], y: atom["y"], z: atom["z"]}, fontSize:12});
+        }
+    }
+
+    function backend_loaded(){
+        const container = $("#container");
+        const config = { backgroundColor: "white" };
+        container.height(container.width());
+        viewer = $3Dmol.createViewer( container, config );
+        // initial values for the textarea
+        // in angstrom
+        input_textarea.val(`O        3.772688944     -0.884647999      1.007212977\nO       -3.925096692     -1.841742492      0.069364150\nO       -1.831708000     -2.108429837     -0.450302652\nN       -0.287103910      0.101416731     -0.293301829\nN       -2.602592725     -0.101527175      0.173964310\nN       -1.558572656      2.000944526      0.082900805\nN       -2.789044922     -1.439083643     -0.090126842\nC        2.143467816     -0.025038563     -0.480833253\nC        3.473552976      0.701469675     -0.719237123\nC        2.381707152     -0.619021539      0.916079914\nC        0.911639469      0.861118022     -0.588994528\nC        4.474134513     -0.247425023     -0.054763440\nC       -1.461373293      0.732391062     -0.029682170\nC       -2.807142654      2.630977593      0.425629676\nH        2.060319871     -0.852965078     -1.210164403\nH        3.690817229      0.883423858     -1.782458365\nH        3.460824950      1.677002861     -0.203469087\nH        1.821158565     -1.551787146      1.092365918\nH        2.074173555      0.108065738      1.695655520\nH        0.853698846      1.321696666     -1.594424910\nH        0.973604104      1.697899827      0.124569222\nH        4.835957077     -1.008340715     -0.774011107\nH        5.357387493      0.274195841      0.350957680\nH       -0.339306096     -0.881743918     -0.537335043\nH       -3.487538102      0.337481300      0.401071915\nH       -2.684422901      3.724375988      0.420781183\nH       -3.168712915      2.359855764      1.439873694\nH       -3.627592694      2.404787676     -0.288576212\n`);
+        input_textarea.trigger("change");
+    }
+
+    $("#toggle_label").on("click", function(e){
+        if (label_on){
+            viewer.removeAllLabels();
+            viewer.render();
+            label_on = false;
+            e.target.value = "Turn Label On";
+        } else{
+            draw_label();
+            viewer.render();
+            label_on = true;
+            e.target.value = "Turn Label Off";
+        }
+    })
+</script>
+
+<p>The unit is in Angstrom.</p>
+<a id="more"></a>
+<p>Quite simple tool powered by <a href="https://github.com/3dmol/3Dmol.js" target="_blank" rel="noopener">3Dmol.js</a>. Auto-detects bond formation using bond length database from <a href="https://github.com/materialsproject/pymatgen" target="_blank" rel="noopener">pymatgen</a>.</p>
+<p>Feature requests are welcome by submitting an issue at <a href="https://github.com/liwt31/liwt31.github.io" target="_blank" rel="noopener">https://github.com/liwt31/liwt31.github.io</a>.</p>
+
+<p>有没有一种药，又能杀蟑螂，又能杀老鼠。</p>
+<h2 id="黄粱梦"><a target="_blank" rel="noopener" href="https://cn.bing.com/search?q=%E3%80%8A%E9%BB%84%E7%B2%B1%E6%A2%A6%E3%80%8B">《黄粱梦》</a></h2>
+<blockquote><p>大快人心事，揪出「四人帮」。政治流氓、文痞，狗头军师张，还有精生白骨，自比则天武后，铁帚扫而光。<br>
+篡党夺权者，一枕梦黄粱。野心大，阴谋毒，诡计狂。真是罪该万死，迫害红太阳！接班人是俊杰，遗志继承果断，功绩何辉煌！拥护华主席，拥护党中央。</p>
+<footer><strong>郭沫若</strong><cite>水调歌头·粉碎「四人帮」</cite></footer></blockquote>
 </div><div id="donate"><link rel="stylesheet" type="text/css" href="/css/donate.css?v=1.1.5"><script type="text/javascript" src="/js/donate.js" successtext="复制成功!" async></script><a class="pos-f tr3" id="github" target="_blank" rel="noopener" href="https://github.com/zklhp/" arget="_blank" title="Github"></a><div id="DonateText">Donate</div><ul class="list pos-f" id="donateBox"><li id="PayPal"><a href="https://paypal.me/ChrisZheng99" target="_blank"></a></li><li id="AliPay" qr="/img/My-AliPayQR.png"></li><li id="WeChat" qr="/img/My-WeChatQR.png"></li></ul><div class="pos-f left-100" id="QRBox"><div id="MainBox"></div></div></div><link rel="stylesheet" type="text/css" href="/css/webmention.css?v=1.1.5"><script type="text/javascript" src="/js/webmention.min.js" data-id="webmentions"></script><div id="webmentions"></div><form style="margin-left: 70%" method="get" action="https://quill.p3k.io/" target="_blank"><input type="hidden" name="dontask" value="1"><input type="hidden" name="me" value="https://commentpara.de/"><input class="my-url" type="hidden" name="reply" value=""><input style="min-width: 50%; font-size: 1.2em" type="submit" value="写个评论吧"></form><p>或者您可以把评论发在别处，添加指向本页的连接，然后把网址告诉我：</p><form action="https://webmention.io/chriszheng.science/webmention" method="post"><input style="min-width: 68.5%; font-size: 1.2em" name="source" placeholder="" type="url"><input class="my-url" type="hidden" name="target" value=""><input style="min-width: 20%; font-size: 1.2em" type="submit" value="发送Webmention"></form><script type="text/javascript">for (const u of document.querySelectorAll("input.my-url"))
-  u.value = window.location.href;</script><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>近思录 2023-09-11</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2023-09-11</p><p><span>最后更新：</span>2023-09-20</p><p><span>原始链接：</span><a href="/2023/09/11/Recent-thoughts-2023-09-11/">https://chriszheng.science/2023/09/11/Recent-thoughts-2023-09-11/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2023/09/11/Recent-thoughts-2023-09-11/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2023/09/11/Recent-thoughts-2023-09-11/" data-id="clmr3344r000082v05py6aej3" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACs0lEQVR42u3a0W5iMQwE0P7/T7OvK3UpM3ZCWencJ9RCuAek2Izz9RVfj7+u73///pzk+e06z1574MLDw8Nb3Pqz5R7B9fON5u94+CPAw8PDu8ZLlmuLQb6t5+vn94yHh4f3Obx8c5+RkoYeDw8P7//ltYFFvt0n/8XDw8P7Xd4sYkhC27ZFnq1zIGvBw8PDuzBF+pzHV+Z7eHh4eOup+mbDna28GZj9Y008PDy8C7x8w9033O3mPnstHh4e3jt5eTBaRKhxdNvGGUVwjIeHh3eNl4yyfo4n2r/MGvSk/ETfDx4eHt6ItxkptWP+fM02sIhiCDw8PLxDvNlGPAss8oa4betXgzE8PDy8kvdYX/sbaiPgopjh4eHhXeDlYWt+o0m7PGuj69EXHh4e3jVevtVugt1Th7TqrwQPDw/vKG8zyH/P+L8tTvXcDA8PD28R424OELTxwSyeSMrYUzAeHh7eId4+nM0Lw2bA1kYkxUQODw8Pb8S7/bg9IpCXqBdfDx4eHt41Xr6VnxpcDTf6skTh4eHh3eZtjjq17XLysc6i5CiMwMPDw1vwTm3xs+ckRxb2pQIPDw/vLK9teWdBQ1JaZgOwF6vh4eHhXeNtGtk2lm1f2xaYp78Y8PDw8A7x8rF9vWh5MOtUo1+MwfDw8PDWvNnP/n3Ymg/D8lJRVBg8PDy8Q7xka54NwGYDtuS1eHh4eL/Lmx0ImG3lbcDRRhh4eHh4Z3mP8sob69kphs3H8WIAhoeHh3eI1264eXCQ31x7jKCIIfDw8PCu8dpR06wF38TEeWHAw8PDeycvf5uWNItiN8ez8PDw8D6Nty8Y+e22hwailBoPDw/v7bz2djchRdv6H6t7eHh4eIdyzvx4Vj6UmgUfxbvg4eHhXeDNtvW2JGyG/XlLvZrv4eHh4b3m/QHpE2nO8cR3DAAAAABJRU5ErkJggg==">分享</a><div class="tags"><a href="/tags/%E5%85%B8%E6%95%85/"><i class="fa fa-tag"></i>典故</a><a href="/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"><i class="fa fa-tag"></i>近思录</a></div><div class="post-nav"><a class="next" href="/2023/08/06/Recent-thoughts-2023-08-06/">近思录 2023-08-06</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
+  u.value = window.location.href;</script><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>近思录 2023-09-11</p><p><span>文章作者：</span>Chris</p><p><span>发布时间：</span>2023-09-11</p><p><span>最后更新：</span>2023-09-27</p><p><span>原始链接：</span><a href="/2023/09/11/Recent-thoughts-2023-09-11/">https://chriszheng.science/2023/09/11/Recent-thoughts-2023-09-11/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://chriszheng.science/2023/09/11/Recent-thoughts-2023-09-11/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY 4.0</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript">(function($){$("body").on("click",function(){$(".article-share-box.on").removeClass("on")}).on("click",".article-share-link",function(e){e.stopPropagation();var $this=$(this),url=$this.attr("data-url"),qrcode_img=$this.attr("data-qrcode"),encodedUrl=encodeURIComponent(url),id="article-share-box-"+$this.attr("data-id"),title=document.title,offset=$this.offset();if($("#"+id).length){var box=$("#"+id);if(box.hasClass("on")){box.removeClass("on");return}}else{var html=['<div id="'+id+'" class="article-share-box">','<input class="article-share-input" value="'+url+'">','<div class="article-share-links">','<a href="//twitter.com/intent/tweet?url='+encodedUrl+'" class="article-share-twitter" target="_blank" title="Twitter"></a>','<a href="//www.facebook.com/sharer.php?u='+encodedUrl+'" class="article-share-facebook" target="_blank" title="Facebook"></a>','<a href="//service.weibo.com/share/share.php?title='+title+"&url="+encodedUrl+"&searchPic=true&style=number"+'" class="article-share-weibo" target="_blank" title="Weibo"></a>','<a href="'+qrcode_img+'" class="article-share-qrcode" target="_blank" title="QR code"></a>','<div class="qrcode"><img src='+qrcode_img+"></div>","</div>","</div>"].join("");var box=$(html);$("body").append(box)}$(".article-share-box.on").hide();box.css({top:offset.top+25,left:offset.left}).addClass("on")}).on("click",".article-share-box",function(e){e.stopPropagation()}).on("click",".article-share-box-input",function(){$(this).select()}).on("click",".article-share-box-link",function(e){e.preventDefault();e.stopPropagation();window.open(this.href,"article-share-box-window-"+Date.now(),"width=500,height=450")})})(jQuery);</script><a class="article-share-link" data-url="https://chriszheng.science/2023/09/11/Recent-thoughts-2023-09-11/" data-id="clmr3344r000082v05py6aej3" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACs0lEQVR42u3a0W5iMQwE0P7/T7OvK3UpM3ZCWencJ9RCuAek2Izz9RVfj7+u73///pzk+e06z1574MLDw8Nb3Pqz5R7B9fON5u94+CPAw8PDu8ZLlmuLQb6t5+vn94yHh4f3Obx8c5+RkoYeDw8P7//ltYFFvt0n/8XDw8P7Xd4sYkhC27ZFnq1zIGvBw8PDuzBF+pzHV+Z7eHh4eOup+mbDna28GZj9Y008PDy8C7x8w9033O3mPnstHh4e3jt5eTBaRKhxdNvGGUVwjIeHh3eNl4yyfo4n2r/MGvSk/ETfDx4eHt6ItxkptWP+fM02sIhiCDw8PLxDvNlGPAss8oa4betXgzE8PDy8kvdYX/sbaiPgopjh4eHhXeDlYWt+o0m7PGuj69EXHh4e3jVevtVugt1Th7TqrwQPDw/vKG8zyH/P+L8tTvXcDA8PD28R424OELTxwSyeSMrYUzAeHh7eId4+nM0Lw2bA1kYkxUQODw8Pb8S7/bg9IpCXqBdfDx4eHt41Xr6VnxpcDTf6skTh4eHh3eZtjjq17XLysc6i5CiMwMPDw1vwTm3xs+ckRxb2pQIPDw/vLK9teWdBQ1JaZgOwF6vh4eHhXeNtGtk2lm1f2xaYp78Y8PDw8A7x8rF9vWh5MOtUo1+MwfDw8PDWvNnP/n3Ymg/D8lJRVBg8PDy8Q7xka54NwGYDtuS1eHh4eL/Lmx0ImG3lbcDRRhh4eHh4Z3mP8sob69kphs3H8WIAhoeHh3eI1264eXCQ31x7jKCIIfDw8PCu8dpR06wF38TEeWHAw8PDeycvf5uWNItiN8ez8PDw8D6Nty8Y+e22hwailBoPDw/v7bz2djchRdv6H6t7eHh4eIdyzvx4Vj6UmgUfxbvg4eHhXeDNtvW2JGyG/XlLvZrv4eHh4b3m/QHpE2nO8cR3DAAAAABJRU5ErkJggg==">分享</a><div class="tags"><a href="/tags/%E5%85%B8%E6%95%85/"><i class="fa fa-tag"></i>典故</a><a href="/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"><i class="fa fa-tag"></i>近思录</a></div><div class="post-nav"><a class="next" href="/2023/08/06/Recent-thoughts-2023-08-06/">近思录 2023-08-06</a></div><div id="disqus_thread"><script type="text/javascript" src="/js/disqus.js"></script><script type="text/javascript">var dsqjs = new DisqusJS({
   shortname: 'chris-an-emacser',
   siteName: 'M-x Chris-An-Emacser',
   identifier: '2023/09/11/Recent-thoughts-2023-09-11/',
