@@ -8,8 +8,32 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</loc>
+        <lastmod>2023-10-04T17:46:27.392Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2023/10/01/Recent-thoughts-2023-10-01/</loc>
+        <lastmod>2023-10-04T17:45:57.262Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2023/09/11/Recent-thoughts-2023-09-11/</loc>
-        <lastmod>2023-09-27T07:18:01.373Z</lastmod>
+        <lastmod>2023-10-04T17:43:49.162Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2023/08/06/Recent-thoughts-2023-08-06/</loc>
+        <lastmod>2023-10-02T12:44:46.273Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -26,14 +50,6 @@
     <url>
         <loc>https://chriszheng.science/2018/11/30/Practical-frp/</loc>
         <lastmod>2023-09-06T15:47:33.822Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2023/08/06/Recent-thoughts-2023-08-06/</loc>
-        <lastmod>2023-08-30T16:01:43.314Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2449,14 +2465,6 @@
 
     <url>
         <loc>https://chriszheng.science/2019/04/01/Recent-thoughts-2019-04-01/</loc>
-        <lastmod>2022-03-23T00:32:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2019/05/04/Recent-thoughts-2019-05-04/</loc>
         <lastmod>2022-03-23T00:32:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
