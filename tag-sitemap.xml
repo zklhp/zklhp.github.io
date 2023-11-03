@@ -2033,13 +2033,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/ORCA/</loc>
-        <lastmod>2022-12-07T10:55:47.861Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E7%25A7%2591%25E5%25AD%25A6%25E7%25A0%2594%25E7%25A9%25B6/</loc>
         <lastmod>2022-12-07T10:55:47.861Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2194,20 +2187,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2023-07-03T12:33:06.691Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Windows-XP/</loc>
-        <lastmod>2023-08-01T14:54:39.233Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/frp/</loc>
         <lastmod>2023-09-06T15:47:33.822Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2236,27 +2215,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Emacs/</loc>
-        <lastmod>2023-10-04T17:45:57.262Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
-        <lastmod>2023-10-04T17:45:57.262Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Octave/</loc>
-        <lastmod>2023-10-04T17:45:57.262Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Firefox/</loc>
         <lastmod>2023-10-04T17:46:27.392Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2278,20 +2236,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2023-10-04T17:46:27.392Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2023-10-04T17:46:27.392Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E6%259C%2589%25E7%2594%259F%25E4%25B9%258B%25E5%25B9%25B4/</loc>
         <lastmod>2023-10-04T17:46:27.392Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2299,8 +2243,64 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/AI/</loc>
+        <lastmod>2023-10-13T10:29:37.467Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
+        <lastmod>2023-10-23T16:00:12.993Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/ORCA/</loc>
+        <lastmod>2023-10-23T16:00:12.993Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Windows-XP/</loc>
+        <lastmod>2023-10-23T16:00:12.993Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Emacs/</loc>
+        <lastmod>2023-11-03T15:22:46.141Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
+        <lastmod>2023-11-03T15:22:46.141Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Octave/</loc>
+        <lastmod>2023-11-03T15:22:46.141Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
+        <lastmod>2023-11-03T15:22:46.141Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/RMS/</loc>
-        <lastmod>2023-10-04T17:46:27.392Z</lastmod>
+        <lastmod>2023-11-03T15:22:46.141Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
