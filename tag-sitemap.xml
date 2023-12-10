@@ -2194,13 +2194,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Windows-11/</loc>
-        <lastmod>2023-09-13T15:48:56.533Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/WSLg/</loc>
         <lastmod>2023-09-13T15:48:56.533Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2210,13 +2203,6 @@
     <url>
         <loc>https://chriszheng.science/tags/Vim/</loc>
         <lastmod>2023-10-02T12:44:46.273Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Firefox/</loc>
-        <lastmod>2023-10-04T17:46:27.392Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -2292,15 +2278,29 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
+        <loc>https://chriszheng.science/tags/RMS/</loc>
         <lastmod>2023-11-19T13:53:07.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/RMS/</loc>
-        <lastmod>2023-11-19T13:53:07.019Z</lastmod>
+        <loc>https://chriszheng.science/tags/Firefox/</loc>
+        <lastmod>2023-12-10T16:54:55.797Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
+        <lastmod>2023-12-10T16:54:55.797Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Windows-11/</loc>
+        <lastmod>2023-12-10T16:54:55.797Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
