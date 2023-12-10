@@ -2096,27 +2096,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
-        <lastmod>2023-03-08T09:46:36.454Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/X79/</loc>
-        <lastmod>2023-03-08T09:46:36.454Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Windows-10/</loc>
-        <lastmod>2023-03-08T09:46:36.454Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
         <lastmod>2023-04-23T09:53:35.345Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2236,13 +2215,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2023-11-11T10:04:50.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Octave/</loc>
         <lastmod>2023-11-19T13:53:07.019Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2271,36 +2243,64 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
+        <loc>https://chriszheng.science/tags/WSLg/</loc>
         <lastmod>2023-12-10T16:56:45.216Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
+        <lastmod>2023-12-10T17:02:08.036Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
+        <lastmod>2023-12-10T17:02:08.036Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2023-12-10T16:56:45.216Z</lastmod>
+        <lastmod>2023-12-10T17:02:08.036Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2023-12-10T16:56:45.216Z</lastmod>
+        <lastmod>2023-12-10T17:02:08.036Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/X79/</loc>
+        <lastmod>2023-12-10T17:02:08.036Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/AI/</loc>
+        <lastmod>2023-12-10T17:02:08.036Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/Windows-11/</loc>
-        <lastmod>2023-12-10T16:56:45.216Z</lastmod>
+        <lastmod>2023-12-10T17:02:08.036Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/WSLg/</loc>
-        <lastmod>2023-12-10T16:56:45.216Z</lastmod>
+        <loc>https://chriszheng.science/tags/Windows-10/</loc>
+        <lastmod>2023-12-10T17:02:08.036Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
