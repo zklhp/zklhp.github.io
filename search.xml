@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>近思录 2024-01-01</title>
+      <link href="2024/01/01/Recent-thoughts-2024-01-01/"/>
+      <url>2024/01/01/Recent-thoughts-2024-01-01/</url>
+      
+        <content type="html"><![CDATA[<h2 id="🎆">🎆</h2><p>新年快乐。</p><ul><li><a href="https://shidian.baike.com/wikiid/2398799545284826049">达摩克利斯之剑(The Sword of Damocles)</a></li><li><a href="https://baike.baidu.com/item/%E9%98%BF%E5%96%80%E7%90%89%E6%96%AF%E4%B9%8B%E8%B8%B5/340132">阿喀琉斯之踵(Achilles’ Heel)</a></li><li><a href="https://baike.baidu.com/item/%E5%A1%94%E8%A5%BF%E4%BD%97%E9%99%B7%E9%98%B1/2604169">塔西佗陷阱(Tacitus Trap)</a></li><li><a href="https://baike.baidu.com/item/%E4%BF%AE%E6%98%94%E5%BA%95%E5%BE%B7%E9%99%B7%E9%98%B1/7508870">修昔底德陷阱(Thucydides’ Trap)</a></li></ul><h2 id="dear-imgui"><a href="https://github.com/ocornut/imgui">Dear ImGui</a></h2><p>好！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 近思录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 典故 </tag>
+            
+            <tag> 近思录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>近思录 2023-12-01</title>
       <link href="2023/12/01/Recent-thoughts-2023-12-01/"/>
       <url>2023/12/01/Recent-thoughts-2023-12-01/</url>
       
-        <content type="html"><![CDATA[<h2 id="firefox-115是最后一个支持win-7和win-8的版本">Firefox 115是最后一个支持Win 7和Win 8的版本</h2><p><a href="https://support.mozilla.org/zh-CN/kb/%E7%81%AB%E7%8B%90-%E7%94%A8%E6%88%B7-Windows-7-8-%E5%92%8C-8.1-%E8%BD%AC%E7%A7%BB-%E5%BB%B6%E6%9C%9F-%E6%94%AF%E6%8C%81">https://support.mozilla.org/zh-CN/kb/火狐-用户-Windows-7-8-和-8.1-转移-延期-支持</a></p><a id="more"></a><h2 id="汉隆剃刀-hanlon-s-razor">汉隆剃刀(Hanlon’s Razor)</h2><blockquote><p>能解释为愚蠢的，就不要解释为恶意的。</p><footer><strong>罗伯特·汉隆</strong></footer></blockquote><p>我经常讲，不是蠢就是坏，原来出自这里。</p><h2 id="firefox走向死亡">Firefox走向死亡</h2><p>因为占有率已经快跌到2%以下了。</p><p>搜一下发现，这话10年前就说出来了。</p><ol><li>2012年<a href="https://news.mydrivers.com/1/222/222174.htm">Firefox市场份额丢失1/3 分析称其走向死亡</a></li><li>2023年<a href="https://www.solidot.org/story?sid=76808">随着 Firefox 份额越来越低网站兼容性问题将会愈发突出</a></li></ol><p>根据以往的经验，这种情况，死亡是可以预期的。</p><h2 id="玉皇大帝法力不行">玉皇大帝法力不行</h2><p>孙猴大闹天宫，有阴谋论的说法是太上老君搞的鬼(我记得最早是吴闲云说的)。但这种情况下玉帝为何不出手呢？我现在想来，玉帝法力是不行的，万一出手，一击不中，反而丢面子，索性不出手。神仙的法力就是领导的工作能力，领导不总是有突出的工作能力：一方面有能力的不愿意做领导，走「领导」道路的往往是不愿意做具体业务的人；另一方面，做了领导不做具体工作，业务生疏，水平下降了。20多年前看电视剧，玉帝钻到桌子底下，只觉好笑。后来再看，映照现实。</p><p>又想到，我上面说的是电视剧演绎。看原文，所谓大闹天宫就是闹，玉帝也没当回事，自然不需要出手。</p><h2 id="38万pv达成">38万PV达成</h2><p>As of 2023-12-08.</p><h2 id="韦庄年近六十才得中进士"><a href="https://baike.baidu.com/item/%E9%9F%A6%E5%BA%84/1163170">韦庄</a>年近六十才得中进士</h2><h2 id="绿联硬盘盒关闭休眠"><a href="https://www.bilibili.com/video/BV1bY411L75A/">绿联硬盘盒关闭休眠</a></h2><p>可以找客服要软件，刷机即可。<span style="color: red;">但是，我遇到的休眠和这个无关，是Windows 11的硬盘休眠搞的鬼</span></p><p><img src="/img/Power-setting-to-shutdown-disk.png" alt="Windows 11关闭硬盘的节能选项导致硬盘频繁启停"></p><h2 id="github跟qq微信淘宝等一众国产网站一样">Github跟QQ微信淘宝等一众国产网站一样</h2><p>搞2FA，还要扫码。我手机丢了怎么办？安全和方便从来是互斥的。</p><p>我用<a href="https://addons.mozilla.org/en-US/firefox/addon/auth-helper/">auth-helper</a>实现验证。</p><h2 id="高耀洁-1927年12月19日-2023年12月10日"><a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E8%80%80%E6%B4%81">高耀洁(1927年12月19日—2023年12月10日)</a></h2><p>R.I.P.</p><h2 id="蒋彦永-1931年10月4日-2023年3月11日"><a href="https://zh.wikipedia.org/wiki/%E8%92%8B%E5%BD%A6%E6%B0%B8">蒋彦永(1931年10月4日—2023年3月11日)</a></h2><p>R.I.P.</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="firefox-115是最后一个支持win-7和win-8的版本">Firefox 115是最后一个支持Win 7和Win 8的版本</h2><p><a href="https://support.mozilla.org/zh-CN/kb/%E7%81%AB%E7%8B%90-%E7%94%A8%E6%88%B7-Windows-7-8-%E5%92%8C-8.1-%E8%BD%AC%E7%A7%BB-%E5%BB%B6%E6%9C%9F-%E6%94%AF%E6%8C%81">https://support.mozilla.org/zh-CN/kb/火狐-用户-Windows-7-8-和-8.1-转移-延期-支持</a></p><a id="more"></a><h2 id="汉隆剃刀-hanlon-s-razor">汉隆剃刀(Hanlon’s Razor)</h2><blockquote><p>能解释为愚蠢的，就不要解释为恶意的。</p><footer><strong>罗伯特·汉隆</strong></footer></blockquote><p>我经常讲，不是蠢就是坏，原来出自这里。</p><h2 id="firefox走向死亡">Firefox走向死亡</h2><p>因为占有率已经快跌到2%以下了。</p><p>搜一下发现，这话10年前就说出来了。</p><ol><li>2012年<a href="https://news.mydrivers.com/1/222/222174.htm">Firefox市场份额丢失1/3 分析称其走向死亡</a></li><li>2023年<a href="https://www.solidot.org/story?sid=76808">随着 Firefox 份额越来越低网站兼容性问题将会愈发突出</a></li></ol><p>根据以往的经验，这种情况，死亡是可以预期的。</p><h2 id="玉皇大帝法力不行？">玉皇大帝法力不行？</h2><p>孙猴大闹天宫，有阴谋论的说法是太上老君搞的鬼(我记得最早是吴闲云说的)。但这种情况下玉帝为何不出手呢？我现在想来，玉帝法力是不行的，万一出手，一击不中，反而丢面子，索性不出手。神仙的法力就是领导的工作能力，领导不总是有突出的工作能力：一方面有能力的不愿意做领导，走「领导」道路的往往是不愿意做具体业务的人；另一方面，做了领导不做具体工作，业务生疏，水平下降了。20多年前看电视剧，玉帝钻到桌子底下，只觉好笑。后来再看，映照现实。</p><p>又想到，我上面说的是电视剧演绎。看原文，所谓大闹天宫就是闹，玉帝也没当回事，自然不需要出手。</p><h2 id="38万pv达成">38万PV达成</h2><p>As of 2023-12-08.</p><h2 id="韦庄年近六十才得中进士"><a href="https://baike.baidu.com/item/%E9%9F%A6%E5%BA%84/1163170">韦庄</a>年近六十才得中进士</h2><blockquote><p>春晚，风暖，锦城花满，狂杀游人。玉鞭金勒，寻胜驰骤轻尘，惜良辰。<br>翠娥争劝临邛酒，纤纤手，拂面垂丝柳。归时烟里，钟鼓正是黄昏，暗销魂。</p><footer><strong>河传·春晚,</strong><cite><a href="https://baike.baidu.com/item/%E6%B2%B3%E4%BC%A0%C2%B7%E6%98%A5%E6%99%9A/9607993">baike.baidu.com/item/%E6%B2%B3%E4%BC%A0%C2%B7%E6%98%A5%E6%99%9A/9607993</a></cite></footer></blockquote><h2 id="绿联硬盘盒关闭休眠"><a href="https://www.bilibili.com/video/BV1bY411L75A/">绿联硬盘盒关闭休眠</a></h2><p>可以找客服要软件，刷机即可。<span style="color: red;">但是，我遇到的休眠和这个无关，是Windows 11的硬盘休眠搞的鬼</span></p><p><img src="/img/Power-setting-to-shutdown-disk.png" alt="Windows 11关闭硬盘的节能选项导致硬盘频繁启停"></p><h2 id="github跟qq微信淘宝等一众国产网站一样">Github跟QQ微信淘宝等一众国产网站一样</h2><p>搞2FA，还要扫码。我手机丢了怎么办？安全和方便从来是互斥的。</p><p>我用<a href="https://addons.mozilla.org/en-US/firefox/addon/auth-helper/">auth-helper</a>实现验证。</p><h2 id="高耀洁-1927年12月19日-2023年12月10日"><a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E8%80%80%E6%B4%81">高耀洁(1927年12月19日—2023年12月10日)</a></h2><p>R.I.P.</p><h2 id="蒋彦永-1931年10月4日-2023年3月11日"><a href="https://zh.wikipedia.org/wiki/%E8%92%8B%E5%BD%A6%E6%B0%B8">蒋彦永(1931年10月4日—2023年3月11日)</a></h2><p>R.I.P.</p><h2 id="朱令-1973年11月24日-2023年12月22日"><a href="https://zh.wikipedia.org/wiki/%E6%9C%B1%E4%BB%A4%E9%93%8A%E4%B8%AD%E6%AF%92%E4%BA%8B%E4%BB%B6">朱令(1973年11月24日—2023年12月22日)</a></h2><p>R.I.P.</p><h2 id="质疑-理解-成为">质疑、理解、成为</h2><ul><li>质疑宛瑜，理解宛瑜，成为宛瑜</li><li>质疑自如，理解自如，成为自如，自愧不如</li><li>嘲笑范进，理解范进，成为范进</li></ul><p>认识的飞跃。</p>]]></content>
       
       
       <categories>
@@ -21,6 +48,8 @@
         <tags>
             
             <tag> Firefox </tag>
+            
+            <tag> 典故 </tag>
             
             <tag> 近思录 </tag>
             
