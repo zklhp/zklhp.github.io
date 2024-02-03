@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2024-01-01T16:16:38.815Z</updated>
+  <updated>2024-01-16T12:44:48.308Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chriszheng.science/2024/01/01/Recent-thoughts-2024-01-01/"/>
     <id>https://chriszheng.science/2024/01/01/Recent-thoughts-2024-01-01/</id>
     <published>2023-12-31T16:00:00.000Z</published>
-    <updated>2024-01-01T16:16:38.815Z</updated>
+    <updated>2024-01-16T12:44:48.308Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="🎆">🎆</h2><p>新年快乐。</p><a id="more"></a><ul><li><a href="https://shidian.baike.com/wikiid/2398799545284826049">达摩克利斯之剑(The Sword of Damocles)</a></li><li><a href="https://baike.baidu.com/item/%E9%98%BF%E5%96%80%E7%90%89%E6%96%AF%E4%B9%8B%E8%B8%B5/340132">阿喀琉斯之踵(Achilles’ Heel)</a></li><li><a href="https://baike.baidu.com/item/%E5%A1%94%E8%A5%BF%E4%BD%97%E9%99%B7%E9%98%B1/2604169">塔西佗陷阱(Tacitus Trap)</a></li><li><a href="https://baike.baidu.com/item/%E4%BF%AE%E6%98%94%E5%BA%95%E5%BE%B7%E9%99%B7%E9%98%B1/7508870">修昔底德陷阱(Thucydides’ Trap)</a></li></ul><h2 id="dear-imgui"><a href="https://github.com/ocornut/imgui">Dear ImGui</a></h2><p>好！</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="🎆">🎆</h2><p>新年快乐。</p><a id="more"></a><ul><li><a href="https://shidian.baike.com/wikiid/2398799545284826049">达摩克利斯之剑(The Sword of Damocles)</a></li><li><a href="https://baike.baidu.com/item/%E9%98%BF%E5%96%80%E7%90%89%E6%96%AF%E4%B9%8B%E8%B8%B5/340132">阿喀琉斯之踵(Achilles’ Heel)</a></li><li><a href="https://baike.baidu.com/item/%E5%A1%94%E8%A5%BF%E4%BD%97%E9%99%B7%E9%98%B1/2604169">塔西佗陷阱(Tacitus Trap)</a></li><li><a href="https://baike.baidu.com/item/%E4%BF%AE%E6%98%94%E5%BA%95%E5%BE%B7%E9%99%B7%E9%98%B1/7508870">修昔底德陷阱(Thucydides’ Trap)</a></li></ul><h2 id="dear-imgui"><a href="https://github.com/ocornut/imgui">Dear ImGui</a></h2><p>好！</p><h2 id="firefox访问本站的深色模式滚动特别卡">Firefox访问本站的深色模式滚动特别卡</h2><p>有时候会这样。明亮模式没有这个问题。而Edge和Chrome都没这毛病。现在更新到121版本，是正常的。希望以后都不出现。</p><h2 id="骨传耳机">骨传耳机</h2><p>好。我买的是60块钱的杂牌，应该是骨传。</p><h2 id="wslg-arch-linux-emacs无法启动">WSLg + Arch Linux = Emacs无法启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MESA: error: ZINK: vkEnumeratePhysicalDevices failed (VK_ERROR_INITIALIZATION_FAILED)</span><br><span class="line">MESA: error: ZINK: failed to choose pdev</span><br><span class="line">glx: failed to create drisw screen</span><br><span class="line">failed to load driver: zink</span><br></pre></td></tr></table></figure><p>因为用到的硬件加速无法运行？搞不清楚。下面的命令可以解决。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> LIBGL_ALWAYS_SOFTWARE=<span class="literal">true</span></span><br></pre></td></tr></table></figure><p>但后来又好了。我感觉是Windows 11更新导致的。</p><p>🫘💊</p><h2 id="journal-of-astrological-big-data-ecology还有es-journal-of-immaterial-science"><a href="https://jabde.com/">Journal of Astrological Big Data Ecology</a>还有<a href="https://jabde.com/category/journal-of-immaterial-science/">es: Journal of Immaterial Science</a></h2><p>无情嘲讽了很多东西。</p>]]></content>
     
     <summary type="html">
     
@@ -35,9 +35,15 @@
       <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     
     
+      <category term="Firefox" scheme="https://chriszheng.science/tags/Firefox/"/>
+    
+      <category term="Arch Linux" scheme="https://chriszheng.science/tags/Arch-Linux/"/>
+    
       <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
     
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+      <category term="WSLg" scheme="https://chriszheng.science/tags/WSLg/"/>
     
   </entry>
   
