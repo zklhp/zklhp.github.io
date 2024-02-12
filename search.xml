@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>近思录 2024-02-09</title>
+      <link href="2024/02/09/Recent-thoughts-2024-02-09/"/>
+      <url>2024/02/09/Recent-thoughts-2024-02-09/</url>
+      
+        <content type="html"><![CDATA[<h2 id="🎆">🎆</h2><p>新年快乐。</p><a id="more"></a><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><div id="aplayer" style="margin: 1em 0;"></div><script src="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script type="text/javascript">const ap = new APlayer({  container: document.getElementById('aplayer'),  audio: [{    name: 'Tavern(Intro Cue)',    artist: 'Jason Hayes',    url: '/files/Tavern(Intro Cue).mp3',    cover: '/img/World of Warcraft (Original Game Soundtrack).png'  }]});</script><h2 id="毛泽东博览"><a href="http://59.46.86.120:9002/index.html">毛泽东博览</a></h2><ul><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%861.pdf">《毛泽东文集第一卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%862.pdf">《毛泽东文集第二卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%863.pdf">《毛泽东文集第三卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%864.pdf">《毛泽东文集第四卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%865.pdf">《毛泽东文集第五卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%866.pdf">《毛泽东文集第六卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%867.pdf">《毛泽东文集第七卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%868.pdf">《毛泽东文集第八卷》</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 近思录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 近思录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>近思录 2024-01-01</title>
       <link href="2024/01/01/Recent-thoughts-2024-01-01/"/>
       <url>2024/01/01/Recent-thoughts-2024-01-01/</url>

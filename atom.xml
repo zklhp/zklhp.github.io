@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2024-01-16T12:44:48.308Z</updated>
+  <updated>2024-02-12T16:13:25.799Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近思录 2024-02-09</title>
+    <link href="https://chriszheng.science/2024/02/09/Recent-thoughts-2024-02-09/"/>
+    <id>https://chriszheng.science/2024/02/09/Recent-thoughts-2024-02-09/</id>
+    <published>2024-02-08T16:00:00.000Z</published>
+    <updated>2024-02-12T16:13:25.799Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="🎆">🎆</h2><p>新年快乐。</p><a id="more"></a><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><div id="aplayer" style="margin: 1em 0;"></div><script src="//cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script type="text/javascript">const ap = new APlayer({  container: document.getElementById('aplayer'),  audio: [{    name: 'Tavern(Intro Cue)',    artist: 'Jason Hayes',    url: '/files/Tavern(Intro Cue).mp3',    cover: '/img/World of Warcraft (Original Game Soundtrack).png'  }]});</script><h2 id="毛泽东博览"><a href="http://59.46.86.120:9002/index.html">毛泽东博览</a></h2><ul><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%861.pdf">《毛泽东文集第一卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%862.pdf">《毛泽东文集第二卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%863.pdf">《毛泽东文集第三卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%864.pdf">《毛泽东文集第四卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%865.pdf">《毛泽东文集第五卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%866.pdf">《毛泽东文集第六卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%867.pdf">《毛泽东文集第七卷》</a></li><li><a href="/files/%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%96%87%E9%9B%868.pdf">《毛泽东文集第八卷》</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;🎆&quot;&gt;🎆&lt;/h2&gt;
+&lt;p&gt;新年快乐。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>近思录 2024-01-01</title>
@@ -596,33 +619,6 @@ And all the devils are here.”&lt;/p&gt;
       <category term="Windows 11" scheme="https://chriszheng.science/tags/Windows-11/"/>
     
       <category term="WSLg" scheme="https://chriszheng.science/tags/WSLg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近思录 2022-06-18</title>
-    <link href="https://chriszheng.science/2022/06/18/Recent-thoughts-2022-06-18/"/>
-    <id>https://chriszheng.science/2022/06/18/Recent-thoughts-2022-06-18/</id>
-    <published>2022-06-17T16:00:00.000Z</published>
-    <updated>2022-07-10T10:15:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="27万pv达成">27万PV达成</h2><p>As of 2022-06-15.</p><span id="more"></span><h2 id="r-i-p">R.I.P.</h2><p><a href="https://www.bandwagonhost.net/12953.html">https://www.bandwagonhost.net/12953.html</a></p><h2 id="珍爱生命-远离exfat">珍爱生命，远离exFAT。</h2><p>会变得不幸。</p><p>一不小心就丢文件。</p><h2 id="清高宗谥号">清高宗谥号</h2><blockquote><p>法天隆运 <br>至诚先觉 <br>体元立极 <br>敷文奋武 <br>钦明孝慈 <br>神圣 <br>纯皇帝</p><footer><strong>乾隆帝,</strong><cite><a href="https://zh.m.wikipedia.org/zh-hans/%E4%B9%BE%E9%9A%86%E5%B8%9D">zh.m.wikipedia.org/zh-hans/%E4%B9%BE%E9%9A%86%E5%B8%9D</a></cite></footer></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;27万pv达成&quot;&gt;27万PV达成&lt;/h2&gt;
-&lt;p&gt;As of 2022-06-15.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-    
-      <category term="网站信息" scheme="https://chriszheng.science/tags/%E7%BD%91%E7%AB%99%E4%BF%A1%E6%81%AF/"/>
-    
-      <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
-    
-      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     
   </entry>
   
