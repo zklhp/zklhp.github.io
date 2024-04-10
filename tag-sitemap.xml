@@ -2166,13 +2166,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/WSLg/</loc>
-        <lastmod>2024-01-16T12:44:48.308Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/X79/</loc>
         <lastmod>2024-03-12T12:59:47.810Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2229,13 +2222,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Firefox/</loc>
-        <lastmod>2024-03-17T06:37:39.347Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Windows-11/</loc>
         <lastmod>2024-03-17T06:37:39.347Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2285,22 +2271,36 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/Firefox/</loc>
+        <lastmod>2024-04-10T17:08:59.654Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
-        <lastmod>2024-04-10T16:40:52.824Z</lastmod>
+        <lastmod>2024-04-10T17:08:59.654Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2024-04-10T16:40:52.824Z</lastmod>
+        <lastmod>2024-04-10T17:08:59.654Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2024-04-10T16:40:52.824Z</lastmod>
+        <lastmod>2024-04-10T17:08:59.654Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/WSLg/</loc>
+        <lastmod>2024-04-10T17:08:59.654Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
