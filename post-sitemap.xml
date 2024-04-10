@@ -9,7 +9,31 @@
 
     <url>
         <loc>https://chriszheng.science/2024/04/04/Recent-thoughts-2024-04-04/</loc>
-        <lastmod>2024-04-03T04:40:38.552Z</lastmod>
+        <lastmod>2024-04-10T16:27:14.355Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2023/03/01/Recent-thoughts-2023-03-01/</loc>
+        <lastmod>2024-04-10T05:20:15.684Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2023/11/01/Recent-thoughts-2023-11-01/</loc>
+        <lastmod>2024-04-10T04:57:01.934Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
+        <lastmod>2024-04-05T07:19:52.761Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +41,7 @@
 
     <url>
         <loc>https://chriszheng.science/2024/03/01/Recent-thoughts-2024-03-01/</loc>
-        <lastmod>2024-04-03T03:57:52.462Z</lastmod>
+        <lastmod>2024-04-04T15:06:50.598Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -120,14 +144,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2023/11/01/Recent-thoughts-2023-11-01/</loc>
-        <lastmod>2023-11-17T14:42:42.733Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2023/04/01/Recent-thoughts-2023-04-01/</loc>
         <lastmod>2023-11-11T10:04:50.092Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -146,14 +162,6 @@
     <url>
         <loc>https://chriszheng.science/2023/02/02/Recent-thoughts-2023-02-02/</loc>
         <lastmod>2023-10-13T10:27:51.357Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2023/03/01/Recent-thoughts-2023-03-01/</loc>
-        <lastmod>2023-10-13T10:25:56.857Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -266,14 +274,6 @@
     <url>
         <loc>https://chriszheng.science/2017/01/02/One-sentence-tips-on-software/</loc>
         <lastmod>2023-04-23T09:53:35.345Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/04/14/One-sentence-cold-knowledge/</loc>
-        <lastmod>2023-04-20T16:31:24.088Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
