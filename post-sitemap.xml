@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
+        <lastmod>2024-07-16T04:18:29.531Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2024/07/01/Recent-thoughts-2024-07-01/</loc>
         <lastmod>2024-07-15T15:03:14.377Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -34,14 +42,6 @@
     <url>
         <loc>https://chriszheng.science/2024/05/01/Recent-thoughts-2024-05-01/</loc>
         <lastmod>2024-05-30T11:23:08.228Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
-        <lastmod>2024-05-30T11:04:17.268Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
