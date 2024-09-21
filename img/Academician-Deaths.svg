@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<svg height="314pt" viewBox="0 0 713 314" width="713pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Figure 1</title>
+ <desc>
+Creator: GL2PS 1.4.2, (C) 1999-2020 C. Geuzaine
+For: Octave
+CreationDate: Sat Sep 21 18:55:54 2024
+</desc>
+ <defs/>
+ <polygon fill="#ffffff" points="0,0 713,0 713,314 0,314"/>
+ <g>
+  <polygon fill="#ffffff" points="0,314 713,314 713,0 0,0" shape-rendering="crispEdges"/>
+  <clipPath id="cp00713314">
+   <polygon points="0,314 713,314 713,0 0,0"/>
+  </clipPath>
+  <g clip-path="url(#cp00713314)">
+   <polygon fill="#ffffff" points="92.7968,259.058 645.998,259.058 645.998,23.5939 92.7968,23.5939" shape-rendering="crispEdges"/>
+   <polyline fill="none" points="586.727,259.058 586.727,253.515" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="507.698,259.058 507.698,253.515" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="428.669,259.058 428.669,253.515" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="349.64,259.058 349.64,253.515" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="270.612,259.058 270.612,253.515" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="191.583,259.058 191.583,253.515" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="112.554,259.058 112.554,253.515" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(564.727,291.591) rotate(-0,22,-16)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 22 33 " y="-0">2012</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(485.698,291.591) rotate(-0,22,-16)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 22 33 " y="-0">2014</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(406.669,291.591) rotate(-0,22,-16)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 22 33 " y="-0">2016</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(327.64,291.591) rotate(-0,22,-16)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 22 33 " y="-0">2018</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(248.611,291.591) rotate(-0,22,-16)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 22 33 " y="-0">2020</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(169.582,291.591) rotate(-0,22,-16)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 22 33 " y="-0">2022</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(90.5527,291.591) rotate(-0,22,-16)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 22 33 " y="-0">2024</text>
+   </g>
+   <polyline fill="none" points="92.7968,259.058 98.3291,259.058" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="92.7968,219.814 98.3291,219.814" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="92.7968,180.57 98.3291,180.57" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="92.7968,141.326 98.3291,141.326" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="92.7968,102.082 98.3291,102.082" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="92.7968,62.838 98.3291,62.838" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="92.7968,23.5939 98.3291,23.5939" stroke="#262626" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1.25"/>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(70.7914,267.058) rotate(-0,11,-8)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 " y="-0">0</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(70.7914,227.814) rotate(-0,11,-8)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 " y="-0">5</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(59.7914,188.57) rotate(-0,22,-8)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 " y="-0">10</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(59.7914,149.326) rotate(-0,22,-8)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 " y="-0">15</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(59.7914,110.082) rotate(-0,22,-8)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 " y="-0">20</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(59.7914,70.838) rotate(-0,22,-8)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 " y="-0">25</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="22" font-style="normal" font-weight="normal" transform="translate(59.7914,31.594) rotate(-0,22,-8)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 11 " y="-0">30</text>
+   </g>
+   <polyline fill="none" points="92.7968,259.058 645.998,259.058" stroke="#262626" stroke-dasharray="16,0" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25"/>
+   <polyline fill="none" points="92.7968,259.058 92.7968,23.5939" stroke="#262626" stroke-dasharray="16,0" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.25"/>
+   <g font-family="'Latin Modern Roman'" font-size="24.2" font-style="normal" font-weight="normal" transform="translate(339.397,314.591) rotate(-0,30,-18)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 18 29 41 50 " y="-0">Years</text>
+   </g>
+   <g font-family="'Latin Modern Roman'" font-size="24.2" font-style="normal" font-weight="normal" transform="translate(18.2914,141.326) rotate(-90,36.5,0)" xml:space="preserve">
+    <text fill="rgb(38,38,38)" x="0 18 29 41 50 63 " y="-0">Deaths</text>
+   </g>
+   <polygon fill="#cca366" points="96.7461,133.477 96.7461,259.058 128.357,259.058 128.357,133.477" shape-rendering="crispEdges"/>
+   <polygon fill="#ccc266" points="136.26,70.6868 136.26,259.058 167.871,259.058 167.871,70.6868" shape-rendering="crispEdges"/>
+   <polygon fill="#aecc66" points="175.775,54.9892 175.775,259.058 207.385,259.058 207.385,54.9892" shape-rendering="crispEdges"/>
+   <polygon fill="#88cc66" points="215.289,125.628 215.289,259.058 246.9,259.058 246.9,125.628" shape-rendering="crispEdges"/>
+   <polygon fill="#66cc6a" points="254.804,109.931 254.804,259.058 286.414,259.058 286.414,109.931" shape-rendering="crispEdges"/>
+   <polygon fill="#66cc91" points="294.318,109.931 294.318,259.058 325.929,259.058 325.929,109.931" shape-rendering="crispEdges"/>
+   <polygon fill="#66ccb8" points="333.833,133.477 333.833,259.058 365.443,259.058 365.443,133.477" shape-rendering="crispEdges"/>
+   <polygon fill="#66b8cc" points="373.347,133.477 373.347,259.058 404.957,259.058 404.957,133.477" shape-rendering="crispEdges"/>
+   <polygon fill="#6691cc" points="412.861,70.6868 412.861,259.058 444.477,259.058 444.477,70.6868" shape-rendering="crispEdges"/>
+   <polygon fill="#666acc" points="452.376,149.175 452.376,259.058 483.992,259.058 483.992,149.175" shape-rendering="crispEdges"/>
+   <polygon fill="#8866cc" points="491.89,102.082 491.89,259.058 523.506,259.058 523.506,102.082" shape-rendering="crispEdges"/>
+   <polygon fill="#ae66cc" points="531.405,157.024 531.405,259.058 563.02,259.058 563.02,157.024" shape-rendering="crispEdges"/>
+   <polygon fill="#cc66c2" points="570.919,125.628 570.919,259.058 602.535,259.058 602.535,125.628" shape-rendering="crispEdges"/>
+   <polygon fill="#cc66a3" points="610.433,117.78 610.433,259.058 642.049,259.058 642.049,117.78" shape-rendering="crispEdges"/>
+  </g>
+ </g>
+</svg>
