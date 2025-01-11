@@ -8,8 +8,32 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2025/01/01/Recent-thoughts-2025-01-01/</loc>
+        <lastmod>2025-01-11T18:17:27.634Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2024/06/01/Recent-thoughts-2024-06-01/</loc>
+        <lastmod>2025-01-11T08:32:55.473Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2024/12/04/Recent-thoughts-2024-12-04/</loc>
-        <lastmod>2024-12-04T11:20:20.287Z</lastmod>
+        <lastmod>2025-01-02T17:53:12.295Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/12/17/Dual-E5-2696v3/</loc>
+        <lastmod>2024-12-12T11:23:21.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -122,14 +146,6 @@
     <url>
         <loc>https://chriszheng.science/2022/03/12/Recent-thoughts-2022-03-12/</loc>
         <lastmod>2024-08-03T15:44:09.562Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2024/06/01/Recent-thoughts-2024-06-01/</loc>
-        <lastmod>2024-07-24T05:55:31.188Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1049,14 +1065,6 @@
 
     <url>
         <loc>https://chriszheng.science/2017/02/12/Dont-upgrade-to-shadowsocks-libev-3.0.x/</loc>
-        <lastmod>2022-03-23T00:32:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/12/17/Dual-E5-2696v3/</loc>
         <lastmod>2022-03-23T00:32:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
