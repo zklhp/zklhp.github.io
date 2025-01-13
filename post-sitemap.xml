@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chriszheng.science/2025/01/01/Recent-thoughts-2025-01-01/</loc>
-        <lastmod>2025-01-12T20:23:54.815Z</lastmod>
+        <lastmod>2025-01-13T15:50:19.965Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/07/31/Ah-rainbow/</loc>
+        <lastmod>2025-01-13T07:15:38.064Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -697,14 +705,6 @@
 
     <url>
         <loc>https://chriszheng.science/2015/04/01/Add-astyle-support-for-Emacs/</loc>
-        <lastmod>2022-03-23T00:32:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/07/31/Ah-rainbow/</loc>
         <lastmod>2022-03-23T00:32:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
