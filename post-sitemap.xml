@@ -9,7 +9,23 @@
 
     <url>
         <loc>https://chriszheng.science/2025/01/01/Recent-thoughts-2025-01-01/</loc>
-        <lastmod>2025-01-16T15:38:58.972Z</lastmod>
+        <lastmod>2025-01-17T23:08:43.412Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2024/02/09/Recent-thoughts-2024-02-09/</loc>
+        <lastmod>2025-01-17T23:04:56.092Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2021/12/25/Recent-thoughts-2021-12-25/</loc>
+        <lastmod>2025-01-17T23:04:24.612Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +33,7 @@
 
     <url>
         <loc>https://chriszheng.science/2017/07/31/Ah-rainbow/</loc>
-        <lastmod>2025-01-13T20:14:53.501Z</lastmod>
+        <lastmod>2025-01-16T16:11:28.351Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -178,14 +194,6 @@
     <url>
         <loc>https://chriszheng.science/2024/01/01/Recent-thoughts-2024-01-01/</loc>
         <lastmod>2024-04-10T17:33:11.044Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2024/02/09/Recent-thoughts-2024-02-09/</loc>
-        <lastmod>2024-04-10T17:31:28.214Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -434,14 +442,6 @@
     <url>
         <loc>https://chriszheng.science/2022/12/06/Recent-thoughts-2022-12-06/</loc>
         <lastmod>2023-01-30T03:04:14.121Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2021/12/25/Recent-thoughts-2021-12-25/</loc>
-        <lastmod>2023-01-11T01:22:01.432Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
