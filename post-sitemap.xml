@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chriszheng.science/2025/01/01/Recent-thoughts-2025-01-01/</loc>
-        <lastmod>2025-01-25T22:13:07.933Z</lastmod>
+        <lastmod>2025-01-28T12:48:15.005Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2024/05/01/Recent-thoughts-2024-05-01/</loc>
+        <lastmod>2025-01-28T08:25:05.937Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -106,14 +114,6 @@
     <url>
         <loc>https://chriszheng.science/2024/10/20/Recent-thoughts-2024-10-20/</loc>
         <lastmod>2024-11-04T01:35:59.361Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2024/05/01/Recent-thoughts-2024-05-01/</loc>
-        <lastmod>2024-11-03T14:07:05.049Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
