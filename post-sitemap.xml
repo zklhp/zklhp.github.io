@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://chriszheng.science/2025/02/19/Recent-thoughts-2025-02-11/</loc>
-        <lastmod>2025-02-22T16:12:00.101Z</lastmod>
+        <lastmod>2025-02-25T21:27:21.739Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,23 @@
 
     <url>
         <loc>https://chriszheng.science/2025/01/01/Recent-thoughts-2025-01-01/</loc>
-        <lastmod>2025-02-21T15:40:29.235Z</lastmod>
+        <lastmod>2025-02-24T20:12:16.987Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2024/11/06/Recent-thoughts-2024-11-06/</loc>
+        <lastmod>2025-02-24T19:15:17.478Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2021/06/04/Recent-thoughts-2021-06-04/</loc>
+        <lastmod>2025-02-24T19:05:32.318Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -42,14 +58,6 @@
     <url>
         <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
         <lastmod>2025-02-11T22:13:07.632Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2024/11/06/Recent-thoughts-2024-11-06/</loc>
-        <lastmod>2025-02-11T20:40:08.113Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -450,14 +458,6 @@
     <url>
         <loc>https://chriszheng.science/2022/12/06/Recent-thoughts-2022-12-06/</loc>
         <lastmod>2023-01-30T03:04:14.121Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2021/06/04/Recent-thoughts-2021-06-04/</loc>
-        <lastmod>2022-12-07T10:55:47.861Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
