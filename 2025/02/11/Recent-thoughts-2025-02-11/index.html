@@ -191,6 +191,14 @@ Working Men of All Countries, Unite!</p>
     let right_bottom = 2*sigsq;
     return left_chunk * Math.exp(right_top/right_bottom);
   }
+  function normal_cdf(x, mean, std) {
+    var x = (x - mean) / std
+    var t = 1 / (1 + .2315419 * Math.abs(x))
+    var d =.3989423 * Math.exp( -x * x / 2)
+    var prob = d * t * (.3193815 + t * ( -.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))))
+    if( x > 0 ) prob = 1 - prob
+    return prob
+  }
   var mu = 66;
   var sig = 8;
   var x_start = mu;
@@ -198,19 +206,23 @@ Working Men of All Countries, Unite!</p>
   var data = [];
   for (let x = x_start; x <= x_end; x += 0.1)
     data.push({"x": x,
-		 "y": normal_pdf(x, mu, sig ** 2)});
+	       "y": normal_pdf(x, mu, sig ** 2),
+	       "z": (normal_cdf(x, mu, sig) - normal_cdf(mu, mu, sig))
+	      });
   var plot = Plot.plot({
     style: { fontSize: "1em" },
     x: { label: "Age" },
     y: { grid: true,
-	 label: "↑ Probability (%)",
+	 label: "Probability (%)",
 	 transform: (f) => f * 200 },
     marks: [
       Plot.ruleY([0]),
       Plot.lineY(data,
-		 { x: "x", y: "y", z: null, tip: true, stroke: "x" })
-    ],
-  });
+		 { x: "x", y: "y", z: "z", stroke: "x",
+		   channels: {
+		     Mortality: (f) => `${(f.z * 200).toFixed(2)}%`
+		   },
+		   tip: { format: { x: null, y: null, z: null } } }) ], });
   const div = document.querySelector("#myplot2");
   div.append(plot);
 </script>
