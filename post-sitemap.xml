@@ -9,7 +9,39 @@
 
     <url>
         <loc>https://chriszheng.science/2025/03/01/Recent-thoughts-2025-03-01/</loc>
-        <lastmod>2025-03-07T23:36:28.929Z</lastmod>
+        <lastmod>2025-04-07T06:24:37.895Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2025/04/01/Recent-thoughts-2025-04-01/</loc>
+        <lastmod>2025-04-03T16:40:06.587Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2022/11/08/Recent-thoughts-2022-11-08/</loc>
+        <lastmod>2025-03-20T15:51:06.303Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2025/02/11/Recent-thoughts-2025-02-11/</loc>
+        <lastmod>2025-03-20T08:18:21.381Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2017/03/26/Optimization-using-GNU-Octave/</loc>
+        <lastmod>2025-03-16T17:01:33.770Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +49,31 @@
 
     <url>
         <loc>https://chriszheng.science/2016/06/21/Citations-cast-ourselves-into-the-future/</loc>
-        <lastmod>2025-03-07T22:46:27.689Z</lastmod>
+        <lastmod>2025-03-16T15:53:52.030Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2024/08/01/Recent-thoughts-2024-08-01/</loc>
+        <lastmod>2025-03-08T00:04:12.829Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2024/07/01/Recent-thoughts-2024-07-01/</loc>
+        <lastmod>2025-03-07T23:51:18.609Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2024/06/01/Recent-thoughts-2024-06-01/</loc>
+        <lastmod>2025-03-07T23:46:06.079Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -34,14 +90,6 @@
     <url>
         <loc>https://chriszheng.science/2025/01/01/Recent-thoughts-2025-01-01/</loc>
         <lastmod>2025-03-06T12:14:23.080Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2025/02/11/Recent-thoughts-2025-02-11/</loc>
-        <lastmod>2025-03-05T14:08:19.393Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -128,14 +176,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2024/06/01/Recent-thoughts-2024-06-01/</loc>
-        <lastmod>2025-01-11T08:32:55.473Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2024/12/04/Recent-thoughts-2024-12-04/</loc>
         <lastmod>2025-01-02T17:53:12.295Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -186,22 +226,6 @@
     <url>
         <loc>https://chriszheng.science/2024/09/01/Recent-thoughts-2024-09-01/</loc>
         <lastmod>2024-10-13T11:00:34.170Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2024/07/01/Recent-thoughts-2024-07-01/</loc>
-        <lastmod>2024-09-21T10:58:41.644Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2024/08/01/Recent-thoughts-2024-08-01/</loc>
-        <lastmod>2024-08-27T05:44:06.082Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -314,14 +338,6 @@
     <url>
         <loc>https://chriszheng.science/2022/07/04/Recent-thoughts-2022-07-04/</loc>
         <lastmod>2023-12-10T16:56:45.216Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2022/11/08/Recent-thoughts-2022-11-08/</loc>
-        <lastmod>2023-10-13T10:29:37.467Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -2305,14 +2321,6 @@
 
     <url>
         <loc>https://chriszheng.science/2015/12/26/One-year-of-blogging/</loc>
-        <lastmod>2022-03-23T00:32:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2017/03/26/Optimization-using-GNU-Octave/</loc>
         <lastmod>2022-03-23T00:32:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
