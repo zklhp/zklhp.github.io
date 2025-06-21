@@ -2159,20 +2159,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
-        <lastmod>2025-01-28T14:15:27.035Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Bash/</loc>
-        <lastmod>2025-01-28T14:15:27.035Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
         <lastmod>2025-02-21T14:29:04.476Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2257,43 +2243,8 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Octave/</loc>
-        <lastmod>2025-03-16T17:01:33.770Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2025-03-20T08:18:21.381Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Emacs/</loc>
         <lastmod>2025-03-20T15:51:06.303Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2025-04-07T06:24:37.895Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
-        <lastmod>2025-05-07T15:48:12.371Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/WSLg/</loc>
-        <lastmod>2025-05-07T15:48:12.371Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -2313,15 +2264,64 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
+        <lastmod>2025-05-30T18:50:12.249Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/WSLg/</loc>
+        <lastmod>2025-05-30T18:50:12.249Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/Android/</loc>
-        <lastmod>2025-05-29T03:02:33.302Z</lastmod>
+        <lastmod>2025-05-30T18:55:47.529Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/AI/</loc>
+        <lastmod>2025-06-04T03:58:31.033Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Octave/</loc>
+        <lastmod>2025-06-12T04:56:21.672Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
+        <lastmod>2025-06-12T04:56:21.672Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Bash/</loc>
+        <lastmod>2025-06-12T04:56:21.672Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
+        <lastmod>2025-06-21T18:27:31.251Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2025-05-29T03:02:33.302Z</lastmod>
+        <lastmod>2025-06-21T18:27:31.251Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
