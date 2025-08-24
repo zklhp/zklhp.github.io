@@ -2005,13 +2005,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/NodeJS/</loc>
-        <lastmod>2023-03-06T16:48:59.226Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E7%25AC%2591%25E8%25AF%259D/</loc>
         <lastmod>2023-04-24T02:12:55.676Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2180,20 +2173,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E4%25BF%2584%25E8%25AF%25AD/</loc>
-        <lastmod>2025-03-06T12:14:23.080Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/%25E9%259F%25B3%25E4%25B9%2590/</loc>
-        <lastmod>2025-03-06T12:14:23.080Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E8%258B%25B1%25E8%25AF%25AD/</loc>
         <lastmod>2025-03-07T23:46:06.079Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2243,27 +2222,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
-        <lastmod>2025-05-27T03:07:09.692Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2025-06-04T03:58:31.033Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/Octave/</loc>
-        <lastmod>2025-06-12T04:56:21.672Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E4%25B8%2580%25E5%258F%25A5%25E8%25AF%259D/</loc>
         <lastmod>2025-06-12T04:56:21.672Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2278,13 +2236,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Android/</loc>
-        <lastmod>2025-07-14T16:53:02.958Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E7%25BD%2591%25E7%25AB%2599%25E4%25BF%25A1%25E6%2581%25AF/</loc>
         <lastmod>2025-08-03T16:53:39.819Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2292,36 +2243,92 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
-        <lastmod>2025-08-03T16:53:39.819Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2025-08-03T16:53:39.819Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Arch-Linux/</loc>
-        <lastmod>2025-08-03T17:35:36.203Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2025-08-03T17:35:36.203Z</lastmod>
+        <lastmod>2025-08-03T17:42:46.691Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/WSLg/</loc>
-        <lastmod>2025-08-03T17:35:36.203Z</lastmod>
+        <lastmod>2025-08-03T17:42:46.691Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
+        <lastmod>2025-08-03T17:52:28.683Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/AI/</loc>
+        <lastmod>2025-08-03T17:52:28.683Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E4%25BF%2584%25E8%25AF%25AD/</loc>
+        <lastmod>2025-08-03T17:52:28.683Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E9%259F%25B3%25E4%25B9%2590/</loc>
+        <lastmod>2025-08-03T17:52:28.683Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Octave/</loc>
+        <lastmod>2025-08-18T07:52:46.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
+        <lastmod>2025-08-18T07:52:46.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Android/</loc>
+        <lastmod>2025-08-18T14:33:42.825Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
+        <lastmod>2025-08-19T12:36:41.825Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/NodeJS/</loc>
+        <lastmod>2025-08-19T12:36:41.825Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
+        <lastmod>2025-08-19T12:36:41.825Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/R/</loc>
+        <lastmod>2025-08-19T12:36:41.825Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
