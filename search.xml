@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>近思录 2026-02-08</title>
+      <link href="2026/02/08/Recent-thoughts-2026-02-08/"/>
+      <url>2026/02/08/Recent-thoughts-2026-02-08/</url>
+      
+        <content type="html"><![CDATA[<h2 id="ai太厉害了-有没有什么事它不擅长？">AI太厉害了，有没有什么事它不擅长？</h2><span id="more"></span><p>我知道一个。由于tokenization (词元化)机制，让它数字符数很可能得不到正确答案。</p><table><thead><tr><th style="text-align:center">模型</th><th style="text-align:center">正确答案</th><th style="text-align:center">AI输出答案</th></tr></thead><tbody><tr><td style="text-align:center">讯飞星火</td><td style="text-align:center"></td><td style="text-align:center">131，验证后给出174</td></tr><tr><td style="text-align:center">豆包</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Qwen3-Max-Thinking</td><td style="text-align:center">155</td><td style="text-align:center">94，验证后还是错的</td></tr><tr><td style="text-align:center">Qwen3-235B</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Gemini 3 Fast</td><td style="text-align:center"></td><td style="text-align:center">144，列的表是对的，还是算错了</td></tr><tr><td style="text-align:center">DeepSeek R1</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr></tbody></table><p>都是用各种平台的在线界面试的。有趣的是，千问最新的思考模型思考半天反而想错了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 近思录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 近思录 </tag>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>近思录 2026-01-01</title>
       <link href="2026/01/01/Recent-thoughts-2026-01-01/"/>
       <url>2026/01/01/Recent-thoughts-2026-01-01/</url>
@@ -12784,7 +12811,7 @@
       <link href="2013/12/28/Wang-Zhongzhi/"/>
       <url>2013/12/28/Wang-Zhongzhi/</url>
       
-        <content type="html"><![CDATA[<p>《宰相刘罗锅》是我小时候很喜欢看的一部电视剧，我看到了几乎倒背如流的程度。这部剧是很有讽刺意味的，<a href="/img/Liu-Luoguo-03.png">拍摄也大胆</a>，属于时代的精品，称其为前无古人后无来者不过分。相比其他历史剧，如《康熙王朝》，简直是一天一地。这部剧里面有很多在小时候看不懂的地方，比如洋人的英语和剧中的奏章。后来长大了，回忆往事，又找来看了一遍，对两个小时候觉得很厉害的话进行了总结。</p><h2 id="汪仲直大人的奏章">汪仲直大人的奏章</h2><p>剧中，文字狱以致人人不敢开口说话只能装聋作哑，是极大的讽刺。这一段简直就是「道路以目」的艺术演绎。但这段剧情后来几乎没人提起，恐怕是杀伤力太大罢。言止于此，请看奏章：</p><a id="more"></a><blockquote><p>凡我圣朝庙号，圣祖圣宗，均要缺笔恭写。凡称前朝，一律加「伪」或「匪」。凡词语中讥讽圣朝圣制者，隐晦其词，侵入陵贵者，一经查出，严惩不贷。颁布此律，可于旬月之内除邪放正，使九州四海只闻吾皇圣训。如是，我圣朝圣制必若天地长存，与日月同辉。</p></blockquote><p>这段来源于第14集19分左右，爱奇艺上可以看，<a href="https://www.iqiyi.com/v_19rrjepfq8.html?vfm=m_332_bing#curid=92725900_159230b8fe8511dfaa6aa4badb2c35a1">地址</a>。</p><p><img src="/img/Wang-Zhongzhi.png" alt="汪仲直"></p><p>其中，「侵入陵贵者」实在是不确。</p><h2 id="无名老者的马屁">无名老者的马屁</h2><p>乾隆南巡，地方官组织士人迎接，念歌功颂德的文章。可惜一位老者因为口音原因念的不合上意，被发配伊犁。</p><p><img src="/img/Qing-lacks-a-dragon.png" alt="发配伊犁！"></p><blockquote><p>龙銮立九华兮，真龙出京阁。<br>祥龙驾彩彗兮，思迁江南泽。<br>清缺(青阙)一条龙兮，全胡满贯喽。<br>不坠若朝阳兮，金龙行天河。<br>滋生若雨露兮，九州圣宣德。<br>万岁寿无疆兮，万岁寿无疆兮。</p></blockquote><p>青阙指清明的朝廷，但皇上理解成了大清朝缺一条真龙，果然罪该万死。后面的「全胡满贯喽」原文也不知为何。这段话网上也找不到原文。我偶然之间从一个百度贴吧的讨论里找到了一点零星的记录，自己又找来视频，根据理解写出来了。</p><p>这段在第4集末尾，<a href="https://www.iqiyi.com/v_19rrjeppzc.html?vfm=m_332_bing#curid=92724900_15922622fe8511dfaa6aa4badb2c35a1">地址</a>。</p><p>应该说，这两段古文都是剧作者写的，表现剧情而已，不必太当真。一个影视作品能留下一些让人反复琢磨的话，很不错了。我今天(2020-03-22)又搜索，发现了一些网上的相关讨论，<a href="https://tieba.baidu.com/p/5703743992?pn=6">有些还是从这里抄的</a>。<a href="https://movie.douban.com/review/8204099/">也有朋友自己整理剧中的经典台词</a>，给这个世界留下了一些有趣的信息。</p><h2 id="八正道">八正道</h2><p>脱离苦海八道：正鉴、正治、正语、正业、正命、正精进、正念、正定。</p><p>佛教十诫：不杀生、不偷盗、不淫乱、不妄语、不饮酒、不涂抹香水、不视听歌舞、不坐卧高广大床、不非时实、不蓄金银财宝。</p><h2 id="一点感悟">一点感悟</h2><p>互联网很大，信息非常丰富，但互联网的资料也是有限的，比如这两段话就没人关注，找不到相关的资料。搜索引擎对古汉语不友好，比如随便把上面两段古文中的一句放到搜索引擎里搜索，很可能搜不到这个页面。历史上有茫茫多的资料，没有数字化，也缺乏检索工具，已然淹没于尘埃中了。本文把这些东西写出来，希望能被人注意。</p><p>事实上，也确实有人引用了这里的文字，比如<a href="https://www.youtube.com/watch?v=fGluVavyTHg&amp;lc=z22jihua0v2cwhla204t1aokg31yeqbb4xq3bblmbeyerk0h00410">这里</a>。</p><p>我也给世界留下了一些有意思的东西。</p>]]></content>
+        <content type="html"><![CDATA[<p>《宰相刘罗锅》是我小时候很喜欢看的一部电视剧，我看到了几乎倒背如流的程度。这部剧是很有讽刺意味的，<a href="/img/Liu-Luoguo-03.png">拍摄也大胆</a>，属于时代的精品，称其为前无古人后无来者不过分。相比其他历史剧，如《康熙王朝》，简直是一天一地。这部剧里面有很多在小时候看不懂的地方，比如洋人的英语和剧中的奏章。后来长大了，回忆往事，又找来看了一遍，对两个小时候觉得很厉害的话进行了总结。</p><h2 id="汪仲直大人的奏章">汪仲直大人的奏章</h2><p>剧中，文字狱以致人人不敢开口说话只能装聋作哑，是极大的讽刺。这一段简直就是「道路以目」的艺术演绎。但这段剧情后来几乎没人提起，恐怕是杀伤力太大罢。言止于此，请看奏章：</p><span id="more"></span><blockquote><p>凡我圣朝庙号，圣祖圣宗，均要缺笔恭写。凡称前朝，一律加「伪」或「匪」。凡词语中讥讽圣朝圣制者，隐晦其词，侵入陵贵者，一经查出，严惩不贷。颁布此律，可于旬月之内除邪放正，使九州四海只闻吾皇圣训。如是，我圣朝圣制必若天地长存，与日月同辉。</p></blockquote><p>这段来源于第14集19分左右，爱奇艺上可以看，<a href="https://www.iqiyi.com/v_19rrjepfq8.html?vfm=m_332_bing#curid=92725900_159230b8fe8511dfaa6aa4badb2c35a1">地址</a>。</p><p><img src="/img/Wang-Zhongzhi.png" alt="汪仲直"></p><p>其中，「侵入陵贵者」实在是不确。</p><h2 id="无名老者的马屁">无名老者的马屁</h2><p>乾隆南巡，地方官组织士人迎接，念歌功颂德的文章。可惜一位老者因为口音原因念的不合上意，被发配伊犁。</p><p><img src="/img/Qing-lacks-a-dragon.png" alt="发配伊犁！"></p><blockquote><p>龙銮立九华兮，真龙出京阁。<br>祥龙驾彩霓兮，思迁江南泽。<br>清缺(青阙)一条龙兮，全胡满贯喽。<br>不坠若朝阳兮，金龙行天河。<br>滋生若雨露兮，九州圣宣德。<br>万岁寿无疆兮，万岁寿无疆兮。</p></blockquote><p>青阙指清明的朝廷，但皇上理解成了大清朝缺一条真龙，果然罪该万死。后面的「全胡满贯喽」原文也不知为何。这段话网上也找不到原文。我偶然之间从一个百度贴吧的讨论里找到了一点零星的记录，自己又找来视频，根据理解写出来了。</p><p>这段在第4集末尾，<a href="https://www.iqiyi.com/v_19rrjeppzc.html?vfm=m_332_bing#curid=92724900_15922622fe8511dfaa6aa4badb2c35a1">地址</a>。</p><p>应该说，这两段古文都是剧作者写的，表现剧情而已，不必太当真。一个影视作品能留下一些让人反复琢磨的话，很不错了。我今天(2020-03-22)又搜索，发现了一些网上的相关讨论，<a href="https://tieba.baidu.com/p/5703743992?pn=6">有些还是从这里抄的</a>。<a href="https://movie.douban.com/review/8204099/">也有朋友自己整理剧中的经典台词</a>，给这个世界留下了一些有趣的信息。</p><h2 id="八正道">八正道</h2><p>脱离苦海八道：正鉴、正治、正语、正业、正命、正精进、正念、正定。</p><p>佛教十诫：不杀生、不偷盗、不淫乱、不妄语、不饮酒、不涂抹香水、不视听歌舞、不坐卧高广大床、不非时实、不蓄金银财宝。</p><h2 id="一点感悟">一点感悟</h2><p>互联网很大，信息非常丰富，但互联网的资料也是有限的，比如这两段话就没人关注，找不到相关的资料。搜索引擎对古汉语不友好，比如随便把上面两段古文中的一句放到搜索引擎里搜索，很可能搜不到这个页面。历史上有茫茫多的资料，没有数字化，也缺乏检索工具，已然淹没于尘埃中了。本文把这些东西写出来，希望能被人注意。</p><p>事实上，也确实有人引用了这里的文字，比如<a href="https://www.youtube.com/watch?v=fGluVavyTHg&amp;lc=z22jihua0v2cwhla204t1aokg31yeqbb4xq3bblmbeyerk0h00410">这里</a>。</p><p>我也给世界留下了一些有意思的东西。</p>]]></content>
       
       
       <categories>

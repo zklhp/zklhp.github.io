@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2026-02-02T02:00:03.745Z</updated>
+  <updated>2026-02-08T12:49:21.946Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近思录 2026-02-08</title>
+    <link href="https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/"/>
+    <id>https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/</id>
+    <published>2026-02-07T16:00:00.000Z</published>
+    <updated>2026-02-08T12:49:21.946Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ai太厉害了-有没有什么事它不擅长？">AI太厉害了，有没有什么事它不擅长？</h2><span id="more"></span><p>我知道一个。由于tokenization (词元化)机制，让它数字符数很可能得不到正确答案。</p><table><thead><tr><th style="text-align:center">模型</th><th style="text-align:center">正确答案</th><th style="text-align:center">AI输出答案</th></tr></thead><tbody><tr><td style="text-align:center">讯飞星火</td><td style="text-align:center"></td><td style="text-align:center">131，验证后给出174</td></tr><tr><td style="text-align:center">豆包</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Qwen3-Max-Thinking</td><td style="text-align:center">155</td><td style="text-align:center">94，验证后还是错的</td></tr><tr><td style="text-align:center">Qwen3-235B</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Gemini 3 Fast</td><td style="text-align:center"></td><td style="text-align:center">144，列的表是对的，还是算错了</td></tr><tr><td style="text-align:center">DeepSeek R1</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr></tbody></table><p>都是用各种平台的在线界面试的。有趣的是，千问最新的思考模型思考半天反而想错了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ai太厉害了-有没有什么事它不擅长？&quot;&gt;AI太厉害了，有没有什么事它不擅长？&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+      <category term="AI" scheme="https://chriszheng.science/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>近思录 2026-01-01</title>
@@ -539,33 +563,6 @@
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     
       <category term="科学研究" scheme="https://chriszheng.science/tags/%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近思录 2024-06-01</title>
-    <link href="https://chriszheng.science/2024/06/01/Recent-thoughts-2024-06-01/"/>
-    <id>https://chriszheng.science/2024/06/01/Recent-thoughts-2024-06-01/</id>
-    <published>2024-05-31T16:00:00.000Z</published>
-    <updated>2025-03-07T23:46:06.079Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="逆风顺水">逆风顺水</h2><p><a href="https://saas.actibookone.com/content/detail?param=eyJjb250ZW50TnVtIjo0NDg3NjZ9&amp;detailFlg=1&amp;pNo=1">https://saas.actibookone.com/content/detail?param=eyJjb250ZW50TnVtIjo0NDg3NjZ9&amp;detailFlg=1&amp;pNo=1</a></p><span id="more"></span><h2 id="民可使由之不可使知之"><a href="https://baike.baidu.com/item/%E6%B0%91%E5%8F%AF%E4%BD%BF%E7%94%B1%E4%B9%8B%E4%B8%8D%E5%8F%AF%E4%BD%BF%E7%9F%A5%E4%B9%8B">民可使由之不可使知之</a></h2><h2 id="四级词汇">四级词汇</h2><table><thead><tr><th style="text-align:center">易混词</th><th style="text-align:center"></th><th style="text-align:center"></th><th style="text-align:center"></th><th style="text-align:center"></th></tr></thead><tbody><tr><td style="text-align:center"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/triumph">triumph</a></td><td style="text-align:center">巨大成功</td><td style="text-align:center"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/trumpet">trumpet</a></td><td style="text-align:center">小号</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/dairy">dairy</a></td><td style="text-align:center">乳品的</td><td style="text-align:center"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/diary">diary</a></td><td style="text-align:center">日记</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/champion">champion</a></td><td style="text-align:center">冠军</td><td style="text-align:center"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/campaign">campaign</a></td><td style="text-align:center">战役</td><td style="text-align:center"></td></tr><tr><td style="text-align:center"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/tomato">tomato</a></td><td style="text-align:center">西红柿</td><td style="text-align:center"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/potato">potato</a></td><td style="text-align:center">土豆</td><td style="text-align:center">tomorrow -&gt; 明天 -&gt; 西天 -&gt; 西红柿 -&gt; tomato</td></tr></tbody></table><p>2025-01-10 <strong>Update</strong>:</p><blockquote><p>floccinaucinihilipilification (对贵族权威的)轻蔑<br>immunoelectrophoresis 免疫电泳<br>antidisestablishmentarianism 喜好，爱好<br>supercalifragilisticexpialidocious 美妙的，好的，“用易碎的美丽补偿可教育性的缺失”<br>unenthusiastically adv. 不热肠地；不体贴地<br>acquaaintanceship n. 相识，认识；交往关系<br>biotransformation n.【生物】 生物转化<br>chemiluminescence n.【化学】 化合光；化学反光，在化学反应中，低温反光<br>dihydrostreptomycin n.【药学】 二氢链霉素（结核病特效药）<br>electroencephalography n.【医学】 脑波纪录仪<br>hyperparathyroidism n.【医学】 副甲状腺机能亢进<br>internationalization n. 国际化；国际管理化共20个字母<br>Johannisberger n.一种白葡萄酒<br>Kaiserslautern n. 【地名】凯撒劳坦（德国西部一城市）<br>lexicostatistics n.【语言学】词汇统计<br>microminiaturization n.【电子学】 （电子设备的）超小型化<br>noncontradiction n. 无矛盾<br>omnidirectional adj.【电学】 全方向的<br>parliamentarianism n.【政治学】 议会主义；议会制政体；议会制政府<br>quadricentennial n. 四百年纪念（日）；四百年祭典</p><footer><strong>网友整理的一些英语长词,</strong><cite><a href="https://www.bilibili.com/video/BV1Hx411S7HK/">www.bilibili.com/video/BV1Hx411S7HK</a></cite></footer></blockquote><p>很多属于生物医学词汇，很惭愧，这些我反而会，因为有词根词缀，看多了就知道。</p><h2 id="张士诚是个正面人物-还有一些俗语流传至今">张士诚是个正面人物，还有一些俗语流传至今</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/3hGLNiGXMaU" frameborder="0" loading="lazy" allowfullscreen></iframe></div><script type="text/javascript">var i = window.$("iframe");for (var v of i) {  if (v.src.includes("youtube"))  {    v.width = '100%';    v.height = '480 px';  }}</script><p>讲张。</p><h2 id="无我相-无人相-无众生相-无寿者相">无我相，无人相，无众生相，无寿者相</h2><p>《金刚经》</p><h2 id="刚田武-俗名胖虎-生日是6月15日"><a href="https://doraemon.fandom.com/zh/wiki/%E8%83%96%E8%99%8E">刚田武(俗名胖虎)</a>生日是6月15日</h2><p>祝你生日快乐。</p><p>还有另一位知名人士也是6月15日生日。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;逆风顺水&quot;&gt;逆风顺水&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://saas.actibookone.com/content/detail?param=eyJjb250ZW50TnVtIjo0NDg3NjZ9&amp;amp;detailFlg=1&amp;amp;pNo=1&quot;&gt;https://saas.actibookone.com/content/detail?param=eyJjb250ZW50TnVtIjo0NDg3NjZ9&amp;amp;detailFlg=1&amp;amp;pNo=1&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-    
-      <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
-    
-      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-      <category term="英语" scheme="https://chriszheng.science/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
