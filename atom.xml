@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2026-02-08T13:01:06.858Z</updated>
+  <updated>2026-02-08T13:28:37.350Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/"/>
     <id>https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/</id>
     <published>2026-02-07T16:00:00.000Z</published>
-    <updated>2026-02-08T13:01:06.858Z</updated>
+    <updated>2026-02-08T13:28:37.350Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="ai太厉害了-有没有什么事它不擅长？">AI太厉害了，有没有什么事它不擅长？</h2><span id="more"></span><p>我知道一个。由于tokenization (词元化)机制以及目前思考模型的局限，让它数字符数很可能得不到正确答案。</p><table><thead><tr><th style="text-align:center">模型</th><th style="text-align:center">正确答案</th><th style="text-align:center">AI输出答案</th></tr></thead><tbody><tr><td style="text-align:center">讯飞星火</td><td style="text-align:center"></td><td style="text-align:center">131，验证后给出174</td></tr><tr><td style="text-align:center">豆包</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Qwen3-Max-Thinking</td><td style="text-align:center">155</td><td style="text-align:center">94，验证后还是错的</td></tr><tr><td style="text-align:center">Qwen3-Max-Thinking 深度思考</td><td style="text-align:center">155</td><td style="text-align:center">94，验证后还是错的</td></tr><tr><td style="text-align:center">Qwen3-235B</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Gemini 3 Fast</td><td style="text-align:center"></td><td style="text-align:center">144，列的表是对的，还是算错了</td></tr><tr><td style="text-align:center">DeepSeek R1</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr></tbody></table><p>都是用各种平台的在线界面试的。有趣的是，千问最新的思考模型思考半天反而想错了，只有上深度思考，使劲思考，才对。</p><p>至少这个例子显示了目前AI模型的缺陷：不具有真正的思考能力。思考了半天，甚至生成了Python代码，还是错。</p><p>我能想到可行的解决方案是，调用外部工具，借助工具弥补所谓的「思考」和「推理」的短板。</p><p><span style="background-color: #444 !important">哪有什么深度思考啊，瞎编乱造罢了。</span></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="ai太厉害咧-有没有什么事它不擅长？">AI太厉害咧，有没有什么事它不擅长？</h2><span id="more"></span><p>我知道一个。由于tokenization (词元化)机制以及目前思考模型的局限，让它数字符数很可能得不到正确答案。</p><table><thead><tr><th style="text-align:center">模型</th><th style="text-align:center">正确答案</th><th style="text-align:center">AI输出答案</th></tr></thead><tbody><tr><td style="text-align:center">讯飞星火</td><td style="text-align:center"></td><td style="text-align:center">131，验证后给出174</td></tr><tr><td style="text-align:center">豆包</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Qwen3-Max-Thinking</td><td style="text-align:center"></td><td style="text-align:center">94，验证后还是错的</td></tr><tr><td style="text-align:center">Qwen3-Max-Thinking 深度思考</td><td style="text-align:center">155</td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Qwen3-235B</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr><tr><td style="text-align:center">Gemini 3 Fast</td><td style="text-align:center"></td><td style="text-align:center">144，列的表是对的，还是算错了</td></tr><tr><td style="text-align:center">DeepSeek R1</td><td style="text-align:center"></td><td style="text-align:center">155</td></tr></tbody></table><p>都是用各种平台的在线界面试的。有趣的是，千问最新的思考模型思考半天反而想错了，只有上深度思考，使劲思考，才对。</p><p>至少这个例子显示了目前AI模型的缺陷：不具有真正的思考能力。思考了半天，甚至生成了Python代码，还是错。</p><p>我能想到可行的解决方案是，调用外部工具，借助工具弥补所谓的「思考」和「推理」的短板。</p><p><span style="background-color: #444 !important">哪有什么深度思考啊，瞎编乱造罢了。</span></p>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;ai太厉害了-有没有什么事它不擅长？&quot;&gt;AI太厉害了，有没有什么事它不擅长？&lt;/h2&gt;
+      &lt;h2 id=&quot;ai太厉害咧-有没有什么事它不擅长？&quot;&gt;AI太厉害咧，有没有什么事它不擅长？&lt;/h2&gt;
     
     </summary>
     
