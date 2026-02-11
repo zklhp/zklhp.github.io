@@ -2187,13 +2187,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Octave/</loc>
-        <lastmod>2025-10-27T05:32:21.808Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/ORCA/</loc>
         <lastmod>2025-10-27T05:32:21.808Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2320,15 +2313,22 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/Octave/</loc>
+        <lastmod>2026-02-11T11:25:01.034Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2026-02-08T13:28:37.350Z</lastmod>
+        <lastmod>2026-02-11T11:25:01.034Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2026-02-08T13:28:37.350Z</lastmod>
+        <lastmod>2026-02-11T11:25:01.034Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
