@@ -8,8 +8,24 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/</loc>
+        <lastmod>2026-03-17T17:56:01.591Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2026/03/04/Recent-thoughts-2026-03-04/</loc>
-        <lastmod>2026-03-04T11:25:12.866Z</lastmod>
+        <lastmod>2026-03-17T17:33:44.739Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2018/11/05/Initiative-Q/</loc>
+        <lastmod>2026-03-07T11:48:20.279Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +34,6 @@
     <url>
         <loc>https://chriszheng.science/2023/01/11/Recent-thoughts-2023-01-01/</loc>
         <lastmod>2026-03-04T11:17:29.626Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/</loc>
-        <lastmod>2026-03-02T07:01:56.132Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -1929,14 +1937,6 @@
 
     <url>
         <loc>https://chriszheng.science/2016/02/05/Index-learning-method/</loc>
-        <lastmod>2022-03-23T00:32:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2018/11/05/Initiative-Q/</loc>
         <lastmod>2022-03-23T00:32:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
