@@ -8,6 +8,14 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2020/11/18/Plant-photography/</loc>
+        <lastmod>2026-03-24T12:50:06.450Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/</loc>
         <lastmod>2026-03-17T17:56:01.591Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2473,14 +2481,6 @@
 
     <url>
         <loc>https://chriszheng.science/2015/02/14/Pitfall-of-using-Hexo-in-Windows/</loc>
-        <lastmod>2022-03-23T00:32:20.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2020/11/18/Plant-photography/</loc>
         <lastmod>2022-03-23T00:32:20.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

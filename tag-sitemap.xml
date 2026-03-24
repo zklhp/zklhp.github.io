@@ -2145,13 +2145,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
-        <lastmod>2025-09-29T06:57:25.378Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E4%25BF%2584%25E8%25AF%25AD/</loc>
         <lastmod>2025-09-29T06:57:25.378Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2329,6 +2322,13 @@
     <url>
         <loc>https://chriszheng.science/tags/AI/</loc>
         <lastmod>2026-03-17T17:56:01.591Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
+        <lastmod>2026-03-24T12:50:06.450Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
