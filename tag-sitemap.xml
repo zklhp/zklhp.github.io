@@ -1907,13 +1907,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/MS-Windows/</loc>
-        <lastmod>2022-09-25T17:03:13.909Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E5%259E%2583%25E5%259C%25BE%25E5%259B%259E%25E6%2594%25B6/</loc>
         <lastmod>2022-11-01T11:36:22.165Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2299,36 +2292,43 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Emacs/</loc>
-        <lastmod>2026-03-25T10:31:50.114Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Octave/</loc>
-        <lastmod>2026-03-25T10:31:50.114Z</lastmod>
+        <lastmod>2026-03-30T04:08:21.395Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2026-03-25T10:31:50.114Z</lastmod>
+        <lastmod>2026-03-30T04:08:21.395Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2026-03-25T10:31:50.114Z</lastmod>
+        <lastmod>2026-03-30T04:08:21.395Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/Rime/</loc>
-        <lastmod>2026-03-25T10:31:50.114Z</lastmod>
+        <lastmod>2026-03-30T04:08:21.395Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Emacs/</loc>
+        <lastmod>2026-03-30T05:02:31.439Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/MS-Windows/</loc>
+        <lastmod>2026-03-30T05:02:31.439Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
