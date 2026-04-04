@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2026-03-30T04:08:21.395Z</updated>
+  <updated>2026-04-04T07:31:26.000Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>近思录 2026-04-02</title>
+    <link href="https://chriszheng.science/2026/04/02/Recent-thoughts-2026-04-01/"/>
+    <id>https://chriszheng.science/2026/04/02/Recent-thoughts-2026-04-01/</id>
+    <published>2026-04-01T16:00:00.000Z</published>
+    <updated>2026-04-04T07:31:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="function-calling">Function Calling</h2><p><a href="https://medium.com/@sohaibahmedDS/fine-tuning-a-small-language-model-for-function-calling-what-i-learned-the-hard-way-39315d576166">https://medium.com/@sohaibahmedDS/fine-tuning-a-small-language-model-for-function-calling-what-i-learned-the-hard-way-39315d576166</a></p><p><a href="https://qwen.readthedocs.io/zh-cn/stable/framework/function_call.html">https://qwen.readthedocs.io/zh-cn/stable/framework/function_call.html</a></p><span id="more"></span><h2 id="gemma-4"><a href="https://deepmind.google/models/gemma/gemma-4/">Gemma 4</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ollama serve</span><br><span class="line">ollama run gemma4:e2b</span><br></pre></td></tr></table></figure><p>需要<a href="https://github.com/ollama/ollama/releases/tag/v0.20.0">Ollama v0.20.0</a>才能运行，初步体验，资源消耗是真的小。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;function-calling&quot;&gt;Function Calling&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@sohaibahmedDS/fine-tuning-a-small-language-model-for-function-calling-what-i-learned-the-hard-way-39315d576166&quot;&gt;https://medium.com/@sohaibahmedDS/fine-tuning-a-small-language-model-for-function-calling-what-i-learned-the-hard-way-39315d576166&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://qwen.readthedocs.io/zh-cn/stable/framework/function_call.html&quot;&gt;https://qwen.readthedocs.io/zh-cn/stable/framework/function_call.html&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+      <category term="AI" scheme="https://chriszheng.science/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>近思录 2026-03-04</title>
@@ -536,30 +562,6 @@
     
     
       <category term="段子" scheme="https://chriszheng.science/tags/%E6%AE%B5%E5%AD%90/"/>
-    
-      <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
-    
-      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近思录 2024-08-01</title>
-    <link href="https://chriszheng.science/2024/08/01/Recent-thoughts-2024-08-01/"/>
-    <id>https://chriszheng.science/2024/08/01/Recent-thoughts-2024-08-01/</id>
-    <published>2024-07-31T16:00:00.000Z</published>
-    <updated>2025-03-08T00:04:12.829Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="关于省属事业单位转制为企业有关问题的处理意见">《关于省属事业单位转制为企业有关问题的处理意见》</h2><span id="more"></span><p>2024年新出的</p><p><a href="http://hrss.shandong.gov.cn/resource/srst/att/202407/e0f10c2e-d521-4a9b-ac2d-cc9c6d27155e.docx">http://hrss.shandong.gov.cn/resource/srst/att/202407/e0f10c2e-d521-4a9b-ac2d-cc9c6d27155e.docx</a></p><p>实际上2019年就出过</p><p><a href="http://www.shandong.gov.cn/art/2019/1/28/art_2259_30549.html">http://www.shandong.gov.cn/art/2019/1/28/art_2259_30549.html</a></p><p><a href="/2023/12/01/Recent-thoughts-2023-12-01/#%E8%B4%A8%E7%96%91-%E7%90%86%E8%A7%A3-%E6%88%90%E4%B8%BA">质疑范进，理解乙己，成为祥子。</a></p><h2 id="珠峰云登山"><a href="https://www.bilibili.com/video/BV12H4y1F7jH/">珠峰云登山</a></h2><h2 id="李政道-1926年11月24日-2024年8月4日"><a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%94%BF%E9%81%93">李政道(1926年11月24日–2024年8月4日)</a></h2><p>R.I.P.</p><h2 id="关于-大月氏-读音的考据">关于「大月氏」读音的考据</h2><iframe src="//player.bilibili.com/player.html?bvid=BV1qo4y1N7rU" width="100%" height="480px" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>有理有据，让人信服。</p><h2 id="同仁堂和清朝皇室关系不一般"><a href="https://cn.bing.com/search?q=%E5%90%8C%E4%BB%81%E5%A0%82+%E6%B8%85%E6%9C%9D%E7%9A%87%E5%AE%A4">同仁堂和清朝皇室关系不一般</a></h2><p>一种观点是，最后几任清朝皇帝体弱多病，连后代都没有，都是中医害的。我感觉这个说法片面了。</p><ul><li>清朝的满族是游猎民族，喜好动物性食品，大鱼大肉惯了。而坐稳天下后，皇帝活动都少了，连木兰秋狝都少去，自然容易「三高」。</li><li>清朝选皇子属于逆淘汰，选出的皇帝一蟹不如一蟹，从基因角度讲，不利基因被人为的选择和放大了。</li><li>给皇帝看病是典型的外行领导内行，这里不展开了。印象中有人讲慈禧过问光绪的脉象，迫使御医不能按脉象进行诊治，最终<a href="https://cn.bing.com/search?q=%E6%85%88%E7%A6%A7%E6%AF%92%E6%9D%80%E5%85%89%E7%BB%AA">慈禧用含砒霜的塌喇毒杀光绪</a>，可见一斑。</li><li>当皇帝工作强度和心理压力都不小，历史上皇帝都活不长。</li><li>迷信的说法是，皇朝的运势不行了，所以皇帝的身体也不行了，非药石可为。</li></ul><p>以上几种，综合起来看，绕是这些皇帝生活在「新时代」，生活品质和健康状况也不会太好。</p><p>另，嘉庆帝生母<a href="https://zh.wikipedia.org/wiki/%E5%AD%9D%E5%84%80%E7%B4%94%E7%9A%87%E5%90%8E">孝仪纯皇后</a>实际就是汉人。一种说法<a href="https://cn.bing.com/search?q=%E4%BD%9F%E4%BD%B3%E6%B0%8F%E6%98%AF%E6%B1%89%E4%BA%BA">佟佳氏是汉人</a>。有考证<a href="https://cn.bing.com/search?q=%E6%85%88%E6%BA%AA%E6%98%AF%E6%B1%89%E4%BA%BA">慈禧是汉人</a>。</p><h2 id="犹太食品"><a href="https://feelgoodpal.com/zh/blog/kosher-food/">犹太食品</a></h2><p>繁复。</p><h2 id="karma"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/karma">karma</a></h2><p>业障。</p><h2 id="windterm"><a href="https://github.com/kingToolbox/WindTerm">WindTerm</a></h2><p>有点华而不实，用着不如MobaXterm顺手。</p><p>默认没法按Alt，用这里的方法可以纠正。</p><p><a href="https://blog.csdn.net/tangihua/article/details/126222922">https://blog.csdn.net/tangihua/article/details/126222922</a></p><h2 id="王自如"><a href="https://cn.bing.com/search?q=%E7%8E%8B%E8%87%AA%E5%A6%82+%E7%A6%BB%E8%81%8C">王自如</a></h2><h2 id="唐代诗人">唐代诗人</h2><ul><li>王维(693年或694年或701年–761年)</li><li>李白(701年2月28日–762年12月)</li><li>杜甫(712年2月12日–770年)</li><li>白居易(772年–846年)</li><li>温庭筠(约812年–866年，或824年–882年)</li><li>李商隐(约813年–约858年)</li><li>韦庄(约836年–910年)</li></ul><h2 id="颜色">颜色</h2><p><img src="https://www.radiantvisionsystems.com/sites/default/files/styles/d06/public/images/20190826_chemistry-of-color_colors-absorbed-complementary-color_cn.webp" alt="颜色"></p><p><a href="https://www.lenstek.com.cn/technology/210-spectral-color-and-spectral-partition-of-wavelength.html">https://www.lenstek.com.cn/technology/210-spectral-color-and-spectral-partition-of-wavelength.html</a></p><p><a href="https://chem.libretexts.org/Courses/Smith_College/CHM_223_Chemistry_III%3A_Organic_Chemistry_(2024)/08%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/8.10%3A_Conjugation_Color_and_the_Chemistry_of_Vision">https://chem.libretexts.org/Courses/Smith_College/CHM_223_Chemistry_III%3A_Organic_Chemistry_(2024)/08%3A_Conjugated_Compounds_and_Ultraviolet_Spectroscopy/8.10%3A_Conjugation_Color_and_the_Chemistry_of_Vision</a></p><p><a href="https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Crystal_Field_Theory/Colors_of_Coordination_Complexes">https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Supplemental_Modules_and_Websites_(Inorganic_Chemistry)/Crystal_Field_Theory/Colors_of_Coordination_Complexes</a></p><h2 id="王天一被批准逮捕"><a href="https://cn.bing.com/search?q=%E7%8E%8B%E5%A4%A9%E4%B8%80+%E6%89%B9%E5%87%86%E9%80%AE%E6%8D%95">王天一被批准逮捕</a></h2><p>可惜。</p><h2 id="变形金刚">变形金刚</h2><p><a href="https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E9%87%91%E5%88%9A%EF%BC%9A%E8%B6%85%E8%83%BD%E5%8B%87%E5%A3%AB/53972491">《变形金刚：超能勇士》</a></p><p><a href="https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E9%87%91%E5%88%9A%EF%BC%9A%E7%8C%9B%E5%85%BD%E4%BE%A0/53974452">《变形金刚：猛兽侠》</a></p><p>现在看当然有点粗糙了。当年我能看到那个时代最优秀的作品。呜呼。</p><p>另外，如果是英语版还能学英语。</p><h2 id="工作曲线-versus-标准曲线">工作曲线 <em>versus</em> 标准曲线</h2><p>区别是，标准曲线是用标准品模拟样品测定的流程建立的，而工作曲线就是用含固定浓度的样品建立的。二者统称校准曲线。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;关于省属事业单位转制为企业有关问题的处理意见&quot;&gt;《关于省属事业单位转制为企业有关问题的处理意见》&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
     
       <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
     
