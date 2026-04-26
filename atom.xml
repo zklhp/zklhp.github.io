@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2026-04-04T07:31:26.000Z</updated>
+  <updated>2026-04-26T10:15:58.017Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://chriszheng.science/2026/04/02/Recent-thoughts-2026-04-01/"/>
     <id>https://chriszheng.science/2026/04/02/Recent-thoughts-2026-04-01/</id>
     <published>2026-04-01T16:00:00.000Z</published>
-    <updated>2026-04-04T07:31:26.000Z</updated>
+    <updated>2026-04-26T10:15:58.017Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="function-calling">Function Calling</h2><p><a href="https://medium.com/@sohaibahmedDS/fine-tuning-a-small-language-model-for-function-calling-what-i-learned-the-hard-way-39315d576166">https://medium.com/@sohaibahmedDS/fine-tuning-a-small-language-model-for-function-calling-what-i-learned-the-hard-way-39315d576166</a></p><p><a href="https://qwen.readthedocs.io/zh-cn/stable/framework/function_call.html">https://qwen.readthedocs.io/zh-cn/stable/framework/function_call.html</a></p><span id="more"></span><h2 id="gemma-4"><a href="https://deepmind.google/models/gemma/gemma-4/">Gemma 4</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ollama serve</span><br><span class="line">ollama run gemma4:e2b</span><br></pre></td></tr></table></figure><p>需要<a href="https://github.com/ollama/ollama/releases/tag/v0.20.0">Ollama v0.20.0</a>才能运行，初步体验，资源消耗是真的小。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="function-calling">Function Calling</h2><p><a href="https://medium.com/@sohaibahmedDS/fine-tuning-a-small-language-model-for-function-calling-what-i-learned-the-hard-way-39315d576166">https://medium.com/@sohaibahmedDS/fine-tuning-a-small-language-model-for-function-calling-what-i-learned-the-hard-way-39315d576166</a></p><p><a href="https://qwen.readthedocs.io/zh-cn/stable/framework/function_call.html">https://qwen.readthedocs.io/zh-cn/stable/framework/function_call.html</a></p><span id="more"></span><h2 id="gemma-4"><a href="https://deepmind.google/models/gemma/gemma-4/">Gemma 4</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ollama serve</span><br><span class="line">ollama run gemma4:e2b</span><br></pre></td></tr></table></figure><p>需要<a href="https://github.com/ollama/ollama/releases/tag/v0.20.0">Ollama v0.20.0</a>才能运行，初步体验，资源消耗是真的小。</p><h2 id="xyzrender"><a href="https://github.com/aligfellow/xyzrender">XYZRender</a></h2><p><a href="https://github.com/TiegenFang/xyzrender-webapp/tree/main">https://github.com/TiegenFang/xyzrender-webapp/tree/main</a></p><h2 id="同济大学医学院金佳丽"><a href="https://med.tongji.edu.cn/info/1406/7361.htm">同济大学医学院金佳丽</a></h2><h2 id="emacs-wayland"><a href="https://archlinux.org/packages/extra/x86_64/emacs-wayland/">emacs-wayland</a></h2><p>4年过去里，到今天，<a href="/2022/10/22/Recent-thoughts-2022-10-22/#wslg-pgtk-emacs%E5%A4%8D%E5%88%B6%E9%97%AE%E9%A2%98">Wayland的Emacs还是不能和Windows顺畅的复制粘贴</a>，Emacs里复制没法粘贴到Windows程序，Windows复制的中文粘贴到Emacs里乱码。</p><h2 id="30万uv达成">30万UV达成</h2><p>As of 2026-04-20.</p>]]></content>
     
     <summary type="html">
     
@@ -35,6 +35,8 @@
     
       <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     
+    
+      <category term="Emacs" scheme="https://chriszheng.science/tags/Emacs/"/>
     
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     

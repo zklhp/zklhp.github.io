@@ -1949,13 +1949,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Hexo/</loc>
-        <lastmod>2023-03-06T16:48:59.226Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E7%25AC%2591%25E8%25AF%259D/</loc>
         <lastmod>2023-04-24T02:12:55.676Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2124,13 +2117,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/NodeJS/</loc>
-        <lastmod>2025-09-02T17:06:23.407Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/R/</loc>
         <lastmod>2025-09-02T17:06:23.407Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2257,13 +2243,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2026-02-20T11:26:21.075Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/WSLg/</loc>
         <lastmod>2026-02-20T11:26:21.075Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2299,13 +2278,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Emacs/</loc>
-        <lastmod>2026-03-30T05:02:31.439Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/MS-Windows/</loc>
         <lastmod>2026-03-30T05:02:31.439Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2320,15 +2292,43 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/Hexo/</loc>
+        <lastmod>2026-04-15T03:31:15.190Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
+        <lastmod>2026-04-15T03:31:15.190Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/NodeJS/</loc>
+        <lastmod>2026-04-15T03:31:15.190Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/Emacs/</loc>
+        <lastmod>2026-04-26T10:15:58.017Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2026-04-04T07:31:26.000Z</lastmod>
+        <lastmod>2026-04-26T10:15:58.017Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2026-04-04T07:31:26.000Z</lastmod>
+        <lastmod>2026-04-26T10:15:58.017Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
