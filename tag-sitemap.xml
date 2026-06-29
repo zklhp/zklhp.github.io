@@ -2054,13 +2054,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E8%25AF%2597%25E8%25AF%258D%25E6%25AD%258C%25E8%25B5%258B/</loc>
-        <lastmod>2025-02-24T19:05:32.318Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E8%258B%25B1%25E8%25AF%25AD/</loc>
         <lastmod>2025-03-07T23:46:06.079Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2250,20 +2243,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
-        <lastmod>2026-04-15T03:31:15.190Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/NodeJS/</loc>
-        <lastmod>2026-04-15T03:31:15.190Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/Emacs/</loc>
         <lastmod>2026-05-02T09:29:43.309Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2272,13 +2251,6 @@
 
     <url>
         <loc>https://chriszheng.science/tags/Android/</loc>
-        <lastmod>2026-05-04T09:18:31.906Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/R/</loc>
         <lastmod>2026-05-04T09:18:31.906Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -2306,13 +2278,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
-        <lastmod>2026-05-29T16:23:20.735Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/GPU/</loc>
         <lastmod>2026-05-29T16:23:20.735Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2320,22 +2285,57 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
+        <lastmod>2026-06-29T10:37:13.667Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E6%25B5%258B%25E9%2580%259F/</loc>
+        <lastmod>2026-06-29T10:44:47.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/NodeJS/</loc>
+        <lastmod>2026-06-29T10:44:47.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/R/</loc>
+        <lastmod>2026-06-29T10:44:47.779Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
+        <lastmod>2026-06-29T10:45:21.387Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/tags/%25E8%25AF%2597%25E8%25AF%258D%25E6%25AD%258C%25E8%25B5%258B/</loc>
+        <lastmod>2026-06-29T12:43:54.027Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2026-06-28T18:13:59.379Z</lastmod>
+        <lastmod>2026-06-29T12:43:54.027Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2026-06-28T18:13:59.379Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/tags/%25E6%2591%2584%25E5%25BD%25B1/</loc>
-        <lastmod>2026-06-29T10:16:10.107Z</lastmod>
+        <lastmod>2026-06-29T12:43:54.027Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
