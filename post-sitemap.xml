@@ -8,8 +8,40 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
+        <lastmod>2026-06-29T10:16:10.107Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2026/06/08/Recent-thoughts-2026-06-08/</loc>
+        <lastmod>2026-06-28T18:13:59.379Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/2026/05/10/Recent-thoughts-2026-05-10/</loc>
-        <lastmod>2026-05-11T11:09:34.477Z</lastmod>
+        <lastmod>2026-05-29T16:23:20.735Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2022/02/03/Recent-thoughts-2022-02-03/</loc>
+        <lastmod>2026-05-14T12:31:33.964Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2022/03/20/Ten-years-later-X79-platform-the-poor/</loc>
+        <lastmod>2026-05-14T12:31:13.900Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -264,14 +296,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/2017/11/07/Animal-photography/</loc>
-        <lastmod>2025-05-27T03:07:09.692Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/2017/11/15/Firefox-v57-for-Android/</loc>
         <lastmod>2025-05-22T12:45:53.721Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -434,22 +458,6 @@
     <url>
         <loc>https://chriszheng.science/2022/10/22/Recent-thoughts-2022-10-22/</loc>
         <lastmod>2024-10-13T17:38:11.435Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2022/03/20/Ten-years-later-X79-platform-the-poor/</loc>
-        <lastmod>2024-08-05T12:35:38.905Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2022/02/03/Recent-thoughts-2022-02-03/</loc>
-        <lastmod>2024-08-04T08:11:34.017Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

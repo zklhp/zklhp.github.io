@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2026-05-11T11:09:34.477Z</updated>
+  <updated>2026-06-28T18:13:59.379Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -17,13 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>近思录 2026-06-08</title>
+    <link href="https://chriszheng.science/2026/06/08/Recent-thoughts-2026-06-08/"/>
+    <id>https://chriszheng.science/2026/06/08/Recent-thoughts-2026-06-08/</id>
+    <published>2026-06-07T16:00:00.000Z</published>
+    <updated>2026-06-28T18:13:59.379Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="狐狸反走矣"><a href="https://blog.southfox.me/">狐狸反走矣</a></h2><p>也是一位Emacs用户。</p><span id="more"></span><h2 id="美国国庆日-自由民主的伟大斗争节日"><a href="https://zh.wikisource.org/wiki/%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%BA%86%E6%97%A5_%E2%80%94%E2%80%94%E8%87%AA%E7%94%B1%E6%B0%91%E4%B8%BB%E7%9A%84%E4%BC%9F%E5%A4%A7%E6%96%97%E4%BA%89%E8%8A%82%E6%97%A5">《美国国庆日——自由民主的伟大斗争节日》</a></h2><p>1944年7月4日发表于延安《解放日报》。</p><h2 id="别了-司徒雷登"><a href="https://baike.baidu.com/item/%E5%88%AB%E4%BA%86%EF%BC%8C%E5%8F%B8%E5%BE%92%E9%9B%B7%E7%99%BB/2196835">《别了，司徒雷登》</a></h2><p>1949年8月18日发表于《人民日报》。</p><p>可以理解，类似于这几年，一天一个样。「百年未有之大变局。」</p><h2 id="cet4-6">CET4/6</h2><ul><li>practicality</li></ul><h2 id="jd-万斯-versus-林彪"><a href="https://zh.wikipedia.org/zh-cn/JD%C2%B7%E4%B8%87%E6%96%AF">JD·万斯</a> <em>versus</em> <a href="https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BD%AA">林彪</a></h2><h2 id="汉仪也有灵飞经字体">汉仪也有灵飞经字体</h2><p><a href="https://www.sentyfont.com/lingfei.htm">https://www.sentyfont.com/lingfei.htm</a></p><ul><li>和方正的不同，风格更弱化，可能只是字形参考了灵飞经。</li><li>英语部分实在不忍直视。</li></ul><p>馆阁体也有，就是沈度的字体。</p><p><a href="https://www.sentyfont.com/shendu.htm">https://www.sentyfont.com/shendu.htm</a></p><p>我觉得不好看。</p><p>总体来看，「新蒂」这个名字很好，官网挺唬人，我感觉，实际不如方正的。</p><h2 id="journal-scout"><a href="https://journal.scansci.com/index.html">Journal Scout</a></h2><p>是商业化平台的上位替代。</p><h2 id="拜登2024年退选后的讲话">拜登2024年退选后的讲话</h2><p><a href="https://www.youtube.com/watch?v=np6ZGonecFE">https://www.youtube.com/watch?v=np6ZGonecFE</a></p><p>无数人把2024年的拜登描述成昏聩的老年痴呆患者，从这个讲话看，没那么糟糕。有可能一退选就好了。</p><h2 id="李开复分享了自己的prompt">李开复分享了自己的Prompt</h2><blockquote><p>Top expert. Accuracy beats approval. Blunt, argumentative. No disclaimers or praise. Lead with counterarguments. Don’t capitulate without new evidence.<br>TAG every claim: [KNOWN] training fact · [COMPUTED] calculated · [INFERRED] deduction · [COMMON] standard field knowledge · [FRAME] symbolic system, coherent ≠ real · [GUESS] no basis. No untagged disease, statute, citation, or named entity.<br>FRAME→REALITY FORBIDDEN: Don’t translate symbolic frames (astrology, typologies) into real-world claims (medicine, law, finance) without flagging the translation; conclusion stays in source frame.<br>CONFIDENCE: HIGH ≥80% · MED 50–80% · LOW 20–50% · VERY LOW &lt;20% · UNKNOWN. [FRAME] real-world and [GUESS] cap at LOW.<br>DON’T KNOW: First line “I don’t know.” Don’t bury, don’t fabricate.<br>ANTI-SYCOPHANCY red flags: unusually elegant; one pattern explains everything; agreed after pushback without evidence; specifics for unearned authority. Fire → cut specifics, add [GUESS], or &quot;I don’t know.&quot;<br>POST-HOC: Would the frame predict this without knowing the outcome? If no: [INFERRED, post-hoc], accommodates, doesn’t predict.<br>Never fabricate citations. Revise openly if holding a position for consistency. Append “[RULES I BROKE]: which, where, why.”</p><footer><strong>李开复分享的自己Prompt</strong></footer></blockquote><p>他自己不也搞AI模型么，怎么还依赖提示词工程？</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;狐狸反走矣&quot;&gt;&lt;a href=&quot;https://blog.southfox.me/&quot;&gt;狐狸反走矣&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;也是一位Emacs用户。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+      <category term="AI" scheme="https://chriszheng.science/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
     <title>近思录 2026-05-10</title>
     <link href="https://chriszheng.science/2026/05/10/Recent-thoughts-2026-05-10/"/>
     <id>https://chriszheng.science/2026/05/10/Recent-thoughts-2026-05-10/</id>
     <published>2026-05-09T16:00:00.000Z</published>
-    <updated>2026-05-11T11:09:34.477Z</updated>
+    <updated>2026-05-29T16:23:20.735Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="佳乐の风扇基地"><a href="https://jialetongxue.cn/">佳乐の风扇基地</a></h2><p><a href="https://www.bilibili.com/video/BV1yzRdBvELB/">https://www.bilibili.com/video/BV1yzRdBvELB/</a></p><p>𖣘</p><span id="more"></span><h2 id="卡尔梅克共和国"><a href="https://baike.baidu.com/item/%E5%8D%A1%E5%B0%94%E6%A2%85%E5%85%8B%E5%85%B1%E5%92%8C%E5%9B%BD/3050484">卡尔梅克共和国</a></h2><p><a href="https://www.bilibili.com/video/BV1RsRxBYE8u/">https://www.bilibili.com/video/BV1RsRxBYE8u/</a></p><p>和归顺的土尔扈特部是一家。</p><p>合着列宁也是这的，他的俄语实际上不好，<a href="/2025/01/01/Recent-thoughts-2025-01-01/#%E8%BE%85%E9%9F%B3">Р发不出</a>。类似的，据说金日成的朝鲜语也不好。</p><h2 id="8848钛金手机的出品公司注销了"><a href="https://www.tianyancha.com/company/2351123127">8848钛金手机的出品公司注销了</a></h2><p>纯营销，类似的还有小罐茶等，注定不长久。</p><p><a href="https://www.bilibili.com/video/BV1Tb411r7KT">https://www.bilibili.com/video/BV1Tb411r7KT</a></p><p>从营销的角度看，我觉得这些广告确实不错。后来这个广告的创作者也出来当网红了。</p><p><a href="https://www.bilibili.com/video/BV1m2CZBEEa">https://www.bilibili.com/video/BV1m2CZBEEa</a></p><p><a href="https://www.youtube.com/watch?v=hQ0maBksJx8">根据使用者的实际体验</a>，8848钛金手机的实际体验很差。意料之中。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="佳乐の风扇基地"><a href="https://jialetongxue.cn/">佳乐の风扇基地</a></h2><p><a href="https://www.bilibili.com/video/BV1yzRdBvELB/">https://www.bilibili.com/video/BV1yzRdBvELB/</a></p><p>𖣘</p><span id="more"></span><h2 id="卡尔梅克共和国"><a href="https://baike.baidu.com/item/%E5%8D%A1%E5%B0%94%E6%A2%85%E5%85%8B%E5%85%B1%E5%92%8C%E5%9B%BD/3050484">卡尔梅克共和国</a></h2><p><a href="https://www.bilibili.com/video/BV1RsRxBYE8u/">https://www.bilibili.com/video/BV1RsRxBYE8u/</a></p><p>和归顺的土尔扈特部是一家。</p><p>合着列宁也是这的，他的俄语实际上不好，<a href="/2025/01/01/Recent-thoughts-2025-01-01/#%E8%BE%85%E9%9F%B3">Р发不出</a>。类似的，据说金日成的朝鲜语也不好。</p><h2 id="8848钛金手机的出品公司注销了"><a href="https://www.tianyancha.com/company/2351123127">8848钛金手机的出品公司注销了</a></h2><p>纯营销，类似的还有小罐茶等，注定不长久。</p><p><a href="https://www.bilibili.com/video/BV1Tb411r7KT">https://www.bilibili.com/video/BV1Tb411r7KT</a></p><p>从营销的角度看，我觉得这些广告确实不错。后来这个广告的创作者也出来当网红了。</p><p><a href="https://www.bilibili.com/video/BV1m2CZBEEa">https://www.bilibili.com/video/BV1m2CZBEEa</a></p><p><a href="https://www.youtube.com/watch?v=hQ0maBksJx8">根据使用者的实际体验</a>，8848钛金手机的实际体验很差。意料之中。</p><h2 id="rtx-4090等高性能游戏显卡在分子动力学中实际比老掉牙的rtx-2060快不了多少">RTX 4090等高性能游戏显卡在分子动力学中实际比老掉牙的RTX 2060快不了多少</h2><p>大概就快2倍。当然，速度是个很复杂的问题，尤其对于用GPU的分子动力学模拟。</p><ul><li>我的模拟软件是Gromacs，比较的版本是2025.2和2019.6。速度差异跟版本有关。</li><li>Gromacs是CPU和GPU异质的软件，二者是协同的，都影响速度。</li><li>RTX 4090我是在某云平台上用的。云平台的配置啊，CPU啊，硬盘啊，都影响速度。</li><li>两种GPU跑的都是自由能的算例，自然也影响速度比较。</li></ul><h2 id="gpu4pyscf"><a href="https://github.com/pyscf/gpu4pyscf">GPU4PySCF</a></h2><h2 id="刘应成-原法名释永信-一审获刑24年">刘应成(原法名释永信)一审获刑24年</h2><p>比学诚更惨。</p>]]></content>
     
     <summary type="html">
     
@@ -36,7 +61,11 @@
       <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     
     
+      <category term="测速" scheme="https://chriszheng.science/tags/%E6%B5%8B%E9%80%9F/"/>
+    
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+      <category term="GPU" scheme="https://chriszheng.science/tags/GPU/"/>
     
   </entry>
   
@@ -538,34 +567,6 @@
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
     
       <category term="AI" scheme="https://chriszheng.science/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近思录 2024-10-20</title>
-    <link href="https://chriszheng.science/2024/10/20/Recent-thoughts-2024-10-20/"/>
-    <id>https://chriszheng.science/2024/10/20/Recent-thoughts-2024-10-20/</id>
-    <published>2024-10-19T16:00:00.000Z</published>
-    <updated>2025-11-29T05:03:02.577Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="reincarnation"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/reincarnation">reincarnation</a></h2><span id="more"></span><h2 id="有机反应总结到一张图里">有机反应总结到一张图里</h2><p><a href="https://bkimg.cdn.bcebos.com/pic/dbf554edc0f68694b21cb163">https://bkimg.cdn.bcebos.com/pic/dbf554edc0f68694b21cb163</a></p><p>网图，不知原作者了。</p><h2 id="不到长城非好汉">不到长城非好汉</h2><blockquote><p>天高云淡，望断南飞雁。不到长城非好汉，屈指行程二万。<br>六盘山上高峰，红旗漫卷西风。今日长缨在手，何时缚住苍龙？</p><footer><strong>毛泽东, 《清平乐·六盘山》,</strong><cite><a href="https://www.gushiwen.cn/shiwenv_d13d20fcffc4.aspx">www.gushiwen.cn/shiwenv_d13d20fcffc4.aspx</a></cite></footer></blockquote><h2 id="丛飞和邢丹"><a href="https://baike.baidu.com/item/%E4%B8%9B%E9%A3%9E/370273">丛飞</a>和<a href="https://baike.baidu.com/item/%E9%82%A2%E4%B8%B9/10720067">邢丹</a></h2><p>呜呼。</p><h2 id="systemd-doesn-t-create-user-d-bus"><a href="https://github.com/microsoft/WSL/issues/8842">systemd doesn’t create user (d)bus</a></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart user@1000</span><br></pre></td></tr></table></figure><h2 id="firefox更新到131版本感觉顺滑了">Firefox更新到131版本感觉顺滑了</h2><p>还有多少Firefox忠实用户呢？</p><h2 id="70-g-a4纸">70 g A4纸</h2><p>实际是70 g m<sup>−2</sup>，折合一页是4.366 g。</p><h2 id="使用频率前30-的79个汉字">使用频率前30%的79个汉字</h2><p><img src="/img/79characters.svg" alt="最常用的79个汉字"></p><p>可以用于练字。结合汉字字频和<a href="/2015/07/20/Make-brower-an-editor-and-the-indent-of-Chinese-in-Web/">浏览器魔改的简易编辑器</a>，不需要Word以及在线生成字帖的网站就能实现。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data:text/html, <span class="tag">&lt;<span class="name">html</span> <span class="attr">contenteditable</span> <span class="attr">style</span>=<span class="string">&#x27;font-family: FZLingFeiJingXiaoKaiS !important; color: gray; font-size: 1cm;&#x27;</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="使用频率最高的500个汉字">使用频率最高的500个汉字</h2><p><a href="https://zhuanlan.zhihu.com/p/421178282">https://zhuanlan.zhihu.com/p/421178282</a></p><blockquote><p>的 一 是 不 了 在 有 人 这 上 大 来 和 我 个 中 地 为 他 生 要 们 以 到 国 时 就 出 说 会 也 子 学 发 着 对 作 能 可 于 成 用 过 动 主 下 而 年 分 得 家 种 里 多 经 自 现 同 后 产 方 工 行 面 那 小 所 起 去 之 都 然 理 进 体 还 定 实 如 么 物 法 你 好 性 民 从 天 化 等 力 本 长 心 把 部 义 样 事 看 业 当 因 高 十 开 些 社 前 又 它 水 其 没 想 意 三 只 重 点 与 使 但 度 由 道 全 制 明 相 两 情 外 间 二 关 活 正 合 者 形 应 头 无 量 表 象 气 文 展 系 代 加 各 很 教 新 向 机 她 内 此 老 变 原 结 问 手 日 利 质 已 最 政 儿 见 并 平 资 比 特 果 什 建 反 常 知 第 电 思 立 提 或 通 解 身 四 品 几 位 别 论 公 给 少 条 观 回 海 基 次 被 山 才 己 期 西 术 济 认 先 命 走 真 员 及 数 话 门 级 军 统 光 声 题 入 美 口 感 战 科 程 式 指 世 必 放 打 接 总 做 东 区 农 强 造 类 受 场 五 直 月 流 决 干 则 更 色 处 路 运 任 具 目 再 治 神 求 件 管 组 根 阶 将 改 导 眼 规 识 革 计 白 马 金 界 取 市 设 语 完 究 党 女 传 风 信 名 便 保 育 队 带 叫 研 领 北 较 张 即 至 许 步 往 听 调 务 花 争 线 呢 每 边 难 太 共 交 确 劳 据 达 住 收 候 需 转 百 南 清 格 影 书 切 且 却 志 热 联 安 极 今 单 商 料 技 深 验 增 记 近 言 整 精 集 空 连 报 觉 车 价 音 响 办 存 怎 病 快 图 况 例 消 容 史 非 离 节 亲 万 八 构 族 石 满 何 广 律 青 林 克 王 历 权 素 始 断 九 际 积 吃 态 艺 证 众 创 红 望 须 群 师 该 复 细 包 土 持 服 笑 德 般 远 爱 准 写 算 火 死 半 布 随 六 元 低 称 引 照 失 养 视 习 段 字 织 斗 团 器 兴 乐 效 显 斯 千 落 示 仅 企 似 备 除 支 标 早 吧 周 速 跟 七 采 状 吗 约 城 层 专 划 轻 拉 值 适 英 告 讲</p><footer><strong>使用频率最高的500个汉字</strong></footer></blockquote><h2 id="山本元柳斋重国死后去了地狱"><a href="https://mzh.moegirl.org.cn/%E5%B1%B1%E6%9C%AC%E5%85%83%E6%9F%B3%E6%96%8B%E9%87%8D%E5%9B%BD">山本元柳斋重国</a>死后去了地狱</h2><h2 id="快手-versus-慢脚">快手 <em>versus</em> <a href="https://cn.bing.com/search?q=%E6%85%A2%E8%84%9A">慢脚</a></h2><p>原来是谐音梗。谐音梗扣钱。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;reincarnation&quot;&gt;&lt;a href=&quot;https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/reincarnation&quot;&gt;reincarnation&lt;/a&gt;&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-    
-      <category term="Firefox" scheme="https://chriszheng.science/tags/Firefox/"/>
-    
-      <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
-    
-      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-      <category term="WSLg" scheme="https://chriszheng.science/tags/WSLg/"/>
     
   </entry>
   
