@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>近思录 2026-07-07</title>
+      <link href="2026/07/07/Recent-thoughts-2026-07-07/"/>
+      <url>2026/07/07/Recent-thoughts-2026-07-07/</url>
+      
+        <content type="html"><![CDATA[<h2 id="高善文-1971年-2026年7月7日"><a href="https://baike.baidu.com/item/%E9%AB%98%E5%96%84%E6%96%87/1485992">高善文(1971年–2026年7月7日)</a></h2><p>呜呼！</p><p>R.I.P.</p><span id="more"></span><h2 id="emacs-31要来了">Emacs 31要来了</h2><p>有人总结了新特性。</p><p><a href="https://www.rahuljuliato.com/posts/emacs-31-around-the-corner">https://www.rahuljuliato.com/posts/emacs-31-around-the-corner</a></p><p>我用开发版，早就在用Emacs 32了。</p><h2 id="python的算卦包">Python的算卦包</h2><p><a href="https://github.com/hieudo-ursa/ansaotuvi/">https://github.com/hieudo-ursa/ansaotuvi/</a></p><p>无奇不有。看起来好像是越南朋友写的？</p><h2 id="袁公瑜墓志-和-袁承嘉墓志-都是狄仁杰的书法作品">《袁公瑜墓志》和《袁承嘉墓志》都是狄仁杰的书法作品。</h2><h2 id="有bug的情况下-极大或极小的值可能被错误解析">有Bug的情况下，极大或极小的值可能被错误解析</h2><p><a href="https://octave.discourse.group/t/numbers-below-10-308/7589">https://octave.discourse.group/t/numbers-below-10-308/7589</a></p><p><a href="https://github.com/fastfloat/fast_float">https://github.com/fastfloat/fast_float</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 近思录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Octave </tag>
+            
+            <tag> 近思录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>近思录 2026-06-08</title>
       <link href="2026/06/08/Recent-thoughts-2026-06-08/"/>
       <url>2026/06/08/Recent-thoughts-2026-06-08/</url>
@@ -19,6 +46,8 @@
       
       
         <tags>
+            
+            <tag> Emacs </tag>
             
             <tag> 诗词歌赋 </tag>
             
