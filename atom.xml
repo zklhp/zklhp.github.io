@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chriszheng.science/"/>
-  <updated>2026-07-07T15:18:01.592Z</updated>
+  <updated>2026-08-06T14:08:53.158Z</updated>
   <id>https://chriszheng.science/</id>
   
   <author>
@@ -17,13 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>近思录 2026-08-02</title>
+    <link href="https://chriszheng.science/2026/08/02/Recent-thoughts-2026-08-02/"/>
+    <id>https://chriszheng.science/2026/08/02/Recent-thoughts-2026-08-02/</id>
+    <published>2026-08-01T16:00:00.000Z</published>
+    <updated>2026-08-06T14:08:53.158Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="微信公众号文章批量下载工具"><a href="https://github.com/qiye45/wechatDownload">微信公众号文章批量下载工具</a></h2><span id="more"></span><p>公众号这种私域实质上是阻碍信息交流的。</p><h2 id="lightcone"><a href="https://lightcone.quanta-bricks.com/">LightCone</a></h2><h2 id="沉迷mcp和skills">沉迷MCP和Skills</h2><ul><li><a href="https://github.com/AIScientists-Dev/academic-humanizer">Academic-humanizer</a></li><li><a href="https://github.com/Yuan1z0825/nature-skills">Nature Skills</a></li><li><a href="https://github.com/WangGroupFDU/Sobko_MCP_project">Sobko</a></li><li><a href="https://github.com/njzjz/nsfc-agent-skills">NSFC Skills</a></li><li><a href="https://github.com/kemalabuteliyte/elsevier-mcp">Elsevier MCP</a></li><li><a href="https://github.com/andri-setiawan/MCP-scopus">scopus MCP</a></li></ul><p>其实我还没玩明白。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;微信公众号文章批量下载工具&quot;&gt;&lt;a href=&quot;https://github.com/qiye45/wechatDownload&quot;&gt;微信公众号文章批量下载工具&lt;/a&gt;&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+    
+      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+      <category term="AI" scheme="https://chriszheng.science/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
     <title>近思录 2026-07-07</title>
     <link href="https://chriszheng.science/2026/07/07/Recent-thoughts-2026-07-07/"/>
     <id>https://chriszheng.science/2026/07/07/Recent-thoughts-2026-07-07/</id>
     <published>2026-07-06T16:00:00.000Z</published>
-    <updated>2026-07-07T15:18:01.592Z</updated>
+    <updated>2026-08-06T14:08:58.006Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="高善文-1971年-2026年7月7日"><a href="https://baike.baidu.com/item/%E9%AB%98%E5%96%84%E6%96%87/1485992">高善文(1971年–2026年7月7日)</a></h2><p>呜呼！</p><p>R.I.P.</p><span id="more"></span><h2 id="emacs-31要来了">Emacs 31要来了</h2><p>有人总结了新特性。</p><p><a href="https://www.rahuljuliato.com/posts/emacs-31-around-the-corner">https://www.rahuljuliato.com/posts/emacs-31-around-the-corner</a></p><p>我用开发版，早就在用Emacs 32了。</p><h2 id="python的算卦包">Python的算卦包</h2><p><a href="https://github.com/hieudo-ursa/ansaotuvi/">https://github.com/hieudo-ursa/ansaotuvi/</a></p><p>无奇不有。看起来好像是越南朋友写的？</p><h2 id="袁公瑜墓志-和-袁承嘉墓志-都是狄仁杰的书法作品">《袁公瑜墓志》和《袁承嘉墓志》都是狄仁杰的书法作品。</h2><h2 id="有bug的情况下-极大或极小的值可能被错误解析">有Bug的情况下，极大或极小的值可能被错误解析</h2><p><a href="https://octave.discourse.group/t/numbers-below-10-308/7589">https://octave.discourse.group/t/numbers-below-10-308/7589</a></p><p><a href="https://github.com/fastfloat/fast_float">https://github.com/fastfloat/fast_float</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="高善文-1971年-2026年7月7日"><a href="https://baike.baidu.com/item/%E9%AB%98%E5%96%84%E6%96%87/1485992">高善文(1971年–2026年7月7日)</a></h2><p>呜呼！</p><p>R.I.P.</p><span id="more"></span><h2 id="emacs-31要来了">Emacs 31要来了</h2><p>有人总结了新特性。</p><p><a href="https://www.rahuljuliato.com/posts/emacs-31-around-the-corner">https://www.rahuljuliato.com/posts/emacs-31-around-the-corner</a></p><p>我用开发版，早就在用Emacs 32了。</p><h2 id="python的算卦包">Python的算卦包</h2><p><a href="https://github.com/hieudo-ursa/ansaotuvi/">https://github.com/hieudo-ursa/ansaotuvi/</a></p><p>无奇不有。看起来好像是越南朋友写的？</p><h2 id="袁公瑜墓志-和-袁承嘉墓志-都是狄仁杰的书法作品">《袁公瑜墓志》和《袁承嘉墓志》都是狄仁杰的书法作品。</h2><h2 id="有bug的情况下-极大或极小的值可能被错误解析">有Bug的情况下，极大或极小的值可能被错误解析</h2><p><a href="https://octave.discourse.group/t/numbers-below-10-308/7589">https://octave.discourse.group/t/numbers-below-10-308/7589</a></p><p><a href="https://github.com/fastfloat/fast_float">https://github.com/fastfloat/fast_float</a></p><h2 id="紫竹院公园原来还是个导火索咧">紫竹院公园原来还是个导火索咧</h2><p><a href="https://www.youtube.com/watch?v=VULxTAYXy8s">https://www.youtube.com/watch?v=VULxTAYXy8s</a></p><p>虽然那个年代我经历过，但具体的事件我是不知的。</p><h2 id="万历皇帝敕谕日本国王平秀吉"><a href="https://cn.bing.com/search?q=%E3%80%8A%E4%B8%87%E5%8E%86%E7%9A%87%E5%B8%9D%E6%95%95%E8%B0%95%E6%97%A5%E6%9C%AC%E5%9B%BD%E7%8E%8B%E5%B9%B3%E7%A7%80%E5%90%89%E3%80%8B">《万历皇帝敕谕日本国王平秀吉》</a></h2><h2 id="东野圭吾-1958年2月4日-2026年7月23日"><a href="https://baike.baidu.com/item/%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/9506697">东野圭吾(1958年2月4日—2026年7月23日)</a></h2><p>R.I.P.</p><p>只听说过，没看过他的作品。</p><h2 id="win11debloat"><a href="https://github.com/Raphire/Win11Debloat">Win11Debloat</a></h2><p><a href="https://jandan.net/p/123358/">https://jandan.net/p/123358/</a></p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp; ([<span class="type">scriptblock</span>]::Create((<span class="built_in">irm</span> <span class="string">&quot;https://debloat.raphi.re/&quot;</span>)))</span><br></pre></td></tr></table></figure><h2 id="kudu"><a href="https://github.com/AdventDevInc/kudu">Kudu</a></h2><p><a href="https://jandan.net/p/123392/">https://jandan.net/p/123392/</a></p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget install -<span class="literal">-id</span> AdventDevelopmentInc.Kudu -<span class="operator">-exact</span> -<span class="literal">-silent</span></span><br></pre></td></tr></table></figure><h2 id="简单破坏实战手册"><a href="https://jandan.net/t/6185362">《简单破坏实战手册》</a></h2><p><a href="https://www.alephic.com/assets/sabotage/SimpleSabotage.pdf">https://www.alephic.com/assets/sabotage/SimpleSabotage.pdf</a></p><p><a href="https://selfcdn.openworld.zone/uploads/2/manual0724.pdf">https://selfcdn.openworld.zone/uploads/2/manual0724.pdf</a></p><h2 id="open-science"><a href="https://github.com/ai4s-research/open-science">Open Science</a></h2>]]></content>
     
     <summary type="html">
     
@@ -39,6 +63,8 @@
       <category term="Octave" scheme="https://chriszheng.science/tags/Octave/"/>
     
       <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
+    
+      <category term="AI" scheme="https://chriszheng.science/tags/AI/"/>
     
   </entry>
   
@@ -546,33 +572,6 @@
       <category term="俄语" scheme="https://chriszheng.science/tags/%E4%BF%84%E8%AF%AD/"/>
     
       <category term="音乐" scheme="https://chriszheng.science/tags/%E9%9F%B3%E4%B9%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>近思录 2024-12-04</title>
-    <link href="https://chriszheng.science/2024/12/04/Recent-thoughts-2024-12-04/"/>
-    <id>https://chriszheng.science/2024/12/04/Recent-thoughts-2024-12-04/</id>
-    <published>2024-12-04T08:00:00.000Z</published>
-    <updated>2025-01-02T17:53:12.295Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="琼瑶-1938年4月20日-2024年12月4日"><a href="https://zh.wikipedia.org/wiki/%E7%93%8A%E7%91%A4">琼瑶(1938年4月20日—2024年12月4日)</a></h2><p>R.I.P.</p><a id="more"></a><p><img src="/img/Qing-Shenshen-Yu-Mengmeng-1.jpg" alt="《情深深雨濛濛》的不讲理逻辑"></p><p><img src="/img/Qing-Shenshen-Yu-Mengmeng-2.jpg" alt="《情深深雨濛濛》的不讲理逻辑"></p><h2 id="九洲之一">九洲之一</h2><p>2024-12-10–2024-12-11。</p><h2 id="cet4-6">CET4/6</h2><ul><li>Digital Mogao Grottoes</li><li>Electric vehicles</li><li>Self-discipline</li></ul><h2 id="chemical-crystallography"><a href="https://flowus.cn/crystallography/share/74c19f55-48fd-46d6-bc31-dc03cdd73827">Chemical Crystallography</a></h2><p><a href="https://flowus.cn/crystallography/share/14d599c0-23d6-4c58-a5a9-f29b36749383">https://flowus.cn/crystallography/share/14d599c0-23d6-4c58-a5a9-f29b36749383</a></p><h2 id="荧光分子"><a href="https://www.thermofisher.cn/cn/zh/home/life-science/cell-analysis/cellular-imaging/cell-imaging-systems/evos-led-light-cubes/evos-dye-compatibility.html">荧光分子</a></h2><h2 id="quick-witted"><a href="https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/quick-witted">quick-witted</a></h2><p>机智的，机敏的。</p><h2 id="悯农-的作者李绅后来生活豪奢-凿壁偷光的匡衡是贪官"><a href="https://baike.baidu.com/item/%E6%82%AF%E5%86%9C%E4%BA%8C%E9%A6%96/6157505">《悯农》</a>的作者<a href="https://baike.baidu.com/item/%E6%9D%8E%E7%BB%85/6908">李绅</a>后来生活豪奢，<a href="https://baike.baidu.com/item/%E5%87%BF%E5%A3%81%E5%81%B7%E5%85%89/595051">凿壁偷光</a>的<a href="https://baike.baidu.com/item/%E5%8C%A1%E8%A1%A1">匡衡</a>是贪官</h2><p>一者，作者的文艺作品和道德品质不挂钩。再者，境遇变了，人也是很容易变的。</p><h2 id="河山硕"><a href="https://cn.bing.com/search?q=%E6%B2%B3%E5%B1%B1%E7%A1%95">河山硕</a></h2><h2 id="井上雄彦的-灌篮高手-引入韩国时-主角名字改成了韩国风格">井上雄彦的《灌篮高手》引入韩国时，主角名字改成了韩国风格</h2><p>樱木花道=姜白虎、赤木刚宪=蔡致修、三井寿=郑大万（郑代万）、宫城良田=宋太涉，流川枫=徐太雄，”湘北高中“也被改为“北山高中”，地点也改在韩国庆尚北道，但作者名仍署名“井上雄彦”。</p><p>😀</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;琼瑶-1938年4月20日-2024年12月4日&quot;&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%93%8A%E7%91%A4&quot;&gt;琼瑶(1938年4月20日—2024年12月4日)&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;R.I.P.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="近思录" scheme="https://chriszheng.science/categories/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-    
-      <category term="典故" scheme="https://chriszheng.science/tags/%E5%85%B8%E6%95%85/"/>
-    
-      <category term="近思录" scheme="https://chriszheng.science/tags/%E8%BF%91%E6%80%9D%E5%BD%95/"/>
-    
-      <category term="英语" scheme="https://chriszheng.science/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
