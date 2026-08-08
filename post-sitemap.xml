@@ -9,7 +9,15 @@
 
     <url>
         <loc>https://chriszheng.science/2026/08/02/Recent-thoughts-2026-08-02/</loc>
-        <lastmod>2026-08-06T19:26:53.973Z</lastmod>
+        <lastmod>2026-08-08T10:51:54.755Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/</loc>
+        <lastmod>2026-08-08T10:44:30.255Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -130,14 +138,6 @@
     <url>
         <loc>https://chriszheng.science/2020/11/18/Plant-photography/</loc>
         <lastmod>2026-03-24T12:51:01.442Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://chriszheng.science/2026/02/08/Recent-thoughts-2026-02-08/</loc>
-        <lastmod>2026-03-17T17:56:01.591Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
