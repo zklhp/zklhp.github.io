@@ -2306,13 +2306,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Emacs/</loc>
-        <lastmod>2026-07-07T15:16:26.472Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E8%25AF%2597%25E8%25AF%258D%25E6%25AD%258C%25E8%25B5%258B/</loc>
         <lastmod>2026-07-07T15:16:26.472Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2327,15 +2320,22 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/Emacs/</loc>
+        <lastmod>2026-08-13T15:12:25.142Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2026-08-08T10:52:49.595Z</lastmod>
+        <lastmod>2026-08-13T15:12:25.142Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2026-08-08T10:52:49.595Z</lastmod>
+        <lastmod>2026-08-13T15:12:25.142Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
