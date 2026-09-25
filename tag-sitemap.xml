@@ -2299,13 +2299,6 @@
     </url>
 
     <url>
-        <loc>https://chriszheng.science/tags/Firefox/</loc>
-        <lastmod>2026-08-18T13:38:00.510Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chriszheng.science/tags/%25E5%2585%25B8%25E6%2595%2585/</loc>
         <lastmod>2026-08-18T13:38:00.510Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -2327,15 +2320,22 @@
     </url>
 
     <url>
+        <loc>https://chriszheng.science/tags/Firefox/</loc>
+        <lastmod>2026-09-24T02:36:54.330Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://chriszheng.science/tags/%25E8%25BF%2591%25E6%2580%259D%25E5%25BD%2595/</loc>
-        <lastmod>2026-09-06T03:56:06.394Z</lastmod>
+        <lastmod>2026-09-24T02:36:54.330Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://chriszheng.science/tags/AI/</loc>
-        <lastmod>2026-09-06T03:56:06.394Z</lastmod>
+        <lastmod>2026-09-24T02:36:54.330Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
